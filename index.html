@@ -79,12 +79,14 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            max-width: 150px;
         }
         
         .header-actions {
             display: flex;
             gap: 8px;
             flex-shrink: 0;
+            flex-wrap: nowrap;
         }
         
         .download-btn {
@@ -102,6 +104,7 @@
             font-size: 0.85rem;
             transition: background 0.2s ease;
             flex-shrink: 0;
+            white-space: nowrap;
         }
         
         .submit-btn {
@@ -120,7 +123,7 @@
             font-size: 1.1rem;
         }
         
-        .download-btn .btn-text {
+        .btn-text {
             display: none;
         }
         
@@ -439,39 +442,14 @@
             color: var(--dark);
         }
         
-        /* Submission Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1000;
-            overflow-y: auto;
-            padding: 20px;
-        }
-        
-        .modal-content {
-            background: white;
+        /* Submission Page */
+        .submission-container {
             max-width: 800px;
-            margin: 40px auto;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            position: relative;
+            margin: 30px auto;
             padding: 30px;
-        }
-        
-        .close-modal {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 1.5rem;
-            color: #777;
-            cursor: pointer;
-            background: none;
-            border: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
         }
         
         .form-header {
@@ -479,7 +457,7 @@
             margin-bottom: 30px;
         }
         
-        .form-header h2 {
+        .form-header h1 {
             color: var(--primary);
             margin-bottom: 10px;
         }
@@ -519,9 +497,19 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            width: 100%;
         }
         
-        .modal-submit-btn {
+        .checkbox-item input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+        
+        .checkbox-item label {
+            margin-bottom: 0;
+        }
+        
+        .submit-btn-large {
             background: var(--submit-color);
             color: white;
             border: none;
@@ -536,7 +524,7 @@
             margin-top: 20px;
         }
         
-        .modal-submit-btn:hover {
+        .submit-btn-large:hover {
             background: #d35400;
         }
         
@@ -547,14 +535,37 @@
             font-style: italic;
         }
         
+        .form-section {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .form-section-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        
         /* Media Queries */
         @media (min-width: 480px) {
-            .download-btn .btn-text {
+            .btn-text {
                 display: inline;
             }
             
             .download-btn {
                 padding: 8px 15px;
+            }
+            
+            .app-name {
+                max-width: 200px;
+            }
+            
+            .checkbox-item {
+                width: auto;
             }
         }
         
@@ -601,6 +612,7 @@
                 width: 100%;
                 justify-content: center;
                 margin-top: 8px;
+                gap: 5px;
             }
             
             .filters-grid {
@@ -610,21 +622,40 @@
             .hero {
                 padding: 20px 15px;
             }
+            
+            .download-btn {
+                padding: 8px 10px;
+            }
+            
+            .app-name {
+                max-width: 120px;
+            }
+        }
+        
+        @media (max-width: 350px) {
+            .download-btn {
+                font-size: 0.75rem;
+                padding: 6px 8px;
+            }
+            
+            .app-name {
+                max-width: 100px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Optimized Header with Submit Button -->
+    <!-- Header with Submit Button -->
     <header>
         <div class="header-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <div class="logo-icon">
                     <i class="fas fa-play-circle"></i>
                 </div>
                 <div class="app-name">Play Now</div>
-            </div>
+            </a>
             <div class="header-actions">
-                <a href="#" id="submit-idea-btn" class="download-btn submit-btn">
+                <a href="submit-activity.html" class="download-btn submit-btn">
                     <i class="fas fa-lightbulb"></i>
                     <span class="btn-text">Submit Idea</span>
                 </a>
@@ -779,143 +810,11 @@
         </div>
     </div>
     
-    <!-- Submission Modal -->
-    <div id="submission-modal" class="modal">
-        <div class="modal-content">
-            <button class="close-modal">&times;</button>
-            <div class="form-header">
-                <h2>Submit Activity Idea</h2>
-                <p>Share your creative activity ideas with other parents!</p>
-            </div>
-            
-            <form id="activity-form">
-                <div class="form-group">
-                    <label for="activity-title">Activity Title *</label>
-                    <input type="text" id="activity-title" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="activity-description">Description *</label>
-                    <textarea id="activity-description" required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="activity-benefits">Key Benefits *</label>
-                    <input type="text" id="activity-benefits" required>
-                    <p class="note">Example: "Develops fine motor skills, encourages creativity"</p>
-                </div>
-                
-                <div class="form-group">
-                    <label for="prep">Preparation Needed</label>
-                    <input type="text" id="prep">
-                    <p class="note">Example: "Gather paper and crayons"</p>
-                </div>
-                
-                <div class="form-group">
-                    <label for="materials">Materials Needed *</label>
-                    <input type="text" id="materials" required>
-                    <p class="note">Separate materials with commas (e.g., paper, crayons, stickers)</p>
-                </div>
-                
-                <div class="form-group">
-                    <label>Contexts *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="normal"> Normal
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="rainy"> Rainy Day
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="coffee"> Coffee Time
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="travel"> Travel
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="tired"> When Tired
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Location *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="location" value="indoor" required> Indoor
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="location" value="outdoor"> Outdoor
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Duration *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="duration" value="quick" required> Quick (5-15 min)
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="duration" value="medium"> Medium (15-30 min)
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Parent Involvement *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="involvement" value="minimal" required> Minimal
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="involvement" value="some"> Some
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="involvement" value="active"> Active
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Age Group *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="age" value="0-2" required> 0-2 Years
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="age" value="3-5"> 3-5 Years
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="age" value="6-11"> 6-11 Years
-                        </label>
-                    </div>
-                </div>
-                
-                <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
-                
-                <div class="form-group">
-                    <label for="submitter-name">Your Name *</label>
-                    <input type="text" id="submitter-name" required>
-                    <p class="note">How you want to be credited</p>
-                </div>
-                
-                <div class="form-group">
-                    <label for="submitter-email">Your Email *</label>
-                    <input type="email" id="submitter-email" required>
-                    <p class="note">We'll contact you if we have questions about your submission</p>
-                </div>
-                
-                <button type="submit" class="modal-submit-btn">Submit Activity Idea</button>
-            </form>
-        </div>
-    </div>
-    
     <footer class="footer">
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
             <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
-                <a href="#" id="footer-submit-btn" class="download-btn submit-btn">
+                <a href="submit-activity.html" class="download-btn submit-btn">
                     <i class="fas fa-lightbulb"></i>
                     <span class="btn-text">Submit Idea</span>
                 </a>
@@ -951,11 +850,6 @@
         const activityCountElement = document.getElementById('activity-count');
         const ageGroupElement = document.getElementById('age-group');
         const resetBtn = document.getElementById('reset-filters');
-        const submitIdeaBtn = document.getElementById('submit-idea-btn');
-        const footerSubmitBtn = document.getElementById('footer-submit-btn');
-        const modal = document.getElementById('submission-modal');
-        const closeModalBtn = document.querySelector('.close-modal');
-        const activityForm = document.getElementById('activity-form');
         
         // Initialize the page
         function init() {
@@ -989,70 +883,8 @@
             // Reset filters button
             resetBtn.addEventListener('click', resetFilters);
             
-            // Modal functionality
-            submitIdeaBtn.addEventListener('click', openModal);
-            footerSubmitBtn.addEventListener('click', openModal);
-            closeModalBtn.addEventListener('click', closeModal);
-            
-            // Close modal when clicking outside
-            window.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-            
-            // Form submission
-            activityForm.addEventListener('submit', handleFormSubmit);
-            
             // Load initial activities
             loadActivities();
-        }
-        
-        // Modal functions
-        function openModal() {
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        }
-        
-        function closeModal() {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        }
-        
-        // Form submission handler
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            
-            // Collect form data
-            const activityData = {
-                title: document.getElementById('activity-title').value,
-                description: document.getElementById('activity-description').value,
-                benefits: document.getElementById('activity-benefits').value,
-                prep: document.getElementById('prep').value || 'None needed',
-                materials: document.getElementById('materials').value.split(',').map(m => m.trim()),
-                contexts: Array.from(document.querySelectorAll('input[name="context"]:checked'))
-                    .map(cb => cb.value),
-                location: document.querySelector('input[name="location"]:checked').value,
-                duration: document.querySelector('input[name="duration"]:checked').value,
-                involvement: document.querySelector('input[name="involvement"]:checked').value,
-                age: document.querySelector('input[name="age"]:checked').value,
-                submitter: {
-                    name: document.getElementById('submitter-name').value,
-                    email: document.getElementById('submitter-email').value
-                }
-            };
-            
-            // In a real implementation, you would send this to a server
-            console.log('Activity Submission:', activityData);
-            
-            // Show confirmation message
-            alert('Thank you for your submission! Our team will review your activity idea. If approved, it will appear in the app with credit to you.');
-            
-            // Reset form
-            activityForm.reset();
-            
-            // Close modal
-            closeModal();
         }
         
         // Reset all filters
