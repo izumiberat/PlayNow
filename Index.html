@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Now - Instant Kid Activities for Busy Parents</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6a5acd;
+            --secondary: #ff7f50;
+            --accent: #20b2aa;
+            --light: #f9f7f7;
+            --dark: #2b2d42;
+            --success: #9bc53d;
+            --warning: #ffd700;
+            --danger: #ff6b6b;
+            --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --header-gradient: linear-gradient(135deg, #6a5acd, #9370db);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: var(--header-gradient);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .logo-icon {
+            font-size: 2.8rem;
+            background: white;
+            color: var(--primary);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--card-shadow);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .app-name {
+            color: var(--secondary);
+            font-weight: 900;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .cta-button {
+            background: linear-gradient(to right, var(--secondary), #ff6347);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 127, 80, 0.35);
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .cta-button.apple {
+            background: linear-gradient(to right, #000, #333);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 127, 80, 0.5);
+        }
+        
+        .cta-button.apple:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .age-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        .age-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .age-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .age-btn.active {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .filters-section {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+        
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+        
+        .filter-group {
+            margin-bottom: 15px;
+        }
+        
+        .filter-group h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .filter-btn {
+            background: #eef2f7;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover {
+            background: #dde5f0;
+        }
+        
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 3px 8px rgba(106, 90, 205, 0.3);
+        }
+        
+        .activity-counter {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark);
+            background: white;
+            padding: 18px;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            display: inline-block;
+            margin: 25px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .counter-box {
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+        }
+        
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 30px;
+        }
+        
+        .activity-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, var(--accent), #2a9d8f);
+            color: white;
+            padding: 25px 20px;
+            position: relative;
+        }
+        
+        .card-header::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .meta-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .card-body {
+            padding: 35px 25px 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-description {
+            margin-bottom: 20px;
+            flex-grow: 1;
+            color: #444;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        .card-details {
+            background: #f9fbfd;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .detail-item {
+            margin-bottom: 12px;
+            display: flex;
+        }
+        
+        .detail-label {
+            font-weight: 700;
+            min-width: 120px;
+            color: var(--primary);
+        }
+        
+        .context-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .tag {
+            background: #e0eaf5;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+        }
+        
+        .tag.normal { background: #e0f5e9; color: #2e7d32; }
+        .tag.rainy { background: #e3f2fd; color: #1565c0; }
+        .tag.coffee { background: #f3e5f5; color: #6a1b9a; }
+        .tag.sunny { background: #fff8e1; color: #f57f17; }
+        .tag.sick { background: #ffebee; color: #c62828; }
+        .tag.bedtime { background: #e8eaf6; color: #283593; }
+        .tag.playtime { background: #e0f7fa; color: #00838f; }
+        .tag.meal { background: #f1f8e9; color: #558b2f; }
+        .tag.diaper { background: #fce4ec; color: #ad1457; }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 60px;
+            font-size: 1.3rem;
+            color: var(--primary);
+            grid-column: 1 / -1;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .loading-spinner {
+            border: 5px solid rgba(106, 90, 205, 0.2);
+            border-top: 5px solid var(--primary);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 25px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px;
+            font-size: 1.3rem;
+            color: #777;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .app-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        @media (max-width: 768px) {
+            .filters-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.4rem;
+            }
+            
+            .activities-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .age-selector {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .age-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <h1><span class="app-name">Play Now</span> Kid Activities</h1>
+            </div>
+            <p class="subtitle">Instant activity ideas for busy parents - because kids don't wait and neither should you!</p>
+            
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="cta-button apple" target="_blank">
+                    <i class="fab fa-apple"></i> Download on App Store
+                </a>
+                <a href="#" class="cta-button" id="play-store-btn" target="_blank">
+                    <i class="fab fa-google-play"></i> Coming Soon on Play Store
+                </a>
+            </div>
+            
+            <div class="age-selector">
+                <button class="age-btn active" data-age="0-2">
+                    <i class="fas fa-baby"></i> 0-2 Years
+                </button>
+                <button class="age-btn" data-age="3-5">
+                    <i class="fas fa-child"></i> 3-5 Years
+                </button>
+                <button class="age-btn" data-age="6-11">
+                    <i class="fas fa-user"></i> 6-11 Years
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="app-features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="feature-title">Instant Ideas</h3>
+                <p>Generate fun activities in seconds when you don't have time to plan</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <h3 class="feature-title">Smart Filtering</h3>
+                <p>Find perfect activities by situation, location, duration and involvement</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3 class="feature-title">Age Appropriate</h3>
+                <p>Activities tailored for 0-2, 3-5 and 6-11 year olds</p>
+            </div>
+        </section>
+        
+        <section class="filters-section">
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary); font-size: 2rem;">
+                <i class="fas fa-filter"></i> Find the Perfect Activity
+            </h2>
+            
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <h3><i class="fas fa-cloud"></i> Situation</h3>
+                    <div class="filter-options" id="context-filters">
+                        <button class="filter-btn active" data-filter="context" data-value="all">
+                            <i class="fas fa-star"></i> All
+                        </button>
+                        <button class="filter-btn" data-filter="context" data-value="normal">
+                            <i class="fas fa-sun"></i> Normal
+                        </button>
+                        <button class="filter-btn" data-filter="context" data-value="rainy">
+                            <i class="fas fa-cloud-rain"></i> Rainy
+                        </button>
+                        <button class="filter-btn" data-filter="context" data-value="coffee">
+                            <i class="fas fa-coffee"></i> Coffee
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3><i class="fas fa-location-dot"></i> Location</h3>
+                    <div class="filter-options" id="location-filters">
+                        <button class="filter-btn active" data-filter="location" data-value="all">
+                            <i class="fas fa-globe"></i> All
+                        </button>
+                        <button class="filter-btn" data-filter="location" data-value="indoor">
+                            <i class="fas fa-house"></i> Indoor
+                        </button>
+                        <button class="filter-btn" data-filter="location" data-value="outdoor">
+                            <i class="fas fa-tree"></i> Outdoor
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3><i class="fas fa-clock"></i> Duration</h3>
+                    <div class="filter-options" id="duration-filters">
+                        <button class="filter-btn active" data-filter="duration" data-value="all">
+                            <i class="fas fa-infinity"></i> All
+                        </button>
+                        <button class="filter-btn" data-filter="duration" data-value="quick">
+                            <i class="fas fa-bolt"></i> Quick
+                        </button>
+                        <button class="filter-btn" data-filter="duration" data-value="medium">
+                            <i class="fas fa-hourglass-half"></i> Medium
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3><i class="fas fa-user"></i> Involvement</h3>
+                    <div class="filter-options" id="involvement-filters">
+                        <button class="filter-btn active" data-filter="involvement" data-value="all">
+                            <i class="fas fa-users"></i> All
+                        </button>
+                        <button class="filter-btn" data-filter="involvement" data-value="minimal">
+                            <i class="fas fa-user-minus"></i> Minimal
+                        </button>
+                        <button class="filter-btn" data-filter="involvement" data-value="some">
+                            <i class="fas fa-user"></i> Some
+                        </button>
+                        <button class="filter-btn" data-filter="involvement" data-value="active">
+                            <i class="fas fa-user-plus"></i> Active
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="activity-counter">
+            <i class="fas fa-list"></i>
+            Showing <span class="counter-box" id="activity-count">0</span> activities for 
+            <span class="counter-box" id="age-group">0-2 years</span>
+        </div>
+        
+        <div class="activities-grid" id="activities-container">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                Loading fun activities for your little ones...
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>Play Now App | Instant Kid Activities for Busy Parents</p>
+            <p style="margin-top: 15px;">Activities for ages 0-2, 3-5, and 6-11</p>
+            <p style="margin-top: 20px;">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" style="color: var(--primary); text-decoration: none; font-weight: 600;" target="_blank">
+                    <i class="fab fa-apple"></i> Download on the App Store
+                </a>
+            </p>
+            <p style="margin-top: 30px; color: #999;">© 2023 Play Now App. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Base URL for JSON files
+        const BASE_JSON_URL = 'https://izumiberat.github.io/kidactivitiesimple/main/assets/json/';
+        
+        // Current state
+        let currentAgeGroup = '0-2';
+        let currentFilters = {
+            context: 'all',
+            location: 'all',
+            duration: 'all',
+            involvement: 'all'
+        };
+        let activitiesData = [];
+        
+        // DOM elements
+        const activitiesContainer = document.getElementById('activities-container');
+        const activityCountElement = document.getElementById('activity-count');
+        const ageGroupElement = document.getElementById('age-group');
+        const playStoreBtn = document.getElementById('play-store-btn');
+        
+        // Initialize the page
+        function init() {
+            // Set up event listeners for age group buttons
+            document.querySelectorAll('.age-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active button
+                    document.querySelectorAll('.age-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Load new age group
+                    currentAgeGroup = this.dataset.age;
+                    ageGroupElement.textContent = `${currentAgeGroup} years`;
+                    loadActivities();
+                });
+            });
+            
+            // Set up event listeners for filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filterType = this.dataset.filter;
+                    const filterValue = this.dataset.value;
+                    
+                    // Update active state for this filter group
+                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => {
+                        b.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Update current filters
+                    currentFilters[filterType] = filterValue;
+                    
+                    // Apply filters
+                    filterAndRenderActivities();
+                });
+            });
+            
+            // Disable Play Store button for now
+            playStoreBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert("Play Now is coming soon to the Google Play Store!");
+            });
+            
+            // Load initial activities
+            loadActivities();
+        }
+        
+        // Load activities from JSON file
+        function loadActivities() {
+            // Show loading state
+            activitiesContainer.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    Loading ${currentAgeGroup} activities...
+                </div>
+            `;
+            
+            // Construct the JSON URL
+            const jsonUrl = `${BASE_JSON_URL}activities-${currentAgeGroup}.json`;
+            
+            // Fetch the JSON data
+            fetch(jsonUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    activitiesData = data.activities;
+                    filterAndRenderActivities();
+                })
+                .catch(error => {
+                    console.error('Error loading activities:', error);
+                    activitiesContainer.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--danger); margin-bottom: 20px;"></i>
+                            <h3>Couldn't Load Activities</h3>
+                            <p>Please check your internet connection or try again later.</p>
+                            <p style="margin-top: 15px; font-size: 0.9rem; color: #999;">Error: ${error.message}</p>
+                        </div>
+                    `;
+                });
+        }
+        
+        // Filter activities based on current filters
+        function filterActivities() {
+            return activitiesData.filter(activity => {
+                // Context filter
+                if (currentFilters.context !== 'all' && !activity.contexts.includes(currentFilters.context)) {
+                    return false;
+                }
+                
+                // Location filter
+                if (currentFilters.location !== 'all' && activity.location !== currentFilters.location) {
+                    return false;
+                }
+                
+                // Duration filter
+                if (currentFilters.duration !== 'all' && activity.duration !== currentFilters.duration) {
+                    return false;
+                }
+                
+                // Involvement filter
+                if (currentFilters.involvement !== 'all' && activity.involvement !== currentFilters.involvement) {
+                    return false;
+                }
+                
+                return true;
+            });
+        }
+        
+        // Render activities
+        function renderActivities(activities) {
+            if (activities.length === 0) {
+                activitiesContainer.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
+                        <h3>No Activities Match Your Filters</h3>
+                        <p>Try adjusting your filter criteria to see more activities.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            let activitiesHTML = '';
+            
+            activities.forEach(activity => {
+                // Determine material display text
+                let materialsText = activity.materials.join(', ') || 'none';
+                if (activity.materials.length > 0 && activity.materials[0] === "none") {
+                    materialsText = "none";
+                }
+                
+                // Create context tags
+                let contextTags = '';
+                if (activity.contexts) {
+                    activity.contexts.forEach(context => {
+                        contextTags += `<span class="tag ${context}">${context}</span>`;
+                    });
+                }
+                
+                activitiesHTML += `
+                    <div class="activity-card">
+                        <div class="card-header">
+                            <h3 class="card-title">${activity.title}</h3>
+                            <div class="card-meta">
+                                <span class="meta-item">${activity.duration} ⏱️</span>
+                                <span class="meta-item">${activity.location === 'indoor' ? '🏠 Indoor' : '🌳 Outdoor'}</span>
+                                <span class="meta-item">${activity.involvement} 👪</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-description">
+                                <p>${activity.description}</p>
+                            </div>
+                            <div class="card-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Benefits:</span>
+                                    <span>${activity.benefits}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Preparation:</span>
+                                    <span>${activity.prep || 'No preparation needed'}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Materials:</span>
+                                    <span>${materialsText}</span>
+                                </div>
+                            </div>
+                            <div class="context-tags">
+                                ${contextTags}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            activitiesContainer.innerHTML = activitiesHTML;
+        }
+        
+        // Filter and render activities
+        function filterAndRenderActivities() {
+            if (activitiesData.length === 0) return;
+            
+            const filteredActivities = filterActivities();
+            activityCountElement.textContent = filteredActivities.length;
+            renderActivities(filteredActivities);
+        }
+        
+        // Start the app
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
