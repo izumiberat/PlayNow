@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kid Activity Finder | For Busy Parents</title>
+    <title>Play Now - Instant Kid Activities for Busy Parents</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #5b7db1;
-            --secondary: #ff9a76;
-            --accent: #61a0af;
+            --primary: #6a5acd;
+            --secondary: #ff7f50;
+            --accent: #20b2aa;
             --light: #f9f7f7;
             --dark: #2b2d42;
             --success: #9bc53d;
-            --warning: #fde74c;
-            --danger: #e55934;
-            --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            --warning: #ffd700;
+            --danger: #ff6b6b;
+            --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            --header-gradient: linear-gradient(135deg, #6a5acd, #9370db);
         }
         
         * {
@@ -26,7 +27,7 @@
         }
         
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            background: linear-gradient(135deg, #f5f7fa 0%, #eef2f7 100%);
             color: #333;
             line-height: 1.6;
             min-height: 100vh;
@@ -40,12 +41,12 @@
         }
         
         header {
-            background: linear-gradient(135deg, var(--primary), #3a5a80);
+            background: var(--header-gradient);
             color: white;
             padding: 30px 20px;
             text-align: center;
             border-radius: 0 0 20px 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
             margin-bottom: 30px;
             position: relative;
             overflow: hidden;
@@ -84,52 +85,84 @@
         }
         
         .logo-icon {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             background: white;
             color: var(--primary);
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: var(--card-shadow);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         
         h1 {
-            font-size: 2.8rem;
+            font-size: 3rem;
             margin-bottom: 10px;
-            font-weight: 700;
+            font-weight: 800;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         
+        .app-name {
+            color: var(--secondary);
+            font-weight: 900;
+        }
+        
         .subtitle {
-            font-size: 1.2rem;
-            max-width: 700px;
+            font-size: 1.3rem;
+            max-width: 800px;
             margin: 0 auto 25px;
             opacity: 0.9;
             position: relative;
             z-index: 2;
         }
         
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
         .cta-button {
-            background: linear-gradient(to right, var(--secondary), #ff7b54);
+            background: linear-gradient(to right, var(--secondary), #ff6347);
             color: white;
             border: none;
-            padding: 14px 35px;
-            font-size: 1.1rem;
+            padding: 16px 40px;
+            font-size: 1.2rem;
             border-radius: 30px;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 700;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 123, 84, 0.3);
+            box-shadow: 0 4px 15px rgba(255, 127, 80, 0.35);
             position: relative;
             z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .cta-button.apple {
+            background: linear-gradient(to right, #000, #333);
         }
         
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 123, 84, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(255, 127, 80, 0.5);
+        }
+        
+        .cta-button.apple:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
         
         .age-selector {
@@ -144,12 +177,16 @@
             background: rgba(255, 255, 255, 0.2);
             border: 2px solid white;
             color: white;
-            padding: 10px 25px;
+            padding: 12px 30px;
             border-radius: 30px;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 700;
             transition: all 0.3s ease;
             backdrop-filter: blur(5px);
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
         .age-btn:hover {
@@ -159,7 +196,7 @@
         .age-btn.active {
             background: white;
             color: var(--primary);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
         
         .filters-section {
@@ -183,29 +220,30 @@
         .filter-group h3 {
             margin-bottom: 15px;
             color: var(--primary);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
         }
         
         .filter-options {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
         }
         
         .filter-btn {
             background: #eef2f7;
             border: none;
-            padding: 8px 15px;
-            border-radius: 20px;
+            padding: 10px 18px;
+            border-radius: 25px;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 1rem;
             transition: all 0.2s ease;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 8px;
+            font-weight: 500;
         }
         
         .filter-btn:hover {
@@ -215,36 +253,39 @@
         .filter-btn.active {
             background: var(--primary);
             color: white;
+            box-shadow: 0 3px 8px rgba(106, 90, 205, 0.3);
         }
         
         .activity-counter {
             text-align: center;
             margin: 20px 0;
-            font-size: 1.1rem;
-            font-weight: 500;
+            font-size: 1.2rem;
+            font-weight: 600;
             color: var(--dark);
             background: white;
-            padding: 15px;
+            padding: 18px;
             border-radius: 15px;
             box-shadow: var(--card-shadow);
             display: inline-block;
-            margin: 20px auto;
+            margin: 25px auto;
             display: flex;
             justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
         
         .counter-box {
             background: var(--primary);
             color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            margin: 0 8px;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 700;
         }
         
         .activities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 30px;
         }
         
         .activity-card {
@@ -261,13 +302,13 @@
         
         .activity-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
         
         .card-header {
-            background: linear-gradient(135deg, var(--accent), #4a8c9e);
+            background: linear-gradient(135deg, var(--accent), #2a9d8f);
             color: white;
-            padding: 20px;
+            padding: 25px 20px;
             position: relative;
         }
         
@@ -284,9 +325,9 @@
         }
         
         .card-title {
-            font-size: 1.4rem;
-            margin-bottom: 8px;
-            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
         
@@ -294,68 +335,70 @@
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
-            margin-top: 10px;
-            font-size: 0.85rem;
+            margin-top: 15px;
+            font-size: 0.9rem;
         }
         
         .meta-item {
             background: rgba(255, 255, 255, 0.2);
-            padding: 4px 10px;
+            padding: 6px 14px;
             border-radius: 20px;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 8px;
             backdrop-filter: blur(5px);
         }
         
         .card-body {
-            padding: 30px 20px 20px;
+            padding: 35px 25px 25px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
         
         .card-description {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             flex-grow: 1;
             color: #444;
             line-height: 1.7;
+            font-size: 1.05rem;
         }
         
         .card-details {
             background: #f9fbfd;
-            padding: 15px;
-            border-radius: 12px;
-            margin-top: 10px;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
             border-left: 4px solid var(--accent);
         }
         
         .detail-item {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             display: flex;
         }
         
         .detail-label {
-            font-weight: 600;
-            min-width: 100px;
+            font-weight: 700;
+            min-width: 120px;
             color: var(--primary);
         }
         
         .context-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
+            gap: 10px;
+            margin-top: 20px;
         }
         
         .tag {
             background: #e0eaf5;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
+            font-weight: 500;
         }
         
         .tag.normal { background: #e0f5e9; color: #2e7d32; }
@@ -370,28 +413,32 @@
         
         .footer {
             text-align: center;
-            padding: 30px 0;
+            padding: 40px 0 20px;
             margin-top: 40px;
             color: #666;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            border-top: 1px solid #eee;
         }
         
         .loading {
             text-align: center;
-            padding: 50px;
-            font-size: 1.2rem;
+            padding: 60px;
+            font-size: 1.3rem;
             color: var(--primary);
             grid-column: 1 / -1;
+            background: white;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
         }
         
         .loading-spinner {
-            border: 4px solid rgba(91, 125, 177, 0.2);
-            border-top: 4px solid var(--primary);
+            border: 5px solid rgba(106, 90, 205, 0.2);
+            border-top: 5px solid var(--primary);
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
+            margin: 0 auto 25px;
         }
         
         @keyframes spin {
@@ -402,12 +449,45 @@
         .no-results {
             grid-column: 1 / -1;
             text-align: center;
-            padding: 50px;
-            font-size: 1.2rem;
+            padding: 60px;
+            font-size: 1.3rem;
             color: #777;
             background: white;
             border-radius: 20px;
             box-shadow: var(--card-shadow);
+        }
+        
+        .app-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
         }
         
         @media (max-width: 768px) {
@@ -416,7 +496,7 @@
             }
             
             h1 {
-                font-size: 2.2rem;
+                font-size: 2.4rem;
             }
             
             .activities-grid {
@@ -430,7 +510,18 @@
             
             .age-btn {
                 width: 100%;
-                max-width: 250px;
+                max-width: 300px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
             }
         }
     </style>
@@ -440,37 +531,66 @@
         <div class="container">
             <div class="logo">
                 <div class="logo-icon">
-                    <i class="fas fa-child"></i>
+                    <i class="fas fa-play-circle"></i>
                 </div>
-                <h1>Kid Activity Finder</h1>
+                <h1><span class="app-name">Play Now</span> Kid Activities</h1>
             </div>
-            <p class="subtitle">Never run out of fun ideas for your little ones! Our app instantly generates engaging activities based on your current situation.</p>
-            <button class="cta-button">
-                <i class="fas fa-download"></i> Get the App
-            </button>
+            <p class="subtitle">Instant activity ideas for busy parents - because kids don't wait and neither should you!</p>
+            
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="cta-button apple" target="_blank">
+                    <i class="fab fa-apple"></i> Download on App Store
+                </a>
+                <a href="#" class="cta-button" id="play-store-btn" target="_blank">
+                    <i class="fab fa-google-play"></i> Coming Soon on Play Store
+                </a>
+            </div>
+            
+            <div class="age-selector">
+                <button class="age-btn active" data-age="0-2">
+                    <i class="fas fa-baby"></i> 0-2 Years
+                </button>
+                <button class="age-btn" data-age="3-5">
+                    <i class="fas fa-child"></i> 3-5 Years
+                </button>
+                <button class="age-btn" data-age="6-11">
+                    <i class="fas fa-user"></i> 6-11 Years
+                </button>
+            </div>
         </div>
     </header>
     
     <div class="container">
-        <div class="age-selector">
-            <button class="age-btn active" data-age="0-2">
-                <i class="fas fa-baby"></i> 0-2 Years
-            </button>
-            <button class="age-btn" data-age="3-5">
-                <i class="fas fa-child"></i> 3-5 Years
-            </button>
-            <button class="age-btn" data-age="6-11">
-                <i class="fas fa-user"></i> 6-11 Years
-            </button>
-        </div>
+        <section class="app-features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="feature-title">Instant Ideas</h3>
+                <p>Generate fun activities in seconds when you don't have time to plan</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-filter"></i>
+                </div>
+                <h3 class="feature-title">Smart Filtering</h3>
+                <p>Find perfect activities by situation, location, duration and involvement</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3 class="feature-title">Age Appropriate</h3>
+                <p>Activities tailored for 0-2, 3-5 and 6-11 year olds</p>
+            </div>
+        </section>
         
         <section class="filters-section">
-            <h2 style="text-align: center; margin-bottom: 25px; color: var(--primary);">
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary); font-size: 2rem;">
                 <i class="fas fa-filter"></i> Find the Perfect Activity
             </h2>
-            <p style="text-align: center; margin-bottom: 25px; color: #666;">
-                Filter activities by your current situation and needs:
-            </p>
             
             <div class="filters-grid">
                 <div class="filter-group">
@@ -542,6 +662,7 @@
         </section>
         
         <div class="activity-counter">
+            <i class="fas fa-list"></i>
             Showing <span class="counter-box" id="activity-count">0</span> activities for 
             <span class="counter-box" id="age-group">0-2 years</span>
         </div>
@@ -549,21 +670,27 @@
         <div class="activities-grid" id="activities-container">
             <div class="loading">
                 <div class="loading-spinner"></div>
-                Loading activities...
+                Loading fun activities for your little ones...
             </div>
         </div>
     </div>
     
     <footer class="footer">
         <div class="container">
-            <p>Kid Activity Finder App | Perfect for busy parents | Activities for ages 0-2, 3-5, and 6-11</p>
-            <p style="margin-top: 10px;">© 2023 Kid Activity Finder. All rights reserved.</p>
+            <p>Play Now App | Instant Kid Activities for Busy Parents</p>
+            <p style="margin-top: 15px;">Activities for ages 0-2, 3-5, and 6-11</p>
+            <p style="margin-top: 20px;">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" style="color: var(--primary); text-decoration: none; font-weight: 600;" target="_blank">
+                    <i class="fab fa-apple"></i> Download on the App Store
+                </a>
+            </p>
+            <p style="margin-top: 30px; color: #999;">© 2023 Play Now App. All rights reserved.</p>
         </div>
     </footer>
     
     <script>
-        // Base URL for JSON files (replace with your actual GitHub raw URL)
-        const BASE_JSON_URL = 'https://raw.githubusercontent.com/yourusername/yourrepo/main/assets/json/';
+        // Corrected Base URL for JSON files with new repo name "PlayNow"
+        const BASE_JSON_URL = 'https://izumiberat.github.io/PlayNow/assets/json/';
         
         // Current state
         let currentAgeGroup = '0-2';
@@ -579,6 +706,7 @@
         const activitiesContainer = document.getElementById('activities-container');
         const activityCountElement = document.getElementById('activity-count');
         const ageGroupElement = document.getElementById('age-group');
+        const playStoreBtn = document.getElementById('play-store-btn');
         
         // Initialize the page
         function init() {
@@ -616,6 +744,12 @@
                 });
             });
             
+            // Disable Play Store button for now
+            playStoreBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert("Play Now is coming soon to the Google Play Store!");
+            });
+            
             // Load initial activities
             loadActivities();
         }
@@ -626,7 +760,7 @@
             activitiesContainer.innerHTML = `
                 <div class="loading">
                     <div class="loading-spinner"></div>
-                    Loading activities for ${currentAgeGroup} years...
+                    Loading ${currentAgeGroup} activities...
                 </div>
             `;
             
@@ -649,7 +783,7 @@
                     console.error('Error loading activities:', error);
                     activitiesContainer.innerHTML = `
                         <div class="no-results">
-                            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: #e55934; margin-bottom: 20px;"></i>
+                            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--danger); margin-bottom: 20px;"></i>
                             <h3>Couldn't Load Activities</h3>
                             <p>Please check your internet connection or try again later.</p>
                             <p style="margin-top: 15px; font-size: 0.9rem; color: #999;">Error: ${error.message}</p>
@@ -690,7 +824,7 @@
             if (activities.length === 0) {
                 activitiesContainer.innerHTML = `
                     <div class="no-results">
-                        <i class="fas fa-search" style="font-size: 3rem; color: #5b7db1; margin-bottom: 20px;"></i>
+                        <i class="fas fa-search" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px;"></i>
                         <h3>No Activities Match Your Filters</h3>
                         <p>Try adjusting your filter criteria to see more activities.</p>
                     </div>
@@ -709,9 +843,11 @@
                 
                 // Create context tags
                 let contextTags = '';
-                activity.contexts.forEach(context => {
-                    contextTags += `<span class="tag ${context}">${context}</span>`;
-                });
+                if (activity.contexts) {
+                    activity.contexts.forEach(context => {
+                        contextTags += `<span class="tag ${context}">${context}</span>`;
+                    });
+                }
                 
                 activitiesHTML += `
                     <div class="activity-card">
@@ -734,7 +870,7 @@
                                 </div>
                                 <div class="detail-item">
                                     <span class="detail-label">Preparation:</span>
-                                    <span>${activity.prep}</span>
+                                    <span>${activity.prep || 'No preparation needed'}</span>
                                 </div>
                                 <div class="detail-item">
                                     <span class="detail-label">Materials:</span>
