@@ -6,19 +6,144 @@
     <title>Submit Activity Idea - Play Now</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Reuse main styles with some additions */
-        :root, body, .container, header, .header-container, 
-        .logo, .logo-icon, .app-name, .download-btn, .footer {
-            /* Same as main page styles */
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #6d9dc5;
+            --accent: #88c0d0;
+            --light: #f9f9f9;
+            --dark: #2b2d42;
+            --text: #333;
+            --border: #e0e0e0;
+            --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --submit-color: #e67e22;
         }
         
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 30px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Optimized Header */
+        header {
+            background: white;
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            gap: 15px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+        
+        .logo-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .app-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 150px;
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+            flex-wrap: nowrap;
+        }
+        
+        .download-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            transition: background 0.2s ease;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        
+        .submit-btn {
+            background: var(--submit-color);
+        }
+        
+        .download-btn:hover {
+            background: #3a5a80;
+        }
+        
+        .submit-btn:hover {
+            background: #d35400;
+        }
+        
+        .download-btn i {
+            font-size: 1.1rem;
+        }
+        
+        .btn-text {
+            display: none;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        /* Submission Page */
         .submission-container {
             max-width: 800px;
             margin: 30px auto;
             padding: 30px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--card-shadow);
         }
         
         .form-header {
@@ -27,7 +152,7 @@
         }
         
         .form-header h1 {
-            color: #4a6fa5;
+            color: var(--primary);
             margin-bottom: 10px;
         }
         
@@ -39,13 +164,13 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
-            color: #2b2d42;
+            color: var(--dark);
         }
         
         input, textarea, select {
             width: 100%;
             padding: 12px;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--border);
             border-radius: 4px;
             font-size: 1rem;
         }
@@ -66,10 +191,20 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            width: 100%;
         }
         
-        .submit-btn {
-            background: #4a6fa5;
+        .checkbox-item input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+        
+        .checkbox-item label {
+            margin-bottom: 0;
+        }
+        
+        .submit-btn-large {
+            background: var(--submit-color);
             color: white;
             border: none;
             padding: 12px 25px;
@@ -80,10 +215,11 @@
             display: block;
             width: 100%;
             transition: background 0.3s ease;
+            margin-top: 20px;
         }
         
-        .submit-btn:hover {
-            background: #3a5a80;
+        .submit-btn-large:hover {
+            background: #d35400;
         }
         
         .note {
@@ -92,21 +228,113 @@
             margin-top: 5px;
             font-style: italic;
         }
+        
+        .form-section {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .form-section-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        /* Media Queries */
+        @media (min-width: 480px) {
+            .btn-text {
+                display: inline;
+            }
+            
+            .download-btn {
+                padding: 8px 15px;
+            }
+            
+            .app-name {
+                max-width: 200px;
+            }
+            
+            .checkbox-item {
+                width: auto;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .header-container {
+                padding: 0 20px;
+            }
+            
+            .app-name {
+                font-size: 1.4rem;
+            }
+            
+            .download-btn {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+            }
+            
+            .age-filter-group {
+                grid-column: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 0 10px;
+            }
+            
+            .logo {
+                flex: 1;
+                min-width: 0;
+            }
+            
+            .header-actions {
+                width: 100%;
+                justify-content: center;
+                margin-top: 8px;
+                gap: 5px;
+            }
+            
+            .download-btn {
+                padding: 8px 10px;
+            }
+            
+            .app-name {
+                max-width: 120px;
+            }
+        }
+        
+        @media (max-width: 350px) {
+            .download-btn {
+                font-size: 0.75rem;
+                padding: 6px 8px;
+            }
+            
+            .app-name {
+                max-width: 100px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <div class="logo-icon">
                     <i class="fas fa-play-circle"></i>
                 </div>
                 <div class="app-name">Play Now</div>
-            </div>
+            </a>
             <div class="header-actions">
-                <a href="index.html" class="download-btn">
-                    <i class="fas fa-home"></i>
-                    <span class="btn-text">Home</span>
+                <a href="submit-activity.html" class="download-btn submit-btn">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="btn-text">Submit Idea</span>
                 </a>
                 <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
                     <i class="fab fa-apple"></i>
@@ -128,124 +356,155 @@
             </div>
             
             <form id="activity-form">
-                <div class="form-group">
-                    <label for="activity-title">Activity Title *</label>
-                    <input type="text" id="activity-title" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="activity-description">Description *</label>
-                    <textarea id="activity-description" required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="activity-benefits">Key Benefits *</label>
-                    <input type="text" id="activity-benefits" required>
-                    <p class="note">Example: "Develops fine motor skills, encourages creativity"</p>
-                </div>
-                
-                <div class="form-group">
-                    <label for="prep">Preparation Needed</label>
-                    <input type="text" id="prep">
-                    <p class="note">Example: "Gather paper and crayons"</p>
-                </div>
-                
-                <div class="form-group">
-                    <label for="materials">Materials Needed *</label>
-                    <input type="text" id="materials" required>
-                    <p class="note">Separate materials with commas (e.g., paper, crayons, stickers)</p>
-                </div>
-                
-                <div class="form-group">
-                    <label>Contexts *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="normal"> Normal
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="rainy"> Rainy Day
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="coffee"> Coffee Time
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="travel"> Travel
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="context" value="tired"> When Tired
-                        </label>
+                <div class="form-section">
+                    <div class="form-section-title">Activity Details</div>
+                    
+                    <div class="form-group">
+                        <label for="activity-title">Activity Title *</label>
+                        <input type="text" id="activity-title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="activity-description">Description *</label>
+                        <textarea id="activity-description" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="activity-benefits">Key Benefits *</label>
+                        <input type="text" id="activity-benefits" required>
+                        <p class="note">Example: "Develops fine motor skills, encourages creativity"</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="prep">Preparation Needed</label>
+                        <input type="text" id="prep">
+                        <p class="note">Example: "Gather paper and crayons"</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="materials">Materials Needed *</label>
+                        <input type="text" id="materials" required>
+                        <p class="note">Separate materials with commas (e.g., paper, crayons, stickers)</p>
                     </div>
                 </div>
                 
-                <div class="form-group">
-                    <label>Location *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="location" value="indoor" required> Indoor
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="location" value="outdoor"> Outdoor
-                        </label>
+                <div class="form-section">
+                    <div class="form-section-title">Activity Filters</div>
+                    
+                    <div class="form-group">
+                        <label>Contexts *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" name="context" id="context-normal" value="normal">
+                                <label for="context-normal">Normal</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" name="context" id="context-rainy" value="rainy">
+                                <label for="context-rainy">Rainy Day</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" name="context" id="context-coffee" value="coffee">
+                                <label for="context-coffee">Coffee Time</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" name="context" id="context-travel" value="travel">
+                                <label for="context-travel">Travel</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" name="context" id="context-tired" value="tired">
+                                <label for="context-tired">When Tired</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Location *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" name="location" id="location-indoor" value="indoor" required>
+                                <label for="location-indoor">Indoor</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" name="location" id="location-outdoor" value="outdoor">
+                                <label for="location-outdoor">Outdoor</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Duration *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" name="duration" id="duration-quick" value="quick" required>
+                                <label for="duration-quick">Quick (5-15 min)</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" name="duration" id="duration-medium" value="medium">
+                                <label for="duration-medium">Medium (15-30 min)</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Parent Involvement *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" name="involvement" id="involvement-minimal" value="minimal" required>
+                                <label for="involvement-minimal">Minimal</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" name="involvement" id="involvement-some" value="some">
+                                <label for="involvement-some">Some</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" name="involvement" id="involvement-active" value="active">
+                                <label for="involvement-active">Active</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Age Group *</label>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item">
+                                <input type="radio" name="age" id="age-0-2" value="0-2" required>
+                                <label for="age-0-2">0-2 Years</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" name="age" id="age-3-5" value="3-5">
+                                <label for="age-3-5">3-5 Years</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="radio" name="age" id="age-6-11" value="6-11">
+                                <label for="age-6-11">6-11 Years</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="form-group">
-                    <label>Duration *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="duration" value="quick" required> Quick (5-15 min)
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="duration" value="medium"> Medium (15-30 min)
-                        </label>
+                <div class="form-section">
+                    <div class="form-section-title">Your Information</div>
+                    
+                    <div class="form-group">
+                        <label for="submitter-name">Your Name *</label>
+                        <input type="text" id="submitter-name" required>
+                        <p class="note">How you want to be credited</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="submitter-email">Your Email *</label>
+                        <input type="email" id="submitter-email" required>
+                        <p class="note">We'll contact you if we have questions about your submission</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="submitter-notes">Additional Notes</label>
+                        <textarea id="submitter-notes"></textarea>
+                        <p class="note">Any special instructions or context for your activity</p>
                     </div>
                 </div>
                 
-                <div class="form-group">
-                    <label>Parent Involvement *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="involvement" value="minimal" required> Minimal
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="involvement" value="some"> Some
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="involvement" value="active"> Active
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Age Group *</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-item">
-                            <input type="radio" name="age" value="0-2" required> 0-2 Years
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="age" value="3-5"> 3-5 Years
-                        </label>
-                        <label class="checkbox-item">
-                            <input type="radio" name="age" value="6-11"> 6-11 Years
-                        </label>
-                    </div>
-                </div>
-                
-                <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
-                
-                <div class="form-group">
-                    <label for="submitter-name">Your Name *</label>
-                    <input type="text" id="submitter-name" required>
-                    <p class="note">How you want to be credited</p>
-                </div>
-                
-                <div class="form-group">
-                    <label for="submitter-email">Your Email *</label>
-                    <input type="email" id="submitter-email" required>
-                    <p class="note">We'll contact you if we have questions about your submission</p>
-                </div>
-                
-                <button type="submit" class="submit-btn">Submit Activity Idea</button>
+                <button type="submit" class="submit-btn-large">Submit Activity Idea</button>
             </form>
         </div>
     </div>
@@ -254,9 +513,9 @@
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
             <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
-                <a href="index.html" class="download-btn">
-                    <i class="fas fa-home"></i>
-                    <span class="btn-text">Home</span>
+                <a href="submit-activity.html" class="download-btn submit-btn">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="btn-text">Submit Idea</span>
                 </a>
                 <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
                     <i class="fab fa-apple"></i>
@@ -290,7 +549,8 @@
                 age: document.querySelector('input[name="age"]:checked').value,
                 submitter: {
                     name: document.getElementById('submitter-name').value,
-                    email: document.getElementById('submitter-email').value
+                    email: document.getElementById('submitter-email').value,
+                    notes: document.getElementById('submitter-notes').value
                 }
             };
             
