@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Activity Idea - Play Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reuse main styles with some additions */
+        :root, body, .container, header, .header-container, 
+        .logo, .logo-icon, .app-name, .download-btn, .footer {
+            /* Same as main page styles */
+        }
+        
+        .submission-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-header h1 {
+            color: #4a6fa5;
+            margin-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2b2d42;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .submit-btn {
+            background: #4a6fa5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: #3a5a80;
+        }
+        
+        .note {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <div class="app-name">Play Now</div>
+            </div>
+            <div class="header-actions">
+                <a href="index.html" class="download-btn">
+                    <i class="fas fa-home"></i>
+                    <span class="btn-text">Home</span>
+                </a>
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
+                    <i class="fab fa-apple"></i>
+                    <span class="btn-text">App Store</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="download-btn" target="_blank">
+                    <i class="fab fa-google-play"></i>
+                    <span class="btn-text">Google Play</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="submission-container">
+            <div class="form-header">
+                <h1>Submit Activity Idea</h1>
+                <p>Share your creative activity ideas with other parents!</p>
+            </div>
+            
+            <form id="activity-form">
+                <div class="form-group">
+                    <label for="activity-title">Activity Title *</label>
+                    <input type="text" id="activity-title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="activity-description">Description *</label>
+                    <textarea id="activity-description" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="activity-benefits">Key Benefits *</label>
+                    <input type="text" id="activity-benefits" required>
+                    <p class="note">Example: "Develops fine motor skills, encourages creativity"</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prep">Preparation Needed</label>
+                    <input type="text" id="prep">
+                    <p class="note">Example: "Gather paper and crayons"</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="materials">Materials Needed *</label>
+                    <input type="text" id="materials" required>
+                    <p class="note">Separate materials with commas (e.g., paper, crayons, stickers)</p>
+                </div>
+                
+                <div class="form-group">
+                    <label>Contexts *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="context" value="normal"> Normal
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="context" value="rainy"> Rainy Day
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="context" value="coffee"> Coffee Time
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="context" value="travel"> Travel
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="context" value="tired"> When Tired
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Location *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="radio" name="location" value="indoor" required> Indoor
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="radio" name="location" value="outdoor"> Outdoor
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Duration *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="radio" name="duration" value="quick" required> Quick (5-15 min)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="radio" name="duration" value="medium"> Medium (15-30 min)
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Parent Involvement *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="radio" name="involvement" value="minimal" required> Minimal
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="radio" name="involvement" value="some"> Some
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="radio" name="involvement" value="active"> Active
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Age Group *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="radio" name="age" value="0-2" required> 0-2 Years
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="radio" name="age" value="3-5"> 3-5 Years
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="radio" name="age" value="6-11"> 6-11 Years
+                        </label>
+                    </div>
+                </div>
+                
+                <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+                
+                <div class="form-group">
+                    <label for="submitter-name">Your Name *</label>
+                    <input type="text" id="submitter-name" required>
+                    <p class="note">How you want to be credited</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="submitter-email">Your Email *</label>
+                    <input type="email" id="submitter-email" required>
+                    <p class="note">We'll contact you if we have questions about your submission</p>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Activity Idea</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>Play Now App | Instant Kid Activities for Busy Parents</p>
+            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+                <a href="index.html" class="download-btn">
+                    <i class="fas fa-home"></i>
+                    <span class="btn-text">Home</span>
+                </a>
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
+                    <i class="fab fa-apple"></i>
+                    <span class="btn-text">App Store</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="download-btn" target="_blank">
+                    <i class="fab fa-google-play"></i>
+                    <span class="btn-text">Google Play</span>
+                </a>
+            </div>
+            <p style="margin-top: 20px; color: #777;">© 2025 Play Now App. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('activity-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const activityData = {
+                title: document.getElementById('activity-title').value,
+                description: document.getElementById('activity-description').value,
+                benefits: document.getElementById('activity-benefits').value,
+                prep: document.getElementById('prep').value || 'None needed',
+                materials: document.getElementById('materials').value.split(',').map(m => m.trim()),
+                contexts: Array.from(document.querySelectorAll('input[name="context"]:checked'))
+                    .map(cb => cb.value),
+                location: document.querySelector('input[name="location"]:checked').value,
+                duration: document.querySelector('input[name="duration"]:checked').value,
+                involvement: document.querySelector('input[name="involvement"]:checked').value,
+                age: document.querySelector('input[name="age"]:checked').value,
+                submitter: {
+                    name: document.getElementById('submitter-name').value,
+                    email: document.getElementById('submitter-email').value
+                }
+            };
+            
+            // In a real implementation, you would send this to a server
+            console.log('Activity Submission:', activityData);
+            
+            // Show confirmation message
+            alert('Thank you for your submission! Our team will review your activity idea. If approved, it will appear in the app with credit to you.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
