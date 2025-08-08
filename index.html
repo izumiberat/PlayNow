@@ -38,9 +38,10 @@
             padding: 0 20px;
         }
         
+        /* Optimized Header */
         header {
             background: white;
-            padding: 20px 0;
+            padding: 12px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 0;
@@ -54,94 +55,85 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            gap: 15px;
         }
         
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
+            min-width: 0;
         }
         
         .logo-icon {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: var(--primary);
+            flex-shrink: 0;
         }
         
         .app-name {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 600;
             color: var(--dark);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
-        .cta-button {
+        .download-buttons {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+        
+        .download-btn {
             background: var(--primary);
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 8px 12px;
             border-radius: 4px;
             cursor: pointer;
             font-weight: 500;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            font-size: 0.95rem;
+            gap: 6px;
+            font-size: 0.85rem;
             transition: background 0.2s ease;
+            flex-shrink: 0;
         }
         
-        .cta-button:hover {
+        .download-btn:hover {
             background: #3a5a80;
+        }
+        
+        .download-btn i {
+            font-size: 1.1rem;
+        }
+        
+        .download-btn .btn-text {
+            display: none;
         }
         
         .hero {
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 20px 20px;
             max-width: 800px;
             margin: 0 auto;
         }
         
         .hero h1 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             margin-bottom: 15px;
             color: var(--dark);
             font-weight: 600;
         }
         
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #555;
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-        
-        .age-selector {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0 30px;
-            flex-wrap: wrap;
-        }
-        
-        .age-btn {
-            background: white;
-            border: 1px solid var(--border);
-            color: var(--text);
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            font-size: 1rem;
-        }
-        
-        .age-btn:hover {
-            border-color: var(--primary);
-        }
-        
-        .age-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
         
         .filters-section {
@@ -200,11 +192,14 @@
         .filter-btn {
             background: #f5f7fa;
             border: 1px solid var(--border);
-            padding: 8px 15px;
+            padding: 8px 12px;
             border-radius: 4px;
             cursor: pointer;
             font-size: 0.9rem;
             transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
         
         .filter-btn:hover {
@@ -215,6 +210,20 @@
             background: var(--primary);
             color: white;
             border-color: var(--primary);
+        }
+        
+        .filter-btn i {
+            font-size: 0.9rem;
+        }
+        
+        /* Age filter integrated with other filters */
+        .age-filter-group {
+            grid-column: 1 / -1;
+            margin-bottom: 10px;
+        }
+        
+        .age-filter-group .filter-options {
+            gap: 10px;
         }
         
         .activity-counter {
@@ -252,6 +261,11 @@
             flex-direction: column;
             height: 100%;
             border: 1px solid var(--border);
+            transition: transform 0.2s ease;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-3px);
         }
         
         .card-header {
@@ -379,7 +393,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
-            margin: 40px 0;
+            margin: 30px 0;
         }
         
         .feature-card {
@@ -403,31 +417,74 @@
             color: var(--dark);
         }
         
-        @media (max-width: 768px) {
+        /* Media Queries */
+        @media (min-width: 480px) {
+            .download-btn .btn-text {
+                display: inline;
+            }
+            
+            .download-btn {
+                padding: 8px 15px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .header-container {
+                padding: 0 20px;
+            }
+            
+            .app-name {
+                font-size: 1.4rem;
+            }
+            
+            .download-btn {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .age-filter-group {
+                grid-column: auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 0 10px;
+            }
+            
+            .logo {
+                flex: 1;
+                min-width: 0;
+            }
+            
+            .download-buttons {
+                width: 100%;
+                justify-content: center;
+                margin-top: 8px;
+            }
+            
             .filters-grid {
                 grid-template-columns: 1fr;
             }
             
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .activities-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .header-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .app-features {
-                grid-template-columns: 1fr;
+            .hero {
+                padding: 20px 15px;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Optimized Header -->
     <header>
         <div class="header-container">
             <div class="logo">
@@ -436,9 +493,16 @@
                 </div>
                 <div class="app-name">Play Now</div>
             </div>
-            <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="cta-button" target="_blank">
-                <i class="fab fa-apple"></i> Download App
-            </a>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
+                    <i class="fab fa-apple"></i>
+                    <span class="btn-text">App Store</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="download-btn" target="_blank">
+                    <i class="fab fa-google-play"></i>
+                    <span class="btn-text">Google Play</span>
+                </a>
+            </div>
         </div>
     </header>
     
@@ -446,18 +510,6 @@
         <section class="hero">
             <h1>Quick Kid Activities for Busy Parents</h1>
             <p>Find the perfect activity in seconds. Filter by age, situation, and your availability to keep your child engaged.</p>
-            
-            <div class="age-selector">
-                <button class="age-btn active" data-age="0-2">
-                    <i class="fas fa-baby"></i> 0-2 Years
-                </button>
-                <button class="age-btn" data-age="3-5">
-                    <i class="fas fa-child"></i> 3-5 Years
-                </button>
-                <button class="age-btn" data-age="6-11">
-                    <i class="fas fa-user"></i> 6-11 Years
-                </button>
-            </div>
         </section>
         
         <section class="app-features">
@@ -495,6 +547,22 @@
             </div>
             
             <div class="filters-grid">
+                <!-- Integrated Age Filter -->
+                <div class="filter-group age-filter-group">
+                    <h3>Age Group</h3>
+                    <div class="filter-options" id="age-filters">
+                        <button class="filter-btn active" data-filter="age" data-value="0-2">
+                            <i class="fas fa-baby"></i> 0-2 Years
+                        </button>
+                        <button class="filter-btn" data-filter="age" data-value="3-5">
+                            <i class="fas fa-child"></i> 3-5 Years
+                        </button>
+                        <button class="filter-btn" data-filter="age" data-value="6-11">
+                            <i class="fas fa-user"></i> 6-11 Years
+                        </button>
+                    </div>
+                </div>
+                
                 <div class="filter-group">
                     <h3>Situation</h3>
                     <div class="filter-options" id="context-filters">
@@ -581,12 +649,17 @@
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
             <p style="margin-top: 10px;">Activities for ages 0-2, 3-5, and 6-11</p>
-            <p style="margin-top: 20px;">
-                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" style="color: var(--primary); text-decoration: none; font-weight: 500;" target="_blank">
-                    <i class="fab fa-apple"></i> Download on the App Store
+            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
+                    <i class="fab fa-apple"></i>
+                    <span class="btn-text">App Store</span>
                 </a>
-            </p>
-            <p style="margin-top: 20px; color: #777;">© 2023 Play Now App. All rights reserved.</p>
+                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="download-btn" target="_blank">
+                    <i class="fab fa-google-play"></i>
+                    <span class="btn-text">Google Play</span>
+                </a>
+            </div>
+            <p style="margin-top: 20px; color: #777;">© 2025 Play Now App. All rights reserved.</p>
         </div>
     </footer>
     
@@ -612,21 +685,7 @@
         
         // Initialize the page
         function init() {
-            // Set up event listeners for age group buttons
-            document.querySelectorAll('.age-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // Update active button
-                    document.querySelectorAll('.age-btn').forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // Load new age group
-                    currentAgeGroup = this.dataset.age;
-                    ageGroupElement.textContent = `${currentAgeGroup} years`;
-                    loadActivities();
-                });
-            });
-            
-            // Set up event listeners for filter buttons
+            // Set up event listeners for all filter buttons (including age)
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const filterType = this.dataset.filter;
@@ -641,8 +700,15 @@
                     // Update current filters
                     currentFilters[filterType] = filterValue;
                     
-                    // Apply filters
-                    filterAndRenderActivities();
+                    // If it's an age filter, load new activities
+                    if (filterType === 'age') {
+                        currentAgeGroup = filterValue;
+                        ageGroupElement.textContent = `${currentAgeGroup} years`;
+                        loadActivities();
+                    } else {
+                        // Apply filters to existing activities
+                        filterAndRenderActivities();
+                    }
                 });
             });
             
@@ -663,8 +729,8 @@
                 involvement: 'all'
             };
             
-            // Update UI
-            document.querySelectorAll('.filter-btn').forEach(btn => {
+            // Reset UI for all filters except age
+            document.querySelectorAll('.filter-btn:not([data-filter="age"])').forEach(btn => {
                 btn.classList.remove('active');
                 if (btn.dataset.value === 'all') {
                     btn.classList.add('active');
