@@ -209,13 +209,13 @@
         
         .checkbox-item, .radio-item {
             display: flex;
-            align-items: flex-start;
+            align-items: center; /* Changed from flex-start to center for better alignment */
             gap: 10px;
         }
         
         .checkbox-item input, .radio-item input {
             width: auto;
-            margin-top: 4px;
+            /* Removed margin-top: 4px to fix iPhone alignment */
         }
         
         .checkbox-item label, .radio-item label {
@@ -377,7 +377,7 @@
                 <p>Share your creative activity ideas with other parents!</p>
             </div>
             
-            <form id="activity-form">
+            <form id="activity-form" action="https://formspree.io/f/xvgaqgwv" method="POST">
                 <div class="form-section">
                     <div class="form-section-title">
                         <i class="fas fa-lightbulb"></i>
@@ -386,29 +386,29 @@
                     
                     <div class="form-group">
                         <label for="activity-title">Activity Title *</label>
-                        <input type="text" id="activity-title" required placeholder="Fun activity name">
+                        <input type="text" id="activity-title" name="title" required placeholder="Fun activity name">
                     </div>
                     
                     <div class="form-group">
                         <label for="activity-description">Description *</label>
-                        <textarea id="activity-description" required placeholder="Describe the activity in detail..."></textarea>
+                        <textarea id="activity-description" name="description" required placeholder="Describe the activity in detail..."></textarea>
                     </div>
                     
                     <div class="form-group">
                         <label for="activity-benefits">Key Benefits *</label>
-                        <input type="text" id="activity-benefits" required placeholder="What skills does it develop?">
+                        <input type="text" id="activity-benefits" name="benefits" required placeholder="What skills does it develop?">
                         <p class="note">Example: "Develops fine motor skills, encourages creativity"</p>
                     </div>
                     
                     <div class="form-group">
                         <label for="prep">Preparation Needed</label>
-                        <input type="text" id="prep" placeholder="What needs to be prepared?">
+                        <input type="text" id="prep" name="preparation" placeholder="What needs to be prepared?">
                         <p class="note">Example: "Gather paper and crayons"</p>
                     </div>
                     
                     <div class="form-group">
-                        <label for="materials">Materials Needed *</label>
-                        <input type="text" id="materials" required placeholder="List materials separated by commas">
+                        <label for="materials">Materials Needed</label>
+                        <input type="text" id="materials" name="materials" placeholder="List materials separated by commas">
                         <p class="note">Example: paper, crayons, stickers, tape</p>
                     </div>
                 </div>
@@ -518,17 +518,17 @@
                     
                     <div class="form-group">
                         <label for="submitter-name">Your Name *</label>
-                        <input type="text" id="submitter-name" required placeholder="How you want to be credited">
+                        <input type="text" id="submitter-name" name="name" required placeholder="How you want to be credited">
                     </div>
                     
                     <div class="form-group">
                         <label for="submitter-email">Your Email *</label>
-                        <input type="email" id="submitter-email" required placeholder="We'll contact you if needed">
+                        <input type="email" id="submitter-email" name="email" required placeholder="We'll contact you if needed">
                     </div>
                     
                     <div class="form-group">
                         <label for="submitter-notes">Additional Notes</label>
-                        <textarea id="submitter-notes" placeholder="Any special instructions or context"></textarea>
+                        <textarea id="submitter-notes" name="notes" placeholder="Any special instructions or context"></textarea>
                     </div>
                 </div>
                 
@@ -565,34 +565,43 @@
         document.getElementById('activity-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Collect form data
-            const activityData = {
-                title: document.getElementById('activity-title').value,
-                description: document.getElementById('activity-description').value,
-                benefits: document.getElementById('activity-benefits').value,
-                prep: document.getElementById('prep').value || 'None needed',
-                materials: document.getElementById('materials').value.split(',').map(m => m.trim()),
-                contexts: Array.from(document.querySelectorAll('input[name="context"]:checked'))
-                    .map(cb => cb.value),
-                location: document.querySelector('input[name="location"]:checked').value,
-                duration: document.querySelector('input[name="duration"]:checked').value,
-                involvement: document.querySelector('input[name="involvement"]:checked').value,
-                age: document.querySelector('input[name="age"]:checked').value,
-                submitter: {
-                    name: document.getElementById('submitter-name').value,
-                    email: document.getElementById('submitter-email').value,
-                    notes: document.getElementById('submitter-notes').value
+            // Show loading state
+            const submitBtn = document.querySelector('.submit-btn-large');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Create form data
+            const formData = new FormData(this);
+            
+            // Submit to Formspree
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
                 }
-            };
-            
-            // In a real implementation, you would send this to a server
-            console.log('Activity Submission:', activityData);
-            
-            // Show confirmation message
-            alert('Thank you for your submission! Our team will review your activity idea. If approved, it will appear in the app with credit to you.');
-            
-            // Reset form
-            this.reset();
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Success message
+                    alert('Thank you for your submission! Our team will review your activity idea. If approved, it will appear in the app with credit to you.');
+                    this.reset();
+                } else {
+                    // Show error message
+                    alert('There was a problem with your submission. Please try again.');
+                }
+            })
+            .catch(error => {
+                // Show error message
+                alert('There was a problem with your submission. Please try again.');
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            });
         });
     </script>
 </body>
