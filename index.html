@@ -616,6 +616,21 @@
             flex-wrap: wrap;
         }
         
+        .footer .linkedin-section {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(74, 111, 165, 0.05);
+            border-radius: 8px;
+            max-width: 500px;
+        }
+        
+        .footer .linkedin-section h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
         .footer .linkedin-link {
             color: var(--primary);
             text-decoration: none;
@@ -623,13 +638,14 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            margin: 15px 0;
             transition: all 0.2s ease;
             font-size: 0.95rem;
+            justify-content: center;
         }
         
         .footer .linkedin-link:hover {
             color: #3a5a80;
+            text-decoration: underline;
         }
         
         .footer .copyright {
@@ -1035,10 +1051,13 @@
                 </a>
             </div>
             
-            <a href="https://fr.linkedin.com/in/izumi-b%C3%A9rat-a08a8425" class="linkedin-link" target="_blank">
-                <i class="fab fa-linkedin"></i>
-                Connect with the creator on LinkedIn
-            </a>
+            <div class="linkedin-section">
+                <h3>About the Creator</h3>
+                <a href="https://fr.linkedin.com/in/izumi-b%C3%A9rat-a08a8425" class="linkedin-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    View Izumi Bérat's Professional Profile on LinkedIn
+                </a>
+            </div>
             
             <p class="copyright">© 2025 Play Now App. All rights reserved.</p>
         </div>
