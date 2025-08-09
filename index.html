@@ -41,7 +41,7 @@
             padding: 0 20px;
         }
         
-        /* Optimized Header - iPhone SE Compatible */
+        /* Header */
         header {
             background: white;
             padding: 8px 0;
@@ -608,7 +608,15 @@
             align-items: center;
         }
         
-        .linkedin-link {
+        .footer .app-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+        
+        .footer .linkedin-link {
             color: var(--primary);
             text-decoration: none;
             font-weight: 500;
@@ -617,15 +625,17 @@
             gap: 8px;
             margin: 15px 0;
             transition: all 0.2s ease;
+            font-size: 0.95rem;
         }
         
-        .linkedin-link:hover {
+        .footer .linkedin-link:hover {
             color: #3a5a80;
-            text-decoration: underline;
         }
         
-        .linkedin-link i {
-            font-size: 1.2rem;
+        .footer .copyright {
+            margin-top: 25px;
+            color: #777;
+            font-size: 0.9rem;
         }
         
         .loading {
@@ -1014,7 +1024,7 @@
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
             
-            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 25px; flex-wrap: wrap;">
+            <div class="app-links">
                 <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
                     <i class="fab fa-apple"></i>
                     <span class="btn-text">App Store</span>
@@ -1027,10 +1037,10 @@
             
             <a href="https://fr.linkedin.com/in/izumi-b%C3%A9rat-a08a8425" class="linkedin-link" target="_blank">
                 <i class="fab fa-linkedin"></i>
-                Check out Izumi Bérat on LinkedIn
+                Connect with the creator on LinkedIn
             </a>
             
-            <p style="margin-top: 25px; color: #777; font-size: 0.9rem;">© 2025 Play Now App. All rights reserved.</p>
+            <p class="copyright">© 2025 Play Now App. All rights reserved.</p>
         </div>
     </footer>
     
