@@ -622,6 +622,7 @@
             background: rgba(74, 111, 165, 0.05);
             border-radius: 8px;
             max-width: 500px;
+            width: 100%;
         }
         
         .footer .linkedin-section h3 {
@@ -637,10 +638,23 @@
             font-weight: 500;
             display: flex;
             align-items: center;
-            gap: 8px;
-            transition: all 0.2s ease;
-            font-size: 0.95rem;
             justify-content: center;
+            gap: 10px;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+            padding: 8px 15px;
+        }
+        
+        .footer .linkedin-link i {
+            font-size: 1.4rem; /* Larger icon size */
+            min-width: 24px; /* Ensure consistent width */
+            vertical-align: middle;
+        }
+        
+        .footer .linkedin-link span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1.4;
         }
         
         .footer .linkedin-link:hover {
@@ -741,6 +755,10 @@
             .hero p {
                 font-size: 1.1rem;
             }
+            
+            .footer .linkedin-link i {
+                font-size: 1.5rem;
+            }
         }
         
         @media (min-width: 768px) {
@@ -777,6 +795,10 @@
             .age-filter-group {
                 grid-column: auto;
             }
+            
+            .footer .linkedin-link {
+                font-size: 1.1rem;
+            }
         }
         
         @media (max-width: 600px) {
@@ -803,6 +825,17 @@
                 width: 100%;
                 max-width: none;
             }
+            
+            .footer .linkedin-link {
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                font-size: 1rem;
+            }
+            
+            .footer .linkedin-link i {
+                font-size: 1.3rem;
+            }
         }
         
         @media (max-width: 350px) {
@@ -817,6 +850,10 @@
             .app-name {
                 max-width: 70px;
                 font-size: 1rem;
+            }
+            
+            .footer .linkedin-link {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -1055,7 +1092,7 @@
                 <h3>About the Creator</h3>
                 <a href="https://fr.linkedin.com/in/izumi-b%C3%A9rat-a08a8425" class="linkedin-link" target="_blank">
                     <i class="fab fa-linkedin"></i>
-                    View Izumi Bérat's Professional Profile on LinkedIn
+                    <span>View Izumi Bérat's Professional Profile on LinkedIn</span>
                 </a>
             </div>
             
