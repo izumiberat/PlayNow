@@ -31,7 +31,7 @@
       "description": "Fill empty water bottles with colorful beads, glitter, and water. Seal tightly with glue and let your baby shake, roll, and explore the mesmerizing movement!",
       "benefits": "Stimulates visual tracking, sensory processing, and focus",
       "prep": "Collect clear plastic bottles, small colorful items (larger than toilet paper tube), and glue for sealing. Glue lid securely shut.",
-      "contexts": ["normal", "rainy", "sick"],
+      "contexts": ["normal", "rainy", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "single"
@@ -193,7 +193,7 @@
       "description": "March stuffed animals across furniture while making funny voices and sounds. Let baby touch and hold each 'parade member'!",
       "benefits": "Encourages imaginative play, language development, and fine motor skills",
       "prep": "Gather 3-5 stuffed animals with embroidered eyes (not plastic).",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -301,7 +301,7 @@
       "description": "Make exaggerated animal noises and encourage baby to mimic. Add matching animal actions like hopping or flapping!",
       "benefits": "Develops auditory discrimination, imitation skills, and vocabulary",
       "prep": "Think of 4-5 common animals and their sounds. Avoid loud sudden noises near ears.",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "medium",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -318,7 +318,7 @@
       "title": "Kissing game",
       "description": "Gently kiss baby's hands, feet, and nose while naming each. Finish with a big cuddle!",
       "benefits": "Strengthens bonding, teaches body part names, and provides sensory input",
-      "prep": "None needed. Avoid kissing when sick.",
+      "prep": "None needed. Avoid kissing when tired.",
       "contexts": ["normal", "bedtime", "busy"],
       "energy_required": "low",
       "noiseLevel": "quiet",
@@ -409,7 +409,7 @@
       "description": "Use clean socks as puppets to act out simple stories. Make different voices and encourage baby to touch the 'characters'!",
       "benefits": "Stimulates imagination, language development, and social interaction",
       "prep": "Find 2-3 clean socks and draw simple faces with non-toxic markers.",
-      "contexts": ["normal", "sick", "bedtime"],
+      "contexts": ["normal", "tired", "bedtime"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -986,7 +986,7 @@
       "materials": ["plastic bottle with secure lid", "crinkle paper", "fabric scraps"],
       "benefits": "Stimulates auditory/tactile senses and encourages independent exploration",
       "prep": "Glue lid permanently shut after filling. Ensure items inside are too large to choke on.",
-      "contexts": ["sick", "rainy", "busy"],
+      "contexts": ["tired", "rainy", "busy"],
       "energy_required": "low"
     },
     {
@@ -1091,7 +1091,7 @@
       "materials": ["small containers", "fill materials"],
       "benefits": "Develops auditory discrimination, memory, and concentration",
       "prep": "Prepare matching sound sets with containers permanently sealed.",
-      "contexts": ["rainy", "sick"],
+      "contexts": ["rainy", "tired"],
       "energy_required": "low"
     },
     {
@@ -1162,7 +1162,7 @@
       "benefits": "Develops auditory discrimination, rhythm skills, and cause-effect understanding",
       "prep": "Glue lids securely and permanently shut after filling.",
       "noiseLevel": "normal",
-      "contexts": ["rainy", "sick"],
+      "contexts": ["rainy", "tired"],
       "energy_required": "low"
     },
     {
@@ -1360,7 +1360,7 @@
       "benefits": "Calms sensory overload, develops auditory tracking, and cause-effect understanding",
       "prep": "Seal ends permanently with tape to prevent access to contents.",
       "noiseLevel": "quiet",
-      "contexts": ["bedtime", "sick"],
+      "contexts": ["bedtime", "tired"],
       "energy_required": "low"
     },
     {
@@ -1594,7 +1594,7 @@
       "benefits": "Develops tactile exploration and visual tracking without mess",
       "prep": "Double-bag and duct tape all openings permanently.",
       "noiseLevel": "quiet",
-      "contexts": ["meal", "sick"],
+      "contexts": ["meal", "tired"],
       "energy_required": "low"
     },
     {
@@ -1720,7 +1720,7 @@
       "benefits": "Develops hand-eye coordination, fine motor skills, and STEM concepts",
       "prep": "Ensure magnets are securely embedded and cannot detach.",
       "noiseLevel": "quiet",
-      "contexts": ["rainy", "sick"],
+      "contexts": ["rainy", "tired"],
       "energy_required": "low"
     },
     {
