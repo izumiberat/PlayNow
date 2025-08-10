@@ -103,7 +103,7 @@
       "description": "Dance wildly when music plays, then freeze in funny poses when it stops - the sillier the better!",
       "benefits": "Improves listening skills and body control",
       "prep": "Choose upbeat songs and clear dancing space. Remove sharp-cornered furniture. Ensure non-slip flooring.",
-      "contexts": ["normal", "rainy", "coffee"],
+      "contexts": ["normal", "rainy", "busy"],
       "energy_required": "high",
       "noiseLevel": "loud",
       "kidCount": "multiple"
