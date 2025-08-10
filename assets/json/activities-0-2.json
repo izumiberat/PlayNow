@@ -13,7 +13,7 @@
       "description": "Hide behind a blanket and pop out saying 'peek-a-boo!' Your little one will giggle with delight every time!",
       "benefits": "Develops object permanence, social skills, and cause-and-effect understanding",
       "prep": "Just grab any blanket or towel. Always remove blanket immediately after play.",
-      "contexts": ["normal", "rainy", "coffee"],
+      "contexts": ["normal", "rainy", "busy"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "single"
@@ -49,7 +49,7 @@
       "description": "Build colorful towers together and cheer when your baby knocks them down! Repeat for endless fun and learning.",
       "benefits": "Develops hand-eye coordination, spatial awareness, and cause-effect understanding",
       "prep": "Gather plastic stacking cups (common baby toy). Ensure cups are large enough to prevent choking.",
-      "contexts": ["normal", "rainy", "coffee"],
+      "contexts": ["normal", "rainy", "busy"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -157,7 +157,7 @@
       "description": "Hold baby close and sway, bounce, and spin to upbeat music. Add gentle lifts for extra giggles!",
       "benefits": "Develops rhythm awareness, balance, and bonding through movement",
       "prep": "Choose fun, age-appropriate music. Support baby's neck; avoid excessive spinning.",
-      "contexts": ["normal", "rainy", "coffee"],
+      "contexts": ["normal", "rainy", "busy"],
       "energy_required": "medium",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -229,7 +229,7 @@
       "description": "Let your baby bang pots and pans with wooden spoons. Show different rhythms and celebrate their musical creations!",
       "benefits": "Develops cause-effect understanding, rhythm exploration, and motor skills",
       "prep": "Gather unbreakable pots, pans, and spoons. Remove any pots with sharp edges.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "medium",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -265,7 +265,7 @@
       "description": "Lift baby overhead while making engine noises. Gently 'fly' them around the room with dips and turns!",
       "benefits": "Builds trust, spatial awareness, and core strength",
       "prep": "Ensure clear space overhead. Always support head/neck; avoid after feeding.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "medium",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -319,7 +319,7 @@
       "description": "Gently kiss baby's hands, feet, and nose while naming each. Finish with a big cuddle!",
       "benefits": "Strengthens bonding, teaches body part names, and provides sensory input",
       "prep": "None needed. Avoid kissing when sick.",
-      "contexts": ["normal", "bedtime", "coffee"],
+      "contexts": ["normal", "bedtime", "busy"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "single"
@@ -355,7 +355,7 @@
       "description": "Sit baby on your lap and bounce rhythmically to nursery rhymes. Add gentle dips and leans for excitement!",
       "benefits": "Develops balance, rhythm awareness, and vestibular stimulation",
       "prep": "Learn simple bounce rhymes. Support baby's back/neck.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -391,7 +391,7 @@
       "description": "Clap baby's hands together while singing. Add knee bounces and finish with a big hug on 'throw it in the oven'!",
       "benefits": "Develops rhythm, social interaction, and motor coordination",
       "prep": "Learn the hand motions for the rhyme. Be gentle with hand movements.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -463,7 +463,7 @@
       "description": "Demonstrate blowing kisses and help baby mimic. Celebrate every attempt with cheers and claps!",
       "benefits": "Develops imitation skills, social gestures, and bonding",
       "prep": "None needed. Wash hands before.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -499,7 +499,7 @@
       "description": "Lift baby high overhead, then slowly lower. Repeat with variations like spins or dips!",
       "benefits": "Develops spatial awareness, vestibular stimulation, and trust",
       "prep": "Ensure clear overhead space. Support head/neck; avoid after feeding.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "medium",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -607,7 +607,7 @@
       "description": "Make exaggerated happy/surprised/silly faces. Encourage baby to mimic your expressions!",
       "benefits": "Develops facial muscle control, imitation skills, and emotional recognition",
       "prep": "None needed. Keep a gentle tone.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -643,7 +643,7 @@
       "description": "Drape a lightweight cloth over baby's head and ask 'Where's baby?' Pull it off with 'There you are!'",
       "benefits": "Teaches object permanence, social anticipation, and peek-a-boo variation",
       "prep": "Use a breathable cloth like muslin. Remove immediately after play and never leave unattended.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -679,7 +679,7 @@
       "description": "Drape a lightweight scarf over baby and gently pull it away. Let baby grasp and explore the fabric!",
       "benefits": "Develops object permanence, tactile exploration, and visual tracking",
       "prep": "Use a sheer, lightweight scarf. Remove immediately after play and never leave unattended.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "single"
@@ -751,7 +751,7 @@
       "description": "Play peekaboo using a lightweight scarf. Drape it over your head or baby's head for surprises!",
       "benefits": "Develops object permanence, social anticipation, and fine motor skills",
       "prep": "Use a sheer, breathable scarf. Remove immediately after play and never leave unattended.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -823,7 +823,7 @@
       "description": "Make exaggerated expressions and sounds. Reward baby's imitation attempts with cheers and claps!",
       "benefits": "Encourages facial muscle development, emotional recognition, and imitation skills",
       "prep": "None needed. Keep a gentle tone.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -877,7 +877,7 @@
       "description": "Blow exaggerated kisses to baby and help them mimic. Celebrate every attempt like it's a major achievement!",
       "benefits": "Develops imitation skills, social-emotional connection, and fine motor control",
       "prep": "None needed. Wash hands before.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -913,7 +913,7 @@
       "description": "Lift baby high while saying 'UP!', then lower while saying 'DOWN!' Add spins and dips for variation!",
       "benefits": "Develops spatial awareness, vestibular stimulation, and understanding of opposites",
       "prep": "Ensure clear space above. Support head/neck; avoid after feeding.",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "medium",
       "noiseLevel": "loud",
       "kidCount": "single"
@@ -986,7 +986,7 @@
       "materials": ["plastic bottle with secure lid", "crinkle paper", "fabric scraps"],
       "benefits": "Stimulates auditory/tactile senses and encourages independent exploration",
       "prep": "Glue lid permanently shut after filling. Ensure items inside are too large to choke on.",
-      "contexts": ["sick", "rainy", "coffee"],
+      "contexts": ["sick", "rainy", "busy"],
       "energy_required": "low"
     },
     {
@@ -1126,7 +1126,7 @@
       "benefits": "Develops fine motor skills, sensory processing, and creativity",
       "prep": "Tape contact paper to table. Use objects larger than toilet paper tube.",
       "noiseLevel": "quiet",
-      "contexts": ["rainy", "coffee"],
+      "contexts": ["rainy", "busy"],
       "energy_required": "low"
     },
     {
@@ -1198,7 +1198,7 @@
       "benefits": "Develops fine motor skills, cause-effect understanding, and persistence",
       "prep": "Purchase baby-safe velcro blocks. Blocks must be large enough to prevent choking.",
       "noiseLevel": "quiet",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low"
     },
     {
@@ -1288,7 +1288,7 @@
       "benefits": "Develops fine motor skills, object permanence, and cause-effect understanding",
       "prep": "Cut opening wide enough for small hands; fabrics >6x6 inches.",
       "noiseLevel": "quiet",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low"
     },
     {
@@ -1378,7 +1378,7 @@
       "benefits": "Develops visual tracking, grasping skills, and understanding of gravity",
       "prep": "Use fabric leaves >4 inches to prevent choking.",
       "noiseLevel": "quiet",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low"
     },
     {
@@ -1414,7 +1414,7 @@
       "benefits": "Develops visual tracking, grasping skills, and cause-effect understanding",
       "prep": "Securely tie ribbons to ring. Ribbons must be short (4-6\") to prevent wrapping.",
       "noiseLevel": "quiet",
-      "contexts": ["normal", "coffee"],
+      "contexts": ["normal", "busy"],
       "energy_required": "low"
     },
     {
