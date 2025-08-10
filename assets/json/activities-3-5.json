@@ -13,7 +13,7 @@
       "description": "Take turns drawing different parts of a funny creature together - you draw the head, your child adds the body, and someone else creates the legs! Watch as a whimsical creature comes to life on paper.",
       "benefits": "Develops creativity, turn-taking skills, and understanding of body concepts",
       "prep": "Gather paper and non-toxic pencils/crayons. Clear a flat drawing surface. Supervise to prevent accidental ingestion of art supplies.",
-      "contexts": ["normal", "rainy", "sick"],
+      "contexts": ["normal", "rainy", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "multiple"
@@ -31,7 +31,7 @@
       "description": "Provide your child with colorful stickers and paper to create themed scenes - sort by color, shape, or size while building fine motor skills!",
       "benefits": "Enhances categorization skills and finger dexterity",
       "prep": "Collect large stickers (minimum 2 inches) and paper. Optional: Draw sorting areas on paper. Supervise to prevent stickers from being put in mouth.",
-      "contexts": ["normal", "rainy", "sick"],
+      "contexts": ["normal", "rainy", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "single"
@@ -301,7 +301,7 @@
       "description": "Drape blankets over furniture to create secret hideouts - add pillows for maximum comfort!",
       "benefits": "Encourages imaginative play and spatial skills",
       "prep": "Gather blankets, clips, and pillows. Ensure stable structure. Avoid heavy objects. Check for ventilation.",
-      "contexts": ["normal", "rainy", "sick"],
+      "contexts": ["normal", "rainy", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "multiple"
@@ -661,7 +661,7 @@
       "description": "Match animal pictures to their sounds - 'Moo!' for cow, 'Roar!' for lion",
       "benefits": "Builds auditory discrimination and animal knowledge",
       "prep": "Prepare bingo cards with animal pictures. Ensure cards have no small detachable parts.",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "low",
       "noiseLevel": "loud",
       "kidCount": "multiple"
@@ -1129,7 +1129,7 @@
       "involvement": "active",
       "benefits": "Develops observation skills and body awareness",
       "prep": "Clear space facing each other. Remove tripping hazards.",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "medium",
       "noiseLevel": "quiet",
       "kidCount": "single"
@@ -1453,7 +1453,7 @@
       "involvement": "minimal",
       "benefits": "Develops auditory discrimination and memory",
       "prep": "Prepare matching sound pairs in containers. Seal containers permanently. Use fillers larger than choking hazard size.",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "low",
       "noiseLevel": "normal",
       "kidCount": "single"
@@ -1579,7 +1579,7 @@
       "involvement": "minimal",
       "benefits": "Reinforces number sequencing and counting",
       "prep": "Prepare numbered circles 1-10. Use large circles (minimum 3 inches).",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "single"
@@ -1651,7 +1651,7 @@
       "involvement": "some",
       "benefits": "Develops tactile discrimination and vocabulary",
       "prep": "Place safe objects in socks, create matching cards. Use objects larger than 1.5 inches. Avoid sharp items.",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "multiple"
@@ -1867,7 +1867,7 @@
       "involvement": "some",
       "benefits": "Strengthens memory and gross motor skills",
       "prep": "Create matching pairs on large cards. Secure playing area. Supervise vigorous movement.",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "multiple"
@@ -1939,7 +1939,7 @@
       "involvement": "minimal",
       "benefits": "Develops spatial reasoning and shape knowledge",
       "prep": "Create simple structure cards. Ensure blocks are large enough to prevent choking.",
-      "contexts": ["normal", "sick"],
+      "contexts": ["normal", "tired"],
       "energy_required": "low",
       "noiseLevel": "quiet",
       "kidCount": "single"
