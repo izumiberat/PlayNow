@@ -35,13 +35,15 @@
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
-            padding-bottom: 30px;
+            display: flex;
+            flex-direction: column;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            flex: 1;
         }
         
         /* Header */
@@ -458,7 +460,7 @@
         
         .age-filter-group .filter-options {
             display: grid;
-            grid-template-columns: repeat(2, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
         }
         
@@ -650,13 +652,6 @@
             font-weight: 500;
         }
         
-        .last-updated {
-            font-size: 0.8rem;
-            color: #777;
-            margin-top: 10px;
-            text-align: right;
-        }
-        
         /* Expandable sections */
         .expandable-section {
             margin-top: 15px;
@@ -783,14 +778,6 @@
             background: var(--primary);
         }
         
-        /* Last updated */
-        .last-updated {
-            font-size: 0.8rem;
-            color: #777;
-            margin-top: 10px;
-            text-align: right;
-        }
-        
         /* Loading spinner */
         .loading {
             grid-column: 1 / -1;
@@ -815,6 +802,91 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        
+        /* ================== */
+        /* Enhanced Footer */
+        /* ================== */
+        .footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.95rem;
+            border-top: 1px solid var(--border);
+            background: #f8fafc;
+            width: 100%;
+        }
+        
+        .footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer .app-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+        .footer .linkedin-section {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(74, 111, 165, 0.05);
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        .footer .linkedin-section h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .footer .linkedin-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+            padding: 8px 15px;
+        }
+        
+        .footer .linkedin-link i {
+            font-size: 1.4rem;
+            min-width: 24px;
+            vertical-align: middle;
+        }
+        
+        .footer .linkedin-link span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1.4;
+        }
+        
+        .footer .linkedin-link:hover {
+            color: #3a5a80;
+            text-decoration: underline;
+        }
+        
+        .footer .copyright {
+            margin-top: 25px;
+            color: #777;
+            font-size: 0.9rem;
+            width: 100%;
         }
         
         /* Media Queries */
@@ -949,6 +1021,36 @@
             
             .footer .linkedin-link i {
                 font-size: 1.3rem;
+            }
+            
+            /* Mobile footer adjustments */
+            .footer {
+                padding: 30px 0 20px;
+                margin-top: 20px;
+            }
+            
+            .footer .container {
+                padding: 0 15px;
+            }
+            
+            .footer .app-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .footer .app-links .download-btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            
+            .footer .linkedin-section {
+                padding: 10px;
+            }
+            
+            .footer .copyright {
+                margin-top: 15px;
             }
         }
         
@@ -1306,7 +1408,7 @@
         </div>
     </div>
     
-    <!-- Footer -->
+    <!-- Enhanced Footer -->
     <footer class="footer">
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
@@ -1738,10 +1840,6 @@
                             </div>
                             
                             ${expandableSections}
-                            
-                            <div class="last-updated">
-                                Updated: ${activity.lastUpdated ? new Date(activity.lastUpdated).toLocaleDateString() : 'N/A'}
-                            </div>
                         </div>
                     </div>
                 `;
