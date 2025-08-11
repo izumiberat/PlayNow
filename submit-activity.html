@@ -16,6 +16,8 @@
             --border: #e0e0e0;
             --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             --submit-color: #e67e22;
+            --success: #27ae60;
+            --warning: #e74c3c;
         }
         
         * {
@@ -26,7 +28,8 @@
         }
         
         body {
-            background-color: var(--light);
+            background-color: #f0f7ff;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
@@ -39,11 +42,11 @@
             padding: 0 20px;
         }
         
-        /* Optimized Header - iPhone SE Compatible */
+        /* Header Styles */
         header {
             background: white;
             padding: 8px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -55,38 +58,38 @@
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 10px;
+            padding: 0 15px;
             gap: 5px;
         }
         
         .logo {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             min-width: 0;
             flex-shrink: 0;
             text-decoration: none;
         }
         
         .logo-icon {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             color: var(--primary);
             flex-shrink: 0;
         }
         
         .app-name {
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1.3rem;
+            font-weight: 700;
             color: var(--dark);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 85px;
+            max-width: 120px;
         }
         
         .header-actions {
             display: flex;
-            gap: 5px;
+            gap: 8px;
             flex-shrink: 0;
             flex-wrap: nowrap;
         }
@@ -95,26 +98,29 @@
             background: var(--primary);
             color: white;
             border: none;
-            padding: 6px 8px;
-            border-radius: 4px;
+            padding: 7px 12px;
+            border-radius: 6px;
             cursor: pointer;
             font-weight: 500;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 4px;
-            font-size: 0.75rem;
-            transition: background 0.2s ease;
+            gap: 5px;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
             flex-shrink: 0;
             white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         .download-btn:hover {
             background: #3a5a80;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
         }
         
         .download-btn i {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
         
         .btn-text {
@@ -124,98 +130,163 @@
         .back-btn {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             color: var(--primary);
             text-decoration: none;
-            font-weight: 500;
-            margin-bottom: 20px;
+            font-weight: 600;
+            margin: 20px 0;
+            padding: 8px 15px;
+            border-radius: 6px;
+            background: white;
+            box-shadow: var(--card-shadow);
+            width: fit-content;
+            transition: all 0.2s ease;
+        }
+        
+        .back-btn:hover {
+            background: #f0f7ff;
+            transform: translateX(-3px);
         }
         
         /* Form Styles */
         .submission-container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 25px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            padding: 30px;
             background: white;
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(74, 111, 165, 0.1);
         }
         
         .form-header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
         }
         
         .form-header h1 {
             color: var(--primary);
-            margin-bottom: 10px;
-            font-size: 1.8rem;
+            margin-bottom: 12px;
+            font-size: 2.1rem;
+            background: linear-gradient(90deg, #4a6fa5, #6d9dc5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .form-header p {
+            color: #555;
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
         }
         
         .form-section {
             background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 25px;
+            border-radius: 10px;
             margin-bottom: 25px;
             border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent);
         }
         
         .form-section-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             color: var(--primary);
-            margin-bottom: 15px;
-            padding-bottom: 8px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
             border-bottom: 1px solid var(--border);
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
+            font-weight: 600;
         }
         
         .form-section-title i {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            color: var(--accent);
         }
         
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
         
         label {
             display: block;
             margin-bottom: 8px;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        label.required::after {
+            content: '*';
+            color: var(--warning);
+            margin-left: 4px;
         }
         
         input, textarea, select {
             width: 100%;
-            padding: 12px;
+            padding: 14px;
             border: 1px solid var(--border);
-            border-radius: 4px;
+            border-radius: 8px;
             font-size: 1rem;
             background: white;
+            transition: all 0.2s ease;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(136, 192, 208, 0.2);
         }
         
         textarea {
             min-height: 120px;
             resize: vertical;
+            line-height: 1.6;
         }
         
         .checkbox-group, .radio-group {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
             margin-top: 10px;
         }
         
         .checkbox-item, .radio-item {
             display: flex;
-            align-items: center; /* Changed from flex-start to center for better alignment */
-            gap: 10px;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: all 0.2s ease;
+        }
+        
+        .checkbox-item:hover, .radio-item:hover {
+            border-color: var(--accent);
+            background: #f5fbff;
         }
         
         .checkbox-item input, .radio-item input {
             width: auto;
-            /* Removed margin-top: 4px to fix iPhone alignment */
         }
         
         .checkbox-item label, .radio-item label {
@@ -227,31 +298,44 @@
         .note {
             font-size: 0.9rem;
             color: #666;
-            margin-top: 5px;
+            margin-top: 8px;
             font-style: italic;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
         }
         
         .submit-btn-large {
             background: var(--submit-color);
             color: white;
             border: none;
-            padding: 14px 25px;
-            border-radius: 4px;
+            padding: 16px 25px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 1.1rem;
-            font-weight: 500;
+            font-weight: 600;
             display: block;
             width: 100%;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
             margin-top: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
+            box-shadow: 0 4px 6px rgba(230, 126, 34, 0.3);
         }
         
         .submit-btn-large:hover {
             background: #d35400;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(230, 126, 34, 0.4);
+        }
+        
+        .submit-btn-large:active {
+            transform: translateY(0);
         }
         
         .footer {
@@ -263,6 +347,93 @@
             border-top: 1px solid var(--border);
         }
         
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--primary);
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            background: white;
+            border: 1px solid var(--border);
+            transition: all 0.2s ease;
+        }
+        
+        .footer-links a:hover {
+            background: #f5fbff;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 40px;
+            counter-reset: step;
+        }
+        
+        .progress-bar::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 4px;
+            width: 100%;
+            background: #e0e0e0;
+            z-index: -1;
+        }
+        
+        .progress-step {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 3px solid #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #999;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .progress-step.active {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: white;
+        }
+        
+        .progress-step.completed {
+            border-color: var(--success);
+            background: var(--success);
+            color: white;
+        }
+        
+        .progress-step::after {
+            content: attr(data-title);
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 10px;
+            white-space: nowrap;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #777;
+        }
+        
         /* Media Queries */
         @media (min-width: 400px) {
             .btn-text {
@@ -270,80 +441,71 @@
             }
             
             .download-btn {
-                padding: 8px 12px;
-                font-size: 0.8rem;
-            }
-            
-            .app-name {
-                max-width: 120px;
-                font-size: 1.2rem;
-            }
-            
-            .logo-icon {
-                font-size: 1.5rem;
-            }
-        }
-        
-        @media (min-width: 480px) {
-            .download-btn {
                 padding: 8px 15px;
                 font-size: 0.85rem;
             }
             
-            .header-container {
-                padding: 0 15px;
-                gap: 10px;
-            }
-            
             .app-name {
                 max-width: 150px;
-                font-size: 1.3rem;
+                font-size: 1.35rem;
             }
         }
         
         @media (min-width: 768px) {
-            .header-container {
-                padding: 0 20px;
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
             
-            .app-name {
-                font-size: 1.4rem;
-                max-width: 200px;
-            }
-            
-            .download-btn {
-                padding: 10px 20px;
-                font-size: 0.95rem;
+            .full-width {
+                grid-column: span 2;
             }
             
             .checkbox-group, .radio-group {
-                flex-direction: row;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
             }
             
             .checkbox-item, .radio-item {
-                width: calc(50% - 10px);
+                margin-bottom: 0;
+            }
+            
+            .form-header h1 {
+                font-size: 2.3rem;
+            }
+            
+            .progress-bar {
+                margin-bottom: 50px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .checkbox-group, .radio-group {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
         
         @media (max-width: 350px) {
             .header-container {
-                padding: 0 5px;
+                padding: 0 8px;
             }
             
             .download-btn {
-                padding: 5px 6px;
+                padding: 6px 8px;
             }
             
             .app-name {
-                max-width: 70px;
-                font-size: 1rem;
+                max-width: 90px;
+                font-size: 1.1rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header without Submit Idea button -->
     <header>
         <div class="header-container">
             <a href="index.html" class="logo">
@@ -374,161 +536,609 @@
         <div class="submission-container">
             <div class="form-header">
                 <h1>Submit Activity Idea</h1>
-                <p>Share your creative activity ideas with other parents!</p>
+                <p>Share your creative activity ideas with other parents! All fields marked with * are required.</p>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="progress-step active" data-title="Basics">1</div>
+                <div class="progress-step" data-title="Setup">2</div>
+                <div class="progress-step" data-title="Details">3</div>
+                <div class="progress-step" data-title="Your Info">4</div>
             </div>
             
             <form id="activity-form" action="https://formspree.io/f/xvgaqgwv" method="POST">
+                <!-- Section 1: Activity Basics -->
                 <div class="form-section">
                     <div class="form-section-title">
                         <i class="fas fa-lightbulb"></i>
+                        Activity Basics
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="activity-title" class="required">Title</label>
+                            <input type="text" id="activity-title" name="title" required placeholder="Fun activity name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="activity-description" class="required">Description</label>
+                            <textarea id="activity-description" name="description" required placeholder="Brief overview of the activity"></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="instructions" class="required">Instructions</label>
+                            <textarea id="instructions" name="instructions" required placeholder="Step-by-step instructions"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="materials">Materials Needed</label>
+                            <input type="text" id="materials" name="materials" placeholder="List materials separated by commas">
+                            <p class="note">Example: paper, crayons, stickers, tape. Use "none" if no materials needed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Section 2: Activity Setup -->
+                <div class="form-section">
+                    <div class="form-section-title">
+                        <i class="fas fa-cog"></i>
+                        Activity Setup
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="required">Age Group</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="ageGroup" id="age-0-2" value="0-2" required>
+                                    <label for="age-0-2">0-2 Years</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="ageGroup" id="age-3-5" value="3-5">
+                                    <label for="age-3-5">3-5 Years</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="ageGroup" id="age-6-8" value="6-8">
+                                    <label for="age-6-8">6-8 Years</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="ageGroup" id="age-9-12" value="9-12">
+                                    <label for="age-9-12">9-12 Years</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="ageGroup" id="age-mixed" value="mixed">
+                                    <label for="age-mixed">Mixed Ages</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Duration (minutes)</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="duration" id="duration-5" value="5" required>
+                                    <label for="duration-5">5 min</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="duration" id="duration-15" value="15">
+                                    <label for="duration-15">15 min</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="duration" id="duration-30" value="30">
+                                    <label for="duration-30">30 min</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="duration" id="duration-60" value="60">
+                                    <label for="duration-60">60 min</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Location</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="location" id="location-indoor" value="indoor" required>
+                                    <label for="location-indoor">Indoor</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="location" id="location-outdoor" value="outdoor">
+                                    <label for="location-outdoor">Outdoor</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="location" id="location-any" value="any">
+                                    <label for="location-any">Any</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Preparation Needed</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="prep" id="prep-none" value="none" required>
+                                    <label for="prep-none">None</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="prep" id="prep-quick" value="quick">
+                                    <label for="prep-quick">Quick</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="prep" id="prep-extended" value="extended">
+                                    <label for="prep-extended">Extended</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Section 3: Activity Details -->
+                <div class="form-section">
+                    <div class="form-section-title">
+                        <i class="fas fa-info-circle"></i>
                         Activity Details
                     </div>
                     
-                    <div class="form-group">
-                        <label for="activity-title">Activity Title *</label>
-                        <input type="text" id="activity-title" name="title" required placeholder="Fun activity name">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="activity-description">Description *</label>
-                        <textarea id="activity-description" name="description" required placeholder="Describe the activity in detail..."></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="activity-benefits">Key Benefits *</label>
-                        <input type="text" id="activity-benefits" name="benefits" required placeholder="What skills does it develop?">
-                        <p class="note">Example: "Develops fine motor skills, encourages creativity"</p>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="prep">Preparation Needed</label>
-                        <input type="text" id="prep" name="preparation" placeholder="What needs to be prepared?">
-                        <p class="note">Example: "Gather paper and crayons"</p>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="materials">Materials Needed</label>
-                        <input type="text" id="materials" name="materials" placeholder="List materials separated by commas">
-                        <p class="note">Example: paper, crayons, stickers, tape</p>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="required">Parent Energy Required</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="parentEnergy" id="parent-low" value="low" required>
+                                    <label for="parent-low">Low</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="parentEnergy" id="parent-medium" value="medium">
+                                    <label for="parent-medium">Medium</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="parentEnergy" id="parent-high" value="high">
+                                    <label for="parent-high">High</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="parentEnergy" id="parent-any" value="any">
+                                    <label for="parent-any">Any</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Kid Energy Level</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="kidEnergy" id="kid-low" value="low" required>
+                                    <label for="kid-low">Low</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="kidEnergy" id="kid-medium" value="medium">
+                                    <label for="kid-medium">Medium</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="kidEnergy" id="kid-high" value="high">
+                                    <label for="kid-high">High</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="kidEnergy" id="kid-any" value="any">
+                                    <label for="kid-any">Any</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Supervision Level</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="supervision" id="super-independent" value="independent" required>
+                                    <label for="super-independent">Independent</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="supervision" id="super-minimal" value="minimal">
+                                    <label for="super-minimal">Minimal</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="supervision" id="super-active" value="active">
+                                    <label for="super-active">Active</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="supervision" id="super-constant" value="constant">
+                                    <label for="super-constant">Constant</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Kid Count</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="kidCount" id="count-1" value="1" required>
+                                    <label for="count-1">1 Kid</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="kidCount" id="count-2-4" value="2-4">
+                                    <label for="count-2-4">2-4 Kids</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="kidCount" id="count-5" value="5+">
+                                    <label for="count-5">5+ Kids</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="kidCount" id="count-any" value="any">
+                                    <label for="count-any">Any</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Mess Level</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="messLevel" id="mess-none" value="none" required>
+                                    <label for="mess-none">None</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="messLevel" id="mess-low" value="low">
+                                    <label for="mess-low">Low</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="messLevel" id="mess-medium" value="medium">
+                                    <label for="mess-medium">Medium</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="messLevel" id="mess-high" value="high">
+                                    <label for="mess-high">High</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Noise Level</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="noiseLevel" id="noise-quiet" value="quiet" required>
+                                    <label for="noise-quiet">Quiet</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="noiseLevel" id="noise-moderate" value="moderate">
+                                    <label for="noise-moderate">Moderate</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="noiseLevel" id="noise-loud" value="loud">
+                                    <label for="noise-loud">Loud</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label class="required">Situations</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-normal" value="normal">
+                                    <label for="sit-normal">Normal</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-rainy" value="rainy-day">
+                                    <label for="sit-rainy">Rainy Day</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-sick" value="sick-day">
+                                    <label for="sit-sick">Sick Day</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-travel" value="travel">
+                                    <label for="sit-travel">Travel</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-restaurant" value="restaurant">
+                                    <label for="sit-restaurant">Restaurant</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-waiting" value="waiting-room">
+                                    <label for="sit-waiting">Waiting Room</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-grocery" value="grocery-store">
+                                    <label for="sit-grocery">Grocery Store</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-car" value="car-ride">
+                                    <label for="sit-car">Car Ride</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-beach" value="beach">
+                                    <label for="sit-beach">Beach</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-party" value="birthday-party">
+                                    <label for="sit-party">Birthday Party</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-playdate" value="playdate">
+                                    <label for="sit-playdate">Playdate</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="situations" id="sit-bedtime" value="bedtime">
+                                    <label for="sit-bedtime">Bedtime</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Skills Developed</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="skills" id="skill-motor" value="motor">
+                                    <label for="skill-motor">Motor</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="skills" id="skill-cognitive" value="cognitive">
+                                    <label for="skill-cognitive">Cognitive</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="skills" id="skill-social" value="social">
+                                    <label for="skill-social">Social</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="skills" id="skill-creative" value="creative">
+                                    <label for="skill-creative">Creative</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="skills" id="skill-academic" value="academic">
+                                    <label for="skill-academic">Academic</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="skills" id="skill-emotional" value="emotional">
+                                    <label for="skill-emotional">Emotional</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Special Needs Friendly</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="specialNeeds" id="sn-sensory" value="sensory-friendly">
+                                    <label for="sn-sensory">Sensory-Friendly</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="specialNeeds" id="sn-adhd" value="adhd-friendly">
+                                    <label for="sn-adhd">ADHD-Friendly</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="specialNeeds" id="sn-autism" value="autism-friendly">
+                                    <label for="sn-autism">Autism-Friendly</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="specialNeeds" id="sn-quiet" value="quiet-child-friendly">
+                                    <label for="sn-quiet">Quiet-Child Friendly</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Cost</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="cost" id="cost-free" value="free" required>
+                                    <label for="cost-free">Free</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="cost" id="cost-low" value="low">
+                                    <label for="cost-low">Low</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="cost" id="cost-medium" value="medium">
+                                    <label for="cost-medium">Medium</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="cost" id="cost-high" value="high">
+                                    <label for="cost-high">High</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Repeatability</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="repeatability" id="repeat-once" value="once" required>
+                                    <label for="repeat-once">Once</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="repeatability" id="repeat-few" value="few">
+                                    <label for="repeat-few">A Few Times</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="repeatability" id="repeat-many" value="many">
+                                    <label for="repeat-many">Many Times</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Seasonality</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="seasonality" id="season-any" value="any" required>
+                                    <label for="season-any">Any</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="seasonality" id="season-spring" value="spring">
+                                    <label for="season-spring">Spring</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="seasonality" id="season-summer" value="summer">
+                                    <label for="season-summer">Summer</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="seasonality" id="season-fall" value="fall">
+                                    <label for="season-fall">Fall</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="seasonality" id="season-winter" value="winter">
+                                    <label for="season-winter">Winter</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Difficulty</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="difficulty" id="diff-1" value="1" required>
+                                    <label for="diff-1">Very Easy (1)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="difficulty" id="diff-2" value="2">
+                                    <label for="diff-2">Easy (2)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="difficulty" id="diff-3" value="3">
+                                    <label for="diff-3">Medium (3)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="difficulty" id="diff-4" value="4">
+                                    <label for="diff-4">Hard (4)</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="difficulty" id="diff-5" value="5">
+                                    <label for="diff-5">Very Hard (5)</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="safetyNotes">Safety Notes</label>
+                            <textarea id="safetyNotes" name="safetyNotes" placeholder="Any safety considerations or warnings"></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="parentTips">Parent Tips</label>
+                            <textarea id="parentTips" name="parentTips" placeholder="Tips to make the activity successful"></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="variations">Variations</label>
+                            <textarea id="variations" name="variations" placeholder="Suggested modifications or extensions"></textarea>
+                            <p class="note">Separate variations with commas</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="required">Activity Source</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" name="source" id="source-montessori" value="montessori" required>
+                                    <label for="source-montessori">Montessori</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="source" id="source-waldorf" value="waldorf">
+                                    <label for="source-waldorf">Waldorf</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="source" id="source-traditional" value="traditional">
+                                    <label for="source-traditional">Traditional</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="source" id="source-reggio" value="reggio-emilia">
+                                    <label for="source-reggio">Reggio Emilia</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" name="source" id="source-original" value="original">
+                                    <label for="source-original">Original</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label>Activity Tags</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-crafts" value="crafts">
+                                    <label for="tag-crafts">Crafts</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-science" value="science">
+                                    <label for="tag-science">Science</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-baking" value="baking">
+                                    <label for="tag-baking">Baking</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-story" value="storytelling">
+                                    <label for="tag-story">Storytelling</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-music" value="music">
+                                    <label for="tag-music">Music</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-art" value="art">
+                                    <label for="tag-art">Art</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-building" value="building">
+                                    <label for="tag-building">Building</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-gardening" value="gardening">
+                                    <label for="tag-gardening">Gardening</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-water" value="water-play">
+                                    <label for="tag-water">Water Play</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-pretend" value="pretend-play">
+                                    <label for="tag-pretend">Pretend Play</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-sensory" value="sensory">
+                                    <label for="tag-sensory">Sensory</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-nature" value="nature">
+                                    <label for="tag-nature">Nature</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-movement" value="movement">
+                                    <label for="tag-movement">Movement</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-quiet" value="quiet-time">
+                                    <label for="tag-quiet">Quiet Time</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="tags" id="tag-cleanup" value="cleanup-game">
+                                    <label for="tag-cleanup">Cleanup Game</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="form-section">
-                    <div class="form-section-title">
-                        <i class="fas fa-filter"></i>
-                        Activity Filters
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Contexts *</label>
-                        <div class="checkbox-group">
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="context" id="context-normal" value="normal">
-                                <label for="context-normal">Normal</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="context" id="context-rainy" value="rainy">
-                                <label for="context-rainy">Rainy Day</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="context" id="context-coffee" value="coffee">
-                                <label for="context-coffee">Coffee Time</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="context" id="context-travel" value="travel">
-                                <label for="context-travel">Travel</label>
-                            </div>
-                            <div class="checkbox-item">
-                                <input type="checkbox" name="context" id="context-tired" value="tired">
-                                <label for="context-tired">When Tired</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Location *</label>
-                        <div class="radio-group">
-                            <div class="radio-item">
-                                <input type="radio" name="location" id="location-indoor" value="indoor" required>
-                                <label for="location-indoor">Indoor</label>
-                            </div>
-                            <div class="radio-item">
-                                <input type="radio" name="location" id="location-outdoor" value="outdoor">
-                                <label for="location-outdoor">Outdoor</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Duration *</label>
-                        <div class="radio-group">
-                            <div class="radio-item">
-                                <input type="radio" name="duration" id="duration-quick" value="quick" required>
-                                <label for="duration-quick">Quick (5-15 min)</label>
-                            </div>
-                            <div class="radio-item">
-                                <input type="radio" name="duration" id="duration-medium" value="medium">
-                                <label for="duration-medium">Medium (15-30 min)</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Parent Involvement *</label>
-                        <div class="radio-group">
-                            <div class="radio-item">
-                                <input type="radio" name="involvement" id="involvement-minimal" value="minimal" required>
-                                <label for="involvement-minimal">Minimal</label>
-                            </div>
-                            <div class="radio-item">
-                                <input type="radio" name="involvement" id="involvement-some" value="some">
-                                <label for="involvement-some">Some</label>
-                            </div>
-                            <div class="radio-item">
-                                <input type="radio" name="involvement" id="involvement-active" value="active">
-                                <label for="involvement-active">Active</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Age Group *</label>
-                        <div class="radio-group">
-                            <div class="radio-item">
-                                <input type="radio" name="age" id="age-0-2" value="0-2" required>
-                                <label for="age-0-2">0-2 Years</label>
-                            </div>
-                            <div class="radio-item">
-                                <input type="radio" name="age" id="age-3-5" value="3-5">
-                                <label for="age-3-5">3-5 Years</label>
-                            </div>
-                            <div class="radio-item">
-                                <input type="radio" name="age" id="age-6-11" value="6-11">
-                                <label for="age-6-11">6-11 Years</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                <!-- Section 4: Your Information -->
                 <div class="form-section">
                     <div class="form-section-title">
                         <i class="fas fa-user"></i>
                         Your Information
                     </div>
                     
-                    <div class="form-group">
-                        <label for="submitter-name">Your Name *</label>
-                        <input type="text" id="submitter-name" name="name" required placeholder="How you want to be credited">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="submitter-email">Your Email *</label>
-                        <input type="email" id="submitter-email" name="email" required placeholder="We'll contact you if needed">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="submitter-notes">Additional Notes</label>
-                        <textarea id="submitter-notes" name="notes" placeholder="Any special instructions or context"></textarea>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="submitter-name" class="required">Your Name</label>
+                            <input type="text" id="submitter-name" name="name" required placeholder="How you want to be credited">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="submitter-email" class="required">Your Email</label>
+                            <input type="email" id="submitter-email" name="email" required placeholder="We'll contact you if needed">
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="submitter-notes">Additional Notes</label>
+                            <textarea id="submitter-notes" name="notes" placeholder="Any special instructions or context"></textarea>
+                        </div>
                     </div>
                 </div>
                 
@@ -543,21 +1153,29 @@
     <footer class="footer">
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
-            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
-                <a href="index.html" class="download-btn">
+            <div class="footer-links">
+                <a href="index.html">
                     <i class="fas fa-home"></i>
-                    <span class="btn-text">Home</span>
+                    <span>Home</span>
                 </a>
-                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" target="_blank">
                     <i class="fab fa-apple"></i>
-                    <span class="btn-text">App Store</span>
+                    <span>App Store</span>
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="download-btn" target="_blank">
+                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" target="_blank">
                     <i class="fab fa-google-play"></i>
-                    <span class="btn-text">Play Store</span>
+                    <span>Play Store</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Help</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
                 </a>
             </div>
-            <p style="margin-top: 15px; color: #777; font-size: 0.85rem;">© 2025 Play Now App. All rights reserved.</p>
+            <p style="margin-top: 20px; color: #777; font-size: 0.85rem;">© 2025 Play Now App. All rights reserved.</p>
         </div>
     </footer>
     
@@ -587,6 +1205,13 @@
                     // Success message
                     alert('Thank you for your submission! Our team will review your activity idea. If approved, it will appear in the app with credit to you.');
                     this.reset();
+                    
+                    // Update progress bar
+                    const progressSteps = document.querySelectorAll('.progress-step');
+                    progressSteps.forEach(step => {
+                        step.classList.remove('active');
+                        step.classList.add('completed');
+                    });
                 } else {
                     // Show error message
                     alert('There was a problem with your submission. Please try again.');
@@ -602,6 +1227,28 @@
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
             });
+        });
+        
+        // Highlight active section
+        const formSections = document.querySelectorAll('.form-section');
+        formSections.forEach((section, index) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressSteps = document.querySelectorAll('.progress-step');
+                        progressSteps.forEach((step, i) => {
+                            step.classList.remove('active');
+                            if (i === index) {
+                                step.classList.add('active');
+                            } else if (i < index) {
+                                step.classList.add('completed');
+                            }
+                        });
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            observer.observe(section);
         });
     </script>
 </body>
