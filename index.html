@@ -21,7 +21,6 @@
             --success: #38a169;
             --warning: #e53e3e;
             --info: #4299e1;
-            --filter-header-height: 60px;
         }
         
         * {
@@ -362,15 +361,13 @@
             font-size: 0.95rem;
         }
         
-        /* ====================== */
-        /* IMPROVED FILTERS SECTION */
-        /* ====================== */
+        /* Filters Section - Optimized for space */
         .filters-section {
             background: white;
-            padding: 20px;
+            padding: 18px;
             border-radius: 12px;
             box-shadow: var(--card-shadow);
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         
         .filter-header {
@@ -381,7 +378,7 @@
         }
         
         .filter-header h2 {
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             color: var(--dark);
             font-weight: 600;
         }
@@ -391,71 +388,63 @@
             border: none;
             color: var(--primary);
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
             gap: 6px;
             font-weight: 500;
             transition: all 0.2s ease;
-            padding: 8px 12px;
-            border-radius: 6px;
         }
         
         .reset-btn:hover {
-            background: #f0f5ff;
+            color: #3a5a80;
             transform: translateY(-2px);
         }
         
-        /* New filter layout with columns */
-        .filters-columns {
+        .filters-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
+            grid-template-columns: 1fr;
+            gap: 15px;
         }
         
         .filter-group {
-            margin-bottom: 15px;
-            background: #f8fafc;
-            border-radius: 10px;
-            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
             transition: all 0.3s ease;
-            border: 1px solid #eef2f7;
-        }
-        
-        .filter-group:hover {
-            border-color: var(--accent);
         }
         
         .filter-group-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 12px 15px;
+            background: #f9fbfd;
             cursor: pointer;
-            margin-bottom: 12px;
+            font-weight: 600;
+            color: var(--dark);
         }
         
-        .filter-group h3 {
+        .filter-group-header h3 {
             font-size: 0.95rem;
             color: #555;
-            font-weight: 500;
+            font-weight: 600;
             margin: 0;
         }
         
-        .filter-toggle {
-            background: none;
-            border: none;
-            color: var(--primary);
-            cursor: pointer;
-            transition: transform 0.3s ease;
+        .filter-group-content {
+            padding: 12px 15px 15px;
+            display: none;
         }
         
-        .filter-toggle.collapsed {
-            transform: rotate(180deg);
+        .filter-group.expanded .filter-group-content {
+            display: block;
         }
         
         .filter-options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            grid-template-columns: 1fr;
             gap: 8px;
         }
         
@@ -469,10 +458,8 @@
             transition: all 0.2s ease;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 5px;
-            text-align: center;
-            min-height: 40px;
+            gap: 6px;
+            text-align: left;
         }
         
         .filter-btn:hover {
@@ -484,45 +471,16 @@
             background: var(--primary);
             color: white;
             border-color: var(--primary);
-            box-shadow: 0 3px 6px rgba(74, 111, 165, 0.2);
         }
         
         .filter-btn i {
             font-size: 0.9rem;
-        }
-        
-        /* Mobile filter bar */
-        .mobile-filter-bar {
-            display: none;
-            position: sticky;
-            top: var(--filter-header-height);
-            background: white;
-            padding: 12px 15px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 90;
-            margin-bottom: 15px;
-        }
-        
-        .mobile-filter-bar .filter-header {
-            margin-bottom: 0;
-        }
-        
-        .filter-indicator {
-            background: var(--primary);
-            color: white;
-            border-radius: 50%;
-            width: 22px;
-            height: 22px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            margin-left: 8px;
+            min-width: 18px;
         }
         
         /* Age filter */
-        .age-filter-group {
-            grid-column: 1 / -1;
+        .age-filter-group .filter-options {
+            grid-template-columns: 1fr;
         }
         
         .activity-counter {
@@ -535,7 +493,6 @@
             justify-content: center;
             align-items: center;
             gap: 8px;
-            flex-wrap: wrap;
         }
         
         .counter-box {
@@ -861,60 +818,6 @@
             100% { transform: rotate(360deg); }
         }
         
-        /* ===================== */
-        /* NO RESULTS UI IMPROVEMENT */
-        /* ===================== */
-        .no-results {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 40px 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--border);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        .no-results-icon {
-            font-size: 4rem;
-            color: #dbe4f0;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        
-        .no-results h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-        
-        .no-results p {
-            color: #666;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-        
-        .no-results .reset-btn {
-            padding: 10px 20px;
-            background: var(--primary);
-            color: white;
-            border-radius: 8px;
-            font-weight: 600;
-            box-shadow: 0 4px 8px rgba(74, 111, 165, 0.2);
-        }
-        
-        .no-results .reset-btn:hover {
-            background: #3a5a80;
-            transform: translateY(-3px);
-        }
-        
         /* ================== */
         /* Enhanced Footer */
         /* ================== */
@@ -1081,6 +984,29 @@
                 font-size: 1.2rem;
             }
             
+            /* Collapsible filter groups */
+            .filter-group.expanded {
+                background: white;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            }
+            
+            .filter-group-header {
+                background: white;
+                padding: 10px 15px;
+            }
+            
+            .filter-group-content {
+                padding: 0 15px 15px;
+            }
+            
+            .filter-options {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .age-filter-group .filter-options {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
             .footer .linkedin-link {
                 font-size: 1.1rem;
             }
@@ -1104,20 +1030,6 @@
             .store-btn {
                 width: 100%;
                 max-width: 280px;
-                min-width: auto;
-                padding: 12px 15px;
-            }
-            
-            .store-btn .store-icon {
-                font-size: 1.8rem;
-            }
-            
-            .store-btn .store-name {
-                font-size: 0.8rem;
-            }
-            
-            .store-btn .store-label {
-                font-size: 1.1rem;
             }
             
             .benefit-item {
@@ -1165,39 +1077,6 @@
             .footer .copyright {
                 margin-top: 15px;
             }
-            
-            /* Mobile filter bar */
-            .mobile-filter-bar {
-                display: block;
-            }
-            
-            .filters-section {
-                position: fixed;
-                top: calc(var(--filter-header-height) + 20px);
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 95;
-                transform: translateX(-100%);
-                transition: transform 0.3s ease;
-                overflow-y: auto;
-                padding: 20px;
-                border-radius: 0;
-                margin-bottom: 0;
-                box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            }
-            
-            .filters-section.active {
-                transform: translateX(0);
-            }
-            
-            .filters-columns {
-                display: block;
-            }
-            
-            .filter-group {
-                margin-bottom: 20px;
-            }
         }
         
         @media (max-width: 350px) {
@@ -1216,22 +1095,6 @@
             
             .footer .linkedin-link {
                 font-size: 0.9rem;
-            }
-            
-            .store-btn {
-                padding: 10px 12px;
-            }
-            
-            .store-btn .store-icon {
-                font-size: 1.6rem;
-            }
-            
-            .store-btn .store-name {
-                font-size: 0.75rem;
-            }
-            
-            .store-btn .store-label {
-                font-size: 1rem;
             }
         }
     </style>
@@ -1340,18 +1203,8 @@
             </div>
         </section>
         
-        <!-- Mobile Filter Bar -->
-        <div class="mobile-filter-bar">
-            <div class="filter-header">
-                <h2>Filter Activities <span class="filter-indicator" id="filter-count">0</span></h2>
-                <button class="reset-btn" id="mobile-reset-filters">
-                    <i class="fas fa-redo"></i> Reset
-                </button>
-            </div>
-        </div>
-        
-        <!-- Filters Section -->
-        <section class="filters-section" id="filters-container">
+        <!-- Filters Section - Optimized -->
+        <section class="filters-section">
             <div class="filter-header">
                 <h2>Filter Activities</h2>
                 <button class="reset-btn" id="reset-filters">
@@ -1359,256 +1212,259 @@
                 </button>
             </div>
             
-            <div class="filters-columns">
+            <div class="filters-grid">
                 <!-- Age Group Filter -->
-                <div class="filter-group age-filter-group">
+                <div class="filter-group age-filter-group expanded">
                     <div class="filter-group-header">
-                        <h3>Age Group</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-child"></i> Age Group</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="age-filters">
-                        <button class="filter-btn active" data-filter="ageGroup" data-value="0-2">
-                            <i class="fas fa-baby"></i> 0-2
-                        </button>
-                        <button class="filter-btn" data-filter="ageGroup" data-value="3-5">
-                            <i class="fas fa-child"></i> 3-5
-                        </button>
-                        <button class="filter-btn" data-filter="ageGroup" data-value="6-8">
-                            <i class="fas fa-user"></i> 6-8
-                        </button>
-                        <button class="filter-btn" data-filter="ageGroup" data-value="9-12">
-                            <i class="fas fa-user"></i> 9-12
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="age-filters">
+                            <button class="filter-btn active" data-filter="ageGroup" data-value="0-2">
+                                <i class="fas fa-baby"></i> 0-2
+                            </button>
+                            <button class="filter-btn" data-filter="ageGroup" data-value="3-5">
+                                <i class="fas fa-child"></i> 3-5
+                            </button>
+                            <button class="filter-btn" data-filter="ageGroup" data-value="6-8">
+                                <i class="fas fa-user"></i> 6-8
+                            </button>
+                            <button class="filter-btn" data-filter="ageGroup" data-value="9-12">
+                                <i class="fas fa-user"></i> 9-12
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Situation Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Situation</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-map-marker-alt"></i> Situation</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="situation-filters">
-                        <button class="filter-btn active" data-filter="situations" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="situations" data-value="normal">
-                            Normal
-                        </button>
-                        <button class="filter-btn" data-filter="situations" data-value="rainy-day">
-                            Rainy
-                        </button>
-                        <button class="filter-btn" data-filter="situations" data-value="travel">
-                            Travel
-                        </button>
-                        <button class="filter-btn" data-filter="situations" data-value="bedtime">
-                            Bedtime
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="situation-filters">
+                            <button class="filter-btn active" data-filter="situations" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="normal">
+                                <i class="fas fa-sun"></i> Normal
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="rainy-day">
+                                <i class="fas fa-cloud-rain"></i> Rainy
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="travel">
+                                <i class="fas fa-car"></i> Travel
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="bedtime">
+                                <i class="fas fa-bed"></i> Bedtime
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Location Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Location</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-location-arrow"></i> Location</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="location-filters">
-                        <button class="filter-btn active" data-filter="location" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="location" data-value="indoor">
-                            Indoor
-                        </button>
-                        <button class="filter-btn" data-filter="location" data-value="outdoor">
-                            Outdoor
-                        </button>
-                        <button class="filter-btn" data-filter="location" data-value="any">
-                            Any
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="location-filters">
+                            <button class="filter-btn active" data-filter="location" data-value="all">
+                                <i class="fas fa-globe"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="location" data-value="indoor">
+                                <i class="fas fa-home"></i> Indoor
+                            </button>
+                            <button class="filter-btn" data-filter="location" data-value="outdoor">
+                                <i class="fas fa-tree"></i> Outdoor
+                            </button>
+                            <button class="filter-btn" data-filter="location" data-value="any">
+                                <i class="fas fa-random"></i> Any
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Duration Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Duration (min)</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-clock"></i> Duration</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="duration-filters">
-                        <button class="filter-btn active" data-filter="duration" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="duration" data-value="5">
-                            Quick (5)
-                        </button>
-                        <button class="filter-btn" data-filter="duration" data-value="15">
-                            Short (15)
-                        </button>
-                        <button class="filter-btn" data-filter="duration" data-value="30">
-                            Medium (30)
-                        </button>
-                        <button class="filter-btn" data-filter="duration" data-value="60">
-                            Long (60)
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="duration-filters">
+                            <button class="filter-btn active" data-filter="duration" data-value="all">
+                                <i class="fas fa-infinity"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="duration" data-value="5">
+                                <i class="fas fa-bolt"></i> Quick (5)
+                            </button>
+                            <button class="filter-btn" data-filter="duration" data-value="15">
+                                <i class="fas fa-hourglass-half"></i> Short (15)
+                            </button>
+                            <button class="filter-btn" data-filter="duration" data-value="30">
+                                <i class="fas fa-hourglass"></i> Medium (30)
+                            </button>
+                            <button class="filter-btn" data-filter="duration" data-value="60">
+                                <i class="fas fa-hourglass-end"></i> Long (60)
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Supervision Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Supervision</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-user"></i> Supervision</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="supervision-filters">
-                        <button class="filter-btn active" data-filter="supervision" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="supervision" data-value="independent">
-                            Independent
-                        </button>
-                        <button class="filter-btn" data-filter="supervision" data-value="minimal">
-                            Minimal
-                        </button>
-                        <button class="filter-btn" data-filter="supervision" data-value="active">
-                            Active
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- New Filters -->
-                <div class="filter-group">
-                    <div class="filter-group-header">
-                        <h3>Kid Energy</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                    </div>
-                    <div class="filter-options" id="energy-filters">
-                        <button class="filter-btn active" data-filter="kidEnergy" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="kidEnergy" data-value="low">
-                            Low
-                        </button>
-                        <button class="filter-btn" data-filter="kidEnergy" data-value="medium">
-                            Medium
-                        </button>
-                        <button class="filter-btn" data-filter="kidEnergy" data-value="high">
-                            High
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="supervision-filters">
+                            <button class="filter-btn active" data-filter="supervision" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="supervision" data-value="independent">
+                                <i class="fas fa-user-alt"></i> Independent
+                            </button>
+                            <button class="filter-btn" data-filter="supervision" data-value="minimal">
+                                <i class="fas fa-user-check"></i> Minimal
+                            </button>
+                            <button class="filter-btn" data-filter="supervision" data-value="active">
+                                <i class="fas fa-user-friends"></i> Active
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
+                <!-- Kid Energy Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Kid Count</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-bolt"></i> Kid Energy</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="kidCount-filters">
-                        <button class="filter-btn active" data-filter="kidCount" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="kidCount" data-value="1">
-                            1
-                        </button>
-                        <button class="filter-btn" data-filter="kidCount" data-value="2-4">
-                            2-4
-                        </button>
-                        <button class="filter-btn" data-filter="kidCount" data-value="5+">
-                            5+
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="energy-filters">
+                            <button class="filter-btn active" data-filter="kidEnergy" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="kidEnergy" data-value="low">
+                                <i class="fas fa-battery-quarter"></i> Low
+                            </button>
+                            <button class="filter-btn" data-filter="kidEnergy" data-value="medium">
+                                <i class="fas fa-battery-half"></i> Medium
+                            </button>
+                            <button class="filter-btn" data-filter="kidEnergy" data-value="high">
+                                <i class="fas fa-battery-full"></i> High
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
+                <!-- Kid Count Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Mess Level</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-users"></i> Kid Count</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="messLevel-filters">
-                        <button class="filter-btn active" data-filter="messLevel" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="messLevel" data-value="none">
-                            None
-                        </button>
-                        <button class="filter-btn" data-filter="messLevel" data-value="low">
-                            Low
-                        </button>
-                        <button class="filter-btn" data-filter="messLevel" data-value="medium">
-                            Medium
-                        </button>
-                        <button class="filter-btn" data-filter="messLevel" data-value="high">
-                            High
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="kidCount-filters">
+                            <button class="filter-btn active" data-filter="kidCount" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="kidCount" data-value="1">
+                                <i class="fas fa-user"></i> 1
+                            </button>
+                            <button class="filter-btn" data-filter="kidCount" data-value="2-4">
+                                <i class="fas fa-user-friends"></i> 2-4
+                            </button>
+                            <button class="filter-btn" data-filter="kidCount" data-value="5+">
+                                <i class="fas fa-users"></i> 5+
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
+                <!-- Mess Level Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Noise Level</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-broom"></i> Mess Level</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="noiseLevel-filters">
-                        <button class="filter-btn active" data-filter="noiseLevel" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="noiseLevel" data-value="quiet">
-                            Quiet
-                        </button>
-                        <button class="filter-btn" data-filter="noiseLevel" data-value="moderate">
-                            Moderate
-                        </button>
-                        <button class="filter-btn" data-filter="noiseLevel" data-value="loud">
-                            Loud
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="messLevel-filters">
+                            <button class="filter-btn active" data-filter="messLevel" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="messLevel" data-value="none">
+                                <i class="fas fa-times"></i> None
+                            </button>
+                            <button class="filter-btn" data-filter="messLevel" data-value="low">
+                                <i class="fas fa-check"></i> Low
+                            </button>
+                            <button class="filter-btn" data-filter="messLevel" data-value="medium">
+                                <i class="fas fa-exclamation"></i> Medium
+                            </button>
+                            <button class="filter-btn" data-filter="messLevel" data-value="high">
+                                <i class="fas fa-exclamation-triangle"></i> High
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- NEW DIFFICULTY FILTER -->
+                <!-- Noise Level Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3>Difficulty Level</h3>
-                        <button class="filter-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
+                        <h3><i class="fas fa-volume-up"></i> Noise Level</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="filter-options" id="difficulty-filters">
-                        <button class="filter-btn active" data-filter="difficulty" data-value="all">
-                            All
-                        </button>
-                        <button class="filter-btn" data-filter="difficulty" data-value="1">
-                            1 (Easy)
-                        </button>
-                        <button class="filter-btn" data-filter="difficulty" data-value="2">
-                            2
-                        </button>
-                        <button class="filter-btn" data-filter="difficulty" data-value="3">
-                            3 (Medium)
-                        </button>
-                        <button class="filter-btn" data-filter="difficulty" data-value="4">
-                            4
-                        </button>
-                        <button class="filter-btn" data-filter="difficulty" data-value="5">
-                            5 (Hard)
-                        </button>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="noiseLevel-filters">
+                            <button class="filter-btn active" data-filter="noiseLevel" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="noiseLevel" data-value="quiet">
+                                <i class="fas fa-volume-mute"></i> Quiet
+                            </button>
+                            <button class="filter-btn" data-filter="noiseLevel" data-value="moderate">
+                                <i class="fas fa-volume-down"></i> Moderate
+                            </button>
+                            <button class="filter-btn" data-filter="noiseLevel" data-value="loud">
+                                <i class="fas fa-volume-up"></i> Loud
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Difficulty Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-star"></i> Difficulty</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="difficulty-filters">
+                            <button class="filter-btn active" data-filter="difficulty" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="difficulty" data-value="1">
+                                <i class="fas fa-star"></i> 1 (Easy)
+                            </button>
+                            <button class="filter-btn" data-filter="difficulty" data-value="2">
+                                <i class="fas fa-star"></i> 2
+                            </button>
+                            <button class="filter-btn" data-filter="difficulty" data-value="3">
+                                <i class="fas fa-star"></i> 3 (Medium)
+                            </button>
+                            <button class="filter-btn" data-filter="difficulty" data-value="4">
+                                <i class="fas fa-star"></i> 4
+                            </button>
+                            <button class="filter-btn" data-filter="difficulty" data-value="5">
+                                <i class="fas fa-star"></i> 5 (Hard)
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1673,24 +1529,19 @@
             kidCount: 'all',
             messLevel: 'all',
             noiseLevel: 'all',
-            difficulty: 'all' // NEW: Added difficulty filter
+            difficulty: 'all'
         };
         let activitiesData = [];
-        let activeFiltersCount = 0;
         
         // DOM elements
         const activitiesContainer = document.getElementById('activities-container');
         const activityCountElement = document.getElementById('activity-count');
         const ageGroupElement = document.getElementById('age-group');
         const resetBtn = document.getElementById('reset-filters');
-        const mobileResetBtn = document.getElementById('mobile-reset-filters');
-        const filterCountElement = document.getElementById('filter-count');
-        const filtersContainer = document.getElementById('filters-container');
-        const filterGroups = document.querySelectorAll('.filter-group');
         
         // Initialize the page
         function init() {
-            // Set up event listeners for all filter buttons (including age)
+            // Set up event listeners for all filter buttons
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const filterType = this.dataset.filter;
@@ -1704,9 +1555,6 @@
                     
                     // Update current filters
                     currentFilters[filterType] = filterValue;
-                    
-                    // Update active filters count
-                    updateActiveFiltersCount();
                     
                     // If it's an age filter, load new activities
                     if (filterType === 'ageGroup') {
@@ -1722,43 +1570,17 @@
             
             // Reset filters button
             resetBtn.addEventListener('click', resetFilters);
-            mobileResetBtn.addEventListener('click', resetFilters);
             
-            // Collapse/expand filter groups
-            document.querySelectorAll('.filter-toggle').forEach(button => {
-                button.addEventListener('click', function() {
-                    const group = this.closest('.filter-group');
-                    const options = group.querySelector('.filter-options');
-                    options.classList.toggle('collapsed');
-                    this.classList.toggle('collapsed');
+            // Collapsible filter groups
+            document.querySelectorAll('.filter-group-header').forEach(header => {
+                header.addEventListener('click', function() {
+                    const group = this.parentElement;
+                    group.classList.toggle('expanded');
                 });
-            });
-            
-            // Mobile filter toggle
-            document.querySelector('.mobile-filter-bar h2').addEventListener('click', function() {
-                filtersContainer.classList.toggle('active');
-            });
-            
-            // Close filters when clicking outside
-            document.addEventListener('click', function(e) {
-                if (!filtersContainer.contains(e.target) {
-                    filtersContainer.classList.remove('active');
-                }
             });
             
             // Load initial activities
             loadActivities();
-        }
-        
-        // Update active filters count
-        function updateActiveFiltersCount() {
-            activeFiltersCount = 0;
-            for (const filter in currentFilters) {
-                if (currentFilters[filter] !== 'all' && filter !== 'ageGroup') {
-                    activeFiltersCount++;
-                }
-            }
-            filterCountElement.textContent = activeFiltersCount;
         }
         
         // Reset all filters
@@ -1773,7 +1595,7 @@
                 kidCount: 'all',
                 messLevel: 'all',
                 noiseLevel: 'all',
-                difficulty: 'all' // NEW: Reset difficulty too
+                difficulty: 'all'
             };
             
             // Reset UI for all filters except age
@@ -1783,9 +1605,6 @@
                     btn.classList.add('active');
                 }
             });
-            
-            // Reset active filters count
-            updateActiveFiltersCount();
             
             // Reapply filters
             filterAndRenderActivities();
@@ -1827,7 +1646,7 @@
                     console.error('Error loading activities:', error);
                     activitiesContainer.innerHTML = `
                         <div class="no-results">
-                            <i class="fas fa-exclamation-triangle fa-3x" style="color: #e53e3e; margin-bottom: 20px;"></i>
+                            <i class="fas fa-exclamation-triangle" style="color: #e53e3e; margin-bottom: 15px;"></i>
                             <h3>Couldn't Load Activities</h3>
                             <p>Please check your internet connection or try again later.</p>
                             <p>Error: ${error.message}</p>
@@ -1890,7 +1709,7 @@
                     return false;
                 }
                 
-                // NEW: Difficulty filter
+                // Difficulty filter
                 if (currentFilters.difficulty !== 'all') {
                     const difficultyValue = parseInt(currentFilters.difficulty);
                     const activityDifficulty = activity.difficulty || 3;
@@ -1914,17 +1733,11 @@
             if (activities.length === 0) {
                 activitiesContainer.innerHTML = `
                     <div class="no-results">
-                        <i class="fas fa-search no-results-icon"></i>
+                        <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
                         <h3>No Matching Activities</h3>
                         <p>Try adjusting your filters or select a different age group.</p>
-                        <button class="reset-btn" id="reset-filters-empty">
-                            <i class="fas fa-redo"></i> Reset All Filters
-                        </button>
                     </div>
                 `;
-                
-                // Add event listener for reset button in empty state
-                document.getElementById('reset-filters-empty')?.addEventListener('click', resetFilters);
                 return;
             }
             
