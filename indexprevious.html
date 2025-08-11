@@ -979,43 +979,45 @@
             </div>
             
             <div class="filters-grid">
-                <!-- Integrated Age Filter -->
+                <!-- Updated Age Group Filter -->
                 <div class="filter-group age-filter-group">
                     <h3>Age Group</h3>
                     <div class="filter-options" id="age-filters">
-                        <button class="filter-btn active" data-filter="age" data-value="0-2">
+                        <button class="filter-btn active" data-filter="ageGroup" data-value="0-2">
                             <i class="fas fa-baby"></i> 0-2 Years
                         </button>
-                        <button class="filter-btn" data-filter="age" data-value="3-5">
+                        <button class="filter-btn" data-filter="ageGroup" data-value="3-5">
                             <i class="fas fa-child"></i> 3-5 Years
                         </button>
-                        <button class="filter-btn" data-filter="age" data-value="6-8">
+                        <button class="filter-btn" data-filter="ageGroup" data-value="6-8">
                             <i class="fas fa-user"></i> 6-8 Years
                         </button>
-                        <button class="filter-btn" data-filter="age" data-value="9-12">
+                        <button class="filter-btn" data-filter="ageGroup" data-value="9-12">
                             <i class="fas fa-user"></i> 9-12 Years
                         </button>
                     </div>
                 </div>
                 
+                <!-- Updated Situation Filter -->
                 <div class="filter-group">
                     <h3>Situation</h3>
-                    <div class="filter-options" id="context-filters">
-                        <button class="filter-btn active" data-filter="context" data-value="all">
+                    <div class="filter-options" id="situation-filters">
+                        <button class="filter-btn active" data-filter="situations" data-value="all">
                             All
                         </button>
-                        <button class="filter-btn" data-filter="context" data-value="normal">
+                        <button class="filter-btn" data-filter="situations" data-value="normal">
                             Normal
                         </button>
-                        <button class="filter-btn" data-filter="context" data-value="rainy">
-                            Rainy
+                        <button class="filter-btn" data-filter="situations" data-value="rainy-day">
+                            Rainy Day
                         </button>
-                        <button class="filter-btn" data-filter="context" data-value="busy">
-                            Busy
+                        <button class="filter-btn" data-filter="situations" data-value="travel">
+                            Travel
                         </button>
                     </div>
                 </div>
                 
+                <!-- Updated Location Filter -->
                 <div class="filter-group">
                     <h3>Location</h3>
                     <div class="filter-options" id="location-filters">
@@ -1028,37 +1030,48 @@
                         <button class="filter-btn" data-filter="location" data-value="outdoor">
                             Outdoor
                         </button>
+                        <button class="filter-btn" data-filter="location" data-value="any">
+                            Any
+                        </button>
                     </div>
                 </div>
                 
+                <!-- Updated Duration Filter -->
                 <div class="filter-group">
-                    <h3>Duration</h3>
+                    <h3>Duration (min)</h3>
                     <div class="filter-options" id="duration-filters">
                         <button class="filter-btn active" data-filter="duration" data-value="all">
                             All
                         </button>
-                        <button class="filter-btn" data-filter="duration" data-value="quick">
-                            Quick
+                        <button class="filter-btn" data-filter="duration" data-value="5">
+                            Quick (5)
                         </button>
-                        <button class="filter-btn" data-filter="duration" data-value="medium">
-                            Medium
+                        <button class="filter-btn" data-filter="duration" data-value="15">
+                            Short (15)
+                        </button>
+                        <button class="filter-btn" data-filter="duration" data-value="30">
+                            Medium (30)
+                        </button>
+                        <button class="filter-btn" data-filter="duration" data-value="60">
+                            Long (60)
                         </button>
                     </div>
                 </div>
                 
+                <!-- Updated Supervision Filter -->
                 <div class="filter-group">
-                    <h3>Your Involvement</h3>
-                    <div class="filter-options" id="involvement-filters">
-                        <button class="filter-btn active" data-filter="involvement" data-value="all">
+                    <h3>Supervision Needed</h3>
+                    <div class="filter-options" id="supervision-filters">
+                        <button class="filter-btn active" data-filter="supervision" data-value="all">
                             All
                         </button>
-                        <button class="filter-btn" data-filter="involvement" data-value="minimal">
+                        <button class="filter-btn" data-filter="supervision" data-value="independent">
+                            Independent
+                        </button>
+                        <button class="filter-btn" data-filter="supervision" data-value="minimal">
                             Minimal
                         </button>
-                        <button class="filter-btn" data-filter="involvement" data-value="some">
-                            Some
-                        </button>
-                        <button class="filter-btn" data-filter="involvement" data-value="active">
+                        <button class="filter-btn" data-filter="supervision" data-value="active">
                             Active
                         </button>
                     </div>
@@ -1117,10 +1130,10 @@
         // Current state
         let currentAgeGroup = '0-2';
         let currentFilters = {
-            context: 'all',
+            situations: 'all',
             location: 'all',
             duration: 'all',
-            involvement: 'all'
+            supervision: 'all'
         };
         let activitiesData = [];
         
@@ -1148,7 +1161,7 @@
                     currentFilters[filterType] = filterValue;
                     
                     // If it's an age filter, load new activities
-                    if (filterType === 'age') {
+                    if (filterType === 'ageGroup') {
                         currentAgeGroup = filterValue;
                         ageGroupElement.textContent = `${currentAgeGroup} years`;
                         loadActivities();
@@ -1170,14 +1183,14 @@
         function resetFilters() {
             // Reset filter values
             currentFilters = {
-                context: 'all',
+                situations: 'all',
                 location: 'all',
                 duration: 'all',
-                involvement: 'all'
+                supervision: 'all'
             };
             
             // Reset UI for all filters except age
-            document.querySelectorAll('.filter-btn:not([data-filter="age"])').forEach(btn => {
+            document.querySelectorAll('.filter-btn:not([data-filter="ageGroup"])').forEach(btn => {
                 btn.classList.remove('active');
                 if (btn.dataset.value === 'all') {
                     btn.classList.add('active');
@@ -1228,23 +1241,30 @@
         // Filter activities based on current filters
         function filterActivities() {
             return activitiesData.filter(activity => {
-                // Context filter
-                if (currentFilters.context !== 'all' && !activity.contexts.includes(currentFilters.context)) {
+                // Situation filter (array includes)
+                if (currentFilters.situations !== 'all' && 
+                    !activity.situations.includes(currentFilters.situations)) {
                     return false;
                 }
                 
                 // Location filter
-                if (currentFilters.location !== 'all' && activity.location !== currentFilters.location) {
+                if (currentFilters.location !== 'all' && 
+                    activity.location !== currentFilters.location &&
+                    activity.location !== 'any') {
                     return false;
                 }
                 
-                // Duration filter
-                if (currentFilters.duration !== 'all' && activity.duration !== currentFilters.duration) {
-                    return false;
+                // Duration filter (numeric comparison)
+                if (currentFilters.duration !== 'all') {
+                    const durationValue = parseInt(currentFilters.duration);
+                    if (activity.duration !== durationValue) {
+                        return false;
+                    }
                 }
                 
-                // Involvement filter
-                if (currentFilters.involvement !== 'all' && activity.involvement !== currentFilters.involvement) {
+                // Supervision filter
+                if (currentFilters.supervision !== 'all' && 
+                    activity.supervision !== currentFilters.supervision) {
                     return false;
                 }
                 
@@ -1274,11 +1294,11 @@
                     materialsText = "none";
                 }
                 
-                // Create context tags
-                let contextTags = '';
-                if (activity.contexts) {
-                    activity.contexts.forEach(context => {
-                        contextTags += `<span class="tag">${context}</span>`;
+                // Create situation tags
+                let situationTags = '';
+                if (activity.situations) {
+                    activity.situations.forEach(situation => {
+                        situationTags += `<span class="tag">${situation}</span>`;
                     });
                 }
                 
@@ -1293,9 +1313,9 @@
                             ${submitterCredit}
                             <h3 class="card-title">${activity.title}</h3>
                             <div class="card-meta">
-                                <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : 'tree'}"></i> ${activity.location}</span>
-                                <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration}</span>
-                                <span class="meta-item"><i class="fas fa-user"></i> ${activity.involvement}</span>
+                                <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
+                                <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
+                                <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
                             </div>
                         </div>
                         <div class="card-body">
@@ -1304,10 +1324,6 @@
                             </div>
                             <div class="card-details">
                                 <div class="detail-item">
-                                    <span class="detail-label">Benefits:</span>
-                                    <span>${activity.benefits}</span>
-                                </div>
-                                <div class="detail-item">
                                     <span class="detail-label">Prep:</span>
                                     <span>${activity.prep || 'None needed'}</span>
                                 </div>
@@ -1315,9 +1331,13 @@
                                     <span class="detail-label">Materials:</span>
                                     <span>${materialsText}</span>
                                 </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Skills:</span>
+                                    <span>${activity.skills?.join(', ') || 'Various'}</span>
+                                </div>
                             </div>
                             <div class="context-tags">
-                                ${contextTags}
+                                ${situationTags}
                             </div>
                         </div>
                     </div>
@@ -1341,3 +1361,4 @@
     </script>
 </body>
 </html>
+
