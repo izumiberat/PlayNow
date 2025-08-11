@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Now - Kid Activities for Busy Parents</title>
+    <title>Play Now - Kid Activities App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -18,6 +18,9 @@
             --submit-color: #e67e22;
             --app-banner-gradient: linear-gradient(135deg, #4a6fa5 0%, #6d9dc5 100%);
             --app-banner-highlight: #ffd700;
+            --success: #38a169;
+            --warning: #e53e3e;
+            --info: #4299e1;
         }
         
         * {
@@ -32,13 +35,15 @@
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
-            padding-bottom: 30px;
+            display: flex;
+            flex-direction: column;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            flex: 1;
         }
         
         /* Header */
@@ -520,6 +525,40 @@
             margin-bottom: 6px;
             font-weight: 700;
             color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Difficulty badge with tooltip */
+        .difficulty-badge {
+            font-size: 0.8rem;
+            background: var(--primary);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            position: relative;
+            cursor: help;
+        }
+        
+        .difficulty-badge:hover::after {
+            content: "Difficulty Level (1 easy - 5 hard)";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            z-index: 10;
+            pointer-events: none;
         }
         
         .card-meta {
@@ -528,12 +567,16 @@
             gap: 10px;
             font-size: 0.85rem;
             color: #666;
+            margin-top: 10px;
         }
         
         .meta-item {
             display: flex;
             align-items: center;
             gap: 5px;
+            background: #edf2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
         }
         
         .card-body {
@@ -566,7 +609,7 @@
         
         .detail-label {
             font-weight: 600;
-            min-width: 80px;
+            min-width: 100px;
             color: var(--dark);
             font-size: 0.9rem;
         }
@@ -587,6 +630,16 @@
             font-weight: 500;
         }
         
+        .tag.special {
+            background: #e6fffa;
+            color: #234e52;
+        }
+        
+        .tag.source {
+            background: #ebf8ff;
+            color: #2b6cb0;
+        }
+        
         .submitter-credit {
             position: absolute;
             top: 10px;
@@ -599,6 +652,161 @@
             font-weight: 500;
         }
         
+        /* Expandable sections */
+        .expandable-section {
+            margin-top: 15px;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+        }
+        
+        .expandable-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary);
+            padding: 8px 0;
+        }
+        
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .expandable-content.expanded {
+            max-height: 1000px; /* Sufficiently large value */
+        }
+        
+        .expandable-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .expandable-icon.expanded {
+            transform: rotate(180deg);
+        }
+        
+        /* Safety notes styling */
+        .safety-notes {
+            background-color: #fff8f8;
+            border-left: 4px solid #e53e3e;
+            padding: 12px;
+            border-radius: 0 4px 4px 0;
+            margin-top: 10px;
+        }
+        
+        /* Tips styling */
+        .parent-tips {
+            background-color: #f8fff8;
+            border-left: 4px solid #38a169;
+            padding: 12px;
+            border-radius: 0 4px 4px 0;
+            margin-top: 10px;
+        }
+        
+        /* Variations styling */
+        .variations-list {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style: none;
+        }
+        
+        .variations-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .variations-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Instructions styling */
+        .instructions-list {
+            margin-top: 10px;
+            padding-left: 0;
+            counter-reset: step-counter;
+            list-style: none;
+        }
+        
+        .instructions-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 35px;
+            min-height: 25px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .instructions-list li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            background: var(--primary);
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        /* Energy level indicators */
+        .energy-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .energy-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #e2e8f0;
+        }
+        
+        .energy-dot.active {
+            background: var(--primary);
+        }
+        
+        /* Loading spinner */
+        .loading {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            color: #666;
+        }
+        
+        .loading-spinner {
+            border: 4px solid rgba(74, 111, 165, 0.2);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* ================== */
+        /* Enhanced Footer */
+        /* ================== */
         .footer {
             text-align: center;
             padding: 40px 0 20px;
@@ -607,12 +815,16 @@
             font-size: 0.95rem;
             border-top: 1px solid var(--border);
             background: #f8fafc;
+            width: 100%;
         }
         
         .footer .container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         
         .footer .app-links {
@@ -621,6 +833,7 @@
             gap: 15px;
             margin-top: 25px;
             flex-wrap: wrap;
+            width: 100%;
         }
         
         .footer .linkedin-section {
@@ -673,49 +886,7 @@
             margin-top: 25px;
             color: #777;
             font-size: 0.9rem;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 40px;
-            font-size: 1.1rem;
-            color: var(--primary);
-            grid-column: 1 / -1;
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-        }
-        
-        .loading-spinner {
-            border: 4px solid rgba(74, 111, 165, 0.2);
-            border-top: 4px solid var(--primary);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .no-results {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 40px;
-            font-size: 1.1rem;
-            color: #666;
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-        }
-        
-        .no-results i {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 15px;
+            width: 100%;
         }
         
         /* Media Queries */
@@ -766,6 +937,10 @@
             .footer .linkedin-link i {
                 font-size: 1.5rem;
             }
+            
+            .filters-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
         }
         
         @media (min-width: 768px) {
@@ -806,6 +981,10 @@
             .footer .linkedin-link {
                 font-size: 1.1rem;
             }
+            
+            .filters-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
         }
         
         @media (max-width: 600px) {
@@ -842,6 +1021,36 @@
             
             .footer .linkedin-link i {
                 font-size: 1.3rem;
+            }
+            
+            /* Mobile footer adjustments */
+            .footer {
+                padding: 30px 0 20px;
+                margin-top: 20px;
+            }
+            
+            .footer .container {
+                padding: 0 15px;
+            }
+            
+            .footer .app-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .footer .app-links .download-btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            
+            .footer .linkedin-section {
+                padding: 10px;
+            }
+            
+            .footer .copyright {
+                margin-top: 15px;
             }
         }
         
@@ -979,7 +1188,7 @@
             </div>
             
             <div class="filters-grid">
-                <!-- Updated Age Group Filter -->
+                <!-- Age Group Filter -->
                 <div class="filter-group age-filter-group">
                     <h3>Age Group</h3>
                     <div class="filter-options" id="age-filters">
@@ -998,7 +1207,7 @@
                     </div>
                 </div>
                 
-                <!-- Updated Situation Filter -->
+                <!-- Situation Filter -->
                 <div class="filter-group">
                     <h3>Situation</h3>
                     <div class="filter-options" id="situation-filters">
@@ -1009,15 +1218,18 @@
                             Normal
                         </button>
                         <button class="filter-btn" data-filter="situations" data-value="rainy-day">
-                            Rainy Day
+                            Rainy
                         </button>
                         <button class="filter-btn" data-filter="situations" data-value="travel">
                             Travel
                         </button>
+                        <button class="filter-btn" data-filter="situations" data-value="bedtime">
+                            Bedtime
+                        </button>
                     </div>
                 </div>
                 
-                <!-- Updated Location Filter -->
+                <!-- Location Filter -->
                 <div class="filter-group">
                     <h3>Location</h3>
                     <div class="filter-options" id="location-filters">
@@ -1036,7 +1248,7 @@
                     </div>
                 </div>
                 
-                <!-- Updated Duration Filter -->
+                <!-- Duration Filter -->
                 <div class="filter-group">
                     <h3>Duration (min)</h3>
                     <div class="filter-options" id="duration-filters">
@@ -1058,9 +1270,9 @@
                     </div>
                 </div>
                 
-                <!-- Updated Supervision Filter -->
+                <!-- Supervision Filter -->
                 <div class="filter-group">
-                    <h3>Supervision Needed</h3>
+                    <h3>Supervision</h3>
                     <div class="filter-options" id="supervision-filters">
                         <button class="filter-btn active" data-filter="supervision" data-value="all">
                             All
@@ -1073,6 +1285,107 @@
                         </button>
                         <button class="filter-btn" data-filter="supervision" data-value="active">
                             Active
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- New Filters -->
+                <div class="filter-group">
+                    <h3>Kid Energy</h3>
+                    <div class="filter-options" id="energy-filters">
+                        <button class="filter-btn active" data-filter="kidEnergy" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="kidEnergy" data-value="low">
+                            Low
+                        </button>
+                        <button class="filter-btn" data-filter="kidEnergy" data-value="medium">
+                            Medium
+                        </button>
+                        <button class="filter-btn" data-filter="kidEnergy" data-value="high">
+                            High
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Kid Count</h3>
+                    <div class="filter-options" id="kidCount-filters">
+                        <button class="filter-btn active" data-filter="kidCount" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="kidCount" data-value="1">
+                            1
+                        </button>
+                        <button class="filter-btn" data-filter="kidCount" data-value="2-4">
+                            2-4
+                        </button>
+                        <button class="filter-btn" data-filter="kidCount" data-value="5+">
+                            5+
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Mess Level</h3>
+                    <div class="filter-options" id="messLevel-filters">
+                        <button class="filter-btn active" data-filter="messLevel" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="none">
+                            None
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="low">
+                            Low
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="medium">
+                            Medium
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="high">
+                            High
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Noise Level</h3>
+                    <div class="filter-options" id="noiseLevel-filters">
+                        <button class="filter-btn active" data-filter="noiseLevel" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="noiseLevel" data-value="quiet">
+                            Quiet
+                        </button>
+                        <button class="filter-btn" data-filter="noiseLevel" data-value="moderate">
+                            Moderate
+                        </button>
+                        <button class="filter-btn" data-filter="noiseLevel" data-value="loud">
+                            Loud
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- NEW DIFFICULTY FILTER -->
+                <div class="filter-group">
+                    <h3>Difficulty Level</h3>
+                    <div class="filter-options" id="difficulty-filters">
+                        <button class="filter-btn active" data-filter="difficulty" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="1">
+                            1 (Easy)
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="2">
+                            2
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="3">
+                            3 (Medium)
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="4">
+                            4
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="5">
+                            5 (Hard)
                         </button>
                     </div>
                 </div>
@@ -1095,7 +1408,7 @@
         </div>
     </div>
     
-    <!-- Footer -->
+    <!-- Enhanced Footer -->
     <footer class="footer">
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
@@ -1133,7 +1446,12 @@
             situations: 'all',
             location: 'all',
             duration: 'all',
-            supervision: 'all'
+            supervision: 'all',
+            kidEnergy: 'all',
+            kidCount: 'all',
+            messLevel: 'all',
+            noiseLevel: 'all',
+            difficulty: 'all' // NEW: Added difficulty filter
         };
         let activitiesData = [];
         
@@ -1186,7 +1504,12 @@
                 situations: 'all',
                 location: 'all',
                 duration: 'all',
-                supervision: 'all'
+                supervision: 'all',
+                kidEnergy: 'all',
+                kidCount: 'all',
+                messLevel: 'all',
+                noiseLevel: 'all',
+                difficulty: 'all' // NEW: Reset difficulty too
             };
             
             // Reset UI for all filters except age
@@ -1223,7 +1546,14 @@
                     return response.json();
                 })
                 .then(data => {
-                    activitiesData = data.activities;
+                    // Handle both new and old JSON structures
+                    if (Array.isArray(data)) {
+                        activitiesData = data; // New structure is an array
+                    } else if (data.activities && Array.isArray(data.activities)) {
+                        activitiesData = data.activities; // Old structure has activities property
+                    } else {
+                        throw new Error('Invalid JSON structure');
+                    }
                     filterAndRenderActivities();
                 })
                 .catch(error => {
@@ -1233,6 +1563,7 @@
                             <i class="fas fa-exclamation-triangle" style="color: #e53e3e; margin-bottom: 15px;"></i>
                             <h3>Couldn't Load Activities</h3>
                             <p>Please check your internet connection or try again later.</p>
+                            <p>Error: ${error.message}</p>
                         </div>
                     `;
                 });
@@ -1268,8 +1599,47 @@
                     return false;
                 }
                 
+                // Kid Energy filter
+                if (currentFilters.kidEnergy !== 'all' && 
+                    activity.kidEnergy !== currentFilters.kidEnergy) {
+                    return false;
+                }
+                
+                // Kid Count filter
+                if (currentFilters.kidCount !== 'all' && 
+                    activity.kidCount !== currentFilters.kidCount) {
+                    return false;
+                }
+                
+                // Mess Level filter
+                if (currentFilters.messLevel !== 'all' && 
+                    activity.messLevel !== currentFilters.messLevel) {
+                    return false;
+                }
+                
+                // Noise Level filter
+                if (currentFilters.noiseLevel !== 'all' && 
+                    activity.noiseLevel !== currentFilters.noiseLevel) {
+                    return false;
+                }
+                
+                // NEW: Difficulty filter
+                if (currentFilters.difficulty !== 'all') {
+                    const difficultyValue = parseInt(currentFilters.difficulty);
+                    const activityDifficulty = activity.difficulty || 3;
+                    if (activityDifficulty !== difficultyValue) {
+                        return false;
+                    }
+                }
+                
                 return true;
             });
+        }
+        
+        // Clean instruction text by removing numbered prefixes
+        function cleanInstructionText(step) {
+            // Remove any leading number/dot patterns (like "1. ", "2) ", etc.)
+            return step.replace(/^\d+[\.\)]\s*/, '');
         }
         
         // Render activities
@@ -1289,8 +1659,8 @@
             
             activities.forEach(activity => {
                 // Determine material display text
-                let materialsText = activity.materials.join(', ') || 'none';
-                if (activity.materials.length > 0 && activity.materials[0] === "none") {
+                let materialsText = activity.materials?.join(', ') || 'none';
+                if (activity.materials?.length > 0 && activity.materials[0] === "none") {
                     materialsText = "none";
                 }
                 
@@ -1302,20 +1672,138 @@
                     });
                 }
                 
+                // Create special needs tags
+                let specialNeedsTags = '';
+                if (activity.specialNeeds) {
+                    activity.specialNeeds.forEach(need => {
+                        specialNeedsTags += `<span class="tag special">${need}</span>`;
+                    });
+                }
+                
+                // Create source tag
+                const sourceTag = activity.source 
+                    ? `<span class="tag source">${activity.source}</span>` 
+                    : '';
+                
+                // Create energy indicators
+                const energyLevels = ['low', 'medium', 'high'];
+                const kidEnergyIndicator = energyLevels.map(level => `
+                    <div class="energy-dot ${activity.kidEnergy === level ? 'active' : ''}"></div>
+                `).join('');
+                
+                const parentEnergyIndicator = energyLevels.map(level => `
+                    <div class="energy-dot ${activity.parentEnergy === level ? 'active' : ''}"></div>
+                `).join('');
+                
                 // Check for submitter credit
                 const submitterCredit = activity.submitter 
                     ? `<div class="submitter-credit">By ${activity.submitter.name}</div>` 
                     : '';
                 
+                // Create expandable sections for additional content
+                let expandableSections = '';
+                
+                // Instructions section
+                let instructionsList = '';
+                if (activity.instructions) {
+                    let steps = [];
+                    if (Array.isArray(activity.instructions)) {
+                        steps = activity.instructions;
+                    } else if (typeof activity.instructions === 'string') {
+                        steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
+                    }
+                    
+                    // Clean each step by removing numbered prefixes
+                    steps = steps.map(step => cleanInstructionText(step));
+                    
+                    instructionsList = steps.map(step => `<li>${step}</li>`).join('');
+                    
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Step-by-Step Instructions</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <ol class="instructions-list">${instructionsList}</ol>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Safety notes section
+                if (activity.safetyNotes) {
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Safety Considerations</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <div class="safety-notes">
+                                    ${activity.safetyNotes}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Parent tips section
+                if (activity.parentTips) {
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Tips for Success</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <div class="parent-tips">
+                                    ${activity.parentTips}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Variations section
+                if (activity.variations && activity.variations.length > 0) {
+                    const variationsList = activity.variations
+                        .map(variation => `<li>${variation}</li>`)
+                        .join('');
+                    
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Activity Variations</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <ul class="variations-list">
+                                    ${variationsList}
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+                }
+                
                 activitiesHTML += `
                     <div class="activity-card">
                         <div class="card-header">
                             ${submitterCredit}
-                            <h3 class="card-title">${activity.title}</h3>
+                            <h3 class="card-title">
+                                ${activity.title}
+                                <!-- Tooltip added to difficulty badge -->
+                                <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
+                                    <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
+                                </span>
+                            </h3>
                             <div class="card-meta">
                                 <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
                                 <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
                                 <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
+                                <span class="meta-item"><i class="fas fa-child"></i> ${activity.kidCount || 'any'}</span>
+                                <span class="meta-item"><i class="fas fa-volume-up"></i> ${activity.noiseLevel || 'moderate'}</span>
+                                <span class="meta-item"><i class="fas fa-broom"></i> ${activity.messLevel || 'low'}</span>
                             </div>
                         </div>
                         <div class="card-body">
@@ -1335,16 +1823,40 @@
                                     <span class="detail-label">Skills:</span>
                                     <span>${activity.skills?.join(', ') || 'Various'}</span>
                                 </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Kid Energy:</span>
+                                    <span class="energy-indicator">${kidEnergyIndicator}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Parent Energy:</span>
+                                    <span class="energy-indicator">${parentEnergyIndicator}</span>
+                                </div>
                             </div>
+                            
                             <div class="context-tags">
                                 ${situationTags}
+                                ${specialNeedsTags}
+                                ${sourceTag}
                             </div>
+                            
+                            ${expandableSections}
                         </div>
                     </div>
                 `;
             });
             
             activitiesContainer.innerHTML = activitiesHTML;
+            
+            // Add event listeners for expandable sections
+            document.querySelectorAll('.expandable-header').forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.expandable-icon');
+                    
+                    content.classList.toggle('expanded');
+                    icon.classList.toggle('expanded');
+                });
+            });
         }
         
         // Filter and render activities
@@ -1361,4 +1873,3 @@
     </script>
 </body>
 </html>
-
