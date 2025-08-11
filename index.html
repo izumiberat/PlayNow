@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Now - Kid Activities for Busy Parents</title>
+    <title>Play Now - Enhanced Kid Activities App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -18,6 +18,9 @@
             --submit-color: #e67e22;
             --app-banner-gradient: linear-gradient(135deg, #4a6fa5 0%, #6d9dc5 100%);
             --app-banner-highlight: #ffd700;
+            --success: #38a169;
+            --warning: #e53e3e;
+            --info: #4299e1;
         }
         
         * {
@@ -520,6 +523,21 @@
             margin-bottom: 6px;
             font-weight: 700;
             color: var(--dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .difficulty-badge {
+            font-size: 0.8rem;
+            background: var(--primary);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 3px;
         }
         
         .card-meta {
@@ -528,12 +546,16 @@
             gap: 10px;
             font-size: 0.85rem;
             color: #666;
+            margin-top: 10px;
         }
         
         .meta-item {
             display: flex;
             align-items: center;
             gap: 5px;
+            background: #edf2f7;
+            padding: 4px 8px;
+            border-radius: 4px;
         }
         
         .card-body {
@@ -566,7 +588,7 @@
         
         .detail-label {
             font-weight: 600;
-            min-width: 80px;
+            min-width: 100px;
             color: var(--dark);
             font-size: 0.9rem;
         }
@@ -585,6 +607,16 @@
             font-size: 0.8rem;
             color: #4a5568;
             font-weight: 500;
+        }
+        
+        .tag.special {
+            background: #e6fffa;
+            color: #234e52;
+        }
+        
+        .tag.source {
+            background: #ebf8ff;
+            color: #2b6cb0;
         }
         
         .submitter-credit {
@@ -718,152 +750,6 @@
             margin-bottom: 15px;
         }
         
-        /* Media Queries */
-        @media (min-width: 400px) {
-            .btn-text {
-                display: inline;
-            }
-            
-            .download-btn {
-                padding: 8px 12px;
-                font-size: 0.8rem;
-            }
-            
-            .app-name {
-                max-width: 120px;
-                font-size: 1.2rem;
-            }
-            
-            .logo-icon {
-                font-size: 1.5rem;
-            }
-        }
-        
-        @media (min-width: 480px) {
-            .download-btn {
-                padding: 8px 15px;
-                font-size: 0.85rem;
-            }
-            
-            .header-container {
-                padding: 0 15px;
-                gap: 10px;
-            }
-            
-            .app-name {
-                max-width: 150px;
-                font-size: 1.3rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .footer .linkedin-link i {
-                font-size: 1.5rem;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .header-container {
-                padding: 0 20px;
-            }
-            
-            .app-name {
-                font-size: 1.4rem;
-                max-width: 200px;
-            }
-            
-            .download-btn {
-                padding: 10px 20px;
-                font-size: 0.95rem;
-            }
-            
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            
-            .hero p {
-                font-size: 1.15rem;
-            }
-            
-            .app-download-banner h2 {
-                font-size: 2.2rem;
-            }
-            
-            .app-download-banner p {
-                font-size: 1.2rem;
-            }
-            
-            .age-filter-group {
-                grid-column: auto;
-            }
-            
-            .footer .linkedin-link {
-                font-size: 1.1rem;
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .app-download-banner {
-                padding: 25px 15px;
-            }
-            
-            .app-download-banner h2 {
-                font-size: 1.6rem;
-            }
-            
-            .download-buttons {
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
-            
-            .store-btn {
-                width: 100%;
-                max-width: 280px;
-            }
-            
-            .benefit-item {
-                width: 100%;
-                max-width: none;
-            }
-            
-            .footer .linkedin-link {
-                flex-direction: row;
-                align-items: center;
-                text-align: center;
-                font-size: 1rem;
-            }
-            
-            .footer .linkedin-link i {
-                font-size: 1.3rem;
-            }
-        }
-        
-        @media (max-width: 350px) {
-            .header-container {
-                padding: 0 5px;
-            }
-            
-            .download-btn {
-                padding: 5px 6px;
-            }
-            
-            .app-name {
-                max-width: 70px;
-                font-size: 1rem;
-            }
-            
-            .footer .linkedin-link {
-                font-size: 0.9rem;
-            }
-        }
-        
         /* Expandable sections */
         .expandable-section {
             margin-top: 15px;
@@ -965,6 +851,186 @@
             justify-content: center;
             font-size: 0.8rem;
             font-weight: bold;
+        }
+        
+        /* Energy level indicators */
+        .energy-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .energy-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #e2e8f0;
+        }
+        
+        .energy-dot.active {
+            background: var(--primary);
+        }
+        
+        /* Last updated */
+        .last-updated {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 10px;
+            text-align: right;
+        }
+        
+        /* Media Queries */
+        @media (min-width: 400px) {
+            .btn-text {
+                display: inline;
+            }
+            
+            .download-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .app-name {
+                max-width: 120px;
+                font-size: 1.2rem;
+            }
+            
+            .logo-icon {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (min-width: 480px) {
+            .download-btn {
+                padding: 8px 15px;
+                font-size: 0.85rem;
+            }
+            
+            .header-container {
+                padding: 0 15px;
+                gap: 10px;
+            }
+            
+            .app-name {
+                max-width: 150px;
+                font-size: 1.3rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .footer .linkedin-link i {
+                font-size: 1.5rem;
+            }
+            
+            .filters-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .header-container {
+                padding: 0 20px;
+            }
+            
+            .app-name {
+                font-size: 1.4rem;
+                max-width: 200px;
+            }
+            
+            .download-btn {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.15rem;
+            }
+            
+            .app-download-banner h2 {
+                font-size: 2.2rem;
+            }
+            
+            .app-download-banner p {
+                font-size: 1.2rem;
+            }
+            
+            .age-filter-group {
+                grid-column: auto;
+            }
+            
+            .footer .linkedin-link {
+                font-size: 1.1rem;
+            }
+            
+            .filters-grid {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .app-download-banner {
+                padding: 25px 15px;
+            }
+            
+            .app-download-banner h2 {
+                font-size: 1.6rem;
+            }
+            
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            
+            .store-btn {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .benefit-item {
+                width: 100%;
+                max-width: none;
+            }
+            
+            .footer .linkedin-link {
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                font-size: 1rem;
+            }
+            
+            .footer .linkedin-link i {
+                font-size: 1.3rem;
+            }
+        }
+        
+        @media (max-width: 350px) {
+            .header-container {
+                padding: 0 5px;
+            }
+            
+            .download-btn {
+                padding: 5px 6px;
+            }
+            
+            .app-name {
+                max-width: 70px;
+                font-size: 1rem;
+            }
+            
+            .footer .linkedin-link {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -1082,7 +1148,7 @@
             </div>
             
             <div class="filters-grid">
-                <!-- Updated Age Group Filter -->
+                <!-- Age Group Filter -->
                 <div class="filter-group age-filter-group">
                     <h3>Age Group</h3>
                     <div class="filter-options" id="age-filters">
@@ -1101,7 +1167,7 @@
                     </div>
                 </div>
                 
-                <!-- Updated Situation Filter -->
+                <!-- Situation Filter -->
                 <div class="filter-group">
                     <h3>Situation</h3>
                     <div class="filter-options" id="situation-filters">
@@ -1112,15 +1178,18 @@
                             Normal
                         </button>
                         <button class="filter-btn" data-filter="situations" data-value="rainy-day">
-                            Rainy Day
+                            Rainy
                         </button>
                         <button class="filter-btn" data-filter="situations" data-value="travel">
                             Travel
                         </button>
+                        <button class="filter-btn" data-filter="situations" data-value="bedtime">
+                            Bedtime
+                        </button>
                     </div>
                 </div>
                 
-                <!-- Updated Location Filter -->
+                <!-- Location Filter -->
                 <div class="filter-group">
                     <h3>Location</h3>
                     <div class="filter-options" id="location-filters">
@@ -1139,7 +1208,7 @@
                     </div>
                 </div>
                 
-                <!-- Updated Duration Filter -->
+                <!-- Duration Filter -->
                 <div class="filter-group">
                     <h3>Duration (min)</h3>
                     <div class="filter-options" id="duration-filters">
@@ -1161,9 +1230,9 @@
                     </div>
                 </div>
                 
-                <!-- Updated Supervision Filter -->
+                <!-- Supervision Filter -->
                 <div class="filter-group">
-                    <h3>Supervision Needed</h3>
+                    <h3>Supervision</h3>
                     <div class="filter-options" id="supervision-filters">
                         <button class="filter-btn active" data-filter="supervision" data-value="all">
                             All
@@ -1176,6 +1245,82 @@
                         </button>
                         <button class="filter-btn" data-filter="supervision" data-value="active">
                             Active
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- New Filters -->
+                <div class="filter-group">
+                    <h3>Kid Energy</h3>
+                    <div class="filter-options" id="energy-filters">
+                        <button class="filter-btn active" data-filter="kidEnergy" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="kidEnergy" data-value="low">
+                            Low
+                        </button>
+                        <button class="filter-btn" data-filter="kidEnergy" data-value="medium">
+                            Medium
+                        </button>
+                        <button class="filter-btn" data-filter="kidEnergy" data-value="high">
+                            High
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Kid Count</h3>
+                    <div class="filter-options" id="kidCount-filters">
+                        <button class="filter-btn active" data-filter="kidCount" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="kidCount" data-value="1">
+                            1
+                        </button>
+                        <button class="filter-btn" data-filter="kidCount" data-value="2-4">
+                            2-4
+                        </button>
+                        <button class="filter-btn" data-filter="kidCount" data-value="5+">
+                            5+
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Mess Level</h3>
+                    <div class="filter-options" id="messLevel-filters">
+                        <button class="filter-btn active" data-filter="messLevel" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="none">
+                            None
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="low">
+                            Low
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="medium">
+                            Medium
+                        </button>
+                        <button class="filter-btn" data-filter="messLevel" data-value="high">
+                            High
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Noise Level</h3>
+                    <div class="filter-options" id="noiseLevel-filters">
+                        <button class="filter-btn active" data-filter="noiseLevel" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="noiseLevel" data-value="quiet">
+                            Quiet
+                        </button>
+                        <button class="filter-btn" data-filter="noiseLevel" data-value="moderate">
+                            Moderate
+                        </button>
+                        <button class="filter-btn" data-filter="noiseLevel" data-value="loud">
+                            Loud
                         </button>
                     </div>
                 </div>
@@ -1236,7 +1381,11 @@
             situations: 'all',
             location: 'all',
             duration: 'all',
-            supervision: 'all'
+            supervision: 'all',
+            kidEnergy: 'all',
+            kidCount: 'all',
+            messLevel: 'all',
+            noiseLevel: 'all'
         };
         let activitiesData = [];
         
@@ -1289,7 +1438,11 @@
                 situations: 'all',
                 location: 'all',
                 duration: 'all',
-                supervision: 'all'
+                supervision: 'all',
+                kidEnergy: 'all',
+                kidCount: 'all',
+                messLevel: 'all',
+                noiseLevel: 'all'
             };
             
             // Reset UI for all filters except age
@@ -1379,6 +1532,30 @@
                     return false;
                 }
                 
+                // Kid Energy filter
+                if (currentFilters.kidEnergy !== 'all' && 
+                    activity.kidEnergy !== currentFilters.kidEnergy) {
+                    return false;
+                }
+                
+                // Kid Count filter
+                if (currentFilters.kidCount !== 'all' && 
+                    activity.kidCount !== currentFilters.kidCount) {
+                    return false;
+                }
+                
+                // Mess Level filter
+                if (currentFilters.messLevel !== 'all' && 
+                    activity.messLevel !== currentFilters.messLevel) {
+                    return false;
+                }
+                
+                // Noise Level filter
+                if (currentFilters.noiseLevel !== 'all' && 
+                    activity.noiseLevel !== currentFilters.noiseLevel) {
+                    return false;
+                }
+                
                 return true;
             });
         }
@@ -1412,6 +1589,29 @@
                         situationTags += `<span class="tag">${situation}</span>`;
                     });
                 }
+                
+                // Create special needs tags
+                let specialNeedsTags = '';
+                if (activity.specialNeeds) {
+                    activity.specialNeeds.forEach(need => {
+                        specialNeedsTags += `<span class="tag special">${need}</span>`;
+                    });
+                }
+                
+                // Create source tag
+                const sourceTag = activity.source 
+                    ? `<span class="tag source">${activity.source}</span>` 
+                    : '';
+                
+                // Create energy indicators
+                const energyLevels = ['low', 'medium', 'high'];
+                const kidEnergyIndicator = energyLevels.map(level => `
+                    <div class="energy-dot ${activity.kidEnergy === level ? 'active' : ''}"></div>
+                `).join('');
+                
+                const parentEnergyIndicator = energyLevels.map(level => `
+                    <div class="energy-dot ${activity.parentEnergy === level ? 'active' : ''}"></div>
+                `).join('');
                 
                 // Check for submitter credit
                 const submitterCredit = activity.submitter 
@@ -1500,12 +1700,19 @@
                     <div class="activity-card">
                         <div class="card-header">
                             ${submitterCredit}
-                            <h3 class="card-title">${activity.title}</h3>
+                            <h3 class="card-title">
+                                ${activity.title}
+                                <span class="difficulty-badge">
+                                    <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
+                                </span>
+                            </h3>
                             <div class="card-meta">
                                 <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
                                 <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
                                 <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
-                                <span class="meta-item"><i class="fas fa-star"></i> ${activity.difficulty || 3}/5</span>
+                                <span class="meta-item"><i class="fas fa-child"></i> ${activity.kidCount || 'any'}</span>
+                                <span class="meta-item"><i class="fas fa-volume-up"></i> ${activity.noiseLevel || 'moderate'}</span>
+                                <span class="meta-item"><i class="fas fa-broom"></i> ${activity.messLevel || 'low'}</span>
                             </div>
                         </div>
                         <div class="card-body">
@@ -1525,12 +1732,27 @@
                                     <span class="detail-label">Skills:</span>
                                     <span>${activity.skills?.join(', ') || 'Various'}</span>
                                 </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Kid Energy:</span>
+                                    <span class="energy-indicator">${kidEnergyIndicator}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Parent Energy:</span>
+                                    <span class="energy-indicator">${parentEnergyIndicator}</span>
+                                </div>
                             </div>
+                            
                             <div class="context-tags">
                                 ${situationTags}
+                                ${specialNeedsTags}
+                                ${sourceTag}
                             </div>
                             
                             ${expandableSections}
+                            
+                            <div class="last-updated">
+                                Updated: ${activity.lastUpdated ? new Date(activity.lastUpdated).toLocaleDateString() : 'N/A'}
+                            </div>
                         </div>
                     </div>
                 `;
