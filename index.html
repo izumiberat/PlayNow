@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play Now - Enhanced Kid Activities App</title>
+    <title>Play Now - Kid Activities App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -458,7 +458,7 @@
         
         .age-filter-group .filter-options {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr));
             gap: 10px;
         }
         
@@ -528,6 +528,7 @@
             align-items: center;
         }
         
+        /* Difficulty badge with tooltip */
         .difficulty-badge {
             font-size: 0.8rem;
             background: var(--primary);
@@ -538,6 +539,24 @@
             display: flex;
             align-items: center;
             gap: 3px;
+            position: relative;
+            cursor: help;
+        }
+        
+        .difficulty-badge:hover::after {
+            content: "Difficulty Level (1 easy - 5 hard)";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            z-index: 10;
+            pointer-events: none;
         }
         
         .card-meta {
@@ -770,6 +789,32 @@
             color: #777;
             margin-top: 10px;
             text-align: right;
+        }
+        
+        /* Loading spinner */
+        .loading {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            color: #666;
+        }
+        
+        .loading-spinner {
+            border: 4px solid rgba(74, 111, 165, 0.2);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         
         /* Media Queries */
@@ -1217,6 +1262,31 @@
                         </button>
                     </div>
                 </div>
+                
+                <!-- NEW DIFFICULTY FILTER -->
+                <div class="filter-group">
+                    <h3>Difficulty Level</h3>
+                    <div class="filter-options" id="difficulty-filters">
+                        <button class="filter-btn active" data-filter="difficulty" data-value="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="1">
+                            1 (Easy)
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="2">
+                            2
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="3">
+                            3 (Medium)
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="4">
+                            4
+                        </button>
+                        <button class="filter-btn" data-filter="difficulty" data-value="5">
+                            5 (Hard)
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -1278,7 +1348,8 @@
             kidEnergy: 'all',
             kidCount: 'all',
             messLevel: 'all',
-            noiseLevel: 'all'
+            noiseLevel: 'all',
+            difficulty: 'all' // NEW: Added difficulty filter
         };
         let activitiesData = [];
         
@@ -1335,7 +1406,8 @@
                 kidEnergy: 'all',
                 kidCount: 'all',
                 messLevel: 'all',
-                noiseLevel: 'all'
+                noiseLevel: 'all',
+                difficulty: 'all' // NEW: Reset difficulty too
             };
             
             // Reset UI for all filters except age
@@ -1449,6 +1521,15 @@
                     return false;
                 }
                 
+                // NEW: Difficulty filter
+                if (currentFilters.difficulty !== 'all') {
+                    const difficultyValue = parseInt(currentFilters.difficulty);
+                    const activityDifficulty = activity.difficulty || 3;
+                    if (activityDifficulty !== difficultyValue) {
+                        return false;
+                    }
+                }
+                
                 return true;
             });
         }
@@ -1520,7 +1601,7 @@
                 // Create expandable sections for additional content
                 let expandableSections = '';
                 
-                // Instructions section - FIXED: Remove numbered prefixes
+                // Instructions section
                 let instructionsList = '';
                 if (activity.instructions) {
                     let steps = [];
@@ -1609,7 +1690,8 @@
                             ${submitterCredit}
                             <h3 class="card-title">
                                 ${activity.title}
-                                <span class="difficulty-badge">
+                                <!-- Tooltip added to difficulty badge -->
+                                <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
                                     <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
                                 </span>
                             </h3>
