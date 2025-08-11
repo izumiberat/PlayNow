@@ -631,247 +631,6 @@
             font-weight: 500;
         }
         
-        .footer {
-            text-align: center;
-            padding: 40px 0 20px;
-            margin-top: 40px;
-            color: #666;
-            font-size: 0.95rem;
-            border-top: 1px solid var(--border);
-            background: #f8fafc;
-        }
-        
-        .footer .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .footer .app-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 25px;
-            flex-wrap: wrap;
-        }
-        
-        .footer .linkedin-section {
-            margin: 20px 0;
-            padding: 15px;
-            background: rgba(74, 111, 165, 0.05);
-            border-radius: 8px;
-            max-width: 500px;
-            width: 100%;
-        }
-        
-        .footer .linkedin-section h3 {
-            font-size: 1rem;
-            color: var(--primary);
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .footer .linkedin-link {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            transition: all 0.2s ease;
-            font-size: 1rem;
-            padding: 8px 15px;
-        }
-        
-        .footer .linkedin-link i {
-            font-size: 1.4rem;
-            min-width: 24px;
-            vertical-align: middle;
-        }
-        
-        .footer .linkedin-link span {
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 1.4;
-        }
-        
-        .footer .linkedin-link:hover {
-            color: #3a5a80;
-            text-decoration: underline;
-        }
-        
-        .footer .copyright {
-            margin-top: 25px;
-            color: #777;
-            font-size: 0.9rem;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 40px;
-            font-size: 1.1rem;
-            color: var(--primary);
-            grid-column: 1 / -1;
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-        }
-        
-        .loading-spinner {
-            border: 4px solid rgba(74, 111, 165, 0.2);
-            border-top: 4px solid var(--primary);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .no-results {
-            grid-column: 1 / -1;
-            text-align: center;
-            padding: 40px;
-            font-size: 1.1rem;
-            color: #666;
-            background: white;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-        }
-        
-        .no-results i {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-        
-        /* Expandable sections */
-        .expandable-section {
-            margin-top: 15px;
-            border-top: 1px solid var(--border);
-            padding-top: 15px;
-        }
-        
-        .expandable-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            font-weight: 600;
-            color: var(--primary);
-            padding: 8px 0;
-        }
-        
-        .expandable-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        
-        .expandable-content.expanded {
-            max-height: 1000px; /* Sufficiently large value */
-        }
-        
-        .expandable-icon {
-            transition: transform 0.3s ease;
-        }
-        
-        .expandable-icon.expanded {
-            transform: rotate(180deg);
-        }
-        
-        /* Safety notes styling */
-        .safety-notes {
-            background-color: #fff8f8;
-            border-left: 4px solid #e53e3e;
-            padding: 12px;
-            border-radius: 0 4px 4px 0;
-            margin-top: 10px;
-        }
-        
-        /* Tips styling */
-        .parent-tips {
-            background-color: #f8fff8;
-            border-left: 4px solid #38a169;
-            padding: 12px;
-            border-radius: 0 4px 4px 0;
-            margin-top: 10px;
-        }
-        
-        /* Variations styling */
-        .variations-list {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-        
-        .variations-list li {
-            margin-bottom: 8px;
-            position: relative;
-        }
-        
-        .variations-list li::before {
-            content: "•";
-            color: var(--primary);
-            font-weight: bold;
-            position: absolute;
-            left: -15px;
-        }
-        
-        /* Instructions styling */
-        .instructions-list {
-            margin-top: 10px;
-            padding-left: 20px;
-            counter-reset: step-counter;
-        }
-        
-        .instructions-list li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 25px;
-        }
-        
-        .instructions-list li::before {
-            counter-increment: step-counter;
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: var(--primary);
-            color: white;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-        
-        /* Energy level indicators */
-        .energy-indicator {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .energy-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: #e2e8f0;
-        }
-        
-        .energy-dot.active {
-            background: var(--primary);
-        }
-        
-        /* Last updated */
         .last-updated {
             font-size: 0.8rem;
             color: #777;
@@ -1031,6 +790,135 @@
             .footer .linkedin-link {
                 font-size: 0.9rem;
             }
+        }
+        
+        /* Expandable sections */
+        .expandable-section {
+            margin-top: 15px;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+        }
+        
+        .expandable-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary);
+            padding: 8px 0;
+        }
+        
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .expandable-content.expanded {
+            max-height: 1000px; /* Sufficiently large value */
+        }
+        
+        .expandable-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .expandable-icon.expanded {
+            transform: rotate(180deg);
+        }
+        
+        /* Safety notes styling */
+        .safety-notes {
+            background-color: #fff8f8;
+            border-left: 4px solid #e53e3e;
+            padding: 12px;
+            border-radius: 0 4px 4px 0;
+            margin-top: 10px;
+        }
+        
+        /* Tips styling */
+        .parent-tips {
+            background-color: #f8fff8;
+            border-left: 4px solid #38a169;
+            padding: 12px;
+            border-radius: 0 4px 4px 0;
+            margin-top: 10px;
+        }
+        
+        /* Variations styling */
+        .variations-list {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        
+        .variations-list li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        .variations-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+        
+        /* Instructions styling */
+        .instructions-list {
+            margin-top: 10px;
+            padding-left: 20px;
+            counter-reset: step-counter;
+        }
+        
+        .instructions-list li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .instructions-list li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--primary);
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        /* Energy level indicators */
+        .energy-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .energy-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #e2e8f0;
+        }
+        
+        .energy-dot.active {
+            background: var(--primary);
+        }
+        
+        /* Last updated */
+        .last-updated {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 10px;
+            text-align: right;
         }
     </style>
 </head>
@@ -1621,12 +1509,19 @@
                 // Create expandable sections for additional content
                 let expandableSections = '';
                 
-                // Instructions section
+                // Instructions section - FIXED: Now handles both array and string formats
+                let instructionsList = '';
                 if (activity.instructions) {
-                    const instructionsList = activity.instructions.split('\n')
-                        .filter(step => step.trim() !== '')
-                        .map(step => `<li>${step}</li>`)
-                        .join('');
+                    if (Array.isArray(activity.instructions)) {
+                        instructionsList = activity.instructions
+                            .map(step => `<li>${step}</li>`)
+                            .join('');
+                    } else if (typeof activity.instructions === 'string') {
+                        instructionsList = activity.instructions.split('\n')
+                            .filter(step => step.trim() !== '')
+                            .map(step => `<li>${step}</li>`)
+                            .join('');
+                    }
                     
                     expandableSections += `
                         <div class="expandable-section">
