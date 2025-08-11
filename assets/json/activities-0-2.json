@@ -4,11 +4,18 @@
       "id": "1",
       "title": "Peek-a-boo with a blanket",
       "description": "Classic hiding and revealing game that delights babies",
-      "instructions": "1. Hold a blanket between you and your baby\n2. Wait 2-3 seconds\n3. Quickly reveal your face saying 'Peek-a-boo!'\n4. Repeat with varying timing",
+      "instructions": [
+        "1. Hold a blanket between you and your baby",
+        "2. Wait 2-3 seconds",
+        "3. Quickly reveal your face saying 'Peek-a-boo!'",
+        "4. Repeat with varying timing"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["blanket"],
+      "materials": [
+        "blanket"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -16,17 +23,32 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "rainy-day", "waiting-room"],
-      "skills": ["cognitive", "social"],
-      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day",
+        "waiting-room"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "autism-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Always remove blanket immediately after play",
       "parentTips": "Use high-contrast fabrics for visual interest",
-      "variations": ["Use hands instead of blanket", "Let baby pull the blanket"],
+      "variations": [
+        "Use hands instead of blanket",
+        "Let baby pull the blanket"
+      ],
       "source": "traditional",
-      "tags": ["pretend-play"],
+      "tags": [
+        "pretend-play"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -35,11 +57,18 @@
       "id": "2",
       "title": "Stacking cups",
       "description": "Building and knocking down colorful towers",
-      "instructions": "1. Show how to stack cups\n2. Hand cups to baby\n3. Cheer when they stack\n4. Celebrate when they knock down",
+      "instructions": [
+        "1. Show how to stack cups",
+        "2. Hand cups to baby",
+        "3. Cheer when they stack",
+        "4. Celebrate when they knock down"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "indoor",
-      "materials": ["stacking cups"],
+      "materials": [
+        "stacking cups"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -47,17 +76,31 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "rainy-day", "sick-day"],
-      "skills": ["motor", "cognitive"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day",
+        "sick-day"
+      ],
+      "skills": [
+        "motor",
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Ensure cups are large enough to prevent choking",
       "parentTips": "Start with just 3-4 cups for beginners",
-      "variations": ["Hide large toys under cups", "Sort by color"],
+      "variations": [
+        "Hide large toys under cups",
+        "Sort by color"
+      ],
       "source": "traditional",
-      "tags": ["building"],
+      "tags": [
+        "building"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -66,11 +109,18 @@
       "id": "3",
       "title": "Blanket ride",
       "description": "Gentle pulling on a blanket for movement fun",
-      "instructions": "1. Place baby sitting on blanket\n2. Hold blanket corners securely\n3. Pull slowly on smooth surface\n4. Make 'vroom' sounds during movement",
+      "instructions": [
+        "1. Place baby sitting on blanket",
+        "2. Hold blanket corners securely",
+        "3. Pull slowly on smooth surface",
+        "4. Make 'vroom' sounds during movement"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["blanket"],
+      "materials": [
+        "blanket"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "low",
@@ -78,17 +128,29 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "few",
       "seasonality": "any",
       "safetyNotes": "Only on smooth floors without obstacles",
       "parentTips": "Kneel to maintain control at baby's level",
-      "variations": ["Add stuffed animal passengers", "Vary pulling speeds"],
+      "variations": [
+        "Add stuffed animal passengers",
+        "Vary pulling speeds"
+      ],
       "source": "traditional",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -97,11 +159,19 @@
       "id": "4",
       "title": "Bubble chasing",
       "description": "Popping floating bubbles for visual tracking fun",
-      "instructions": "1. Dip wand in solution\n2. Blow steady stream of bubbles\n3. Point to bubbles\n4. Encourage baby to touch/pop them",
+      "instructions": [
+        "1. Dip wand in solution",
+        "2. Blow steady stream of bubbles",
+        "3. Point to bubbles",
+        "4. Encourage baby to touch/pop them"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "outdoor",
-      "materials": ["bubble solution", "bubble wand"],
+      "materials": [
+        "bubble solution",
+        "bubble wand"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "high",
@@ -109,17 +179,29 @@
       "supervision": "active",
       "messLevel": "low",
       "noiseLevel": "loud",
-      "situations": ["normal", "beach"],
-      "skills": ["motor", "cognitive"],
+      "situations": [
+        "normal",
+        "beach"
+      ],
+      "skills": [
+        "motor",
+        "cognitive"
+      ],
       "specialNeeds": [],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Use non-toxic solution only",
       "parentTips": "Blow downward so bubbles stay in reach",
-      "variations": ["Use automatic bubble blower", "Try giant bubbles"],
+      "variations": [
+        "Use automatic bubble blower",
+        "Try giant bubbles"
+      ],
       "source": "traditional",
-      "tags": ["sensory", "movement"],
+      "tags": [
+        "sensory",
+        "movement"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -128,11 +210,18 @@
       "id": "5",
       "title": "Rolling ball",
       "description": "Simple ball-rolling game for interaction",
-      "instructions": "1. Sit facing baby 3-4 feet apart\n2. Roll ball slowly toward them\n3. Encourage them to push back\n4. Clap when they return it",
+      "instructions": [
+        "1. Sit facing baby 3-4 feet apart",
+        "2. Roll ball slowly toward them",
+        "3. Encourage them to push back",
+        "4. Clap when they return it"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "outdoor",
-      "materials": ["soft ball"],
+      "materials": [
+        "soft ball"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -140,17 +229,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "park"],
-      "skills": ["motor", "social"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "park"
+      ],
+      "skills": [
+        "motor",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Use ball larger than 1.75\" diameter",
       "parentTips": "Start with very short distances",
-      "variations": ["Add targets to roll toward", "Use textured balls"],
+      "variations": [
+        "Add targets to roll toward",
+        "Use textured balls"
+      ],
       "source": "traditional",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -159,11 +261,18 @@
       "id": "6",
       "title": "Nature walk",
       "description": "Sensory exploration of outdoor environments",
-      "instructions": "1. Carry or stroll with baby\n2. Point to interesting natural items\n3. Describe textures/colors/sounds\n4. Let them touch safe plants",
+      "instructions": [
+        "1. Carry or stroll with baby",
+        "2. Point to interesting natural items",
+        "3. Describe textures/colors/sounds",
+        "4. Let them touch safe plants"
+      ],
       "ageGroup": "0-2",
       "duration": 30,
       "location": "outdoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -171,17 +280,30 @@
       "supervision": "active",
       "messLevel": "low",
       "noiseLevel": "quiet",
-      "situations": ["normal", "park"],
-      "skills": ["cognitive", "emotional"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "park"
+      ],
+      "skills": [
+        "cognitive",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "spring,summer,fall",
       "safetyNotes": "Avoid poisonous plants and berries",
       "parentTips": "Bring a bag for collected treasures",
-      "variations": ["Focus on specific senses (sound hunt)"],
+      "variations": [
+        "Focus on specific senses (sound hunt)"
+      ],
       "source": "waldorf",
-      "tags": ["nature", "sensory"],
+      "tags": [
+        "nature",
+        "sensory"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -190,11 +312,18 @@
       "id": "7",
       "title": "Dance party",
       "description": "Musical movement with caregiver",
-      "instructions": "1. Hold baby securely\n2. Play upbeat music\n3. Sway, bounce and spin gently\n4. Change moves with song changes",
+      "instructions": [
+        "1. Hold baby securely",
+        "2. Play upbeat music",
+        "3. Sway, bounce and spin gently",
+        "4. Change moves with song changes"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["music player"],
+      "materials": [
+        "music player"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -202,17 +331,31 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["motor", "social"],
-      "specialNeeds": ["adhd-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "motor",
+        "social"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Support baby's neck; avoid excessive spinning",
       "parentTips": "Watch for overstimulation cues",
-      "variations": ["Use different music genres", "Add scarves"],
+      "variations": [
+        "Use different music genres",
+        "Add scarves"
+      ],
       "source": "traditional",
-      "tags": ["music", "movement"],
+      "tags": [
+        "music",
+        "movement"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -221,11 +364,18 @@
       "id": "8",
       "title": "Mirror play",
       "description": "Self-discovery through reflection",
-      "instructions": "1. Sit with baby before mirror\n2. Make exaggerated facial expressions\n3. Point to features in reflection\n4. Play peek-a-boo with mirror",
+      "instructions": [
+        "1. Sit with baby before mirror",
+        "2. Make exaggerated facial expressions",
+        "3. Point to features in reflection",
+        "4. Play peek-a-boo with mirror"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["baby-safe mirror"],
+      "materials": [
+        "baby-safe mirror"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -233,17 +383,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "bedtime"],
-      "skills": ["social", "emotional"],
-      "specialNeeds": ["autism-friendly"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Use acrylic mirror only",
       "parentTips": "Start with short 2-minute sessions",
-      "variations": ["Add hats/props", "Make feeling faces"],
+      "variations": [
+        "Add hats/props",
+        "Make feeling faces"
+      ],
       "source": "reggio-emilia",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -252,11 +415,18 @@
       "id": "9",
       "title": "Soft toy parade",
       "description": "Imaginative puppet show with stuffed animals",
-      "instructions": "1. Line up 3-4 stuffed animals\n2. Animate each with different voices\n3. March them across surfaces\n4. Let baby interact with each",
+      "instructions": [
+        "1. Line up 3-4 stuffed animals",
+        "2. Animate each with different voices",
+        "3. March them across surfaces",
+        "4. Let baby interact with each"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["stuffed animals"],
+      "materials": [
+        "stuffed animals"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -264,17 +434,30 @@
       "supervision": "active",
       "messLevel": "low",
       "noiseLevel": "moderate",
-      "situations": ["normal", "sick-day"],
-      "skills": ["cognitive", "social"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "normal",
+        "sick-day"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Use toys with embroidered eyes",
       "parentTips": "Keep stories simple with clear emotions",
-      "variations": ["Create simple narratives", "Add cardboard scenes"],
+      "variations": [
+        "Create simple narratives",
+        "Add cardboard scenes"
+      ],
       "source": "waldorf",
-      "tags": ["pretend-play"],
+      "tags": [
+        "pretend-play"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -283,11 +466,18 @@
       "id": "10",
       "title": "Body parts song",
       "description": "Interactive song with physical touch",
-      "instructions": "1. Sit baby facing you\n2. Sing 'Head, Shoulders, Knees and Toes'\n3. Gently touch each body part\n4. Gradually increase speed",
+      "instructions": [
+        "1. Sit baby facing you",
+        "2. Sing 'Head, Shoulders, Knees and Toes'",
+        "3. Gently touch each body part",
+        "4. Gradually increase speed"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -295,17 +485,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "bedtime"],
-      "skills": ["cognitive", "social"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Avoid sensitive areas",
       "parentTips": "Pause for baby to point to own body",
-      "variations": ["Create original body songs", "Focus on less common parts"],
+      "variations": [
+        "Create original body songs",
+        "Focus on less common parts"
+      ],
       "source": "traditional",
-      "tags": ["music"],
+      "tags": [
+        "music"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -314,11 +517,20 @@
       "id": "11",
       "title": "Kitchen drum set",
       "description": "Sensory sound exploration with household items",
-      "instructions": "1. Arrange pots/pans on floor\n2. Demonstrate tapping with spoons\n3. Let baby explore sounds\n4. Mimic their rhythms",
+      "instructions": [
+        "1. Arrange pots/pans on floor",
+        "2. Demonstrate tapping with spoons",
+        "3. Let baby explore sounds",
+        "4. Mimic their rhythms"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "indoor",
-      "materials": ["pots", "pans", "wooden spoons"],
+      "materials": [
+        "pots",
+        "pans",
+        "wooden spoons"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "high",
@@ -326,17 +538,31 @@
       "supervision": "minimal",
       "messLevel": "low",
       "noiseLevel": "loud",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["creative", "motor"],
-      "specialNeeds": ["adhd-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "creative",
+        "motor"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Remove sharp-edged cookware",
       "parentTips": "Place on rug to muffle sound",
-      "variations": ["Add water drums", "Vary materials (metal/wood)"],
+      "variations": [
+        "Add water drums",
+        "Vary materials (metal/wood)"
+      ],
       "source": "reggio-emilia",
-      "tags": ["music", "sensory"],
+      "tags": [
+        "music",
+        "sensory"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -345,11 +571,18 @@
       "id": "12",
       "title": "Cloud watching",
       "description": "Relaxed outdoor imagination activity",
-      "instructions": "1. Lie together on blanket\n2. Point out cloud shapes\n3. Create stories about shapes\n4. Discuss cloud movements",
+      "instructions": [
+        "1. Lie together on blanket",
+        "2. Point out cloud shapes",
+        "3. Create stories about shapes",
+        "4. Discuss cloud movements"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "outdoor",
-      "materials": ["blanket"],
+      "materials": [
+        "blanket"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -357,17 +590,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "beach"],
-      "skills": ["cognitive", "creative"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "normal",
+        "beach"
+      ],
+      "skills": [
+        "cognitive",
+        "creative"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "free",
       "repeatability": "few",
       "seasonality": "spring,summer",
       "safetyNotes": "Use sun protection",
       "parentTips": "Follow baby's gaze instead of directing",
-      "variations": ["Find shapes in nature", "Night moon watching"],
+      "variations": [
+        "Find shapes in nature",
+        "Night moon watching"
+      ],
       "source": "waldorf",
-      "tags": ["nature"],
+      "tags": [
+        "nature"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -376,11 +622,18 @@
       "id": "13",
       "title": "Airplane baby",
       "description": "Gentle flying simulation",
-      "instructions": "1. Lie on back with knees bent\n2. Place baby tummy-down on shins\n3. Support torso securely\n4. Gently rock and lift",
+      "instructions": [
+        "1. Lie on back with knees bent",
+        "2. Place baby tummy-down on shins",
+        "3. Support torso securely",
+        "4. Gently rock and lift"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -388,17 +641,26 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal"],
-      "skills": ["motor", "emotional"],
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "motor",
+        "emotional"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "few",
       "seasonality": "any",
       "safetyNotes": "Avoid after feeding; support neck",
       "parentTips": "Make engine sounds for engagement",
-      "variations": ["Add 'landings' on soft surfaces"],
+      "variations": [
+        "Add 'landings' on soft surfaces"
+      ],
       "source": "traditional",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -407,11 +669,18 @@
       "id": "14",
       "title": "Tickle game",
       "description": "Gentle touch anticipation activity",
-      "instructions": "1. Start with finger circling\n2. Name body part before tickling\n3. Use light, brief touches\n4. Pause for anticipation",
+      "instructions": [
+        "1. Start with finger circling",
+        "2. Name body part before tickling",
+        "3. Use light, brief touches",
+        "4. Pause for anticipation"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -419,17 +688,27 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal", "bedtime"],
-      "skills": ["social", "emotional"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "few",
       "seasonality": "any",
       "safetyNotes": "Stop immediately if distressed",
       "parentTips": "Follow baby's cues for preferred spots",
-      "variations": ["Use feather for light touch"],
+      "variations": [
+        "Use feather for light touch"
+      ],
       "source": "traditional",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -438,11 +717,18 @@
       "id": "15",
       "title": "Animal sounds",
       "description": "Vocal imitation game",
-      "instructions": "1. Choose 3-4 familiar animals\n2. Make exaggerated sounds\n3. Demonstrate matching actions\n4. Encourage imitation",
+      "instructions": [
+        "1. Choose 3-4 familiar animals",
+        "2. Make exaggerated sounds",
+        "3. Demonstrate matching actions",
+        "4. Encourage imitation"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -450,17 +736,28 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal", "car-ride"],
-      "skills": ["cognitive", "social"],
+      "situations": [
+        "normal",
+        "car-ride"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Avoid loud noises near ears",
       "parentTips": "Start with animals baby knows from books",
-      "variations": ["Add animal puppets", "Create silly hybrid animals"],
+      "variations": [
+        "Add animal puppets",
+        "Create silly hybrid animals"
+      ],
       "source": "traditional",
-      "tags": ["pretend-play"],
+      "tags": [
+        "pretend-play"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -469,11 +766,18 @@
       "id": "16",
       "title": "Kissing game",
       "description": "Gentle affection ritual",
-      "instructions": "1. Name body part before kissing\n2. Use varied sounds (mwah, smooch)\n3. Pause between locations\n4. End with big cuddle",
+      "instructions": [
+        "1. Name body part before kissing",
+        "2. Use varied sounds (mwah, smooch)",
+        "3. Pause between locations",
+        "4. End with big cuddle"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -481,17 +785,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "bedtime"],
-      "skills": ["emotional", "social"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "emotional",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Respect baby's boundaries",
       "parentTips": "Follow baby's cues for preferred touch",
-      "variations": ["Add 'raspberries' on tummy"],
+      "variations": [
+        "Add 'raspberries' on tummy"
+      ],
       "source": "traditional",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -500,11 +816,18 @@
       "id": "17",
       "title": "Lap bounce",
       "description": "Rhythmic movement to nursery rhymes",
-      "instructions": "1. Sit with baby facing outward on lap\n2. Bounce rhythmically to rhymes\n3. Incorporate gentle dips\n4. End with 'falling' surprise",
+      "instructions": [
+        "1. Sit with baby facing outward on lap",
+        "2. Bounce rhythmically to rhymes",
+        "3. Incorporate gentle dips",
+        "4. End with 'falling' surprise"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -512,17 +835,30 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "waiting-room"],
-      "skills": ["motor", "cognitive"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "waiting-room"
+      ],
+      "skills": [
+        "motor",
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Support baby's back/neck",
       "parentTips": "Match bounce intensity to baby's mood",
-      "variations": ["Add tickles on 'falling'"],
+      "variations": [
+        "Add tickles on 'falling'"
+      ],
       "source": "traditional",
-      "tags": ["music", "movement"],
+      "tags": [
+        "music",
+        "movement"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -531,11 +867,18 @@
       "id": "18",
       "title": "Garden explorer",
       "description": "Sensory nature exploration",
-      "instructions": "1. Walk through garden holding baby\n2. Guide hands to touch safe plants\n3. Describe textures/smells\n4. Name plants/insects simply",
+      "instructions": [
+        "1. Walk through garden holding baby",
+        "2. Guide hands to touch safe plants",
+        "3. Describe textures/smells",
+        "4. Name plants/insects simply"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "outdoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -543,17 +886,30 @@
       "supervision": "active",
       "messLevel": "low",
       "noiseLevel": "quiet",
-      "situations": ["normal"],
-      "skills": ["sensory", "cognitive"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "sensory",
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "spring,summer,fall",
       "safetyNotes": "Avoid toxic plants; wash hands after",
       "parentTips": "Focus on high-contrast flowers",
-      "variations": ["Plant sensory garden", "Collect fallen petals"],
+      "variations": [
+        "Plant sensory garden",
+        "Collect fallen petals"
+      ],
       "source": "waldorf",
-      "tags": ["nature", "sensory"],
+      "tags": [
+        "nature",
+        "sensory"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -562,11 +918,18 @@
       "id": "19",
       "title": "Pat-a-cake",
       "description": "Interactive hand-clapping rhyme",
-      "instructions": "1. Hold baby's hands\n2. Clap hands together rhythmically\n3. Add knee bounces\n4. Finish with big hug on 'throw it in oven'",
+      "instructions": [
+        "1. Hold baby's hands",
+        "2. Clap hands together rhythmically",
+        "3. Add knee bounces",
+        "4. Finish with big hug on 'throw it in oven'"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -574,17 +937,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal"],
-      "skills": ["social", "motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "social",
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Be gentle with hand movements",
       "parentTips": "Slow motion for beginners",
-      "variations": ["Invent personalized verses"],
+      "variations": [
+        "Invent personalized verses"
+      ],
       "source": "traditional",
-      "tags": ["music", "social"],
+      "tags": [
+        "music",
+        "social"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -593,11 +968,18 @@
       "id": "20",
       "title": "This little piggy",
       "description": "Toe-wiggling rhyme with anticipation",
-      "instructions": "1. Hold baby's foot\n2. Wiggle each toe while reciting\n3. Add tickle on 'wee wee wee'\n4. Repeat with other foot",
+      "instructions": [
+        "1. Hold baby's foot",
+        "2. Wiggle each toe while reciting",
+        "3. Add tickle on 'wee wee wee'",
+        "4. Repeat with other foot"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -605,17 +987,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "bedtime"],
-      "skills": ["cognitive", "social"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Stop if baby pulls feet away",
       "parentTips": "Build anticipation with pauses",
-      "variations": ["Create original toe stories"],
+      "variations": [
+        "Create original toe stories"
+      ],
       "source": "traditional",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -624,11 +1018,18 @@
       "id": "21",
       "title": "Baby yoga",
       "description": "Gentle stretching and body awareness",
-      "instructions": "1. Place baby on soft surface\n2. Gently move arms in circles\n3. Slowly bend knees toward tummy\n4. Narrate movements ('Stretch!')",
+      "instructions": [
+        "1. Place baby on soft surface",
+        "2. Gently move arms in circles",
+        "3. Slowly bend knees toward tummy",
+        "4. Narrate movements ('Stretch!')"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -636,17 +1037,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "bedtime"],
-      "skills": ["motor", "emotional"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "motor",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Never force movements",
       "parentTips": "Follow baby's natural range of motion",
-      "variations": ["Add massage strokes", "Incorporate breathing sounds"],
+      "variations": [
+        "Add massage strokes",
+        "Incorporate breathing sounds"
+      ],
       "source": "original",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -655,11 +1069,18 @@
       "id": "22",
       "title": "Flying kisses",
       "description": "Social gesture development",
-      "instructions": "1. Demonstrate blowing kiss\n2. Gently guide baby's hand\n3. Celebrate attempts\n4. Reciprocate kisses",
+      "instructions": [
+        "1. Demonstrate blowing kiss",
+        "2. Gently guide baby's hand",
+        "3. Celebrate attempts",
+        "4. Reciprocate kisses"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -667,17 +1088,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "bedtime"],
-      "skills": ["social", "emotional"],
-      "specialNeeds": ["autism-friendly"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "",
       "parentTips": "Use exaggerated facial expressions",
-      "variations": ["Send kisses to family photos", "Use mirror practice"],
+      "variations": [
+        "Send kisses to family photos",
+        "Use mirror practice"
+      ],
       "source": "traditional",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -686,11 +1120,18 @@
       "id": "23",
       "title": "Nursery rhyme time",
       "description": "Musical storytelling with motions",
-      "instructions": "1. Choose 2-3 simple rhymes\n2. Sing with exaggerated expressions\n3. Add hand motions\n4. Pause for baby to respond",
+      "instructions": [
+        "1. Choose 2-3 simple rhymes",
+        "2. Sing with exaggerated expressions",
+        "3. Add hand motions",
+        "4. Pause for baby to respond"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -698,17 +1139,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "bedtime"],
-      "skills": ["cognitive", "social"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Avoid overstimulation before naps",
       "parentTips": "Repeat favorites for familiarity",
-      "variations": ["Invent verses with baby's name", "Whisper-sing for calm time"],
+      "variations": [
+        "Invent verses with baby's name",
+        "Whisper-sing for calm time"
+      ],
       "source": "traditional",
-      "tags": ["music", "storytelling"],
+      "tags": [
+        "music",
+        "storytelling"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -717,11 +1170,18 @@
       "id": "24",
       "title": "Up and down",
       "description": "Vertical movement exploration",
-      "instructions": "1. Hold baby securely under arms\n2. Lift slowly overhead\n3. Lower gently\n4. Vary speed and sound effects",
+      "instructions": [
+        "1. Hold baby securely under arms",
+        "2. Lift slowly overhead",
+        "3. Lower gently",
+        "4. Vary speed and sound effects"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -729,17 +1189,27 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal"],
-      "skills": ["motor", "emotional"],
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "motor",
+        "emotional"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "few",
       "seasonality": "any",
       "safetyNotes": "Check ceiling clearance",
       "parentTips": "Make eye contact during lifts",
-      "variations": ["Add spins", "Incorporate knee bounces"],
+      "variations": [
+        "Add spins",
+        "Incorporate knee bounces"
+      ],
       "source": "traditional",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -748,11 +1218,18 @@
       "id": "25",
       "title": "Baby sign language",
       "description": "Early communication development",
-      "instructions": "1. Choose 3 key signs (milk, more, done)\n2. Consistently sign during activities\n3. Say word while signing\n4. Respond to baby's attempts",
+      "instructions": [
+        "1. Choose 3 key signs (milk, more, done)",
+        "2. Consistently sign during activities",
+        "3. Say word while signing",
+        "4. Respond to baby's attempts"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "extended",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -760,17 +1237,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["meal", "normal"],
-      "skills": ["cognitive", "social"],
-      "specialNeeds": ["autism-friendly"],
+      "situations": [
+        "meal",
+        "normal"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "",
       "parentTips": "Be patient - may take weeks for response",
-      "variations": ["Add emotion signs (happy, hurt)", "Combine with picture cards"],
+      "variations": [
+        "Add emotion signs (happy, hurt)",
+        "Combine with picture cards"
+      ],
       "source": "original",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 3,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -779,11 +1269,18 @@
       "id": "26",
       "title": "Stroller safari",
       "description": "Outdoor observation and narration",
-      "instructions": "1. Secure baby in stroller\n2. Narrate surroundings dramatically\n3. Point to interesting sights\n4. Imitate animal/vehicle sounds",
+      "instructions": [
+        "1. Secure baby in stroller",
+        "2. Narrate surroundings dramatically",
+        "3. Point to interesting sights",
+        "4. Imitate animal/vehicle sounds"
+      ],
       "ageGroup": "0-2",
       "duration": 30,
       "location": "outdoor",
-      "materials": ["stroller"],
+      "materials": [
+        "stroller"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -791,17 +1288,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "grocery-store"],
-      "skills": ["cognitive", "social"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "grocery-store"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Maintain safe distance from strangers",
       "parentTips": "Bring textured items for tactile input",
-      "variations": ["Add 'I spy' elements", "Focus on specific colors"],
+      "variations": [
+        "Add 'I spy' elements",
+        "Focus on specific colors"
+      ],
       "source": "original",
-      "tags": ["nature"],
+      "tags": [
+        "nature"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -810,11 +1320,18 @@
       "id": "27",
       "title": "Color tour",
       "description": "Visual discrimination practice",
-      "instructions": "1. Carry baby around room\n2. Point to objects of one color\n3. Name color repeatedly\n4. Let baby touch identified items",
+      "instructions": [
+        "1. Carry baby around room",
+        "2. Point to objects of one color",
+        "3. Name color repeatedly",
+        "4. Let baby touch identified items"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -822,17 +1339,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["cognitive"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Avoid small objects",
       "parentTips": "Start with high-contrast colors (red/black)",
-      "variations": ["Create color treasure hunts", "Use colored scarves"],
+      "variations": [
+        "Create color treasure hunts",
+        "Use colored scarves"
+      ],
       "source": "montessori",
-      "tags": ["cognitive"],
+      "tags": [
+        "cognitive"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -841,11 +1370,19 @@
       "id": "28",
       "title": "Tummy time fun",
       "description": "Muscle development during prone position",
-      "instructions": "1. Place baby on tummy on mat\n2. Position high-contrast toy slightly out of reach\n3. Encourage reaching\n4. Cheer all efforts",
+      "instructions": [
+        "1. Place baby on tummy on mat",
+        "2. Position high-contrast toy slightly out of reach",
+        "3. Encourage reaching",
+        "4. Cheer all efforts"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["tummy time mat", "high-contrast toys"],
+      "materials": [
+        "tummy time mat",
+        "high-contrast toys"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -853,17 +1390,27 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor"
+      ],
       "specialNeeds": [],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Always supervise tummy time",
       "parentTips": "Place rolled towel under chest for support",
-      "variations": ["Add unbreakable mirror", "Use light-up toys"],
+      "variations": [
+        "Add unbreakable mirror",
+        "Use light-up toys"
+      ],
       "source": "original",
-      "tags": ["motor"],
+      "tags": [
+        "motor"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -872,11 +1419,18 @@
       "id": "29",
       "title": "Baby book club",
       "description": "Early literacy introduction",
-      "instructions": "1. Hold baby on lap facing book\n2. Point to pictures while naming\n3. Use varied voices for characters\n4. Let baby turn sturdy pages",
+      "instructions": [
+        "1. Hold baby on lap facing book",
+        "2. Point to pictures while naming",
+        "3. Use varied voices for characters",
+        "4. Let baby turn sturdy pages"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["board books"],
+      "materials": [
+        "board books"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -884,17 +1438,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "bedtime"],
-      "skills": ["cognitive", "social"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitive",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Inspect for loose binding pieces",
       "parentTips": "Follow baby's interest - don't finish every page",
-      "variations": ["Add tactile elements (fuzzy duck)", "Create photo books"],
+      "variations": [
+        "Add tactile elements (fuzzy duck)",
+        "Create photo books"
+      ],
       "source": "traditional",
-      "tags": ["storytelling"],
+      "tags": [
+        "storytelling"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -903,11 +1470,18 @@
       "id": "30",
       "title": "Silly face contest",
       "description": "Facial expression imitation",
-      "instructions": "1. Make exaggerated happy face\n2. Wait for baby to respond\n3. Try surprised/silly faces\n4. Imitate baby's expressions",
+      "instructions": [
+        "1. Make exaggerated happy face",
+        "2. Wait for baby to respond",
+        "3. Try surprised/silly faces",
+        "4. Imitate baby's expressions"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -915,17 +1489,28 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal", "waiting-room"],
-      "skills": ["social", "emotional"],
+      "situations": [
+        "normal",
+        "waiting-room"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "",
       "parentTips": "Use mirror to help baby see expressions",
-      "variations": ["Add sound effects", "Incorporate animal faces"],
+      "variations": [
+        "Add sound effects",
+        "Incorporate animal faces"
+      ],
       "source": "traditional",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -934,11 +1519,18 @@
       "id": "31",
       "title": "Baby dance party",
       "description": "Musical exploration through movement",
-      "instructions": "1. Hold baby securely\n2. Play diverse music styles\n3. Change movements with each song\n4. Watch for engagement cues",
+      "instructions": [
+        "1. Hold baby securely",
+        "2. Play diverse music styles",
+        "3. Change movements with each song",
+        "4. Watch for engagement cues"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["music player"],
+      "materials": [
+        "music player"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -946,17 +1538,31 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["motor", "creative"],
-      "specialNeeds": ["adhd-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "motor",
+        "creative"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Keep volume moderate",
       "parentTips": "Notice which rhythms baby prefers",
-      "variations": ["Use scarves for visual tracking", "Try cultural music styles"],
+      "variations": [
+        "Use scarves for visual tracking",
+        "Try cultural music styles"
+      ],
       "source": "traditional",
-      "tags": ["music", "movement"],
+      "tags": [
+        "music",
+        "movement"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -965,11 +1571,18 @@
       "id": "32",
       "title": "Where's baby?",
       "description": "Object permanence development",
-      "instructions": "1. Drape breathable cloth over baby\n2. Ask 'Where's baby?'\n3. Wait 2-3 seconds\n4. Remove cloth with 'There you are!'",
+      "instructions": [
+        "1. Drape breathable cloth over baby",
+        "2. Ask 'Where's baby?'",
+        "3. Wait 2-3 seconds",
+        "4. Remove cloth with 'There you are!'"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["breathable cloth"],
+      "materials": [
+        "breathable cloth"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -977,17 +1590,28 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal"],
-      "skills": ["cognitive"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Never leave cloth unattended",
       "parentTips": "Use translucent fabrics first",
-      "variations": ["Partially cover favorite toy", "Let baby pull cloth off"],
+      "variations": [
+        "Partially cover favorite toy",
+        "Let baby pull cloth off"
+      ],
       "source": "traditional",
-      "tags": ["cognitive"],
+      "tags": [
+        "cognitive"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -996,11 +1620,18 @@
       "id": "33",
       "title": "Gentle baby exercises",
       "description": "Range-of-motion activities",
-      "instructions": "1. Place baby on back\n2. Gently cycle legs\n3. Cross arms over chest\n4. Narrate movements ('Bend! Stretch!')",
+      "instructions": [
+        "1. Place baby on back",
+        "2. Gently cycle legs",
+        "3. Cross arms over chest",
+        "4. Narrate movements ('Bend! Stretch!')"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1008,17 +1639,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Stop if baby resists movement",
       "parentTips": "Perfect for diaper change transitions",
-      "variations": ["Add nursery rhymes", "Incorporate massage"],
+      "variations": [
+        "Add nursery rhymes",
+        "Incorporate massage"
+      ],
       "source": "original",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1027,11 +1670,18 @@
       "id": "34",
       "title": "Baby drumroll",
       "description": "Tactile anticipation game",
-      "instructions": "1. Gently drum fingers on baby's tummy\n2. Gradually increase speed\n3. Build anticipation\n4. Finish with gentle raspberry",
+      "instructions": [
+        "1. Gently drum fingers on baby's tummy",
+        "2. Gradually increase speed",
+        "3. Build anticipation",
+        "4. Finish with gentle raspberry"
+      ],
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -1039,17 +1689,28 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["normal", "diaper change"],
-      "skills": ["social", "emotional"],
+      "situations": [
+        "normal",
+        "diaper change"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Avoid immediately after feeding",
       "parentTips": "Watch for cues to adjust pressure",
-      "variations": ["Drum on different body parts", "Add sound effects"],
+      "variations": [
+        "Drum on different body parts",
+        "Add sound effects"
+      ],
       "source": "traditional",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1058,11 +1719,18 @@
       "id": "35",
       "title": "Park bench people watching",
       "description": "Social observation activity",
-      "instructions": "1. Sit on park bench with baby\n2. Narrate people's activities\n3. Describe clothing/actions\n4. Wave at friendly passersby",
+      "instructions": [
+        "1. Sit on park bench with baby",
+        "2. Narrate people's activities",
+        "3. Describe clothing/actions",
+        "4. Wave at friendly passersby"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "outdoor",
-      "materials": ["none"],
+      "materials": [
+        "none"
+      ],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1070,17 +1738,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal"],
-      "skills": ["social", "cognitive"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "social",
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "spring,summer,fall",
       "safetyNotes": "Maintain social distancing",
       "parentTips": "Bring textured toys for tactile input",
-      "variations": ["Focus on specific colors", "Count dogs/birds"],
+      "variations": [
+        "Focus on specific colors",
+        "Count dogs/birds"
+      ],
       "source": "original",
-      "tags": ["social"],
+      "tags": [
+        "social"
+      ],
       "difficulty": 1,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1089,11 +1769,19 @@
       "id": "36",
       "title": "Container play",
       "description": "Spatial relationship exploration",
-      "instructions": "1. Provide various containers\n2. Demonstrate filling/dumping\n3. Add safe objects for play\n4. Let baby explore independently",
+      "instructions": [
+        "1. Provide various containers",
+        "2. Demonstrate filling/dumping",
+        "3. Add safe objects for play",
+        "4. Let baby explore independently"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "indoor",
-      "materials": ["plastic containers", "large toys"],
+      "materials": [
+        "plastic containers",
+        "large toys"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -1101,17 +1789,30 @@
       "supervision": "minimal",
       "messLevel": "medium",
       "noiseLevel": "moderate",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["cognitive", "motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "cognitive",
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "All items must be larger than toilet paper tube",
       "parentTips": "Rotate container types for novelty",
-      "variations": ["Add sensory materials (crumpled paper)", "Nest containers"],
+      "variations": [
+        "Add sensory materials (crumpled paper)",
+        "Nest containers"
+      ],
       "source": "montessori",
-      "tags": ["sensory"],
+      "tags": [
+        "sensory"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1120,11 +1821,20 @@
       "id": "37",
       "title": "Texture walk",
       "description": "Tactile sensory exploration",
-      "instructions": "1. Create safe path with varied surfaces\n2. Hold baby's hands for support\n3. Walk barefoot together\n4. Describe sensations ('bumpy! soft!')",
+      "instructions": [
+        "1. Create safe path with varied surfaces",
+        "2. Hold baby's hands for support",
+        "3. Walk barefoot together",
+        "4. Describe sensations ('bumpy! soft!')"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["carpet", "tile", "foam mat"],
+      "materials": [
+        "carpet",
+        "tile",
+        "foam mat"
+      ],
       "prep": "extended",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1132,17 +1842,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "playtime"],
-      "skills": ["sensory"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "sensory"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Clear path of hazards",
       "parentTips": "Check surfaces for splinters/rough edges",
-      "variations": ["Add temperature variations", "Include outdoor textures"],
+      "variations": [
+        "Add temperature variations",
+        "Include outdoor textures"
+      ],
       "source": "reggio-emilia",
-      "tags": ["sensory"],
+      "tags": [
+        "sensory"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1151,11 +1873,18 @@
       "id": "38",
       "title": "Flashlight shadows",
       "description": "Visual tracking in low light",
-      "instructions": "1. Dim room slightly\n2. Shine flashlight on wall\n3. Move light slowly\n4. Encourage baby to track movement",
+      "instructions": [
+        "1. Dim room slightly",
+        "2. Shine flashlight on wall",
+        "3. Move light slowly",
+        "4. Encourage baby to track movement"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["flashlight"],
+      "materials": [
+        "flashlight"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1163,17 +1892,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["bedtime", "rainy-day"],
-      "skills": ["cognitive"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "bedtime",
+        "rainy-day"
+      ],
+      "skills": [
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Never shine directly in eyes",
       "parentTips": "Use warm white light to reduce glare",
-      "variations": ["Add colored gels", "Create simple shadow shapes"],
+      "variations": [
+        "Add colored gels",
+        "Create simple shadow shapes"
+      ],
       "source": "original",
-      "tags": ["sensory"],
+      "tags": [
+        "sensory"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1182,11 +1923,18 @@
       "id": "39",
       "title": "Laundry basket rides",
       "description": "Indoor movement adventure",
-      "instructions": "1. Place baby in sturdy basket\n2. Push slowly on smooth surface\n3. Make vehicle sounds\n4. Add gentle stops/starts",
+      "instructions": [
+        "1. Place baby in sturdy basket",
+        "2. Push slowly on smooth surface",
+        "3. Make vehicle sounds",
+        "4. Add gentle stops/starts"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["laundry basket"],
+      "materials": [
+        "laundry basket"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1194,17 +1942,29 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Only on smooth surfaces; avoid tipping",
       "parentTips": "Add soft blankets for comfort",
-      "variations": ["Create 'tunnel' with chairs", "Add stuffed passengers"],
+      "variations": [
+        "Create 'tunnel' with chairs",
+        "Add stuffed passengers"
+      ],
       "source": "original",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1213,11 +1973,19 @@
       "id": "40",
       "title": "Pillow mountain climb",
       "description": "Gross motor development on soft surfaces",
-      "instructions": "1. Arrange cushions/pillows on floor\n2. Encourage crawling over obstacles\n3. Spot baby closely\n4. Celebrate 'summit' achievements",
+      "instructions": [
+        "1. Arrange cushions/pillows on floor",
+        "2. Encourage crawling over obstacles",
+        "3. Spot baby closely",
+        "4. Celebrate 'summit' achievements"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "indoor",
-      "materials": ["couch cushions", "pillows"],
+      "materials": [
+        "couch cushions",
+        "pillows"
+      ],
       "prep": "extended",
       "parentEnergy": "medium",
       "kidEnergy": "high",
@@ -1225,17 +1993,27 @@
       "supervision": "constant",
       "messLevel": "medium",
       "noiseLevel": "moderate",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor"
+      ],
       "specialNeeds": [],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Keep height below 12 inches",
       "parentTips": "Place non-slip mats under cushions",
-      "variations": ["Add textured fabrics", "Create 'caves' with blankets"],
+      "variations": [
+        "Add textured fabrics",
+        "Create 'caves' with blankets"
+      ],
       "source": "original",
-      "tags": ["motor"],
+      "tags": [
+        "motor"
+      ],
       "difficulty": 3,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1244,11 +2022,18 @@
       "id": "41",
       "title": "Fabric tunnel crawl",
       "description": "Proprioceptive movement exploration",
-      "instructions": "1. Drape blankets between furniture\n2. Create low crawl tunnel\n3. Encourage baby to crawl through\n4. Cheer at both ends",
+      "instructions": [
+        "1. Drape blankets between furniture",
+        "2. Create low crawl tunnel",
+        "3. Encourage baby to crawl through",
+        "4. Cheer at both ends"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "indoor",
-      "materials": ["blankets"],
+      "materials": [
+        "blankets"
+      ],
       "prep": "extended",
       "parentEnergy": "medium",
       "kidEnergy": "high",
@@ -1256,17 +2041,29 @@
       "supervision": "constant",
       "messLevel": "low",
       "noiseLevel": "moderate",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Keep tunnel short with clear exit",
       "parentTips": "Use sheer fabrics for beginners",
-      "variations": ["Add jingle bells inside", "Place favorite toy at end"],
+      "variations": [
+        "Add jingle bells inside",
+        "Place favorite toy at end"
+      ],
       "source": "original",
-      "tags": ["motor"],
+      "tags": [
+        "motor"
+      ],
       "difficulty": 3,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1275,11 +2072,18 @@
       "id": "42",
       "title": "Follow the light",
       "description": "Visual tracking development",
-      "instructions": "1. Dim room slightly\n2. Shine flashlight on floor\n3. Move beam slowly\n4. Encourage crawling toward light",
+      "instructions": [
+        "1. Dim room slightly",
+        "2. Shine flashlight on floor",
+        "3. Move beam slowly",
+        "4. Encourage crawling toward light"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["flashlight"],
+      "materials": [
+        "flashlight"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -1287,17 +2091,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["bedtime", "rainy-day"],
-      "skills": ["cognitive", "motor"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "bedtime",
+        "rainy-day"
+      ],
+      "skills": [
+        "cognitive",
+        "motor"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Never shine directly in eyes",
       "parentTips": "Use red light for less stimulating option",
-      "variations": ["Add colored filters", "Reflect off mirrors"],
+      "variations": [
+        "Add colored filters",
+        "Reflect off mirrors"
+      ],
       "source": "original",
-      "tags": ["sensory"],
+      "tags": [
+        "sensory"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1306,11 +2123,18 @@
       "id": "43",
       "title": "Sock ball toss",
       "description": "Coordination practice with soft objects",
-      "instructions": "1. Roll socks into tight balls\n2. Demonstrate tossing into basket\n3. Hand balls to baby\n4. Celebrate all attempts",
+      "instructions": [
+        "1. Roll socks into tight balls",
+        "2. Demonstrate tossing into basket",
+        "3. Hand balls to baby",
+        "4. Celebrate all attempts"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["socks"],
+      "materials": [
+        "socks"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -1318,17 +2142,29 @@
       "supervision": "active",
       "messLevel": "low",
       "noiseLevel": "quiet",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Use socks without small decorations",
       "parentTips": "Start with very short distances",
-      "variations": ["Use different sized containers", "Add sound-making targets"],
+      "variations": [
+        "Use different sized containers",
+        "Add sound-making targets"
+      ],
       "source": "original",
-      "tags": ["motor"],
+      "tags": [
+        "motor"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1337,11 +2173,18 @@
       "id": "44",
       "title": "Shadow puppet show",
       "description": "Imaginative light play",
-      "instructions": "1. Shine flashlight on wall\n2. Create simple animal shapes\n3. Narrate short stories\n4. Let baby touch shadows",
+      "instructions": [
+        "1. Shine flashlight on wall",
+        "2. Create simple animal shapes",
+        "3. Narrate short stories",
+        "4. Let baby touch shadows"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["flashlight"],
+      "materials": [
+        "flashlight"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1349,17 +2192,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["bedtime", "rainy-day"],
-      "skills": ["creative", "cognitive"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "bedtime",
+        "rainy-day"
+      ],
+      "skills": [
+        "creative",
+        "cognitive"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Never shine directly in eyes",
       "parentTips": "Keep stories very short",
-      "variations": ["Use baby's hands to make shadows", "Add simple props"],
+      "variations": [
+        "Use baby's hands to make shadows",
+        "Add simple props"
+      ],
       "source": "original",
-      "tags": ["pretend-play"],
+      "tags": [
+        "pretend-play"
+      ],
       "difficulty": 3,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1368,11 +2224,18 @@
       "id": "45",
       "title": "Mirror dancing",
       "description": "Self-recognition through movement",
-      "instructions": "1. Hold baby facing mirror\n2. Dance to music\n3. Point to reflections\n4. Make synchronized movements",
+      "instructions": [
+        "1. Hold baby facing mirror",
+        "2. Dance to music",
+        "3. Point to reflections",
+        "4. Make synchronized movements"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["baby-safe mirror"],
+      "materials": [
+        "baby-safe mirror"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1380,17 +2243,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "moderate",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor", "emotional"],
-      "specialNeeds": ["autism-friendly"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Ensure mirror is securely mounted",
       "parentTips": "Use slow movements for easier tracking",
-      "variations": ["Add scarves for visual effect", "Try different dance styles"],
+      "variations": [
+        "Add scarves for visual effect",
+        "Try different dance styles"
+      ],
       "source": "reggio-emilia",
-      "tags": ["movement"],
+      "tags": [
+        "movement"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1399,11 +2275,19 @@
       "id": "46",
       "title": "Cardboard box car",
       "description": "Imaginative vehicle play",
-      "instructions": "1. Decorate large box with crayons\n2. Cut safe entry/exit openings\n3. Place baby inside\n4. Push gently while making engine sounds",
+      "instructions": [
+        "1. Decorate large box with crayons",
+        "2. Cut safe entry/exit openings",
+        "3. Place baby inside",
+        "4. Push gently while making engine sounds"
+      ],
       "ageGroup": "0-2",
       "duration": 15,
       "location": "indoor",
-      "materials": ["large cardboard box", "crayons"],
+      "materials": [
+        "large cardboard box",
+        "crayons"
+      ],
       "prep": "extended",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1411,17 +2295,28 @@
       "supervision": "constant",
       "messLevel": "low",
       "noiseLevel": "loud",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["creative", "motor"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "creative",
+        "motor"
+      ],
       "specialNeeds": [],
       "cost": "low",
       "repeatability": "few",
       "seasonality": "any",
       "safetyNotes": "Avoid small decorations that could detach",
       "parentTips": "Add soft blankets for comfort inside",
-      "variations": ["Create 'steering wheel' from paper plate", "Add paper plate wheels"],
+      "variations": [
+        "Create 'steering wheel' from paper plate",
+        "Add paper plate wheels"
+      ],
       "source": "original",
-      "tags": ["pretend-play"],
+      "tags": [
+        "pretend-play"
+      ],
       "difficulty": 3,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1430,11 +2325,18 @@
       "id": "47",
       "title": "Indoor \"snowball\" fight",
       "description": "Tactile sensory play with soft objects",
-      "instructions": "1. Crumple paper into large balls\n2. Sit facing baby\n3. Gently toss balls back and forth\n4. Make soft impact sounds",
+      "instructions": [
+        "1. Crumple paper into large balls",
+        "2. Sit facing baby",
+        "3. Gently toss balls back and forth",
+        "4. Make soft impact sounds"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["white paper"],
+      "materials": [
+        "white paper"
+      ],
       "prep": "quick",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -1442,17 +2344,30 @@
       "supervision": "active",
       "messLevel": "medium",
       "noiseLevel": "loud",
-      "situations": ["normal", "rainy-day"],
-      "skills": ["motor", "sensory"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "rainy-day"
+      ],
+      "skills": [
+        "motor",
+        "sensory"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Avoid face; use soft paper only",
       "parentTips": "Start with slow-motion throws",
-      "variations": ["Use different paper textures", "Add colored paper"],
+      "variations": [
+        "Use different paper textures",
+        "Add colored paper"
+      ],
       "source": "original",
-      "tags": ["sensory"],
+      "tags": [
+        "sensory"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1461,11 +2376,18 @@
       "id": "48",
       "title": "Parachute play",
       "description": "Group sensory experience",
-      "instructions": "1. Hold bedsheet corners with adults\n2. Place baby in center on floor\n3. Gently lift and lower fabric\n4. Create 'waves' with fabric",
+      "instructions": [
+        "1. Hold bedsheet corners with adults",
+        "2. Place baby in center on floor",
+        "3. Gently lift and lower fabric",
+        "4. Create 'waves' with fabric"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["bedsheet"],
+      "materials": [
+        "bedsheet"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1473,17 +2395,29 @@
       "supervision": "constant",
       "messLevel": "none",
       "noiseLevel": "loud",
-      "situations": ["family"],
-      "skills": ["sensory", "social"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "family"
+      ],
+      "skills": [
+        "sensory",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Keep fabric away from face",
       "parentTips": "Use sheer fabrics for visual tracking",
-      "variations": ["Place lightweight balls on sheet", "Add gentle music"],
+      "variations": [
+        "Place lightweight balls on sheet",
+        "Add gentle music"
+      ],
       "source": "traditional",
-      "tags": ["sensory"],
+      "tags": [
+        "sensory"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1492,11 +2426,18 @@
       "id": "49",
       "title": "Sensory balance beam",
       "description": "Vestibular development activity",
-      "instructions": "1. Create straight line with tape\n2. Hold baby's hands\n3. Walk slowly along line\n4. Cheer at completion",
+      "instructions": [
+        "1. Create straight line with tape",
+        "2. Hold baby's hands",
+        "3. Walk slowly along line",
+        "4. Cheer at completion"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["masking tape"],
+      "materials": [
+        "masking tape"
+      ],
       "prep": "quick",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1504,17 +2445,29 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["normal", "playtime"],
-      "skills": ["motor"],
-      "specialNeeds": ["sensory-friendly"],
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "motor"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
       "cost": "free",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Use painter's tape for easy removal",
       "parentTips": "Make wide paths for beginners",
-      "variations": ["Create curved paths", "Add texture changes"],
+      "variations": [
+        "Create curved paths",
+        "Add texture changes"
+      ],
       "source": "original",
-      "tags": ["motor"],
+      "tags": [
+        "motor"
+      ],
       "difficulty": 3,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
@@ -1523,11 +2476,18 @@
       "id": "50",
       "title": "Family photo \"reading\"",
       "description": "Bonding through familiar images",
-      "instructions": "1. Create simple photo album\n2. Point to familiar faces\n3. Tell simple stories\n4. Name relationships ('Grandma!')",
+      "instructions": [
+        "1. Create simple photo album",
+        "2. Point to familiar faces",
+        "3. Tell simple stories",
+        "4. Name relationships ('Grandma!')"
+      ],
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": ["family photo album"],
+      "materials": [
+        "family photo album"
+      ],
       "prep": "extended",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1535,17 +2495,30 @@
       "supervision": "active",
       "messLevel": "none",
       "noiseLevel": "quiet",
-      "situations": ["bedtime", "cuddle"],
-      "skills": ["cognitive", "emotional"],
-      "specialNeeds": ["quiet-child-friendly"],
+      "situations": [
+        "bedtime",
+        "cuddle"
+      ],
+      "skills": [
+        "cognitive",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
       "cost": "low",
       "repeatability": "many",
       "seasonality": "any",
       "safetyNotes": "Use board book format without small parts",
       "parentTips": "Include pets and favorite toys in photos",
-      "variations": ["Record family voices saying names", "Add texture elements"],
+      "variations": [
+        "Record family voices saying names",
+        "Add texture elements"
+      ],
       "source": "original",
-      "tags": ["storytelling"],
+      "tags": [
+        "storytelling"
+      ],
       "difficulty": 2,
       "popularity": 0.0,
       "lastUpdated": "2025-01-15T10:30:00Z"
