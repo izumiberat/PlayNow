@@ -21,6 +21,7 @@
             --success: #38a169;
             --warning: #e53e3e;
             --info: #4299e1;
+            --filter-header-height: 60px;
         }
         
         * {
@@ -361,10 +362,12 @@
             font-size: 0.95rem;
         }
         
-        /* Filters Section */
+        /* ====================== */
+        /* IMPROVED FILTERS SECTION */
+        /* ====================== */
         .filters-section {
             background: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
             box-shadow: var(--card-shadow);
             margin-bottom: 25px;
@@ -374,7 +377,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
         .filter-header h2 {
@@ -394,47 +397,82 @@
             gap: 6px;
             font-weight: 500;
             transition: all 0.2s ease;
+            padding: 8px 12px;
+            border-radius: 6px;
         }
         
         .reset-btn:hover {
-            color: #3a5a80;
+            background: #f0f5ff;
             transform: translateY(-2px);
         }
         
-        .filters-grid {
+        /* New filter layout with columns */
+        .filters-columns {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
         }
         
         .filter-group {
             margin-bottom: 15px;
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid #eef2f7;
+        }
+        
+        .filter-group:hover {
+            border-color: var(--accent);
+        }
+        
+        .filter-group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 12px;
         }
         
         .filter-group h3 {
-            margin-bottom: 12px;
             font-size: 0.95rem;
             color: #555;
             font-weight: 500;
+            margin: 0;
+        }
+        
+        .filter-toggle {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .filter-toggle.collapsed {
+            transform: rotate(180deg);
         }
         
         .filter-options {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
             gap: 8px;
         }
         
         .filter-btn {
             background: #f5f7fa;
             border: 1px solid var(--border);
-            padding: 8px 12px;
+            padding: 8px 10px;
             border-radius: 6px;
             cursor: pointer;
             font-size: 0.85rem;
             transition: all 0.2s ease;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 5px;
+            text-align: center;
+            min-height: 40px;
         }
         
         .filter-btn:hover {
@@ -446,27 +484,45 @@
             background: var(--primary);
             color: white;
             border-color: var(--primary);
+            box-shadow: 0 3px 6px rgba(74, 111, 165, 0.2);
         }
         
         .filter-btn i {
             font-size: 0.9rem;
         }
         
+        /* Mobile filter bar */
+        .mobile-filter-bar {
+            display: none;
+            position: sticky;
+            top: var(--filter-header-height);
+            background: white;
+            padding: 12px 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 90;
+            margin-bottom: 15px;
+        }
+        
+        .mobile-filter-bar .filter-header {
+            margin-bottom: 0;
+        }
+        
+        .filter-indicator {
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            margin-left: 8px;
+        }
+        
         /* Age filter */
         .age-filter-group {
             grid-column: 1 / -1;
-            margin-bottom: 10px;
-        }
-        
-        .age-filter-group .filter-options {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-        }
-        
-        .age-filter-group .filter-options .filter-btn {
-            width: 100%;
-            justify-content: center;
         }
         
         .activity-counter {
@@ -479,6 +535,7 @@
             justify-content: center;
             align-items: center;
             gap: 8px;
+            flex-wrap: wrap;
         }
         
         .counter-box {
@@ -804,6 +861,60 @@
             100% { transform: rotate(360deg); }
         }
         
+        /* ===================== */
+        /* NO RESULTS UI IMPROVEMENT */
+        /* ===================== */
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .no-results-icon {
+            font-size: 4rem;
+            color: #dbe4f0;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .no-results p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .no-results .reset-btn {
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            box-shadow: 0 4px 8px rgba(74, 111, 165, 0.2);
+        }
+        
+        .no-results .reset-btn:hover {
+            background: #3a5a80;
+            transform: translateY(-3px);
+        }
+        
         /* ================== */
         /* Enhanced Footer */
         /* ================== */
@@ -937,10 +1048,6 @@
             .footer .linkedin-link i {
                 font-size: 1.5rem;
             }
-            
-            .filters-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            }
         }
         
         @media (min-width: 768px) {
@@ -974,16 +1081,8 @@
                 font-size: 1.2rem;
             }
             
-            .age-filter-group {
-                grid-column: auto;
-            }
-            
             .footer .linkedin-link {
                 font-size: 1.1rem;
-            }
-            
-            .filters-grid {
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             }
         }
         
@@ -1005,6 +1104,20 @@
             .store-btn {
                 width: 100%;
                 max-width: 280px;
+                min-width: auto;
+                padding: 12px 15px;
+            }
+            
+            .store-btn .store-icon {
+                font-size: 1.8rem;
+            }
+            
+            .store-btn .store-name {
+                font-size: 0.8rem;
+            }
+            
+            .store-btn .store-label {
+                font-size: 1.1rem;
             }
             
             .benefit-item {
@@ -1052,6 +1165,39 @@
             .footer .copyright {
                 margin-top: 15px;
             }
+            
+            /* Mobile filter bar */
+            .mobile-filter-bar {
+                display: block;
+            }
+            
+            .filters-section {
+                position: fixed;
+                top: calc(var(--filter-header-height) + 20px);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 95;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                overflow-y: auto;
+                padding: 20px;
+                border-radius: 0;
+                margin-bottom: 0;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
+            
+            .filters-section.active {
+                transform: translateX(0);
+            }
+            
+            .filters-columns {
+                display: block;
+            }
+            
+            .filter-group {
+                margin-bottom: 20px;
+            }
         }
         
         @media (max-width: 350px) {
@@ -1070,6 +1216,22 @@
             
             .footer .linkedin-link {
                 font-size: 0.9rem;
+            }
+            
+            .store-btn {
+                padding: 10px 12px;
+            }
+            
+            .store-btn .store-icon {
+                font-size: 1.6rem;
+            }
+            
+            .store-btn .store-name {
+                font-size: 0.75rem;
+            }
+            
+            .store-btn .store-label {
+                font-size: 1rem;
             }
         }
     </style>
@@ -1178,8 +1340,18 @@
             </div>
         </section>
         
+        <!-- Mobile Filter Bar -->
+        <div class="mobile-filter-bar">
+            <div class="filter-header">
+                <h2>Filter Activities <span class="filter-indicator" id="filter-count">0</span></h2>
+                <button class="reset-btn" id="mobile-reset-filters">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+        </div>
+        
         <!-- Filters Section -->
-        <section class="filters-section">
+        <section class="filters-section" id="filters-container">
             <div class="filter-header">
                 <h2>Filter Activities</h2>
                 <button class="reset-btn" id="reset-filters">
@@ -1187,29 +1359,39 @@
                 </button>
             </div>
             
-            <div class="filters-grid">
+            <div class="filters-columns">
                 <!-- Age Group Filter -->
                 <div class="filter-group age-filter-group">
-                    <h3>Age Group</h3>
+                    <div class="filter-group-header">
+                        <h3>Age Group</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="age-filters">
                         <button class="filter-btn active" data-filter="ageGroup" data-value="0-2">
-                            <i class="fas fa-baby"></i> 0-2 Years
+                            <i class="fas fa-baby"></i> 0-2
                         </button>
                         <button class="filter-btn" data-filter="ageGroup" data-value="3-5">
-                            <i class="fas fa-child"></i> 3-5 Years
+                            <i class="fas fa-child"></i> 3-5
                         </button>
                         <button class="filter-btn" data-filter="ageGroup" data-value="6-8">
-                            <i class="fas fa-user"></i> 6-8 Years
+                            <i class="fas fa-user"></i> 6-8
                         </button>
                         <button class="filter-btn" data-filter="ageGroup" data-value="9-12">
-                            <i class="fas fa-user"></i> 9-12 Years
+                            <i class="fas fa-user"></i> 9-12
                         </button>
                     </div>
                 </div>
                 
                 <!-- Situation Filter -->
                 <div class="filter-group">
-                    <h3>Situation</h3>
+                    <div class="filter-group-header">
+                        <h3>Situation</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="situation-filters">
                         <button class="filter-btn active" data-filter="situations" data-value="all">
                             All
@@ -1231,7 +1413,12 @@
                 
                 <!-- Location Filter -->
                 <div class="filter-group">
-                    <h3>Location</h3>
+                    <div class="filter-group-header">
+                        <h3>Location</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="location-filters">
                         <button class="filter-btn active" data-filter="location" data-value="all">
                             All
@@ -1250,7 +1437,12 @@
                 
                 <!-- Duration Filter -->
                 <div class="filter-group">
-                    <h3>Duration (min)</h3>
+                    <div class="filter-group-header">
+                        <h3>Duration (min)</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="duration-filters">
                         <button class="filter-btn active" data-filter="duration" data-value="all">
                             All
@@ -1272,7 +1464,12 @@
                 
                 <!-- Supervision Filter -->
                 <div class="filter-group">
-                    <h3>Supervision</h3>
+                    <div class="filter-group-header">
+                        <h3>Supervision</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="supervision-filters">
                         <button class="filter-btn active" data-filter="supervision" data-value="all">
                             All
@@ -1291,7 +1488,12 @@
                 
                 <!-- New Filters -->
                 <div class="filter-group">
-                    <h3>Kid Energy</h3>
+                    <div class="filter-group-header">
+                        <h3>Kid Energy</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="energy-filters">
                         <button class="filter-btn active" data-filter="kidEnergy" data-value="all">
                             All
@@ -1309,7 +1511,12 @@
                 </div>
                 
                 <div class="filter-group">
-                    <h3>Kid Count</h3>
+                    <div class="filter-group-header">
+                        <h3>Kid Count</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="kidCount-filters">
                         <button class="filter-btn active" data-filter="kidCount" data-value="all">
                             All
@@ -1327,7 +1534,12 @@
                 </div>
                 
                 <div class="filter-group">
-                    <h3>Mess Level</h3>
+                    <div class="filter-group-header">
+                        <h3>Mess Level</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="messLevel-filters">
                         <button class="filter-btn active" data-filter="messLevel" data-value="all">
                             All
@@ -1348,7 +1560,12 @@
                 </div>
                 
                 <div class="filter-group">
-                    <h3>Noise Level</h3>
+                    <div class="filter-group-header">
+                        <h3>Noise Level</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="noiseLevel-filters">
                         <button class="filter-btn active" data-filter="noiseLevel" data-value="all">
                             All
@@ -1367,7 +1584,12 @@
                 
                 <!-- NEW DIFFICULTY FILTER -->
                 <div class="filter-group">
-                    <h3>Difficulty Level</h3>
+                    <div class="filter-group-header">
+                        <h3>Difficulty Level</h3>
+                        <button class="filter-toggle">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
                     <div class="filter-options" id="difficulty-filters">
                         <button class="filter-btn active" data-filter="difficulty" data-value="all">
                             All
@@ -1454,12 +1676,17 @@
             difficulty: 'all' // NEW: Added difficulty filter
         };
         let activitiesData = [];
+        let activeFiltersCount = 0;
         
         // DOM elements
         const activitiesContainer = document.getElementById('activities-container');
         const activityCountElement = document.getElementById('activity-count');
         const ageGroupElement = document.getElementById('age-group');
         const resetBtn = document.getElementById('reset-filters');
+        const mobileResetBtn = document.getElementById('mobile-reset-filters');
+        const filterCountElement = document.getElementById('filter-count');
+        const filtersContainer = document.getElementById('filters-container');
+        const filterGroups = document.querySelectorAll('.filter-group');
         
         // Initialize the page
         function init() {
@@ -1478,6 +1705,9 @@
                     // Update current filters
                     currentFilters[filterType] = filterValue;
                     
+                    // Update active filters count
+                    updateActiveFiltersCount();
+                    
                     // If it's an age filter, load new activities
                     if (filterType === 'ageGroup') {
                         currentAgeGroup = filterValue;
@@ -1492,9 +1722,43 @@
             
             // Reset filters button
             resetBtn.addEventListener('click', resetFilters);
+            mobileResetBtn.addEventListener('click', resetFilters);
+            
+            // Collapse/expand filter groups
+            document.querySelectorAll('.filter-toggle').forEach(button => {
+                button.addEventListener('click', function() {
+                    const group = this.closest('.filter-group');
+                    const options = group.querySelector('.filter-options');
+                    options.classList.toggle('collapsed');
+                    this.classList.toggle('collapsed');
+                });
+            });
+            
+            // Mobile filter toggle
+            document.querySelector('.mobile-filter-bar h2').addEventListener('click', function() {
+                filtersContainer.classList.toggle('active');
+            });
+            
+            // Close filters when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!filtersContainer.contains(e.target) {
+                    filtersContainer.classList.remove('active');
+                }
+            });
             
             // Load initial activities
             loadActivities();
+        }
+        
+        // Update active filters count
+        function updateActiveFiltersCount() {
+            activeFiltersCount = 0;
+            for (const filter in currentFilters) {
+                if (currentFilters[filter] !== 'all' && filter !== 'ageGroup') {
+                    activeFiltersCount++;
+                }
+            }
+            filterCountElement.textContent = activeFiltersCount;
         }
         
         // Reset all filters
@@ -1519,6 +1783,9 @@
                     btn.classList.add('active');
                 }
             });
+            
+            // Reset active filters count
+            updateActiveFiltersCount();
             
             // Reapply filters
             filterAndRenderActivities();
@@ -1560,7 +1827,7 @@
                     console.error('Error loading activities:', error);
                     activitiesContainer.innerHTML = `
                         <div class="no-results">
-                            <i class="fas fa-exclamation-triangle" style="color: #e53e3e; margin-bottom: 15px;"></i>
+                            <i class="fas fa-exclamation-triangle fa-3x" style="color: #e53e3e; margin-bottom: 20px;"></i>
                             <h3>Couldn't Load Activities</h3>
                             <p>Please check your internet connection or try again later.</p>
                             <p>Error: ${error.message}</p>
@@ -1647,11 +1914,17 @@
             if (activities.length === 0) {
                 activitiesContainer.innerHTML = `
                     <div class="no-results">
-                        <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
+                        <i class="fas fa-search no-results-icon"></i>
                         <h3>No Matching Activities</h3>
                         <p>Try adjusting your filters or select a different age group.</p>
+                        <button class="reset-btn" id="reset-filters-empty">
+                            <i class="fas fa-redo"></i> Reset All Filters
+                        </button>
                     </div>
                 `;
+                
+                // Add event listener for reset button in empty state
+                document.getElementById('reset-filters-empty')?.addEventListener('click', resetFilters);
                 return;
             }
             
