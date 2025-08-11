@@ -21,6 +21,7 @@
             --success: #38a169;
             --warning: #e53e3e;
             --info: #4299e1;
+            --footer-bg: #2b2d42;
         }
         
         * {
@@ -35,13 +36,15 @@
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
-            padding-bottom: 30px;
+            display: flex;
+            flex-direction: column;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            flex: 1;
         }
         
         /* Header */
@@ -458,7 +461,7 @@
         
         .age-filter-group .filter-options {
             display: grid;
-            grid-template-columns: repeat(2, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
         }
         
@@ -817,6 +820,90 @@
             100% { transform: rotate(360deg); }
         }
         
+        /* FOOTER STYLES */
+        footer.footer {
+            background-color: var(--footer-bg);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+        footer .container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+        }
+        
+        footer p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+        }
+        
+        .app-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .footer .download-btn {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+        }
+        
+        .footer .download-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .footer .download-btn i {
+            margin-right: 5px;
+        }
+        
+        .linkedin-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .linkedin-section h3 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .linkedin-link {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .linkedin-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+        
+        .linkedin-link i {
+            font-size: 1.4rem;
+            color: #0a66c2;
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
         /* Media Queries */
         @media (min-width: 400px) {
             .btn-text {
@@ -940,15 +1027,28 @@
                 max-width: none;
             }
             
-            .footer .linkedin-link {
-                flex-direction: row;
-                align-items: center;
-                text-align: center;
-                font-size: 1rem;
+            /* Mobile footer adjustments */
+            footer.footer {
+                padding: 30px 0 20px;
             }
             
-            .footer .linkedin-link i {
-                font-size: 1.3rem;
+            .app-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .linkedin-link {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .linkedin-link i {
+                font-size: 1.2rem;
+            }
+            
+            .linkedin-section h3 {
+                font-size: 1.1rem;
             }
         }
         
@@ -966,8 +1066,8 @@
                 font-size: 1rem;
             }
             
-            .footer .linkedin-link {
-                font-size: 0.9rem;
+            .linkedin-link {
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -1306,7 +1406,7 @@
         </div>
     </div>
     
-    <!-- Footer -->
+    <!-- Improved Footer -->
     <footer class="footer">
         <div class="container">
             <p>Play Now App | Instant Kid Activities for Busy Parents</p>
@@ -1493,31 +1593,31 @@
                 
                 // Supervision filter
                 if (currentFilters.supervision !== 'all' && 
-                    activity.supervision !== currentFilters.supervision) {
+                    activity.supervision !== currentFilters.supervision)) {
                     return false;
                 }
                 
                 // Kid Energy filter
                 if (currentFilters.kidEnergy !== 'all' && 
-                    activity.kidEnergy !== currentFilters.kidEnergy) {
+                    activity.kidEnergy !== currentFilters.kidEnergy)) {
                     return false;
                 }
                 
                 // Kid Count filter
                 if (currentFilters.kidCount !== 'all' && 
-                    activity.kidCount !== currentFilters.kidCount) {
+                    activity.kidCount !== currentFilters.kidCount)) {
                     return false;
                 }
                 
                 // Mess Level filter
                 if (currentFilters.messLevel !== 'all' && 
-                    activity.messLevel !== currentFilters.messLevel) {
+                    activity.messLevel !== currentFilters.messLevel)) {
                     return false;
                 }
                 
                 // Noise Level filter
                 if (currentFilters.noiseLevel !== 'all' && 
-                    activity.noiseLevel !== currentFilters.noiseLevel) {
+                    activity.noiseLevel !== currentFilters.noiseLevel)) {
                     return false;
                 }
                 
@@ -1564,7 +1664,7 @@
                 
                 // Create situation tags
                 let situationTags = '';
-                if (activity.situations) {
+                if (activity.situations)) {
                     activity.situations.forEach(situation => {
                         situationTags += `<span class="tag">${situation}</span>`;
                     });
@@ -1572,7 +1672,7 @@
                 
                 // Create special needs tags
                 let specialNeedsTags = '';
-                if (activity.specialNeeds) {
+                if (activity.specialNeeds)) {
                     activity.specialNeeds.forEach(need => {
                         specialNeedsTags += `<span class="tag special">${need}</span>`;
                     });
@@ -1603,7 +1703,7 @@
                 
                 // Instructions section
                 let instructionsList = '';
-                if (activity.instructions) {
+                if (activity.instructions)) {
                     let steps = [];
                     if (Array.isArray(activity.instructions)) {
                         steps = activity.instructions;
@@ -1630,7 +1730,7 @@
                 }
                 
                 // Safety notes section
-                if (activity.safetyNotes) {
+                if (activity.safetyNotes)) {
                     expandableSections += `
                         <div class="expandable-section">
                             <div class="expandable-header">
@@ -1647,7 +1747,7 @@
                 }
                 
                 // Parent tips section
-                if (activity.parentTips) {
+                if (activity.parentTips)) {
                     expandableSections += `
                         <div class="expandable-section">
                             <div class="expandable-header">
