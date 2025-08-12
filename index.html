@@ -1338,6 +1338,28 @@
                         </div>
                     </div>
                 </div>
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-user"></i> Parent Energy</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="parentEnergy-filters">
+                            <button class="filter-btn active" data-filter="parentEnergy" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="parentEnergy" data-value="low">
+                                <i class="fas fa-battery-quarter"></i> Low
+                            </button>
+                            <button class="filter-btn" data-filter="parentEnergy" data-value="medium">
+                                <i class="fas fa-battery-half"></i> Medium
+                            </button>
+                            <button class="filter-btn" data-filter="parentEnergy" data-value="high">
+                                <i class="fas fa-battery-full"></i> High
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- Kid Energy Filter -->
                 <div class="filter-group">
@@ -1525,6 +1547,7 @@
             location: 'all',
             duration: 'all',
             supervision: 'all',
+            parentEnergy: 'all',
             kidEnergy: 'all',
             kidCount: 'all',
             messLevel: 'all',
@@ -1591,6 +1614,7 @@
                 location: 'all',
                 duration: 'all',
                 supervision: 'all',
+                parentEnergy: 'all',
                 kidEnergy: 'all',
                 kidCount: 'all',
                 messLevel: 'all',
@@ -1684,6 +1708,12 @@
                     activity.supervision !== currentFilters.supervision) {
                     return false;
                 }
+
+                // NEW: Parent Energy filter
+                if (currentFilters.parentEnergy !== 'all' && 
+                    activity.parentEnergy !== currentFilters.parentEnergy) {
+                    return false;
+                }
                 
                 // Kid Energy filter
                 if (currentFilters.kidEnergy !== 'all' && 
@@ -1770,13 +1800,18 @@
                 const sourceTag = activity.source 
                     ? `<span class="tag source">${activity.source}</span>` 
                     : '';
+                // Create energy indicators for parent
+                const energyLevels = ['low', 'medium', 'high'];
+                const parentEnergyIndicator = energyLevels.map(level => `
+                    <div class="energy-dot ${activity.parentEnergy === level ? 'active' : ''}"></div>
+                `).join('');
                 
-                // Create energy indicators
+                // Create energy indicators for kids
                 const energyLevels = ['low', 'medium', 'high'];
                 const kidEnergyIndicator = energyLevels.map(level => `
                     <div class="energy-dot ${activity.kidEnergy === level ? 'active' : ''}"></div>
                 `).join('');
-                
+
                 const parentEnergyIndicator = energyLevels.map(level => `
                     <div class="energy-dot ${activity.parentEnergy === level ? 'active' : ''}"></div>
                 `).join('');
