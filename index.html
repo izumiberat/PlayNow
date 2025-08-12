@@ -1709,7 +1709,7 @@
                     return false;
                 }
 
-                // NEW: Parent Energy filter
+                // Parent Energy filter
                 if (currentFilters.parentEnergy !== 'all' && 
                     activity.parentEnergy !== currentFilters.parentEnergy) {
                     return false;
@@ -1754,8 +1754,15 @@
         
         // Clean instruction text by removing numbered prefixes
         function cleanInstructionText(step) {
-            // Remove any leading number/dot patterns (like "1. ", "2) ", etc.)
             return step.replace(/^\d+[\.\)]\s*/, '');
+        }
+        
+        // Helper function to generate energy indicators
+        function generateEnergyIndicator(energyLevel) {
+            const energyLevels = ['low', 'medium', 'high'];
+            return energyLevels.map(level => `
+                <div class="energy-dot ${energyLevel === level ? 'active' : ''}"></div>
+            `).join('');
         }
         
         // Render activities
@@ -1800,20 +1807,10 @@
                 const sourceTag = activity.source 
                     ? `<span class="tag source">${activity.source}</span>` 
                     : '';
-                // Create energy indicators for parent
-                const energyLevels = ['low', 'medium', 'high'];
-                const parentEnergyIndicator = energyLevels.map(level => `
-                    <div class="energy-dot ${activity.parentEnergy === level ? 'active' : ''}"></div>
-                `).join('');
                 
-                // Create energy indicators for kids
-                const kidEnergyIndicator = energyLevels.map(level => `
-                    <div class="energy-dot ${activity.kidEnergy === level ? 'active' : ''}"></div>
-                `).join('');
-
-                const parentEnergyIndicator = energyLevels.map(level => `
-                    <div class="energy-dot ${activity.parentEnergy === level ? 'active' : ''}"></div>
-                `).join('');
+                // Generate energy indicators using helper function
+                const kidEnergyIndicator = generateEnergyIndicator(activity.kidEnergy);
+                const parentEnergyIndicator = generateEnergyIndicator(activity.parentEnergy);
                 
                 // Check for submitter credit
                 const submitterCredit = activity.submitter 
