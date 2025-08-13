@@ -27,11 +27,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
-            background-color: var(--light);
+            background-color: #f5f7fa;
             color: var(--text);
             line-height: 1.6;
             min-height: 100vh;
@@ -361,7 +361,7 @@
             font-size: 0.95rem;
         }
         
-        /* Filters Section - Optimized for space */
+        /* Redesigned Filters Section */
         .filters-section {
             background: white;
             padding: 18px;
@@ -401,10 +401,45 @@
             transform: translateY(-2px);
         }
         
-        .filters-grid {
+        .primary-filters {
             display: grid;
             grid-template-columns: 1fr;
             gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .secondary-filters {
+            display: none;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .secondary-filters.expanded {
+            display: grid;
+        }
+        
+        .toggle-filters-btn {
+            width: 100%;
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .toggle-filters-btn:hover {
+            background: #edf2f7;
+            border-color: var(--primary);
         }
         
         .filter-group {
@@ -476,6 +511,16 @@
         .filter-btn i {
             font-size: 0.9rem;
             min-width: 18px;
+        }
+
+        .filter-btn:disabled,
+        .filter-btn:disabled:hover {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            border-color: var(--border);
+            background: #f5f7fa;
+            color: #666;
         }
         
         /* Age filter */
@@ -1007,8 +1052,22 @@
                 grid-template-columns: repeat(4, 1fr);
             }
             
+            .primary-filters {
+                grid-template-columns: 1fr;
+            }
+            
+            .secondary-filters {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
             .footer .linkedin-link {
                 font-size: 1.1rem;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .secondary-filters {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
         
@@ -1203,7 +1262,7 @@
             </div>
         </section>
         
-        <!-- Filters Section - Optimized -->
+        <!-- Redesigned Filters Section -->
         <section class="filters-section">
             <div class="filter-header">
                 <h2>Filter Activities</h2>
@@ -1212,8 +1271,8 @@
                 </button>
             </div>
             
-            <div class="filters-grid">
-                <!-- Age Group Filter -->
+            <div class="primary-filters">
+                <!-- Age Group Filter (always visible) -->
                 <div class="filter-group age-filter-group expanded">
                     <div class="filter-group-header">
                         <h3><i class="fas fa-child"></i> Age Group</h3>
@@ -1236,7 +1295,10 @@
                         </div>
                     </div>
                 </div>
-                
+            </div>
+            
+            <!-- Secondary filters container (hidden by default) -->
+            <div class="secondary-filters" id="secondary-filters">
                 <!-- Situation Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
@@ -1362,6 +1424,8 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Parent Energy Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
                         <h3><i class="fas fa-user"></i> Parent Energy</h3>
@@ -1513,8 +1577,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Prep Filter -->
+                
+                <!-- Prep Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
                         <h3><i class="fas fa-tools"></i> Preparation</h3>
@@ -1744,6 +1808,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Show More Options Button -->
+            <button class="toggle-filters-btn" id="toggle-filters">
+                <i class="fas fa-plus-circle"></i>
+                <span>Show More Options</span>
+            </button>
         </section>
         
         <!-- Activity Counter -->
@@ -1791,6 +1862,108 @@
     </footer>
     
     <script>
+        // Toggle secondary filters
+        const toggleFiltersBtn = document.getElementById('toggle-filters');
+        const secondaryFilters = document.getElementById('secondary-filters');
+        let filtersExpanded = false;
+        
+        toggleFiltersBtn.addEventListener('click', () => {
+            filtersExpanded = !filtersExpanded;
+            secondaryFilters.classList.toggle('expanded', filtersExpanded);
+            
+            toggleFiltersBtn.innerHTML = `
+                <i class="fas ${filtersExpanded ? 'fa-minus-circle' : 'fa-plus-circle'}"></i>
+                <span>${filtersExpanded ? 'Show Fewer Options' : 'Show More Options'}</span>
+            `;
+            
+            // Scroll to filters if expanding
+            if (filtersExpanded) {
+                secondaryFilters.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+        
+        // Initialize filter groups to be expanded
+        document.querySelectorAll('.filter-group').forEach(group => {
+            group.classList.add('expanded');
+        });
+
+        function updateFilterAvailability() {
+            // Get all filter buttons except age group
+            const allFilterButtons = document.querySelectorAll('.filter-btn:not([data-filter="ageGroup"])');
+            
+            // Enable all buttons initially
+            allFilterButtons.forEach(btn => {
+                btn.disabled = false;
+            });
+        
+            // Get unique available values from activities
+            const availableFilters = {
+                situations: new Set(),
+                location: new Set(),
+                duration: new Set(),
+                supervision: new Set(),
+                parentEnergy: new Set(),
+                kidEnergy: new Set(),
+                kidCount: new Set(),
+                messLevel: new Set(),
+                noiseLevel: new Set(),
+                difficulty: new Set(),
+                prep: new Set(),
+                skills: new Set(),
+                specialNeeds: new Set(),
+                cost: new Set(),
+                seasonality: new Set(),
+                source: new Set(),
+                tags: new Set()
+            };
+        
+            // Collect available filter values from activities
+            activitiesData.forEach(activity => {
+                // Situations
+                if (activity.situations) {
+                    activity.situations.forEach(sit => availableFilters.situations.add(sit));
+                }
+                
+                // Single-value filters
+                const singleValueFilters = [
+                    'location', 'duration', 'supervision', 'parentEnergy', 
+                    'kidEnergy', 'kidCount', 'messLevel', 'noiseLevel', 
+                    'difficulty', 'prep', 'cost', 'seasonality', 'source'
+                ];
+                
+                singleValueFilters.forEach(filter => {
+                    if (activity[filter]) {
+                        availableFilters[filter].add(activity[filter].toString());
+                    }
+                });
+                
+                // Multi-value filters
+                if (activity.skills) {
+                    activity.skills.forEach(skill => availableFilters.skills.add(skill));
+                }
+                if (activity.specialNeeds) {
+                    activity.specialNeeds.forEach(need => availableFilters.specialNeeds.add(need));
+                }
+                if (activity.tags) {
+                    activity.tags.forEach(tag => availableFilters.tags.add(tag));
+                }
+            });
+        
+            // Disable unavailable filter options
+            allFilterButtons.forEach(btn => {
+                const filterType = btn.dataset.filter;
+                const filterValue = btn.dataset.value;
+                
+                // Always enable "all" options
+                if (filterValue === 'all') return;
+                
+                // Disable if value not found in available filters
+                if (!availableFilters[filterType].has(filterValue)) {
+                    btn.disabled = true;
+                }
+            });
+        }
+        
         // Base URL for JSON files
         const BASE_JSON_URL = 'https://izumiberat.github.io/PlayNow/assets/json/';
         
@@ -1807,7 +1980,6 @@
             messLevel: 'all',
             noiseLevel: 'all',
             difficulty: 'all',
-            // New filters
             prep: 'all',
             skills: 'all',
             specialNeeds: 'all',
@@ -1847,6 +2019,7 @@
                         currentAgeGroup = filterValue;
                         ageGroupElement.textContent = `${currentAgeGroup} years`;
                         loadActivities();
+                        updateFilterAvailability();
                     } else {
                         // Apply filters to existing activities
                         filterAndRenderActivities();
@@ -1867,6 +2040,7 @@
             
             // Load initial activities
             loadActivities();
+            setTimeout(updateFilterAvailability, 500); 
         }
         
         // Reset all filters
@@ -1891,8 +2065,8 @@
                 tags: 'all'
             };
             
-            // Reset UI for all filters except age
-            document.querySelectorAll('.filter-btn:not([data-filter="ageGroup"])').forEach(btn => {
+            // Reset UI for all filters
+            document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.remove('active');
                 if (btn.dataset.value === 'all') {
                     btn.classList.add('active');
@@ -1934,6 +2108,7 @@
                         throw new Error('Invalid JSON structure');
                     }
                     filterAndRenderActivities();
+                    updateFilterAvailability();
                 })
                 .catch(error => {
                     console.error('Error loading activities:', error);
@@ -1951,21 +2126,21 @@
         // Filter activities based on current filters
         function filterActivities() {
             return activitiesData.filter(activity => {
-                // Situation filter (updated to handle all situations individually)
+                // Situation filter
                 if (currentFilters.situations !== 'all') {
                     if (!activity.situations || !activity.situations.includes(currentFilters.situations)) {
                         return false;
                     }
                 }
                 
-                // Location filter (include 'any' location)
+                // Location filter
                 if (currentFilters.location !== 'all' && 
                     activity.location !== currentFilters.location &&
                     activity.location !== 'any') {
                     return false;
                 }
                 
-                // Duration filter (numeric comparison)
+                // Duration filter
                 if (currentFilters.duration !== 'all') {
                     const durationValue = parseInt(currentFilters.duration);
                     if (activity.duration !== durationValue) {
@@ -2017,7 +2192,7 @@
                         return false;
                     }
                 }
-
+                
                 // Prep filter
                 if (currentFilters.prep !== 'all' && 
                     activity.prep !== currentFilters.prep) {
@@ -2221,7 +2396,6 @@
                             ${submitterCredit}
                             <h3 class="card-title">
                                 ${activity.title}
-                                <!-- Tooltip added to difficulty badge -->
                                 <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
                                     <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
                                 </span>
