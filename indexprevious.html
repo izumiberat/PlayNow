@@ -1254,8 +1254,32 @@
                             <button class="filter-btn" data-filter="situations" data-value="rainy-day">
                                 <i class="fas fa-cloud-rain"></i> Rainy
                             </button>
+                            <button class="filter-btn" data-filter="situations" data-value="sick-day">
+                                <i class="fas fa-thermometer"></i> Sick Day
+                            </button>
                             <button class="filter-btn" data-filter="situations" data-value="travel">
-                                <i class="fas fa-car"></i> Travel
+                                <i class="fas fa-plane"></i> Travel
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="restaurant">
+                                <i class="fas fa-utensils"></i> Restaurant
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="waiting-room">
+                                <i class="fas fa-hourglass-half"></i> Waiting Room
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="grocery-store">
+                                <i class="fas fa-shopping-cart"></i> Grocery Store
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="car-ride">
+                                <i class="fas fa-car"></i> Car Ride
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="beach">
+                                <i class="fas fa-umbrella-beach"></i> Beach
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="birthday-party">
+                                <i class="fas fa-birthday-cake"></i> Birthday Party
+                            </button>
+                            <button class="filter-btn" data-filter="situations" data-value="playdate">
+                                <i class="fas fa-users"></i> Playdate
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="bedtime">
                                 <i class="fas fa-bed"></i> Bedtime
@@ -1334,6 +1358,28 @@
                             </button>
                             <button class="filter-btn" data-filter="supervision" data-value="active">
                                 <i class="fas fa-user-friends"></i> Active
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-user"></i> Parent Energy</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="parentEnergy-filters">
+                            <button class="filter-btn active" data-filter="parentEnergy" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="parentEnergy" data-value="low">
+                                <i class="fas fa-battery-quarter"></i> Low
+                            </button>
+                            <button class="filter-btn" data-filter="parentEnergy" data-value="medium">
+                                <i class="fas fa-battery-half"></i> Medium
+                            </button>
+                            <button class="filter-btn" data-filter="parentEnergy" data-value="high">
+                                <i class="fas fa-battery-full"></i> High
                             </button>
                         </div>
                     </div>
@@ -1468,6 +1514,236 @@
                     </div>
                 </div>
             </div>
+            <!-- Prep Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-tools"></i> Preparation</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="prep-filters">
+                            <button class="filter-btn active" data-filter="prep" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="prep" data-value="none">
+                                <i class="fas fa-ban"></i> None
+                            </button>
+                            <button class="filter-btn" data-filter="prep" data-value="quick">
+                                <i class="fas fa-bolt"></i> Quick
+                            </button>
+                            <button class="filter-btn" data-filter="prep" data-value="extended">
+                                <i class="fas fa-hourglass"></i> Extended
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-brain"></i> Skills</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="skills-filters">
+                            <button class="filter-btn active" data-filter="skills" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="skills" data-value="motor">
+                                <i class="fas fa-running"></i> Motor
+                            </button>
+                            <button class="filter-btn" data-filter="skills" data-value="cognitive">
+                                <i class="fas fa-lightbulb"></i> Cognitive
+                            </button>
+                            <button class="filter-btn" data-filter="skills" data-value="social">
+                                <i class="fas fa-handshake"></i> Social
+                            </button>
+                            <button class="filter-btn" data-filter="skills" data-value="creative">
+                                <i class="fas fa-paint-brush"></i> Creative
+                            </button>
+                            <button class="filter-btn" data-filter="skills" data-value="academic">
+                                <i class="fas fa-book"></i> Academic
+                            </button>
+                            <button class="filter-btn" data-filter="skills" data-value="emotional">
+                                <i class="fas fa-heart"></i> Emotional
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Special Needs Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-universal-access"></i> Special Needs</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="specialNeeds-filters">
+                            <button class="filter-btn active" data-filter="specialNeeds" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="specialNeeds" data-value="sensory-friendly">
+                                <i class="fas fa-hand-sparkles"></i> Sensory
+                            </button>
+                            <button class="filter-btn" data-filter="specialNeeds" data-value="adhd-friendly">
+                                <i class="fas fa-bolt"></i> ADHD
+                            </button>
+                            <button class="filter-btn" data-filter="specialNeeds" data-value="autism-friendly">
+                                <i class="fas fa-infinity"></i> Autism
+                            </button>
+                            <button class="filter-btn" data-filter="specialNeeds" data-value="quiet-child-friendly">
+                                <i class="fas fa-volume-mute"></i> Quiet Child
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cost Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-tag"></i> Cost</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="cost-filters">
+                            <button class="filter-btn active" data-filter="cost" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="cost" data-value="free">
+                                <i class="fas fa-dollar-sign"></i> Free
+                            </button>
+                            <button class="filter-btn" data-filter="cost" data-value="low">
+                                <i class="fas fa-coins"></i> Low
+                            </button>
+                            <button class="filter-btn" data-filter="cost" data-value="medium">
+                                <i class="fas fa-money-bill"></i> Medium
+                            </button>
+                            <button class="filter-btn" data-filter="cost" data-value="high">
+                                <i class="fas fa-gem"></i> High
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seasonality Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-snowflake"></i> Seasonality</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="seasonality-filters">
+                            <button class="filter-btn active" data-filter="seasonality" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="seasonality" data-value="any">
+                                <i class="fas fa-calendar"></i> Any
+                            </button>
+                            <button class="filter-btn" data-filter="seasonality" data-value="spring">
+                                <i class="fas fa-seedling"></i> Spring
+                            </button>
+                            <button class="filter-btn" data-filter="seasonality" data-value="summer">
+                                <i class="fas fa-sun"></i> Summer
+                            </button>
+                            <button class="filter-btn" data-filter="seasonality" data-value="fall">
+                                <i class="fas fa-leaf"></i> Fall
+                            </button>
+                            <button class="filter-btn" data-filter="seasonality" data-value="winter">
+                                <i class="fas fa-snowflake"></i> Winter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Source Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-book"></i> Source</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="source-filters">
+                            <button class="filter-btn active" data-filter="source" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="source" data-value="montessori">
+                                <i class="fas fa-child"></i> Montessori
+                            </button>
+                            <button class="filter-btn" data-filter="source" data-value="waldorf">
+                                <i class="fas fa-tree"></i> Waldorf
+                            </button>
+                            <button class="filter-btn" data-filter="source" data-value="traditional">
+                                <i class="fas fa-school"></i> Traditional
+                            </button>
+                            <button class="filter-btn" data-filter="source" data-value="reggio-emilia">
+                                <i class="fas fa-palette"></i> Reggio Emilia
+                            </button>
+                            <button class="filter-btn" data-filter="source" data-value="original">
+                                <i class="fas fa-lightbulb"></i> Original
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tags Filter -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-tags"></i> Tags</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
+                        <div class="filter-options" id="tags-filters">
+                            <button class="filter-btn active" data-filter="tags" data-value="all">
+                                <i class="fas fa-list"></i> All
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="crafts">
+                                <i class="fas fa-paint-brush"></i> Crafts
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="science">
+                                <i class="fas fa-flask"></i> Science
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="baking">
+                                <i class="fas fa-cookie"></i> Baking
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="storytelling">
+                                <i class="fas fa-book-open"></i> Storytelling
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="music">
+                                <i class="fas fa-music"></i> Music
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="art">
+                                <i class="fas fa-palette"></i> Art
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="building">
+                                <i class="fas fa-cubes"></i> Building
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="gardening">
+                                <i class="fas fa-seedling"></i> Gardening
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="water-play">
+                                <i class="fas fa-water"></i> Water Play
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="pretend-play">
+                                <i class="fas fa-theater-masks"></i> Pretend Play
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="sensory">
+                                <i class="fas fa-hand-sparkles"></i> Sensory
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="nature">
+                                <i class="fas fa-tree"></i> Nature
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="movement">
+                                <i class="fas fa-running"></i> Movement
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="quiet-time">
+                                <i class="fas fa-volume-mute"></i> Quiet Time
+                            </button>
+                            <button class="filter-btn" data-filter="tags" data-value="cleanup-game">
+                                <i class="fas fa-broom"></i> Cleanup Game
+                            </button>
+                        </div>
+                    </div>
+                </div>
         </section>
         
         <!-- Activity Counter -->
@@ -1525,12 +1801,22 @@
             location: 'all',
             duration: 'all',
             supervision: 'all',
+            parentEnergy: 'all',
             kidEnergy: 'all',
             kidCount: 'all',
             messLevel: 'all',
             noiseLevel: 'all',
-            difficulty: 'all'
+            difficulty: 'all',
+            // New filters
+            prep: 'all',
+            skills: 'all',
+            specialNeeds: 'all',
+            cost: 'all',
+            seasonality: 'all',
+            source: 'all',
+            tags: 'all'
         };
+
         let activitiesData = [];
         
         // DOM elements
@@ -1585,17 +1871,24 @@
         
         // Reset all filters
         function resetFilters() {
-            // Reset filter values
             currentFilters = {
                 situations: 'all',
                 location: 'all',
                 duration: 'all',
                 supervision: 'all',
+                parentEnergy: 'all',
                 kidEnergy: 'all',
                 kidCount: 'all',
                 messLevel: 'all',
                 noiseLevel: 'all',
-                difficulty: 'all'
+                difficulty: 'all',
+                prep: 'all',
+                skills: 'all',
+                specialNeeds: 'all',
+                cost: 'all',
+                seasonality: 'all',
+                source: 'all',
+                tags: 'all'
             };
             
             // Reset UI for all filters except age
@@ -1658,13 +1951,14 @@
         // Filter activities based on current filters
         function filterActivities() {
             return activitiesData.filter(activity => {
-                // Situation filter (array includes)
-                if (currentFilters.situations !== 'all' && 
-                    !activity.situations.includes(currentFilters.situations)) {
-                    return false;
+                // Situation filter (updated to handle all situations individually)
+                if (currentFilters.situations !== 'all') {
+                    if (!activity.situations || !activity.situations.includes(currentFilters.situations)) {
+                        return false;
+                    }
                 }
                 
-                // Location filter
+                // Location filter (include 'any' location)
                 if (currentFilters.location !== 'all' && 
                     activity.location !== currentFilters.location &&
                     activity.location !== 'any') {
@@ -1682,6 +1976,12 @@
                 // Supervision filter
                 if (currentFilters.supervision !== 'all' && 
                     activity.supervision !== currentFilters.supervision) {
+                    return false;
+                }
+
+                // Parent Energy filter
+                if (currentFilters.parentEnergy !== 'all' && 
+                    activity.parentEnergy !== currentFilters.parentEnergy) {
                     return false;
                 }
                 
@@ -1717,6 +2017,48 @@
                         return false;
                     }
                 }
+
+                // Prep filter
+                if (currentFilters.prep !== 'all' && 
+                    activity.prep !== currentFilters.prep) {
+                    return false;
+                }
+                
+                // Skills filter
+                if (currentFilters.skills !== 'all' && 
+                    (!activity.skills || !activity.skills.includes(currentFilters.skills))) {
+                    return false;
+                }
+                
+                // Special Needs filter
+                if (currentFilters.specialNeeds !== 'all' && 
+                    (!activity.specialNeeds || !activity.specialNeeds.includes(currentFilters.specialNeeds))) {
+                    return false;
+                }
+                
+                // Cost filter
+                if (currentFilters.cost !== 'all' && 
+                    activity.cost !== currentFilters.cost) {
+                    return false;
+                }
+                
+                // Seasonality filter
+                if (currentFilters.seasonality !== 'all' && 
+                    activity.seasonality !== currentFilters.seasonality) {
+                    return false;
+                }
+                
+                // Source filter
+                if (currentFilters.source !== 'all' && 
+                    activity.source !== currentFilters.source) {
+                    return false;
+                }
+                
+                // Tags filter
+                if (currentFilters.tags !== 'all' && 
+                    (!activity.tags || !activity.tags.includes(currentFilters.tags))) {
+                    return false;
+                }
                 
                 return true;
             });
@@ -1724,8 +2066,15 @@
         
         // Clean instruction text by removing numbered prefixes
         function cleanInstructionText(step) {
-            // Remove any leading number/dot patterns (like "1. ", "2) ", etc.)
             return step.replace(/^\d+[\.\)]\s*/, '');
+        }
+        
+        // Helper function to generate energy indicators
+        function generateEnergyIndicator(energyLevel) {
+            const energyLevels = ['low', 'medium', 'high'];
+            return energyLevels.map(level => `
+                <div class="energy-dot ${energyLevel === level ? 'active' : ''}"></div>
+            `).join('');
         }
         
         // Render activities
@@ -1771,15 +2120,9 @@
                     ? `<span class="tag source">${activity.source}</span>` 
                     : '';
                 
-                // Create energy indicators
-                const energyLevels = ['low', 'medium', 'high'];
-                const kidEnergyIndicator = energyLevels.map(level => `
-                    <div class="energy-dot ${activity.kidEnergy === level ? 'active' : ''}"></div>
-                `).join('');
-                
-                const parentEnergyIndicator = energyLevels.map(level => `
-                    <div class="energy-dot ${activity.parentEnergy === level ? 'active' : ''}"></div>
-                `).join('');
+                // Generate energy indicators using helper function
+                const kidEnergyIndicator = generateEnergyIndicator(activity.kidEnergy);
+                const parentEnergyIndicator = generateEnergyIndicator(activity.parentEnergy);
                 
                 // Check for submitter credit
                 const submitterCredit = activity.submitter 
