@@ -512,6 +512,16 @@
             font-size: 0.9rem;
             min-width: 18px;
         }
+
+        .filter-btn:disabled,
+        .filter-btn:disabled:hover {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            border-color: var(--border);
+            background: #f5f7fa;
+            color: #666;
+        }
         
         /* Age filter */
         .age-filter-group .filter-options {
@@ -1876,6 +1886,83 @@
         document.querySelectorAll('.filter-group').forEach(group => {
             group.classList.add('expanded');
         });
+
+        function updateFilterAvailability() {
+            // Get all filter buttons except age group
+            const allFilterButtons = document.querySelectorAll('.filter-btn:not([data-filter="ageGroup"])');
+            
+            // Enable all buttons initially
+            allFilterButtons.forEach(btn => {
+                btn.disabled = false;
+            });
+        
+            // Get unique available values from activities
+            const availableFilters = {
+                situations: new Set(),
+                location: new Set(),
+                duration: new Set(),
+                supervision: new Set(),
+                parentEnergy: new Set(),
+                kidEnergy: new Set(),
+                kidCount: new Set(),
+                messLevel: new Set(),
+                noiseLevel: new Set(),
+                difficulty: new Set(),
+                prep: new Set(),
+                skills: new Set(),
+                specialNeeds: new Set(),
+                cost: new Set(),
+                seasonality: new Set(),
+                source: new Set(),
+                tags: new Set()
+            };
+        
+            // Collect available filter values from activities
+            activitiesData.forEach(activity => {
+                // Situations
+                if (activity.situations) {
+                    activity.situations.forEach(sit => availableFilters.situations.add(sit));
+                }
+                
+                // Single-value filters
+                const singleValueFilters = [
+                    'location', 'duration', 'supervision', 'parentEnergy', 
+                    'kidEnergy', 'kidCount', 'messLevel', 'noiseLevel', 
+                    'difficulty', 'prep', 'cost', 'seasonality', 'source'
+                ];
+                
+                singleValueFilters.forEach(filter => {
+                    if (activity[filter]) {
+                        availableFilters[filter].add(activity[filter].toString());
+                    }
+                });
+                
+                // Multi-value filters
+                if (activity.skills) {
+                    activity.skills.forEach(skill => availableFilters.skills.add(skill));
+                }
+                if (activity.specialNeeds) {
+                    activity.specialNeeds.forEach(need => availableFilters.specialNeeds.add(need));
+                }
+                if (activity.tags) {
+                    activity.tags.forEach(tag => availableFilters.tags.add(tag));
+                }
+            });
+        
+            // Disable unavailable filter options
+            allFilterButtons.forEach(btn => {
+                const filterType = btn.dataset.filter;
+                const filterValue = btn.dataset.value;
+                
+                // Always enable "all" options
+                if (filterValue === 'all') return;
+                
+                // Disable if value not found in available filters
+                if (!availableFilters[filterType].has(filterValue)) {
+                    btn.disabled = true;
+                }
+            });
+        }
         
         // Base URL for JSON files
         const BASE_JSON_URL = 'https://izumiberat.github.io/PlayNow/assets/json/';
@@ -1932,6 +2019,7 @@
                         currentAgeGroup = filterValue;
                         ageGroupElement.textContent = `${currentAgeGroup} years`;
                         loadActivities();
+                        updateFilterAvailability();
                     } else {
                         // Apply filters to existing activities
                         filterAndRenderActivities();
@@ -1952,6 +2040,7 @@
             
             // Load initial activities
             loadActivities();
+            setTimeout(updateFilterAvailability, 500); 
         }
         
         // Reset all filters
@@ -2019,6 +2108,7 @@
                         throw new Error('Invalid JSON structure');
                     }
                     filterAndRenderActivities();
+                    updateFilterAvailability();
                 })
                 .catch(error => {
                     console.error('Error loading activities:', error);
