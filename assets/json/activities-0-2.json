@@ -2032,7 +2032,7 @@
       "duration": 15,
       "location": "indoor",
       "materials": [
-        "blankets"
+        "blanket"
       ],
       "prep": "extended",
       "parentEnergy": "medium",
