@@ -527,6 +527,34 @@
         .age-filter-group .filter-options {
             grid-template-columns: 1fr;
         }
+
+        /* New styles for combined details section */
+        .activity-details-section {
+            margin-top: 15px;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+        }
+        
+        .activity-details-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .activity-details-content.expanded {
+            max-height: 1000px; /* Sufficiently large value */
+        }
+        
+        .details-section {
+            margin-bottom: 20px;
+        }
+        
+        .details-section h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 600;
+        }
         
         .activity-counter {
             text-align: center;
@@ -2304,10 +2332,10 @@
                     ? `<div class="submitter-credit">By ${activity.submitter.name}</div>` 
                     : '';
                 
-                // Create expandable sections for additional content
-                let expandableSections = '';
+                // Create combined activity details section
+                let activityDetails = '';
                 
-                // Instructions section
+                // Instructions
                 let instructionsList = '';
                 if (activity.instructions) {
                     let steps = [];
@@ -2322,69 +2350,64 @@
                     
                     instructionsList = steps.map(step => `<li>${step}</li>`).join('');
                     
-                    expandableSections += `
-                        <div class="expandable-section">
-                            <div class="expandable-header">
-                                <span>Step-by-Step Instructions</span>
-                                <i class="fas fa-chevron-down expandable-icon"></i>
-                            </div>
-                            <div class="expandable-content">
-                                <ol class="instructions-list">${instructionsList}</ol>
-                            </div>
+                    activityDetails += `
+                        <div class="details-section">
+                            <h4>Step-by-Step Instructions</h4>
+                            <ol class="instructions-list">${instructionsList}</ol>
                         </div>
                     `;
                 }
                 
-                // Safety notes section
+                // Safety notes
                 if (activity.safetyNotes) {
-                    expandableSections += `
-                        <div class="expandable-section">
-                            <div class="expandable-header">
-                                <span>Safety Considerations</span>
-                                <i class="fas fa-chevron-down expandable-icon"></i>
-                            </div>
-                            <div class="expandable-content">
-                                <div class="safety-notes">
-                                    ${activity.safetyNotes}
-                                </div>
+                    activityDetails += `
+                        <div class="details-section">
+                            <h4>Safety Considerations</h4>
+                            <div class="safety-notes">
+                                ${activity.safetyNotes}
                             </div>
                         </div>
                     `;
                 }
                 
-                // Parent tips section
+                // Parent tips
                 if (activity.parentTips) {
-                    expandableSections += `
-                        <div class="expandable-section">
-                            <div class="expandable-header">
-                                <span>Tips for Success</span>
-                                <i class="fas fa-chevron-down expandable-icon"></i>
-                            </div>
-                            <div class="expandable-content">
-                                <div class="parent-tips">
-                                    ${activity.parentTips}
-                                </div>
+                    activityDetails += `
+                        <div class="details-section">
+                            <h4>Tips for Success</h4>
+                            <div class="parent-tips">
+                                ${activity.parentTips}
                             </div>
                         </div>
                     `;
                 }
                 
-                // Variations section
+                // Variations
                 if (activity.variations && activity.variations.length > 0) {
                     const variationsList = activity.variations
                         .map(variation => `<li>${variation}</li>`)
                         .join('');
                     
-                    expandableSections += `
-                        <div class="expandable-section">
+                    activityDetails += `
+                        <div class="details-section">
+                            <h4>Activity Variations</h4>
+                            <ul class="variations-list">
+                                ${variationsList}
+                            </ul>
+                        </div>
+                    `;
+                }
+                
+                // Only add the expandable section if there are details to show
+                if (activityDetails) {
+                    activityDetails = `
+                        <div class="activity-details-section">
                             <div class="expandable-header">
-                                <span>Activity Variations</span>
+                                <span>Activity Details</span>
                                 <i class="fas fa-chevron-down expandable-icon"></i>
                             </div>
-                            <div class="expandable-content">
-                                <ul class="variations-list">
-                                    ${variationsList}
-                                </ul>
+                            <div class="activity-details-content">
+                                ${activityDetails}
                             </div>
                         </div>
                     `;
@@ -2442,7 +2465,7 @@
                                 ${sourceTag}
                             </div>
                             
-                            ${expandableSections}
+                            ${activityDetails}
                         </div>
                     </div>
                 `;
