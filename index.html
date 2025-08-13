@@ -1877,6 +1877,9 @@
             group.classList.add('expanded');
         });
         
+        // Base URL for JSON files
+        const BASE_JSON_URL = 'https://izumiberat.github.io/PlayNow/assets/json/';
+        
         // Current state
         let currentAgeGroup = '0-2';
         let currentFilters = {
@@ -1899,104 +1902,7 @@
             tags: 'all'
         };
 
-        // Sample activities data for demo
-        const activitiesData = [
-            {
-                title: "Color Sorting Game",
-                description: "A fun activity to help children learn colors and improve sorting skills.",
-                ageGroup: "0-2",
-                situations: ["normal", "rainy-day"],
-                location: "indoor",
-                duration: 15,
-                supervision: "active",
-                parentEnergy: "medium",
-                kidEnergy: "low",
-                kidCount: "1",
-                messLevel: "low",
-                noiseLevel: "quiet",
-                difficulty: 2,
-                materials: ["colored paper", "bowls", "small objects"],
-                skills: ["cognitive", "motor"],
-                source: "montessori",
-                tags: ["educational", "colors"]
-            },
-            {
-                title: "Indoor Obstacle Course",
-                description: "Create a safe obstacle course using pillows and furniture to develop motor skills.",
-                ageGroup: "3-5",
-                situations: ["rainy-day", "normal"],
-                location: "indoor",
-                duration: 30,
-                supervision: "minimal",
-                parentEnergy: "low",
-                kidEnergy: "high",
-                kidCount: "2-4",
-                messLevel: "low",
-                noiseLevel: "moderate",
-                difficulty: 3,
-                materials: ["pillows", "chairs", "blankets"],
-                skills: ["motor", "social"],
-                source: "original",
-                tags: ["active", "indoor"]
-            },
-            {
-                title: "Nature Scavenger Hunt",
-                description: "Explore outdoors while searching for items on a nature checklist.",
-                ageGroup: "6-8",
-                situations: ["normal", "travel"],
-                location: "outdoor",
-                duration: 60,
-                supervision: "minimal",
-                parentEnergy: "low",
-                kidEnergy: "medium",
-                kidCount: "1",
-                messLevel: "none",
-                noiseLevel: "quiet",
-                difficulty: 3,
-                materials: ["checklist", "pencil"],
-                skills: ["cognitive", "nature"],
-                source: "waldorf",
-                tags: ["outdoor", "educational"]
-            },
-            {
-                title: "Sensory Play with Rice",
-                description: "Create a sensory bin with colored rice for tactile exploration.",
-                ageGroup: "0-2",
-                situations: ["normal", "sick-day"],
-                location: "indoor",
-                duration: 20,
-                supervision: "active",
-                parentEnergy: "medium",
-                kidEnergy: "low",
-                kidCount: "1",
-                messLevel: "medium",
-                noiseLevel: "quiet",
-                difficulty: 1,
-                materials: ["rice", "food coloring", "containers"],
-                skills: ["sensory", "motor"],
-                source: "montessori",
-                tags: ["sensory", "tactile"]
-            },
-            {
-                title: "Storytelling with Puppets",
-                description: "Encourage creativity by creating stories with handmade puppets.",
-                ageGroup: "3-5",
-                situations: ["bedtime", "normal"],
-                location: "indoor",
-                duration: 25,
-                supervision: "active",
-                parentEnergy: "medium",
-                kidEnergy: "low",
-                kidCount: "1-2",
-                messLevel: "low",
-                noiseLevel: "moderate",
-                difficulty: 2,
-                materials: ["socks", "markers", "felt"],
-                skills: ["creative", "social"],
-                source: "traditional",
-                tags: ["storytelling", "pretend-play"]
-            }
-        ];
+        let activitiesData = [];
         
         // DOM elements
         const activitiesContainer = document.getElementById('activities-container');
@@ -2021,14 +1927,15 @@
                     // Update current filters
                     currentFilters[filterType] = filterValue;
                     
-                    // If it's an age filter, update the age group display
+                    // If it's an age filter, load new activities
                     if (filterType === 'ageGroup') {
                         currentAgeGroup = filterValue;
                         ageGroupElement.textContent = `${currentAgeGroup} years`;
+                        loadActivities();
+                    } else {
+                        // Apply filters to existing activities
+                        filterAndRenderActivities();
                     }
-                    
-                    // Apply filters
-                    filterAndRenderActivities();
                 });
             });
             
@@ -2044,7 +1951,7 @@
             });
             
             // Load initial activities
-            filterAndRenderActivities();
+            loadActivities();
         }
         
         // Reset all filters
@@ -2081,12 +1988,54 @@
             filterAndRenderActivities();
         }
         
+        // Load activities from JSON file
+        function loadActivities() {
+            // Show loading state
+            activitiesContainer.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    Loading ${currentAgeGroup} activities...
+                </div>
+            `;
+            
+            // Construct the JSON URL
+            const jsonUrl = `${BASE_JSON_URL}activities-${currentAgeGroup}.json`;
+            
+            // Fetch the JSON data
+            fetch(jsonUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Handle both new and old JSON structures
+                    if (Array.isArray(data)) {
+                        activitiesData = data; // New structure is an array
+                    } else if (data.activities && Array.isArray(data.activities)) {
+                        activitiesData = data.activities; // Old structure has activities property
+                    } else {
+                        throw new Error('Invalid JSON structure');
+                    }
+                    filterAndRenderActivities();
+                })
+                .catch(error => {
+                    console.error('Error loading activities:', error);
+                    activitiesContainer.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-exclamation-triangle" style="color: #e53e3e; margin-bottom: 15px;"></i>
+                            <h3>Couldn't Load Activities</h3>
+                            <p>Please check your internet connection or try again later.</p>
+                            <p>Error: ${error.message}</p>
+                        </div>
+                    `;
+                });
+        }
+        
         // Filter activities based on current filters
         function filterActivities() {
             return activitiesData.filter(activity => {
-                // Age filter
-                if (activity.ageGroup !== currentAgeGroup) return false;
-                
                 // Situation filter
                 if (currentFilters.situations !== 'all') {
                     if (!activity.situations || !activity.situations.includes(currentFilters.situations)) {
@@ -2096,7 +2045,8 @@
                 
                 // Location filter
                 if (currentFilters.location !== 'all' && 
-                    activity.location !== currentFilters.location) {
+                    activity.location !== currentFilters.location &&
+                    activity.location !== 'any') {
                     return false;
                 }
                 
@@ -2147,13 +2097,69 @@
                 // Difficulty filter
                 if (currentFilters.difficulty !== 'all') {
                     const difficultyValue = parseInt(currentFilters.difficulty);
-                    if (activity.difficulty !== difficultyValue) {
+                    const activityDifficulty = activity.difficulty || 3;
+                    if (activityDifficulty !== difficultyValue) {
                         return false;
                     }
                 }
                 
+                // Prep filter
+                if (currentFilters.prep !== 'all' && 
+                    activity.prep !== currentFilters.prep) {
+                    return false;
+                }
+                
+                // Skills filter
+                if (currentFilters.skills !== 'all' && 
+                    (!activity.skills || !activity.skills.includes(currentFilters.skills))) {
+                    return false;
+                }
+                
+                // Special Needs filter
+                if (currentFilters.specialNeeds !== 'all' && 
+                    (!activity.specialNeeds || !activity.specialNeeds.includes(currentFilters.specialNeeds))) {
+                    return false;
+                }
+                
+                // Cost filter
+                if (currentFilters.cost !== 'all' && 
+                    activity.cost !== currentFilters.cost) {
+                    return false;
+                }
+                
+                // Seasonality filter
+                if (currentFilters.seasonality !== 'all' && 
+                    activity.seasonality !== currentFilters.seasonality) {
+                    return false;
+                }
+                
+                // Source filter
+                if (currentFilters.source !== 'all' && 
+                    activity.source !== currentFilters.source) {
+                    return false;
+                }
+                
+                // Tags filter
+                if (currentFilters.tags !== 'all' && 
+                    (!activity.tags || !activity.tags.includes(currentFilters.tags))) {
+                    return false;
+                }
+                
                 return true;
             });
+        }
+        
+        // Clean instruction text by removing numbered prefixes
+        function cleanInstructionText(step) {
+            return step.replace(/^\d+[\.\)]\s*/, '');
+        }
+        
+        // Helper function to generate energy indicators
+        function generateEnergyIndicator(energyLevel) {
+            const energyLevels = ['low', 'medium', 'high'];
+            return energyLevels.map(level => `
+                <div class="energy-dot ${energyLevel === level ? 'active' : ''}"></div>
+            `).join('');
         }
         
         // Render activities
@@ -2186,35 +2192,118 @@
                     });
                 }
                 
+                // Create special needs tags
+                let specialNeedsTags = '';
+                if (activity.specialNeeds) {
+                    activity.specialNeeds.forEach(need => {
+                        specialNeedsTags += `<span class="tag special">${need}</span>`;
+                    });
+                }
+                
                 // Create source tag
                 const sourceTag = activity.source 
                     ? `<span class="tag source">${activity.source}</span>` 
                     : '';
                 
-                // Generate energy indicators
-                const kidEnergyIndicator = `
-                    <div class="energy-dot ${activity.kidEnergy === 'low' ? 'active' : ''}"></div>
-                    <div class="energy-dot ${activity.kidEnergy === 'medium' ? 'active' : ''}"></div>
-                    <div class="energy-dot ${activity.kidEnergy === 'high' ? 'active' : ''}"></div>
-                `;
+                // Generate energy indicators using helper function
+                const kidEnergyIndicator = generateEnergyIndicator(activity.kidEnergy);
+                const parentEnergyIndicator = generateEnergyIndicator(activity.parentEnergy);
                 
-                const parentEnergyIndicator = `
-                    <div class="energy-dot ${activity.parentEnergy === 'low' ? 'active' : ''}"></div>
-                    <div class="energy-dot ${activity.parentEnergy === 'medium' ? 'active' : ''}"></div>
-                    <div class="energy-dot ${activity.parentEnergy === 'high' ? 'active' : ''}"></div>
-                `;
+                // Check for submitter credit
+                const submitterCredit = activity.submitter 
+                    ? `<div class="submitter-credit">By ${activity.submitter.name}</div>` 
+                    : '';
                 
-                // Create skills tags
-                let skillsTags = '';
-                if (activity.skills) {
-                    activity.skills.forEach(skill => {
-                        skillsTags += `<span class="tag">${skill}</span>`;
-                    });
+                // Create expandable sections for additional content
+                let expandableSections = '';
+                
+                // Instructions section
+                let instructionsList = '';
+                if (activity.instructions) {
+                    let steps = [];
+                    if (Array.isArray(activity.instructions)) {
+                        steps = activity.instructions;
+                    } else if (typeof activity.instructions === 'string') {
+                        steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
+                    }
+                    
+                    // Clean each step by removing numbered prefixes
+                    steps = steps.map(step => cleanInstructionText(step));
+                    
+                    instructionsList = steps.map(step => `<li>${step}</li>`).join('');
+                    
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Step-by-Step Instructions</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <ol class="instructions-list">${instructionsList}</ol>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Safety notes section
+                if (activity.safetyNotes) {
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Safety Considerations</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <div class="safety-notes">
+                                    ${activity.safetyNotes}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Parent tips section
+                if (activity.parentTips) {
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Tips for Success</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <div class="parent-tips">
+                                    ${activity.parentTips}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Variations section
+                if (activity.variations && activity.variations.length > 0) {
+                    const variationsList = activity.variations
+                        .map(variation => `<li>${variation}</li>`)
+                        .join('');
+                    
+                    expandableSections += `
+                        <div class="expandable-section">
+                            <div class="expandable-header">
+                                <span>Activity Variations</span>
+                                <i class="fas fa-chevron-down expandable-icon"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <ul class="variations-list">
+                                    ${variationsList}
+                                </ul>
+                            </div>
+                        </div>
+                    `;
                 }
                 
                 activitiesHTML += `
                     <div class="activity-card">
                         <div class="card-header">
+                            ${submitterCredit}
                             <h3 class="card-title">
                                 ${activity.title}
                                 <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
@@ -2222,7 +2311,7 @@
                                 </span>
                             </h3>
                             <div class="card-meta">
-                                <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : 'tree'}"></i> ${activity.location}</span>
+                                <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
                                 <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
                                 <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
                                 <span class="meta-item"><i class="fas fa-child"></i> ${activity.kidCount || 'any'}</span>
@@ -2236,8 +2325,16 @@
                             </div>
                             <div class="card-details">
                                 <div class="detail-item">
+                                    <span class="detail-label">Prep:</span>
+                                    <span>${activity.prep || 'None needed'}</span>
+                                </div>
+                                <div class="detail-item">
                                     <span class="detail-label">Materials:</span>
                                     <span>${materialsText}</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Skills:</span>
+                                    <span>${activity.skills?.join(', ') || 'Various'}</span>
                                 </div>
                                 <div class="detail-item">
                                     <span class="detail-label">Kid Energy:</span>
@@ -2251,19 +2348,34 @@
                             
                             <div class="context-tags">
                                 ${situationTags}
-                                ${skillsTags}
+                                ${specialNeedsTags}
                                 ${sourceTag}
                             </div>
+                            
+                            ${expandableSections}
                         </div>
                     </div>
                 `;
             });
             
             activitiesContainer.innerHTML = activitiesHTML;
+            
+            // Add event listeners for expandable sections
+            document.querySelectorAll('.expandable-header').forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.expandable-icon');
+                    
+                    content.classList.toggle('expanded');
+                    icon.classList.toggle('expanded');
+                });
+            });
         }
         
         // Filter and render activities
         function filterAndRenderActivities() {
+            if (activitiesData.length === 0) return;
+            
             const filteredActivities = filterActivities();
             activityCountElement.textContent = filteredActivities.length;
             renderActivities(filteredActivities);
