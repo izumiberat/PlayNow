@@ -1682,13 +1682,23 @@
         // Filter activities based on current filters
         function filterActivities() {
             return activitiesData.filter(activity => {
-                // Situation filter (array includes)
-                if (currentFilters.situations !== 'all' && 
-                    !activity.situations.includes(currentFilters.situations)) {
-                    return false;
+                // Situation filter (supports travel/car-ride grouping)
+                if (currentFilters.situations !== 'all') {
+                    const selectedSituation = currentFilters.situations;
+                    let situationsToMatch = [selectedSituation];
+                    
+                    // Group travel and car-ride together
+                    if (selectedSituation === 'travel' || selectedSituation === 'car-ride') {
+                        situationsToMatch = ['travel', 'car-ride'];
+                    }
+                    
+                    // Check if activity has at least one matching situation
+                    if (!activity.situations || !activity.situations.some(s => situationsToMatch.includes(s))) {
+                        return false;
+                    }
                 }
                 
-                // Location filter
+                // Location filter (include 'any' location)
                 if (currentFilters.location !== 'all' && 
                     activity.location !== currentFilters.location &&
                     activity.location !== 'any') {
