@@ -40,7 +40,7 @@
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
             padding: 0 20px;
             flex: 1;
@@ -577,12 +577,33 @@
             font-size: 1rem;
         }
         
+        /* UPDATED ACTIVITIES GRID - MORE CARDS PER LINE */
         .activities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
+            width: 100%; 
         }
         
+        @media (min-width: 768px) {
+            .activities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .activities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .activities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+        
+        /* Optimized activity card */
         .activity-card {
             background: white;
             border-radius: 12px;
@@ -603,12 +624,12 @@
         
         .card-header {
             background: #f8fafc;
-            padding: 18px;
+            padding: 15px;
             border-bottom: 1px solid var(--border);
         }
         
         .card-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 6px;
             font-weight: 700;
             color: var(--dark);
@@ -651,10 +672,10 @@
         .card-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            font-size: 0.85rem;
+            gap: 8px;
+            font-size: 0.8rem;
             color: #666;
-            margin-top: 10px;
+            margin-top: 8px;
         }
         
         .meta-item {
@@ -664,55 +685,60 @@
             background: #edf2f7;
             padding: 4px 8px;
             border-radius: 4px;
+            font-size: 0.8rem;
         }
         
         .card-body {
-            padding: 18px;
+            padding: 15px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
         
         .card-description {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             flex-grow: 1;
             color: #444;
-            line-height: 1.6;
-            font-size: 0.95rem;
+            line-height: 1.5;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         
         .card-details {
             background: #f8fafc;
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
             margin-top: 10px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .detail-item {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
         }
         
         .detail-label {
             font-weight: 600;
-            min-width: 100px;
+            min-width: 80px;
             color: var(--dark);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .context-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
+            gap: 6px;
+            margin-top: 12px;
         }
         
         .tag {
             background: #edf2f7;
-            padding: 5px 12px;
+            padding: 4px 10px;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #4a5568;
             font-weight: 500;
         }
@@ -735,7 +761,7 @@
             color: white;
             padding: 4px 8px;
             border-radius: 4px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
         }
         
@@ -754,6 +780,7 @@
             font-weight: 600;
             color: var(--primary);
             padding: 8px 0;
+            font-size: 0.95rem;
         }
         
         .expandable-content {
@@ -778,18 +805,20 @@
         .safety-notes {
             background-color: #fff8f8;
             border-left: 4px solid #e53e3e;
-            padding: 12px;
+            padding: 10px;
             border-radius: 0 4px 4px 0;
             margin-top: 10px;
+            font-size: 0.85rem;
         }
         
         /* Tips styling */
         .parent-tips {
             background-color: #f8fff8;
             border-left: 4px solid #38a169;
-            padding: 12px;
+            padding: 10px;
             border-radius: 0 4px 4px 0;
             margin-top: 10px;
+            font-size: 0.85rem;
         }
         
         /* Variations styling */
@@ -797,6 +826,7 @@
             margin-top: 10px;
             padding-left: 20px;
             list-style: none;
+            font-size: 0.85rem;
         }
         
         .variations-list li {
@@ -819,12 +849,13 @@
             padding-left: 0;
             counter-reset: step-counter;
             list-style: none;
+            font-size: 0.85rem;
         }
         
         .instructions-list li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             position: relative;
-            padding-left: 35px;
+            padding-left: 30px;
             min-height: 25px;
             display: flex;
             align-items: center;
@@ -837,13 +868,13 @@
             left: 0;
             background: var(--primary);
             color: white;
-            width: 25px;
-            height: 25px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: bold;
         }
         
@@ -1183,6 +1214,44 @@
             .footer .linkedin-link {
                 font-size: 0.9rem;
             }
+        }
+
+        .more-info-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .more-info-btn:hover {
+            background: var(--primary-dark, #005bb5);
+        }
+        
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .modal-close {
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -2286,205 +2355,171 @@
                 activitiesContainer.innerHTML = `
                     <div class="no-results">
                         <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
-                        <h3>No Matching Activities</h3>
-                        <p>Try adjusting your filters or select a different age group.</p>
+                        <h3>No Activities Found</h3>
+                        <p>No activities available for the ${currentAgeGroup} age group.</p>
                     </div>
                 `;
                 return;
             }
-            
-            let activitiesHTML = '';
-            
-            activities.forEach(activity => {
-                // Determine material display text
-                let materialsText = activity.materials?.join(', ') || 'none';
-                if (activity.materials?.length > 0 && activity.materials[0] === "none") {
-                    materialsText = "none";
-                }
-                
-                // Create situation tags
-                let situationTags = '';
-                if (activity.situations) {
-                    activity.situations.forEach(situation => {
-                        situationTags += `<span class="tag">${situation}</span>`;
-                    });
-                }
-                
-                // Create special needs tags
-                let specialNeedsTags = '';
-                if (activity.specialNeeds) {
-                    activity.specialNeeds.forEach(need => {
-                        specialNeedsTags += `<span class="tag special">${need}</span>`;
-                    });
-                }
-                
-                // Create source tag
-                const sourceTag = activity.source 
-                    ? `<span class="tag source">${activity.source}</span>` 
-                    : '';
-                
-                // Generate energy indicators using helper function
-                const kidEnergyIndicator = generateEnergyIndicator(activity.kidEnergy);
-                const parentEnergyIndicator = generateEnergyIndicator(activity.parentEnergy);
-                
-                // Check for submitter credit
-                const submitterCredit = activity.submitter 
-                    ? `<div class="submitter-credit">By ${activity.submitter.name}</div>` 
-                    : '';
-                
-                // Create combined activity details section
-                let activityDetails = '';
-                
-                // Instructions
-                let instructionsList = '';
-                if (activity.instructions) {
-                    let steps = [];
-                    if (Array.isArray(activity.instructions)) {
-                        steps = activity.instructions;
-                    } else if (typeof activity.instructions === 'string') {
-                        steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
-                    }
-                    
-                    // Clean each step by removing numbered prefixes
-                    steps = steps.map(step => cleanInstructionText(step));
-                    
-                    instructionsList = steps.map(step => `<li>${step}</li>`).join('');
-                    
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Step-by-Step Instructions</h4>
-                            <ol class="instructions-list">${instructionsList}</ol>
-                        </div>
-                    `;
-                }
-                
-                // Safety notes
-                if (activity.safetyNotes) {
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Safety Considerations</h4>
-                            <div class="safety-notes">
-                                ${activity.safetyNotes}
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                // Parent tips
-                if (activity.parentTips) {
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Tips for Success</h4>
-                            <div class="parent-tips">
-                                ${activity.parentTips}
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                // Variations
-                if (activity.variations && activity.variations.length > 0) {
-                    const variationsList = activity.variations
-                        .map(variation => `<li>${variation}</li>`)
-                        .join('');
-                    
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Activity Variations</h4>
-                            <ul class="variations-list">
-                                ${variationsList}
-                            </ul>
-                        </div>
-                    `;
-                }
-                
-                // Only add the expandable section if there are details to show
-                if (activityDetails) {
-                    activityDetails = `
-                        <div class="activity-details-section">
-                            <div class="expandable-header">
-                                <span>Activity Details</span>
-                                <i class="fas fa-chevron-down expandable-icon"></i>
-                            </div>
-                            <div class="activity-details-content">
-                                ${activityDetails}
-                            </div>
-                        </div>
-                    `;
-                }
-                
+        
+            let activitiesHTML = ''; // no extra grid div here
+        
+            activities.forEach((activity, index) => {
                 activitiesHTML += `
                     <div class="activity-card">
                         <div class="card-header">
-                            ${submitterCredit}
-                            <h3 class="card-title">
-                                ${activity.title}
-                                <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
-                                    <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
-                                </span>
-                            </h3>
-                            <div class="card-meta">
-                                <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
-                                <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
-                                <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
-                                <span class="meta-item"><i class="fas fa-child"></i> ${activity.kidCount || 'any'}</span>
-                                <span class="meta-item"><i class="fas fa-volume-up"></i> ${activity.noiseLevel || 'moderate'}</span>
-                                <span class="meta-item"><i class="fas fa-broom"></i> ${activity.messLevel || 'low'}</span>
-                            </div>
+                            <h3 class="card-title">${activity.title}</h3>
                         </div>
                         <div class="card-body">
                             <div class="card-description">
                                 <p>${activity.description}</p>
                             </div>
-                            <div class="card-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Prep:</span>
-                                    <span>${activity.prep || 'None needed'}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Materials:</span>
-                                    <span>${materialsText}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Skills:</span>
-                                    <span>${activity.skills?.join(', ') || 'Various'}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Kid Energy:</span>
-                                    <span class="energy-indicator">${kidEnergyIndicator}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Parent Energy:</span>
-                                    <span class="energy-indicator">${parentEnergyIndicator}</span>
-                                </div>
-                            </div>
-                            
-                            <div class="context-tags">
-                                ${situationTags}
-                                ${specialNeedsTags}
-                                ${sourceTag}
-                            </div>
-                            
-                            ${activityDetails}
+                            <button class="more-info-btn" data-index="${index}">
+                                More Info <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 `;
             });
-            
+        
             activitiesContainer.innerHTML = activitiesHTML;
-            
-            // Add event listeners for expandable sections
-            document.querySelectorAll('.expandable-header').forEach(header => {
-                header.addEventListener('click', function() {
-                    const content = this.nextElementSibling;
-                    const icon = this.querySelector('.expandable-icon');
+
+            // Add modal once
+            if (!document.getElementById('activity-modal')) {
+                document.body.insertAdjacentHTML('beforeend', `
+                    <div id="activity-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close">&times;</span>
+                            <div id="modal-body"></div>
+                        </div>
+                    </div>
+                `);
+        
+                document.querySelector('.modal-close').addEventListener('click', () => {
+                    document.getElementById('activity-modal').style.display = 'none';
+                });
+                window.addEventListener('click', (e) => {
+                    if (e.target.id === 'activity-modal') {
+                        document.getElementById('activity-modal').style.display = 'none';
+                    }
+                });
+            }
+        
+            // Button listeners
+            document.querySelectorAll('.more-info-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const act = activities[this.dataset.index];
+                    const materialsText = act.materials?.length && act.materials[0] !== "none" 
+                        ? act.materials.join(', ') 
+                        : 'None';
                     
-                    content.classList.toggle('expanded');
-                    icon.classList.toggle('expanded');
+                    // Situation, special needs, source tags combined
+                    let allTagsHTML = '';
+                    if (act.situations) act.situations.forEach(s => allTagsHTML += `<span class="tag">${s}</span>`);
+                    if (act.specialNeeds) act.specialNeeds.forEach(n => allTagsHTML += `<span class="tag special">${n}</span>`);
+                    if (act.source) allTagsHTML += `<span class="tag source">${act.source}</span>`;
+        
+                    const kidEnergyIndicator = generateEnergyIndicator(act.kidEnergy);
+                    const parentEnergyIndicator = generateEnergyIndicator(act.parentEnergy);
+        
+                    let modalHTML = `
+                        <h2>${act.title}</h2>
+                        <p>${act.description}</p>
+                        
+                        <!-- Meta buttons -->
+                        <div class="card-meta">
+                            <span class="meta-item"><i class="fas fa-${act.location === 'indoor' ? 'home' : act.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${act.location}</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> ${act.duration} min</span>
+                            <span class="meta-item"><i class="fas fa-user"></i> ${act.supervision}</span>
+                            <span class="meta-item"><i class="fas fa-child"></i> ${act.kidCount || 'any'}</span>
+                            <span class="meta-item"><i class="fas fa-volume-up"></i> ${act.noiseLevel || 'moderate'}</span>
+                            <span class="meta-item"><i class="fas fa-broom"></i> ${act.messLevel || 'low'}</span>
+                        </div>
+        
+                        <!-- Context tags -->
+                        <div class="context-tags">
+                            ${allTagsHTML}
+                        </div>
+        
+                        <!-- Prep, materials, skills, energy -->
+                        <div class="card-details">
+                            <div class="detail-item"><span class="detail-label">Prep:</span> <span>${act.prep || 'None needed'}</span></div>
+                            <div class="detail-item"><span class="detail-label">Materials:</span> <span>${materialsText}</span></div>
+                            <div class="detail-item"><span class="detail-label">Skills:</span> <span>${act.skills?.join(', ') || 'Various'}</span></div>
+                            <div class="detail-item"><span class="detail-label">Kid Energy:</span> <span class="energy-indicator">${kidEnergyIndicator}</span></div>
+                            <div class="detail-item"><span class="detail-label">Parent Energy:</span> <span class="energy-indicator">${parentEnergyIndicator}</span></div>
+                        </div>
+                    `;
+        
+                    // Step-by-step instructions
+                    // Instructions
+                    let instructionsList = '';
+                    if (act.instructions) {
+                        let steps = [];
+                        if (Array.isArray(act.instructions)) {
+                            steps = act.instructions;
+                        } else if (typeof activity.instructions === 'string') {
+                            steps = act.instructions.split('\n').filter(step => step.trim() !== '');
+                        }
+                        
+                        // Clean each step by removing numbered prefixes
+                        steps = steps.map(step => cleanInstructionText(step));
+                        
+                        instructionsList = steps.map(step => `<li>${step}</li>`).join('');
+                        
+                        modalHTML += `
+                            <div class="details-section">
+                                <h4>Step-by-Step Instructions</h4>
+                                <ol class="instructions-list">${instructionsList}</ol>
+                            </div>
+                        `;
+                    // if (act.instructions) {
+                    //     const steps = Array.isArray(act.instructions)
+                    //         ? act.instructions
+                    //         : act.instructions.split('\n').filter(s => s.trim() !== '');
+                    //     modalHTML += `
+                    //         <div class="details-section">
+                    //             <h4>Step-by-Step Instructions</h4>
+                    //             <ol class="instructions-list">${steps.map(s => `<li>${s}</li>`).join('')}</ol>
+                    //         </div>
+                    //     `;
+                    }
+        
+                    // Safety notes
+                    if (act.safetyNotes) {
+                        modalHTML += `
+                            <div class="details-section">
+                                <h4>Safety Considerations</h4>
+                                <div class="safety-notes">${act.safetyNotes}</div>
+                            </div>
+                        `;
+                    }
+        
+                    // Tips
+                    if (act.parentTips) {
+                        modalHTML += `
+                            <div class="details-section">
+                                <h4>Tips for Success</h4>
+                                <div class="parent-tips">${act.parentTips}</div>
+                            </div>
+                        `;
+                    }
+        
+                    // Variations
+                    if (act.variations?.length) {
+                        modalHTML += `
+                            <div class="details-section">
+                                <h4>Activity Variations</h4>
+                                <ul class="variations-list">${act.variations.map(v => `<li>${v}</li>`).join('')}</ul>
+                            </div>
+                        `;
+                    }
+        
+                    document.getElementById('modal-body').innerHTML = modalHTML;
+                    document.getElementById('activity-modal').style.display = 'block';
                 });
             });
         }
-        
         // Filter and render activities
         function filterAndRenderActivities() {
             if (activitiesData.length === 0) return;
