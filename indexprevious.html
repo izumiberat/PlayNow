@@ -2457,9 +2457,9 @@
                     if (act.instructions) {
                         let steps = [];
                         if (Array.isArray(act.instructions)) {
-                            steps = activity.instructions;
+                            steps = act.instructions;
                         } else if (typeof activity.instructions === 'string') {
-                            steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
+                            steps = act.instructions.split('\n').filter(step => step.trim() !== '');
                         }
                         
                         // Clean each step by removing numbered prefixes
