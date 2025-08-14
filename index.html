@@ -579,8 +579,10 @@
         
         .activities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: 1fr; /* Always single column */
+            gap: 25px; /* Slightly increased gap for better separation */
+            max-width: 900px; /* Limit width for better readability */
+            margin: 0 auto; /* Center the grid */
         }
         
         .activity-card {
