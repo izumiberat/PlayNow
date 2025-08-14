@@ -1184,6 +1184,44 @@
                 font-size: 0.9rem;
             }
         }
+
+        .more-info-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .more-info-btn:hover {
+            background: var(--primary-dark, #005bb5);
+        }
+        
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .modal-close {
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -2286,205 +2324,111 @@
                 activitiesContainer.innerHTML = `
                     <div class="no-results">
                         <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
-                        <h3>No Matching Activities</h3>
-                        <p>Try adjusting your filters or select a different age group.</p>
+                        <h3>No Activities Found</h3>
+                        <p>No activities available for the ${currentAgeGroup} age group.</p>
                     </div>
                 `;
                 return;
             }
-            
-            let activitiesHTML = '';
-            
-            activities.forEach(activity => {
-                // Determine material display text
-                let materialsText = activity.materials?.join(', ') || 'none';
-                if (activity.materials?.length > 0 && activity.materials[0] === "none") {
-                    materialsText = "none";
-                }
-                
-                // Create situation tags
-                let situationTags = '';
-                if (activity.situations) {
-                    activity.situations.forEach(situation => {
-                        situationTags += `<span class="tag">${situation}</span>`;
-                    });
-                }
-                
-                // Create special needs tags
-                let specialNeedsTags = '';
-                if (activity.specialNeeds) {
-                    activity.specialNeeds.forEach(need => {
-                        specialNeedsTags += `<span class="tag special">${need}</span>`;
-                    });
-                }
-                
-                // Create source tag
-                const sourceTag = activity.source 
-                    ? `<span class="tag source">${activity.source}</span>` 
-                    : '';
-                
-                // Generate energy indicators using helper function
-                const kidEnergyIndicator = generateEnergyIndicator(activity.kidEnergy);
-                const parentEnergyIndicator = generateEnergyIndicator(activity.parentEnergy);
-                
-                // Check for submitter credit
-                const submitterCredit = activity.submitter 
-                    ? `<div class="submitter-credit">By ${activity.submitter.name}</div>` 
-                    : '';
-                
-                // Create combined activity details section
-                let activityDetails = '';
-                
-                // Instructions
-                let instructionsList = '';
-                if (activity.instructions) {
-                    let steps = [];
-                    if (Array.isArray(activity.instructions)) {
-                        steps = activity.instructions;
-                    } else if (typeof activity.instructions === 'string') {
-                        steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
-                    }
-                    
-                    // Clean each step by removing numbered prefixes
-                    steps = steps.map(step => cleanInstructionText(step));
-                    
-                    instructionsList = steps.map(step => `<li>${step}</li>`).join('');
-                    
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Step-by-Step Instructions</h4>
-                            <ol class="instructions-list">${instructionsList}</ol>
-                        </div>
-                    `;
-                }
-                
-                // Safety notes
-                if (activity.safetyNotes) {
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Safety Considerations</h4>
-                            <div class="safety-notes">
-                                ${activity.safetyNotes}
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                // Parent tips
-                if (activity.parentTips) {
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Tips for Success</h4>
-                            <div class="parent-tips">
-                                ${activity.parentTips}
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                // Variations
-                if (activity.variations && activity.variations.length > 0) {
-                    const variationsList = activity.variations
-                        .map(variation => `<li>${variation}</li>`)
-                        .join('');
-                    
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Activity Variations</h4>
-                            <ul class="variations-list">
-                                ${variationsList}
-                            </ul>
-                        </div>
-                    `;
-                }
-                
-                // Only add the expandable section if there are details to show
-                if (activityDetails) {
-                    activityDetails = `
-                        <div class="activity-details-section">
-                            <div class="expandable-header">
-                                <span>Activity Details</span>
-                                <i class="fas fa-chevron-down expandable-icon"></i>
-                            </div>
-                            <div class="activity-details-content">
-                                ${activityDetails}
-                            </div>
-                        </div>
-                    `;
-                }
-                
+        
+            let activitiesHTML = '<div class="activities-grid">';
+        
+            activities.forEach((activity, index) => {
                 activitiesHTML += `
                     <div class="activity-card">
                         <div class="card-header">
-                            ${submitterCredit}
-                            <h3 class="card-title">
-                                ${activity.title}
-                                <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
-                                    <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
-                                </span>
-                            </h3>
-                            <div class="card-meta">
-                                <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
-                                <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
-                                <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
-                                <span class="meta-item"><i class="fas fa-child"></i> ${activity.kidCount || 'any'}</span>
-                                <span class="meta-item"><i class="fas fa-volume-up"></i> ${activity.noiseLevel || 'moderate'}</span>
-                                <span class="meta-item"><i class="fas fa-broom"></i> ${activity.messLevel || 'low'}</span>
-                            </div>
+                            <h3 class="card-title">${activity.title}</h3>
                         </div>
                         <div class="card-body">
                             <div class="card-description">
                                 <p>${activity.description}</p>
                             </div>
-                            <div class="card-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Prep:</span>
-                                    <span>${activity.prep || 'None needed'}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Materials:</span>
-                                    <span>${materialsText}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Skills:</span>
-                                    <span>${activity.skills?.join(', ') || 'Various'}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Kid Energy:</span>
-                                    <span class="energy-indicator">${kidEnergyIndicator}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Parent Energy:</span>
-                                    <span class="energy-indicator">${parentEnergyIndicator}</span>
-                                </div>
-                            </div>
-                            
-                            <div class="context-tags">
-                                ${situationTags}
-                                ${specialNeedsTags}
-                                ${sourceTag}
-                            </div>
-                            
-                            ${activityDetails}
+                            <button class="more-info-btn" data-index="${index}">
+                                More Info <i class="fas fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
                 `;
             });
-            
+        
+            activitiesHTML += '</div>';
             activitiesContainer.innerHTML = activitiesHTML;
-            
-            // Add event listeners for expandable sections
-            document.querySelectorAll('.expandable-header').forEach(header => {
-                header.addEventListener('click', function() {
-                    const content = this.nextElementSibling;
-                    const icon = this.querySelector('.expandable-icon');
-                    
-                    content.classList.toggle('expanded');
-                    icon.classList.toggle('expanded');
+        
+            // Inject modal HTML once
+            if (!document.getElementById('activity-modal')) {
+                document.body.insertAdjacentHTML('beforeend', `
+                    <div id="activity-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="modal-close">&times;</span>
+                            <div id="modal-body"></div>
+                        </div>
+                    </div>
+                `);
+        
+                document.querySelector('.modal-close').addEventListener('click', () => {
+                    document.getElementById('activity-modal').style.display = 'none';
+                });
+        
+                window.addEventListener('click', (e) => {
+                    if (e.target.id === 'activity-modal') {
+                        document.getElementById('activity-modal').style.display = 'none';
+                    }
+                });
+            }
+        
+            // "More Info" button listeners
+            document.querySelectorAll('.more-info-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const act = activities[this.dataset.index];
+        
+                    // Build modal details using your existing styles
+                    let detailsHTML = `<h2>${act.title}</h2><p>${act.description}</p>`;
+        
+                    if (act.instructions) {
+                        const steps = Array.isArray(act.instructions)
+                            ? act.instructions
+                            : act.instructions.split('\n').filter(s => s.trim() !== '');
+                        detailsHTML += `
+                            <div class="details-section">
+                                <h4>Step-by-Step Instructions</h4>
+                                <ol class="instructions-list">${steps.map(s => `<li>${s}</li>`).join('')}</ol>
+                            </div>
+                        `;
+                    }
+        
+                    if (act.safetyNotes) {
+                        detailsHTML += `
+                            <div class="details-section">
+                                <h4>Safety Considerations</h4>
+                                <div class="safety-notes">${act.safetyNotes}</div>
+                            </div>
+                        `;
+                    }
+        
+                    if (act.parentTips) {
+                        detailsHTML += `
+                            <div class="details-section">
+                                <h4>Tips for Success</h4>
+                                <div class="parent-tips">${act.parentTips}</div>
+                            </div>
+                        `;
+                    }
+        
+                    if (act.variations?.length) {
+                        detailsHTML += `
+                            <div class="details-section">
+                                <h4>Activity Variations</h4>
+                                <ul class="variations-list">${act.variations.map(v => `<li>${v}</li>`).join('')}</ul>
+                            </div>
+                        `;
+                    }
+        
+                    document.getElementById('modal-body').innerHTML = detailsHTML;
+                    document.getElementById('activity-modal').style.display = 'block';
                 });
             });
         }
-        
+
         // Filter and render activities
         function filterAndRenderActivities() {
             if (activitiesData.length === 0) return;
