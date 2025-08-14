@@ -2351,39 +2351,38 @@
         
         // Render activities
         function renderActivities(activities) {
-                if (activities.length === 0) {
-                    activitiesContainer.innerHTML = `
-                        <div class="no-results">
-                            <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
-                            <h3>No Activities Found</h3>
-                            <p>No activities available for the ${currentAgeGroup} age group.</p>
-                        </div>
-                    `;
-                    return;
-                }
-            
-                let activitiesHTML = ''; // no extra grid div here
-            
-                activities.forEach((activity, index) => {
-                    activitiesHTML += `
-                        <div class="activity-card">
-                            <div class="card-header">
-                                <h3 class="card-title">${activity.title}</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-description">
-                                    <p>${activity.description}</p>
-                                </div>
-                                <button class="more-info-btn" data-index="${index}">
-                                    More Info <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    `;
-                });
-            
-                activitiesContainer.innerHTML = activitiesHTML;
+            if (activities.length === 0) {
+                activitiesContainer.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
+                        <h3>No Activities Found</h3>
+                        <p>No activities available for the ${currentAgeGroup} age group.</p>
+                    </div>
+                `;
+                return;
             }
+        
+            let activitiesHTML = ''; // no extra grid div here
+        
+            activities.forEach((activity, index) => {
+                activitiesHTML += `
+                    <div class="activity-card">
+                        <div class="card-header">
+                            <h3 class="card-title">${activity.title}</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-description">
+                                <p>${activity.description}</p>
+                            </div>
+                            <button class="more-info-btn" data-index="${index}">
+                                More Info <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+        
+            activitiesContainer.innerHTML = activitiesHTML;
 
             // Add modal once
             if (!document.getElementById('activity-modal')) {
@@ -2499,7 +2498,7 @@
                     document.getElementById('activity-modal').style.display = 'block';
                 });
             });
-
+        }
         // Filter and render activities
         function filterAndRenderActivities() {
             if (activitiesData.length === 0) return;
