@@ -576,39 +576,89 @@
             font-weight: 600;
             font-size: 1rem;
         }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
         
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--dark);
+            transition: all 0.2s ease;
+        }
+        
+        .close-modal:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+        
+        .view-details-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+            margin-top: 15px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .view-details-btn:hover {
+            background: #3a5a80;
+            transform: translateY(-2px);
+        }
         .activities-grid {
             display: grid;
-            grid-template-columns: 1fr; /* Always single column */
-            gap: 25px; /* Slightly increased gap for better separation */
-            max-width: 900px; /* Limit width for better readability */
-            margin: 0 auto; /* Center the grid */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
         }
         
         .activity-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            border: 1px solid var(--border);
+            cursor: pointer;
             transition: all 0.3s ease;
-            position: relative;
         }
         
         .activity-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            border-color: var(--primary);
         }
         
         .card-header {
-            background: #f8fafc;
             padding: 18px;
             border-bottom: 1px solid var(--border);
         }
-        
+
         .card-title {
             font-size: 1.2rem;
             margin-bottom: 6px;
@@ -670,9 +720,6 @@
         
         .card-body {
             padding: 18px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
         }
         
         .card-description {
@@ -689,6 +736,14 @@
             border-radius: 8px;
             margin-top: 10px;
             font-size: 0.9rem;
+        }
+
+        .card-meta, 
+        .card-details, 
+        .context-tags, 
+        .activity-details-section,
+        .submitter-credit {
+            display: none;
         }
         
         .detail-item {
@@ -1165,6 +1220,13 @@
             
             .footer .copyright {
                 margin-top: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 95%;
+                padding: 15px;
             }
         }
         
@@ -1892,612 +1954,285 @@
     </footer>
     
     <script>
-        // Toggle secondary filters
-        const toggleFiltersBtn = document.getElementById('toggle-filters');
-        const secondaryFilters = document.getElementById('secondary-filters');
-        let filtersExpanded = false;
-        
-        toggleFiltersBtn.addEventListener('click', () => {
-            filtersExpanded = !filtersExpanded;
-            secondaryFilters.classList.toggle('expanded', filtersExpanded);
-            
-            toggleFiltersBtn.innerHTML = `
-                <i class="fas ${filtersExpanded ? 'fa-minus-circle' : 'fa-plus-circle'}"></i>
-                <span>${filtersExpanded ? 'Show Fewer Options' : 'Show More Options'}</span>
-            `;
-            
-            // Scroll to filters if expanding
-            if (filtersExpanded) {
-                secondaryFilters.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }
-        });
-        
-        // Initialize filter groups to be expanded
-        document.querySelectorAll('.filter-group').forEach(group => {
-            group.classList.add('expanded');
-        });
-
-        function updateFilterAvailability() {
-            // Get all filter buttons except age group
-            const allFilterButtons = document.querySelectorAll('.filter-btn:not([data-filter="ageGroup"])');
-            
-            // Enable all buttons initially
-            allFilterButtons.forEach(btn => {
-                btn.disabled = false;
-            });
-        
-            // Get unique available values from activities
-            const availableFilters = {
-                situations: new Set(),
-                location: new Set(),
-                duration: new Set(),
-                supervision: new Set(),
-                parentEnergy: new Set(),
-                kidEnergy: new Set(),
-                kidCount: new Set(),
-                messLevel: new Set(),
-                noiseLevel: new Set(),
-                difficulty: new Set(),
-                prep: new Set(),
-                skills: new Set(),
-                specialNeeds: new Set(),
-                cost: new Set(),
-                seasonality: new Set(),
-                source: new Set(),
-                tags: new Set()
-            };
-        
-            // Collect available filter values from activities
-            activitiesData.forEach(activity => {
-                // Situations
-                if (activity.situations) {
-                    activity.situations.forEach(sit => availableFilters.situations.add(sit));
-                }
-                
-                // Single-value filters
-                const singleValueFilters = [
-                    'location', 'duration', 'supervision', 'parentEnergy', 
-                    'kidEnergy', 'kidCount', 'messLevel', 'noiseLevel', 
-                    'difficulty', 'prep', 'cost', 'seasonality', 'source'
-                ];
-                
-                singleValueFilters.forEach(filter => {
-                    if (activity[filter]) {
-                        availableFilters[filter].add(activity[filter].toString());
-                    }
-                });
-                
-                // Multi-value filters
-                if (activity.skills) {
-                    activity.skills.forEach(skill => availableFilters.skills.add(skill));
-                }
-                if (activity.specialNeeds) {
-                    activity.specialNeeds.forEach(need => availableFilters.specialNeeds.add(need));
-                }
-                if (activity.tags) {
-                    activity.tags.forEach(tag => availableFilters.tags.add(tag));
-                }
-            });
-        
-            // Disable unavailable filter options
-            allFilterButtons.forEach(btn => {
-                const filterType = btn.dataset.filter;
-                const filterValue = btn.dataset.value;
-                
-                // Always enable "all" options
-                if (filterValue === 'all') return;
-                
-                // Disable if value not found in available filters
-                if (!availableFilters[filterType].has(filterValue)) {
-                    btn.disabled = true;
-                }
-            });
-        }
-        
-        // Base URL for JSON files
-        const BASE_JSON_URL = 'https://izumiberat.github.io/PlayNow/assets/json/';
-        
-        // Current state
-        let currentAgeGroup = '0-2';
-        let currentFilters = {
-            situations: 'all',
-            location: 'all',
-            duration: 'all',
-            supervision: 'all',
-            parentEnergy: 'all',
-            kidEnergy: 'all',
-            kidCount: 'all',
-            messLevel: 'all',
-            noiseLevel: 'all',
-            difficulty: 'all',
-            prep: 'all',
-            skills: 'all',
-            specialNeeds: 'all',
-            cost: 'all',
-            seasonality: 'all',
-            source: 'all',
-            tags: 'all'
-        };
-
-        let activitiesData = [];
-        
-        // DOM elements
-        const activitiesContainer = document.getElementById('activities-container');
-        const activityCountElement = document.getElementById('activity-count');
-        const ageGroupElement = document.getElementById('age-group');
-        const resetBtn = document.getElementById('reset-filters');
-        
-        // Initialize the page
-        function init() {
-            // Set up event listeners for all filter buttons
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const filterType = this.dataset.filter;
-                    const filterValue = this.dataset.value;
-                    
-                    // Update active state for this filter group
-                    document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => {
-                        b.classList.remove('active');
-                    });
-                    this.classList.add('active');
-                    
-                    // Update current filters
-                    currentFilters[filterType] = filterValue;
-                    
-                    // If it's an age filter, load new activities
-                    if (filterType === 'ageGroup') {
-                        currentAgeGroup = filterValue;
-                        ageGroupElement.textContent = `${currentAgeGroup} years`;
-                        loadActivities();
-                        updateFilterAvailability();
-                    } else {
-                        // Apply filters to existing activities
-                        filterAndRenderActivities();
-                    }
-                });
-            });
-            
-            // Reset filters button
-            resetBtn.addEventListener('click', resetFilters);
-            
-            // Collapsible filter groups
-            document.querySelectorAll('.filter-group-header').forEach(header => {
-                header.addEventListener('click', function() {
-                    const group = this.parentElement;
-                    group.classList.toggle('expanded');
-                });
-            });
-            
-            // Load initial activities
-            loadActivities();
-            setTimeout(updateFilterAvailability, 500); 
-        }
-        
-        // Reset all filters
-        function resetFilters() {
-            currentFilters = {
-                situations: 'all',
-                location: 'all',
-                duration: 'all',
-                supervision: 'all',
-                parentEnergy: 'all',
-                kidEnergy: 'all',
-                kidCount: 'all',
-                messLevel: 'all',
-                noiseLevel: 'all',
-                difficulty: 'all',
-                prep: 'all',
-                skills: 'all',
-                specialNeeds: 'all',
-                cost: 'all',
-                seasonality: 'all',
-                source: 'all',
-                tags: 'all'
-            };
-            
-            // Reset UI for all filters
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.dataset.value === 'all') {
-                    btn.classList.add('active');
-                }
-            });
-            
-            // Reapply filters
-            filterAndRenderActivities();
-        }
-        
-        // Load activities from JSON file
-        function loadActivities() {
-            // Show loading state
+    // Update renderActivities to show simplified cards
+    function renderActivities(activities) {
+        if (activities.length === 0) {
             activitiesContainer.innerHTML = `
-                <div class="loading">
-                    <div class="loading-spinner"></div>
-                    Loading ${currentAgeGroup} activities...
+                <div class="no-results">
+                    <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
+                    <h3>No Matching Activities</h3>
+                    <p>Try adjusting your filters or select a different age group.</p>
                 </div>
             `;
-            
-            // Construct the JSON URL
-            const jsonUrl = `${BASE_JSON_URL}activities-${currentAgeGroup}.json`;
-            
-            // Fetch the JSON data
-            fetch(jsonUrl)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    // Handle both new and old JSON structures
-                    if (Array.isArray(data)) {
-                        activitiesData = data; // New structure is an array
-                    } else if (data.activities && Array.isArray(data.activities)) {
-                        activitiesData = data.activities; // Old structure has activities property
-                    } else {
-                        throw new Error('Invalid JSON structure');
-                    }
-                    filterAndRenderActivities();
-                    updateFilterAvailability();
-                })
-                .catch(error => {
-                    console.error('Error loading activities:', error);
-                    activitiesContainer.innerHTML = `
-                        <div class="no-results">
-                            <i class="fas fa-exclamation-triangle" style="color: #e53e3e; margin-bottom: 15px;"></i>
-                            <h3>Couldn't Load Activities</h3>
-                            <p>Please check your internet connection or try again later.</p>
-                            <p>Error: ${error.message}</p>
-                        </div>
-                    `;
-                });
+            return;
         }
         
-        // Filter activities based on current filters
-        function filterActivities() {
-            return activitiesData.filter(activity => {
-                // Situation filter
-                if (currentFilters.situations !== 'all') {
-                    if (!activity.situations || !activity.situations.includes(currentFilters.situations)) {
-                        return false;
+        let activitiesHTML = '';
+        
+        activities.forEach(activity => {
+            activitiesHTML += `
+                <div class="activity-card" data-id="${activity.id}">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            ${activity.title}
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-description">
+                            <p>${activity.description}</p>
+                        </div>
+                        <button class="view-details-btn">
+                            <i class="fas fa-info-circle"></i> View Details
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+        
+        activitiesContainer.innerHTML = activitiesHTML;
+        
+        // Add event listeners to activity cards
+        document.querySelectorAll('.activity-card, .view-details-btn').forEach(card => {
+            card.addEventListener('click', function(e) {
+                // Prevent button click from triggering card click
+                if(e.target.classList.contains('view-details-btn')) return;
+                
+                const activityId = this.dataset.id;
+                if (activityId) {
+                    const activity = activitiesData.find(a => a.id === activityId);
+                    if (activity) {
+                        openActivityModal(activity);
                     }
                 }
-                
-                // Location filter
-                if (currentFilters.location !== 'all' && 
-                    activity.location !== currentFilters.location &&
-                    activity.location !== 'any') {
-                    return false;
-                }
-                
-                // Duration filter
-                if (currentFilters.duration !== 'all') {
-                    const durationValue = parseInt(currentFilters.duration);
-                    if (activity.duration !== durationValue) {
-                        return false;
+            });
+        });
+        
+        // Add event listeners to "View Details" buttons
+        document.querySelectorAll('.view-details-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.activity-card');
+                const activityId = card.dataset.id;
+                if (activityId) {
+                    const activity = activitiesData.find(a => a.id === activityId);
+                    if (activity) {
+                        openActivityModal(activity);
                     }
                 }
-                
-                // Supervision filter
-                if (currentFilters.supervision !== 'all' && 
-                    activity.supervision !== currentFilters.supervision) {
-                    return false;
-                }
-
-                // Parent Energy filter
-                if (currentFilters.parentEnergy !== 'all' && 
-                    activity.parentEnergy !== currentFilters.parentEnergy) {
-                    return false;
-                }
-                
-                // Kid Energy filter
-                if (currentFilters.kidEnergy !== 'all' && 
-                    activity.kidEnergy !== currentFilters.kidEnergy) {
-                    return false;
-                }
-                
-                // Kid Count filter
-                if (currentFilters.kidCount !== 'all' && 
-                    activity.kidCount !== currentFilters.kidCount) {
-                    return false;
-                }
-                
-                // Mess Level filter
-                if (currentFilters.messLevel !== 'all' && 
-                    activity.messLevel !== currentFilters.messLevel) {
-                    return false;
-                }
-                
-                // Noise Level filter
-                if (currentFilters.noiseLevel !== 'all' && 
-                    activity.noiseLevel !== currentFilters.noiseLevel) {
-                    return false;
-                }
-                
-                // Difficulty filter
-                if (currentFilters.difficulty !== 'all') {
-                    const difficultyValue = parseInt(currentFilters.difficulty);
-                    const activityDifficulty = activity.difficulty || 3;
-                    if (activityDifficulty !== difficultyValue) {
-                        return false;
-                    }
-                }
-                
-                // Prep filter
-                if (currentFilters.prep !== 'all' && 
-                    activity.prep !== currentFilters.prep) {
-                    return false;
-                }
-                
-                // Skills filter
-                if (currentFilters.skills !== 'all' && 
-                    (!activity.skills || !activity.skills.includes(currentFilters.skills))) {
-                    return false;
-                }
-                
-                // Special Needs filter
-                if (currentFilters.specialNeeds !== 'all' && 
-                    (!activity.specialNeeds || !activity.specialNeeds.includes(currentFilters.specialNeeds))) {
-                    return false;
-                }
-                
-                // Cost filter
-                if (currentFilters.cost !== 'all' && 
-                    activity.cost !== currentFilters.cost) {
-                    return false;
-                }
-                
-                // Seasonality filter
-                if (currentFilters.seasonality !== 'all' && 
-                    activity.seasonality !== currentFilters.seasonality) {
-                    return false;
-                }
-                
-                // Source filter
-                if (currentFilters.source !== 'all' && 
-                    activity.source !== currentFilters.source) {
-                    return false;
-                }
-                
-                // Tags filter
-                if (currentFilters.tags !== 'all' && 
-                    (!activity.tags || !activity.tags.includes(currentFilters.tags))) {
-                    return false;
-                }
-                
-                return true;
+            });
+        });
+    }
+    
+    // Function to open modal with activity details
+    function openActivityModal(activity) {
+        // Determine material display text
+        let materialsText = activity.materials?.join(', ') || 'none';
+        if (activity.materials?.length > 0 && activity.materials[0] === "none") {
+            materialsText = "none";
+        }
+        
+        // Create situation tags
+        let situationTags = '';
+        if (activity.situations) {
+            activity.situations.forEach(situation => {
+                situationTags += `<span class="tag">${situation}</span>`;
             });
         }
         
-        // Clean instruction text by removing numbered prefixes
-        function cleanInstructionText(step) {
-            return step.replace(/^\d+[\.\)]\s*/, '');
+        // Create special needs tags
+        let specialNeedsTags = '';
+        if (activity.specialNeeds) {
+            activity.specialNeeds.forEach(need => {
+                specialNeedsTags += `<span class="tag special">${need}</span>`;
+            });
         }
         
-        // Helper function to generate energy indicators
-        function generateEnergyIndicator(energyLevel) {
-            const energyLevels = ['low', 'medium', 'high'];
-            return energyLevels.map(level => `
-                <div class="energy-dot ${energyLevel === level ? 'active' : ''}"></div>
-            `).join('');
-        }
+        // Create source tag
+        const sourceTag = activity.source 
+            ? `<span class="tag source">${activity.source}</span>` 
+            : '';
         
-        // Render activities
-        function renderActivities(activities) {
-            if (activities.length === 0) {
-                activitiesContainer.innerHTML = `
-                    <div class="no-results">
-                        <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
-                        <h3>No Matching Activities</h3>
-                        <p>Try adjusting your filters or select a different age group.</p>
-                    </div>
-                `;
-                return;
+        // Generate energy indicators using helper function
+        const kidEnergyIndicator = generateEnergyIndicator(activity.kidEnergy);
+        const parentEnergyIndicator = generateEnergyIndicator(activity.parentEnergy);
+        
+        // Check for submitter credit
+        const submitterCredit = activity.submitter 
+            ? `<div class="submitter-credit">By ${activity.submitter.name}</div>` 
+            : '';
+        
+        // Create combined activity details section
+        let activityDetails = '';
+        
+        // Instructions
+        let instructionsList = '';
+        if (activity.instructions) {
+            let steps = [];
+            if (Array.isArray(activity.instructions)) {
+                steps = activity.instructions;
+            } else if (typeof activity.instructions === 'string') {
+                steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
             }
             
-            let activitiesHTML = '';
+            // Clean each step by removing numbered prefixes
+            steps = steps.map(step => cleanInstructionText(step));
             
-            activities.forEach(activity => {
-                // Determine material display text
-                let materialsText = activity.materials?.join(', ') || 'none';
-                if (activity.materials?.length > 0 && activity.materials[0] === "none") {
-                    materialsText = "none";
-                }
-                
-                // Create situation tags
-                let situationTags = '';
-                if (activity.situations) {
-                    activity.situations.forEach(situation => {
-                        situationTags += `<span class="tag">${situation}</span>`;
-                    });
-                }
-                
-                // Create special needs tags
-                let specialNeedsTags = '';
-                if (activity.specialNeeds) {
-                    activity.specialNeeds.forEach(need => {
-                        specialNeedsTags += `<span class="tag special">${need}</span>`;
-                    });
-                }
-                
-                // Create source tag
-                const sourceTag = activity.source 
-                    ? `<span class="tag source">${activity.source}</span>` 
-                    : '';
-                
-                // Generate energy indicators using helper function
-                const kidEnergyIndicator = generateEnergyIndicator(activity.kidEnergy);
-                const parentEnergyIndicator = generateEnergyIndicator(activity.parentEnergy);
-                
-                // Check for submitter credit
-                const submitterCredit = activity.submitter 
-                    ? `<div class="submitter-credit">By ${activity.submitter.name}</div>` 
-                    : '';
-                
-                // Create combined activity details section
-                let activityDetails = '';
-                
-                // Instructions
-                let instructionsList = '';
-                if (activity.instructions) {
-                    let steps = [];
-                    if (Array.isArray(activity.instructions)) {
-                        steps = activity.instructions;
-                    } else if (typeof activity.instructions === 'string') {
-                        steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
-                    }
-                    
-                    // Clean each step by removing numbered prefixes
-                    steps = steps.map(step => cleanInstructionText(step));
-                    
-                    instructionsList = steps.map(step => `<li>${step}</li>`).join('');
-                    
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Step-by-Step Instructions</h4>
-                            <ol class="instructions-list">${instructionsList}</ol>
+            instructionsList = steps.map(step => `<li>${step}</li>`).join('');
+            
+            activityDetails += `
+                <div class="details-section">
+                    <h4>Step-by-Step Instructions</h4>
+                    <ol class="instructions-list">${instructionsList}</ol>
+                </div>
+            `;
+        }
+        
+        // Safety notes
+        if (activity.safetyNotes) {
+            activityDetails += `
+                <div class="details-section">
+                    <h4>Safety Considerations</h4>
+                    <div class="safety-notes">
+                        ${activity.safetyNotes}
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Parent tips
+        if (activity.parentTips) {
+            activityDetails += `
+                <div class="details-section">
+                    <h4>Tips for Success</h4>
+                    <div class="parent-tips">
+                        ${activity.parentTips}
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Variations
+        if (activity.variations && activity.variations.length > 0) {
+            const variationsList = activity.variations
+                .map(variation => `<li>${variation}</li>`)
+                .join('');
+            
+            activityDetails += `
+                <div class="details-section">
+                    <h4>Activity Variations</h4>
+                    <ul class="variations-list">
+                        ${variationsList}
+                    </ul>
+                </div>
+            `;
+        }
+        
+        // Only add the expandable section if there are details to show
+        if (activityDetails) {
+            activityDetails = `
+                <div class="activity-details-section">
+                    <div class="expandable-header">
+                        <span>Activity Details</span>
+                        <i class="fas fa-chevron-down expandable-icon"></i>
+                    </div>
+                    <div class="activity-details-content">
+                        ${activityDetails}
+                    </div>
+                </div>
+            `;
+        }
+        
+        const modalContent = `
+            <div class="activity-card-modal">
+                <div class="card-header">
+                    ${submitterCredit}
+                    <h3 class="card-title">
+                        ${activity.title}
+                        <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
+                            <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
+                        </span>
+                    </h3>
+                    <div class="card-meta">
+                        <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
+                        <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
+                        <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
+                        <span class="meta-item"><i class="fas fa-child"></i> ${activity.kidCount || 'any'}</span>
+                        <span class="meta-item"><i class="fas fa-volume-up"></i> ${activity.noiseLevel || 'moderate'}</span>
+                        <span class="meta-item"><i class="fas fa-broom"></i> ${activity.messLevel || 'low'}</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-description">
+                        <p>${activity.description}</p>
+                    </div>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Prep:</span>
+                            <span>${activity.prep || 'None needed'}</span>
                         </div>
-                    `;
-                }
-                
-                // Safety notes
-                if (activity.safetyNotes) {
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Safety Considerations</h4>
-                            <div class="safety-notes">
-                                ${activity.safetyNotes}
-                            </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Materials:</span>
+                            <span>${materialsText}</span>
                         </div>
-                    `;
-                }
-                
-                // Parent tips
-                if (activity.parentTips) {
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Tips for Success</h4>
-                            <div class="parent-tips">
-                                ${activity.parentTips}
-                            </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Skills:</span>
+                            <span>${activity.skills?.join(', ') || 'Various'}</span>
                         </div>
-                    `;
-                }
-                
-                // Variations
-                if (activity.variations && activity.variations.length > 0) {
-                    const variationsList = activity.variations
-                        .map(variation => `<li>${variation}</li>`)
-                        .join('');
-                    
-                    activityDetails += `
-                        <div class="details-section">
-                            <h4>Activity Variations</h4>
-                            <ul class="variations-list">
-                                ${variationsList}
-                            </ul>
+                        <div class="detail-item">
+                            <span class="detail-label">Kid Energy:</span>
+                            <span class="energy-indicator">${kidEnergyIndicator}</span>
                         </div>
-                    `;
-                }
-                
-                // Only add the expandable section if there are details to show
-                if (activityDetails) {
-                    activityDetails = `
-                        <div class="activity-details-section">
-                            <div class="expandable-header">
-                                <span>Activity Details</span>
-                                <i class="fas fa-chevron-down expandable-icon"></i>
-                            </div>
-                            <div class="activity-details-content">
-                                ${activityDetails}
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                activitiesHTML += `
-                    <div class="activity-card">
-                        <div class="card-header">
-                            ${submitterCredit}
-                            <h3 class="card-title">
-                                ${activity.title}
-                                <span class="difficulty-badge" title="Difficulty Level (1 easy - 5 hard)">
-                                    <i class="fas fa-star"></i> ${activity.difficulty || 3}/5
-                                </span>
-                            </h3>
-                            <div class="card-meta">
-                                <span class="meta-item"><i class="fas fa-${activity.location === 'indoor' ? 'home' : activity.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${activity.location}</span>
-                                <span class="meta-item"><i class="fas fa-clock"></i> ${activity.duration} min</span>
-                                <span class="meta-item"><i class="fas fa-user"></i> ${activity.supervision}</span>
-                                <span class="meta-item"><i class="fas fa-child"></i> ${activity.kidCount || 'any'}</span>
-                                <span class="meta-item"><i class="fas fa-volume-up"></i> ${activity.noiseLevel || 'moderate'}</span>
-                                <span class="meta-item"><i class="fas fa-broom"></i> ${activity.messLevel || 'low'}</span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-description">
-                                <p>${activity.description}</p>
-                            </div>
-                            <div class="card-details">
-                                <div class="detail-item">
-                                    <span class="detail-label">Prep:</span>
-                                    <span>${activity.prep || 'None needed'}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Materials:</span>
-                                    <span>${materialsText}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Skills:</span>
-                                    <span>${activity.skills?.join(', ') || 'Various'}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Kid Energy:</span>
-                                    <span class="energy-indicator">${kidEnergyIndicator}</span>
-                                </div>
-                                <div class="detail-item">
-                                    <span class="detail-label">Parent Energy:</span>
-                                    <span class="energy-indicator">${parentEnergyIndicator}</span>
-                                </div>
-                            </div>
-                            
-                            <div class="context-tags">
-                                ${situationTags}
-                                ${specialNeedsTags}
-                                ${sourceTag}
-                            </div>
-                            
-                            ${activityDetails}
+                        <div class="detail-item">
+                            <span class="detail-label">Parent Energy:</span>
+                            <span class="energy-indicator">${parentEnergyIndicator}</span>
                         </div>
                     </div>
-                `;
-            });
-            
-            activitiesContainer.innerHTML = activitiesHTML;
-            
-            // Add event listeners for expandable sections
-            document.querySelectorAll('.expandable-header').forEach(header => {
-                header.addEventListener('click', function() {
-                    const content = this.nextElementSibling;
-                    const icon = this.querySelector('.expandable-icon');
                     
-                    content.classList.toggle('expanded');
-                    icon.classList.toggle('expanded');
-                });
+                    <div class="context-tags">
+                        ${situationTags}
+                        ${specialNeedsTags}
+                        ${sourceTag}
+                    </div>
+                    
+                    ${activityDetails}
+                </div>
+            </div>
+        `;
+        
+        document.getElementById('modalActivityContent').innerHTML = modalContent;
+        
+        // Add event listeners for expandable sections in modal
+        document.querySelectorAll('.expandable-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('.expandable-icon');
+                
+                content.classList.toggle('expanded');
+                icon.classList.toggle('expanded');
             });
-        }
+        });
         
-        // Filter and render activities
-        function filterAndRenderActivities() {
-            if (activitiesData.length === 0) return;
-            
-            const filteredActivities = filterActivities();
-            activityCountElement.textContent = filteredActivities.length;
-            renderActivities(filteredActivities);
+        // Show the modal
+        document.getElementById('activityModal').style.display = 'block';
+    }
+    
+    // Add modal close functionality
+    document.querySelector('.close-modal').addEventListener('click', function() {
+        document.getElementById('activityModal').style.display = 'none';
+    });
+    
+    // Close modal when clicking outside content
+    window.addEventListener('click', function(event) {
+        const modal = document.getElementById('activityModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
         }
-        
-        // Start the app
-        document.addEventListener('DOMContentLoaded', init);
+    });
     </script>
+<div id="activityModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modalActivityContent"></div>
+    </div>
+</div>
 </body>
 </html>
