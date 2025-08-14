@@ -2452,16 +2452,37 @@
                     `;
         
                     // Step-by-step instructions
+                    // Instructions
+                    let instructionsList = '';
                     if (act.instructions) {
-                        const steps = Array.isArray(act.instructions)
-                            ? act.instructions
-                            : act.instructions.split('\n').filter(s => s.trim() !== '');
+                        let steps = [];
+                        if (Array.isArray(act.instructions)) {
+                            steps = activity.instructions;
+                        } else if (typeof activity.instructions === 'string') {
+                            steps = activity.instructions.split('\n').filter(step => step.trim() !== '');
+                        }
+                        
+                        // Clean each step by removing numbered prefixes
+                        steps = steps.map(step => cleanInstructionText(step));
+                        
+                        instructionsList = steps.map(step => `<li>${step}</li>`).join('');
+                        
                         modalHTML += `
                             <div class="details-section">
                                 <h4>Step-by-Step Instructions</h4>
-                                <ol class="instructions-list">${steps.map(s => `<li>${s}</li>`).join('')}</ol>
+                                <ol class="instructions-list">${instructionsList}</ol>
                             </div>
                         `;
+                    // if (act.instructions) {
+                    //     const steps = Array.isArray(act.instructions)
+                    //         ? act.instructions
+                    //         : act.instructions.split('\n').filter(s => s.trim() !== '');
+                    //     modalHTML += `
+                    //         <div class="details-section">
+                    //             <h4>Step-by-Step Instructions</h4>
+                    //             <ol class="instructions-list">${steps.map(s => `<li>${s}</li>`).join('')}</ol>
+                    //         </div>
+                    //     `;
                     }
         
                     // Safety notes
