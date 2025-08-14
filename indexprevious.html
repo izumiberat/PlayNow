@@ -577,12 +577,32 @@
             font-size: 1rem;
         }
         
+        /* UPDATED ACTIVITIES GRID - MORE CARDS PER LINE */
         .activities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
         }
         
+        @media (min-width: 768px) {
+            .activities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .activities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .activities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+        
+        /* Optimized activity card */
         .activity-card {
             background: white;
             border-radius: 12px;
@@ -603,12 +623,12 @@
         
         .card-header {
             background: #f8fafc;
-            padding: 18px;
+            padding: 15px;
             border-bottom: 1px solid var(--border);
         }
         
         .card-title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 6px;
             font-weight: 700;
             color: var(--dark);
@@ -651,10 +671,10 @@
         .card-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            font-size: 0.85rem;
+            gap: 8px;
+            font-size: 0.8rem;
             color: #666;
-            margin-top: 10px;
+            margin-top: 8px;
         }
         
         .meta-item {
@@ -664,55 +684,60 @@
             background: #edf2f7;
             padding: 4px 8px;
             border-radius: 4px;
+            font-size: 0.8rem;
         }
         
         .card-body {
-            padding: 18px;
+            padding: 15px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
         
         .card-description {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             flex-grow: 1;
             color: #444;
-            line-height: 1.6;
-            font-size: 0.95rem;
+            line-height: 1.5;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         
         .card-details {
             background: #f8fafc;
-            padding: 15px;
+            padding: 12px;
             border-radius: 8px;
             margin-top: 10px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .detail-item {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
         }
         
         .detail-label {
             font-weight: 600;
-            min-width: 100px;
+            min-width: 80px;
             color: var(--dark);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .context-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
+            gap: 6px;
+            margin-top: 12px;
         }
         
         .tag {
             background: #edf2f7;
-            padding: 5px 12px;
+            padding: 4px 10px;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #4a5568;
             font-weight: 500;
         }
@@ -735,7 +760,7 @@
             color: white;
             padding: 4px 8px;
             border-radius: 4px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
         }
         
@@ -754,6 +779,7 @@
             font-weight: 600;
             color: var(--primary);
             padding: 8px 0;
+            font-size: 0.95rem;
         }
         
         .expandable-content {
@@ -778,18 +804,20 @@
         .safety-notes {
             background-color: #fff8f8;
             border-left: 4px solid #e53e3e;
-            padding: 12px;
+            padding: 10px;
             border-radius: 0 4px 4px 0;
             margin-top: 10px;
+            font-size: 0.85rem;
         }
         
         /* Tips styling */
         .parent-tips {
             background-color: #f8fff8;
             border-left: 4px solid #38a169;
-            padding: 12px;
+            padding: 10px;
             border-radius: 0 4px 4px 0;
             margin-top: 10px;
+            font-size: 0.85rem;
         }
         
         /* Variations styling */
@@ -797,6 +825,7 @@
             margin-top: 10px;
             padding-left: 20px;
             list-style: none;
+            font-size: 0.85rem;
         }
         
         .variations-list li {
@@ -819,12 +848,13 @@
             padding-left: 0;
             counter-reset: step-counter;
             list-style: none;
+            font-size: 0.85rem;
         }
         
         .instructions-list li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             position: relative;
-            padding-left: 35px;
+            padding-left: 30px;
             min-height: 25px;
             display: flex;
             align-items: center;
@@ -837,13 +867,13 @@
             left: 0;
             background: var(--primary);
             color: white;
-            width: 25px;
-            height: 25px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: bold;
         }
         
@@ -1088,10 +1118,6 @@
                 grid-template-columns: repeat(2, 1fr);
             }
             
-            .activities-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
             .footer .linkedin-link {
                 font-size: 1.1rem;
             }
@@ -1099,9 +1125,6 @@
         
         @media (min-width: 992px) {
             .secondary-filters {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .activities-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
