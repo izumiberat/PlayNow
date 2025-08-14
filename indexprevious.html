@@ -2354,7 +2354,7 @@
             activitiesHTML += '</div>';
             activitiesContainer.innerHTML = activitiesHTML;
         
-            // Inject modal HTML once
+            // Add modal once
             if (!document.getElementById('activity-modal')) {
                 document.body.insertAdjacentHTML('beforeend', `
                     <div id="activity-modal" class="modal">
@@ -2368,7 +2368,6 @@
                 document.querySelector('.modal-close').addEventListener('click', () => {
                     document.getElementById('activity-modal').style.display = 'none';
                 });
-        
                 window.addEventListener('click', (e) => {
                     if (e.target.id === 'activity-modal') {
                         document.getElementById('activity-modal').style.display = 'none';
@@ -2376,19 +2375,58 @@
                 });
             }
         
-            // "More Info" button listeners
+            // Button listeners
             document.querySelectorAll('.more-info-btn').forEach(btn => {
                 btn.addEventListener('click', function () {
                     const act = activities[this.dataset.index];
+                    const materialsText = act.materials?.length && act.materials[0] !== "none" 
+                        ? act.materials.join(', ') 
+                        : 'None';
+                    
+                    // Situation, special needs, source tags combined
+                    let allTagsHTML = '';
+                    if (act.situations) act.situations.forEach(s => allTagsHTML += `<span class="tag">${s}</span>`);
+                    if (act.specialNeeds) act.specialNeeds.forEach(n => allTagsHTML += `<span class="tag special">${n}</span>`);
+                    if (act.source) allTagsHTML += `<span class="tag source">${act.source}</span>`;
         
-                    // Build modal details using your existing styles
-                    let detailsHTML = `<h2>${act.title}</h2><p>${act.description}</p>`;
+                    const kidEnergyIndicator = generateEnergyIndicator(act.kidEnergy);
+                    const parentEnergyIndicator = generateEnergyIndicator(act.parentEnergy);
         
+                    let modalHTML = `
+                        <h2>${act.title}</h2>
+                        <p>${act.description}</p>
+                        
+                        <!-- Meta buttons -->
+                        <div class="card-meta">
+                            <span class="meta-item"><i class="fas fa-${act.location === 'indoor' ? 'home' : act.location === 'outdoor' ? 'tree' : 'globe'}"></i> ${act.location}</span>
+                            <span class="meta-item"><i class="fas fa-clock"></i> ${act.duration} min</span>
+                            <span class="meta-item"><i class="fas fa-user"></i> ${act.supervision}</span>
+                            <span class="meta-item"><i class="fas fa-child"></i> ${act.kidCount || 'any'}</span>
+                            <span class="meta-item"><i class="fas fa-volume-up"></i> ${act.noiseLevel || 'moderate'}</span>
+                            <span class="meta-item"><i class="fas fa-broom"></i> ${act.messLevel || 'low'}</span>
+                        </div>
+        
+                        <!-- Context tags -->
+                        <div class="context-tags">
+                            ${allTagsHTML}
+                        </div>
+        
+                        <!-- Prep, materials, skills, energy -->
+                        <div class="card-details">
+                            <div class="detail-item"><span class="detail-label">Prep:</span> <span>${act.prep || 'None needed'}</span></div>
+                            <div class="detail-item"><span class="detail-label">Materials:</span> <span>${materialsText}</span></div>
+                            <div class="detail-item"><span class="detail-label">Skills:</span> <span>${act.skills?.join(', ') || 'Various'}</span></div>
+                            <div class="detail-item"><span class="detail-label">Kid Energy:</span> <span class="energy-indicator">${kidEnergyIndicator}</span></div>
+                            <div class="detail-item"><span class="detail-label">Parent Energy:</span> <span class="energy-indicator">${parentEnergyIndicator}</span></div>
+                        </div>
+                    `;
+        
+                    // Step-by-step instructions
                     if (act.instructions) {
                         const steps = Array.isArray(act.instructions)
                             ? act.instructions
                             : act.instructions.split('\n').filter(s => s.trim() !== '');
-                        detailsHTML += `
+                        modalHTML += `
                             <div class="details-section">
                                 <h4>Step-by-Step Instructions</h4>
                                 <ol class="instructions-list">${steps.map(s => `<li>${s}</li>`).join('')}</ol>
@@ -2396,8 +2434,9 @@
                         `;
                     }
         
+                    // Safety notes
                     if (act.safetyNotes) {
-                        detailsHTML += `
+                        modalHTML += `
                             <div class="details-section">
                                 <h4>Safety Considerations</h4>
                                 <div class="safety-notes">${act.safetyNotes}</div>
@@ -2405,8 +2444,9 @@
                         `;
                     }
         
+                    // Tips
                     if (act.parentTips) {
-                        detailsHTML += `
+                        modalHTML += `
                             <div class="details-section">
                                 <h4>Tips for Success</h4>
                                 <div class="parent-tips">${act.parentTips}</div>
@@ -2414,8 +2454,9 @@
                         `;
                     }
         
+                    // Variations
                     if (act.variations?.length) {
-                        detailsHTML += `
+                        modalHTML += `
                             <div class="details-section">
                                 <h4>Activity Variations</h4>
                                 <ul class="variations-list">${act.variations.map(v => `<li>${v}</li>`).join('')}</ul>
@@ -2423,7 +2464,7 @@
                         `;
                     }
         
-                    document.getElementById('modal-body').innerHTML = detailsHTML;
+                    document.getElementById('modal-body').innerHTML = modalHTML;
                     document.getElementById('activity-modal').style.display = 'block';
                 });
             });
