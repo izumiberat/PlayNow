@@ -6,6 +6,13 @@
     <title>Play Now - Kid Activities App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* Added this new rule to make the container wider */
+        .container {
+            max-width: 1600px; /* Increased from 100% to fixed width */
+            width: 95%; /* Allow some padding on smaller screens */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
         :root {
             --primary: #4a6fa5;
             --secondary: #6d9dc5;
@@ -598,6 +605,21 @@
         }
         
         @media (min-width: 1200px) {
+            .activities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+                @media (min-width: 1600px) {
+            .container {
+                padding: 0;
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 1800px) {
+            .container {
+                max-width: 1800px;
+            }
+            
             .activities-grid {
                 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             }
