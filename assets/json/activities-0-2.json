@@ -270,9 +270,7 @@
       "ageGroup": "0-2",
       "duration": 30,
       "location": "outdoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -475,9 +473,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -631,9 +627,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -678,9 +672,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -726,9 +718,7 @@
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -775,9 +765,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -825,9 +813,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -876,9 +862,7 @@
       "ageGroup": "0-2",
       "duration": 15,
       "location": "outdoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -927,9 +911,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -977,9 +959,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1027,9 +1007,7 @@
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1078,9 +1056,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1129,9 +1105,7 @@
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1179,9 +1153,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "medium",
       "kidEnergy": "medium",
@@ -1227,9 +1199,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "extended",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1329,9 +1299,7 @@
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1479,9 +1447,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -1629,9 +1595,7 @@
       "ageGroup": "0-2",
       "duration": 10,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
@@ -1679,9 +1643,7 @@
       "ageGroup": "0-2",
       "duration": 5,
       "location": "indoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "medium",
@@ -1728,9 +1690,7 @@
       "ageGroup": "0-2",
       "duration": 15,
       "location": "outdoor",
-      "materials": [
-        "none"
-      ],
+      "materials": [],
       "prep": "none",
       "parentEnergy": "low",
       "kidEnergy": "low",
