@@ -643,6 +643,9 @@
             background: #f8fafc;
             padding: 15px;
             border-bottom: 1px solid var(--border);
+            min-height: 80px;
+            display: flex;
+            align-items: center;
         }
         
         .card-title {
@@ -1024,6 +1027,87 @@
             width: 100%;
         }
         
+        /* Language selector styles */
+        .language-selector {
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .language-button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .language-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 10px 0;
+            min-width: 120px;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .language-dropdown.show {
+            display: block;
+        }
+        
+        .language-option {
+            padding: 8px 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        
+        .language-option:hover {
+            background: #f5f5f5;
+        }
+        
+        .language-flag {
+            width: 20px;
+            height: 15px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+        
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+        .modal-close {
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
         /* Media Queries */
         @media (min-width: 400px) {
             .btn-text {
@@ -1242,33 +1326,10 @@
             font-size: 0.9rem;
             cursor: pointer;
             transition: background 0.3s ease;
+            margin-top: auto;
         }
         .more-info-btn:hover {
-            background: var(--primary-dark, #005bb5);
-        }
-        
-        /* Modal styling */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            inset: 0;
-            background: rgba(0,0,0,0.5);
-        }
-        .modal-content {
-            background: white;
-            margin: 5% auto;
-            padding: 20px;
-            border-radius: 12px;
-            max-width: 700px;
-            width: 90%;
-            max-height: 85vh;
-            overflow-y: auto;
-        }
-        .modal-close {
-            float: right;
-            font-size: 28px;
-            cursor: pointer;
+            background: #3a5a80;
         }
     </style>
 </head>
@@ -1280,18 +1341,41 @@
                 <div class="logo-icon">
                     <i class="fas fa-play-circle"></i>
                 </div>
-                <div class="app-name">Play Now</div>
+                <div class="app-name" data-i18n="app.name">Play Now</div>
             </a>
             <div class="header-actions">
-                <a href="submit-activity.html" class="download-btn submit-btn">
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button class="language-button">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-language">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown" id="language-dropdown">
+                        <div class="language-option" data-lang="en">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAzMCI+PHBhdGggZmlsbD0iIzAxMjE2OSIgZD0iTTAgMGg2MHYzMEgweiIvPjxwYXRoIGZpbGw9IiNjODEwMmIiZD0iTTAgMEw2MCAzME0zMCAwTDMwIDMwTTAgMTVINjBNMTUgMEwxNSAzME00NSAwTDQ1IDMwIiBzdHJva2U9IiNjODEwMmIiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGZpbGw9IiNjODEwMmIiIGQ9Ik0wIDBoMjR2MThIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNi42IDRsLS40IDJoMi44bC0uNC0yem0zLjQgMGwtLjQgMmg0LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0uNC0yek0yLjQgNmwtLjQgMmg1LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0uNC0yem0zLjQgMGwtLjQgMmg0LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptLTE3LTJMLjYgNmg1LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0uNC0yem0zLjQgMGwtLjQgMmg4LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptLTE3IDRMLjYgOGg1LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0uNC0yem0zLjQgMGwtLjQgMmg0LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptLTE3IDRMLjYgMTBoNS44bC0uNC0yem0zLjQgMGwtLjQgMmg0LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0uNC0yem0zLjQgMGwtLjQgMmg0LjhsLS40LTJ6bS0xNyA0TC42IDEyaDUuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0uNC0yem0zLjQgMGwtLjQgMmg0LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0.NC0yem0tMTcgNEwuNiAxNGg1LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnptMy40IDBsLS40IDJoNC44bC0uNC0yem0zLjQgMGwtLjQgMmg0LjhsLS40LTJ6bTMuNCAwbC0uNCAyaDQuOGwtLjQtMnoiLz48L3N2Zz4=" alt="English" class="language-flag">
+                            English
+                        </div>
+                        <div class="language-option" data-lang="fr">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAzMCI+PHBhdGggZmlsbD0iIzAwODhjMyIgZD0iTTAgMGgyMHYzMEgweiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yMCAwaDIwdjMwSDIweiIvPjxwYXRoIGZpbGw=" alt="French" class="language-flag">
+                            Français
+                        </div>
+                        <div class="language-option" data-lang="ja">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCAzMCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGg2MHYzMEgweiIvPjxjaXJjbGUgZmlsbD0iI2JjMDAyQyIgY3g9IjMwIiBjeT0iMTUiIHI9IjgiLz48L3N2Zz4=" alt="Japanese" class="language-flag">
+                            日本語
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="submit-activity.html" class="download-btn submit-btn" data-i18n="header.submit">
                     <i class="fas fa-lightbulb"></i>
                     <span class="btn-text">Submit Idea</span>
                 </a>
-                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank">
+                <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="download-btn" target="_blank" data-i18n="header.appStore">
                     <i class="fab fa-apple"></i>
                     <span class="btn-text">App Store</span>
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="download-btn" target="_blank">
+                <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="download-btn" target="_blank" data-i18n="header.playStore">
                     <i class="fab fa-google-play"></i>
                     <span class="btn-text">Play Store</span>
                 </a>
@@ -1302,8 +1386,8 @@
     <div class="container">
         <!-- Hero Section -->
         <section class="hero">
-            <h1>Quick Kid Activities for Busy Parents</h1>
-            <p>Find the perfect activity in seconds. Filter by age, situation, and your availability to keep your child engaged.</p>
+            <h1 data-i18n="hero.title">Quick Kid Activities for Busy Parents</h1>
+            <p data-i18n="hero.description">Find the perfect activity in seconds. Filter by age, situation, and your availability to keep your child engaged.</p>
         </section>
         
         <!-- App Features -->
@@ -1312,47 +1396,47 @@
                 <div class="feature-icon">
                     <i class="fas fa-clock"></i>
                 </div>
-                <h3 class="feature-title">Save Time</h3>
-                <p>No more searching for ideas - get activities instantly</p>
+                <h3 class="feature-title" data-i18n="feature.saveTime">Save Time</h3>
+                <p data-i18n="feature.saveTimeDesc">No more searching for ideas - get activities instantly</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-filter"></i>
                 </div>
-                <h3 class="feature-title">Smart Filters</h3>
-                <p>Find activities that fit your current situation</p>
+                <h3 class="feature-title" data-i18n="feature.smartFilters">Smart Filters</h3>
+                <p data-i18n="feature.smartFiltersDesc">Find activities that fit your current situation</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">
                     <i class="fas fa-child"></i>
                 </div>
-                <h3 class="feature-title">Age Appropriate</h3>
-                <p>Activities tailored to your child's development stage</p>
+                <h3 class="feature-title" data-i18n="feature.ageAppropriate">Age Appropriate</h3>
+                <p data-i18n="feature.ageAppropriateDesc">Activities tailored to your child's development stage</p>
             </div>
         </section>
         
         <!-- App Download Banner -->
         <section class="app-download-banner">
             <div class="content">
-                <h2>Get the Full Experience with Our App!</h2>
-                <p>Download the Play Now app to access all activities offline and save your favorites for quick access anytime</p>
+                <h2 data-i18n="banner.title">Get the Full Experience with Our App!</h2>
+                <p data-i18n="banner.description">Download the Play Now app to access all activities offline and save your favorites for quick access anytime</p>
                 
                 <div class="app-benefits">
                     <div class="benefit-item">
                         <i class="fas fa-wifi benefit-icon"></i>
-                        <div class="benefit-text">Works Offline</div>
+                        <div class="benefit-text" data-i18n="banner.offline">Works Offline</div>
                     </div>
                     
                     <div class="benefit-item">
                         <i class="fas fa-heart benefit-icon"></i>
-                        <div class="benefit-text">Save Favorites</div>
+                        <div class="benefit-text" data-i18n="banner.favorites">Save Favorites</div>
                     </div>
                     
                     <div class="benefit-item">
                         <i class="fas fa-bolt benefit-icon"></i>
-                        <div class="benefit-text">Faster Access</div>
+                        <div class="benefit-text" data-i18n="banner.fastAccess">Faster Access</div>
                     </div>
                 </div>
                 
@@ -1360,16 +1444,16 @@
                     <a href="https://apps.apple.com/fr/app/play-now-app/id6748948929?l=en-GB" class="store-btn apple" target="_blank">
                         <i class="fab fa-apple store-icon"></i>
                         <div class="store-text">
-                            <div class="store-name">Download on the</div>
-                            <div class="store-label">App Store</div>
+                            <div class="store-name" data-i18n="store.download">Download on the</div>
+                            <div class="store-label" data-i18n="store.appStore">App Store</div>
                         </div>
                     </a>
                     
                     <a href="https://play.google.com/store/apps/details?id=org.playideasapp" class="store-btn" target="_blank">
                         <i class="fab fa-google-play store-icon"></i>
                         <div class="store-text">
-                            <div class="store-name">Get it on</div>
-                            <div class="store-label">Google Play</div>
+                            <div class="store-name" data-i18n="store.getIt">Get it on</div>
+                            <div class="store-label" data-i18n="store.playStore">Google Play</div>
                         </div>
                     </a>
                 </div>
@@ -1379,9 +1463,9 @@
         <!-- Redesigned Filters Section -->
         <section class="filters-section">
             <div class="filter-header">
-                <h2>Filter Activities</h2>
+                <h2 data-i18n="filters.title">Filter Activities</h2>
                 <button class="reset-btn" id="reset-filters">
-                    <i class="fas fa-redo"></i> Reset
+                    <i class="fas fa-redo"></i> <span data-i18n="filters.reset">Reset</span>
                 </button>
             </div>
             
@@ -1389,22 +1473,22 @@
                 <!-- Age Group Filter (always visible) -->
                 <div class="filter-group age-filter-group expanded">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-child"></i> Age Group</h3>
+                        <h3><i class="fas fa-child"></i> <span data-i18n="filters.ageGroup">Age Group</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="age-filters">
                             <button class="filter-btn active" data-filter="ageGroup" data-value="0-2">
-                                <i class="fas fa-baby"></i> 0-2
+                                <i class="fas fa-baby"></i> <span data-i18n="age.0-2">0-2</span>
                             </button>
                             <button class="filter-btn" data-filter="ageGroup" data-value="3-5">
-                                <i class="fas fa-child"></i> 3-5
+                                <i class="fas fa-child"></i> <span data-i18n="age.3-5">3-5</span>
                             </button>
                             <button class="filter-btn" data-filter="ageGroup" data-value="6-8">
-                                <i class="fas fa-user"></i> 6-8
+                                <i class="fas fa-user"></i> <span data-i18n="age.6-8">6-8</span>
                             </button>
                             <button class="filter-btn" data-filter="ageGroup" data-value="9-12">
-                                <i class="fas fa-user"></i> 9-12
+                                <i class="fas fa-user"></i> <span data-i18n="age.9-12">9-12</span>
                             </button>
                         </div>
                     </div>
@@ -1416,49 +1500,49 @@
                 <!-- Situation Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-map-marker-alt"></i> Situation</h3>
+                        <h3><i class="fas fa-map-marker-alt"></i> <span data-i18n="filters.situation">Situation</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="situation-filters">
                             <button class="filter-btn active" data-filter="situations" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="normal">
-                                <i class="fas fa-sun"></i> Normal
+                                <i class="fas fa-sun"></i> <span data-i18n="situations.normal">Normal</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="rainy-day">
-                                <i class="fas fa-cloud-rain"></i> Rainy
+                                <i class="fas fa-cloud-rain"></i> <span data-i18n="situations.rainy-day">Rainy</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="sick-day">
-                                <i class="fas fa-thermometer"></i> Sick Day
+                                <i class="fas fa-thermometer"></i> <span data-i18n="situations.sick-day">Sick Day</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="travel">
-                                <i class="fas fa-plane"></i> Travel
+                                <i class="fas fa-plane"></i> <span data-i18n="situations.travel">Travel</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="restaurant">
-                                <i class="fas fa-utensils"></i> Restaurant
+                                <i class="fas fa-utensils"></i> <span data-i18n="situations.restaurant">Restaurant</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="waiting-room">
-                                <i class="fas fa-hourglass-half"></i> Waiting Room
+                                <i class="fas fa-hourglass-half"></i> <span data-i18n="situations.waiting-room">Waiting Room</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="grocery-store">
-                                <i class="fas fa-shopping-cart"></i> Grocery Store
+                                <i class="fas fa-shopping-cart"></i> <span data-i18n="situations.grocery-store">Grocery Store</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="car-ride">
-                                <i class="fas fa-car"></i> Car Ride
+                                <i class="fas fa-car"></i> <span data-i18n="situations.car-ride">Car Ride</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="beach">
-                                <i class="fas fa-umbrella-beach"></i> Beach
+                                <i class="fas fa-umbrella-beach"></i> <span data-i18n="situations.beach">Beach</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="birthday-party">
-                                <i class="fas fa-birthday-cake"></i> Birthday Party
+                                <i class="fas fa-birthday-cake"></i> <span data-i18n="situations.birthday-party">Birthday Party</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="playdate">
-                                <i class="fas fa-users"></i> Playdate
+                                <i class="fas fa-users"></i> <span data-i18n="situations.playdate">Playdate</span>
                             </button>
                             <button class="filter-btn" data-filter="situations" data-value="bedtime">
-                                <i class="fas fa-bed"></i> Bedtime
+                                <i class="fas fa-bed"></i> <span data-i18n="situations.bedtime">Bedtime</span>
                             </button>
                         </div>
                     </div>
@@ -1467,22 +1551,22 @@
                 <!-- Location Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-location-arrow"></i> Location</h3>
+                        <h3><i class="fas fa-location-arrow"></i> <span data-i18n="filters.location">Location</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="location-filters">
                             <button class="filter-btn active" data-filter="location" data-value="all">
-                                <i class="fas fa-globe"></i> All
+                                <i class="fas fa-globe"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="location" data-value="indoor">
-                                <i class="fas fa-home"></i> Indoor
+                                <i class="fas fa-home"></i> <span data-i18n="location.indoor">Indoor</span>
                             </button>
                             <button class="filter-btn" data-filter="location" data-value="outdoor">
-                                <i class="fas fa-tree"></i> Outdoor
+                                <i class="fas fa-tree"></i> <span data-i18n="location.outdoor">Outdoor</span>
                             </button>
                             <button class="filter-btn" data-filter="location" data-value="any">
-                                <i class="fas fa-random"></i> Any
+                                <i class="fas fa-random"></i> <span data-i18n="location.any">Any</span>
                             </button>
                         </div>
                     </div>
@@ -1491,25 +1575,25 @@
                 <!-- Duration Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-clock"></i> Duration</h3>
+                        <h3><i class="fas fa-clock"></i> <span data-i18n="filters.duration">Duration</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="duration-filters">
                             <button class="filter-btn active" data-filter="duration" data-value="all">
-                                <i class="fas fa-infinity"></i> All
+                                <i class="fas fa-infinity"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="duration" data-value="5">
-                                <i class="fas fa-bolt"></i> Quick (5)
+                                <i class="fas fa-bolt"></i> <span data-i18n="duration.5">Quick (5)</span>
                             </button>
                             <button class="filter-btn" data-filter="duration" data-value="15">
-                                <i class="fas fa-hourglass-half"></i> Short (15)
+                                <i class="fas fa-hourglass-half"></i> <span data-i18n="duration.15">Short (15)</span>
                             </button>
                             <button class="filter-btn" data-filter="duration" data-value="30">
-                                <i class="fas fa-hourglass"></i> Medium (30)
+                                <i class="fas fa-hourglass"></i> <span data-i18n="duration.30">Medium (30)</span>
                             </button>
                             <button class="filter-btn" data-filter="duration" data-value="60">
-                                <i class="fas fa-hourglass-end"></i> Long (60)
+                                <i class="fas fa-hourglass-end"></i> <span data-i18n="duration.60">Long (60)</span>
                             </button>
                         </div>
                     </div>
@@ -1518,22 +1602,22 @@
                 <!-- Supervision Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-user"></i> Supervision</h3>
+                        <h3><i class="fas fa-user"></i> <span data-i18n="filters.supervision">Supervision</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="supervision-filters">
                             <button class="filter-btn active" data-filter="supervision" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="supervision" data-value="independent">
-                                <i class="fas fa-user-alt"></i> Independent
+                                <i class="fas fa-user-alt"></i> <span data-i18n="supervision.independent">Independent</span>
                             </button>
                             <button class="filter-btn" data-filter="supervision" data-value="minimal">
-                                <i class="fas fa-user-check"></i> Minimal
+                                <i class="fas fa-user-check"></i> <span data-i18n="supervision.minimal">Minimal</span>
                             </button>
                             <button class="filter-btn" data-filter="supervision" data-value="active">
-                                <i class="fas fa-user-friends"></i> Active
+                                <i class="fas fa-user-friends"></i> <span data-i18n="supervision.active">Active</span>
                             </button>
                         </div>
                     </div>
@@ -1542,22 +1626,22 @@
                 <!-- Parent Energy Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-user"></i> Parent Energy</h3>
+                        <h3><i class="fas fa-user"></i> <span data-i18n="filters.parentEnergy">Parent Energy</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="parentEnergy-filters">
                             <button class="filter-btn active" data-filter="parentEnergy" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="parentEnergy" data-value="low">
-                                <i class="fas fa-battery-quarter"></i> Low
+                                <i class="fas fa-battery-quarter"></i> <span data-i18n="energy.low">Low</span>
                             </button>
                             <button class="filter-btn" data-filter="parentEnergy" data-value="medium">
-                                <i class="fas fa-battery-half"></i> Medium
+                                <i class="fas fa-battery-half"></i> <span data-i18n="energy.medium">Medium</span>
                             </button>
                             <button class="filter-btn" data-filter="parentEnergy" data-value="high">
-                                <i class="fas fa-battery-full"></i> High
+                                <i class="fas fa-battery-full"></i> <span data-i18n="energy.high">High</span>
                             </button>
                         </div>
                     </div>
@@ -1566,22 +1650,22 @@
                 <!-- Kid Energy Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-bolt"></i> Kid Energy</h3>
+                        <h3><i class="fas fa-bolt"></i> <span data-i18n="filters.kidEnergy">Kid Energy</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="energy-filters">
                             <button class="filter-btn active" data-filter="kidEnergy" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="kidEnergy" data-value="low">
-                                <i class="fas fa-battery-quarter"></i> Low
+                                <i class="fas fa-battery-quarter"></i> <span data-i18n="energy.low">Low</span>
                             </button>
                             <button class="filter-btn" data-filter="kidEnergy" data-value="medium">
-                                <i class="fas fa-battery-half"></i> Medium
+                                <i class="fas fa-battery-half"></i> <span data-i18n="energy.medium">Medium</span>
                             </button>
                             <button class="filter-btn" data-filter="kidEnergy" data-value="high">
-                                <i class="fas fa-battery-full"></i> High
+                                <i class="fas fa-battery-full"></i> <span data-i18n="energy.high">High</span>
                             </button>
                         </div>
                     </div>
@@ -1590,22 +1674,22 @@
                 <!-- Kid Count Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-users"></i> Kid Count</h3>
+                        <h3><i class="fas fa-users"></i> <span data-i18n="filters.kidCount">Kid Count</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="kidCount-filters">
                             <button class="filter-btn active" data-filter="kidCount" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="kidCount" data-value="1">
-                                <i class="fas fa-user"></i> 1
+                                <i class="fas fa-user"></i> <span data-i18n="kidCount.1">1</span>
                             </button>
                             <button class="filter-btn" data-filter="kidCount" data-value="2-4">
-                                <i class="fas fa-user-friends"></i> 2-4
+                                <i class="fas fa-user-friends"></i> <span data-i18n="kidCount.2-4">2-4</span>
                             </button>
                             <button class="filter-btn" data-filter="kidCount" data-value="5+">
-                                <i class="fas fa-users"></i> 5+
+                                <i class="fas fa-users"></i> <span data-i18n="kidCount.5+">5+</span>
                             </button>
                         </div>
                     </div>
@@ -1614,25 +1698,25 @@
                 <!-- Mess Level Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-broom"></i> Mess Level</h3>
+                        <h3><i class="fas fa-broom"></i> <span data-i18n="filters.messLevel">Mess Level</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="messLevel-filters">
                             <button class="filter-btn active" data-filter="messLevel" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="messLevel" data-value="none">
-                                <i class="fas fa-times"></i> None
+                                <i class="fas fa-times"></i> <span data-i18n="messLevel.none">None</span>
                             </button>
                             <button class="filter-btn" data-filter="messLevel" data-value="low">
-                                <i class="fas fa-check"></i> Low
+                                <i class="fas fa-check"></i> <span data-i18n="messLevel.low">Low</span>
                             </button>
                             <button class="filter-btn" data-filter="messLevel" data-value="medium">
-                                <i class="fas fa-exclamation"></i> Medium
+                                <i class="fas fa-exclamation"></i> <span data-i18n="messLevel.medium">Medium</span>
                             </button>
                             <button class="filter-btn" data-filter="messLevel" data-value="high">
-                                <i class="fas fa-exclamation-triangle"></i> High
+                                <i class="fas fa-exclamation-triangle"></i> <span data-i18n="messLevel.high">High</span>
                             </button>
                         </div>
                     </div>
@@ -1641,22 +1725,22 @@
                 <!-- Noise Level Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-volume-up"></i> Noise Level</h3>
+                        <h3><i class="fas fa-volume-up"></i> <span data-i18n="filters.noiseLevel">Noise Level</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="noiseLevel-filters">
                             <button class="filter-btn active" data-filter="noiseLevel" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="noiseLevel" data-value="quiet">
-                                <i class="fas fa-volume-mute"></i> Quiet
+                                <i class="fas fa-volume-mute"></i> <span data-i18n="noiseLevel.quiet">Quiet</span>
                             </button>
                             <button class="filter-btn" data-filter="noiseLevel" data-value="moderate">
-                                <i class="fas fa-volume-down"></i> Moderate
+                                <i class="fas fa-volume-down"></i> <span data-i18n="noiseLevel.moderate">Moderate</span>
                             </button>
                             <button class="filter-btn" data-filter="noiseLevel" data-value="loud">
-                                <i class="fas fa-volume-up"></i> Loud
+                                <i class="fas fa-volume-up"></i> <span data-i18n="noiseLevel.loud">Loud</span>
                             </button>
                         </div>
                     </div>
@@ -1665,28 +1749,28 @@
                 <!-- Difficulty Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-star"></i> Difficulty</h3>
+                        <h3><i class="fas fa-star"></i> <span data-i18n="filters.difficulty">Difficulty</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
                         <div class="filter-options" id="difficulty-filters">
                             <button class="filter-btn active" data-filter="difficulty" data-value="all">
-                                <i class="fas fa-list"></i> All
+                                <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
                             </button>
                             <button class="filter-btn" data-filter="difficulty" data-value="1">
-                                <i class="fas fa-star"></i> 1 (Easy)
+                                <i class="fas fa-star"></i> <span data-i18n="difficulty.1">1 (Easy)</span>
                             </button>
                             <button class="filter-btn" data-filter="difficulty" data-value="2">
-                                <i class="fas fa-star"></i> 2
+                                <i class="fas fa-star"></i> <span data-i18n="difficulty.2">2</span>
                             </button>
                             <button class="filter-btn" data-filter="difficulty" data-value="3">
-                                <i class="fas fa-star"></i> 3 (Medium)
+                                <i class="fas fa-star"></i> <span data-i18n="difficulty.3">3 (Medium)</span>
                             </button>
                             <button class="filter-btn" data-filter="difficulty" data-value="4">
-                                <i class="fas fa-star"></i> 4
+                                <i class="fas fa-star"></i> <span data-i18n="difficulty.4">4</span>
                             </button>
                             <button class="filter-btn" data-filter="difficulty" data-value="5">
-                                <i class="fas fa-star"></i> 5 (Hard)
+                                <i class="fas fa-star"></i> <span data-i18n="difficulty.5">5 (Hard)</span>
                             </button>
                         </div>
                     </div>
@@ -1695,7 +1779,7 @@
                 <!-- Prep Filter -->
                 <div class="filter-group">
                     <div class="filter-group-header">
-                        <h3><i class="fas fa-tools"></i> Preparation</h3>
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="filters.prep">Preparation</span></h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="filter-group-content">
