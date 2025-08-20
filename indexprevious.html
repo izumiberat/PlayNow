@@ -3169,17 +3169,25 @@
         // Render activities
         function renderActivities(activities) {
             if (activities.length === 0) {
+                const noResultsText = currentLang === 'en' ? 'No Activities Found' : 
+                                   currentLang === 'fr' ? 'Aucune activité trouvée' : 
+                                   'アクティビティが見つかりません';
+                                   
+                const noResultsDesc = currentLang === 'en' ? `No activities available for the ${currentAgeGroup} age group.` : 
+                                    currentLang === 'fr' ? `Aucune activité disponible pour le groupe d'âge ${currentAgeGroup}.` : 
+                                    `${currentAgeGroup}歳向けのアクティビティはありません。`;
+                
                 activitiesContainer.innerHTML = `
                     <div class="no-results">
                         <i class="fas fa-search" style="color: var(--primary); margin-bottom: 15px;"></i>
-                        <h3>No Activities Found</h3>
-                        <p>No activities available for the ${currentAgeGroup} age group.</p>
+                        <h3>${noResultsText}</h3>
+                        <p>${noResultsDesc}</p>
                     </div>
                 `;
                 return;
             }
         
-            let activitiesHTML = ''; // no extra grid div here
+            let activitiesHTML = '';
         
             activities.forEach((activity, index) => {
                 activitiesHTML += `
@@ -3192,7 +3200,7 @@
                                 <p>${activity.description}</p>
                             </div>
                             <button class="more-info-btn" data-index="${index}">
-                                More Info <i class="fas fa-arrow-right"></i>
+                                ${currentLang === 'en' ? 'More Info' : currentLang === 'fr' ? 'Plus d\'info' : '詳細'} <i class="fas fa-arrow-right"></i>
                             </button>
                         </div>
                     </div>
@@ -3228,7 +3236,7 @@
                     const act = activities[this.dataset.index];
                     const materialsText = act.materials?.length && act.materials[0] !== "none" 
                         ? act.materials.join(', ') 
-                        : 'None';
+                        : currentLang === 'en' ? 'None' : currentLang === 'fr' ? 'Aucun' : 'なし';
                     
                     // Situation, special needs, source tags combined
                     let allTagsHTML = '';
@@ -3239,6 +3247,13 @@
                     const kidEnergyIndicator = generateEnergyIndicator(act.kidEnergy);
                     const parentEnergyIndicator = generateEnergyIndicator(act.parentEnergy);
         
+                    // Get translated labels
+                    const prepLabel = currentLang === 'en' ? 'Prep:' : currentLang === 'fr' ? 'Préparation:' : '準備:';
+                    const materialsLabel = currentLang === 'en' ? 'Materials:' : currentLang === 'fr' ? 'Matériaux:' : '材料:';
+                    const skillsLabel = currentLang === 'en' ? 'Skills:' : currentLang === 'fr' ? 'Compétences:' : 'スキル:';
+                    const kidEnergyLabel = currentLang === 'en' ? 'Kid Energy:' : currentLang === 'fr' ? 'Énergie Enfant:' : '子供のエネルギー:';
+                    const parentEnergyLabel = currentLang === 'en' ? 'Parent Energy:' : currentLang === 'fr' ? 'Énergie Parent:' : '親のエネルギー:';
+                    
                     let modalHTML = `
                         <h2>${act.title}</h2>
                         <p>${act.description}</p>
@@ -3260,22 +3275,20 @@
         
                         <!-- Prep, materials, skills, energy -->
                         <div class="card-details">
-                            <div class="detail-item"><span class="detail-label">Prep:</span> <span>${act.prep || 'None needed'}</span></div>
-                            <div class="detail-item"><span class="detail-label">Materials:</span> <span>${materialsText}</span></div>
-                            <div class="detail-item"><span class="detail-label">Skills:</span> <span>${act.skills?.join(', ') || 'Various'}</span></div>
-                            <div class="detail-item"><span class="detail-label">Kid Energy:</span> <span class="energy-indicator">${kidEnergyIndicator}</span></div>
-                            <div class="detail-item"><span class="detail-label">Parent Energy:</span> <span class="energy-indicator">${parentEnergyIndicator}</span></div>
+                            <div class="detail-item"><span class="detail-label">${prepLabel}</span> <span>${act.prep || 'None needed'}</span></div>
+                            <div class="detail-item"><span class="detail-label">${materialsLabel}</span> <span>${materialsText}</span></div>
+                            <div class="detail-item"><span class="detail-label">${skillsLabel}</span> <span>${act.skills?.join(', ') || 'Various'}</span></div>
+                            <div class="detail-item"><span class="detail-label">${kidEnergyLabel}</span> <span class="energy-indicator">${kidEnergyIndicator}</span></div>
+                            <div class="detail-item"><span class="detail-label">${parentEnergyLabel}</span> <span class="energy-indicator">${parentEnergyIndicator}</span></div>
                         </div>
                     `;
         
                     // Step-by-step instructions
-                    // Instructions
-                    let instructionsList = '';
                     if (act.instructions) {
                         let steps = [];
                         if (Array.isArray(act.instructions)) {
                             steps = act.instructions;
-                        } else if (typeof activity.instructions === 'string') {
+                        } else if (typeof act.instructions === 'string') {
                             steps = act.instructions.split('\n').filter(step => step.trim() !== '');
                         }
                         
@@ -3284,29 +3297,27 @@
                         
                         instructionsList = steps.map(step => `<li>${step}</li>`).join('');
                         
+                        const instructionsLabel = currentLang === 'en' ? 'Step-by-Step Instructions' : 
+                                               currentLang === 'fr' ? 'Instructions étape par étape' : 
+                                               'ステップバイステップの手順';
+                        
                         modalHTML += `
                             <div class="details-section">
-                                <h4>Step-by-Step Instructions</h4>
+                                <h4>${instructionsLabel}</h4>
                                 <ol class="instructions-list">${instructionsList}</ol>
                             </div>
                         `;
-                    // if (act.instructions) {
-                    //     const steps = Array.isArray(act.instructions)
-                    //         ? act.instructions
-                    //         : act.instructions.split('\n').filter(s => s.trim() !== '');
-                    //     modalHTML += `
-                    //         <div class="details-section">
-                    //             <h4>Step-by-Step Instructions</h4>
-                    //             <ol class="instructions-list">${steps.map(s => `<li>${s}</li>`).join('')}</ol>
-                    //         </div>
-                    //     `;
                     }
         
                     // Safety notes
                     if (act.safetyNotes) {
+                        const safetyLabel = currentLang === 'en' ? 'Safety Considerations' : 
+                                         currentLang === 'fr' ? 'Considérations de sécurité' : 
+                                         '安全上の注意';
+                        
                         modalHTML += `
                             <div class="details-section">
-                                <h4>Safety Considerations</h4>
+                                <h4>${safetyLabel}</h4>
                                 <div class="safety-notes">${act.safetyNotes}</div>
                             </div>
                         `;
@@ -3314,9 +3325,13 @@
         
                     // Tips
                     if (act.parentTips) {
+                        const tipsLabel = currentLang === 'en' ? 'Tips for Success' : 
+                                       currentLang === 'fr' ? 'Conseils pour réussir' : 
+                                       '成功のためのヒント';
+                        
                         modalHTML += `
                             <div class="details-section">
-                                <h4>Tips for Success</h4>
+                                <h4>${tipsLabel}</h4>
                                 <div class="parent-tips">${act.parentTips}</div>
                             </div>
                         `;
@@ -3324,9 +3339,13 @@
         
                     // Variations
                     if (act.variations?.length) {
+                        const variationsLabel = currentLang === 'en' ? 'Activity Variations' : 
+                                             currentLang === 'fr' ? 'Variations d\'activité' : 
+                                             'アクティビティのバリエーション';
+                        
                         modalHTML += `
                             <div class="details-section">
-                                <h4>Activity Variations</h4>
+                                <h4>${variationsLabel}</h4>
                                 <ul class="variations-list">${act.variations.map(v => `<li>${v}</li>`).join('')}</ul>
                             </div>
                         `;
@@ -3337,6 +3356,7 @@
                 });
             });
         }
+        
         // Filter and render activities
         function filterAndRenderActivities() {
             if (activitiesData.length === 0) return;
