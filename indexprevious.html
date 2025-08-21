@@ -469,7 +469,6 @@
         }
         
         .filter-group-content {
-            padding: 12px 15px 15px;
             display: none;
         }
         
@@ -2844,9 +2843,12 @@
                 }
             });
             
-            // Initialize filter groups to be expanded
             document.querySelectorAll('.filter-group').forEach(group => {
-                group.classList.add('expanded');
+                if (group.classList.contains('age-filter-group')) {
+                    group.classList.add('expanded');
+                } else {
+                    group.classList.remove('expanded');
+                }
             });
 
             // Modal close functionality
