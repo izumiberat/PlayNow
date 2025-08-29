@@ -2975,14 +2975,8 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    // Handle both new and old JSON structures
-                    if (Array.isArray(data)) {
-                        activitiesData = data; // New structure is an array
-                    } else if (data.activities && Array.isArray(data.activities)) {
-                        activitiesData = data.activities; // Old structure has activities property
-                    } else {
-                        throw new Error('Invalid JSON structure');
-                    }
+                    // New structure: data is always an array
+                    activitiesData = data;
                     filterAndRenderActivities();
                     updateFilterAvailability();
                 })
