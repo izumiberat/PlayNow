@@ -1,1 +1,4400 @@
-
+{
+  "activities": [
+    {
+      "id": "6000",
+      "title": "Ballon Alphabet",
+      "description": "Jeu de reconnaissance des lettres en lançant un ballon",
+      "instructions": [
+        "1. Mets-toi en cercle, en extérieur",
+        "2. Lance un ballon doux en énonçant les lettres dans l'ordre",
+        "3. Pour plus de défi : Épelle des mots entiers en demandant à chaque joueur de dire la lettre suivante",
+        "4. Récupère tout de suite les ballons tombés par terre"
+      ],
+      "ageGroup": "6-8",
+      "duration": 5,
+      "location": "en extérieur",
+      "materials": [
+        "ballon doux"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "playdate"
+      ],
+      "skills": [
+        "académique",
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que l'espace est dégagé et sans obstacles",
+      "parentTips": "Commence par les majuscules, puis passe aux minuscules. Félicite l'effort plus que la précision",
+      "variations": [
+        "Cercle assis pour les petits espaces",
+        "Version avec des chiffres et du calcul",
+        "Mots à thème (animaux/aliments)"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement",
+        "academic"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6001",
+      "title": "Défi Chaîne de Papier",
+      "description": "Défi chronométré de création de chaînes en papier",
+      "instructions": [
+        "1. Découpe le papier en bandes de 2,5 x 15 cm",
+        "2. Programme un minuteur (10-15 min)",
+        "3. Forme des boucles en scotchant les extrémités",
+        "4. Relie les chaînes en passant par les boucles précédentes",
+        "5. Mesure la longueur totale quand le temps est écoulé"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier de couleur",
+        "ciseaux sécurité enfant",
+        "scotch"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "salle d'attente",
+        "jour de maladie"
+      ],
+      "skills": [
+        "moteur",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly",
+        "sensory-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Surveille l'utilisation des ciseaux",
+      "parentTips": "Prédécoupe les bandes pour les débutants. Utilise du papier recyclé",
+      "variations": [
+        "Défis de suites de couleurs",
+        "Chaîne collaborative en famille",
+        "Décorations de fête"
+      ],
+      "source": "traditional",
+      "tags": [
+        "crafts",
+        "cleanup-game"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6002",
+      "title": "Extravaganza des Charades",
+      "description": "Jeu de devinettes sans paroles",
+      "instructions": [
+        "1. Écris des mots adaptés à son âge sur des petits papiers",
+        "2. Les joueurs piochent un papier sans le montrer",
+        "3. Mime le mot sans parler",
+        "4. Les autres joueurs crient les réponses",
+        "5. Change de mime à chaque bonne réponse"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "petits papiers",
+        "stylo"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "restaurant",
+        "travel"
+      ],
+      "skills": [
+        "social",
+        "cognitif",
+        "émotionnel"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage tout obstacle pour éviter de trébucher pendant les jeux actifs",
+      "parentTips": "Commence par des catégories faciles. Utilise des cartes avec des images pour ceux qui ne lisent pas encore bien",
+      "variations": [
+        "Version uniquement avec des animaux",
+        "Charades d'émotions",
+        "Indices chuchotés pour aider celui qui mime"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6003",
+      "title": "Aventure Camping au Jardin",
+      "description": "Construction d'une cabane en couvertures à l'extérieur",
+      "instructions": [
+        "1. Drape des couvertures sur des meubles stables ou des arbres",
+        "2. Fixe-les avec des poids (sans grimper)",
+        "3. Ajoute des coussins à l'intérieur",
+        "4. Utilise des lampes torches pour l'ambiance",
+        "5. Raconte des histoires ou lis des livres à l'intérieur"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "couvertures",
+        "coussins",
+        "lampe torche"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "playdate"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Évite les structures plus hautes que la taille de l'enfant",
+      "parentTips": "Utilise des pinces à linge pour fixer facilement les couvertures. Ajoute des livres sur la nature pour jouer dans le thème",
+      "variations": [
+        "Campement dans le salon",
+        "Coin lecture avec des livres à thème",
+        "Observation des étoiles avec un guide des constellations"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play",
+        "nature"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6004",
+      "title": "Parcours d'obstacles à la Craie",
+      "description": "Défi de motricité sur l'allée",
+      "instructions": [
+        "1. Dessine 10 à 15 mouvements connectés sur le sol",
+        "2. Inclus : des pierres à sauter, des lignes d'équilibre, des zigzags",
+        "3. Montre chaque mouvement",
+        "4. Chronomètre le temps pour finir le parcours",
+        "5. Efface et replace les éléments pour de nouveaux défis"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [
+        "craie de trottoir"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Évite les surfaces glissantes. Porte des chaussures fermées",
+      "parentTips": "Incorpore des apprentissages : marelle numérotée, sauts de formes",
+      "variations": [
+        "Mouvements codés par couleur",
+        "Version « suis-le-leader »",
+        "Parcours en scotch sur la moquette à l'intérieur"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6005",
+      "title": "Défi Château de Cartes",
+      "description": "Initiation au génie structurel avec des cartes",
+      "instructions": [
+        "1. Plie légèrement les cartes pour plus de stabilité",
+        "2. Construis des bases triangulaires",
+        "3. Ajoute des supports verticaux",
+        "4. Pose délicatement les traverses horizontales",
+        "5. Mesure la hauteur avant l'effondrement !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "jeu de cartes"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "restaurant",
+        "salle d'attente"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly",
+        "autism-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Sois attentif(ve) à la frustration en cas d'effondrement",
+      "parentTips": "Commence par des tipis de 5 cartes. Photographie les réussites",
+      "variations": [
+        "Méga-structures collaboratives",
+        "Fondations avec boîtes à mouchoirs",
+        "Défis chronométrés"
+      ],
+      "source": "traditional",
+      "tags": [
+        "building"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6006",
+      "title": "Jeu Sensoriel : La Boîte Mystère",
+      "description": "Défi d'identification tactile",
+      "instructions": [
+        "1. Découpe un trou de la taille d'une main dans une boîte à chaussures",
+        "2. Place des objets aux textures variées à l'intérieur",
+        "3. L'enfant touche l'objet sans regarder",
+        "4. Il devine en fonction de la texture et de la forme",
+        "5. Révèle l'objet après 3 essais"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "boîte à chaussures",
+        "objets texturés (pomme de pin, éponge, clé)"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "au coucher",
+        "trajet en voiture"
+      ],
+      "skills": [
+        "cognitif",
+        "sensoriel"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi qu'il n'y a pas d'objets pointus ou coupants",
+      "parentTips": "Change les objets chaque semaine. Inclus des items familiers et nouveaux",
+      "variations": [
+        "Objets uniquement de la nature",
+        "Identification des formes",
+        "Jouets lettres/chiffres"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6007",
+      "title": "Frénésie du Carré",
+      "description": "Jeu de balle classique de cour de récré",
+      "instructions": [
+        "1. Dessine 4 carrés connectés (2x2m chacun)",
+        "2. Attribue un carré à chaque joueur",
+        "3. Fais rebondir la balle dans le carré des autres",
+        "4. Les joueurs doivent la renvoyer dans un autre carré",
+        "5. On est éliminé si : on rate, la balle rebondit deux fois, ou on fait une faute"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "balle rebondissante",
+        "craie"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "playdate"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Garde des limites bien nettes entre les carrés",
+      "parentTips": "Utilise des balles en mousse pour les débutants. Fais tourner les joueurs souvent",
+      "variations": [
+        "3 carrés pour moins de joueurs",
+        "Thèmes (faire le cri d'un animal avant de frapper)",
+        "Jeu uniquement avec la main non dominante"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6008",
+      "title": "Aventure Histoire à Plusieurs Mains",
+      "description": "Création collaborative d'une histoire",
+      "instructions": [
+        "1. Assieds-toi en cercle",
+        "2. Commence par une phrase d'ouverture",
+        "3. Chacun ajoute 1 phrase à son tour",
+        "4. Note les moments absurdes ou drôles",
+        "5. Termine par une conclusion dramatique"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "au coucher",
+        "trajet en voiture",
+        "restaurant"
+      ],
+      "skills": [
+        "créatif",
+        "langage"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Propose des thèmes inclusifs. Utilise des accessoires pour faire naître des idées",
+      "variations": [
+        "Thèmes imposés (espace/animaux)",
+        "Contributions d'un seul mot",
+        "Illustre l'histoire ensuite"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "storytelling"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6009",
+      "title": "Création de Code Secret",
+      "description": "Invention d'un système de cryptographie",
+      "instructions": [
+        "1. Associe des symboles aux lettres de l'alphabet",
+        "2. Crée une feuille de référence avec la clé du code",
+        "3. Écris des messages aux membres de la famille",
+        "4. Laisse des notes codées à déchiffrer",
+        "5. Développe un système de livraison (boîte aux lettres/sous la porte)"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier",
+        "crayons"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "fatigue",
+        "restaurant"
+      ],
+      "skills": [
+        "académique",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "autism-friendly",
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Commence par des codes à substitution simples. Décode les messages avec enthousiasme",
+      "variations": [
+        "Messages à l'encre invisible (jus de citron)",
+        "Codes numériques",
+        "Indices pour une chasse au trésor"
+      ],
+      "source": "original",
+      "tags": [
+        "academic"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6010",
+      "title": "Création de Bande Dessinée",
+      "description": "Apprends à raconter une histoire en images",
+      "instructions": [
+        "1. Plie une feuille de papier en 4 sections",
+        "2. Dessine tes personnages dans la première case",
+        "3. Fais progresser l'action de gauche à droite",
+        "4. Ajoute des bulles de dialogue ou de pensée",
+        "5. Partage tes histoires terminées"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier",
+        "crayons"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "fatigue",
+        "salle d'attente"
+      ],
+      "skills": [
+        "créatif",
+        "émotionnel"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Propose des amorces d'histoire. Les personnages en bâton sont parfaits !",
+      "variations": [
+        "Série sur les aventures familiales",
+        "Origines de super-héros",
+        "Parodie de documentaire sur la nature"
+      ],
+      "source": "original",
+      "tags": [
+        "art",
+        "storytelling"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6011",
+      "title": "Métropole à la Craie",
+      "description": "Dessin collaboratif d'une ville",
+      "instructions": [
+        "1. Attribue une zone à chaque joueur",
+        "2. Dessine des routes qui relient les zones",
+        "3. Ajoute des bâtiments et des services",
+        "4. Crée des réseaux de transport",
+        "5. Discutez du fonctionnement de la ville"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "craie de trottoir"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Attention à la circulation sur les allées",
+      "parentTips": "Intègre des monuments locaux. Utilise des petites voitures pour prolonger le jeu",
+      "variations": [
+        "Royaumes fantastiques",
+        "Mondes souterrains",
+        "Conception de ville écologique"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "art"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6012",
+      "title": "Le Fort à Coussins Ultime",
+      "description": "Ingénierie de structure d'intérieur",
+      "instructions": [
+        "1. Utilise les meubles comme points d'ancrage",
+        "2. Drape les couvertures sans grimper",
+        "3. Fixe avec des poids non cassants",
+        "4. Crée plusieurs pièces et entrées",
+        "5. Vérifie la stabilité avant d'entrer"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "couvertures",
+        "coussins"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "jour de maladie"
+      ],
+      "skills": [
+        "créatif",
+        "cognitif"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Interdis de grimper sur les meubles. Surveille la ventilation",
+      "parentTips": "Fournis des pinces à linge pour faciliter la construction. Prévois le rangement à l'avance",
+      "variations": [
+        "Coins lecture douillets",
+        "Châteaux ou vaisseaux spatiaux à thème",
+        "Spectacles d'ombres à la lampe torche"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play",
+        "building"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6013",
+      "title": "Tissage Naturel",
+      "description": "Art textile avec des matériaux naturels",
+      "instructions": [
+        "1. Fixe un bâton en Y dans le sol",
+        "2. Attache une base de fil entre les branches",
+        "3. Tisse des éléments naturels horizontalement",
+        "4. Alterne les matériaux pour contraster",
+        "5. Accroche ton œuvre finie à l'extérieur"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "en extérieur",
+      "materials": [
+        "bâton en forme de Y",
+        "fil à tisser ou laine"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Vérifie l'absence de nids d'insectes dans les matériaux",
+      "parentTips": "Prépare le métier à tisser pour les débutants. Insiste : on n'utilise que ce qui est tombé par terre",
+      "variations": [
+        "Métiers à tisser circulaires avec des branches",
+        "Thèmes de couleurs saisonniers",
+        "Tapisserie collaborative de groupe"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature",
+        "art"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6014",
+      "title": "Masques en Assiettes en Carton",
+      "description": "Création de personnages portables",
+      "instructions": [
+        "1. Découpe les trous pour les yeux en toute sécurité",
+        "2. Décore avec des feutres ou de la peinture",
+        "3. Ajoute des cheveux en laine ou des oreilles en papier",
+        "4. Fixe un bâtonnet artisanale comme manche",
+        "5. Organise une petite pièce de théâtre improvisée"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": [
+        "assiettes en carton",
+        "ciseaux sécurité enfant",
+        "feutres"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "playdate"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Supervise la découpe des trous pour les yeux. Évite les attaches élastiques",
+      "parentTips": "Montre des exemples de personnages. Utilise de la peinture lavable",
+      "variations": [
+        "Sets de familles d'animaux",
+        "Masques d'émotions",
+        "Personnages de fêtes"
+      ],
+      "source": "traditional",
+      "tags": [
+        "crafts",
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6015",
+      "title": "Safari des Insectes du Jardin",
+      "description": "Expédition d'observation des insectes",
+      "instructions": [
+        "1. Équipe-toi d'une loupe et d'un carnet",
+        "2. Cherche au sol et sur les plantes",
+        "3. Observe sans toucher",
+        "4. Note tes découvertes",
+        "5. Identifie les insectes après la chasse"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "loupe",
+        "carnet",
+        "crayon"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "académique",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Ne pas manipuler les insectes. Attention aux nids de guêpes",
+      "parentTips": "Fournis un guide d'identification. Apprends-lui à observer à distance respectueuse",
+      "variations": [
+        "Focus sur les micro-habitats (sous les pierres, les rondins)",
+        "Construction d'un hôtel à insectes",
+        "Observation des insectes nocturnes avec une lampe torche"
+      ],
+      "source": "montessori",
+      "tags": [
+        "nature",
+        "science"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6016",
+      "title": "Art du Fil Géométrique",
+      "description": "Création de formes au sol",
+      "instructions": [
+        "1. Déroule de la laine sur une surface plane",
+        "2. Forme des lignes droites entre des points d'ancrage",
+        "3. Crée des formes qui s'entrecroisent",
+        "4. Photographie tes designs terminés",
+        "5. Enroule la laine pour la réutiliser"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "laine colorée"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "jour de maladie"
+      ],
+      "skills": [
+        "cognitif",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly",
+        "autism-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Attention aux risques de trébuchement",
+      "parentTips": "Commence par des formes basiques. Utilise du scotch de peintre pour les points d'ancrage",
+      "variations": [
+        "Structures 3D avec des pailles",
+        "Fresques collaboratives",
+        "Art au fil dans la nature"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "art"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6017",
+      "title": "Frottis de Feuilles",
+      "description": "Impression artistique à partir de textures naturelles",
+      "instructions": [
+        "1. Place une feuille face nervurée vers le haut",
+        "2. Recouvre-la d'une feuille de papier fin",
+        "3. Frotte latéralement avec un crayon de cire",
+        "4. Expérimente avec des couleurs et des angles",
+        "5. Étiquette avec le nom de l'arbre"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [
+        "papier",
+        "crayons de cire"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "créatif",
+        "science"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "summer|fall",
+      "safetyNotes": "Évite les zones où il y a du sumac vénéneux",
+      "parentTips": "Utilise des feuilles fraîches et flexibles. Scotche les coins du papier pour plus de stabilité",
+      "variations": [
+        "Compositions à plusieurs feuilles",
+        "Collection comparative des saisons",
+        "Frottis d'écorce et d'autres textures"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "art",
+        "nature"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6018",
+      "title": "Défi : Fais Voler le Ballon",
+      "description": "Jeu de ballon aérien et coopératif",
+      "instructions": [
+        "1. Gonfle les ballons modérément",
+        "2. Délimite une zone de jeu",
+        "3. Utilise tes mains ou des assiettes en carton pour faire voler le ballon",
+        "4. Compte les coups consécutifs",
+        "5. Recommence si le ballon touche le sol"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "ballons de baudruche"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "jour de pluie",
+        "playdate"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ramasse immédiatement les morceaux de ballon éclatés. Ne gonfle pas trop",
+      "parentTips": "Avoir des ballons de rechange prêts. Les ventilateurs au plafond deviennent des obstacles amusants",
+      "variations": [
+        "Version assise",
+        "Restrictions de parties du corps (tête seulement)",
+        "Plusieurs ballons en même temps"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6019",
+      "title": "Mandalas Naturels",
+      "description": "Arrangements artistiques circulaires avec des éléments naturels",
+      "instructions": [
+        "1. Ramasse des éléments naturels tombés au sol",
+        "2. Commence le centre avec un élément remarquable",
+        "3. Crée des couches symétriques",
+        "4. Photographie tes créations terminées",
+        "5. Laisse ton mandala en place quand tu as fini"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "en extérieur",
+      "materials": [
+        "matériaux naturels (feuilles, cailloux, etc.)"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "créatif",
+        "émotionnel"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Se laver les mains après avoir manipulé des éléments naturels",
+      "parentTips": "L'important c'est le processus, pas le résultat. Discute du caractère éphémère de l'œuvre",
+      "variations": [
+        "Designs sur un thème de couleur",
+        "Mini-mandalas dans des couvercles",
+        "Méga-mandalas collaboratifs"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature",
+        "art"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6020",
+      "title": "Théâtre de Marionnettes en Sac en Papier",
+      "description": "Transforme des sacs en papier en personnages et monte de petits spectacles",
+      "instructions": [
+        "1. Décore les sacs en papier avec des feutres pour créer des personnages",
+        "2. Utilise des ciseaux sécurité enfant pour découper les traits du visage",
+        "3. Ajoute des cheveux en laine ou des chutes de tissu pour les détails",
+        "4. Installe un théâtre sur une table avec une boîte en carton",
+        "5. Joue des histoires avec des dialogues et du mouvement"
+      ],
+      "ageGroup": "6-8",
+      "duration": 60,
+      "location": "à l'intérieur",
+      "materials": [
+        "sacs en papier",
+        "ciseaux sécurité enfant",
+        "feutres",
+        "laine"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "jour de maladie",
+        "playdate"
+      ],
+      "skills": [
+        "créatif",
+        "social",
+        "émotionnel"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Surveille l'utilisation des ciseaux ; évite les petites pièces amovibles pour les jeunes enfants",
+      "parentTips": "Propose des amorces d'histoire pour les timides ; utilise ton téléphone pour enregistrer les spectacles",
+      "variations": [
+        "Thème de sauvetage d'animaux",
+        "Biographies de personnages historiques",
+        "Marionnettes pour exprimer les émotions"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play",
+        "crafts"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6021",
+      "title": "Tournoi de Tennis-Ballon",
+      "description": "Volley-ball d'intérieur avec un ballon et des raquettes maison",
+      "instructions": [
+        "1. Fixe des bâtonnets artisanaux à des assiettes en carton pour faire des raquettes",
+        "2. Gonfle les ballons modérément",
+        "3. Installe un filet avec de la ficelle entre deux chaises",
+        "4. Fais voler le ballon par-dessus le filet sans le faire éclater",
+        "5. Jouez jusqu'à 10 points pour gagner"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "ballons de baudruche",
+        "assiettes en carton",
+        "bâtonnets artisanaux",
+        "scotch"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "jour de pluie",
+        "jour de maladie"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ramasse immédiatement les morceaux de ballon éclatés ; évite de trop gonfler",
+      "parentTips": "Utilise la hauteur sous plafond pour ajuster la difficulté ; change les équipes souvent",
+      "variations": [
+        "Volley-ball assis",
+        "Jeu uniquement avec la main non dominante",
+        "Plusieurs ballons en même temps"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6022",
+      "title": "Bracelets de Collectionneur Nature",
+      "description": "Exposition portable d'éléments naturels avec du ruban adhésif",
+      "instructions": [
+        "1. Enroule du scotch double-face autour des poignets (côté collant à l'extérieur)",
+        "2. Explore l'extérieur pour collecter des éléments naturels légers",
+        "3. Presse délicatement les éléments sur le scotch",
+        "4. Discute des textures et des couleurs des spécimens collectés",
+        "5. Photographie avant de jeter de manière responsable"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "scotch double-face",
+        "bandes de papier"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "beach"
+      ],
+      "skills": [
+        "science",
+        "sensory"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Vérifie les allergies cutanées ; évite les zones avec du sumac vénéneux",
+      "parentTips": "Utilise une base en bande de papier pour les peaux sensibles ; concentre-toi sur les éléments tombés au sol",
+      "variations": [
+        "Défis de couleurs saisonnières",
+        "Chasse aux trésors de textures",
+        "Collections de micro-habitats"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature",
+        "sensory"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6023",
+      "title": "Défis de Construction LEGO",
+      "description": "Défis de construction basés sur des prompts",
+      "instructions": [
+        "1. Prépare des cartes de catégories (véhicules, bâtiments)",
+        "2. Programme un minuteur (15-20 min)",
+        "3. Pioche une carte défi au hasard",
+        "4. Construis une création correspondant au thème",
+        "5. Présente tes designs avec une histoire créative"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "briques LEGO"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "salle d'attente",
+        "travel"
+      ],
+      "skills": [
+        "cognitif",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "autism-friendly",
+        "quiet-child-friendly"
+      ],
+      "cost": "medium",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Attention aux petites pièces avec les frères et sœurs plus jeunes",
+      "parentTips": "Photographie les créations avant de les démonter ; utilise des objets du quotidien comme matériaux supplémentaires",
+      "variations": [
+        "Constructions à deux les yeux bandés",
+        "Défis à l'échelle miniature",
+        "Constructions basées sur une histoire"
+      ],
+      "source": "original",
+      "tags": [
+        "building"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6024",
+      "title": "Olympiades d'Avions en Papier",
+      "description": "Conception d'avions et concours de distance",
+      "instructions": [
+        "1. Plie différents modèles d'avions en papier",
+        "2. Marque la ligne de lancement avec du scotch",
+        "3. Teste les vols un par un",
+        "4. Mesure les distances avec un mètre ruban",
+        "5. Remets des prix pour les catégories de design créatif"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier",
+        "mètre ruban"
+      ],
+      "prep": "none",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "salle d'attente"
+      ],
+      "skills": [
+        "académique",
+        "cognitif"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure un espace de vol dégagé, loin des objets fragiles",
+      "parentTips": "Fournis des guides de pliage pour les débutants ; teste des modifications (volets d'aile)",
+      "variations": [
+        "Cibles d'atterrissage pour la précision",
+        "Concours de durée de vol",
+        "Designs d'avions à thème"
+      ],
+      "source": "traditional",
+      "tags": [
+        "science"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6025",
+      "title": "Grand Spectacle des Talents Familiaux",
+      "description": "Spectacle mettant en avant les talents de la famille",
+      "instructions": [
+        "1. Prépare des numéros simples (2-3 min chacun)",
+        "2. Crée une scène avec des rideaux et des lumières",
+        "3. Utilise ton téléphone pour la musique de fond",
+        "4. Applaudis après chaque performance",
+        "5. Remets des certificats faits main"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "birthday-party",
+        "playdate"
+      ],
+      "skills": [
+        "social",
+        "émotionnel"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Dégage l'espace de performance de tout risque de trébuchement",
+      "parentTips": "Inclus des numéros de groupe participatifs ; valorise l'effort plus que la perfection",
+      "variations": [
+        "Spectacles à thème (comédie musicale, magie)",
+        "Spectacles caritatifs pour la famille",
+        "Compilations vidéo enregistrées"
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "storytelling"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6026",
+      "title": "Concepteur de Parcours d'Obstacles",
+      "description": "Crée des défis de motricité avec des objets du quotidien",
+      "instructions": [
+        "1. Identifie des ancres de meubles sûres",
+        "2. Conçois un enchaînement : ramper sous, sauter par-dessus, tenir en équilibre",
+        "3. Chronomètre le parcours de chaque participant",
+        "4. Reconfigure le parcours pour de nouveaux défis",
+        "5. Récompense l'obstacle le plus créatif"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "à l'intérieur",
+      "materials": [
+        "chaises",
+        "coussins",
+        "scotch"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "jour de maladie"
+      ],
+      "skills": [
+        "moteur",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Protège les angles pointus ; assure des passages dégagés entre les obstacles",
+      "parentTips": "Utilise du scotch de peintre pour les marques au sol ; intègre des apprentissages (compte les sauts)",
+      "variations": [
+        "Parcours à thème (entraînement d'espion)",
+        "Parcours les yeux bandés avec guidage verbal",
+        "Parcours collaboratifs en équipe"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6027",
+      "title": "Jam de Percussions",
+      "description": "Ensemble de percussion avec des contenants du quotidien",
+      "instructions": [
+        "1. Rassemble divers contenants (casseroles, boîtes en plastique)",
+        "2. Remplis certains avec du riz ou des haricots pour faire des maracas",
+        "3. Utilise des cuillères en bois comme baguettes",
+        "4. Établis des rythmes à suivre",
+        "5. Enregistre les performances de l'ensemble"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": [
+        "casseroles",
+        "contenants de riz/haricots",
+        "cuillères en bois"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "moyen",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "jour de pluie",
+        "playdate"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Surveille les jeux brusques avec les ustensiles ; ferme bien les contenants des maracas",
+      "parentTips": "Commence par des patterns en appel-réponse ; utilise un chef d'orchestre visuel",
+      "variations": [
+        "Compositions de chansons à thème",
+        "Défis de dynamique de volume",
+        "Rythmes silencieux avec signaux manuels"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "music"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6028",
+      "title": "Expédition Cartographe",
+      "description": "Exploration cartographique d'espaces familiers",
+      "instructions": [
+        "1. Choisis une zone à cartographier (pièce, jardin, quartier)",
+        "2. Dessine les points de repère principaux à l'échelle",
+        "3. Ajoute des représentations symboliques",
+        "4. Crée une légende pour les éléments de la carte",
+        "5. Cache un trésor pour que d'autres le trouvent avec ta carte"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "any",
+      "materials": [
+        "papier",
+        "règle",
+        "crayons de couleur"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "travel",
+        "trajet en voiture"
+      ],
+      "skills": [
+        "académique",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Fixe des limites pour l'exploration du quartier",
+      "parentTips": "Commence par des plans de pièce avant de passer à l'extérieur ; utilise du papier quadrillé",
+      "variations": [
+        "Création de mondes fantastiques",
+        "Reproductions de cartes historiques",
+        "Cartes en relief 3D avec de l'argile"
+      ],
+      "source": "montessori",
+      "tags": [
+        "academic"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6029",
+      "title": "Olympiades de la Poutre d'Équilibre",
+      "description": "Défis de mouvement sur des surfaces étroites",
+      "instructions": [
+        "1. Identifie des lignes surélevées sûres (bordures, lignes de scotch)",
+        "2. Entraîne-toi à marcher en avant et en arrière",
+        "3. Ajoute des défis : porter des objets, tourner",
+        "4. Chronomètre les durées d'équilibre",
+        "5. Récompense les points de style d'équilibre"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "en extérieur",
+      "materials": [
+        "scotch",
+        "sacs de grains"
+      ],
+      "prep": "none",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure les enfants sur les poutres hautes ; utilise des zones d'atterrissage herbeuses",
+      "parentTips": "Commence par des poutres larges comme une chaussure ; progresse vers des défis larges comme un orteil",
+      "variations": [
+        "Parcours d'obstacles",
+        "Défis d'équilibre à deux",
+        "Lignes de scotch à l'intérieur"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6030",
+      "title": "Défi de Construction en Gobelets",
+      "description": "Défis d'ingénierie avec des gobelets en plastique",
+      "instructions": [
+        "1. Lance des défis de construction (le plus haut, le plus large)",
+        "2. Empile les gobelets en formes structurelles",
+        "3. Teste la stabilité avec de légères secousses sur la table",
+        "4. Mesure les structures réussies",
+        "5. Photographie avant de tout démonter"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": [
+        "gobelets en plastique",
+        "fiches cartonnées"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "salle d'attente",
+        "restaurant"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly",
+        "autism-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite d'empiler plus haut que la portée de l'enfant",
+      "parentTips": "Intègre des cartes à jouer comme éléments structurels ; organise des défis chronométrés",
+      "variations": [
+        "Ponts suspendus",
+        "Constructions de labyrinthes",
+        "Méga-structures collaboratives"
+      ],
+      "source": "original",
+      "tags": [
+        "building"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6031",
+      "title": "Tournoi de Lancer de Précision",
+      "description": "Jeu de lancer de précision avec des zones de score",
+      "instructions": [
+        "1. Dispose des cerceaux ou contenants à différentes distances",
+        "2. Attribue des valeurs de points aux cibles",
+        "3. Lance à tour de rôle les sacs de grains",
+        "4. Additionne les scores",
+        "5. Fais tourner les lignes de lancer pour varier la difficulté"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [
+        "cerceaux",
+        "sacs de grains"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "beach"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Établis des lignes de lancer sûres et des règles de récupération",
+      "parentTips": "Ajuste les distances selon l'âge et les compétences ; utilise des paniers à linge comme cibles",
+      "variations": [
+        "Lancers les yeux bandés avec guidage verbal",
+        "Cibles mouvantes",
+        "Intégration de maths (multiplication des scores)"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6032",
+      "title": "Ingénierie en Journal",
+      "description": "Conception structurelle avec du journal roulé",
+      "instructions": [
+        "1. Roule fermement des feuilles de journal pour faire des tiges",
+        "2. Fixe les extrémités avec du scotch",
+        "3. Construis des structures de base géométriques",
+        "4. Teste la capacité à supporter du poids",
+        "5. Mesure la hauteur avant l'effondrement"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "à l'intérieur",
+      "materials": [
+        "journal",
+        "scotch de masquage"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "élevé",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Évite de se piquer les yeux avec les tiges ; portez des lunettes de protection",
+      "parentTips": "Préroule le matériel pour les plus jeunes ; lance des défis de structures spécifiques (ponts)",
+      "variations": [
+        "Circuits de bille",
+        "Défi de conception de chaise",
+        "Installations collaboratives"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "building",
+        "science"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6033",
+      "title": "Chasse au Trésor Mathématique",
+      "description": "Exploration mathématique du monde réel",
+      "instructions": [
+        "1. Crée une liste de formes et de motifs à trouver",
+        "2. Explore le quartier en documentant tes découvertes",
+        "3. Photographie des exemples géométriques",
+        "4. Catégorise tes trouvailles",
+        "5. Crée un collage de tes découvertes mathématiques"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "appareil photo/téléphone",
+        "carnet"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "grocery-store"
+      ],
+      "skills": [
+        "académique",
+        "cognitif"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Établis des limites d'exploration sûres",
+      "parentTips": "Différencie les listes selon les capacités ; intègre des activités de mesure",
+      "variations": [
+        "Chasse aux angles architecturaux",
+        "Défis mathématiques au supermarché",
+        "Recherches de symétrie"
+      ],
+      "source": "montessori",
+      "tags": [
+        "académique",
+        "nature"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6034",
+      "title": "Dés à Histoires Bilingues",
+      "description": "Création d'outil de narration multilingue",
+      "instructions": [
+        "1. Dessine des images sur des cubes en bois",
+        "2. Attribue du vocabulaire dans deux langues",
+        "3. Lance les dés pour créer des amorces d'histoire",
+        "4. Construis des phrases avec les mots tirés",
+        "5. Enregistre des histoires créatives multilingues"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "cubes en bois",
+        "feutres"
+      ],
+      "prep": "extended",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "travel",
+        "trajet en voiture"
+      ],
+      "skills": [
+        "académique",
+        "créatif"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise des feutres non toxiques ; surveille la manipulation des cubes près des tout-petits",
+      "parentTips": "Commence par des noms concrets ; progresse vers des verbes d'action",
+      "variations": [
+        "Dés d'expression des émotions",
+        "Combinaisons d'éléments d'histoire",
+        "Courses de construction de phrases"
+      ],
+      "source": "original",
+      "tags": [
+        "language",
+        "storytelling"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6035",
+      "title": "Planches Sensorielles Texturées",
+      "description": "Panels d'exploration tactile",
+      "instructions": [
+        "1. Découpe du carton en carrés de la taille d'une main",
+        "2. Colle différentes textures (papier de verre, velours)",
+        "3. Dispose-les en grille",
+        "4. Identification tactile les yeux bandés",
+        "5. Associe les textures à leurs sources naturelles"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "carton",
+        "chutes de tissu",
+        "objets naturels"
+      ],
+      "prep": "extended",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de maladie",
+        "au coucher"
+      ],
+      "skills": [
+        "sensory",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que les matériaux sont bien collés ; évite les petits objets détachés",
+      "parentTips": "Intègre des textures domestiques (papier bulle) ; discute du vocabulaire sensoriel",
+      "variations": [
+        "Planches à contrastes thermiques",
+        "Panels d'association d'odeurs",
+        "Planches sonores auditives"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6036",
+      "title": "Défi du Pluviomètre",
+      "description": "Création d'un instrument de mesure météorologique",
+      "instructions": [
+        "1. Coupe le haut d'une bouteille en plastique",
+        "2. Inverse le haut dans la base pour créer un entonnoir",
+        "3. Marque des lignes de mesure avec un marqueur permanent",
+        "4. Place dans un endroit extérieur dégagé",
+        "5. Note les mesures quotidiennes de pluie"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [
+        "bouteilles en plastique",
+        "marqueurs permanents",
+        "règles"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie"
+      ],
+      "skills": [
+        "académique",
+        "science"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Un adulte doit couper la bouteille ; surveille l'utilisation du marqueur",
+      "parentTips": "Compare avec les bulletins météo ; crée des graphiques de données",
+      "variations": [
+        "Construction d'un anémomètre",
+        "Tenue d'un journal météo",
+        "Identification des types de nuages"
+      ],
+      "source": "montessori",
+      "tags": [
+        "science"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6037",
+      "title": "Cycle des Roches Comestible",
+      "description": "Modélisation des processus géologiques avec du chocolat",
+      "instructions": [
+        "1. Râpe du chocolat pour les couches sédimentaires",
+        "2. Applique de la chaleur/pression pour le stade métamorphique",
+        "3. Fais fondre complètement pour la phase ignée",
+        "4. Refroidis dans des moules en aluminium",
+        "5. Compare à de vrais échantillons de roche"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "pépites de chocolat",
+        "papier aluminium"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "élevée",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "constante",
+      "messLevel": "élevé",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie"
+      ],
+      "skills": [
+        "science",
+        "cognitif"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Surveillance constante par un adulte pour les éléments chauffants ; vérifie les allergies",
+      "parentTips": "Utilise le micro-ondes pour une fonte sûre ; prépare des chiffons humides pour le nettoyage",
+      "variations": [
+        "Cycles des roches avec des crayons de cire",
+        "Placques tectoniques en biscuits",
+        "Biscuits à l'empreinte de fossile"
+      ],
+      "source": "original",
+      "tags": [
+        "science",
+        "baking"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6038",
+      "title": "Couches du Sol Comestibles",
+      "description": "Représentation des strates géologiques avec de la nourriture",
+      "instructions": [
+        "1. Alterne des couches de pudding (roche-mère)",
+        "2. Ajoute des biscuits écrasés (sous-sol)",
+        "3. Termine avec du pudding au chocolat (terre arable)",
+        "4. Saupoudre de noix de coco/origan pour la matière organique",
+        "5. Ajoute des vers en gelée comme organismes"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "pudding au chocolat",
+        "biscuits écrasés",
+        "vers en gelée"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie"
+      ],
+      "skills": [
+        "science"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Vérifie les allergies alimentaires ; surveille le contrôle des portions",
+      "parentTips": "Utilise des verres transparents pour la visibilité ; étiquette les termes géologiques",
+      "variations": [
+        "Comparaisons sol désertique/forestier",
+        "Modélisation d'aquifère avec de la gélatine",
+        "Ajouts de couches fossiles"
+      ],
+      "source": "original",
+      "tags": [
+        "science",
+        "baking"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6039",
+      "title": "Programme Ta Danse",
+      "description": "Chorégraphie programmée avec des cartes directionnelles",
+      "instructions": [
+        "1. Crée des cartes de commande avec des flèches (←→↑↓)",
+        "2. Ordonne 5 à 8 commandes",
+        "3. Exécute la séquence de mouvement",
+        "4. Corrige les erreurs",
+        "5. Compose des routines synchronisées en groupe"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": [
+        "cartes avec flèches (←→↑↓)",
+        "lecteur de musique"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "élevée",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "jour de pluie",
+        "playdate"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage un ample espace ; retire les objets fragiles",
+      "parentTips": "Commence par des mouvements de base ; ajoute des défis de tempo",
+      "variations": [
+        "Navigation de parcours d'obstacles",
+        "Programmation en miroir avec un partenaire",
+        "Intégration de fonctions de boucle"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6040",
+      "title": "Flip Book de Dessin Animé",
+      "description": "Création d'animation dessinée à la main",
+      "instructions": [
+        "1. Superpose des notes autocollantes bien alignées",
+        "2. Dessine des images séquentielles de bas en haut",
+        "3. Modifie légèrement chaque image",
+        "4. Feuillette pour tester l'animation",
+        "5. Relie avec un trombone pour une lecture continue"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "à l'intérieur",
+      "materials": [
+        "notes autocollantes",
+        "crayons"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "trajet en voiture",
+        "salle d'attente"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Fournis des grips pour crayons pour plus de confort",
+      "parentTips": "Commence par une balle qui rebondit avant des figures complexes ; utilise une table lumineuse pour le tracé",
+      "variations": [
+        "Création de phénakistiscope",
+        "Séquences en pâte à modeler",
+        "Applications d'animation numérique"
+      ],
+      "source": "original",
+      "tags": [
+        "art"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6041",
+      "title": "Mandalas de Pleine Conscience",
+      "description": "Création d'arrangements artistiques naturels éphémères",
+      "instructions": [
+        "1. Ramasse des matériaux naturels tombés au sol",
+        "2. Crée des motifs à symétrie radiale",
+        "3. Travaille du centre vers l'extérieur",
+        "4. Photographie les compositions terminées",
+        "5. Rend les matériaux à la nature après documentation"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "feuilles",
+        "fleurs",
+        "cailloux"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "émotionnel",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Lavage des mains après manipulation d'éléments naturels ; évite les plantes toxiques",
+      "parentTips": "Concentre-toi sur le processus plutôt que le résultat ; discute de l'impermanence",
+      "variations": [
+        "Palettes de couleurs saisonnières",
+        "Mandalas collaboratifs de groupe",
+        "Versions intérieures avec des matériaux recyclés"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature",
+        "art"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6042",
+      "title": "Théâtre d'Ombres Chinoises",
+      "description": "Histoires en silhouettes avec projection lumineuse",
+      "instructions": [
+        "1. Découpe des formes de personnages dans du carton",
+        "2. Fixe-les à des baguettes",
+        "3. Accroche un drap blanc comme écran",
+        "4. Éclaire par derrière avec une lampe torche",
+        "5. Joue des histoires avec du mouvement et des dialogues"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "carton",
+        "baguettes",
+        "lampe torche"
+      ],
+      "prep": "extended",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "au coucher",
+        "jour de pluie"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Émousse les extrémités pointues des baguettes ; surveille la manipulation de la source lumineuse",
+      "parentTips": "Crée des marionnettes à articulations simples ; utilise des gels colorés pour des effets",
+      "variations": [
+        "Reconstitutions historiques",
+        "Histoires d'habitats animaux",
+        "Récits avec des formes mathématiques"
+      ],
+      "source": "traditional",
+      "tags": [
+        "storytelling"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6043",
+      "title": "Paysage Sonore au Bâton de Pluie",
+      "description": "Fabrication d'instrument inspiré des traditions autochtones",
+      "instructions": [
+        "1. Tapisse un tube en carton avec une spirale en aluminium",
+        "2. Remplis au 1/3 avec du riz ou des haricots",
+        "3. Scelle les extrémités avec du tissu ou du carton",
+        "4. Décore l'extérieur",
+        "5. Expérimente avec les angles et vitesses d'inclinaison"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "à l'intérieur",
+      "materials": [
+        "tubes en carton",
+        "riz/haricots"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "élevé",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie"
+      ],
+      "skills": [
+        "créatif",
+        "sensory"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Ferme bien les extrémités avec du ruban adhésif solide ; attention aux risques d'étouffement avec les petits objets",
+      "parentTips": "Compare les matériaux de remplissage ; crée des échelles d'intensité de pluie",
+      "variations": [
+        "Paysages sonores à thème",
+        "Compositions de rythmes",
+        "Ensembles multi-instruments"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "music",
+        "crafts"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6044",
+      "title": "Charades des Émotions",
+      "description": "Jeu d'expression non verbale des sentiments",
+      "instructions": [
+        "1. Crée des cartes d'émotions (enthousiaste, frustré)",
+        "2. Chacun son tour pour piocher une carte",
+        "3. Mime l'émotion sans parler",
+        "4. Les autres devinent l'émotion",
+        "5. Discute des signaux physiques pour chaque sentiment"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "cartes d'émotions"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "jour de maladie"
+      ],
+      "skills": [
+        "émotionnel",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Exclut les émotions trop intenses ; garde un ton positif",
+      "parentTips": "Montre des expressions subtiles ; fais le lien avec des expériences personnelles",
+      "variations": [
+        "Démonstrations de stratégies d'adaptation",
+        "Sentiments basés sur des situations",
+        "Spectre d'intensité des émotions"
+      ],
+      "source": "original",
+      "tags": [
+        "social",
+        "emotional"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6045",
+      "title": "Mode en Journal",
+      "description": "Création de vêtements en matériaux recyclés",
+      "instructions": [
+        "1. Crée des patrons de vêtements",
+        "2. Découpe le journal en panneaux",
+        "3. Assemble les sections avec du scotch",
+        "4. Ajoute des décorations durables",
+        "5. Organise un défilé de mode"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "à l'intérieur",
+      "materials": [
+        "journal",
+        "scotch"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "élevé",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "jour de pluie",
+        "birthday-party"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Utilise des ciseaux sécurité enfant ; évite les risques de trébuchement avec les designs longs",
+      "parentTips": "Prédécoupe les formes de base ; intègre des notions de génie structurel (STEM)",
+      "variations": [
+        "Recréations de costumes historiques",
+        "Vêtements technologiques futuristes",
+        "Collections à thème"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "crafts",
+        "pretend-play"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6046",
+      "title": "Journal Météorologique",
+      "description": "Observation et enregistrement des phénomènes météorologiques",
+      "instructions": [
+        "1. Crée un modèle de tableau météo",
+        "2. Note la température et les conditions quotidiennes",
+        "3. Dessine les formations nuageuses",
+        "4. Note la direction du vent",
+        "5. Compare les tendances hebdomadaires"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "en extérieur",
+      "materials": [
+        "carnet",
+        "crayons",
+        "thermomètre"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "morning"
+      ],
+      "skills": [
+        "académique",
+        "science"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Établis des espaces d'observation extérieurs sûrs",
+      "parentTips": "Plastifie les feuilles d'enregistrement ; fais le lien avec des discussions sur le climat",
+      "variations": [
+        "Suivi phénologique des saisons",
+        "Défis de prévision météo",
+        "Comparaisons de microclimats"
+      ],
+      "source": "montessori",
+      "tags": [
+        "science",
+        "nature"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6047",
+      "title": "Presse de Plantes",
+      "description": "Technique de préservation de végétaux",
+      "instructions": [
+        "1. Cueille des fleurs et des feuilles plates",
+        "2. Dispose-les entre du papier sulfurisé",
+        "3. Place sous de lourds livres",
+        "4. Attends 1 à 2 semaines",
+        "5. Crée des œuvres d'art avec les spécimens pressés"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "fleurs/feuilles",
+        "livres lourds",
+        "papier sulfurisé"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie"
+      ],
+      "skills": [
+        "science",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "spring|summer|fall",
+      "safetyNotes": "Utilise uniquement des matériaux tombés au sol ; évite les plantes toxiques",
+      "parentTips": "Étiquette les spécimens pendant la collecte ; utilise ton téléphone pour identifier les plantes",
+      "variations": [
+        "Création d'herbier",
+        "Bougies avec fleurs pressées",
+        "Collections de comparaison saisonnière"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature",
+        "crafts"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "sos6101",
+      "title": "Dessin Secret à Plusieurs",
+      "description": "Jeu de dessin silencieux où l'on ajoute tour à tour des éléments à une œuvre cachée",
+      "instructions": [
+        "1. Plie la feuille en 4 sections",
+        "2. La première personne dessine dans la section 1 pendant 30 secondes",
+        "3. Plie pour cacher la section 1, passe à la personne suivante",
+        "4. La personne suivante continue dans la section 2 sans voir la précédente",
+        "5. Déplie pour révéler l'œuvre collaborative"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier",
+        "crayons/feutres"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "salle d'attente",
+        "travel",
+        "jour de maladie"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Utilise des porte-bloc pour plus de stabilité",
+      "variations": [
+        "Dessins à thème (animaux, robots)",
+        "Utilise du papier coloré"
+      ],
+      "source": "original",
+      "tags": [
+        "art",
+        "quiet-time"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6102",
+      "title": "Défi des Statues",
+      "description": "Jeu de mouvement où on se fige dans des poses créatives",
+      "instructions": [
+        "1. Mets de la musique douce en fond",
+        "2. Tout le monde danse et bouge",
+        "3. Quand la musique s'arrête, fige-toi comme une statue",
+        "4. Maintiens la pose pendant 10 secondes",
+        "5. Reprends quand la musique recommence"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "lecteur de musique (optionnel)"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "jour de pluie",
+        "playdate"
+      ],
+      "skills": [
+        "moteur",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage l'espace pour bouger",
+      "parentTips": "Fredonne au lieu de la musique si nécessaire",
+      "variations": [
+        "Statues à thème (animaux, super-héros)"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6103",
+      "title": "Histoire Alphabétique",
+      "description": "Histoire collaborative avec des amorces de lettres",
+      "instructions": [
+        "1. Commence avec une phrase en 'A' (ex: 'Un ours...')",
+        "2. La personne suivante continue avec une phrase en 'B'",
+        "3. Continue à travers l'alphabet",
+        "4. Construis une histoire amusante ensemble"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "any",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "trajet en voiture",
+        "salle d'attente"
+      ],
+      "skills": [
+        "cognitif",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Permets des mots inventés pour les lettres difficiles",
+      "variations": [
+        "Utilise seulement des noms/adjectifs",
+        "Limite de temps par lettre"
+      ],
+      "source": "original",
+      "tags": [
+        "storytelling"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6104",
+      "title": "Forteresse Douillette",
+      "description": "Défi de construction de cabane douillette en couvertures",
+      "instructions": [
+        "1. Rassemble des couvertures et des coussins",
+        "2. Drape-les sur les meubles pour créer un abri",
+        "3. Utilise des pinces/poids pour fixer",
+        "4. Lis ou raconte des histoires à l'intérieur"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "couvertures",
+        "coussins",
+        "chaises/meubles"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de pluie",
+        "jour de maladie"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les structures instables",
+      "parentTips": "Approuve les meubles à utiliser pour la sécurité",
+      "variations": [
+        "Fortins à thème (vaisseau spatial, château)",
+        "Histoires à la lampe torche"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6105",
+      "title": "Chasse aux Textures",
+      "description": "Exploration sensorielle avec des objets du quotidien",
+      "instructions": [
+        "1. Choisis une texture (bosselé, lisse, duveteux)",
+        "2. Programme un minuteur de 3 minutes",
+        "3. Trouve des objets correspondants dans la maison",
+        "4. Compare tes découvertes"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "cognitif",
+        "sensory"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les objets fragiles/dangereux",
+      "parentTips": "Commence avec des textures faciles",
+      "variations": [
+        "Chasse aux températures",
+        "Regroupement par couleurs"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6106",
+      "title": "Respiration avec Doudou",
+      "description": "Exercice de respiration apaisant avec des peluches",
+      "instructions": [
+        "1. Allonge-toi avec une peluche sur le ventre",
+        "2. Respire lentement par le nez",
+        "3. Regarde la peluche monter et descendre",
+        "4. Compte les respirations ensemble"
+      ],
+      "ageGroup": "6-8",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [
+        "peluche"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "au coucher",
+        "jour de maladie"
+      ],
+      "skills": [
+        "émotionnel"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Montre d'abord des respirations lentes",
+      "variations": [
+        "Respiration fleur/bougie",
+        "Technique 4-7-8"
+      ],
+      "source": "montessori",
+      "tags": [
+        "quiet-time"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6107",
+      "title": "Formes d'Ombres",
+      "description": "Crée des animaux/objets avec des ombres de mains",
+      "instructions": [
+        "1. Éclaire un mur blanc",
+        "2. Fais des formes basiques avec tes mains",
+        "3. Devine les créations de chacun",
+        "4. Invente de nouvelles formes ensemble"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "lampe torche/lampe"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "au coucher",
+        "salle d'attente"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les lumières vives dans les yeux",
+      "parentTips": "Commence avec des designs simples (chien, oiseau)",
+      "variations": [
+        "Crée des histoires d'ombres",
+        "Ajoute des accessoires"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6108",
+      "title": "Plateau Mémoire",
+      "description": "Jeu d'observation et de mémoire avec des objets du quotidien",
+      "instructions": [
+        "1. Place 7 à 10 petits objets sur un plateau",
+        "2. Observe pendant 1 minute",
+        "3. Couvre le plateau",
+        "4. Écris/dessine les objets dont tu te souviens"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "plateau",
+        "petits objets du quotidien",
+        "papier"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "salle d'attente",
+        "travel"
+      ],
+      "skills": [
+        "cognitif",
+        "académique"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les risques d'étouffement",
+      "parentTips": "Utilise des objets à thème (cuisine, jouets)",
+      "variations": [
+        "Retire un objet en secret",
+        "Ajoute un défi chronométré"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "cleanup-game"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6109",
+      "title": "Topette Silencieuse",
+      "description": "Jeu de coordination silencieux avec des gestes de mains",
+      "instructions": [
+        "1. Crée 5 signes silencieux de la main (ex: vague, pouce vers le haut)",
+        "2. Fais-toi face en reproduisant les gestes",
+        "3. Ajoute de nouveaux signes progressivement",
+        "4. Construis une séquence à répéter"
+      ],
+      "ageGroup": "6-8",
+      "duration": 5,
+      "location": "any",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "grocery-store",
+        "trajet en voiture"
+      ],
+      "skills": [
+        "social",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Respecte l'espace personnel",
+      "parentTips": "Commence avec des gestes basiques",
+      "variations": [
+        "Charades d'émotions",
+        "Défi de vitesse"
+      ],
+      "source": "original",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6110",
+      "title": "Histoires de Nuages",
+      "description": "Jeu d'imagination en observant les nuages et les ombres",
+      "instructions": [
+        "1. Trouve un endroit confortable pour observer",
+        "2. Observe les formes des nuages",
+        "3. Décris à tour de rôle ce que tu vois",
+        "4. Crée des histoires sur ces formes"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "en extérieur",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "beach",
+        "normal"
+      ],
+      "skills": [
+        "créatif",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise une protection solaire",
+      "parentTips": "Essaye à différents moments de la journée",
+      "variations": [
+        "Histoires d'ombres à l'intérieur",
+        "Dessine des créatures nuageuses"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6111",
+      "title": "Simon Silencieux",
+      "description": "Version silencieuse du jeu Jacques a dit",
+      "instructions": [
+        "1. Le mime des actions sans son",
+        "2. Les joueurs observent la bouche du meneur",
+        "3. Exécute l'action seulement si précédée par 'Jacques a dit'",
+        "4. Change de meneur à tour de rôle"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "any",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "restaurant",
+        "salle d'attente"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les défis physiques complexes",
+      "parentTips": "Commence avec des actions simples (hochement de tête, clin d'œil)",
+      "variations": [
+        "Tours à thème (actions d'animaux)",
+        "Ajoute des récompenses rigolotes"
+      ],
+      "source": "original",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6112",
+      "title": "Défi de la Chaîne en Papier",
+      "description": "Construction silencieuse avec des bandes de papier",
+      "instructions": [
+        "1. Découpe le papier en bandes de 2-3 cm",
+        "2. Forme la première boucle avec du scotch ou une agrafe",
+        "3. Passe la bande suivante dans la boucle",
+        "4. Vois jusqu'où la chaîne grandit en 5 minutes"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier",
+        "ciseaux",
+        "scotch/agrafeuse"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "jour de maladie",
+        "jour de pluie"
+      ],
+      "skills": [
+        "moteur",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Surveille l'utilisation des ciseaux pour les plus jeunes",
+      "parentTips": "Utilise du papier ou des magazines recyclés",
+      "variations": [
+        "Chaînes à motifs",
+        "Défi de mesure"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "crafts"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6113",
+      "title": "Toile de Gratitude",
+      "description": "Activité de connexion silencieuse pour partager sa reconnaissance",
+      "instructions": [
+        "1. Assieds-toi en cercle en tenant une pelote de laine",
+        "2. La première personne partage sa gratitude",
+        "3. Garde le bout de laine, lance la pelote à une autre",
+        "4. Continue jusqu'à former une toile",
+        "5. Tire doucement la toile en partageant"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "pelote de laine/ficelle"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "au coucher",
+        "normal"
+      ],
+      "skills": [
+        "émotionnel",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Attention aux risques de trébuchement avec la laine",
+      "parentTips": "Montre l'exemple avec des appreciations spécifiques",
+      "variations": [
+        "Tours à thème (famille, nature)",
+        "Gratitude en un mot"
+      ],
+      "source": "original",
+      "tags": [
+        "emotional"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6114",
+      "title": "Miroir, Mon Beau Miroir",
+      "description": "Jeu de coordination en imitant les mouvements",
+      "instructions": [
+        "1. Forme des paires face à face",
+        "2. Une personne guide avec des mouvements lents",
+        "3. Le partenaire imite exactement",
+        "4. Change les rôles après 2 minutes"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "salle d'attente",
+        "playdate"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage l'espace pour bouger",
+      "parentTips": "Commence avec des expressions faciales",
+      "variations": [
+        "Miroirs d'émotions",
+        "Ajoute des éléments de narration"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6115",
+      "title": "Relais des Chaussettes",
+      "description": "Jeu de tri silencieux qui transforme une corvée en jeu",
+      "instructions": [
+        "1. Place des chaussettes mélangées dans un panier",
+        "2. Programme un minuteur de 3 minutes",
+        "3. Course pour assembler les paires",
+        "4. Empile les paires assorties soigneusement"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "panier de chaussettes propres"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Utilise des chaussettes avec des motifs distinctifs",
+      "variations": [
+        "Défi les yeux bandés",
+        "Trie par membre de la famille"
+      ],
+      "source": "original",
+      "tags": [
+        "cleanup-game"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "bday6001",
+      "title": "Volley-Ballon",
+      "description": "Un jeu dynamique et sans impact utilisant un ballon comme ballon",
+      "instructions": [
+        "1. Gonfle un ballon",
+        "2. Utilise une ficelle ou du scotch pour créer un 'filet' dans un couloir ou entre deux chaises",
+        "3. Divise les enfants en deux équipes, de chaque côté du filet",
+        "4. Frappe le ballon pour le renvoyer, en essayant de l'empêcher de toucher le sol de ton côté"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "ballon",
+        "ficelle ou scotch"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "birthday-party",
+        "playdate",
+        "jour de pluie"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Attention aux glissades sur les sols lisses. Sois vigilant avec l'éclatement des ballons et les risques d'étouffement",
+      "parentTips": "Avoir quelques ballons de rechange. Garde les enfants concentrés et actifs dans un petit espace",
+      "variations": [
+        "Joue sans filet, en le maintenant simplement en l'air",
+        "Utilise des tapettes à mouches ou des assiettes en carton comme raquettes"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6002",
+      "title": "Défi du Parcours d'Obstacles",
+      "description": "Un parcours rapide à installer utilisant des objets du quotidien pour faire bouger les enfants",
+      "instructions": [
+        "1. Utilise des coussins pour créer une montagne à escalader",
+        "2. Place un cerceau ou un cercle de scotch au sol pour sauter dedans",
+        "3. Mets une chaise pour ramper en dessous",
+        "4. Fais marcher les enfants en crabe jusqu'à la ligne d'arrivée. Chronomètre-les pour plus de fun !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "coussins",
+        "scotch ou cerceau",
+        "chaise",
+        "chronomètre (téléphone)"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "birthday-party",
+        "playdate"
+      ],
+      "skills": [
+        "moteur",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que la zone est dégagée des angles pointus ou des objets durs",
+      "parentTips": "Laisse les enfants aider à concevoir le prochain parcours pour les garder engagés plus longtemps",
+      "variations": [
+        "Ajoute un segment 'porte un œuf sur une cuillère'",
+        "Fais-le les yeux bandés avec des instructions verbales d'un ami"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6003",
+      "title": "Concours d'Avions en Papier",
+      "description": "Un test classique de design et d'aérodynamisme",
+      "instructions": [
+        "1. Donne à chaque enfant une feuille de papier",
+        "2. Plie des avions en papier. Un design simple est le meilleur",
+        "3. Marque une ligne de départ avec du scotch",
+        "4. Lance les avions à tour de rôle. Vois lequel va le plus loin ou fait le meilleur trick !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier",
+        "scotch"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "birthday-party",
+        "playdate"
+      ],
+      "skills": [
+        "créatif",
+        "moteur",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que personne ne lance les avions vers le visage des autres",
+      "parentTips": "Fais un 'juge' attribuer des prix rigolos pour 'le plus coloré', 'le vol le plus drôle', etc",
+      "variations": [
+        "Décore les avions avec des feutres d'abord",
+        "Crée des cibles à traverser"
+      ],
+      "source": "traditional",
+      "tags": [
+        "crafts"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6004",
+      "title": "Danse Stop",
+      "description": "Un jeu très énergique qui demande de l'écoute et des réflexes rapides.",
+      "instructions": [
+        "1. Choisis un enfant pour être le 'DJ' ou fais-le toi-même.",
+        "2. Mets de la musique amusante et entraînante.",
+        "3. Tout le monde danse jusqu'à ce que la musique s'arrête soudainement.",
+        "4. Tout le monde doit s'immobiliser immédiatement. Celui qui bouge est éliminé pour ce tour."
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "source de musique",
+        "enceinte"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "moteur",
+        "social",
+        "cognitif"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage l'espace pour éviter les collisions.",
+      "parentTips": "Utilise une playlist de chansons populaires pour enfants. Laisse les enfants faire le DJ à tour de rôle.",
+      "variations": [
+        "Immobilise-toi dans une pose spécifique (comme un animal).",
+        "Joue aux 'Statues' en extérieur."
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6005",
+      "title": "Construis un Fort",
+      "description": "Ingénierie collaborative utilisant des couvertures et des meubles.",
+      "instructions": [
+        "1. Rassemble des couvertures, des draps, des oreillers et des coussins.",
+        "2. Utilise des chaises, des canapés et des tables comme fondation de la structure.",
+        "3. Drape les couvertures sur la structure, utilise des livres ou des poids pour fixer les coins.",
+        "4. Rampe à l'intérieur et profite de ta nouvelle cachette secrète !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": [
+        "couvertures",
+        "draps",
+        "oreillers",
+        "coussins",
+        "chaises",
+        "pinces ou livres"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu",
+        "jour de pluie"
+      ],
+      "skills": [
+        "créatif",
+        "social",
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que la structure est stable et ne s'effondrera pas sur les enfants. Évite d'utiliser des objets lourds.",
+      "parentTips": "Embrasse le désordre ! Cette activité offre une longue période de jeu imaginatif ensuite.",
+      "variations": [
+        "Ajoute des guirlandes lumineuses ou une lampe torche pour l'ambiance.",
+        "Utilise une table de jeu comme cadre tout fait."
+      ],
+      "source": "traditional",
+      "tags": [
+        "building",
+        "pretend-play"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6006",
+      "title": "Dés à Histoires",
+      "description": "Crée des histoires spontanées et collaboratives basées sur des dés images.",
+      "instructions": [
+        "1. Dessine des symboles simples (animal, véhicule, météo, nourriture) sur six petits carrés de papier pour faire des dés.",
+        "2. Lance les dés.",
+        "3. Le premier joueur commence une histoire en utilisant une des images.",
+        "4. Le joueur suivant continue, en incorporant une autre image. Continue jusqu'à ce qu'elles soient toutes utilisées !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "any",
+      "materials": [
+        "papier",
+        "feutres"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu",
+        "salle d'attente",
+        "trajet en voiture"
+      ],
+      "skills": [
+        "créatif",
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly",
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Prépare les dés à l'avance pour zéro préparation. Encourage les rebondissements d'intrigue absurdes et drôles.",
+      "variations": [
+        "Utilise des dés à histoires achetés en magasin.",
+        "Joue l'histoire terminée."
+      ],
+      "source": "traditional",
+      "tags": [
+        "storytelling"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6007",
+      "title": "Minute pour Gagner : Cookie au Visage",
+      "description": "Un défi hilarant et simple issu de l'émission de jeu populaire.",
+      "instructions": [
+        "1. Allonge chaque joueur sur le dos.",
+        "2. Place un biscuit (comme un Oreo) sur son front.",
+        "3. Au 'Go !', ils doivent remuer leur visage pour faire glisser le biscuit dans leur bouche sans utiliser leurs mains.",
+        "4. Le premier qui réussit gagne !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "biscuits (un par joueur par tour)"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que les enfants sont sur une surface molle. Attention à l'étouffement si les biscuits se cassent.",
+      "parentTips": "Aie un appareil photo prêt ! C'est de la pure comédie. Utilise une autre petite collation en cas d'allergies.",
+      "variations": [
+        "Fais-le comme une course relais.",
+        "Utilise de petits crackers à la place."
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6008",
+      "title": "Bracelets Nature",
+      "description": "Transforme du scotch de masquage en une toile portable pour des trésors naturels trouvés.",
+      "instructions": [
+        "1. Enroule un morceau de scotch de masquage autour du poignet de chaque enfant, côté collant vers l'extérieur, pour faire un bracelet.",
+        "2. Pars en promenade dans le jardin ou le parc.",
+        "3. Trouve de petits éléments naturels intéressants : pétales, feuilles, brins d'herbe, petites plumes.",
+        "4. Colle-les sur le bracelet pour créer une belle œuvre d'art temporaire."
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [
+        "scotch de masquage"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "créatif",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "printemps,été,automne",
+      "safetyNotes": "Apprends aux enfants à ne ramasser que des objets sûrs et à éviter les plantes/baies inconnues.",
+      "parentTips": "Une activité parfaite pour passer d'un jeu énergique à un plus calme.",
+      "variations": [
+        "Fais de même avec du papier contact scotché sur une table pour un collage.",
+        "Fabrique des couronnes nature."
+      ],
+      "source": "original",
+      "tags": [
+        "nature",
+        "crafts"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6009",
+      "title": "Théâtre d'Ombres Chinoises",
+      "description": "Crée un spectacle magique en utilisant seulement tes mains et une source de lumière.",
+      "instructions": [
+        "1. Accroche un drap blanc ou scotche du papier sulfurisé sur une porte.",
+        "2. Place une lampe brillante ou une lampe torche derrière, éclairant vers le drap.",
+        "3. Éteins les autres lumières dans la pièce.",
+        "4. Place-toi entre la lumière et le drap et utilise tes mains pour faire des animaux en ombres et raconter une histoire."
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "drap ou papier sulfurisé",
+        "lampe ou lampe torche",
+        "scotch"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu",
+        "au coucher"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que la lampe n'est pas chaude au toucher et est placée en sécurité.",
+      "parentTips": "Cherche quelques formes d'animaux simples (chien, oiseau, lapin) à l'avance pour leur montrer.",
+      "variations": [
+        "Découpe des formes simples en carton et scotche-les à des bâtons.",
+        "Enregistre le spectacle sur un téléphone."
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6010",
+      "title": "Le Nœud Humain",
+      "description": "Un jeu coopératif classique qui demande de la communication et du travail d'équipe pour se démêler.",
+      "instructions": [
+        "1. Fais se tenir 4-6 enfants en cercle, face à face.",
+        "2. Chacun tend sa main droite et attrape la main de quelqu'un d'autre (pas son voisin).",
+        "3. Ensuite, chacun tend sa main gauche et attrape la main d'une personne différente.",
+        "4. Sans lâcher, le groupe doit communiquer et marcher/grimper/baisser pour se démêler et reformer un cercle."
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "4-6",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "social",
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Rappelle aux enfants d'être doux et de ne pas tirer ou secouer les bras. Attention aux trébuchements.",
+      "parentTips": "C'est un excellent brise-glace. S'ils sont trop bloqués, tu peux autoriser un 'dégrappage' stratégique.",
+      "variations": [
+        "Chronomètre-les pour voir à quelle vitesse ils peuvent le faire.",
+        "Joue avec un groupe plus large."
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6011",
+      "title": "Instruments de Musique DIY",
+      "description": "Crée des shakers et des tambours simples à partir de contenants du quotidien.",
+      "instructions": [
+        "1. Trouve des contenants vides avec couvercles (bouteilles en plastique, pots de yaourt, boîtes à avoine).",
+        "2. Remplis les bouteilles avec du riz, des haricots ou des pâtes secs pour faire des shakers.",
+        "3. Étire un ballon sur une boîte ouverte et fixe-le avec un élastique pour faire un tambour.",
+        "4. Décore avec des autocollants et des feutres, puis fais une parade !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "contenants vides",
+        "riz/haricots/pâtes",
+        "ballons",
+        "élastiques",
+        "feutres",
+        "autocollants"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "moyen",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu",
+        "jour de pluie"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "once",
+      "seasonality": "any",
+      "safetyNotes": "Surveille de près si tu utilises de petits objets comme des haricots qui pourraient être un risque d'étouffement pour les frères et sœurs plus jeunes.",
+      "parentTips": "Fais ça sur un plateau ou une nappe pour contenir le désordre. L'artisanat est la moitié du plaisir !",
+      "variations": [
+        "Fabrique des guitares avec des élastiques tendus sur des boîtes.",
+        "Utilise des casseroles et des poêles comme tambours."
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "crafts"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6012",
+      "title": "Charades pour Enfants",
+      "description": "Une version simplifiée du jeu classique de mime.",
+      "instructions": [
+        "1. Écris des idées simples (animaux, actions, titres de films) sur de petits morceaux de papier.",
+        "2. Plie-les et mets-les dans un bol.",
+        "3. Les joueurs piochent à tour de rôle un papier et le miment sans parler.",
+        "4. Les autres joueurs devinent ce que c'est. La première bonne réponse gagne un point !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier",
+        "stylo",
+        "bol"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "social",
+        "créatif",
+        "cognitif"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Prépare les cartes de charades à l'avance pour gagner du temps. Encourage les devinettes drôles pour garder le plaisir.",
+      "variations": [
+        "Utilise des cartes de charades pour enfants achetées en magasin.",
+        "Joue en équipes."
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6013",
+      "title": "Patinage en Chaussettes",
+      "description": "Transforme un sol lisse en une patinoire amusante et glissante.",
+      "instructions": [
+        "1. Assure-toi que les enfants portent des chaussettes.",
+        "2. Dégage un espace de sol lisse (parquet, stratifié, carrelage).",
+        "3. Mets de la musique.",
+        "4. Laisse-les courir et glisser, en faisant semblant d'être des patineurs artistiques !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "chaussettes",
+        "sol lisse",
+        "musique"
+      ],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage la zone de tous les obstacles et coins durs. Attention aux collisions.",
+      "parentTips": "C'est le moyen parfait de dépenser l'énergie induite par le gâteau. Un classique pour une raison !",
+      "variations": [
+        "Organise des compétitions de 'patinage artistique' avec des pirouettes et des sauts.",
+        "Installe un parcours 'slalom' avec des oreillers."
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6014",
+      "title": "Marionnettes en Sac en Papier",
+      "description": "Bricolage simple et créatif pour stimuler le jeu imaginatif.",
+      "instructions": [
+        "1. Donne à chaque enfant un sac en papier.",
+        "2. Fournis des feutres, des yeux mobiles, de la laine, des chutes de tissu et de la colle.",
+        "3. Laisse-les créer un personnage : animal, monstre, personne.",
+        "4. Une fois sec, donne un spectacle de marionnettes derrière le canapé ou une table."
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "sacs en papier",
+        "feutres",
+        "yeux mobiles",
+        "laine",
+        "colle",
+        "chutes de tissu"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "once",
+      "seasonality": "any",
+      "safetyNotes": "Surveille l'utilisation des ciseaux si nécessaire.",
+      "parentTips": "Utilise de la colle en bâton pour moins de désordre. Aie des lingettes à portée de main pour les doigts collants.",
+      "variations": [
+        "Utilise de vieilles chaussettes à la place des sacs.",
+        "Crée un thème spécifique, comme 'sous la mer'."
+      ],
+      "source": "traditional",
+      "tags": [
+        "crafts",
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6015",
+      "title": "Bowling d'Intérieur",
+      "description": "Installe une piste de bowling avec des bouteilles d'eau recyclées et une balle.",
+      "instructions": [
+        "1. Dispose 10 bouteilles d'eau en plastique vides comme des quilles de bowling.",
+        "2. Utilise une balle molle (balle de tennis, petite balle en mousse) comme boule de bowling.",
+        "3. Marque une ligne de départ avec du scotch.",
+        "4. Lance la balle à tour de rôle pour faire tomber les quilles."
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "10 bouteilles d'eau vides",
+        "balle molle",
+        "scotch"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que la balle est molle pour éviter d'abîmer les murs ou les meubles.",
+      "parentTips": "Mets un peu de sable ou d'eau dans les bouteilles pour les alourdir et les rendre plus stables.",
+      "variations": [
+        "Décore les bouteilles comme des personnages d'abord.",
+        "Note les scores pour une vraie partie."
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6016",
+      "title": "Fresque Collaborative",
+      "description": "Un projet artistique géant et partagé qui encourage la collaboration plutôt que la compétition.",
+      "instructions": [
+        "1. Scotche une grande feuille de papier kraft ou le dos de papier cadeau sur un mur ou une table.",
+        "2. Sors des feutres, des crayons de couleur et des autocollants.",
+        "3. Donne un thème simple : 'Notre Monde Magique', 'Aventure Sous-Marine', 'Célébration d'Anniversaire'.",
+        "4. Laisse tous les enfants dessiner ensemble pour créer un chef-d'œuvre géant."
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": [
+        "grande feuille de papier",
+        "scotch",
+        "feutres",
+        "crayons de couleur",
+        "autocollants"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "créatif",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "once",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "C'est une excellente activité pour un temps calme. La fresque peut aussi servir de décoration de fête amusante.",
+      "variations": [
+        "Utilise de la peinture pour plus de désordre et de plaisir.",
+        "Fais-en un cadeau d'anniversaire pour l'enfant fêté."
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "art"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6017",
+      "title": "Passe-cadeau (Version Simplifiée)",
+      "description": "Un jeu classique de fête avec une petite surprise pour chacun.",
+      "instructions": [
+        "1. Emballes une petite friandise (autocollant, bonbon) dans plusieurs couches de papier (journal, papier cadeau réutilisé).",
+        "2. Entre chaque couche, ajoutes une autre petite friandise identique.",
+        "3. Les joueurs s'assoient en cercle et se passent le paquet pendant que la musique joue.",
+        "4. Quand la musique s'arrête, le joueur qui le tient déchire une couche et garde la friandise à l'intérieur. Continue jusqu'à ce qu'il n'y ait plus de couches."
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier cadeau",
+        "petites friandises identiques (ex: autocollants)"
+      ],
+      "prep": "extended",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "5+",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire"
+      ],
+      "skills": [
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "once",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Prépare ce paquet avant la fête. Cette version garantit que personne ne se sente exclu.",
+      "variations": [
+        "Mets un plus gros prix tout au centre.",
+        "Écris des actions rigolotes sur certaines couches au lieu de friandises."
+      ],
+      "source": "traditional",
+      "tags": [],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6018",
+      "title": "Qu'est-ce qui Manque ?",
+      "description": "Un jeu de mémoire qui demande une observation attentive.",
+      "instructions": [
+        "1. Rassemble 10 à 15 petits objets courants (cuillère, voiture jouet, cube, crayon, pomme).",
+        "2. Place-les sur un plateau et montre-les aux joueurs pendant 30 secondes.",
+        "3. Demande aux joueurs de se couvrir les yeux ou de se retourner.",
+        "4. Retire un objet. Les joueurs doivent alors deviner ce qui manque !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "plateau",
+        "petits objets variés"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu",
+        "salle d'attente"
+      ],
+      "skills": [
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Commence facile et rends-le plus difficile. Laisse les enfants à tour de rôle être celui qui retire l'objet.",
+      "variations": [
+        "Ajoute plus d'objets.",
+        "Retire deux ou trois objets à la fois.",
+        "Utilise un thème (ex: tous les objets de cuisine)."
+      ],
+      "source": "traditional",
+      "tags": [],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6019",
+      "title": "Jacques a Dit",
+      "description": "Le jeu ultime d'écoute et de suivi des consignes.",
+      "instructions": [
+        "1. Choisis un joueur pour être 'Jacques'.",
+        "2. Jacques donne des ordres commençant par 'Jacques a dit...' (ex: 'Jacques a dit touche ton nez').",
+        "3. Les joueurs ne doivent suivre que les ordres qui commencent par 'Jacques a dit...'.",
+        "4. Si Jacques donne un ordre sans la phrase et qu'un joueur l'exécute, il est éliminé. Le dernier joueur gagne !"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "any",
+      "materials": [],
+      "prep": "none",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire",
+        "rendez-vous jeu"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Sois le premier Jacques pour montrer l'exemple. Encourage des ordres absurdes pour garder le plaisir.",
+      "variations": [
+        "Joue à 'Capitaine dit' ou '[Prénom de l'enfant fêté] dit'.",
+        "Augmente la vitesse des ordres."
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6020",
+      "title": "Stomp de Ballon",
+      "description": "Un jeu extrêmement énergique pour terminer la fête en apothéose.",
+      "instructions": [
+        "1. Attache un ballon à la cheville de chaque enfant avec une longue ficelle.",
+        "2. Au 'Go !', les joueurs essaient de marcher et d'éclater les ballons des autres.",
+        "3. Ils doivent aussi protéger leur propre ballon.",
+        "4. Le dernier joueur avec un ballon intact gagne."
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "en extérieur",
+      "materials": [
+        "ballons (un par joueur)",
+        "ficelle"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "5+",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "anniversaire"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "once",
+      "seasonality": "any",
+      "safetyNotes": "Joue sur l'herbe pour éviter les chutes. Assure-toi que les enfants font attention à ne pas entrer en collision. Sois attentif au bruit des ballons qui éclatent pour les enfants sensibles.",
+      "parentTips": "C'est un succès garanti pour brûler les derniers surplus d'énergie pleine de sucre avant l'arrivée des parents.",
+      "variations": [
+        "Joue en équipes, en essayant de protéger le ballon d'un coéquipier."
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    }
+  ]
+}
