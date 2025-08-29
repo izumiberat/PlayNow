@@ -2959,10 +2959,10 @@
                     ${loadingText}
                 </div>
             `;
-            
-            // Construct the JSON URL with language
+        
+            // Construct the JSON URL with the current language (en, fr, jp)
             const jsonUrl = `${BASE_JSON_URL}activities-${currentAgeGroup}-${currentLang}.json`;
-            
+        
             // Try to fetch language-specific activities first
             fetch(jsonUrl)
                 .then(response => {
