@@ -1,2436 +1,2436 @@
 {
   "activities": [
     {
-      "id": "1",
-      "title": "Peek-a-boo with a blanket",
-      "description": "Classic hiding and revealing game that delights babies",
-      "instructions": [
-        "1. Hold a blanket between you and your baby",
-        "2. Wait 2-3 seconds",
-        "3. Quickly reveal your face saying 'Peek-a-boo!'",
-        "4. Repeat with varying timing"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [
-        "blanket"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "rainy-day",
-        "waiting-room"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [
-        "sensory-friendly",
-        "autism-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Always remove blanket immediately after play",
-      "parentTips": "Use high-contrast fabrics for visual interest",
-      "variations": [
-        "Use hands instead of blanket",
-        "Let baby pull the blanket"
-      ],
-      "source": "traditional",
-      "tags": [
-        "pretend-play"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "1",
+        "title": "毛布でいないいないばあ",
+        "description": "赤ちゃんが大喜びする、隠れたり現れたりする定番の遊び",
+        "instructions": [
+            "1. 毛布をママと赤ちゃんの間にかざします",
+            "2. 2～3秒そのまま待ちます",
+            "3. 素早く顔を出して「いないいないばあ！」と言います",
+            "4. 間を変えながら何度も繰り返します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [
+            "毛布"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "雨の日",
+            "待合室"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "感覚に優しい",
+            "自症スペクトラムに配慮"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "遊んだ後は、必ずすぐに毛布を赤ちゃんから離しましょう",
+        "parentTips": "視覚的に興味を引くため、コントラストの強い布を使うのもおすすめです",
+        "variations": [
+            "毛布の代わりに手で顔を隠す",
+            "赤ちゃん自身に毛布を引っ張らせてみる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "ごっこ遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "2",
-      "title": "Stacking cups",
-      "description": "Building and knocking down colorful towers",
-      "instructions": [
-        "1. Show how to stack cups",
-        "2. Hand cups to baby",
-        "3. Cheer when they stack",
-        "4. Celebrate when they knock down"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "indoor",
-      "materials": [
-        "stacking cups"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "rainy-day",
-        "sick-day"
-      ],
-      "skills": [
-        "motor",
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Ensure cups are large enough to prevent choking",
-      "parentTips": "Start with just 3-4 cups for beginners",
-      "variations": [
-        "Hide large toys under cups",
-        "Sort by color"
-      ],
-      "source": "traditional",
-      "tags": [
-        "building"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "2",
+        "title": "カップ積み",
+        "description": "カラフルなカップで塔を作ったり、崩したりして遊びます",
+        "instructions": [
+            "1. カップの積み方をやって見せます",
+            "2. 赤ちゃんにカップを手渡します",
+            "3. 積めたら一緒に喜びます",
+            "4. 崩した時も「わー！」と楽しみます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "室内",
+        "materials": [
+            "積み重ねカップ"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "雨の日",
+            "病児の日"
+        ],
+        "skills": [
+            "運動",
+            "認知"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "誤飲しないよう、十分に大きいサイズのカップを使用してください",
+        "parentTips": "最初は3～4個のカップから始めると良いでしょう",
+        "variations": [
+            "大きめのおもちゃをカップで隠す",
+            "色別に分けて遊ぶ"
+        ],
+        "source": "traditional",
+        "tags": [
+            "組み立て遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "3",
-      "title": "Blanket ride",
-      "description": "Gentle pulling on a blanket for movement fun",
-      "instructions": [
-        "1. Place baby sitting on blanket",
-        "2. Hold blanket corners securely",
-        "3. Pull slowly on smooth surface",
-        "4. Make 'vroom' sounds during movement"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [
-        "blanket"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "few",
-      "seasonality": "any",
-      "safetyNotes": "Only on smooth floors without obstacles",
-      "parentTips": "Kneel to maintain control at baby's level",
-      "variations": [
-        "Add stuffed animal passengers",
-        "Vary pulling speeds"
-      ],
-      "source": "traditional",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "3",
+        "title": "毛布そり",
+        "description": "毛布の上に乗せてゆっくり引っ張り、動く楽しさを感じさせます",
+        "instructions": [
+            "1. 赤ちゃんを毛布の上に座らせます",
+            "2. 毛布の端をしっかり持ります",
+            "3. 滑らかな床の上をゆっくり引っ張ります",
+            "4. 「ブーン」などと言いながら動かします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [
+            "毛布"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "few",
+        "seasonality": "any",
+        "safetyNotes": "障害物のない滑らかな床でだけ行いましょう",
+        "parentTips": "赤ちゃんの高さに合わせて、ひざまずいて行うと安心です",
+        "variations": [
+            "ぬいぐるみを同乗させて遊ぶ",
+            "引っ張るスピードを変えてみる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "4",
-      "title": "Bubble chasing",
-      "description": "Popping floating bubbles for visual tracking fun",
-      "instructions": [
-        "1. Dip wand in solution",
-        "2. Blow steady stream of bubbles",
-        "3. Point to bubbles",
-        "4. Encourage baby to touch/pop them"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "outdoor",
-      "materials": [
-        "bubble solution",
-        "bubble wand"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "high",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "low",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "beach"
-      ],
-      "skills": [
-        "motor",
-        "cognitive"
-      ],
-      "specialNeeds": [],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Use non-toxic solution only",
-      "parentTips": "Blow downward so bubbles stay in reach",
-      "variations": [
-        "Use automatic bubble blower",
-        "Try giant bubbles"
-      ],
-      "source": "traditional",
-      "tags": [
-        "sensory",
-        "movement"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "4",
+        "title": "シャボン玉追いかけ",
+        "description": "浮かぶシャボン玉を追いかけ、つぶして遊びます。視覚的な追従の練習に",
+        "instructions": [
+            "1. ワンドを液につけます",
+            "2. 穏やかに息を吹きかけ、シャボン玉を飛ばします",
+            "3. シャボン玉を指さして見せます",
+            "4. 赤ちゃんが触ったりつぶしたりするよう促します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "屋外",
+        "materials": [
+            "シャボン玉液",
+            "シャボン玉ワンド"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "高い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "少なめ",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "beach"
+        ],
+        "skills": [
+            "運動",
+            "認知"
+        ],
+        "specialNeeds": [],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "必ずノントキシック（無毒）のシャボン玉液を使用してください",
+        "parentTips": "シャボン玉が赤ちゃんの手の届く高さに留まるよう、下向きに吹くと良いでしょう",
+        "variations": [
+            "自動のシャボン玉マシンを使う",
+            "大きなシャボン玉に挑戦する"
+        ],
+        "source": "traditional",
+        "tags": [
+            "感覚遊び",
+            "運動遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "5",
-      "title": "Rolling ball",
-      "description": "Simple ball-rolling game for interaction",
-      "instructions": [
-        "1. Sit facing baby 3-4 feet apart",
-        "2. Roll ball slowly toward them",
-        "3. Encourage them to push back",
-        "4. Clap when they return it"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "outdoor",
-      "materials": [
-        "soft ball"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "park"
-      ],
-      "skills": [
-        "motor",
-        "social"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Use ball larger than 1.75\" diameter",
-      "parentTips": "Start with very short distances",
-      "variations": [
-        "Add targets to roll toward",
-        "Use textured balls"
-      ],
-      "source": "traditional",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "5",
+        "title": "ボール転がし",
+        "description": "ボールを転がし合うシンプルなやり取り遊び",
+        "instructions": [
+            "1. 赤ちゃんと向かい合い、1mほど離れて座ります",
+            "2. ボールをゆっくり赤ちゃんに向かって転がします",
+            "3. 赤ちゃんが押し返すよう促します",
+            "4. 返ってきたら拍手して喜びます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "屋外",
+        "materials": [
+            "柔らかいボール"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "park"
+        ],
+        "skills": [
+            "運動",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "誤飲防止のため、直径4.5cm（1.75インチ）以上のボールを使用してください",
+        "parentTips": "最初はごく短い距離から始めましょう",
+        "variations": [
+            "転がす的を作って遊ぶ",
+            "触感が異なるボールを使う"
+        ],
+        "source": "traditional",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "6",
-      "title": "Nature walk",
-      "description": "Sensory exploration of outdoor environments",
-      "instructions": [
-        "1. Carry or stroll with baby",
-        "2. Point to interesting natural items",
-        "3. Describe textures/colors/sounds",
-        "4. Let them touch safe plants"
-      ],
-      "ageGroup": "0-2",
-      "duration": 30,
-      "location": "outdoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "low",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "park"
-      ],
-      "skills": [
-        "cognitive",
-        "emotional"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "spring,summer,fall",
-      "safetyNotes": "Avoid poisonous plants and berries",
-      "parentTips": "Bring a bag for collected treasures",
-      "variations": [
-        "Focus on specific senses (sound hunt)"
-      ],
-      "source": "waldorf",
-      "tags": [
-        "nature",
-        "sensory"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "6",
+        "title": "お散歩で自然観察",
+        "description": "外の環境を五感で感じる探索遊び",
+        "instructions": [
+            "1. 抱っこやベビーカーで散歩します",
+            "2. 興味深い自然のものを見つけて指さします",
+            "3. 触感や色、音を言葉で説明します",
+            "4. 安全な植物にそっと触らせてあげます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 30,
+        "location": "屋外",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "少なめ",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "park"
+        ],
+        "skills": [
+            "認知",
+            "情緒"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "春・夏・秋",
+        "safetyNotes": "有毒な植物やベリーには近づかないようにしましょう",
+        "parentTips": "集めたお宝（葉っぱや石など）を入れる袋を持っていくのがおすすめ",
+        "variations": [
+            "特定の感覚に焦点を当てる（音探しなど）"
+        ],
+        "source": "waldorf",
+        "tags": [
+            "自然",
+            "感覚遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "7",
-      "title": "Dance party",
-      "description": "Musical movement with caregiver",
-      "instructions": [
-        "1. Hold baby securely",
-        "2. Play upbeat music",
-        "3. Sway, bounce and spin gently",
-        "4. Change moves with song changes"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "music player"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "motor",
-        "social"
-      ],
-      "specialNeeds": [
-        "adhd-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Support baby's neck; avoid excessive spinning",
-      "parentTips": "Watch for overstimulation cues",
-      "variations": [
-        "Use different music genres",
-        "Add scarves"
-      ],
-      "source": "traditional",
-      "tags": [
-        "music",
-        "movement"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "7",
+        "title": "ダンスパーティー",
+        "description": "音楽に合わせてママと一緒に体を動かす楽しさ",
+        "instructions": [
+            "1. 赤ちゃんの頭と体をしっかり支えて抱っこします",
+            "2. 明るいリズムの音楽を流します",
+            "3. ゆらゆら揺れたり、軽く跳ねたり、優しく回ります",
+            "4. 曲の変化に合わせて動きを変えてみます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "音楽プレイヤー"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "運動",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "ADHDに配慮"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "赤ちゃんの首をしっかり支え、激しい回転は避けましょう",
+        "parentTips": "赤ちゃんの刺激されすぎのサイン（そらす、ぐずる）を見逃さないように",
+        "variations": [
+            "いろいろな音楽のジャンルで試す",
+            "スカーフなどを持たせて遊ぶ"
+        ],
+        "source": "traditional",
+        "tags": [
+            "音楽",
+            "運動遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "8",
-      "title": "Mirror play",
-      "description": "Self-discovery through reflection",
-      "instructions": [
-        "1. Sit with baby before mirror",
-        "2. Make exaggerated facial expressions",
-        "3. Point to features in reflection",
-        "4. Play peek-a-boo with mirror"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "baby-safe mirror"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "social",
-        "emotional"
-      ],
-      "specialNeeds": [
-        "autism-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Use acrylic mirror only",
-      "parentTips": "Start with short 2-minute sessions",
-      "variations": [
-        "Add hats/props",
-        "Make feeling faces"
-      ],
-      "source": "reggio-emilia",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "8",
+        "title": "鏡遊び",
+        "description": "鏡に映る自分を見つめる自己発見の遊び",
+        "instructions": [
+            "1. 赤ちゃんと一緒に鏡の前に座ります",
+            "2. 大きくわかりやすい表情を作って見せます",
+            "3. 映っている顔のパーツを指さして教えます",
+            "4. 鏡を使って「いないいないばあ」をします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "ベビー用安全ミラー"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "社会性",
+            "情緒"
+        ],
+        "specialNeeds": [
+            "自閉症スペクトラムに配慮"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "必ずアクリル製など割れない安全なミラーを使用してください",
+        "parentTips": "最初は2分程度の短い時間から始めましょう",
+        "variations": [
+            "帽子や小物を使って遊ぶ",
+            "いろいろな感情の顔を作ってみる"
+        ],
+        "source": "reggio-emilia",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "9",
-      "title": "Soft toy parade",
-      "description": "Imaginative puppet show with stuffed animals",
-      "instructions": [
-        "1. Line up 3-4 stuffed animals",
-        "2. Animate each with different voices",
-        "3. March them across surfaces",
-        "4. Let baby interact with each"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "stuffed animals"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "low",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "sick-day"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [
-        "quiet-child-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Use toys with embroidered eyes",
-      "parentTips": "Keep stories simple with clear emotions",
-      "variations": [
-        "Create simple narratives",
-        "Add cardboard scenes"
-      ],
-      "source": "waldorf",
-      "tags": [
-        "pretend-play"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "9",
+        "title": "ぬいぐるみパレード",
+        "description": "ぬいぐるみを使った簡単なごっこ遊び",
+        "instructions": [
+            "1. ぬいぐるみを3～4体並べます",
+            "2. それぞれのぬいぐるみに声色を変えて動きをつけます",
+            "3. テーブルなどの上を行進させます",
+            "4. 赤ちゃんがそれぞれのぬいぐるみと触れ合えるようにします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "ぬいぐるみ"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "少なめ",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "病児の日"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "おとなしいお子さん向け"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "取り外し可能な部品のない、刺繍の目をしたおもちゃを使用しましょう",
+        "parentTips": "感情がわかりやすい、シンプルなストーリーにすると良いでしょう",
+        "variations": [
+            "簡単な物語を作る",
+            "段ボールで簡単な背景を作る"
+        ],
+        "source": "waldorf",
+        "tags": [
+            "ごっこ遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "10",
-      "title": "Body parts song",
-      "description": "Interactive song with physical touch",
-      "instructions": [
-        "1. Sit baby facing you",
-        "2. Sing 'Head, Shoulders, Knees and Toes'",
-        "3. Gently touch each body part",
-        "4. Gradually increase speed"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Avoid sensitive areas",
-      "parentTips": "Pause for baby to point to own body",
-      "variations": [
-        "Create original body songs",
-        "Focus on less common parts"
-      ],
-      "source": "traditional",
-      "tags": [
-        "music"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "10",
+        "title": "あたま、かた、ひざ、ポン",
+        "description": "体の部位を触れながら歌う触れ合い遊び",
+        "instructions": [
+            "1. 赤ちゃんと向かい合って座ります",
+            "2. 「あたま、かた、ひざ、ポン」の歌を歌います",
+            "3. 歌詞に合わせて、優しく該当する体の部位に触れます",
+            "4. 慣れてきたら、少しずつテンポを速めてみます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "デリケートな部位は避け、優しくタッチしましょう",
+        "parentTips": "ママが歌う途中で少し間を置き、赤ちゃんが自分の体を指さすのを待ってみましょう",
+        "variations": [
+            "オリジナルの体の歌を作る",
+            "耳たぶや肘など、あまり歌われない部位に焦点を当てる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "音楽"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "11",
-      "title": "Kitchen drum set",
-      "description": "Sensory sound exploration with household items",
-      "instructions": [
-        "1. Arrange pots/pans on floor",
-        "2. Demonstrate tapping with spoons",
-        "3. Let baby explore sounds",
-        "4. Mimic their rhythms"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "indoor",
-      "materials": [
-        "pots",
-        "pans",
-        "wooden spoons"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "high",
-      "kidCount": "1",
-      "supervision": "minimal",
-      "messLevel": "low",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "creative",
-        "motor"
-      ],
-      "specialNeeds": [
-        "adhd-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Remove sharp-edged cookware",
-      "parentTips": "Place on rug to muffle sound",
-      "variations": [
-        "Add water drums",
-        "Vary materials (metal/wood)"
-      ],
-      "source": "reggio-emilia",
-      "tags": [
-        "music",
-        "sensory"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "11",
+        "title": "キッチン太鼓遊び",
+        "description": "家にあるもので音を楽しむ感覚遊び",
+        "instructions": [
+            "1. 床に鍋やフライパンを並べます",
+            "2. スプーンでトントンと叩く様子を見せます",
+            "3. 赤ちゃんが自由に音を探求できるようにします",
+            "4. 赤ちゃんが作るリズムを真似してみます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "室内",
+        "materials": [
+            "鍋",
+            "フライパン",
+            "木べら"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "高い",
+        "kidCount": "1",
+        "supervision": "最小限",
+        "messLevel": "少なめ",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "創造性",
+            "運動"
+        ],
+        "specialNeeds": [
+            "ADHDに配慮"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "縁が鋭い調理器具は使用しないでください",
+        "parentTips": "音を和らげるために、ラグやマットの上で行うと良いでしょう",
+        "variations": [
+            "水を張った容器で音の変化を楽しむ",
+            "素材（金属、木など）を変えてみる"
+        ],
+        "source": "reggio-emilia",
+        "tags": [
+            "音楽",
+            "感覚遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "12",
-      "title": "Cloud watching",
-      "description": "Relaxed outdoor imagination activity",
-      "instructions": [
-        "1. Lie together on blanket",
-        "2. Point out cloud shapes",
-        "3. Create stories about shapes",
-        "4. Discuss cloud movements"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "outdoor",
-      "materials": [
-        "blanket"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "beach"
-      ],
-      "skills": [
-        "cognitive",
-        "creative"
-      ],
-      "specialNeeds": [
-        "quiet-child-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "few",
-      "seasonality": "spring,summer",
-      "safetyNotes": "Use sun protection",
-      "parentTips": "Follow baby's gaze instead of directing",
-      "variations": [
-        "Find shapes in nature",
-        "Night moon watching"
-      ],
-      "source": "waldorf",
-      "tags": [
-        "nature"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "12",
+        "title": "雲の観察",
+        "description": "外でゆったりと空を眺めながら想像力を膨らませる遊び",
+        "instructions": [
+            "1. 一緒に毛布の上に寝転がります",
+            "2. 雲の形を指さして「あれは何に見える？」と声をかけます",
+            "3. 見つけた形についてお話を作ります",
+            "4. 雲の動きについて話してみます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "屋外",
+        "materials": [
+            "毛布"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "beach"
+        ],
+        "skills": [
+            "認知",
+            "創造性"
+        ],
+        "specialNeeds": [
+            "おとなしいお子さん向け"
+        ],
+        "cost": "無料",
+        "repeatability": "few",
+        "seasonality": "春・夏",
+        "safetyNotes": "直射日光を避け、日よけ対策をしましょう",
+        "parentTips": "ママが指示するより、赤ちゃんの見ている方向に合わせて会話をしてみましょう",
+        "variations": [
+            "自然の中にある色々な形を探す",
+            "夜に月や星を観察する"
+        ],
+        "source": "waldorf",
+        "tags": [
+            "自然"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "13",
-      "title": "Airplane baby",
-      "description": "Gentle flying simulation",
-      "instructions": [
-        "1. Lie on back with knees bent",
-        "2. Place baby tummy-down on shins",
-        "3. Support torso securely",
-        "4. Gently rock and lift"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal"
-      ],
-      "skills": [
-        "motor",
-        "emotional"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "few",
-      "seasonality": "any",
-      "safetyNotes": "Avoid after feeding; support neck",
-      "parentTips": "Make engine sounds for engagement",
-      "variations": [
-        "Add 'landings' on soft surfaces"
-      ],
-      "source": "traditional",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "13",
+        "title": "飛行機ごっこ",
+        "description": "優しく空中に浮かぶ感覚を楽しむ遊び",
+        "instructions": [
+            "1. ママは仰向けに寝て、膝を立てます",
+            "2. 赤ちゃんをうつ伏せにし、すねの上に乗せます",
+            "3. 赤ちゃんの体幹をしっかりと支えます",
+            "4. ゆっくりと優しく揺らしたり持ち上げたりします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal"
+        ],
+        "skills": [
+            "運動",
+            "情緒"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "few",
+        "seasonality": "any",
+        "safetyNotes": "授乳直後は避け、首を必ずしっかり支えてください",
+        "parentTips": "飛行機のエンジン音などを真似して、より楽しめるようにしましょう",
+        "variations": [
+            "柔らかいマットや布団の上に「着陸」させて遊ぶ"
+        ],
+        "source": "traditional",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "14",
-      "title": "Tickle game",
-      "description": "Gentle touch anticipation activity",
-      "instructions": [
-        "1. Start with finger circling",
-        "2. Name body part before tickling",
-        "3. Use light, brief touches",
-        "4. Pause for anticipation"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "social",
-        "emotional"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "few",
-      "seasonality": "any",
-      "safetyNotes": "Stop immediately if distressed",
-      "parentTips": "Follow baby's cues for preferred spots",
-      "variations": [
-        "Use feather for light touch"
-      ],
-      "source": "traditional",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "14",
+        "title": "くすぐり遊び",
+        "description": "優しいタッチと期待感で楽しむ触れ合い遊び",
+        "instructions": [
+            "1. 指でくるくると円を描くように動かします",
+            "2. くすぐる前に「おてて～」など部位の名前を言います",
+            "3. 優しく、短くタッチします",
+            "4. 少し間を置いて、期待感を楽しみます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "社会性",
+            "情緒"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "few",
+        "seasonality": "any",
+        "safetyNotes": "赤ちゃんが嫌がる素振りを見せたら、すぐにやめましょう",
+        "parentTips": "赤ちゃんの反応を見ながら、好きな部位で遊んであげましょう",
+        "variations": [
+            "羽根などを使って、より優しいタッチでくすぐる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "15",
-      "title": "Animal sounds",
-      "description": "Vocal imitation game",
-      "instructions": [
-        "1. Choose 3-4 familiar animals",
-        "2. Make exaggerated sounds",
-        "3. Demonstrate matching actions",
-        "4. Encourage imitation"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "car-ride"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Avoid loud noises near ears",
-      "parentTips": "Start with animals baby knows from books",
-      "variations": [
-        "Add animal puppets",
-        "Create silly hybrid animals"
-      ],
-      "source": "traditional",
-      "tags": [
-        "pretend-play"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "15",
+        "title": "動物のまねっこ",
+        "description": "声や動きを真似っこするごっこ遊び",
+        "instructions": [
+            "1. よく知っている動物を3～4種類選びます",
+            "2. 大げさな動物の鳴き声をやって見せます",
+            "3. 鳴き声に合わせた動きも一緒に見せます",
+            "4. 赤ちゃんのまねっこを促します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "car-ride"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "耳元で大きな声を出さないように注意しましょう",
+        "parentTips": "絵本でよく見る動物から始めるのがおすすめです",
+        "variations": [
+            "動物の指人形を使う",
+            "オリジナルの変な動物を考えてみる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "ごっこ遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "16",
-      "title": "Kissing game",
-      "description": "Gentle affection ritual",
-      "instructions": [
-        "1. Name body part before kissing",
-        "2. Use varied sounds (mwah, smooch)",
-        "3. Pause between locations",
-        "4. End with big cuddle"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "emotional",
-        "social"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Respect baby's boundaries",
-      "parentTips": "Follow baby's cues for preferred touch",
-      "variations": [
-        "Add 'raspberries' on tummy"
-      ],
-      "source": "traditional",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "16",
+        "title": "チュッチュ遊び",
+        "description": "優しい愛情を伝える触れ合いの儀式",
+        "instructions": [
+            "1. 「ほっぺにチュー」など部位の名前を言ってからキスします",
+            "2. 「ちゅっ」「むちゅ」など色々な音を楽しみます",
+            "3. 部位を変える時に少し間を置きます",
+            "4. 最後はぎゅっと抱きしめて終わります"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "情緒",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "赤ちゃんの嫌がるそぶりがあったらすぐにやめましょう",
+        "parentTips": "赤ちゃんの反応を見ながら、喜ぶタッチをしてあげましょう",
+        "variations": [
+            "お腹に「ブーブー」と唇を当てる遊びを加える"
+        ],
+        "source": "traditional",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "17",
-      "title": "Lap bounce",
-      "description": "Rhythmic movement to nursery rhymes",
-      "instructions": [
-        "1. Sit with baby facing outward on lap",
-        "2. Bounce rhythmically to rhymes",
-        "3. Incorporate gentle dips",
-        "4. End with 'falling' surprise"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "waiting-room"
-      ],
-      "skills": [
-        "motor",
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Support baby's back/neck",
-      "parentTips": "Match bounce intensity to baby's mood",
-      "variations": [
-        "Add tickles on 'falling'"
-      ],
-      "source": "traditional",
-      "tags": [
-        "music",
-        "movement"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "17",
+        "title": "ひざの上でぴょんぴょん",
+        "description": "童謡に合わせてリズミカルに揺れる遊び",
+        "instructions": [
+            "1. 赤ちゃんをひざの上に前向きに座らせます",
+            "2. 歌に合わせてリズミカルに優しく揺らします",
+            "3. 時々少しだけ体を傾ける動きを加えます",
+            "4. 最後に「落ちた！」と言って少し驚かせます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "待合室"
+        ],
+        "skills": [
+            "運動",
+            "認知"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "赤ちゃんの背中と首をしっかり支えましょう",
+        "parentTips": "赤ちゃんの機嫌に合わせて、揺れの強さを調節しましょう",
+        "variations": [
+            "「落ちた」のところでくすぐりを加える"
+        ],
+        "source": "traditional",
+        "tags": [
+            "音楽",
+            "運動遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "18",
-      "title": "Garden explorer",
-      "description": "Sensory nature exploration",
-      "instructions": [
-        "1. Walk through garden holding baby",
-        "2. Guide hands to touch safe plants",
-        "3. Describe textures/smells",
-        "4. Name plants/insects simply"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "outdoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "low",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal"
-      ],
-      "skills": [
-        "sensory",
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "spring,summer,fall",
-      "safetyNotes": "Avoid toxic plants; wash hands after",
-      "parentTips": "Focus on high-contrast flowers",
-      "variations": [
-        "Plant sensory garden",
-        "Collect fallen petals"
-      ],
-      "source": "waldorf",
-      "tags": [
-        "nature",
-        "sensory"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "18",
+        "title": "お庭探検",
+        "description": "自然のものを五感で感じる探索遊び",
+        "instructions": [
+            "1. 赤ちゃんを抱っこしながらお庭を散歩します",
+            "2. 安全な植物にそっと触れるよう手を導きます",
+            "3. 感触や香りを言葉で説明します",
+            "4. 植物や虫の名前を簡単に教えてあげます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "屋外",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "少なめ",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal"
+        ],
+        "skills": [
+            "感覚",
+            "認知"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "春・夏・秋",
+        "safetyNotes": "有毒な植物は避け、遊んだ後は手を洗いましょう",
+        "parentTips": "色のコントラストがはっきりした花に注目すると喜びます",
+        "variations": [
+            "触って楽しい植物を植えた感覚遊び用のお庭を作る",
+            "落ちている花びらを集める"
+        ],
+        "source": "waldorf",
+        "tags": [
+            "自然",
+            "感覚遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "19",
-      "title": "Pat-a-cake",
-      "description": "Interactive hand-clapping rhyme",
-      "instructions": [
-        "1. Hold baby's hands",
-        "2. Clap hands together rhythmically",
-        "3. Add knee bounces",
-        "4. Finish with big hug on 'throw it in oven'"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal"
-      ],
-      "skills": [
-        "social",
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Be gentle with hand movements",
-      "parentTips": "Slow motion for beginners",
-      "variations": [
-        "Invent personalized verses"
-      ],
-      "source": "traditional",
-      "tags": [
-        "music",
-        "social"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "19",
+        "title": "パタケーキ（手遊び歌）",
+        "description": "手を叩きながら楽しむやり取り遊び",
+        "instructions": [
+            "1. 赤ちゃんの手を優しく持ちます",
+            "2. リズムに合わせて手を叩きます",
+            "3. ひざを軽く上下に動かします",
+            "4. 最後はぎゅっと抱きしめます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal"
+        ],
+        "skills": [
+            "社会性",
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "手の動かし方は優しく行いましょう",
+        "parentTips": "初めての時はゆっくりとした動きから始めましょう",
+        "variations": [
+            "オリジナルの歌詞を作ってみる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "音楽",
+            "社会性"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "20",
-      "title": "This little piggy",
-      "description": "Toe-wiggling rhyme with anticipation",
-      "instructions": [
-        "1. Hold baby's foot",
-        "2. Wiggle each toe while reciting",
-        "3. Add tickle on 'wee wee wee'",
-        "4. Repeat with other foot"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Stop if baby pulls feet away",
-      "parentTips": "Build anticipation with pauses",
-      "variations": [
-        "Create original toe stories"
-      ],
-      "source": "traditional",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "20",
+        "title": "こぶたの親子（足の指遊び）",
+        "description": "足の指を動かしながら楽しむ期待感のある遊び",
+        "instructions": [
+            "1. 赤ちゃんの足を優しく持ちます",
+            "2. 歌に合わせて一つずつ指を動かします",
+            "3. 「こぶたが泣いた」のところで軽くくすぐります",
+            "4. 反対の足でも繰り返します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "赤ちゃんが足を引っ込めたらやめましょう",
+        "parentTips": "間を置くことで期待感を盛り上げましょう",
+        "variations": [
+            "オリジナルの指遊びのお話を作る"
+        ],
+        "source": "traditional",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "21",
-      "title": "Baby yoga",
-      "description": "Gentle stretching and body awareness",
-      "instructions": [
-        "1. Place baby on soft surface",
-        "2. Gently move arms in circles",
-        "3. Slowly bend knees toward tummy",
-        "4. Narrate movements ('Stretch!')"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "motor",
-        "emotional"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Never force movements",
-      "parentTips": "Follow baby's natural range of motion",
-      "variations": [
-        "Add massage strokes",
-        "Incorporate breathing sounds"
-      ],
-      "source": "original",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "21",
+        "title": "ベビーヨガ",
+        "description": "優しいストレッチで体の感覚を育みます",
+        "instructions": [
+            "1. 赤ちゃんを柔らかい場所に寝かせます",
+            "2. 優しく腕を円を描くように動かします",
+            "3. ゆっくりと膝をお腹の方に曲げます",
+            "4. 「のびのびするよ」など声をかけながら動かします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "運動",
+            "情緒"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "無理に動かすことは絶対にやめましょう",
+        "parentTips": "赤ちゃんの自然な可動域を尊重して行いましょう",
+        "variations": [
+            "優しいマッサージを加える",
+            "呼吸の音を真似てみる"
+        ],
+        "source": "original",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "22",
-      "title": "Flying kisses",
-      "description": "Social gesture development",
-      "instructions": [
-        "1. Demonstrate blowing kiss",
-        "2. Gently guide baby's hand",
-        "3. Celebrate attempts",
-        "4. Reciprocate kisses"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "social",
-        "emotional"
-      ],
-      "specialNeeds": [
-        "autism-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "",
-      "parentTips": "Use exaggerated facial expressions",
-      "variations": [
-        "Send kisses to family photos",
-        "Use mirror practice"
-      ],
-      "source": "traditional",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "22",
+        "title": "ちゅっちゅっの飛びキッス",
+        "description": "社会的なジェスチャーを育む遊び",
+        "instructions": [
+            "1. ママが飛びキッスのやり方を見せます",
+            "2. 優しく赤ちゃんの手を導きます",
+            "3. できたことを一緒に喜びます",
+            "4. 赤ちゃんからのキッスに応えてあげます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "社会性",
+            "情緒"
+        ],
+        "specialNeeds": [
+            "自閉症スペクトラムに配慮"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "",
+        "parentTips": "大げさな表情でやって見せると伝わりやすいです",
+        "variations": [
+            "家族の写真に向かって飛びキッス",
+            "鏡の前で練習する"
+        ],
+        "source": "traditional",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "23",
-      "title": "Nursery rhyme time",
-      "description": "Musical storytelling with motions",
-      "instructions": [
-        "1. Choose 2-3 simple rhymes",
-        "2. Sing with exaggerated expressions",
-        "3. Add hand motions",
-        "4. Pause for baby to respond"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Avoid overstimulation before naps",
-      "parentTips": "Repeat favorites for familiarity",
-      "variations": [
-        "Invent verses with baby's name",
-        "Whisper-sing for calm time"
-      ],
-      "source": "traditional",
-      "tags": [
-        "music",
-        "storytelling"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "23",
+        "title": "わらべうたの時間",
+        "description": "歌と動きで楽しむお話し遊び",
+        "instructions": [
+            "1. 簡単なわらべうたを2～3曲選びます",
+            "2. 大げさな表情で歌います",
+            "3. 手の動きをつけます",
+            "4. ところどころで間を置き、赤ちゃんの反応を待ちます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "お昼寝前の刺激が強すぎないように気をつけましょう",
+        "parentTips": "お気に入りの歌は繰り返し歌うと喜びます",
+        "variations": [
+            "赤ちゃんの名前を入れたオリジナルの歌詞を作る",
+            "落ち着いた時間にはささやき声で歌う"
+        ],
+        "source": "traditional",
+        "tags": [
+            "音楽",
+            "お話"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "24",
-      "title": "Up and down",
-      "description": "Vertical movement exploration",
-      "instructions": [
-        "1. Hold baby securely under arms",
-        "2. Lift slowly overhead",
-        "3. Lower gently",
-        "4. Vary speed and sound effects"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal"
-      ],
-      "skills": [
-        "motor",
-        "emotional"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "few",
-      "seasonality": "any",
-      "safetyNotes": "Check ceiling clearance",
-      "parentTips": "Make eye contact during lifts",
-      "variations": [
-        "Add spins",
-        "Incorporate knee bounces"
-      ],
-      "source": "traditional",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "24",
+        "title": "高い高い遊び",
+        "description": "上下の動きを楽しむ遊び",
+        "instructions": [
+            "1. 赤ちゃんのわきの下をしっかり支えます",
+            "2. ゆっくりと頭上まで持ち上げます",
+            "3. 優しく下ろします",
+            "4. スピードや効果音を変えて楽しみます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal"
+        ],
+        "skills": [
+            "運動",
+            "情緒"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "few",
+        "seasonality": "any",
+        "safetyNotes": "天井にぶつからないように注意しましょう",
+        "parentTips": "持ち上げる時に目を合わせるとより楽しめます",
+        "variations": [
+            "回転を加える",
+            "ひざの上で弾む動きと組み合わせる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "25",
-      "title": "Baby sign language",
-      "description": "Early communication development",
-      "instructions": [
-        "1. Choose 3 key signs (milk, more, done)",
-        "2. Consistently sign during activities",
-        "3. Say word while signing",
-        "4. Respond to baby's attempts"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "extended",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "meal",
-        "normal"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [
-        "autism-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "",
-      "parentTips": "Be patient - may take weeks for response",
-      "variations": [
-        "Add emotion signs (happy, hurt)",
-        "Combine with picture cards"
-      ],
-      "source": "original",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 3,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "25",
+        "title": "ベビーサイン",
+        "description": "早い時期からのコミュニケーション発達を促します",
+        "instructions": [
+            "1. 3つの基本サイン（ミルク、もっと、終わり）から始めます",
+            "2. 活動中に一貫してサインを見せます",
+            "3. 言葉に出しながらサインをします",
+            "4. 赤ちゃんのまねっこを褒めて応えます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "時間をかけて",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "食事",
+            "normal"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "自閉症スペクトラムに配慮"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "",
+        "parentTips": "反応があるまで数週間かかることもあるので、気長に続けましょう",
+        "variations": [
+            "感情のサイン（嬉しい、痛い）を加える",
+            "絵カードと組み合わせる"
+        ],
+        "source": "original",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 3,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "26",
-      "title": "Stroller safari",
-      "description": "Outdoor observation and narration",
-      "instructions": [
-        "1. Secure baby in stroller",
-        "2. Narrate surroundings dramatically",
-        "3. Point to interesting sights",
-        "4. Imitate animal/vehicle sounds"
-      ],
-      "ageGroup": "0-2",
-      "duration": 30,
-      "location": "outdoor",
-      "materials": [
-        "stroller"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "grocery-store"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Maintain safe distance from strangers",
-      "parentTips": "Bring textured items for tactile input",
-      "variations": [
-        "Add 'I spy' elements",
-        "Focus on specific colors"
-      ],
-      "source": "original",
-      "tags": [
-        "nature"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "26",
+        "title": "ベビーカーでお散歩サファリ",
+        "description": "外の世界を観察し、語りかけながら楽しむお散歩",
+        "instructions": [
+            "1. 赤ちゃんをベビーカーにしっかり固定します",
+            "2. 周りの景色を劇的に語りかけます",
+            "3. 興味深いものを見つけて指さします",
+            "4. 動物や乗り物の音を真似します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 30,
+        "location": "屋外",
+        "materials": [
+            "ベビーカー"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "grocery-store"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "知らない人とは適切な距離を保ちましょう",
+        "parentTips": "触感の異なるおもちゃを持っていくとさらに楽しめます",
+        "variations": [
+            "「きっとみつかるかな」ゲームの要素を取り入れる",
+            "特定の色に注目して探す"
+        ],
+        "source": "original",
+        "tags": [
+            "自然"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "27",
-      "title": "Color tour",
-      "description": "Visual discrimination practice",
-      "instructions": [
-        "1. Carry baby around room",
-        "2. Point to objects of one color",
-        "3. Name color repeatedly",
-        "4. Let baby touch identified items"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Avoid small objects",
-      "parentTips": "Start with high-contrast colors (red/black)",
-      "variations": [
-        "Create color treasure hunts",
-        "Use colored scarves"
-      ],
-      "source": "montessori",
-      "tags": [
-        "cognitive"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "27",
+        "title": "色探検",
+        "description": "色の違いを見分ける視覚的な遊び",
+        "instructions": [
+            "1. 赤ちゃんを抱っこして部屋の中を移動します",
+            "2. 特定の色の物を指さします",
+            "3. 色の名前を何度も繰り返します",
+            "4. 見つけた物に触らせてあげます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "認知"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "小さな物は避けましょう",
+        "parentTips": "最初は赤/黒などコントラストのはっきりした色から始めると良いでしょう",
+        "variations": [
+            "色を使った宝探しゲーム",
+            "カラースカーフを使う"
+        ],
+        "source": "montessori",
+        "tags": [
+            "認知"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "28",
-      "title": "Tummy time fun",
-      "description": "Muscle development during prone position",
-      "instructions": [
-        "1. Place baby on tummy on mat",
-        "2. Position high-contrast toy slightly out of reach",
-        "3. Encourage reaching",
-        "4. Cheer all efforts"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [
-        "tummy time mat",
-        "high-contrast toys"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Always supervise tummy time",
-      "parentTips": "Place rolled towel under chest for support",
-      "variations": [
-        "Add unbreakable mirror",
-        "Use light-up toys"
-      ],
-      "source": "original",
-      "tags": [
-        "motor"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "28",
+        "title": "うつぶせ遊び",
+        "description": "うつぶせの姿勢で筋力の発達を促す遊び",
+        "instructions": [
+            "1. 赤ちゃんをマットの上にうつぶせに寝かせます",
+            "2. 少し手が届かない所にコントラストの高いおもちゃを置きます",
+            "3. 手を伸ばすよう促します",
+            "4. がんばりを褒めてあげます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [
+            "うつぶせ用マット",
+            "コントラストの高いおもちゃ"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "うつぶせの時は必ず見守りましょう",
+        "parentTips": "胸の下に丸めたタオルを置くとやりやすいです",
+        "variations": [
+            "割れないミラーを置く",
+            "光るおもちゃを使う"
+        ],
+        "source": "original",
+        "tags": [
+            "運動"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "29",
-      "title": "Baby book club",
-      "description": "Early literacy introduction",
-      "instructions": [
-        "1. Hold baby on lap facing book",
-        "2. Point to pictures while naming",
-        "3. Use varied voices for characters",
-        "4. Let baby turn sturdy pages"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "board books"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "bedtime"
-      ],
-      "skills": [
-        "cognitive",
-        "social"
-      ],
-      "specialNeeds": [
-        "quiet-child-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Inspect for loose binding pieces",
-      "parentTips": "Follow baby's interest - don't finish every page",
-      "variations": [
-        "Add tactile elements (fuzzy duck)",
-        "Create photo books"
-      ],
-      "source": "traditional",
-      "tags": [
-        "storytelling"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "29",
+        "title": "絵本タイム",
+        "description": "早い時期から本に親しむ読み聞かせ",
+        "instructions": [
+            "1. 赤ちゃんをひざに乗せ、絵本を見せます",
+            "2. 絵を指さしながら名前を言います",
+            "3. キャラクターごとに声色を変えます",
+            "4. 赤ちゃんに厚紙のページをめくらせてあげます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "ボードブック"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "bedtime"
+        ],
+        "skills": [
+            "認知",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "おとなしいお子さん向け"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "ページのめくり心地などを事前に確認しましょう",
+        "parentTips": "赤ちゃんの興味に合わせて、すべてのページを読まなくても大丈夫です",
+        "variations": [
+            "触って楽しい要素（ふわふわのアヒルなど）を加える",
+            "家族の写真でオリジナル絵本を作る"
+        ],
+        "source": "traditional",
+        "tags": [
+            "お話"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "30",
-      "title": "Silly face contest",
-      "description": "Facial expression imitation",
-      "instructions": [
-        "1. Make exaggerated happy face",
-        "2. Wait for baby to respond",
-        "3. Try surprised/silly faces",
-        "4. Imitate baby's expressions"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "waiting-room"
-      ],
-      "skills": [
-        "social",
-        "emotional"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "",
-      "parentTips": "Use mirror to help baby see expressions",
-      "variations": [
-        "Add sound effects",
-        "Incorporate animal faces"
-      ],
-      "source": "traditional",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "30",
+        "title": "変顔遊び",
+        "description": "顔の表情をまねっこする遊び",
+        "instructions": [
+            "1. 大げさに嬉しそうな顔をします",
+            "2. 赤ちゃんの反応を待ちます",
+            "3. 驚いた顔や変な顔も試します",
+            "4. 赤ちゃんの表情を真似します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "待合室"
+        ],
+        "skills": [
+            "社会性",
+            "情緒"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "",
+        "parentTips": "鏡を使うと、赤ちゃんも自分の表情が見られて楽しめます",
+        "variations": [
+            "効果音を加える",
+            "動物の顔の真似をする"
+        ],
+        "source": "traditional",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "31",
-      "title": "Baby dance party",
-      "description": "Musical exploration through movement",
-      "instructions": [
-        "1. Hold baby securely",
-        "2. Play diverse music styles",
-        "3. Change movements with each song",
-        "4. Watch for engagement cues"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "music player"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "motor",
-        "creative"
-      ],
-      "specialNeeds": [
-        "adhd-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Keep volume moderate",
-      "parentTips": "Notice which rhythms baby prefers",
-      "variations": [
-        "Use scarves for visual tracking",
-        "Try cultural music styles"
-      ],
-      "source": "traditional",
-      "tags": [
-        "music",
-        "movement"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "31",
+        "title": "ベビーダンスパーティー",
+        "description": "音楽に合わせて体を動かす探求遊び",
+        "instructions": [
+            "1. 赤ちゃんをしっかり抱っこします",
+            "2. 様々なジャンルの音楽を流します",
+            "3. 曲が変わるごとに動きを変えます",
+            "4. 赤ちゃんの楽しんでいる様子を見ながら行います"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "音楽プレイヤー"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "運動",
+            "創造性"
+        ],
+        "specialNeeds": [
+            "ADHDに配慮"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "音量は適度な大きさに保ちましょう",
+        "parentTips": "赤ちゃんが好きなリズムを見つけてみましょう",
+        "variations": [
+            "スカーフを使い視覚的に楽しむ",
+            "いろいろな国の音楽を試す"
+        ],
+        "source": "traditional",
+        "tags": [
+            "音楽",
+            "運動遊び"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "32",
-      "title": "Where's baby?",
-      "description": "Object permanence development",
-      "instructions": [
-        "1. Drape breathable cloth over baby",
-        "2. Ask 'Where's baby?'",
-        "3. Wait 2-3 seconds",
-        "4. Remove cloth with 'There you are!'"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [
-        "breathable cloth"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal"
-      ],
-      "skills": [
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Never leave cloth unattended",
-      "parentTips": "Use translucent fabrics first",
-      "variations": [
-        "Partially cover favorite toy",
-        "Let baby pull cloth off"
-      ],
-      "source": "traditional",
-      "tags": [
-        "cognitive"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "32",
+        "title": "いないいない、ばあっ！",
+        "description": "物の永続性の理解を促す遊び",
+        "instructions": [
+            "1. 通気性の良い布で赤ちゃんを優しく覆います",
+            "2. 「赤ちゃん、どこかな？」と声をかけます",
+            "3. 2～3秒待ちます",
+            "4. 布を取り「ばあっ！ここにいたね」と言います"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [
+            "通気性の良い布"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal"
+        ],
+        "skills": [
+            "認知"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "布を放置したままにしないでください",
+        "parentTips": "最初は透ける素材の布から始めると良いでしょう",
+        "variations": [
+            "お気に入りのおもちゃを部分的に隠す",
+            "赤ちゃん自身に布を取らせてみる"
+        ],
+        "source": "traditional",
+        "tags": [
+            "認知"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "33",
-      "title": "Gentle baby exercises",
-      "description": "Range-of-motion activities",
-      "instructions": [
-        "1. Place baby on back",
-        "2. Gently cycle legs",
-        "3. Cross arms over chest",
-        "4. Narrate movements ('Bend! Stretch!')"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Stop if baby resists movement",
-      "parentTips": "Perfect for diaper change transitions",
-      "variations": [
-        "Add nursery rhymes",
-        "Incorporate massage"
-      ],
-      "source": "original",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "33",
+        "title": "ベビー体操",
+        "description": "関節の可動域を広げる優しい運動",
+        "instructions": [
+            "1. 赤ちゃんを仰向けに寝かせます",
+            "2. 優しく足を自転車をこぐように動かします",
+            "3. 腕を胸の前で交差させます",
+            "4. 「曲げて～、のばして～」など声をかけながら動かします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "赤ちゃんが嫌がったらすぐにやめましょう",
+        "parentTips": "おむつ替えの後の習慣にするのがおすすめです",
+        "variations": [
+            "わらべうたを歌いながら行う",
+            "優しいマッサージを組み合わせる"
+        ],
+        "source": "original",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "34",
-      "title": "Baby drumroll",
-      "description": "Tactile anticipation game",
-      "instructions": [
-        "1. Gently drum fingers on baby's tummy",
-        "2. Gradually increase speed",
-        "3. Build anticipation",
-        "4. Finish with gentle raspberry"
-      ],
-      "ageGroup": "0-2",
-      "duration": 5,
-      "location": "indoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "diaper change"
-      ],
-      "skills": [
-        "social",
-        "emotional"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Avoid immediately after feeding",
-      "parentTips": "Watch for cues to adjust pressure",
-      "variations": [
-        "Drum on different body parts",
-        "Add sound effects"
-      ],
-      "source": "traditional",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "34",
+        "title": "お腹でドラムロール",
+        "description": "期待感を楽しむ触覚遊び",
+        "instructions": [
+            "1. 指先で赤ちゃんのお腹を軽くトントン叩きます",
+            "2. だんだんスピードを上げていきます",
+            "3. 期待感を盛り上げます",
+            "4. 最後に優しく「ブーブー」と唇を当てます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 5,
+        "location": "室内",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "diaper change"
+        ],
+        "skills": [
+            "社会性",
+            "情緒"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "授乳直後は避けましょう",
+        "parentTips": "赤ちゃんの反応を見ながら強さを調節しましょう",
+        "variations": [
+            "体のいろいろな部位でやってみる",
+            "効果音を加える"
+        ],
+        "source": "traditional",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "35",
-      "title": "Park bench people watching",
-      "description": "Social observation activity",
-      "instructions": [
-        "1. Sit on park bench with baby",
-        "2. Narrate people's activities",
-        "3. Describe clothing/actions",
-        "4. Wave at friendly passersby"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "outdoor",
-      "materials": [],
-      "prep": "none",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal"
-      ],
-      "skills": [
-        "social",
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "quiet-child-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "spring,summer,fall",
-      "safetyNotes": "Maintain social distancing",
-      "parentTips": "Bring textured toys for tactile input",
-      "variations": [
-        "Focus on specific colors",
-        "Count dogs/birds"
-      ],
-      "source": "original",
-      "tags": [
-        "social"
-      ],
-      "difficulty": 1,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "35",
+        "title": "公園ベンチでひと観察",
+        "description": "社会性を育む観察遊び",
+        "instructions": [
+            "1. 公園のベンチに赤ちゃんと座ります",
+            "2. 人々の活動を語りかけます",
+            "3. 服や行動について説明します",
+            "4. 挨拶してくれた人に手を振り返します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "屋外",
+        "materials": [],
+        "prep": "なし",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal"
+        ],
+        "skills": [
+            "社会性",
+            "認知"
+        ],
+        "specialNeeds": [
+            "おとなしいお子さん向け"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "春・夏・秋",
+        "safetyNotes": "社会的距離を保ちましょう",
+        "parentTips": "触感の違うおもちゃを持っていくとさらに楽しめます",
+        "variations": [
+            "特定の色に注目する",
+            "犬や鳥を数える"
+        ],
+        "source": "original",
+        "tags": [
+            "社会性"
+        ],
+        "difficulty": 1,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "36",
-      "title": "Container play",
-      "description": "Spatial relationship exploration",
-      "instructions": [
-        "1. Provide various containers",
-        "2. Demonstrate filling/dumping",
-        "3. Add safe objects for play",
-        "4. Let baby explore independently"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "indoor",
-      "materials": [
-        "plastic containers",
-        "large toys"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "minimal",
-      "messLevel": "medium",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "cognitive",
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "All items must be larger than toilet paper tube",
-      "parentTips": "Rotate container types for novelty",
-      "variations": [
-        "Add sensory materials (crumpled paper)",
-        "Nest containers"
-      ],
-      "source": "montessori",
-      "tags": [
-        "sensory"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "36",
+        "title": "容器で遊ぼう",
+        "description": "ものの空間的な関係性を探求する遊び",
+        "instructions": [
+            "1. 様々な種類の容器を用意します",
+            "2. ものを入れたり出したりする様子を見せます",
+            "3. 安全なものを中に入れて遊びます",
+            "4. 赤ちゃんが自分で探求できるようにします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "室内",
+        "materials": [
+            "プラスチック容器",
+            "大きめのおもちゃ"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "最小限",
+        "messLevel": "中程度",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "認知",
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "トイレットペーパーの芯を通る大きさのものは使用しないでください",
+        "parentTips": "新鮮さを保つために、時々容器の種類を変えましょう",
+        "variations": [
+            "くしゃくしゃの紙など感覚遊びの素材を加える",
+            "容器を重ねて遊ぶ"
+        ],
+        "source": "montessori",
+        "tags": [
+            "感覚遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "37",
-      "title": "Texture walk",
-      "description": "Tactile sensory exploration",
-      "instructions": [
-        "1. Create safe path with varied surfaces",
-        "2. Hold baby's hands for support",
-        "3. Walk barefoot together",
-        "4. Describe sensations ('bumpy! soft!')"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "carpet",
-        "tile",
-        "foam mat"
-      ],
-      "prep": "extended",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "sensory"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Clear path of hazards",
-      "parentTips": "Check surfaces for splinters/rough edges",
-      "variations": [
-        "Add temperature variations",
-        "Include outdoor textures"
-      ],
-      "source": "reggio-emilia",
-      "tags": [
-        "sensory"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "37",
+        "title": "感触あるさんぽ",
+        "description": "様々な触感を楽しむ感覚遊び",
+        "instructions": [
+            "1. 安全な様々な素材で道を作ります",
+            "2. 赤ちゃんの手を支えながら歩きます",
+            "3. 一緒にはだしで歩きます",
+            "4. 「でこぼこだね」「ふわふわだね」と感触を言葉にします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "カーペット",
+            "タイル",
+            "フォームマット"
+        ],
+        "prep": "時間をかけて",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "感覚"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "道に危険なものがないか確認しましょう",
+        "parentTips": "ささくれやざらざらしたエッジがないか確認しましょう",
+        "variations": [
+            "温度の違いを加える",
+            "屋外の素材も含める"
+        ],
+        "source": "reggio-emilia",
+        "tags": [
+            "感覚遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "38",
-      "title": "Flashlight shadows",
-      "description": "Visual tracking in low light",
-      "instructions": [
-        "1. Dim room slightly",
-        "2. Shine flashlight on wall",
-        "3. Move light slowly",
-        "4. Encourage baby to track movement"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "flashlight"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "bedtime",
-        "rainy-day"
-      ],
-      "skills": [
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "quiet-child-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Never shine directly in eyes",
-      "parentTips": "Use warm white light to reduce glare",
-      "variations": [
-        "Add colored gels",
-        "Create simple shadow shapes"
-      ],
-      "source": "original",
-      "tags": [
-        "sensory"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "38",
+        "title": "懐中電灯で影遊び",
+        "description": "薄暗い中での視覚的な追従遊び",
+        "instructions": [
+            "1. 部屋を少し暗くします",
+            "2. 懐中電灯の光を壁に当てます",
+            "3. 光をゆっくり動かします",
+            "4. 赤ちゃんが光を目で追うよう促します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "懐中電灯"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "bedtime",
+            "雨の日"
+        ],
+        "skills": [
+            "認知"
+        ],
+        "specialNeeds": [
+            "おとなしいお子さん向け"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "絶対に直接目に光を当てないでください",
+        "parentTips": "ギラつきを抑えるため、暖色系の光を使いましょう",
+        "variations": [
+            "色付きのセロファンを加える",
+            "簡単な影の形を作る"
+        ],
+        "source": "original",
+        "tags": [
+            "感覚遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "39",
-      "title": "Laundry basket rides",
-      "description": "Indoor movement adventure",
-      "instructions": [
-        "1. Place baby in sturdy basket",
-        "2. Push slowly on smooth surface",
-        "3. Make vehicle sounds",
-        "4. Add gentle stops/starts"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "laundry basket"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Only on smooth surfaces; avoid tipping",
-      "parentTips": "Add soft blankets for comfort",
-      "variations": [
-        "Create 'tunnel' with chairs",
-        "Add stuffed passengers"
-      ],
-      "source": "original",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "39",
+        "title": "洗濯かごでドライブ",
+        "description": "室内での動きを楽しむ冒険遊び",
+        "instructions": [
+            "1. 赤ちゃんを頑丈なかごの中に座らせます",
+            "2. 滑らかな床の上をゆっくり押します",
+            "3. 乗り物の音を真似します",
+            "4. 優しく止まったり動いたりします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "洗濯かご"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "滑らかな床でのみ行い、転倒に注意しましょう",
+        "parentTips": "快適さのために柔らかい毛布を敷きましょう",
+        "variations": [
+            "椅子で「トンネル」を作る",
+            "ぬいぐるみの同乗者を加える"
+        ],
+        "source": "original",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "40",
-      "title": "Pillow mountain climb",
-      "description": "Gross motor development on soft surfaces",
-      "instructions": [
-        "1. Arrange cushions/pillows on floor",
-        "2. Encourage crawling over obstacles",
-        "3. Spot baby closely",
-        "4. Celebrate 'summit' achievements"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "indoor",
-      "materials": [
-        "couch cushions",
-        "pillows"
-      ],
-      "prep": "extended",
-      "parentEnergy": "medium",
-      "kidEnergy": "high",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "medium",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Keep height below 12 inches",
-      "parentTips": "Place non-slip mats under cushions",
-      "variations": [
-        "Add textured fabrics",
-        "Create 'caves' with blankets"
-      ],
-      "source": "original",
-      "tags": [
-        "motor"
-      ],
-      "difficulty": 3,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "40",
+        "title": "枕の山登り",
+        "description": "柔らかい場所での大きな動きの発達を促す遊び",
+        "instructions": [
+            "1. 床にクッションや枕を並べます",
+            "2. 障害物の上をハイハイするよう促します",
+            "3. すぐ近くで見守ります",
+            "4. 「頂上についたね！」と達成を祝います"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "室内",
+        "materials": [
+            "ソファークッション",
+            "枕"
+        ],
+        "prep": "時間をかけて",
+        "parentEnergy": "中程度",
+        "kidEnergy": "高い",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "中程度",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "高さは30cm以下に抑えましょう",
+        "parentTips": "クッションの下に滑り止めマットを敷きましょう",
+        "variations": [
+            "触感の違う布を加える",
+            "毛布で「洞穴」を作る"
+        ],
+        "source": "original",
+        "tags": [
+            "運動"
+        ],
+        "difficulty": 3,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "41",
-      "title": "Fabric tunnel crawl",
-      "description": "Proprioceptive movement exploration",
-      "instructions": [
-        "1. Drape blankets between furniture",
-        "2. Create low crawl tunnel",
-        "3. Encourage baby to crawl through",
-        "4. Cheer at both ends"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "indoor",
-      "materials": [
-        "blanket"
-      ],
-      "prep": "extended",
-      "parentEnergy": "medium",
-      "kidEnergy": "high",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "low",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Keep tunnel short with clear exit",
-      "parentTips": "Use sheer fabrics for beginners",
-      "variations": [
-        "Add jingle bells inside",
-        "Place favorite toy at end"
-      ],
-      "source": "original",
-      "tags": [
-        "motor"
-      ],
-      "difficulty": 3,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "41",
+        "title": "毛布のトンネルくぐり",
+        "description": "自分の体の動きや位置を感じる探求遊び",
+        "instructions": [
+            "1. 家具の間に毛布をかけます",
+            "2. 低いハイハイ用トンネルを作ります",
+            "3. 赤ちゃんが通り抜けるよう促します",
+            "4. 両端で「やったね！」と声をかけます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "室内",
+        "materials": [
+            "毛布"
+        ],
+        "prep": "時間をかけて",
+        "parentEnergy": "中程度",
+        "kidEnergy": "高い",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "少なめ",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "トンネルは短く、出口がはっきり見えるようにしましょう",
+        "parentTips": "初心者は透ける素材の布から始めると良いでしょう",
+        "variations": [
+            "中に鈴を付ける",
+            "終点にお気に入りのおもちゃを置く"
+        ],
+        "source": "original",
+        "tags": [
+            "運動"
+        ],
+        "difficulty": 3,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "42",
-      "title": "Follow the light",
-      "description": "Visual tracking development",
-      "instructions": [
-        "1. Dim room slightly",
-        "2. Shine flashlight on floor",
-        "3. Move beam slowly",
-        "4. Encourage crawling toward light"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "flashlight"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "bedtime",
-        "rainy-day"
-      ],
-      "skills": [
-        "cognitive",
-        "motor"
-      ],
-      "specialNeeds": [
-        "quiet-child-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Never shine directly in eyes",
-      "parentTips": "Use red light for less stimulating option",
-      "variations": [
-        "Add colored filters",
-        "Reflect off mirrors"
-      ],
-      "source": "original",
-      "tags": [
-        "sensory"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "42",
+        "title": "光を追いかけて",
+        "description": "視覚的な追従能力を育む遊び",
+        "instructions": [
+            "1. 部屋を少し暗くします",
+            "2. 懐中電灯の光を床に当てます",
+            "3. 光の筋をゆっくり動かします",
+            "4. 赤ちゃんが光に向かってハイハイするよう促します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "懐中電灯"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "bedtime",
+            "雨の日"
+        ],
+        "skills": [
+            "認知",
+            "運動"
+        ],
+        "specialNeeds": [
+            "おとなしいお子さん向け"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "絶対に直接目に光を当てないでください",
+        "parentTips": "刺激を抑えたい時は赤い光を使いましょう",
+        "variations": [
+            "色付きフィルターを加える",
+            "鏡に反射させる"
+        ],
+        "source": "original",
+        "tags": [
+            "感覚遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "43",
-      "title": "Sock ball toss",
-      "description": "Coordination practice with soft objects",
-      "instructions": [
-        "1. Roll socks into tight balls",
-        "2. Demonstrate tossing into basket",
-        "3. Hand balls to baby",
-        "4. Celebrate all attempts"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "socks"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "low",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Use socks without small decorations",
-      "parentTips": "Start with very short distances",
-      "variations": [
-        "Use different sized containers",
-        "Add sound-making targets"
-      ],
-      "source": "original",
-      "tags": [
-        "motor"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "43",
+        "title": "靴下ボール投げ",
+        "description": "柔らかいものでする協応動作の練習",
+        "instructions": [
+            "1. 靴下をきつく丸めてボールを作ります",
+            "2. かごに投げ入れる様子を見せます",
+            "3. ボールを赤ちゃんに手渡します",
+            "4. すべての挑戦を褒めてあげます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "靴下"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "少なめ",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "小さな飾りのついていない靴下を使用しましょう",
+        "parentTips": "最初はごく短い距離から始めましょう",
+        "variations": [
+            "大きさの違う容器を使う",
+            "音の出的を加える"
+        ],
+        "source": "original",
+        "tags": [
+            "運動"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "44",
-      "title": "Shadow puppet show",
-      "description": "Imaginative light play",
-      "instructions": [
-        "1. Shine flashlight on wall",
-        "2. Create simple animal shapes",
-        "3. Narrate short stories",
-        "4. Let baby touch shadows"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "flashlight"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "low",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "bedtime",
-        "rainy-day"
-      ],
-      "skills": [
-        "creative",
-        "cognitive"
-      ],
-      "specialNeeds": [
-        "quiet-child-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Never shine directly in eyes",
-      "parentTips": "Keep stories very short",
-      "variations": [
-        "Use baby's hands to make shadows",
-        "Add simple props"
-      ],
-      "source": "original",
-      "tags": [
-        "pretend-play"
-      ],
-      "difficulty": 3,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "44",
+        "title": "影絵遊び",
+        "description": "光を使った想像力豊かな遊び",
+        "instructions": [
+            "1. 懐中電灯の光を壁に当てます",
+            "2. 簡単な動物の形を作ります",
+            "3. 短いお話をします",
+            "4. 赤ちゃんが影に触れられるようにします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "懐中電灯"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "低い",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "bedtime",
+            "雨の日"
+        ],
+        "skills": [
+            "創造性",
+            "認知"
+        ],
+        "specialNeeds": [
+            "おとなしいお子さん向け"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "絶対に直接目に光を当てないでください",
+        "parentTips": "お話はとても短くしましょう",
+        "variations": [
+            "赤ちゃんの手で影を作る",
+            "簡単な小道具を加える"
+        ],
+        "source": "original",
+        "tags": [
+            "ごっこ遊び"
+        ],
+        "difficulty": 3,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "45",
-      "title": "Mirror dancing",
-      "description": "Self-recognition through movement",
-      "instructions": [
-        "1. Hold baby facing mirror",
-        "2. Dance to music",
-        "3. Point to reflections",
-        "4. Make synchronized movements"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "baby-safe mirror"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "moderate",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor",
-        "emotional"
-      ],
-      "specialNeeds": [
-        "autism-friendly"
-      ],
-      "cost": "low",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Ensure mirror is securely mounted",
-      "parentTips": "Use slow movements for easier tracking",
-      "variations": [
-        "Add scarves for visual effect",
-        "Try different dance styles"
-      ],
-      "source": "reggio-emilia",
-      "tags": [
-        "movement"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "45",
+        "title": "鏡の前でダンス",
+        "description": "動きを通した自己認識の遊び",
+        "instructions": [
+            "1. 赤ちゃんを抱っこし、鏡の方に向けます",
+            "2. 音楽に合わせてダンスします",
+            "3. 映っている姿を指さします",
+            "4. 一緒に同じ動きをします"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "ベビー用安全ミラー"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "普通",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動",
+            "情緒"
+        ],
+        "specialNeeds": [
+            "自閉症スペクトラムに配慮"
+        ],
+        "cost": "安価",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "ミラーがしっかり固定されていることを確認しましょう",
+        "parentTips": "追いかけやすいよう、動きはゆっくりにしましょう",
+        "variations": [
+            "視覚効果のためにスカーフを加える",
+            "いろいろなダンススタイルを試す"
+        ],
+        "source": "reggio-emilia",
+        "tags": [
+            "運動遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "46",
-      "title": "Cardboard box car",
-      "description": "Imaginative vehicle play",
-      "instructions": [
-        "1. Decorate large box with crayons",
-        "2. Cut safe entry/exit openings",
-        "3. Place baby inside",
-        "4. Push gently while making engine sounds"
-      ],
-      "ageGroup": "0-2",
-      "duration": 15,
-      "location": "indoor",
-      "materials": [
-        "large cardboard box",
-        "crayons"
-      ],
-      "prep": "extended",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "constant",
-      "messLevel": "low",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "creative",
-        "motor"
-      ],
-      "specialNeeds": [],
-      "cost": "low",
-      "repeatability": "few",
-      "seasonality": "any",
-      "safetyNotes": "Avoid small decorations that could detach",
-      "parentTips": "Add soft blankets for comfort inside",
-      "variations": [
-        "Create 'steering wheel' from paper plate",
-        "Add paper plate wheels"
-      ],
-      "source": "original",
-      "tags": [
-        "pretend-play"
-      ],
-      "difficulty": 3,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "46",
+        "title": "段ボール車",
+        "description": "想像力を働かせる乗り物ごっこ遊び",
+        "instructions": [
+            "1. 大きな段ボールをクレヨンで飾ります",
+            "2. 安全な出入り口を切り取ります",
+            "3. 赤ちゃんを中に座らせます",
+            "4. エンジン音を真似しながら優しく押します"
+        ],
+        "ageGroup": "0-2",
+        "duration": 15,
+        "location": "室内",
+        "materials": [
+            "大きな段ボール箱",
+            "クレヨン"
+        ],
+        "prep": "時間をかけて",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要常時見守り",
+        "messLevel": "少なめ",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "創造性",
+            "運動"
+        ],
+        "specialNeeds": [],
+        "cost": "安価",
+        "repeatability": "few",
+        "seasonality": "any",
+        "safetyNotes": "取れて飲み込める可能性のある小さな飾りは避けましょう",
+        "parentTips": "快適さのために中に柔らかい毛布を敷きましょう",
+        "variations": [
+            "紙皿で「ハンドル」を作る",
+            "紙皿で車輪を付ける"
+        ],
+        "source": "original",
+        "tags": [
+            "ごっこ遊び"
+        ],
+        "difficulty": 3,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "47",
-      "title": "Indoor \"snowball\" fight",
-      "description": "Tactile sensory play with soft objects",
-      "instructions": [
-        "1. Crumple paper into large balls",
-        "2. Sit facing baby",
-        "3. Gently toss balls back and forth",
-        "4. Make soft impact sounds"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "white paper"
-      ],
-      "prep": "quick",
-      "parentEnergy": "low",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "medium",
-      "noiseLevel": "loud",
-      "situations": [
-        "normal",
-        "rainy-day"
-      ],
-      "skills": [
-        "motor",
-        "sensory"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Avoid face; use soft paper only",
-      "parentTips": "Start with slow-motion throws",
-      "variations": [
-        "Use different paper textures",
-        "Add colored paper"
-      ],
-      "source": "original",
-      "tags": [
-        "sensory"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "47",
+        "title": "室内「雪合戦」",
+        "description": "柔らかいものを使った触覚遊び",
+        "instructions": [
+            "1. 紙を大きなボール状に丸めます",
+            "2. 赤ちゃんと向かい合って座ります",
+            "3. 優しくボールを投げ合います",
+            "4. 柔らかい衝突音を立てます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "白い紙"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "低い",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "中程度",
+        "noiseLevel": "大きい",
+        "situations": [
+            "normal",
+            "雨の日"
+        ],
+        "skills": [
+            "運動",
+            "感覚"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "顔は避け、柔らかい紙のみ使用しましょう",
+        "parentTips": "最初はスローモーションの投げ方から始めましょう",
+        "variations": [
+            "違う質感の紙を使う",
+            "色紙を加える"
+        ],
+        "source": "original",
+        "tags": [
+            "感覚遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "48",
-      "title": "Parachute play",
-      "description": "Group sensory experience",
-      "instructions": [
-        "1. Hold bedsheet corners with adults",
-        "2. Place baby in center on floor",
-        "3. Gently lift and lower fabric",
-        "4. Create 'waves' with fabric"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "bedsheet"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "2-4",
-      "supervision": "constant",
-      "messLevel": "none",
-      "noiseLevel": "loud",
-      "situations": [
-        "family"
-      ],
-      "skills": [
-        "sensory",
-        "social"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Keep fabric away from face",
-      "parentTips": "Use sheer fabrics for visual tracking",
-      "variations": [
-        "Place lightweight balls on sheet",
-        "Add gentle music"
-      ],
-      "source": "traditional",
-      "tags": [
-        "sensory"
-      ],
-      "difficulty": 2,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "48",
+        "title": "パラシュート遊び",
+        "description": "みんなでする感覚遊び",
+        "instructions": [
+            "1. 大人でシーツの端を持ちます",
+            "2. 中央の床に赤ちゃんを寝かせます",
+            "3. 布を優しく上下に動かします",
+            "4. 布で「波」を作ります"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "シーツ"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "2-4",
+        "supervision": "要常時見守り",
+        "messLevel": "なし",
+        "noiseLevel": "大きい",
+        "situations": [
+            "家族"
+        ],
+        "skills": [
+            "感覚",
+            "社会性"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "布が顔にかからないようにしましょう",
+        "parentTips": "視覚的な追従のために透ける布を使いましょう",
+        "variations": [
+            "シーツの上に軽いボールを置く",
+            "優しい音楽を加える"
+        ],
+        "source": "traditional",
+        "tags": [
+            "感覚遊び"
+        ],
+        "difficulty": 2,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
-      "id": "49",
-      "title": "Sensory balance beam",
-      "description": "Vestibular development activity",
-      "instructions": [
-        "1. Create straight line with tape",
-        "2. Hold baby's hands",
-        "3. Walk slowly along line",
-        "4. Cheer at completion"
-      ],
-      "ageGroup": "0-2",
-      "duration": 10,
-      "location": "indoor",
-      "materials": [
-        "masking tape"
-      ],
-      "prep": "quick",
-      "parentEnergy": "medium",
-      "kidEnergy": "medium",
-      "kidCount": "1",
-      "supervision": "active",
-      "messLevel": "none",
-      "noiseLevel": "quiet",
-      "situations": [
-        "normal",
-        "playtime"
-      ],
-      "skills": [
-        "motor"
-      ],
-      "specialNeeds": [
-        "sensory-friendly"
-      ],
-      "cost": "free",
-      "repeatability": "many",
-      "seasonality": "any",
-      "safetyNotes": "Use painter's tape for easy removal",
-      "parentTips": "Make wide paths for beginners",
-      "variations": [
-        "Create curved paths",
-        "Add texture changes"
-      ],
-      "source": "original",
-      "tags": [
-        "motor"
-      ],
-      "difficulty": 3,
-      "popularity": 0.0,
-      "lastUpdated": "2025-01-15T10:30:00Z"
+        "id": "49",
+        "title": "センサリーバランスビーム",
+        "description": "バランス感覚を養う遊び",
+        "instructions": [
+            "1. テープでまっすぐな線を作ります",
+            "2. 赤ちゃんの手を支えます",
+            "3. 線に沿ってゆっくり歩きます",
+            "4. 終わったら一緒に喜びます"
+        ],
+        "ageGroup": "0-2",
+        "duration": 10,
+        "location": "室内",
+        "materials": [
+            "マスキングテープ"
+        ],
+        "prep": "簡単",
+        "parentEnergy": "中程度",
+        "kidEnergy": "中程度",
+        "kidCount": "1",
+        "supervision": "要見守り",
+        "messLevel": "なし",
+        "noiseLevel": "静か",
+        "situations": [
+            "normal",
+            "playtime"
+        ],
+        "skills": [
+            "運動"
+        ],
+        "specialNeeds": [
+            "感覚に優しい"
+        ],
+        "cost": "無料",
+        "repeatability": "many",
+        "seasonality": "any",
+        "safetyNotes": "剥がしやすい養生テープを使用しましょう",
+        "parentTips": "初心者は広い道から始めましょう",
+        "variations": [
+            "曲がった道を作る",
+            "感触の変化を加える"
+        ],
+        "source": "original",
+        "tags": [
+            "運動"
+        ],
+        "difficulty": 3,
+        "popularity": 0.0,
+        "lastUpdated": "2025-01-15T10:30:00Z"
     },
     {
         "id": "50",
