@@ -2959,24 +2959,39 @@
                     ${loadingText}
                 </div>
             `;
-        
-            // Construct the JSON URL with the current language (en, fr, jp)
-            const jsonUrl = `${BASE_JSON_URL}activities-${currentAgeGroup}-${currentLang}.json`;
-        
+            
+            // Map language codes to file suffixes
+            const langSuffixMap = {
+                'en': 'en',
+                'fr': 'fr',
+                'ja': 'jp'  // Map 'ja' (app language code) to 'jp' (file suffix)
+            };
+            
+            const fileSuffix = langSuffixMap[currentLang] || 'en';  // Default to English if unknown
+            
+            // Construct the JSON URL with language
+            const jsonUrl = `${BASE_JSON_URL}activities-${currentAgeGroup}-${fileSuffix}.json`;
+            
             // Try to fetch language-specific activities first
             fetch(jsonUrl)
                 .then(response => {
                     if (!response.ok) {
                         // Fall back to English if language-specific file doesn't exist
-                        console.warn(`No ${currentLang} activities found, falling back to English`);
+                        console.warn(`No ${fileSuffix} activities found, falling back to English`);
                         return fetch(`${BASE_JSON_URL}activities-${currentAgeGroup}-en.json`);
                     }
                     return response;
                 })
                 .then(response => response.json())
                 .then(data => {
-                    // New structure: data is always an array
-                    activitiesData = data;
+                    // Handle both new and old JSON structures
+                    if (Array.isArray(data)) {
+                        activitiesData = data; // New structure is an array
+                    } else if (data.activities && Array.isArray(data.activities)) {
+                        activitiesData = data.activities; // Old structure has activities property
+                    } else {
+                        throw new Error('Invalid JSON structure');
+                    }
                     filterAndRenderActivities();
                     updateFilterAvailability();
                 })
