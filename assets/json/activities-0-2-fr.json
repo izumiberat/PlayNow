@@ -1,1 +1,3567 @@
-
+{
+  "activities": [
+    {
+      "id": "1",
+      "title": "Coucou avec une couverture",
+      "description": "Le jeu classique de cache-cache qui ravit les bébés",
+      "instructions": [
+        "1. Tiens une couverture entre toi et ton bébé",
+        "2. Attends 2-3 secondes",
+        "3. Découvre ton visage rapidement en disant 'Coucou !'",
+        "4. Répète en variant le moment où tu apparais"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [
+        "couverture"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "jour de pluie",
+        "salle d'attente"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly",
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Retire toujours la couverture immédiatement après le jeu",
+      "parentTips": "Utilise des tissus à contraste élevé pour stimuler sa vision",
+      "variations": [
+        "Utilise tes mains au lieu d'une couverture",
+        "Laisse bébé tirer la couverture"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Empiler des gobelets",
+      "description": "Construire et faire tomber des tours colorées",
+      "instructions": [
+        "1. Montre-lui comment empiler les gobelets",
+        "2. Donne-lui les gobelets",
+        "3. Encourage-le quand il en empile un",
+        "4. Fête la chute de la tour avec lui"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "gobelets à empiler"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "jour de pluie",
+        "jour de maladie"
+      ],
+      "skills": [
+        "moteur",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que les gobelets sont trop grands pour être avalés",
+      "parentTips": "Commence avec seulement 3-4 gobelets pour les débutants",
+      "variations": [
+        "Cache de gros jouets sous les gobelets",
+        "Trie-les par couleur"
+      ],
+      "source": "traditional",
+      "tags": [
+        "building"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Le traîneau-couverture",
+      "description": "Promenade tout en douceur pour s'amuser en bougeant",
+      "instructions": [
+        "1. Assieds ton bébé sur la couverture",
+        "2. Tiens fermement les coins de la couverture",
+        "3. Tire doucement sur une surface lisse",
+        "4. Fais des sons de moteur 'vroom' pendant la balade"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [
+        "couverture"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Uniquement sur des sols lisses et sans obstacles",
+      "parentTips": "Mets-toi à genoux pour mieux contrôler à la hauteur de ton bébé",
+      "variations": [
+        "Ajoute des peluches comme passagers",
+        "Varie la vitesse de traction"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Chasse aux bulles",
+      "description": "Éclater des bulles flottantes pour suivre des yeux et s'amuser",
+      "instructions": [
+        "1. Trempe la baguette dans la solution",
+        "2. Souffle un flux régulier de bulles",
+        "3. Montre les bulles du doigt",
+        "4. Encourage bébé à les toucher ou les éclater"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [
+        "solution à bulles",
+        "baguette à bulles"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "beach"
+      ],
+      "skills": [
+        "moteur",
+        "cognitif"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise uniquement une solution non toxique",
+      "parentTips": "Souffle vers le bas pour que les bulles restent à sa portée",
+      "variations": [
+        "Utilise un machine à bulles automatique",
+        "Essaie de faire des bulles géantes"
+      ],
+      "source": "traditional",
+      "tags": [
+        "sensory",
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "5",
+      "title": "Rouler le ballon",
+      "description": "Un jeu simple de ballon pour interagir",
+      "instructions": [
+        "1. Assieds-toi face à ton bébé, à 1-2 mètres",
+        "2. Fais rouler le ballon doucement vers lui",
+        "3. Encourage-le à le repousser",
+        "4. Applaudis quand il te le renvoie"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "en extérieur",
+      "materials": [
+        "ballon mou"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "park"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise un ballon de plus de 4,5 cm de diamètre",
+      "parentTips": "Commence avec de très courtes distances",
+      "variations": [
+        "Ajoute des cibles à viser",
+        "Utilise des ballons avec des textures"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Balade nature",
+      "description": "Exploration sensorielle de l'environnement extérieur",
+      "instructions": [
+        "1. Porte bébé ou promène-le en poussette",
+        "2. Montre-lui des éléments naturels intéressants",
+        "3. Décris les textures, les couleurs et les sons",
+        "4. Laisse-le toucher des plantes sans danger"
+      ],
+      "ageGroup": "0-2",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "park"
+      ],
+      "skills": [
+        "cognitif",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "spring,summer,fall",
+      "safetyNotes": "Évite les plantes et baies toxiques",
+      "parentTips": "Prends un sac pour ramasser ses trésors",
+      "variations": [
+        "Concentre-toi sur des sens spécifiques (chasse aux sons)"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature",
+        "sensory"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "7",
+      "title": "Boum dansante",
+      "description": "Mouvement musical avec toi",
+      "instructions": [
+        "1. Maintiens ton bébé en sécurité",
+        "2. Mets de la musique entraînante",
+        "3. Balance-toi, sautille et tourne doucement",
+        "4. Change de mouvement quand la chanson change"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "lecteur de musique"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "moteur",
+        "social"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Soutiens bien sa nuque ; évite de tourner trop vite",
+      "parentTips": "Observe les signes de sur-stimulation",
+      "variations": [
+        "Essaie différents genres de musique",
+        "Ajoute des foulards"
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "8",
+      "title": "Jeu du miroir",
+      "description": "Découverte de soi grâce au reflet",
+      "instructions": [
+        "1. Assieds-toi avec ton bébé devant un miroir",
+        "2. Fais de grandes grimaces",
+        "3. Montre les traits de son visage dans le reflet",
+        "4. Joue à coucou avec le miroir"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "miroir sans danger pour bébé"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise uniquement un miroir en acrylique",
+      "parentTips": "Commence par de courtes sessions de 2 minutes",
+      "variations": [
+        "Ajoute des chapeaux ou accessoires",
+        "Joue à faire des têtes d'émotions"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "9",
+      "title": "Parade des doudous",
+      "description": "Petit spectacle de marionnettes imaginaire avec des peluches",
+      "instructions": [
+        "1. Aligne 3-4 peluches",
+        "2. Anime chacune avec une voix différente",
+        "3. Fais-les défiler sur la table ou le sol",
+        "4. Laisse ton bébé interagir avec chacune"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "peluches"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "jour de maladie"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise des jouets avec des yeux brodés",
+      "parentTips": "Garde les histoires simples avec des émotions claires",
+      "variations": [
+        "Crée de simples histoires",
+        "Ajoute des décors en carton"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "10",
+      "title": "Chanson des parties du corps",
+      "description": "Chanson interactive avec un toucher physique",
+      "instructions": [
+        "1. Assieds ton bébé face à toi",
+        "2. Chante 'Tête, épaules, genoux et pieds'",
+        "3. Touche doucement chaque partie du corps",
+        "4. Accélère progressivement le rythme"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les zones sensibles",
+      "parentTips": "Fais une pause pour laisser bébé montrer ses propres parties du corps",
+      "variations": [
+        "Invente tes propres chansons",
+        "Concentre-toi sur des parties moins communes"
+      ],
+      "source": "traditional",
+      "tags": [
+        "music"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "11",
+      "title": "Batterie de cuisine",
+      "description": "Exploration sensorielle des sons avec des objets du quotidien",
+      "instructions": [
+        "1. Dispose des casseroles et poêles sur le sol",
+        "2. Montre-lui comment taper avec des cuillères en bois",
+        "3. Laisse bébé explorer les sons",
+        "4. Reprends ses rythmes"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "casseroles",
+        "poêles",
+        "cuillères en bois"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "élevée",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Retire les ustensiles avec des bords tranchants",
+      "parentTips": "Place tout sur un tapis pour atténuer le son",
+      "variations": [
+        "Ajoute des récipients avec de l'eau",
+        "Varie les matériaux (métal/bois)"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "music",
+        "sensory"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "12",
+      "title": "Observer les nuages",
+      "description": "Activité calme en extérieur pour stimuler l'imagination",
+      "instructions": [
+        "1. Allonge-toi avec lui sur une couverture",
+        "2. Montre-lui les formes des nuages",
+        "3. Invente des histoires sur ces formes",
+        "4. Discutez de leur mouvement"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [
+        "couverture"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "beach"
+      ],
+      "skills": [
+        "cognitif",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "spring,summer",
+      "safetyNotes": "Pense à la protection solaire",
+      "parentTips": "Suis son regard au lieu de le diriger",
+      "variations": [
+        "Cherche des formes dans la nature",
+        "Observe la lune la nuit"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "13",
+      "title": "Bébé avion",
+      "description": "Simulation de vol en douceur",
+      "instructions": [
+        "1. Allonge-toi sur le dos, genoux pliés",
+        "2. Pose bébé sur le ventre sur tes tibias",
+        "3. Maintiens bien son torse",
+        "4. Balance et soulève-le doucement"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "moteur",
+        "emotional"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "À éviter après le repas ; soutiens bien sa nuque",
+      "parentTips": "Fais des bruits de moteur pour le captiver",
+      "variations": [
+        "Ajoute des 'atterrissages' sur des surfaces moelleuses"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "14",
+      "title": "Jeu des chatouilles",
+      "description": "Activité d'anticipation par le toucher en douceur",
+      "instructions": [
+        "1. Commence par faire circuler ton doigt",
+        "2. Nomme la partie du corps avant de chatouiller",
+        "3. Utilise des touches légères et brèves",
+        "4. Fais une pause pour créer de l'anticipation"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Arrête immédiatement s'il est contrarié",
+      "parentTips": "Observe ses réactions pour connaître ses endroits préférés",
+      "variations": [
+        "Utilise une plume pour un toucher très léger"
+      ],
+      "source": "traditional",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "15",
+      "title": "Cris des animaux",
+      "description": "Jeu d'imitation vocale",
+      "instructions": [
+        "1. Choisis 3-4 animaux familiers",
+        "2. Fais des sons exagérés",
+        "3. Montre les gestes qui vont avec",
+        "4. Encourage-le à t'imiter"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "car-ride"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les bruits forts près des oreilles",
+      "parentTips": "Commence avec des animaux qu'il connaît grâce aux livres",
+      "variations": [
+        "Ajoute des marionnettes d'animaux",
+        "Invente des animaux hybrides rigolos"
+      ],
+      "source": "traditional",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "16",
+      "title": "Jeu des bisous",
+      "description": "Rituel de tendresse en douceur",
+      "instructions": [
+        "1. Nomme la partie du corps avant d’embrasser",
+        "2. Varie les sons (mwah, smack)",
+        "3. Fais une pause entre chaque endroit",
+        "4. Termine par un gros câlin"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "emotional",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Respecte les limites de ton bébé",
+      "parentTips": "Observe ses réactions pour savoir quels contacts il préfère",
+      "variations": [
+        "Ajoute des 'brassés' sur le ventre"
+      ],
+      "source": "traditional",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "17",
+      "title": "Bébé saute sur les genoux",
+      "description": "Mouvement rythmé sur des comptines",
+      "instructions": [
+        "1. Assieds-toi avec bébé face à toi sur tes genoux",
+        "2. Fais-le sauter en rythme sur les comptines",
+        "3. Ajoute de légères descentes",
+        "4. Termine par une chute surprise"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "salle d'attente"
+      ],
+      "skills": [
+        "moteur",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Soutiens bien son dos et sa nuque",
+      "parentTips": "Ajuste l'intensité des sauts à son humeur",
+      "variations": [
+        "Ajoute des chatouilles pendant la 'chute'"
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "18",
+      "title": "Explorateur du jardin",
+      "description": "Exploration sensorielle de la nature",
+      "instructions": [
+        "1. Promène-toi dans le jardin en portant bébé",
+        "2. Guide ses mains pour toucher des plantes sans danger",
+        "3. Décris les textures et les odeurs",
+        "4. Nomme simplement les plantes et les insectes"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "sensoriel",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "spring,summer,fall",
+      "safetyNotes": "Évite les plantes toxiques ; lave-toi les mains après",
+      "parentTips": "Concentre-toi sur les fleurs à fort contraste",
+      "variations": [
+        "Plante un jardin sensoriel",
+        "Ramasse des pétales tombés"
+      ],
+      "source": "waldorf",
+      "tags": [
+        "nature",
+        "sensory"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "19",
+      "title": "Pat-a-cake (Jeu de mains)",
+      "description": "Comptine interactive avec des tapes mains",
+      "instructions": [
+        "1. Tiens les mains de ton bébé",
+        "2. Tape dans ses mains en rythme",
+        "3. Ajoute de petits sauts sur les genoux",
+        "4. Termine par un gros câlin à la fin"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "social",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Sois doux avec les mouvements des mains",
+      "parentTips": "Va au ralenti pour les débutants",
+      "variations": [
+        "Invente des paroles personnalisées"
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "social"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "20",
+      "title": "Petit cochon",
+      "description": "Comptine à doigts de pied avec anticipation",
+      "instructions": [
+        "1. Tiens le pied de ton bébé",
+        "2. Remue chaque orteil en récitant la comptine",
+        "3. Ajoute une chatouille sur 'et puis court au marché'",
+        "4. Répète avec l'autre pied"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Arrête si bébé retire ses pieds",
+      "parentTips": "Crée de l'anticipation avec des pauses",
+      "variations": [
+        "Invente des histoires originales avec les orteils"
+      ],
+      "source": "traditional",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "21",
+      "title": "Yoga pour bébé",
+      "description": "Étirements doux et prise de conscience du corps",
+      "instructions": [
+        "1. Installe ton bébé sur une surface moelleuse",
+        "2. Bouge doucement ses bras en cercle",
+        "3. Plie lentement ses genoux vers son ventre",
+        "4. Commente les mouvements ('On étire !')"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "moteur",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ne force jamais les mouvements",
+      "parentTips": "Respecte l'amplitude naturelle de ses mouvements",
+      "variations": [
+        "Ajoute des effleurages de massage",
+        "Incorpore des sons de respiration"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "22",
+      "title": "Bisous volants",
+      "description": "Développement des gestes sociaux",
+      "instructions": [
+        "1. Montre-lui comment envoyer un bisou",
+        "2. Guide doucement sa main",
+        "3. Célèbre ses tentatives",
+        "4. Renvoie-lui ses bisous"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Utilise des expressions faciales exagérées",
+      "variations": [
+        "Envoie des bisous à des photos de famille",
+        "Entraîne-toi devant un miroir"
+      ],
+      "source": "traditional",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "23",
+      "title": "Heure des comptines",
+      "description": "Histoires musicales avec des gestes",
+      "instructions": [
+        "1. Choisis 2-3 comptines simples",
+        "2. Chante avec des expressions exagérées",
+        "3. Ajoute des gestes des mains",
+        "4. Fais une pause pour laisser bébé répondre"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite la surstimulation avant la sieste",
+      "parentTips": "Répète ses comptines préférées pour le rassurer",
+      "variations": [
+        "Invente des couplets avec son prénom",
+        "Chuchote pour un moment calme"
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "storytelling"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "24",
+      "title": "Haut et bas",
+      "description": "Exploration du mouvement vertical",
+      "instructions": [
+        "1. Tiens ton bébé fermement sous les bras",
+        "2. Soulève-le doucement au-dessus de ta tête",
+        "3. Redescends-le lentement",
+        "4. Varie la vitesse et ajoute des bruitages"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "moteur",
+        "emotional"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Vérifie qu'il n'y a rien au plafond",
+      "parentTips": "Maintains un contact visuel pendant que tu le soulèves",
+      "variations": [
+        "Ajoute des tours",
+        "Incorpore des sauts sur les genoux"
+      ],
+      "source": "traditional",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "25",
+      "title": "Langage des signes pour bébé",
+      "description": "Développement précoce de la communication",
+      "instructions": [
+        "1. Choisis 3 signes clés (lait, encore, fini)",
+        "2. Utilise les signes systématiquement pendant les activités",
+        "3. Dis le mot en même temps que le signe",
+        "4. Réponds à ses tentatives"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "longue",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "meal",
+        "normal"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Sois patient(e) - une réponse peut prendre des semaines",
+      "variations": [
+        "Ajoute des signes d'émotion (content, bobo)",
+        "Combines avec des cartes images"
+      ],
+      "source": "original",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "26",
+      "title": "Safari en poussette",
+      "description": "Observation et narration en extérieur",
+      "instructions": [
+        "1. Installe confortablement bébé dans sa poussette",
+        "2. Décris ton environnement de façon vivante",
+        "3. Montre-lui les choses intéressantes",
+        "4. Imite le bruit des animaux et des véhicules"
+      ],
+      "ageGroup": "0-2",
+      "duration": 30,
+      "location": "en extérieur",
+      "materials": [
+        "poussette"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "grocery-store"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Garde une distance sûre avec les inconnus",
+      "parentTips": "Apporte des objets texturés pour l'éveil tactile",
+      "variations": [
+        "Ajoute des éléments de 'Je vois'",
+        "Concentre-toi sur des couleurs spécifiques"
+      ],
+      "source": "original",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "27",
+      "title": "Tour des couleurs",
+      "description": "Pratique de la discrimination visuelle",
+      "instructions": [
+        "1. Porte bébé et promène-toi dans la pièce",
+        "2. Montre les objets d'une seule couleur",
+        "3. Nomme la couleur à chaque fois",
+        "4. Laisse bébé toucher les objets identifiés"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les petits objets",
+      "parentTips": "Commence avec des couleurs à fort contraste (rouge/noir)",
+      "variations": [
+        "Organise des chasses au trésor par couleur",
+        "Utilise des foulards colorés"
+      ],
+      "source": "montessori",
+      "tags": [
+        "cognitive"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "28",
+      "title": "Jeu sur le ventre",
+      "description": "Développement musculaire en position ventrale",
+      "instructions": [
+        "1. Place bébé sur le ventre sur un tapis",
+        "2. Positionne un jouet contrasté juste hors de sa portée",
+        "3. Encourage-le à l'attraper",
+        "4. Fête tous ses efforts"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [
+        "tapis d'éveil",
+        "jouets contrastés"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Surveille toujours le temps sur le ventre",
+      "parentTips": "Place une serviette roulée sous sa poitrine pour le soutenir",
+      "variations": [
+        "Ajoute un miroir incassable",
+        "Utilise des jouets lumineux"
+      ],
+      "source": "original",
+      "tags": [
+        "motor"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "29",
+      "title": "Club de lecture pour bébé",
+      "description": "Initiation précoce à la lecture",
+      "instructions": [
+        "1. Assieds bébé sur tes genoux face au livre",
+        "2. Montre les images en les nommant",
+        "3. Utilise des voix différentes pour les personnages",
+        "4. Laisse bébé tourner les pages solides"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "livres cartonnés"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "bedtime"
+      ],
+      "skills": [
+        "cognitif",
+        "social"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Vérifie qu'il n'y a pas de pièces de reliure détachées",
+      "parentTips": "Suis son intérêt - inutile de finir chaque page",
+      "variations": [
+        "Ajoute des éléments tactiles (canard en peluche)",
+        "Crée des livres photos"
+      ],
+      "source": "traditional",
+      "tags": [
+        "storytelling"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "30",
+      "title": "Concours de grimaces",
+      "description": "Imitation d'expressions faciales",
+      "instructions": [
+        "1. Fais une tête joyeuse exagérée",
+        "2. Attends sa réaction",
+        "3. Essaie des têtes surprises/rigolotes",
+        "4. Imite ses expressions"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "salle d'attente"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "",
+      "parentTips": "Utilise un miroir pour l'aider à voir les expressions",
+      "variations": [
+        "Ajoute des bruitages",
+        "Incorpore des têtes d'animaux"
+      ],
+      "source": "traditional",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "31",
+      "title": "Boum dansante pour bébé",
+      "description": "Exploration musicale par le mouvement",
+      "instructions": [
+        "1. Tiens bébé en sécurité",
+        "2. Joue différents styles de musique",
+        "3. Change de mouvement à chaque chanson",
+        "4. Observe ses signes d'intérêt"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "lecteur de musique"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "moteur",
+        "créatif"
+      ],
+      "specialNeeds": [
+        "adhd-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Garde un volume modéré",
+      "parentTips": "Remarque les rythmes que bébé préfère",
+      "variations": [
+        "Utilise des foulards pour le suivi visuel",
+        "Essaie des musiques de différentes cultures"
+      ],
+      "source": "traditional",
+      "tags": [
+        "music",
+        "movement"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "32",
+      "title": "Où est bébé ?",
+      "description": "Développement de la permanence de l'objet",
+      "instructions": [
+        "1. Pose un tissu respirant sur bébé",
+        "2. Demande 'Où est bébé ?'",
+        "3. Attends 2-3 secondes",
+        "4. Retire le tissu en disant 'Te voilà !'"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [
+        "tissu respirant"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ne laisse jamais le tissu sans surveillance",
+      "parentTips": "Commence avec des tissus translucides",
+      "variations": [
+        "Couvre partiellement son jouet préféré",
+        "Laisse bébé retirer le tissu"
+      ],
+      "source": "traditional",
+      "tags": [
+        "cognitive"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "33",
+      "title": "Exercices doux pour bébé",
+      "description": "Activités d'amplitude de mouvement",
+      "instructions": [
+        "1. Allonge bébé sur le dos",
+        "2. Fais doucement pédaler ses jambes",
+        "3. Croise ses bras sur sa poitrine",
+        "4. Commente les mouvements ('Plie ! Étire !')"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Arrête si bébé résiste au mouvement",
+      "parentTips": "Parfait pour les transitions lors du changement de couche",
+      "variations": [
+        "Ajoute des comptines",
+        "Incorpore du massage"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "34",
+      "title": "Roulement de tambour pour bébé",
+      "description": "Jeu d'anticipation tactile",
+      "instructions": [
+        "1. Tapote doucement son ventre avec tes doigts",
+        "2. Accélère progressivement",
+        "3. Crée de l'anticipation",
+        "4. Termine par une petite brise légère"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "changement de couche"
+      ],
+      "skills": [
+        "social",
+        "emotional"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite juste après le repas",
+      "parentTips": "Adapte la pression selon ses réactions",
+      "variations": [
+        "Joue sur différentes parties du corps",
+        "Ajoute des bruitages"
+      ],
+      "source": "traditional",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "35",
+      "title": "Observation sur un banc public",
+      "description": "Activité d'observation sociale",
+      "instructions": [
+        "1. Assieds-toi sur un banc avec bébé",
+        "2. Raconte ce que font les gens",
+        "3. Décris les vêtements et les actions",
+        "4. Fais coucou aux passants sympathiques"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal"
+      ],
+      "skills": [
+        "social",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "spring,summer,fall",
+      "safetyNotes": "Maintiens une distance sociale",
+      "parentTips": "Apporte des jouets texturés pour l'éveil tactile",
+      "variations": [
+        "Concentre-toi sur des couleurs spécifiques",
+        "Compte les chiens/les oiseaux"
+      ],
+      "source": "original",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "36",
+      "title": "Jeu de contenants",
+      "description": "Exploration des relations spatiales",
+      "instructions": [
+        "1. Propose divers contenants",
+        "2. Montre comment les remplir et les vider",
+        "3. Ajoute des objets sûrs pour jouer",
+        "4. Laisse bébé explorer en autonomie"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "contenants en plastique",
+        "gros jouets"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "minimale",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Tous les objets doivent être plus gros qu'un rouleau de papier toilette",
+      "parentTips": "Change le type de contenants pour varier les plaisirs",
+      "variations": [
+        "Ajoute des matières sensorielles (papier froissé)",
+        "Encastre les contenants"
+      ],
+      "source": "montessori",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "37",
+      "title": "Promenade sensorielle",
+      "description": "Exploration sensorielle tactile",
+      "instructions": [
+        "1. Crée un chemin sûr avec différentes surfaces",
+        "2. Tiens les mains de bébé pour le soutenir",
+        "3. Marche pieds nus avec lui",
+        "4. Décris les sensations ('bosselé ! doux !')"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "tapis",
+        "carrelage",
+        "matelas en mousse"
+      ],
+      "prep": "longue",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "sensoriel"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage le chemin de tout danger",
+      "parentTips": "Vérifie les surfaces pour éviter les échardes ou les bords rugueux",
+      "variations": [
+        "Ajoute des variations de température",
+        "Inclus des textures extérieures"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "38",
+      "title": "Jeu d'ombres à la lampe torche",
+      "description": "Suivi visuel dans une lumière tamisée",
+      "instructions": [
+        "1. Tamise légèrement la pièce",
+        "2. Dirige la lampe torche vers le mur",
+        "3. Déplace la lumière lentement",
+        "4. Encourage bébé à suivre le mouvement"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "lampe torche"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "bedtime",
+        "jour de pluie"
+      ],
+      "skills": [
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ne jamais diriger la lumière directement dans les yeux",
+      "parentTips": "Utilise une lumière blanche chaude pour réduire l'éblouissement",
+      "variations": [
+        "Ajoute des filtres de couleur",
+        "Crée des formes d'ombres simples"
+      ],
+      "source": "original",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "39",
+      "title": "Promenade en panier à linge",
+      "description": "Aventure de mouvement à l'intérieur",
+      "instructions": [
+        "1. Place bébé dans un panier solide",
+        "2. Pousse doucement sur une surface lisse",
+        "3. Fais des bruits de véhicule",
+        "4. Ajoute des arrêts et départs en douceur"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "panier à linge"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Uniquement sur surfaces lisses ; évite le basculement",
+      "parentTips": "Ajoute des couvertures douces pour plus de confort",
+      "variations": [
+        "Crée un 'tunnel' avec des chaises",
+        "Ajoute des peluches passagères"
+      ],
+      "source": "original",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "40",
+      "title": "Escalade de la montagne de coussins",
+      "description": "Développement de la motricité globale sur surfaces molles",
+      "instructions": [
+        "1. Dispose des coussins sur le sol",
+        "2. Encourage-le à ramper par-dessus les obstacles",
+        "3. Reste tout près pour le surveiller",
+        "4. Célèbre ses réussites au 'sommet'"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "coussins de canapé",
+        "oreillers"
+      ],
+      "prep": "longue",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Garde une hauteur inférieure à 30 cm",
+      "parentTips": "Place des tapis antidérapants sous les coussins",
+      "variations": [
+        "Ajoute des tissus texturés",
+        "Crée des 'grottes' avec des couvertures"
+      ],
+      "source": "original",
+      "tags": [
+        "motor"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "41",
+      "title": "Ramper dans un tunnel de tissu",
+      "description": "Exploration du mouvement proprioceptif",
+      "instructions": [
+        "1. Drape des couvertures entre les meubles",
+        "2. Crée un tunnel bas pour ramper",
+        "3. Encourage bébé à ramper à travers",
+        "4. Fête son arrivée aux deux extrémités"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "couverture"
+      ],
+      "prep": "longue",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Garde le tunnel court avec une sortie dégagée",
+      "parentTips": "Utilise des tissus transparents pour les débutants",
+      "variations": [
+        "Ajoute des grelots à l'intérieur",
+        "Place son jouet préféré au bout"
+      ],
+      "source": "original",
+      "tags": [
+        "motor"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "42",
+      "title": "Suis la lumière",
+      "description": "Développement du suivi visuel",
+      "instructions": [
+        "1. Tamise légèrement la pièce",
+        "2. Dirige le faisceau de la lampe torche au sol",
+        "3. Déplace le point de lumière lentement",
+        "4. Encourage-le à ramper vers la lumière"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "lampe torche"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "bedtime",
+        "jour de pluie"
+      ],
+      "skills": [
+        "cognitif",
+        "moteur"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ne jamais diriger la lumière directement dans les yeux",
+      "parentTips": "Utilise une lumière rouge pour une option moins stimulante",
+      "variations": [
+        "Ajoute des filtres de couleur",
+        "Réfléchis la lumière avec des miroirs"
+      ],
+      "source": "original",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "43",
+      "title": "Lancer de balles-chaussettes",
+      "description": "Pratique de la coordination avec des objets mous",
+      "instructions": [
+        "1. Roule des chaussettes en boules serrées",
+        "2. Montre comment les lancer dans un panier",
+        "3. Donne les balles à bébé",
+        "4. Célèbre toutes ses tentatives"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "chaussettes"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise des chaussettes sans petites décorations",
+      "parentTips": "Commence avec de très courtes distances",
+      "variations": [
+        "Utilise des contenants de différentes tailles",
+        "Ajoute des cibles qui font du bruit"
+      ],
+      "source": "original",
+      "tags": [
+        "motor"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "44",
+      "title": "Spectacle de marionnettes d'ombres",
+      "description": "Jeu de lumière imaginaire",
+      "instructions": [
+        "1. Éclaire le mur avec une lampe torche",
+        "2. Crée des formes d'animaux simples",
+        "3. Raconte de courtes histoires",
+        "4. Laisse bébé toucher les ombres"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "lampe torche"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "bedtime",
+        "jour de pluie"
+      ],
+      "skills": [
+        "créatif",
+        "cognitif"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ne jamais diriger la lumière directement dans les yeux",
+      "parentTips": "Garde les histoires très courtes",
+      "variations": [
+        "Utilise les mains de bébé pour faire des ombres",
+        "Ajoute des accessoires simples"
+      ],
+      "source": "original",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "45",
+      "title": "Danse devant le miroir",
+      "description": "Reconnaissance de soi par le mouvement",
+      "instructions": [
+        "1. Tiens bébé face au miroir",
+        "2. Danse sur de la musique",
+        "3. Montre les reflets",
+        "4. Fais des mouvements synchronisés"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "miroir sans danger pour bébé"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "autism-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que le miroir est solidement fixé",
+      "parentTips": "Utilise des mouvements lents pour un suivi plus facile",
+      "variations": [
+        "Ajoute des foulards pour un effet visuel",
+        "Essaie différents styles de danse"
+      ],
+      "source": "reggio-emilia",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "46",
+      "title": "Voiture en carton",
+      "description": "Jeu de véhicule imaginaire",
+      "instructions": [
+        "1. Décore une grande boîte avec des crayons",
+        "2. Découpe des ouvertures sûres pour entrer/sortir",
+        "3. Place bébé à l'intérieur",
+        "4. Pousse doucement en faisant des bruits de moteur"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": [
+        "grande boîte en carton",
+        "crayons"
+      ],
+      "prep": "longue",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "faible",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "créatif",
+        "moteur"
+      ],
+      "specialNeeds": [],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Évite les petites décorations qui pourraient se détacher",
+      "parentTips": "Ajoute des couvertures douces pour le confort à l'intérieur",
+      "variations": [
+        "Crée un 'volant' avec une assiette en carton",
+        "Ajoute des roues en assiettes en carton"
+      ],
+      "source": "original",
+      "tags": [
+        "pretend-play"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "47",
+      "title": "Bataille de \"boules de neige\" d'intérieur",
+      "description": "Jeu sensoriel tactile avec des objets mous",
+      "instructions": [
+        "1. Froisse du papier en grosses boules",
+        "2. Assieds-toi face à bébé",
+        "3. Lance doucement les boules d'avant en arrière",
+        "4. Fais des bruits d'impact doux"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "papier blanc"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "moyen",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "normal",
+        "jour de pluie"
+      ],
+      "skills": [
+        "moteur",
+        "sensoriel"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite le visage ; utilise uniquement du papier souple",
+      "parentTips": "Commence avec des lancers au ralenti",
+      "variations": [
+        "Utilise différentes textures de papier",
+        "Ajoute du papier coloré"
+      ],
+      "source": "original",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "48",
+      "title": "Jeu du parachute",
+      "description": "Expérience sensorielle de groupe",
+      "instructions": [
+        "1. Tiens les coins d'un drap avec d'autres adultes",
+        "2. Place bébé au centre, au sol",
+        "3. Soulève et baisse le tissu doucement",
+        "4. Crée des 'vagues' avec le tissu"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "drap"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": [
+        "family"
+      ],
+      "skills": [
+        "sensoriel",
+        "social"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Garde le tissu loin du visage",
+      "parentTips": "Utilise des tissus transparents pour le suivi visuel",
+      "variations": [
+        "Place des balles légères sur le drap",
+        "Ajoute une musique douce"
+      ],
+      "source": "traditional",
+      "tags": [
+        "sensory"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "49",
+      "title": "Poutre d'équilibre sensorielle",
+      "description": "Activité de développement vestibulaire",
+      "instructions": [
+        "1. Crée une ligne droite avec du scotch",
+        "2. Tiens les mains de bébé",
+        "3. Marche lentement le long de la ligne",
+        "4. Applaudis à la fin du parcours"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "scotch de masquage"
+      ],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "normal",
+        "playtime"
+      ],
+      "skills": [
+        "moteur"
+      ],
+      "specialNeeds": [
+        "sensory-friendly"
+      ],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise du scotch peintre pour un retrait facile",
+      "parentTips": "Fais des chemins larges pour les débutants",
+      "variations": [
+        "Crée des chemins courbés",
+        "Ajoute des changements de texture"
+      ],
+      "source": "original",
+      "tags": [
+        "motor"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "50",
+      "title": "\"Lecture\" de photos de famille",
+      "description": "Créer des liens grâce à des images familières",
+      "instructions": [
+        "1. Crée un album photo simple",
+        "2. Montre les visages familiers",
+        "3. Raconte des histoires simples",
+        "4. Nomme les liens familiaux ('Mamie !')"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": [
+        "album photo de famille"
+      ],
+      "prep": "longue",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": [
+        "bedtime",
+        "câlin"
+      ],
+      "skills": [
+        "cognitif",
+        "emotional"
+      ],
+      "specialNeeds": [
+        "quiet-child-friendly"
+      ],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise un format livre cartonné sans petites pièces",
+      "parentTips": "Inclus les animaux et jouets préférés dans les photos",
+      "variations": [
+        "Enregistre des voix de famille disant les prénoms",
+        "Ajoute des éléments texturés"
+      ],
+      "source": "original",
+      "tags": [
+        "storytelling"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "sos1",
+      "title": "Caresses des joues",
+      "description": "Connection par le toucher doux pendant un câlin",
+      "instructions": [
+        "1. Installe-toi confortablement avec bébé sur tes genoux",
+        "2. Caresse doucement sa joue du bout du doigt",
+        "3. Chuchote des mots simples comme 'doux' ou 'doudou'",
+        "4. Reprends ses expressions faciales"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["bedtime", "jour de maladie", "restaurant"],
+      "skills": ["emotional", "social"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que tes ongles sont courts",
+      "parentTips": "Adapte la pression selon ses réactions",
+      "variations": ["Essaie des caresses sur le front ou la paume"],
+      "source": "original",
+      "tags": ["bonding"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:00:00Z"
+    },
+    {
+      "id": "sos2",
+      "title": "Synchronisation respiratoire",
+      "description": "Connection apaisante par la respiration synchronisée",
+      "instructions": [
+        "1. Tiens bébé contre ta poitrine",
+        "2. Respire profondément et lentement",
+        "3. Presse doucement son dos à chaque expiration",
+        "4. Fredonne doucement en expirant"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "constante",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["bedtime", "jour de maladie", "salle d'attente"],
+      "skills": ["emotional"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que son nez est dégagé",
+      "parentTips": "Fonctionne mieux quand bébé est déjà calme",
+      "variations": ["Ajoute un balancement doux"],
+      "source": "original",
+      "tags": ["bonding", "quiet-time"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:05:00Z"
+    },
+    {
+      "id": "sos3",
+      "title": "Jeu des clins d'œil",
+      "description": "Connection silencieuse par le contact visuel",
+      "instructions": [
+        "1. Tiens bébé face à toi",
+        "2.établis un contact visuel et cligne lentement des yeux",
+        "3. Attends qu'il te réponde par un clin d'œil",
+        "4. Souris quand il t'imite"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "n'importe où",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["trajet en voiture", "salle d'attente", "supermarché"],
+      "skills": ["social", "cognitive"],
+      "specialNeeds": ["quiet-child-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Arrête si bébé détourne le regard",
+      "parentTips": "Fonctionne mieux avec les bébés de 6+ mois",
+      "variations": ["Ajoute des claquements de langue"],
+      "source": "original",
+      "tags": ["bonding"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:10:00Z"
+    },
+    {
+      "id": "sos4",
+      "title": "Coucou avec la chaussette",
+      "description": "Jeu de surprise doux utilisant un vêtement",
+      "instructions": [
+        "1. Enlève la chaussette de bébé",
+        "2. Cache la chaussette derrière ton dos",
+        "3. Révèle-la lentement en disant 'coucou !'",
+        "4. Frotte doucement la chaussette sur son ventre"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": ["chaussette de bébé"],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": ["changement de couche", "bedtime"],
+      "skills": ["cognitive", "social"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Évite de couvrir le visage",
+      "parentTips": "Utilise des chaussettes texturées pour plus d'intérêt",
+      "variations": ["Utilise un bavoir à la place"],
+      "source": "traditional",
+      "tags": ["bonding"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:15:00Z"
+    },
+    {
+      "id": "sos5",
+      "title": "Tracé de paume",
+      "description": "Exploration sensorielle des mains",
+      "instructions": [
+        "1. Ouvre la paume de bébé",
+        "2. Trace lentement des cercles avec ton doigt",
+        "3. Presse doucement chaque doigt",
+        "4. Change de main et répète"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "n'importe où",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["salle d'attente", "trajet en voiture", "bedtime"],
+      "skills": ["sensoriel", "moteur"],
+      "specialNeeds": ["autism-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Enlève tes bagues d'abord",
+      "parentTips": "Décris les sensations ('doux', 'chaud')",
+      "variations": ["Trace les pieds à la place"],
+      "source": "original",
+      "tags": ["sensory"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:20:00Z"
+    },
+    {
+      "id": "sos6",
+      "title": "Shaker silencieux",
+      "description": "Bouteille sensorielle avec des ingrédients de cuisine",
+      "instructions": [
+        "1. Remplis une petite bouteille avec 50g de riz",
+        "2. Ferme-la bien avec du scotch",
+        "3. Secoue lentement près de son oreille",
+        "4. Laisse bébé attraper la bouteille"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["bouteille en plastique", "riz", "scotch"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": ["jour de pluie", "salle d'attente"],
+      "skills": ["sensoriel", "moteur"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Surveille s'il porte à la bouche",
+      "parentTips": "Fais-en plusieurs avec différents contenus",
+      "variations": ["Ajoute du colorant alimentaire au riz"],
+      "source": "reggio-emilia",
+      "tags": ["sensory"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:25:00Z"
+    },
+    {
+      "id": "sos7",
+      "title": "Comptines des petons",
+      "description": "Jeu doux avec les pieds sur des comptines",
+      "instructions": [
+        "1. Tiens les pieds de bébé allongé",
+        "2. Fais doucement sauter ses pieds en rythme",
+        "3. Récite 'Petit cochon'",
+        "4. Masse la plante des pieds entre les verses"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": ["changement de couche", "bedtime"],
+      "skills": ["cognitive", "social"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite de chatouiller si bébé résiste",
+      "parentTips": "Utilise une voix chuchotée pour une ambiance calme",
+      "variations": ["Invente des comptines personnalisées"],
+      "source": "traditional",
+      "tags": ["bonding"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:30:00Z"
+    },
+    {
+      "id": "sos8",
+      "title": "Flottement de foulard",
+      "description": "Suivi visuel avec un tissu léger",
+      "instructions": [
+        "1. Tiens un foulard léger au-dessus de bébé",
+        "2. Laisse-le flotter doucement sur lui",
+        "3. Tire lentement le foulard dans son champ de vision",
+        "4. Laisse-le attraper le tissu"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["foulard léger/soie"],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["jeu sur le ventre", "bedtime"],
+      "skills": ["visuel", "moteur"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Ne couvre jamais complètement le visage",
+      "parentTips": "Utilise des motifs à fort contraste pour les jeunes bébés",
+      "variations": ["Ajoute un ventilateur doux pour le mouvement"],
+      "source": "waldorf",
+      "tags": ["sensory"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:35:00Z"
+    },
+    {
+      "id": "sos9",
+      "title": "Échos chuchotés",
+      "description": "Jeu d'imitation vocale",
+      "instructions": [
+        "1. Tiens bébé près de ton visage",
+        "2. Fais des sons doux ('ba', 'da')",
+        "3. Attends qu'il te réponde vocalement",
+        "4. Reprends exactement ses sons"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "n'importe où",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": ["trajet en voiture", "salle d'attente"],
+      "skills": ["social", "langage"],
+      "specialNeeds": ["quiet-child-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Arrête si bébé se détourne",
+      "parentTips": "Commence avec des voyelles pour les jeunes nourrissons",
+      "variations": ["Ajoute des gestes de main aux sons"],
+      "source": "original",
+      "tags": ["bonding"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:40:00Z"
+    },
+    {
+      "id": "sos10",
+      "title": "Saute-sur-les-genoux",
+      "description": "Mouvement doux sur des rythmes simples",
+      "instructions": [
+        "1. Assieds bébé face à toi sur tes genoux",
+        "2. Maintiens-le en sécurité sous les bras",
+        "3. Fais-le sauter doucement sur une comptine simple",
+        "4. Varie la vitesse et l'intensité"
+      ],
+      "ageGroup": "0-2",
+      "duration": 5,
+      "location": "à l'intérieur",
+      "materials": [],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": ["moment d'agitation", "jeu en duo"],
+      "skills": ["moteur", "social"],
+      "specialNeeds": ["adhd-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Soutiens sa nuque pour les jeunes nourrissons",
+      "parentTips": "Utilise des mouvements apaisants pour le calmer",
+      "variations": ["Balancement latéral à la place"],
+      "source": "traditional",
+      "tags": ["movement"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:45:00Z"
+    },
+    {
+      "id": "sos11",
+      "title": "Ombres des mains",
+      "description": "Exploration d'ombres murales",
+      "instructions": [
+        "1. Assieds-toi près d'un mur avec une lampe derrière toi",
+        "2. Fais des formes simples avec tes mains sur le mur",
+        "3. Laisse bébé toucher les ombres",
+        "4. Bouge les doigts lentement"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["lampe"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["bedtime", "jour de pluie"],
+      "skills": ["cognitive", "visuel"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que la lampe est froide et stable",
+      "parentTips": "Idéal pour les bébés qui tiennent assis seuls",
+      "variations": ["Utilise une lampe torche à la place"],
+      "source": "original",
+      "tags": ["sensory"],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:50:00Z"
+    },
+    {
+      "id": "sos12",
+      "title": "Promenade sensorielle",
+      "description": "Exploration sensorielle des pieds",
+      "instructions": [
+        "1. Tiens bébé debout sur le sol",
+        "2. Place différents tissus sous ses pieds",
+        "3. Fais-lui poser le pied doucement sur chaque texture",
+        "4. Décris les sensations ('bosselé', 'doux')"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["chutes de tissu (serviette, soie, moquette)"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": ["jeu sur le ventre", "jeu en duo"],
+      "skills": ["sensoriel", "moteur"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que les tissus sont propres",
+      "parentTips": "Excellent pour les bébés qui ne marchent pas encore",
+      "variations": ["Utilise des objets domestiques comme du papier bulle"],
+      "source": "reggio-emilia",
+      "tags": ["sensory"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T09:55:00Z"
+    },
+    {
+      "id": "sos13",
+      "title": "Marionnettes silencieuses",
+      "description": "Interactions douces avec des marionnettes",
+      "instructions": [
+        "1. Mets une chaussette sur ta main comme marionnette",
+        "2. Fais 'embrasser' différentes parties du corps par la marionnette",
+        "3. Bouge lentement sans parler",
+        "4. Laisse bébé toucher la marionnette"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["chaussette"],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["changement de couche", "jour de maladie"],
+      "skills": ["social", "emotional"],
+      "specialNeeds": ["autism-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les mouvements brusques",
+      "parentTips": "Utilise des expressions faciales exagérées",
+      "variations": ["Ajoute une narration chuchotée"],
+      "source": "original",
+      "tags": ["pretend-play"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T10:00:00Z"
+    },
+    {
+      "id": "sos14",
+      "title": "Défilé de chapeaux",
+      "description": "Jeu de déguisement simple avec des objets domestiques",
+      "instructions": [
+        "1. Rassemble des chapeaux sûrs de la maison",
+        "2. Pose doucement les chapeaux sur ta tête",
+        "3. Laisse bébé enlever chaque chapeau",
+        "4. Pose brièvement le chapeau sur sa tête"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["chapeaux (bonnet, chapeau de soleil, casquette souple)"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": ["moment d'agitation", "jeu en duo"],
+      "skills": ["social", "cognitive"],
+      "specialNeeds": ["adhd-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Évite les cordons ou parties détachables",
+      "parentTips": "Utilise des chapeaux avec différentes textures",
+      "variations": ["Essaie des moufles ou des écharpes"],
+      "source": "traditional",
+      "tags": ["pretend-play"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T10:05:00Z"
+    },
+    {
+      "id": "sos15",
+      "title": "Toucher de bouteilles",
+      "description": "Exploration des températures",
+      "instructions": [
+        "1. Prépare des bouteilles d'eau tiède et fraîche",
+        "2. Enveloppe chacune dans un tissu fin",
+        "3. Touche doucement la peau de bébé avec chacune",
+        "4. Décris les températures"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["2 petites bouteilles", "eau", "tissus fins"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "1",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": ["jour de maladie", "bedtime"],
+      "skills": ["sensoriel", "cognitif"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Teste d'abord les températures sur ton poignet",
+      "parentTips": "Utilise des différences de température légères",
+      "variations": ["Essaie avec différents tissus d'emballage"],
+      "source": "montessori",
+      "tags": ["sensory"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-03-15T10:10:00Z"
+    },
+    {
+      "id": "bday1",
+      "title": "Fête des bulles",
+      "description": "Jeu de bulles fascinant qui ravit les nourrissons et les tout-petits",
+      "instructions": [
+        "1. Installe une machine à bulles dans un espace dégagé",
+        "2. Allume la machine pour libérer les bulles",
+        "3. Porte les bébés qui ne tiennent pas assis seuls pour qu'ils voient les bulles",
+        "4. Encourage les tout-petits mobiles à poursuivre et éclater les bulles"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "en extérieur",
+      "materials": ["machine à bulles", "solution à bulles"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["moteur", "cognitif"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que la solution à bulles est non toxique et surveille près des surfaces glissantes",
+      "parentTips": "Place la machine en hauteur pour éviter que les tout-petits ne la fassent tomber",
+      "variations": ["Fabrique des baguettes à bulles maison", "Ajoute du colorant alimentaire à la solution"],
+      "source": "traditional",
+      "tags": ["sensory", "movement"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday2",
+      "title": "Piscine à balles sensorielle",
+      "description": "Espace de jeu doux avec des balles en plastique pour l'exploration tactile",
+      "instructions": [
+        "1. Remplis une piscine gonflable avec des balles de piscine à balles",
+        "2. Aide les bébés à s'asseoir parmi les balles",
+        "3. Montre aux tout-petits comment lancer et ramasser doucement les balles",
+        "4. Ajoute des jouets doux pour le jeu de découverte"
+      ],
+      "ageGroup": "0-2",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": ["piscine gonflable", "balles de piscine à balles en plastique", "jouets doux"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "moyen",
+      "noiseLevel": "modéré",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["moteur", "sensoriel"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "moyen",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure une surveillance constante pour éviter que les balles ne couvrent les visages",
+      "parentTips": "Utilise des balles plus grandes pour les jeunes bébés pour réduire les risques d'étouffement",
+      "variations": ["Ajoute des balles texturées", "Cache des jouets pour la découverte"],
+      "source": "traditional",
+      "tags": ["sensory", "motor"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday3",
+      "title": "Parade de coucou",
+      "description": "Jeu de cache-cache interactif avec les parents et des jouets doux",
+      "instructions": [
+        "1. Les adultes forment un cercle autour des tout-petits avec un grand drap",
+        "2. Les parents apparaissent derrière le drap avec des peluches/marionnettes",
+        "3. Appelle le nom de l'enfant en apparaissant",
+        "4. Encourage les tout-petits plus âgés à apparaître à leur tour"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["grand drap", "jouets doux", "marionnettes"],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["social", "emotional"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure un espace dégagé sans danger de trébuchement",
+      "parentTips": "Utilise des jouets à fort contraste pour le développement visuel des jeunes bébés",
+      "variations": ["Différents endroits de cachette", "Intégration de personnages favoris"],
+      "source": "traditional",
+      "tags": ["pretend-play", "social"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday4",
+      "title": "Tri de couleurs simple",
+      "description": "Association de couleurs de base avec de gros objets",
+      "instructions": [
+        "1. Dispose des paniers de différentes couleurs",
+        "2. Fournis des blocs ou balles colorés",
+        "3. Montre comment placer les objets dans les paniers correspondants",
+        "4. Félicite les tentatives sans corriger"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": ["paniers colorés", "blocs/balles colorés"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["cognitif", "moteur"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que tous les objets sont trop gros pour être avalés",
+      "parentTips": "Commence avec seulement 2-3 couleurs pour les jeunes tout-petits",
+      "variations": ["Trier par texture", "Ajouter des éléments sonores"],
+      "source": "montessori",
+      "tags": ["cognitive", "motor"],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday5",
+      "title": "Photomaton DIY",
+      "description": "Espace photo simple avec des accessoires sans danger pour bébé",
+      "instructions": [
+        "1. Installe un fond à thème contre un mur",
+        "2. Place des accessoires sans danger dans un panier",
+        "3. Utilise ton téléphone/tablette pour les photos",
+        "4. Prends des photos des bébés avec les parents/accessoires"
+      ],
+      "ageGroup": "0-2",
+      "duration": 20,
+      "location": "à l'intérieur",
+      "materials": ["fond à thème", "accessoires sans danger pour bébé", "téléphone/tablette"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["social", "créatif"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Évite les accessoires avec de petites pièces ou des bords tranchants",
+      "parentTips": "Inclus des accessoires texturés pour l'exploration sensorielle",
+      "variations": ["Fonds à thèmes", "Filtres numériques"],
+      "source": "original",
+      "tags": ["creative", "social"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday6",
+      "title": "Cercle de lecture",
+      "description": "Lecture de groupe avec des livres cartonnés interactifs",
+      "instructions": [
+        "1. Installe les bébés sur les genoux des parents en cercle",
+        "2. Lis des livres cartonnés à fort contraste",
+        "3. Utilise des voix et des bruitages animés",
+        "4. Encourage l'exploration tactile des livres"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["livres cartonnés", "coussins"],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["cognitif", "social"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que les livres sont solides sans parties détachables",
+      "parentTips": "Choisis des livres avec des textures ou des boutons sonores pour captiver",
+      "variations": ["Histoires à thème", "Lecture multilingue"],
+      "source": "traditional",
+      "tags": ["storytelling", "quiet-time"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday7",
+      "title": "Jeu de table à eau",
+      "description": "Exploration sensorielle de l'eau avec des ustensiles sûrs",
+      "instructions": [
+        "1. Remplis la table à eau avec quelques centimètres d'eau",
+        "2. Ajoute des verres, des passoires et des jouets de bain",
+        "3. Montre comment verser et écoper",
+        "4. Surveille de près pendant que les enfants explorent"
+      ],
+      "ageGroup": "0-2",
+      "duration": 20,
+      "location": "en extérieur",
+      "materials": ["table à eau", "verres", "passoires", "jouets de bain"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "constante",
+      "messLevel": "élevé",
+      "noiseLevel": "modéré",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["sensoriel", "moteur"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "summer",
+      "safetyNotes": "Ne laisse jamais les enfants sans surveillance avec de l'eau",
+      "parentTips": "Aie des serviettes à portée de main et utilise de l'eau tiède si possible",
+      "variations": ["Ajoute du colorant alimentaire", "Ajoute des glaçons"],
+      "source": "reggio-emilia",
+      "tags": ["water-play", "sensory"],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday8",
+      "title": "Danse stop pour tout-petits",
+      "description": "Jeu de mouvement musical avec arrêt simple",
+      "instructions": [
+        "1. Joue de la musique enfantine entraînante",
+        "2. Encourage les tout-petits à danser librement",
+        "3. Arrête la musique périodiquement",
+        "4. Montre comment s'arrêter quand la musique s'arrête"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["lecteur de musique", "musique pour enfants"],
+      "prep": "aucune",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "bruyant",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["moteur", "social"],
+      "specialNeeds": ["adhd-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Dégage l'espace des dangers de trébuchement",
+      "parentTips": "Utilise des signaux visuels comme des foulards pour les jeunes tout-petits",
+      "variations": ["Varier les vitesses de musique", "Thèmes de mouvement d'animaux"],
+      "source": "traditional",
+      "tags": ["music", "movement"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday9",
+      "title": "Exploration de pâte à modeler",
+      "description": "Jeu de pâte tactile avec des outils simples",
+      "instructions": [
+        "1. Donne des portions de pâte à modeler sans danger",
+        "2. Propose des outils et emporte-pièces simples",
+        "3. Montre comment appuyer et piquer",
+        "4. Surveille pour éviter qu'ils ne portent à la bouche"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": ["pâte à modeler sans danger pour tout-petits", "outils simples"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "moyen",
+      "noiseLevel": "calme",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["sensoriel", "créatif"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise uniquement des matériaux non toxiques sans danger pour les tout-petits",
+      "parentTips": "Place sur une surface lavable et aie des lingettes à portée de main",
+      "variations": ["Ajoute des éléments naturels", "Pâte parfumée"],
+      "source": "traditional",
+      "tags": ["sensory", "crafts"],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday10",
+      "title": "Ballons en l'air",
+      "description": "Jeu de ballons à frapper doucement",
+      "instructions": [
+        "1. Gonfle plusieurs ballons",
+        "2. Montre comment frapper doucement les ballons",
+        "3. Encourage à garder les ballons en l'air",
+        "4. Célèbre les efforts avec enthousiasme"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["ballons"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["moteur", "social"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "faible",
+      "repeatability": "few",
+      "seasonality": "any",
+      "safetyNotes": "Surveille de près avec les ballons pour prévenir les risques d'étouffement",
+      "parentTips": "Utilise des ballons plus grands pour réduire le risque d'éclatement",
+      "variations": ["Ballons de différentes tailles", "Jeu d'association de couleurs"],
+      "source": "traditional",
+      "tags": ["movement", "motor"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday11",
+      "title": "Mini parcours d'obstacles",
+      "description": "Défis simples de ramper et grimper",
+      "instructions": [
+        "1. Dispose des coussins et oreillers au sol",
+        "2. Ajoute des tunnels pop-up ou des cartons",
+        "3. Montre comment ramper à travers",
+        "4. Encourage les tout-petits à parcourir le circuit"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": ["coussins", "oreillers", "tunnel pop-up"],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "élevée",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "modéré",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["moteur", "cognitif"],
+      "specialNeeds": ["adhd-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure des surfaces d'atterrissage molles et surveille l'escalade",
+      "parentTips": "Garde les obstacles bas pour la sécurité",
+      "variations": ["Ajoute des éléments sensoriels", "Défis chronométrés pour les plus grands"],
+      "source": "traditional",
+      "tags": ["movement", "motor"],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday12",
+      "title": "Capsule temporelle créative",
+      "description": "Création simple d'un souvenir pour le cap de l'anniversaire",
+      "instructions": [
+        "1. Fournis du papier et des tampons encreurs sans danger",
+        "2. Aide à faire une empreinte de main ou de pied",
+        "3. Ajoute la date et le nom de l'enfant",
+        "4. Collectionne dans une boîte souvenir pour les parents"
+      ],
+      "ageGroup": "0-2",
+      "duration": 15,
+      "location": "à l'intérieur",
+      "materials": ["papier", "tampons encreurs sans danger", "boîte souvenir"],
+      "prep": "rapide",
+      "parentEnergy": "moyenne",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": ["anniversaire"],
+      "skills": ["créatif", "social"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "faible",
+      "repeatability": "une fois",
+      "seasonality": "any",
+      "safetyNotes": "Utilise uniquement des encres non toxiques et lavables",
+      "parentTips": "Aie des lingettes à portée de main pour un nettoyage rapide",
+      "variations": ["Ajoute des photos", "Messages des parents"],
+      "source": "original",
+      "tags": ["crafts", "social"],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday13",
+      "title": "Volley-ball doux avec ballon",
+      "description": "Jeu de ballon à taper doucement entre partenaires",
+      "instructions": [
+        "1. Gonfle un gros ballon",
+        "2. Fais asseoir les binômes parent-enfant face à face",
+        "3. Montre comment se renvoyer le ballon doucement",
+        "4. Encourage le jeu coopératif"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["gros ballon"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "moyenne",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "modéré",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["moteur", "social"],
+      "specialNeeds": ["sensory-friendly"],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Utilise des ballons plus grands pour réduire le risque d'étouffement",
+      "parentTips": "Garde de courtes distances pour faciliter la réussite",
+      "variations": ["Utilise des foulards pour un mouvement plus lent", "Ajoute un décompte"],
+      "source": "traditional",
+      "tags": ["movement", "social"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday14",
+      "title": "Surprise de la boîte à mouchoirs",
+      "description": "Développement de la motricité fine en tirant sur des tissus",
+      "instructions": [
+        "1. Fixe une boîte à mouchoirs vide au sol",
+        "2. Remplis-la de chutes de tissu colorées",
+        "3. Montre comment tirer les tissus",
+        "4. Applaudis quand les tout-petits découvrent les couleurs"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["boîte à mouchoirs vide", "chutes de tissu colorées"],
+      "prep": "rapide",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "minimale",
+      "messLevel": "faible",
+      "noiseLevel": "calme",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["moteur", "sensoriel"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "gratuit",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que les tissus sont trop grands pour être avalés",
+      "parentTips": "Utilise différentes textures pour l'exploration sensorielle",
+      "variations": ["Ajoute des grelots", "Varie la difficulté d'extraction"],
+      "source": "montessori",
+      "tags": ["sensory", "motor"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    },
+    {
+      "id": "bday15",
+      "title": "Imitation dans le miroir",
+      "description": "Exploration des expressions faciales avec un miroir sans danger",
+      "instructions": [
+        "1. Place un miroir incassable contre le mur",
+        "2. Assieds-toi avec les bébés face au miroir",
+        "3. Fais des expressions exagérées",
+        "4. Nomme les émotions pendant que vous jouez"
+      ],
+      "ageGroup": "0-2",
+      "duration": 10,
+      "location": "à l'intérieur",
+      "materials": ["miroir incassable"],
+      "prep": "aucune",
+      "parentEnergy": "faible",
+      "kidEnergy": "faible",
+      "kidCount": "2-4",
+      "supervision": "nécessaire",
+      "messLevel": "aucun",
+      "noiseLevel": "calme",
+      "situations": ["anniversaire", "jeu en duo"],
+      "skills": ["emotional", "social"],
+      "specialNeeds": ["sensory-friendly", "autism-friendly"],
+      "cost": "faible",
+      "repeatability": "many",
+      "seasonality": "any",
+      "safetyNotes": "Assure-toi que le miroir est bien positionné et incassable",
+      "parentTips": "Utilise des accessoires à fort contraste près du miroir pour l'intérêt visuel",
+      "variations": ["Ajouter des masques", "Incorporer des bruitages"],
+      "source": "montessori",
+      "tags": ["social", "emotional"],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-20T10:30:00Z"
+    }
+  ]
+}
