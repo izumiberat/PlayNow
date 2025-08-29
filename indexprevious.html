@@ -2864,6 +2864,13 @@
                 filtersExpanded = !filtersExpanded;
                 secondaryFilters.classList.toggle('expanded', filtersExpanded);
                 
+                // NEW: Expand all filter groups when showing more options
+                if (filtersExpanded) {
+                    document.querySelectorAll('#secondary-filters .filter-group').forEach(group => {
+                        group.classList.add('expanded');
+                    });
+                }
+                
                 toggleFiltersBtn.innerHTML = `
                     <i class="fas ${filtersExpanded ? 'fa-minus-circle' : 'fa-plus-circle'}"></i>
                     <span data-i18n="${filtersExpanded ? 'filters.showLess' : 'filters.showMore'}">${filtersExpanded ? 'Show Fewer Options' : 'Show More Options'}</span>
@@ -2881,6 +2888,7 @@
                 }
             });
             
+            // Keep the age group expanded initially, others collapsed
             document.querySelectorAll('.filter-group').forEach(group => {
                 if (group.classList.contains('age-filter-group')) {
                     group.classList.add('expanded');
