@@ -1,1 +1,4400 @@
-
+{
+  "activities": [
+    {
+      "id": "6000",
+      "title": "アルファベットボール遊び",
+      "description": "ボール投げで文字を学ぶゲーム",
+      "instructions": [
+        "1. 屋外で円になって立ちます",
+        "2. 柔らかいボールを投げながら、順番にアルファベットを言いましょう",
+        "3. 上級者向け：単語を綴り、次の人が次の文字を言います",
+        "4. ボールを落としたらすぐに拾いましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 5,
+      "location": "屋外",
+      "materials": [
+        "柔らかいボール"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "普段",
+        "プレイデート"
+      ],
+      "skills": [
+        "学習",
+        "運動",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "障害物のない広いスペースで行いましょう",
+      "parentTips": "まずは大文字から始め、小文字に進みましょう。正解より挑戦したことを褒めてあげて",
+      "variations": [
+        "狭い場所では座って円になりましょう",
+        "数字や数を数えるバージョン",
+        "テーマを決めて（動物、食べ物など）"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす",
+        "学習"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6001",
+      "title": "紙の鎖チャレンジ",
+      "description": "制限時間内に紙の鎖をつなげよう",
+      "instructions": [
+        "1. 紙を約2.5cm×15cmの細長い帯状に切ります",
+        "2. タイマーを10～15分にセットします",
+        "3. 帯の端をテープで留めて輪にします",
+        "4. 次の輪を前の輪に通してつなげます",
+        "5. 時間がきたら鎖の全長を測りましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "色画用紙",
+        "子ども用安全はさみ",
+        "テープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "待合室",
+        "病児の日"
+      ],
+      "skills": [
+        "運動",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け",
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "はさみの使用時は見守りを",
+      "parentTips": "初心者には事前に切った帯を準備して。再生紙の利用もおすすめ",
+      "variations": [
+        "色のパターンに挑戦",
+        "家族で協力して長い鎖作り",
+        "季節の飾り付け"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "工作",
+        "お片付けゲーム"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6002",
+      "title": "ジェスチャーゲーム大会",
+      "description": "言葉を使わずに伝える当てっこゲーム",
+      "instructions": [
+        "1. 年齢に合ったお題を紙切れに書きます",
+        "2. 順番にお題を引き、他の人には見せません",
+        "3. 言葉を使わずにお題を演じます",
+        "4. 他の人は答えを叫びます",
+        "5. 正解したら次の人に交代します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "紙切れ",
+        "ペン"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "レストラン",
+        "旅行"
+      ],
+      "skills": [
+        "社会性",
+        "認知",
+        "感情"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "動き回る時の転倒に注意、周りを片付けましょう",
+      "parentTips": "簡単なカテゴリーから始めましょう。文字が読めない子には絵カードを",
+      "variations": [
+        "動物だけのバージョン",
+        "感情を表すジェスチャー",
+        "困った時は小声でヒントを"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6003",
+      "title": "お庭でキャンプごっこ",
+      "description": "外でブランケットの基地作り",
+      "instructions": [
+        "1. 安定した家具や木にブランケットをかけます",
+        "2. 登らないように、重しで固定します",
+        "3. 中にクッションを入れます",
+        "4. 懐中電灯で雰囲気を出します",
+        "5. 中でお話を作ったり、本を読んだりします"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "屋外",
+      "materials": [
+        "ブランケット",
+        "クッション",
+        "懐中電灯"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "子どもの腰の高さ以上の構造物は避けましょう",
+      "parentTips": "ブランケットの固定は洗濯ばさみが便利。自然の図鑑を入れてテーマを広げて",
+      "variations": [
+        "リビングで室内キャンプ",
+        "テーマに合った本を置いた読書コーナー",
+        "星座早見表を使った星空観察"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び",
+        "自然"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6004",
+      "title": "チョークで障害物コース",
+      "description": "道路に描いて体を動ばすチャレンジ",
+      "instructions": [
+        "1. 道路に10～15の連続した動きを描きます",
+        "2. ケンケンパや平均台の線、ジグザグ道などを入れます",
+        "3. お手本を見せてあげます",
+        "4. コースをクリアする時間を測ります",
+        "5. 要素を消したり動かして新しいコースを作りましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "屋外",
+      "materials": [
+        "道路用チョーク"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "高い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "運動"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "滑りやすい場所は避け、つま先が覆われる靴を履きましょう",
+      "parentTips": "数字のケンケンパや形ジャンプなど、学びを取り入れても",
+      "variations": [
+        "色で動きを分ける",
+        "リーダーに続いて行うバージョン",
+        "室内でカーペットにテープコース"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6005",
+      "title": "トランプで城作り",
+      "description": "トランプを使った構造作り",
+      "instructions": [
+        "1. 安定するようにカードを折ります",
+        "2. 三角の土台を作ります",
+        "3. 縦の支柱を追加します",
+        "4. 慎重に横の梁を渡します",
+        "5. 崩れる前の高さを測りましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "トランプ"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "レストラン",
+        "待合室"
+      ],
+      "skills": [
+        "認知",
+        "運動"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け",
+        "自閉症のお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "崩れて悔しがらないよう見守りを",
+      "parentTips": "まずは5枚でティピー作りから。成功したら写真に残して",
+      "variations": [
+        "みんなで協力して巨大構造物",
+        "ティッシュ箱の土台",
+        "制限時間チャレンジ"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "組み立て遊び"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6006",
+      "title": "ふしぎ箱てさぐりゲーム",
+      "description": "触った感じで当てる感覚遊び",
+      "instructions": [
+        "1. 空き箱に手が入る穴を開けます",
+        "2. いろいろな手触りの物を中に入れます",
+        "3. 子どもは見ないで中の物を触ります",
+        "4. 手触りや形から何かを当てます",
+        "5. 3回まで考えたら正解を見せます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "空き箱",
+        "いろいろな手触りの物（松ぼっくり、スポンジ、鍵など）"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "寝る前",
+        "車移動"
+      ],
+      "skills": [
+        "認知",
+        "感覚"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け",
+        "自閉症のお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "尖ったものや鋭利なものは入れないで",
+      "parentTips": "中身は週替わりで。よく知っている物と新しい物を混ぜて",
+      "variations": [
+        "自然の物だけ",
+        "形当てゲーム",
+        "文字や数字のおもちゃ"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "感覚遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6007",
+      "title": "4スクエアゲーム",
+      "description": "定番の公園ボールゲーム",
+      "instructions": [
+        "1. 4つの四角（一辺約180cm）を線でつなげて描きます",
+        "2. それぞれの四角にプレイヤーを割り当てます",
+        "3. ボールを他の人の四角にバウンドさせます",
+        "4. ボールは別の四角に打ち返さなければなりません",
+        "5. ミス、2回バウンド、反則でアウトになります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "屋外",
+      "materials": [
+        "弾むボール",
+        "チョーク"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "高い",
+      "kidCount": "4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "普段",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "四角の間の境界を明確に保ちましょう",
+      "parentTips": "初心者にはフォームボールを。プレイヤーは頻繁にローテーションさせて",
+      "variations": [
+        "人数が少ない時は3スクエア",
+        "テーマコール（打つ前に動物の鳴き声など）",
+        "利き手ではない手だけ使う"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6008",
+      "title": "つながりお話作り",
+      "description": "みんなで協力して続きを作るお話",
+      "instructions": [
+        "1. 円になって座ります",
+        "2. 最初の一文で始めます",
+        "3. 順番に一文ずつ追加します",
+        "4. 面白い展開や変なところをメモします",
+        "5. ドラマチックな結末で締めくくりましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "中程度",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "寝る前",
+        "車移動",
+        "レストラン"
+      ],
+      "skills": [
+        "創造性",
+        "言語"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "みんなが参加できるテーマを提案して。小道具でアイデアを引き出しても",
+      "variations": [
+        "テーマ制限（宇宙/動物など）",
+        "一言だけ追加",
+        "後でお話の絵を描く"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "お話作り"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6009",
+      "title": "秘密の暗号作り",
+      "description": "自分だけの暗号システムの发明",
+      "instructions": [
+        "1. アルファベットの文字に記号を割り当てます",
+        "2. 暗号の鍵表を作ります",
+        "3. 家族へのメッセージを書きます",
+        "4. 解読してもらうように暗号メモを置きます",
+        "5. 届け方（郵便箱/ドアの下）も考えましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "紙",
+        "鉛筆"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "疲れている時",
+        "レストラン"
+      ],
+      "skills": [
+        "学習",
+        "認知"
+      ],
+      "specialNeeds": [
+        "自閉症のお子様向け",
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "簡単な換字式暗号から始めましょう。メッセージを解読する時は大喜びで",
+      "variations": [
+        "暗号インク（レモン汁）のメッセージ",
+        "数字暗号",
+        "宝探しのヒント"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "学習"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6010",
+      "title": "4コマ漫画作り",
+      "description": "コマ割りで絵を使ってお話を作ろう",
+      "instructions": [
+        "1. 紙を4つのコマに折ります",
+        "2. 最初のコマにキャラクターを描きます",
+        "3. 左から右へ行動を進めます",
+        "4. 吹き出しや考え事を追加します",
+        "5. 完成したお話をみんなで見せ合いましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "紙",
+        "鉛筆"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "疲れている時",
+        "待合室"
+      ],
+      "skills": [
+        "創造性",
+        "感情"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "お話のきっかけを提案して。棒人間でも大丈夫、楽しむことが大切です",
+      "variations": [
+        "家族の冒険シリーズ",
+        "ヒーローの誕生秘話",
+        "自然番組のパロディ"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "アート",
+        "お話作り"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6011",
+      "title": "チョークで都市デザイン",
+      "description": "みんなで協力して街を描こう",
+      "instructions": [
+        "1. それぞれ担当エリアを決めます",
+        "2. エリアをつなぐ道路を描きます",
+        "3. 建物や施設を追加します",
+        "4. 交通システムを作ります",
+        "5. 街の機能について話し合いましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "屋外",
+      "materials": [
+        "道路用チョーク"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "数回",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "車道や車の出入りに注意しましょう",
+      "parentTips": "地元のランドマークを取り入れて。おもちゃの車で遊びを広げても",
+      "variations": [
+        "空想の王国",
+        "地下世界",
+        "エコフレンドリーな街づくり"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "アート"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6012",
+      "title": "最高の枕の基地",
+      "description": "室内で構造物を作る工作",
+      "instructions": [
+        "1. 家具を支えに使います",
+        "2. 登らないようにブランケットをかけます",
+        "3. 壊れない重しで固定します",
+        "4. 複数の部屋や入り口を作ります",
+        "5. 入る前に安定性を確認しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "ブランケット",
+        "枕"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "中程度",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "病児の日"
+      ],
+      "skills": [
+        "創造性",
+        "認知"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "家具の上に立たないように。換気にも気を配りましょう",
+      "parentTips": "洗濯ばさみがあると作りやすいです。お片付けの時間も事前に決めておきましょう",
+      "variations": [
+        "読書コーナー",
+        "お城や宇宙船などテーマを決めて",
+        "懐中電灯で影絵ショー"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び",
+        "組み立て遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6013",
+      "title": "自然素材の織りアート",
+      "description": "自然の物を使った織物作り",
+      "instructions": [
+        "1. Y字の枝を地面に固定します",
+        "2. 枝の間に毛糸で土台を作ります",
+        "3. 自然の物を横方向に織り込みます",
+        "4. 素材を変えてコントラストをつけます",
+        "5. 完成したら外に飾りましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "屋外",
+      "materials": [
+        "Y字の枝",
+        "毛糸"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "創造性",
+        "運動"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "材料に虫の巣がないか確認しましょう",
+      "parentTips": "初心者には事前に織り機を準備して。落ちている物だけを使うように教えましょう",
+      "variations": [
+        "枝で丸い織り機",
+        "季節の色テーマ",
+        "みんなで協力して大きな織物"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "自然",
+        "アート"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6014",
+      "title": "紙皿でお面作り",
+      "description": "被って遊べるキャラクター作り",
+      "instructions": [
+        "1. 安全に目穴を切りましょう",
+        "2. マーカーや絵の具で飾りつけします",
+        "3. 毛糸の髪や紙の耳を追加します",
+        "4. 持ち手の棒をつけます",
+        "5. 即興の劇を開きましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "室内",
+      "materials": [
+        "紙皿",
+        "子ども用安全はさみ",
+        "マーカー"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "中程度",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "目穴を切る時は見守りを。ゴムバンドは避けましょう",
+      "parentTips": "キャラクターの例を提案して。水性絵の具がおすすめです",
+      "variations": [
+        "動物の家族セット",
+        "感情のお面",
+        "季節のキャラクター"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "工作",
+        "ごっこ遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6015",
+      "title": "お庭で昆虫探検",
+      "description": "昆虫観察の探検ごっこ",
+      "instructions": [
+        "1. ルーペと観察ノートを準備します",
+        "2. 地面や植物のてっぺんを探します",
+        "3. 触らずに観察します",
+        "4. 発見したことを記録します",
+        "5. 探検後に虫について調べましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "屋外",
+      "materials": [
+        "ルーペ",
+        "ノート",
+        "鉛筆"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "学習",
+        "認知"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "昆虫は触らないように。スズメバチの巣には近づかないで",
+      "parentTips": "図鑑を用意して。敬意を持って観察する距離を教えましょう",
+      "variations": [
+        "微小環境に焦点（石や丸太の下）",
+        "昆虫ホテル作り",
+        "懐中電灯を使った夜の昆虫観察"
+      ],
+      "source": "モンテッソーリ教育",
+      "tags": [
+        "自然",
+        "科学"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6016",
+      "title": "幾何学ストリングアート",
+      "description": "床で糸を使って形を作る",
+      "instructions": [
+        "1. 平らな場所に毛糸を広げます",
+        "2. 固定点の間に直線を作ります",
+        "3. 交差する形を作ります",
+        "4. 完成したデザインを写真に収めます",
+        "5. 毛糸は巻いて再利用しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "カラーダンス"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "病児の日"
+      ],
+      "skills": [
+        "認知",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け",
+        "自閉症のお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "つまずかないように注意しましょう",
+      "parentTips": "基本的な形から始めましょう。固定に養生テープを使っても",
+      "variations": [
+        "ストローで3D構造",
+        "みんなで協力して大きな壁画",
+        "外で自然物を使ったストリングアート"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "アート"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6017",
+      "title": "葉っぱのこすり出しアート",
+      "description": "自然の質感を使った写し取り",
+      "instructions": [
+        "1. 葉っぱを脈が上になるように置きます",
+        "2. 薄い紙を上からかけます",
+        "3. クレヨンを横に動かしてこすります",
+        "4. 色や角度を変えて試します",
+        "5. 樹木の種類を調べてラベルを付けましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "屋外",
+      "materials": [
+        "紙",
+        "クレヨン"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "創造性",
+        "科学"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "夏|秋",
+      "safetyNotes": "ウルシの生えている場所は避けましょう",
+      "parentTips": "新鮮でしなやかな葉がおすすめ。紙の端をテープで止めると安定します",
+      "variations": [
+        "複数の葉っぱで構成",
+        "季節ごとの比較コレクション",
+        "樹皮やいろいろな質感のこすり出し"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "アート",
+        "自然"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6018",
+      "title": "風船ラリー",
+      "description": "協力して風船を落とさない遊び",
+      "instructions": [
+        "1. 風船を適度に膨らませます",
+        "2. 遊ぶ範囲を決めます",
+        "3. 手や紙皿で打ち合います",
+        "4. 連続で打ち返した回数を数えます",
+        "5. 風船が床に落ちたらリセットします"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "風船"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "雨の日",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "割れた破片はすぐに片付けましょう。膨らませすぎないように",
+      "parentTips": "予備の風船を準備して。天井の扇風機を障害物にしても",
+      "variations": [
+        "座って行うバージョン",
+        "使える体の部位を制限（頭だけなど）",
+        "風船を複数使う"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6019",
+      "title": "自然の曼荼羅アート",
+      "description": "丸く自然の物を並べてアート作り",
+      "instructions": [
+        "1. 落ちている自然の物を集めます",
+        "2. 中心になる物から始めます",
+        "3. 対称になるように層を作ります",
+        "4. 完成したデザインを写真に収めます",
+        "5. 終わったらそのままにしておきましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "屋外",
+      "materials": [
+        "自然の素材（葉、小石など）"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "創造性",
+        "感情"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け",
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "自然の物を触った後は手を洗いましょう",
+      "parentTips": "完成形より過程を大切に。はかなさについて話し合っても",
+      "variations": [
+        "色をテーマにしたデザイン",
+        "蓋の中にミニ曼荼羅",
+        "みんなで協力して巨大曼荼羅"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "自然",
+        "アート"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6020",
+      "title": "紙袋人形劇",
+      "description": "紙袋でキャラクターを作ってオリジナル人形劇を上演しよう",
+      "instructions": [
+        "1. 紙袋をマーカーで飾り、キャラクターを作ります",
+        "2. 安全はさみで顔のパーツを切り抜きます",
+        "3. 毛糸の髪や布きれで詳細を追加します",
+        "4. 段ボール箱で卓上人形劇場を設置します",
+        "5. セリフと動きをつけてお話を演じましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 60,
+      "location": "室内",
+      "materials": [
+        "紙袋",
+        "子ども用安全はさみ",
+        "マーカー",
+        "毛糸"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "病児の日",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "社会性",
+        "感情"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "はさみの使用は見守りを。幼児には取り外し可能な小さな部品は避けましょう",
+      "parentTips": "人前が苦手な子にはお話のきっかけを提案して。劇はスマホで録画しても",
+      "variations": [
+        "動物救助テーマ",
+        "歴史人物伝",
+        "感情表現人形"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び",
+        "工作"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6021",
+      "title": "風船テニストーナメント",
+      "description": "手作りラケットで室内風船バレー",
+      "instructions": [
+        "1. 紙皿にクラフトスティックをテープで貼ってラケットを作ります",
+        "2. 風船を適度に膨らませます",
+        "3. 椅子の間に紐でネットを張ります",
+        "4. 風船を割らずにネット越しに打ち合います",
+        "5. 10点先取で勝ちです"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "風船",
+        "紙皿",
+        "クラフトスティック",
+        "テープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "雨の日",
+        "病児の日"
+      ],
+      "skills": [
+        "運動",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "割れた風船の破片はすぐに片付けましょう。膨らませすぎないように",
+      "parentTips": "天井の高さで難易度を調節して。チームは頻繁にローテーションさせて",
+      "variations": [
+        "座って行うバレー",
+        "利き手ではない手だけ使う",
+        "風船を複数使う"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6022",
+      "title": "自然のブレスレット",
+      "description": "両面テープで身につける自然の展示",
+      "instructions": [
+        "1. 手首に両面テープを巻きつけます（粘着面を外側に）",
+        "2. 外を探検して軽い自然の物を集めます",
+        "3. 優しくテープに押し付けます",
+        "4. 集めた物の手触りや色について話し合いましょう",
+        "5. 処分する前に写真に収めましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "屋外",
+      "materials": [
+        "両面テープ",
+        "紙の帯"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段",
+        "ビーチ"
+      ],
+      "skills": [
+        "科学",
+        "感覚"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "皮膚アレルギーに注意。ウルシの生えている場所は避けましょう",
+      "parentTips": "敏感肌には紙の帯を土台に。落ちている物だけを使うように教えましょう",
+      "variations": [
+        "季節の色チャレンジ",
+        "手触り探し",
+        "微小環境のコレクション"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "自然",
+        "感覚"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6023",
+      "title": "レゴチャレンジ",
+      "description": "お題に基づいた制作チャレンジ",
+      "instructions": [
+        "1. カテゴリーカード（乗り物、建物）を準備します",
+        "2. タイマーを15～20分にセットします",
+        "3. ランダムでチャレンジカードを引きます",
+        "4. お題に合った作品を作ります",
+        "5. 創造的な背景の物語とともに作品を発表しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "レゴブロック"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "中程度",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "待合室",
+        "旅行"
+      ],
+      "skills": [
+        "認知",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "自閉症のお子様向け",
+        "おとなしいお子様向け"
+      ],
+      "cost": "中程度",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "幼い兄弟がいる場合は小さな部品に注意しましょう",
+      "parentTips": "分解する前に作品を写真に収めて。追加材料に家にある物を使っても",
+      "variations": [
+        "目隠ししてパートナーと制作",
+        "ミニチュアスケールチャレンジ",
+        "物語ベースの制作"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "組み立て遊び"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6024",
+      "title": "紙飛行機オリンピック",
+      "description": "飛行機のデザインと距離競争",
+      "instructions": [
+        "1. いろいろなデザインの紙飛行機を折ります",
+        "2. テープで発射ラインを印します",
+        "3. 一つずつテスト飛行します",
+        "4. 巻尺で距離を測ります",
+        "5. 創造的なデザイン部門でも表彰しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "紙",
+        "巻尺"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "待合室"
+      ],
+      "skills": [
+        "学習",
+        "認知"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "割れ物から離れた、障害物のない飛行経路を確保しましょう",
+      "parentTips": "初心者には折り方ガイドを提供して。翼のフラップなど改造を試しても",
+      "variations": [
+        "正確着地ターゲット",
+        "飛行時間競争",
+        "テーマに沿った航空機デザイン"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "科学"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6025",
+      "title": "家族の特技発表会",
+      "description": "家族の特技を披露するパフォーマンスショー",
+      "instructions": [
+        "1. 簡単な出し物（それぞれ2～3分）を準備します",
+        "2. カーテンや照明で舞台を作ります",
+        "3. スマホでBGMを流します",
+        "4. 各パフォーマンスの後は拍手喝采を",
+        "5. 手作りの賞状を授与しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "少なめ",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "社会性",
+        "感情"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "パフォーマンススペースのつまずきの原因になる物を片付けましょう",
+      "parentTips": "参加型のグループ演目も含めて。完璧より努力を重視しましょう",
+      "variations": [
+        "テーマショー（ブロードウェイ、魔法）",
+        "家族のためのチャリティ公演",
+        "ビデオ録画した編集版"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "音楽",
+        "お話作り"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6026",
+      "title": "障害物コースデザイナー",
+      "description": "家庭の物を使って運動チャレンジを作る",
+      "instructions": [
+        "1. 安全な家具の固定点を確認します",
+        "2. くぐる、飛び越える、バランスなどの順序をデザインします",
+        "3. それぞれの走破時間を測ります",
+        "4. 新しいチャレンジのためにレイアウトを再設計します",
+        "5. 最も創造的な障害物を表彰しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "室内",
+      "materials": [
+        "椅子",
+        "クッション",
+        "テープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "中程度",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "病児の日"
+      ],
+      "skills": [
+        "運動",
+        "認知"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "鋭い角にはパッドを。障害物の間の通り道は確保しましょう",
+      "parentTips": "床の印に養生テープを使って。ジャンプを数えるなど学びを取り入れても",
+      "variations": [
+        "テーマコース（スパイ訓練）",
+        "言葉のガイドで目隠し",
+        "協力型チーム走"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6027",
+      "title": "リズムバンドジャム",
+      "description": "家庭の容器を使った打楽器アンサンブル",
+      "instructions": [
+        "1. いろいろな容器（鍋、プラスチック容器）を集めます",
+        "2. いくつかにお米や豆を入れてシェーカーにします",
+        "3. 木のスプーンをドラムスティックにします",
+        "4. 真似するリズムパターンを作ります",
+        "5. アンサンブルの演奏を録音しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "室内",
+      "materials": [
+        "鍋",
+        "米容器",
+        "木のスプーン"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "中程度",
+      "noiseLevel": "大きい",
+      "situations": [
+        "雨の日",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "器具を使った乱暴な遊びに注意。シェーカー容器はしっかり密封して",
+      "parentTips": "呼びかけと応答のパターンから始めて。視覚的な指揮者を使っても",
+      "variations": [
+        "テーマソング作曲",
+        "音量の強弱チャレンジ",
+        "手信号でのサイレントリズム"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "音楽"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6028",
+      "title": "地図作り探検",
+      "description": "身近な空間の地図作成探検",
+      "instructions": [
+        "1. 地図を作るエリア（部屋、庭、近所）を選びます",
+        "2. 主要な目印を縮尺に合わせてスケッチします",
+        "3. 記号表現を追加します",
+        "4. 地図の特徴の凡例を作ります",
+        "5. 地図を使ってもらうために宝物を隠しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "どこでも",
+      "materials": [
+        "紙",
+        "定規",
+        "色鉛筆"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "旅行",
+        "車移動"
+      ],
+      "skills": [
+        "学習",
+        "認知"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "近所の探検には境界を設定しましょう",
+      "parentTips": "まずは部屋の地図から始め、外に進みましょう。方眼紙を使うと便利です",
+      "variations": [
+        "空想の世界創造",
+        "歴史的地図の再現",
+        "粘土を使った3D立体地図"
+      ],
+      "source": "モンテッソーリ教育",
+      "tags": [
+        "学習"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6029",
+      "title": "平均台オリンピック",
+      "description": "狭い面でのバランス運動チャレンジ",
+      "instructions": [
+        "1. 安全な高さの線（縁石、テープの線）を確認します",
+        "2. 前向き/後ろ向き歩行を練習します",
+        "3. 物を持ったり、回転したりチャレンジを追加します",
+        "4. バランス持続時間を測ります",
+        "5. バランスのスタイル点を授与しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "屋外",
+      "materials": [
+        "テープ",
+        "豆袋"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "運動"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "高い平均台では子どもを見守りましょう。着地は芝生のエリアで",
+      "parentTips": "まずは靴幅の平均台から始め、つま先幅のチャレンジに進みましょう",
+      "variations": [
+        "障害物コース",
+        "パートナーバランスチャレンジ",
+        "室内のテープ線"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6030",
+      "title": "カップタワーチャレンジ",
+      "description": "プラスチックカップを使った構造づくり",
+      "instructions": [
+        "1. 建設チャレンジを設定します（最も高い、最も広いなど）",
+        "2. 構造的なパターンでカップを積み重ねます",
+        "3. 優しくテーブルを揺らして安定性をテストします",
+        "4. 成功した構造物の大きさを測ります",
+        "5. 解体前に写真を撮りましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "室内",
+      "materials": [
+        "プラスチックカップ",
+        "インデックスカード"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "待合室",
+        "レストラン"
+      ],
+      "skills": [
+        "認知",
+        "運動"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け",
+        "自閉症のお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "子どもの手の届く高さ以上に積まないようにしましょう",
+      "parentTips": "トランプを構造要素として取り入れて。時間制限チャレンジも",
+      "variations": [
+        "吊り橋",
+        "迷路作り",
+        "みんなで協力して巨大構造物"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "組み立て遊び"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6031",
+      "title": "的当てトーナメント",
+      "description": "得点ゾーンがある精密な投げゲーム",
+      "instructions": [
+        "1. フラフープや容器をさまざまな距離に配置します",
+        "2. 的ごとに得点を割り当てます",
+        "3. 順番に豆袋を投げます",
+        "4. 累積得点を記録します",
+        "5. 難易度のために投げるラインをローテーションします"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "屋外",
+      "materials": [
+        "フラフープ",
+        "豆袋"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "普段",
+        "ビーチ"
+      ],
+      "skills": [
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "安全な投擲ラインと回収ルールを確立しましょう",
+      "parentTips": "年齢や技能に合わせて距離を調整して。的には洗濯かごも使えます",
+      "variations": [
+        "言葉のガイドで目隠し投げ",
+        "動く的",
+        "算数の統合（得点を掛け算）"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6032",
+      "title": "新聞紙エンジニアリング",
+      "description": "丸めた新聞紙を使った構造デザイン",
+      "instructions": [
+        "1. 新聞紙をきつく丸めて棒状にします",
+        "2. 端をテープで固定します",
+        "3. 幾何学的な基礎構造を作ります",
+        "4. 耐荷重能力をテストします",
+        "5. 崩壊前の高さを測ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "室内",
+      "materials": [
+        "新聞紙",
+        "マスキングテープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "多め",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日"
+      ],
+      "skills": [
+        "認知",
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "棒で目を突かないように。安全メガネを着用しましょう",
+      "parentTips": "幼い子には事前に材料を丸めて。特定の構造（橋など）にチャレンジさせて",
+      "variations": [
+        "ビー玉コース",
+        "椅子デザインチャレンジ",
+        "みんなで協力してインスタレーション"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "組み立て遊び",
+        "科学"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6033",
+      "title": "算数宝探し",
+      "description": "実世界での数学的探検",
+      "instructions": [
+        "1. 形やパターンのチェックリストを作ります",
+        "2. 近所を探検して発見を記録します",
+        "3. 幾何学の例を写真に収めます",
+        "4. 発見を分類します",
+        "5. 数学的発見のコラージュを作りましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "屋外",
+      "materials": [
+        "カメラ/スマホ",
+        "ノート"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段",
+        "スーパー"
+      ],
+      "skills": [
+        "学習",
+        "認知"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "安全な探検の境界を設定しましょう",
+      "parentTips": "能力に応じてリストを差別化して。測定活動も取り入れて",
+      "variations": [
+        "建築の角度探し",
+        "スーパーでの算数チャレンジ",
+        "対称性探し"
+      ],
+      "source": "モンテッソーリ教育",
+      "tags": [
+        "学習",
+        "自然"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6034",
+      "title": "二言語ストーリーダイス",
+      "description": "多言語ストーリーテリングツール作り",
+      "instructions": [
+        "1. 木の立方体に画像を描きます",
+        "2. 二つの言語で語彙を割り当てます",
+        "3. ダイスを振ってストーリーのきっかけを作ります",
+        "4. 表示された単語を使って文章を作ります",
+        "5. 創造的な多言語の物語を録音しましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "木の立方体",
+        "マーカー"
+      ],
+      "prep": "時間がかかる",
+      "parentEnergy": "中程度",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "旅行",
+        "車移動"
+      ],
+      "skills": [
+        "学習",
+        "創造性"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "無毒マーカーを使用。幼児の近くでの立方体の扱いは見守りを",
+      "parentTips": "具体的な名詞から始め、動作動詞に進みましょう",
+      "variations": [
+        "感情表現ダイス",
+        "物語要素の組み合わせ",
+        "文章作り競争"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "言語",
+        "お話作り"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6035",
+      "title": "感覚テクスチャーボード",
+      "description": "触覚探検パネル",
+      "instructions": [
+        "1. 段ボールを手のひらサイズの正方形に切ります",
+        "2. さまざまな質感（紙やすり、ベルベット）を接着します",
+        "3. グリッドパターンに配置します",
+        "4. 目隠しして質感を識別します",
+        "5. 質感を自然の源と一致させましょう"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "段ボール",
+        "布きれ",
+        "自然の物"
+      ],
+      "prep": "時間がかかる",
+      "parentEnergy": "中程度",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "中程度",
+      "noiseLevel": "静か",
+      "situations": [
+        "病児の日",
+        "寝る前"
+      ],
+      "skills": [
+        "感覚",
+        "認知"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け",
+        "自閉症のお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "材料がしっかり接着されていることを確認。小さなゆるい部品は避けましょう",
+      "parentTips": "家庭の質感（プチプチ）を取り入れて。感覚の語彙について話し合いましょう",
+      "variations": [
+        "温度コントラストボード",
+        "香りマッチングパネル",
+        "聴覚サウンドボード"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "感覚"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6036",
+      "title": "雨量計チャレンジ",
+      "description": "気象測定器の作成",
+      "instructions": [
+        "1. プラスチックボトルの上部を切り取ります",
+        "2. 上部を逆さまにしてベースに差し込み、漏斗を作ります",
+        "3. パーマネントマーカーで測定線を印します",
+        "4. 開けた屋外に設置します",
+        "5. 毎日の降雨量を記録します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "屋外",
+      "materials": [
+        "プラスチックボトル",
+        "パーマネントマーカー",
+        "定規"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "要見守り",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日"
+      ],
+      "skills": [
+        "学習",
+        "科学"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "ボトルの切断は大人が行い、マーカーの使用は見守りを",
+      "parentTips": "天気予報と比較して。データ表を作成しても",
+      "variations": [
+        "風速計の作成",
+        "天気日記",
+        "雲の種類の識別"
+      ],
+      "source": "モンテッソーリ教育",
+      "tags": [
+        "科学"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6037",
+      "title": "食べられる岩石サイクル",
+      "description": "チョコレートを使った地質プロセスのモデリング",
+      "instructions": [
+        "1. 堆積層用にチョコレートをおろします",
+        "2. 変成段階のために熱/圧力を加えます",
+        "3. 火成段階のために完全に溶かします",
+        "4. アルミホイルの型で冷やします",
+        "5. 実際の岩石サンプルと比較します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "チョコチップ",
+        "アルミホイル"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "高い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "常時見守り",
+      "messLevel": "多め",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日"
+      ],
+      "skills": [
+        "科学",
+        "認知"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "加熱要素には常時大人の監視を。アレルギーを確認しましょう",
+      "parentTips": "安全な溶解に電子レンジを使用。後片付け用の濡れ布巾を準備して",
+      "variations": [
+        "クレヨン岩石サイクル",
+        "クッキープレートテクトニクス",
+        "化石印象クッキー"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "科学",
+        "お菓子作り"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6038",
+      "title": "食べられる土壌層",
+      "description": "食品を使った地層の表現",
+      "instructions": [
+        "1. プリンを層にします（基岩）",
+        "2. 砕いたクッキーを追加します（下層土）",
+        "3. チョコレートプリンでトップします（表土）",
+        "4. 有機物としてココナツ/オレガノを振りかけます",
+        "5. グミワームの生物を追加します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "チョコレートプリン",
+        "砕いたクッキー",
+        "グミワーム"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "中程度",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日"
+      ],
+      "skills": [
+        "科学"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "食物アレルギーを確認。適量の見守りを",
+      "parentTips": "見えるように透明カップを使用。地質用語をラベル付けして",
+      "variations": [
+        "砂漠と森林の土壌比較",
+        "ゼラチンを使った帯水層モデリング",
+        "化石層の追加"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "科学",
+        "お菓子作り"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6039",
+      "title": "ダンスをコードしよう",
+      "description": "方向カードを使った振付プログラミング",
+      "instructions": [
+        "1. 矢印コマンドカード（←→↑↓）を作ります",
+        "2. 5-8のコマンドを順序立てます",
+        "3. 動きの順序を実行します",
+        "4. 誤ったステップをデバッグします",
+        "5. グループ同期ルーチンを作曲します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "室内",
+      "materials": [
+        "矢印カード（←→↑↓）",
+        "音楽プレーヤー"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "高い",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "雨の日",
+        "プレイデート"
+      ],
+      "skills": [
+        "認知",
+        "運動"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "十分なスペースを確保。壊れ物を片付けましょう",
+      "parentTips": "基本的な動きから始め、テンポチャレンジを追加して",
+      "variations": [
+        "障害物コースナビゲーション",
+        "ミラーパートナーコーディング",
+        "ループ機能の統合"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6040",
+      "title": "パラパラ漫画帳",
+      "description": "手描きアニメーション作り",
+      "instructions": [
+        "1. 付箋紙をきちんと揃えて重ねます",
+        "2. 下から上へ連続した画像を描きます",
+        "3. 各画像を少しずつ変化させます",
+        "4. ページをめくってアニメーションを確認します",
+        "5. クリップで留めて連続再生できるようにします"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "室内",
+      "materials": [
+        "付箋紙",
+        "鉛筆"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "車移動",
+        "待合室"
+      ],
+      "skills": [
+        "創造性",
+        "運動"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "握りやすいように鉛筆グリップを用意しましょう",
+      "parentTips": "まずは跳ねるボールから始め、複雑な図形に進みましょう。トレースにはライトボックスを使っても",
+      "variations": [
+        "フェナキストスコープ作り",
+        "クレイアニメーション",
+        "デジタルアニメーションアプリ"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "アート"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6041",
+      "title": "マインドフルネスマンダラ",
+      "description": "一時的な自然のアート配置",
+      "instructions": [
+        "1. 落ちている自然の材料を集めます",
+        "2. 放射状の対称パターンを作ります",
+        "3. 中心点から外側に向かって作業します",
+        "4. 完成した構図を写真に収めます",
+        "5. 記録後は材料を自然に返します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "屋外",
+      "materials": [
+        "葉",
+        "花",
+        "小石"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段"
+      ],
+      "skills": [
+        "感情",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け",
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "自然の物を触った後は手を洗いましょう。有毒植物は避けて",
+      "parentTips": "完成形より過程を重視しましょう。はかなさについて話し合って",
+      "variations": [
+        "季節のカラーパレット",
+        "みんなで協力してグループマンダラ",
+        "室内で再生材料を使ったバージョン"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "自然",
+        "アート"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6042",
+      "title": "影絵劇",
+      "description": "光の投影を使ったシルエットストーリーテリング",
+      "instructions": [
+        "1. 画用紙からキャラクターの形を切り抜きます",
+        "2. 串に取り付けます",
+        "3. 白いシーツをスクリーンとして吊ります",
+        "4. 後ろから懐中電灯で照らします",
+        "5. 動きとセリフでお話を演じます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "画用紙",
+        "串",
+        "懐中電灯"
+      ],
+      "prep": "時間がかかる",
+      "parentEnergy": "中程度",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "中程度",
+      "noiseLevel": "普通",
+      "situations": [
+        "寝る前",
+        "雨の日"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "串の先端を丸めて。光源の扱いを見守りましょう",
+      "parentTips": "簡単な関節人形を作って。効果に色付きゲルを使っても",
+      "variations": [
+        "歴史の再現",
+        "動物の生息地の物語",
+        "算数の形の物語"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "お話作り"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6043",
+      "title": "レインスティックの音風景",
+      "description": "先住民にインスパイアされた楽器作り",
+      "instructions": [
+        "1. 段ボール管の内側にアルミホイルの螺旋を敷きます",
+        "2. 1/3まで米や豆を入れます",
+        "3. 端を布や段ボールで密封します",
+        "4. 外側を飾り付けます",
+        "5. 傾ける角度や速度を試します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 30,
+      "location": "室内",
+      "materials": [
+        "段ボール管",
+        "米/豆"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "要見守り",
+      "messLevel": "多め",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日"
+      ],
+      "skills": [
+        "創造性",
+        "感覚"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "端のキャップは強力なテープで固定。窒息の危険がある小さな物を確認して",
+      "parentTips": "詰め物の材料を比較して。雨の強さの尺度を作っても",
+      "variations": [
+        "テーマベースの音風景",
+        "リズムパターン作曲",
+        "複数楽器アンサンブル"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "音楽",
+        "工作"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6044",
+      "title": "感情ジェスチャーゲーム",
+      "description": "言葉を使わない感情表現ゲーム",
+      "instructions": [
+        "1. 感情カード（興奮、イライラ）を作ります",
+        "2. 順番にカードを選びます",
+        "3. 言葉を使わずに感情を演じます",
+        "4. 他の人は感情を当てます",
+        "5. 各感情の身体的合図について話し合います"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "感情カード"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "病児の日"
+      ],
+      "skills": [
+        "感情",
+        "社会性"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "圧倒される感情は除外。前向きなトーンを保ちましょう",
+      "parentTips": "微妙な表情を示して。個人的な経験と結び付けて",
+      "variations": [
+        "対処法の実演",
+        "状況に基づいた感情",
+        "感情の強度スペクトル"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "社会性",
+        "感情"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6045",
+      "title": "新聞紙ファッション",
+      "description": "再生材料を使ったウェアラブルアート",
+      "instructions": [
+        "1. 衣服のテンプレートを作ります",
+        "2. 新聞紙をパネル状に切ります",
+        "3. セクションをテープでつなぎます",
+        "4. 持続可能な装飾を追加します",
+        "5. ランウェイショーを開催します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 45,
+      "location": "室内",
+      "materials": [
+        "新聞紙",
+        "テープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "多め",
+      "noiseLevel": "大きい",
+      "situations": [
+        "雨の日",
+        "誕生日会"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "子ども用安全はさみを使用。長いデザインではつまずきに注意",
+      "parentTips": "基本的な形を事前に切って。構造工学でSTEMを取り入れて",
+      "variations": [
+        "歴史的衣装の再現",
+        "未来のテックウェアラブル",
+        "テーマベースのコレクション"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "工作",
+        "ごっこ遊び"
+      ],
+      "difficulty": 4,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6046",
+      "title": "天気日記",
+      "description": "気象観測の記録",
+      "instructions": [
+        "1. 天気チャートのテンプレートを作ります",
+        "2. 毎日の気温と状態を記録します",
+        "3. 雲の形成をスケッチします",
+        "4. 風向をメモします",
+        "5. 週間パターンを比較します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "屋外",
+      "materials": [
+        "ノート",
+        "鉛筆",
+        "温度計"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段",
+        "朝"
+      ],
+      "skills": [
+        "学習",
+        "科学"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "安全な屋外観測場所を設定しましょう",
+      "parentTips": "記録用紙をラミネートして。気候の議論と結び付けて",
+      "variations": [
+        "生物季節観測（フェノロジー）",
+        "天気予報チャレンジ",
+        "微気候の比較"
+      ],
+      "source": "モンテッソーリ教育",
+      "tags": [
+        "科学",
+        "自然"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "6047",
+      "title": "植物押し花",
+      "description": "植物保存の技術",
+      "instructions": [
+        "1. 平らな花や葉を集めます",
+        "2. クッキングシートの間に配置します",
+        "3. 重い本の中に入れます",
+        "4. 1～2週間待ちます",
+        "5. 保存した標本でアートを作ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "花/葉",
+        "重い本",
+        "クッキングシート"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日"
+      ],
+      "skills": [
+        "科学",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "春|夏|秋",
+      "safetyNotes": "落ちている材料のみ使用。有毒植物は避けましょう",
+      "parentTips": "収集時に標本にラベルを付けて。植物識別にスマホを使っても",
+      "variations": [
+        "植物標本帳作り",
+        "押し花キャンドル",
+        "季節の比較コレクション"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "自然",
+        "工作"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "sos6101",
+      "title": "お絵かきリレー",
+      "description": "順番に隠れた絵に追加していく静かなお絵かきゲーム",
+      "instructions": [
+        "1. 紙を4つの部分に折ります",
+        "2. 最初の人が30秒間パート1に描きます",
+        "3. パート1を隠すように折り、次の人に渡します",
+        "4. 次の人は前の部分を見ずにパート2を続けます",
+        "5. 広げて協力して作った作品を鑑賞します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "紙",
+        "クレヨン/鉛筆"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "待合室",
+        "旅行",
+        "病児の日"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "安定させるためにクリップボードを使いましょう",
+      "variations": [
+        "テーマを決めて描く（動物、ロボット）",
+        "色紙を使う"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "アート",
+        "静かな時間"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6102",
+      "title": "彫像チャレンジ",
+      "description": "創造的なポーズで動きを止めるゲーム",
+      "instructions": [
+        "1. 優しいBGMを流します",
+        "2. みんなでダンス/動き回ります",
+        "3. 音楽が止まったら彫像のように静止します",
+        "4. 10秒間ポーズを保ちます",
+        "5. 音楽が再開したら動き出します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "音楽プレーヤー（任意）"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "雨の日",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "動き回るスペースを確保しましょう",
+      "parentTips": "必要なら音楽の代わりにハミングでも",
+      "variations": [
+        "テーマ彫像（動物、スーパーヒーロー）"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6103",
+      "title": "アルファベットストーリー",
+      "description": "文字のきっかけで協力して作るお話",
+      "instructions": [
+        "1. 「A」の文章で始めます（例：「クマが...」）",
+        "2. 次の人は「B」の文章で続けます",
+        "3. アルファベット順に続けます",
+        "4. 一緒に可笑しなお話を作ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "どこでも",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "車移動",
+        "待合室"
+      ],
+      "skills": [
+        "認知",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "自閉症のお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "難しい文字はナンセンスな言葉でもOK",
+      "variations": [
+        "名詞/形容詞のみ使う",
+        "文字ごとの時間制限"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "お話作り"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6104",
+      "title": "静かな秘密基地",
+      "description": "居心地の良い毛布の基地作りチャレンジ",
+      "instructions": [
+        "1. 毛布と枕を集めます",
+        "2. 家具の上にかけてシェルターを作ります",
+        "3. クリップや重しで固定します",
+        "4. 中で本を読んだりお話をしたりします"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "毛布",
+        "枕",
+        "椅子/家具"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "雨の日",
+        "病児の日"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "不安定な構造は避けましょう",
+      "parentTips": "安全な家具を事前に確認して",
+      "variations": [
+        "テーマ基地（宇宙船、城）",
+        "懐中電灯のお話"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6105",
+      "title": "手触り探し",
+      "description": "家庭の物を使った感覚探検",
+      "instructions": [
+        "1. 手触りを選びます（でこぼこ、つるつる、ふわふわ）",
+        "2. タイマーを3分にセットします",
+        "3. 家の中から合う物を見つけます",
+        "4. 発見を比べます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段",
+        "雨の日"
+      ],
+      "skills": [
+        "認知",
+        "感覚"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "壊れやすい物や危険な物は避けましょう",
+      "parentTips": "簡単な手触りから始めましょう",
+      "variations": [
+        "温度探し",
+        "色分け"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "感覚"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6106",
+      "title": "呼吸バディ",
+      "description": "ぬいぐるみを使った落ち着く呼吸法",
+      "instructions": [
+        "1. ぬいぐるみをお腹に乗せて横になります",
+        "2. 鼻からゆっくり呼吸します",
+        "3. ぬいぐるみが上下するのを見ます",
+        "4. 一緒に呼吸を数えます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 5,
+      "location": "室内",
+      "materials": [
+        "ぬいぐるみ"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "1",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "寝る前",
+        "病児の日"
+      ],
+      "skills": [
+        "感情"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "まずはゆっくりした呼吸をお手本を見せて",
+      "variations": [
+        "花/ロウソク呼吸法",
+        "4-7-8テクニック"
+      ],
+      "source": "モンテッソーリ教育",
+      "tags": [
+        "静かな時間"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6107",
+      "title": "手影絵",
+      "description": "手の影で動物や物を作る",
+      "instructions": [
+        "1. 空白の壁に光を当てます",
+        "2. 手で基本的な形を作ります",
+        "3. お互いの作品を当てます",
+        "4. 一緒に新しい形を考え出します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "懐中電灯/ランプ"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "寝る前",
+        "待合室"
+      ],
+      "skills": [
+        "創造性",
+        "運動"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "明るい光を目に当てないように",
+      "parentTips": "簡単なデザインから始めましょう（犬、鳥）",
+      "variations": [
+        "影絵のお話作り",
+        "小道具を追加"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6108",
+      "title": "記憶トレー",
+      "description": "家庭の物を使った観察力と思い出すゲーム",
+      "instructions": [
+        "1. トレーに7-10個の小さな物を置きます",
+        "2. 1分間観察します",
+        "3. トレーを覆います",
+        "4. 覚えている物を書く/描きます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "トレー",
+        "小さな家庭の物",
+        "紙"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "待合室",
+        "旅行"
+      ],
+      "skills": [
+        "認知",
+        "学習"
+      ],
+      "specialNeeds": [
+        "自閉症のお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "窒息の危険がある物は避けましょう",
+      "parentTips": "テーマを決めた物を使いましょう（台所、おもちゃ）",
+      "variations": [
+        "こっそり一つ物を除く",
+        "タイマーチャレンジを追加"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "お片付けゲーム"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6109",
+      "title": "静かなハイタッチ",
+      "description": "手のジェスチャーを使った静かな協調ゲーム",
+      "instructions": [
+        "1. 5つの静かな手の合図を作ります（例：手を振る、親指を立てる）",
+        "2. 順番にジェスチャーを真似します",
+        "3. 徐々に新しい合図を追加します",
+        "4. 繰り返すシーケンスを作ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 5,
+      "location": "どこでも",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "スーパー",
+        "車移動"
+      ],
+      "skills": [
+        "社会性",
+        "運動"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "パーソナルスペースを保ちましょう",
+      "parentTips": "基本的なジェスチャーから始めましょう",
+      "variations": [
+        "感情ジェスチャー",
+        "スピードチャレンジ"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "社会性"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6110",
+      "title": "雲の物語",
+      "description": "雲や影を観察する想像力ゲーム",
+      "instructions": [
+        "1. 快適な観察場所を見つけます",
+        "2. 雲の形を観察します",
+        "3. 順番に何が見えるか説明します",
+        "4. 形についての物語を作ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "屋外",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "ビーチ",
+        "普段"
+      ],
+      "skills": [
+        "創造性",
+        "認知"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "日焼け対策をしましょう",
+      "parentTips": "一日の異なる時間帯を試してみて",
+      "variations": [
+        "室内で影の物語",
+        "雲の生き物を描く"
+      ],
+      "source": "シュタイナー教育",
+      "tags": [
+        "自然"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6111",
+      "title": "静かなサイモン",
+      "description": "音の出ないサイモンセッズ",
+      "instructions": [
+        "1. リーダーは声を出さずに口で動作を示します",
+        "2. プレイヤーはリーダーの口元を見ます",
+        "3. 「サイモンが言いました」の後にだけ動作を実行します",
+        "4. 順番にリーダーを交替します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "どこでも",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "レストラン",
+        "待合室"
+      ],
+      "skills": [
+        "認知",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "自閉症のお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "複雑な身体的チャレンジは避けましょう",
+      "parentTips": "簡単な動作から始めましょう（うなずく、まばたき）",
+      "variations": [
+        "テーマラウンド（動物の動作）",
+        "可笑しいご褒美を追加"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "社会性"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6112",
+      "title": "紙の鎖チャレンジ",
+      "description": "紙の帯を使った静かな工作",
+      "instructions": [
+        "1. 紙を2.5cm幅の帯状に切ります",
+        "2. テープやホチキスで最初の輪を作ります",
+        "3. 次の帯を輪に通します",
+        "4. 5分間で鎖がどれだけ長くなるか競います"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "紙",
+        "はさみ",
+        "テープ/ホチキス"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "病児の日",
+        "雨の日"
+      ],
+      "skills": [
+        "運動",
+        "創造性"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "幼い子のはさみ使用は見守りを",
+      "parentTips": "再生紙や雑誌を使いましょう",
+      "variations": [
+        "模様の鎖",
+        "測定チャレンジ"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "工作"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6113",
+      "title": "感謝のウェブ",
+      "description": "感謝を分かち合う静かなつながり活動",
+      "instructions": [
+        "1. 毛糸の玉を持って円になって座ります",
+        "2. 最初の人が感謝の気持ちを共有します",
+        "3. 毛糸の端を持ち、玉を別の人に投げます",
+        "4. ウェブができるまで続けます",
+        "5. 共有しながら優しくウェブを引っ張ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "毛糸/紐の玉"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "寝る前",
+        "普段"
+      ],
+      "skills": [
+        "感情",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "毛糸でのつまずきに注意",
+      "parentTips": "具体的な感謝の例を示して",
+      "variations": [
+        "テーマラウンド（家族、自然）",
+        "一言感謝"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "感情"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6114",
+      "title": "まねっこミラー",
+      "description": "動きを真似する協調ゲーム",
+      "instructions": [
+        "1. ペアになって向かい合います",
+        "2. 一人がゆっくりした動きをリードします",
+        "3. パートナーが正確に真似します",
+        "4. 2分後に役割を交替します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "待合室",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "動き回るスペースを確保しましょう",
+      "parentTips": "表情の真似から始めましょう",
+      "variations": [
+        "感情まねっこ",
+        "物語要素を追加"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "sos6115",
+      "title": "靴下ペア合わせリレー",
+      "description": "家事をお遊びに変える静かな分類ゲーム",
+      "instructions": [
+        "1. バラバラの靴下をかごに入れます",
+        "2. タイマーを3分にセットします",
+        "3. ペアを作る競争をします",
+        "4. 合ったペアをきちんと積み重ねます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "洗濯済み靴下のかご"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "普段",
+        "雨の日"
+      ],
+      "skills": [
+        "認知",
+        "運動"
+      ],
+      "specialNeeds": [
+        "自閉症のお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "特徴的な模様の靴下を使いましょう",
+      "variations": [
+        "目隠しチャレンジ",
+        "家族ごとに分類"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "お片付けゲーム"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-08-19T00:00:00Z"
+    },
+    {
+      "id": "bday6001",
+      "title": "風船バレー",
+      "description": "風船をボール代わりにした活発で安全なゲーム",
+      "instructions": [
+        "1. 風船を膨らませます",
+        "2. ひもやテープで廊下や椅子の間に「ネット」を作ります",
+        "3. 子どもを2チームに分け、ネットの両側に配置します",
+        "4. 風船を打ち合い、自陣で地面に落とさないようにします"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "風船",
+        "ひもやテープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート",
+        "雨の日"
+      ],
+      "skills": [
+        "運動",
+        "社会性"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "滑りやすい床に注意。風船の破裂と窒息の危険に気を付けましょう",
+      "parentTips": "予備の風船をいくつか準備して。狭い空間で子どもを活発に保てます",
+      "variations": [
+        "ネットなしで、空中に保つだけ",
+        "ハエたたきや紙皿をラケット代わりに"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6002",
+      "title": "障害物コースチャレンジ",
+      "description": "家庭の物を使った手早く設置できる運動コース",
+      "instructions": [
+        "1. クッションで乗り越える山を作ります",
+        "2. フラフープやテープの輪を床に置いて飛び込みます",
+        "3. 椅子を這ってくぐります",
+        "4. カニ歩きでゴールラインまで。時間を測るとさらに楽しめます！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "クッション",
+        "テープやフラフープ",
+        "椅子",
+        "ストップウォッチ（スマホ）"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動",
+        "認知"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "鋭い角や硬い物がないエリアを確保しましょう",
+      "parentTips": "次のコースの設計を子どもに手伝わせて、より長く夢中にさせましょう",
+      "variations": [
+        "「スプーンの上の卵運び」を追加",
+        "友達の言葉のガイドで目隠しで挑戦"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6003",
+      "title": "紙飛行機コンテスト",
+      "description": "デザインと空力の古典的なテスト",
+      "instructions": [
+        "1. それぞれの子どもに紙を一枚渡します",
+        "2. 紙飛行機を折ります。シンプルなデザインが最適です",
+        "3. テープでスタートラインを印します",
+        "4. 順番に飛行機を飛ばします。誰のが一番遠くへ飛ぶか、最高のトリックをするか競います！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "紙",
+        "テープ"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "運動",
+        "認知"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "飛行機を他人の顔に向けて投げないようにしましょう",
+      "parentTips": "「最もカラフル」「最も可笑しい飛行」など、審判が可笑しい賞を授与しても",
+      "variations": [
+        "まずマーカーで飛行機を飾り付け",
+        "飛び抜ける的を作る"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "工作"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6004",
+      "title": "フリーズダンス",
+      "description": "聴く力と素早い反射神経が求められるエネルギッシュなゲーム",
+      "instructions": [
+        "1. 「DJ」を一人決めるか、ママパパがやりましょう",
+        "2. 楽しくアップテンポな音楽を流します",
+        "3. 音楽が突然止まるまでみんなで踊ります",
+        "4. すぐに静止します。動いてしまった人はそのラウンド終了です"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "音楽源",
+        "スピーカー"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動",
+        "社会性",
+        "認知"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "衝突を防ぐためにスペースを確保しましょう",
+      "parentTips": "子どもに人気の曲のプレイリストを使いましょう。順番にDJをさせても",
+      "variations": [
+        "特定のポーズ（動物など）で静止",
+        "屋外で「彫像」遊び"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "音楽",
+        "体を動ばす"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6005",
+      "title": "秘密基地作り",
+      "description": "毛布と家具を使った協力的な工作",
+      "instructions": [
+        "1. 毛布、シーツ、枕、クッションを集めます",
+        "2. 椅子、ソファ、テーブルを構造の土台にします",
+        "3. 構造の上に毛布をかけ、本や重しで角を固定します",
+        "4. 中に入って新しい秘密の隠れ家を楽しみましょう！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "室内",
+      "materials": [
+        "毛布",
+        "シーツ",
+        "枕",
+        "クッション",
+        "椅子",
+        "クリップや本"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "中程度",
+      "noiseLevel": "普通",
+      "situations": [
+        "誕生日会",
+        "プレイデート",
+        "雨の日"
+      ],
+      "skills": [
+        "創造性",
+        "社会性",
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "構造が安定していて子どもに崩れ落ちないように。重い物は使わないで",
+      "parentTips": "散らかるのは我慢！この活動の後は長い想像遊びが続きます",
+      "variations": [
+        "雰囲気作りにフェアリーライトや懐中電灯を追加",
+        "カードテーブルを既製の枠として使う"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "組み立て遊び",
+        "ごっこ遊び"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6006",
+      "title": "ストーリーダイス",
+      "description": "絵の描かれたサイコロに基づいて即興で協力して物語を作る",
+      "instructions": [
+        "1. 6つの小さな紙に簡単な記号（動物、乗り物、天気、食べ物）を描いてサイコロを作ります",
+        "2. サイコロを振ります",
+        "3. 最初のプレイヤーが一つの画像を使って物語を始めます",
+        "4. 次のプレイヤーが別の画像を取り入れて続けます。全部使うまで続けましょう！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "どこでも",
+      "materials": [
+        "紙",
+        "マーカー"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "静か",
+      "situations": [
+        "誕生日会",
+        "プレイデート",
+        "待合室",
+        "車移動"
+      ],
+      "skills": [
+        "創造性",
+        "認知",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け",
+        "自閉症のお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "準備なしで済むように事前にサイコロを作りましょう。可笑しくて不合理な展開を勧めて",
+      "variations": [
+        "市販のストーリーダイスを使う",
+        "完成した物語を演じる"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "お話作り"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6007",
+      "title": "1分間チャレンジ：クッキーフェイス",
+      "description": "人気ゲームショーからのかなり可笑しいシンプルなチャレンジ",
+      "instructions": [
+        "1. それぞれのプレイヤーを仰向けに寝かせます",
+        "2. おでこの上にクッキー（オレオなど）を置きます",
+        "3. 「スタート！」で、手を使わずに顔をくねらせてクッキーを口に入れます",
+        "4. 最初に成功した人が勝ちです！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "クッキー（1ラウンドにつき一人一個）"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動",
+        "社会性"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "子どもが柔らかい面の上にいることを確認。クッキーが割れた時の窒息に注意",
+      "parentTips": "カメラの準備を！これは純粋なコメディです。アレルギーの場合は別の小さなお菓子を使って",
+      "variations": [
+        "リレー競争として行う",
+        "小さなクラッカーを使う"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6008",
+      "title": "自然のブレスレット",
+      "description": "マスキングテープを、見つけた自然の宝物のための着用できるキャンバスに変える",
+      "instructions": [
+        "1. マスキングテープをそれぞれの子どもの手首に、粘着面を外側にして巻き、ブレスレットにします",
+        "2. 庭や公園を散歩します",
+        "3. 小さくて面白い自然の物を見つけます：花びら、葉、草の葉、小さな羽",
+        "4. ブレスレットに貼り付けて、美しい一時的なアート作品を作ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "屋外",
+      "materials": [
+        "マスキングテープ"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "認知"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け",
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "春,夏,秋",
+      "safetyNotes": "安全な物だけを拾い、未知の植物やベリーは避けるように教えましょう",
+      "parentTips": "エネルギーの高いゲームから落ち着いたものへ移行するのに最適な活動です",
+      "variations": [
+        "テーブルに貼ったコンタクト紙で同じことをしてコラージュ作り",
+        "自然の冠作り"
+      ],
+      "source": "オリジナル",
+      "tags": [
+        "自然",
+        "工作"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6009",
+      "title": "影絵劇",
+      "description": "手と光源だけを使った魔法のようなショー",
+      "instructions": [
+        "1. 白いシーツを吊るすか、ドアにクッキングシートを貼ります",
+        "2. 後ろに明るいランプや懐中電灯を置き、シーツに向けて照らします",
+        "3. 部屋の他の明かりを消します",
+        "4. 光とシーツの間に立ち、手で影の動物を作って物語を語ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "シーツやクッキングシート",
+        "ランプや懐中電灯",
+        "テープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "誕生日会",
+        "プレイデート",
+        "寝る前"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "ランプが触れて熱くないこと、安全に設置されていることを確認しましょう",
+      "parentTips": "事前にいくつかの簡単な動物の形（犬、鳥、ウサギ）を調べて教えましょう",
+      "variations": [
+        "簡単な段ボールの形を切り抜き、棒に貼る",
+        "スマホでショーを録画する"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6010",
+      "title": "人間の結び目",
+      "description": "ほどけるためにコミュニケーションとチームワークが必要な古典的な協力ゲーム",
+      "instructions": [
+        "1. 4-6人の子どもを向かい合って円にならべます",
+        "2. 全員が右手を伸ばして誰か別の人の手（隣の人の手ではない）をつかみます",
+        "3. 次に、全員が左手を伸ばして別の人の手をつかみます",
+        "4. 離さずに、グループはコミュニケーションを取り、歩いたり登ったりかがんだりして円にほどけます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "4-6",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "社会性",
+        "認知",
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "数回",
+      "seasonality": "いつでも",
+      "safetyNotes": "優しくして、腕を引っ張ったりしないように子どもに言い聞かせましょう。つまずきに注意",
+      "parentTips": "これは良いアイスブレーカーです。詰まりすぎたら、戦略的な「手放し」を一つ許可しても",
+      "variations": [
+        "どれだけ速くできるか時間を測る",
+        "より大きなグループで遊ぶ"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 3,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6011",
+      "title": "手作り楽器",
+      "description": "家庭の容器から簡単なシェーカーと太鼓を作る",
+      "instructions": [
+        "1. 空の容器（ペットボトル、ヨーグルトのカップ、オートミールの缶）を見つけます",
+        "2. ボトルに乾燥米、豆、またはパスタを入れてシェーカーを作ります",
+        "3. 開いた缶の上に風船を伸ばしてかぶせ、輪ゴムで固定して太鼓を作ります",
+        "4. シールとマーカーで飾り付けし、パレードをしましょう！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "空の容器",
+        "米/豆/パスタ",
+        "風船",
+        "輪ゴム",
+        "マーカー",
+        "シール"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "中程度",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート",
+        "雨の日"
+      ],
+      "skills": [
+        "創造性",
+        "運動"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "一度",
+      "seasonality": "いつでも",
+      "safetyNotes": "幼い兄弟がいる場合、豆のような窒息の危険がある小さな物の使用はしっかり見守りましょう",
+      "parentTips": "散らかりを抑えるためにトレイやテーブルクロスの上でやりましょう。工作自体も楽しみの半分です！",
+      "variations": [
+        "箱に輪ゴムを張ってギターを作る",
+        "鍋やフライパンを太鼓として使う"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "音楽",
+        "工作"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6012",
+      "title": "子どもジェスチャーゲーム",
+      "description": "古典的な演技ゲームの簡易版",
+      "instructions": [
+        "1. 簡単なアイデア（動物、動作、映画のタイトル）を小さな紙に書きます",
+        "2. 折ってボウルに入れます",
+        "3. プレイヤーは順番に紙を選び、声を出さずに演じます",
+        "4. 他のプレイヤーが何をしているか当てます。最初に正解した人が得点！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "紙",
+        "ペン",
+        "ボウル"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "社会性",
+        "創造性",
+        "認知"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "時間節約のために事前にジェスチャーカードを作りましょう。楽しさを保つために可笑しい推測を勧めて",
+      "variations": [
+        "市販の子ども向けジェスチャーカードを使う",
+        "チームで遊ぶ"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "ごっこ遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6013",
+      "title": "靴下スケート",
+      "description": "滑りやすい床を楽しいスケートリンクに変える",
+      "instructions": [
+        "1. 子どもが靴下を履いていることを確認します",
+        "2. 滑らかな床空間（フローリング、ラミネート、タイル）を確保します",
+        "3. 音楽をかけます",
+        "4. 走って滑らせて、アイススケーターのふりをさせましょう！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "靴下",
+        "滑らかな床",
+        "音楽"
+      ],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "高い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動"
+      ],
+      "specialNeeds": [
+        "ADHDのお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "すべての障害物と硬い角をエリアから取り除きましょう。衝突に注意",
+      "parentTips": "これはケーキでついたエネルギーを燃やすのに最適な方法です。理由のある古典です！",
+      "variations": [
+        "スピンやジャンプのある「フィギュアスケート」競技会をする",
+        "枕で「スラローム」コースを設定する"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6014",
+      "title": "紙袋人形",
+      "description": "想像力をかき立てる、簡単で自由度の高い工作",
+      "instructions": [
+        "1. それぞれの子どもに紙のランチ袋を渡します",
+        "2. マーカー、動く目、毛糸、布きれ、のりを準備します",
+        "3. 動物、怪物、人など、キャラクターを作らせます",
+        "4. 乾いたら、ソファやテーブルの後から人形劇をします"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "紙袋",
+        "マーカー",
+        "動く目",
+        "毛糸",
+        "のり",
+        "布きれ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "中程度",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "要見守り",
+      "messLevel": "中程度",
+      "noiseLevel": "普通",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "運動"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "一度",
+      "seasonality": "いつでも",
+      "safetyNotes": "必要ならはさみの使用を見守りましょう",
+      "parentTips": "散らかりを少なくするにはスティックのりがおすすめです。ベタベタした指用にウェットティッシュを準備して",
+      "variations": [
+        "袋の代わりに古い靴下を使う",
+        "「海の中」など特定のテーマを設定する"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "工作",
+        "ごっこ遊び"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6015",
+      "title": "室内ボウリング",
+      "description": "リサイクルの水のボトルとボールでボウリング場を作る",
+      "instructions": [
+        "1. 空のペットボトル10本をボウリングのピンのように並べます",
+        "2. 柔らかいボール（テニスボール、小さなフォームボール）をボウリングの球にします",
+        "3. テープでスタートラインを印します",
+        "4. 順番にボールを転がしてピンを倒します"
+      ],
+      "ageGroup": "6-8",
+      "duration": 15,
+      "location": "室内",
+      "materials": [
+        "空のペットボトル10本",
+        "柔らかいボール",
+        "テープ"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "普通",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "壁や家具を傷つけないようにボールが柔らかいことを確認しましょう",
+      "parentTips": "ボトルに少量の砂や水を入れると重くなり、簡単に倒れにくくなります",
+      "variations": [
+        "まずボトルをキャラクターのように飾り付ける",
+        "フルゲームで得点を記録する"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6016",
+      "title": "協力壁画",
+      "description": "競争より協力を促す巨大な共同アートプロジェクト",
+      "instructions": [
+        "1. 大きなクラフト紙や包装紙の裏を壁やテーブルにテープで貼ります",
+        "2. マーカー、クレヨン、シールを出します",
+        "3. 「私たちの魔法の世界」「海の中の冒険」「誕生日のお祝い」など簡単なテーマを与えます",
+        "4. 子どもたち全員で一緒に描いて一つの巨大な傑作を作ります"
+      ],
+      "ageGroup": "6-8",
+      "duration": 20,
+      "location": "室内",
+      "materials": [
+        "大きな紙",
+        "テープ",
+        "マーカー",
+        "クレヨン",
+        "シール"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "少なめ",
+      "noiseLevel": "静か",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "創造性",
+        "社会性"
+      ],
+      "specialNeeds": [
+        "感覚過敏なお子様向け",
+        "おとなしいお子様向け"
+      ],
+      "cost": "安価",
+      "repeatability": "一度",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "これは素晴らしい静かな時間の活動です。壁画は楽しいパーティーの飾りにもなります",
+      "variations": [
+        "より大きな散らかりと楽しさのために絵の具を使う",
+        "主賓への誕生日プレゼントにする"
+      ],
+      "source": "レッジョ・エミリア教育",
+      "tags": [
+        "アート"
+      ],
+      "difficulty": 1,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6017",
+      "title": "プレゼント回し（簡易版）",
+      "description": "みんなに小さなサプライズがある古典的なパーティーゲーム",
+      "instructions": [
+        "1. 小さなお菓子（シール、キャンディ）を何層もの紙（新聞紙、再利用の包装紙）で包みます",
+        "2. 各層の間に、同じ小さなお菓子を追加します",
+        "3. プレイヤーは円になって座り、音楽が流れている間包みを回します",
+        "4. 音楽が止まったら、持っているプレイヤーが一層を開けて中の菓子をもらいます。全部の層がなくなるまで続けます"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "包装紙",
+        "同じ小さなお菓子（例：シール）"
+      ],
+      "prep": "時間がかかる",
+      "parentEnergy": "中程度",
+      "kidEnergy": "中程度",
+      "kidCount": "5人以上",
+      "supervision": "要見守り",
+      "messLevel": "少なめ",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会"
+      ],
+      "skills": [
+        "社会性"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "一度",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "これはパーティーの前に事前に包んでおきましょう。このバージョンは誰も取り残されないようにします",
+      "variations": [
+        "中心に大きな賞を入れる",
+        "いくつかの層にお菓子の代わりに可笑しい挑戦を書く"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6018",
+      "title": "何がなくなった？",
+      "description": "注意深い観察が必要な記憶ゲーム",
+      "instructions": [
+        "1. 10-15の一般的な小さな物（スプーン、おもちゃの車、積み木、クレヨン、リンゴ）を集めます",
+        "2. トレーの上に置き、30秒間プレイヤーに見せます",
+        "3. プレイヤーに目を覆わせるか、後ろを向かせます",
+        "4. 一つの物を取り除きます。プレイヤーは何がなくなったか推測します！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "室内",
+      "materials": [
+        "トレー",
+        "いろいろな小さな物"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "低い",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "普通",
+      "situations": [
+        "誕生日会",
+        "プレイデート",
+        "待合室"
+      ],
+      "skills": [
+        "認知"
+      ],
+      "specialNeeds": [
+        "おとなしいお子様向け"
+      ],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "簡単に始めてだんだん難しくしましょう。子どもが順番に物を取り除く役をさせても",
+      "variations": [
+        "もっと物を追加する",
+        "一度に2つか3つの物を取り除く",
+        "テーマを使う（例：すべて台所用品）"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6019",
+      "title": "サイモンセッズ",
+      "description": "究極のリスニングと指示に従うゲーム",
+      "instructions": [
+        "1. 一人のプレイヤーを「サイモン」に選びます",
+        "2. サイモンは「サイモンが言いました…」で始まる命令を出します（例：「サイモンが言いました、鼻を触りなさい」）",
+        "3. プレイヤーは「サイモンが言いました…」で始まる命令にだけ従わなければなりません",
+        "4. サイモンがフレーズなしで命令を出し、プレイヤーがそれを実行したら、その人はアウトです。最後のプレイヤーが勝ちです！"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "どこでも",
+      "materials": [],
+      "prep": "必要なし",
+      "parentEnergy": "低い",
+      "kidEnergy": "中程度",
+      "kidCount": "2-4",
+      "supervision": "最小限",
+      "messLevel": "なし",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会",
+        "プレイデート"
+      ],
+      "skills": [
+        "認知",
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "無料",
+      "repeatability": "何度でも",
+      "seasonality": "いつでも",
+      "safetyNotes": "",
+      "parentTips": "最初のサイモンになってゲームのお手本を示しましょう。楽しさを保つために可笑しい命令を勧めて",
+      "variations": [
+        "「キャプテンが言いました」や「[誕生日の子の名前]が言いました」で遊ぶ",
+        "命令の速度を上げる"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "bday6020",
+      "title": "風船踏み",
+      "description": "パーティーを最高の雰囲気で終わらせる非常にエネルギッシュなゲーム",
+      "instructions": [
+        "1. 長いひもでそれぞれの子どもの足首に風船を結びます",
+        "2. 「スタート！」で、プレイヤーはお互いの風船を踏んで割ろうとします",
+        "3. 自分の風船も守らなければなりません",
+        "4. 最後まで風船が無事だったプレイヤーが勝ちです"
+      ],
+      "ageGroup": "6-8",
+      "duration": 10,
+      "location": "屋外",
+      "materials": [
+        "風船（一人一個）",
+        "ひも"
+      ],
+      "prep": "簡単",
+      "parentEnergy": "低い",
+      "kidEnergy": "高い",
+      "kidCount": "5人以上",
+      "supervision": "要見守り",
+      "messLevel": "少なめ",
+      "noiseLevel": "大きい",
+      "situations": [
+        "誕生日会"
+      ],
+      "skills": [
+        "運動"
+      ],
+      "specialNeeds": [],
+      "cost": "安価",
+      "repeatability": "一度",
+      "seasonality": "いつでも",
+      "safetyNotes": "転倒を防ぐために芝生の上で遊びましょう。衝突しないように子どもたちに注意させましょう。敏感な子どものために風船が割れる音に気を配りましょう",
+      "parentTips": "これは保護者が到着する前の砂糖で燃料補給された最後のエネルギーを確実に燃やすのに最適です",
+      "variations": [
+        "チームで遊び、チームメイトの風船を守ろうとする"
+      ],
+      "source": "伝統的な遊び",
+      "tags": [
+        "体を動ばす"
+      ],
+      "difficulty": 2,
+      "popularity": 0.0,
+      "lastUpdated": "2025-01-15T10:30:00Z"
+    }
+  ]
+}
