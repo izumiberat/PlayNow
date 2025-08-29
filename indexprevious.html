@@ -469,6 +469,7 @@
         }
         
         .filter-group-content {
+            padding: 12px 15px 15px;
             display: none;
         }
         
@@ -1223,7 +1224,39 @@
                 font-size: 1.1rem;
             }
         }
-        
+
+        /* Media query adjustments for filters */
+        @media (min-width: 768px) {
+            .filter-group.expanded {
+                background: white;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            }
+            
+            .filter-group-header {
+                background: white;
+                padding: 10px 15px;
+            }
+            
+            .filter-group-content {
+                padding: 0 15px 15px;
+            }
+            
+            .filter-options {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .age-filter-group .filter-options {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .primary-filters {
+                grid-template-columns: 1fr;
+            }
+            
+            .secondary-filters {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
         @media (min-width: 992px) {
             .secondary-filters {
                 grid-template-columns: repeat(3, 1fr);
@@ -1775,8 +1808,13 @@
                     </div>
                 </div>
                 
-                <!-- Prep Filter -->
-                <div class="filter-group-content">
+                <!-- Prep Filter - Fixed structure -->
+                <div class="filter-group">
+                    <div class="filter-group-header">
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="filters.prep">Preparation</span></h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-group-content">
                         <div class="filter-options" id="prep-filters">
                             <button class="filter-btn active" data-filter="prep" data-value="all">
                                 <i class="fas fa-list"></i> <span data-i18n="filters.all">All</span>
