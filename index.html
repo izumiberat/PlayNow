@@ -23,6 +23,7 @@
   --soft:#eef3fa; --warm:#fff6ec; --radius:14px; --shadow:0 2px 10px rgba(43,45,66,.07);
 }
 *{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:17px}
 a{color:var(--primary)}
@@ -65,6 +66,40 @@ header{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.05);position:sticky;top:
 select{font:inherit;font-size:.95rem;padding:8px 12px;border-radius:10px;border:1.5px solid var(--border);background:#fff;min-height:40px;max-width:100%}
 .fbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:6px;padding-top:12px;border-top:1px solid var(--border)}
 .count{font-weight:600}
+.quick{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin:6px 0 18px;scroll-margin-top:70px}
+.quick h2{font-size:1.25rem;margin-bottom:4px}
+.quick .sub{color:var(--muted);margin-bottom:14px}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:14px}
+.qbtn{border:1.5px solid var(--border);background:var(--soft);border-radius:14px;padding:14px 10px;font:inherit;font-weight:600;cursor:pointer;color:var(--text);min-height:64px;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
+.qbtn .ico{font-size:1.5rem;line-height:1}
+.qbtn:hover{border-color:var(--primary)}
+.qbtn.surprise{background:var(--accent);border-color:var(--accent);color:#fff}
+.qbtn.surprise:hover{background:var(--accent-dark)}
+.qbtn:focus-visible,.fav:focus-visible{outline:3px solid #f4b860;outline-offset:2px}
+.cycle{background:var(--soft);border-radius:10px;padding:8px 12px;margin-bottom:10px;font-size:.93rem}
+.fav{background:#fff;border:2px solid var(--accent);color:var(--accent-dark);border-radius:999px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer;min-height:48px}
+.fav[aria-pressed="true"]{background:var(--warm)}
+.favs{scroll-margin-top:70px;margin:10px 0 26px}
+.favs h2{font-size:1.3rem;margin-bottom:10px}
+.card-wrap{position:relative}
+.qlabel{display:block;font-size:.85rem;font-weight:600;color:var(--muted);margin:14px 0 6px;text-transform:uppercase;letter-spacing:.03em}
+.qlabel .opt{text-transform:none;font-weight:400;letter-spacing:0}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.pbtn{border:1.5px solid var(--border);background:#fff;border-radius:14px;padding:12px 10px;font:inherit;cursor:pointer;color:var(--text);text-align:center;min-height:64px}
+.pbtn b{display:block}.pbtn small{color:var(--muted)}
+.pbtn:hover{border-color:var(--primary)}
+.pbtn:focus-visible{outline:3px solid #f4b860;outline-offset:2px}
+.plan{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin:0 0 18px;scroll-margin-top:70px}
+.plan h2{font-size:1.25rem;margin-bottom:4px}
+.plan .meta{color:var(--muted);margin-bottom:12px}
+.steps{list-style:none;display:grid;gap:10px;counter-reset:step}
+.steps li{display:flex;gap:10px;align-items:stretch}
+.steps li::before{counter-increment:step;content:counter(step);flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-top:12px}
+.steps .card{flex:1}
+.plan .cta{justify-content:flex-start;margin-top:14px}
+.saved{list-style:none;display:grid;gap:8px;margin-bottom:16px}
+.saved li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px 14px}
+.saved li span{flex:1;min-width:160px}
 .linkbtn{background:none;border:0;color:var(--primary);font:inherit;cursor:pointer;text-decoration:underline;padding:4px}
 
 /* Grid */
@@ -77,12 +112,15 @@ select{font:inherit;font-size:.95rem;padding:8px 12px;border-radius:10px;border:
 .tag{background:var(--soft);color:var(--primary-dark);font-size:.78rem;border-radius:999px;padding:2px 9px}
 .empty,.loading{grid-column:1/-1;text-align:center;padding:30px;color:var(--muted)}
 .more{display:flex;justify-content:center;margin-bottom:20px}
+.end{text-align:center;color:var(--muted);margin:0 0 24px}
+.end p{margin-bottom:10px}
+.end .cta{gap:8px}
 
 /* Sections */
 section.block,.finder{scroll-margin-top:70px}
 section.block{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 22px;margin:26px 0}
 section.block h2{font-size:1.45rem;margin-bottom:10px}
-.gp{background:linear-gradient(180deg,#fff9f2,#fff)!important;border:1px solid #f6dcc0}
+section.gp{background:linear-gradient(180deg,#fff9f2,#fff);border:1px solid #f6dcc0}
 .tips{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0}
 .tips li{background:#fff;border:1px solid #f1e2d0;border-radius:12px;padding:14px;font-size:.97rem}
 .tips li b{display:block;margin-bottom:4px}
@@ -108,7 +146,7 @@ dialog::backdrop{background:rgba(20,22,35,.55)}
 .m-desc{color:var(--muted)}
 .note{background:var(--warm);border-radius:10px;padding:10px 12px;margin-top:6px;font-size:.95rem}
 .note.safe{background:#fdeeee}
-.m-foot{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;padding:12px 20px 18px}
+.m-foot{display:flex;gap:10px;justify-content:flex-start;flex-wrap:wrap;padding:12px 20px 18px}
 
 footer{background:#2b2d42;color:#d9dbe4;margin-top:30px;padding:30px 0;font-size:.95rem}
 footer a{color:#fff}
@@ -129,6 +167,7 @@ footer li{margin-bottom:6px}
       Play Now
     </a>
     <div class="head-right">
+      <a class="head-link" href="#favoris" id="nav-fav" hidden></a>
       <a class="head-link" href="#appli" data-i18n="nav.app">L'appli</a>
       <div class="langs" role="group" aria-label="Langue / Language / 言語">
         <button type="button" data-lang="fr" lang="fr">FR</button>
@@ -143,24 +182,48 @@ footer li{margin-bottom:6px}
   <section class="hero">
     <h1 data-i18n="hero.title">Une idée de jeu, tout de suite</h1>
     <p data-i18n="hero.text">Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.</p>
+  </section>
+
+  <section class="quick" id="vite" aria-labelledby="quick-title">
+    <h2 id="quick-title" data-i18n="q.title">Une envie ? On vous trouve une idée</h2>
+    <p class="sub" data-i18n="q.sub">Choisissez l'âge de l'enfant, puis touchez une envie.</p>
+    <div class="chips age-chips" role="group" aria-labelledby="quick-title">
+      <button type="button" class="chip" data-age="0-2"></button>
+      <button type="button" class="chip" data-age="3-5"></button>
+      <button type="button" class="chip" data-age="6-8"></button>
+      <button type="button" class="chip" data-age="9-12"></button>
+    </div>
+    <span class="qlabel" id="lbl-energy"><span data-i18n="e.label">Et vous, quelle énergie aujourd'hui ?</span> <span class="opt" data-i18n="e.opt">(facultatif)</span></span>
+    <div class="chips" role="group" aria-labelledby="lbl-energy">
+      <button type="button" class="chip" data-penergy="low" data-i18n="e.low">🔋 Pas beaucoup</button>
+      <button type="button" class="chip" data-penergy="medium" data-i18n="e.medium">🙂 Moyenne</button>
+      <button type="button" class="chip" data-penergy="high" data-i18n="e.high">⚡ En forme</button>
+    </div>
+    <span class="qlabel" data-i18n="q.moods">Une envie</span>
+    <div class="qgrid" id="qgrid" style="margin-top:0"></div>
+    <span class="qlabel" data-i18n="p.label">Ou un petit programme de plusieurs activités</span>
+    <div class="pgrid">
+      <button type="button" class="pbtn" data-plan="morning"><b data-i18n="p.morning">🌅 Ma matinée</b><small data-i18n="p.morningS">4 activités</small></button>
+      <button type="button" class="pbtn" data-plan="afternoon"><b data-i18n="p.afternoon">🌞 Mon après-midi</b><small data-i18n="p.afternoonS">3 activités, après la sieste</small></button>
+      <button type="button" class="pbtn" data-plan="rainy"><b data-i18n="p.rainy">🌧️ Jour de pluie</b><small data-i18n="p.rainyS">4 activités dedans</small></button>
+      <button type="button" class="pbtn" data-plan="quiet"><b data-i18n="p.quiet">🤫 Moment calme</b><small data-i18n="p.quietS">3 activités tranquilles</small></button>
+    </div>
+  </section>
+
+  <section class="plan" id="plan" aria-labelledby="plan-title" hidden>
+    <h2 id="plan-title"></h2>
+    <p class="meta" id="plan-meta"></p>
+    <ol class="steps" id="plan-steps"></ol>
     <div class="cta">
-      <a class="btn btn-primary" href="#trouver" data-i18n="hero.find">Trouver une activité</a>
-      <button class="btn btn-accent" type="button" id="random-top" data-i18n="hero.random">Une idée au hasard</button>
+      <button type="button" class="btn btn-accent" id="plan-again" data-i18n="p.again">Un autre programme</button>
+      <button type="button" class="fav" id="plan-save" aria-pressed="false"></button>
+      <button type="button" class="btn btn-ghost" id="plan-close" data-i18n="m.close">Fermer</button>
     </div>
   </section>
 
   <section class="finder" id="trouver" aria-labelledby="finder-title">
-    <h2 id="finder-title" data-i18n="f.title">Trouver une activité</h2>
+    <h2 id="finder-title" data-i18n="f.title">Ou cherchez vous-même</h2>
     <div class="frow">
-      <div class="fgroup">
-        <span id="lbl-age" data-i18n="f.age">Âge de l'enfant</span>
-        <div class="chips" role="group" aria-labelledby="lbl-age" id="age-chips">
-          <button type="button" class="chip" data-age="0-2"></button>
-          <button type="button" class="chip" data-age="3-5"></button>
-          <button type="button" class="chip" data-age="6-8"></button>
-          <button type="button" class="chip" data-age="9-12"></button>
-        </div>
-      </div>
       <div class="fgroup">
         <span id="lbl-where" data-i18n="f.where">Où ?</span>
         <div class="chips" role="group" aria-labelledby="lbl-where" id="where-chips">
@@ -205,6 +268,21 @@ footer li{margin-bottom:6px}
 
   <div class="grid" id="grid"><div class="loading" data-i18n="loading">Chargement des activités…</div></div>
   <div class="more"><button type="button" class="btn btn-ghost" id="more" hidden data-i18n="more">Afficher plus d'idées</button></div>
+  <div class="end" id="end" hidden>
+    <p data-i18n="end.text">C'est tout pour cette recherche.</p>
+    <div class="cta">
+      <a class="btn btn-ghost" href="#trouver" data-i18n="end.change">Changer les filtres</a>
+      <button type="button" class="btn btn-ghost" id="end-age" data-i18n="end.age">Essayer un autre âge</button>
+      <button type="button" class="btn btn-accent" id="end-random" data-i18n="f.random">Une idée au hasard</button>
+    </div>
+  </div>
+
+  <section class="favs" id="favoris" aria-labelledby="fav-title" hidden>
+    <h2 id="fav-title" data-i18n="fav.title">Mes favoris et programmes</h2>
+    <p class="m-desc" data-i18n="fav.note" style="margin:-4px 0 10px">Gardés sur cet appareil uniquement.</p>
+    <ul class="saved" id="plan-list"></ul>
+    <div class="grid" id="fav-grid"></div>
+  </section>
 
 
   <section class="block" id="appli" aria-labelledby="app-title">
@@ -246,6 +324,7 @@ footer li{margin-bottom:6px}
   <div class="m-body" id="m-body"></div>
   <div class="m-foot">
     <button type="button" class="btn btn-accent" id="m-another" data-i18n="m.another">Une autre idée</button>
+    <button type="button" class="fav" id="m-fav" aria-pressed="false"></button>
     <button type="button" class="btn btn-ghost" id="m-close2" data-i18n="m.close">Fermer</button>
   </div>
 </dialog>
@@ -278,8 +357,10 @@ var T = {
   skip:"Aller aux activités", 'nav.app':"L'appli",
   'hero.title':"Une idée de jeu, tout de suite",
   'hero.text':"Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.",
-  'hero.find':"Trouver une activité", 'hero.random':"Une idée au hasard",
-  'f.title':"Trouver une activité", 'f.age':"Âge de l'enfant", 'f.where':"Où ?", 'f.any':"Peu importe",
+  'e.label':"Et vous, quelle énergie aujourd'hui ?", 'e.opt':"(facultatif)", 'e.low':"🔋 Pas beaucoup", 'e.medium':"🙂 Moyenne", 'e.high':"⚡ En forme", 'q.moods':"Une envie", 'p.label':"Ou un petit programme de plusieurs activités", 'p.morning':"🌅 Ma matinée", 'p.morningS':"4 activités", 'p.afternoon':"🌞 Mon après-midi", 'p.afternoonS':"3 activités, après la sieste", 'p.rainy':"🌧️ Jour de pluie", 'p.rainyS':"4 activités dedans", 'p.quiet':"🤫 Moment calme", 'p.quietS':"3 activités tranquilles", 'p.again':"Un autre programme", 'p.save':"☆ Garder ce programme", 'p.saved':"★ Programme gardé", 'p.total':"Environ {m} minutes en tout", 'p.open':"Ouvrir", 'p.remove':"Retirer", 'p.few':"Pas assez d'idées avec ces choix pour un programme complet. Essayez sans le niveau d'énergie.",
+  'q.title':"Une envie ? On vous trouve une idée", 'q.sub':"Choisissez l'âge de l'enfant, puis touchez une envie.", 'f.title':"Ou cherchez vous-même", 'fav.title':"Mes favoris et programmes", 'fav.note':"Gardés sur cet appareil uniquement.", 'fav.nav':"Favoris", 'fav.add':"☆ Garder en favori", 'fav.on':"★ Dans mes favoris", 'q.cycle':"Vous avez vu toutes les idées de ce type pour cet âge. On recommence !",
+  cats:{"bonding": "Moment complice", "sensory": "Éveil des sens", "calm": "Pour se calmer", "quick": "Vite fait", "energy": "Se dépenser", "pretend": "Faire semblant", "learning": "Apprendre en jouant", "family": "En famille", "alone": "Jouer seul", "challenge": "Des défis", "friends": "Entre copains", "surprise": "Surprise !"},
+  'f.age':"Âge de l'enfant", 'f.where':"Où ?", 'f.any':"Peu importe",
   'f.indoor':"Dedans", 'f.outdoor':"Dehors", 'f.time':"Combien de temps ?", 'f.t10':"10 min ou moins",
   'f.t20':"20 min ou moins", 'f.tlong':"Plus long", 'f.situation':"Situation", 'f.more':"Envie de…",
   'f.gp':"Idéal grands-parents", 'f.quiet':"Calme", 'f.clean':"Sans rien salir", 'f.nomat':"Sans matériel",
@@ -289,6 +370,7 @@ var T = {
   count:function(n){return n===0?"Aucune activité ne correspond. Essayez d'enlever un filtre.":(n===1?"1 activité":n+" activités");},
   loading:"Chargement des activités…", error:"Impossible de charger les activités. Vérifiez votre connexion et rechargez la page.",
   more:"Afficher plus d'idées", min:" min",
+  'end.text':"C'est tout pour cette recherche.", 'end.change':"Changer les filtres", 'end.age':"Essayer un autre âge",
   'gp.title':"Jouer avec ses petits-enfants",
   'gp.text':"Un moment ensemble, sans écran et sans rien acheter. Le filtre « Idéal grands-parents » garde les activités calmes, qui salissent peu et ne demandent pas de courir partout.",
   'gp.t1h':"Laissez-le choisir", 'gp.t1':"Proposez deux ou trois idées et laissez l'enfant choisir. Il s'y mettra plus volontiers.",
@@ -314,8 +396,10 @@ var T = {
   skip:"Skip to activities", 'nav.app':"The app",
   'hero.title':"A play idea, right now",
   'hero.text':"Over 300 screen-free activities to play with your child aged 0 to 12. Pick their age, the place and the time you have: an idea in seconds. Free, no sign-up.",
-  'hero.find':"Find an activity", 'hero.random':"Surprise me",
-  'f.title':"Find an activity", 'f.age':"Child's age", 'f.where':"Where?", 'f.any':"Any",
+  'e.label':"And you, how's your energy today?", 'e.opt':"(optional)", 'e.low':"🔋 Running low", 'e.medium':"🙂 So-so", 'e.high':"⚡ Full of beans", 'q.moods':"What you feel like", 'p.label':"Or a little plan with several activities", 'p.morning':"🌅 My morning", 'p.morningS':"4 activities", 'p.afternoon':"🌞 My afternoon", 'p.afternoonS':"3 activities, after nap time", 'p.rainy':"🌧️ Rainy day", 'p.rainyS':"4 indoor activities", 'p.quiet':"🤫 Quiet time", 'p.quietS':"3 calm activities", 'p.again':"Another plan", 'p.save':"☆ Save this plan", 'p.saved':"★ Plan saved", 'p.total':"About {m} minutes in all", 'p.open':"Open", 'p.remove':"Remove", 'p.few':"Not enough ideas with these choices for a full plan. Try without the energy level.",
+  'q.title':"In the mood for something? We'll find an idea", 'q.sub':"Pick the child's age, then tap what you feel like.", 'f.title':"Or search yourself", 'fav.title':"My favourites and plans", 'fav.note':"Kept on this device only.", 'fav.nav':"Favourites", 'fav.add':"☆ Save as favourite", 'fav.on':"★ In my favourites", 'q.cycle':"You've seen every idea of this kind for this age. Starting again!",
+  cats:{"bonding": "Bonding time", "sensory": "Sensory play", "calm": "Calm & soothing", "quick": "Quick & easy", "energy": "Burn energy", "pretend": "Pretend play", "learning": "Learning", "family": "Family fun", "alone": "Playing alone", "challenge": "Challenges", "friends": "With friends", "surprise": "Surprise me!"},
+  'f.age':"Child's age", 'f.where':"Where?", 'f.any':"Any",
   'f.indoor':"Indoors", 'f.outdoor':"Outdoors", 'f.time':"How long?", 'f.t10':"10 min or less",
   'f.t20':"20 min or less", 'f.tlong':"Longer", 'f.situation':"Situation", 'f.more':"In the mood for…",
   'f.gp':"Great for grandparents", 'f.quiet':"Quiet", 'f.clean':"No mess", 'f.nomat':"Nothing needed",
@@ -325,6 +409,7 @@ var T = {
   count:function(n){return n===0?"No activity matches. Try removing a filter.":(n===1?"1 activity":n+" activities");},
   loading:"Loading activities…", error:"Couldn't load the activities. Check your connection and reload the page.",
   more:"Show more ideas", min:" min",
+  'end.text':"That's all for this search.", 'end.change':"Change filters", 'end.age':"Try another age",
   'gp.title':"Playing with your grandchildren",
   'gp.text':"Time together, no screens, nothing to buy. The \"Great for grandparents\" filter keeps calm activities that make little mess and don't need any running around.",
   'gp.t1h':"Let them choose", 'gp.t1':"Suggest two or three ideas and let the child pick. They'll join in more happily.",
@@ -350,8 +435,10 @@ var T = {
   skip:"遊びの一覧へ", 'nav.app':"アプリ",
   'hero.title':"今すぐ遊べるアイデア",
   'hero.text':"0〜12歳のお子さんと一緒に楽しめる、画面を使わない遊びを300以上。年齢・場所・時間を選ぶだけで、すぐにアイデアが見つかります。無料・登録不要です。",
-  'hero.find':"遊びをさがす", 'hero.random':"おまかせで1つ",
-  'f.title':"遊びをさがす", 'f.age':"子どもの年齢", 'f.where':"どこで？", 'f.any':"どこでも",
+  'e.label':"あなたの今日の元気度は？", 'e.opt':"（任意）", 'e.low':"🔋 ちょっと疲れ気味", 'e.medium':"🙂 ふつう", 'e.high':"⚡ 元気いっぱい", 'q.moods':"気分で選ぶ", 'p.label':"いくつかの遊びを組み合わせたプラン", 'p.morning':"🌅 午前のプラン", 'p.morningS':"4つの遊び", 'p.afternoon':"🌞 午後のプラン", 'p.afternoonS':"お昼寝のあとに3つ", 'p.rainy':"🌧️ 雨の日", 'p.rainyS':"室内で4つ", 'p.quiet':"🤫 静かな時間", 'p.quietS':"落ち着いた遊びを3つ", 'p.again':"ほかのプラン", 'p.save':"☆ このプランを保存", 'p.saved':"★ 保存済み", 'p.total':"全部で約{m}分", 'p.open':"開く", 'p.remove':"削除", 'p.few':"この条件ではプランを作れるだけの遊びがありません。元気度の選択を外してみてください。",
+  'q.title':"どんな遊びがいい？アイデアをお届けします", 'q.sub':"子どもの年齢を選んで、気分に合うボタンを押してください。", 'f.title':"自分で条件を選ぶ", 'fav.title':"お気に入りとプラン", 'fav.note':"この端末にだけ保存されます。", 'fav.nav':"お気に入り", 'fav.add':"☆ お気に入りに追加", 'fav.on':"★ お気に入り登録済み", 'q.cycle':"この年齢のこのタイプの遊びはすべて見ました。最初からもう一度！",
+  cats:{"bonding": "ふれあい遊び", "sensory": "感覚あそび", "calm": "落ち着く遊び", "quick": "すぐできる", "energy": "体を動かす", "pretend": "ごっこ遊び", "learning": "学びの遊び", "family": "家族で", "alone": "ひとりで遊ぶ", "challenge": "チャレンジ", "friends": "友だちと", "surprise": "おまかせ！"},
+  'f.age':"子どもの年齢", 'f.where':"どこで？", 'f.any':"どこでも",
   'f.indoor':"室内", 'f.outdoor':"屋外", 'f.time':"時間は？", 'f.t10':"10分以内",
   'f.t20':"20分以内", 'f.tlong':"もっと長く", 'f.situation':"シーン", 'f.more':"こんな遊び",
   'f.gp':"祖父母におすすめ", 'f.quiet':"静か", 'f.clean':"汚れない", 'f.nomat':"道具なし",
@@ -361,6 +448,7 @@ var T = {
   count:function(n){return n===0?"条件に合う遊びがありません。条件を1つ外してみてください。":n+"件の遊び";},
   loading:"読み込み中…", error:"読み込めませんでした。接続を確認して、ページを再読み込みしてください。",
   more:"もっと見る", min:"分",
+  'end.text':"この条件の遊びは以上です。", 'end.change':"条件を変える", 'end.age':"ほかの年齢で探す",
   'gp.title':"お孫さんと遊ぶ",
   'gp.text':"画面なし、買うものなし。一緒に過ごす時間です。「祖父母におすすめ」は、静かで汚れにくく、走り回らなくていい遊びだけを表示します。",
   'gp.t1h':"子どもに選ばせる", 'gp.t1':"2〜3個のアイデアから子どもに選んでもらうと、楽しく始められます。",
@@ -372,7 +460,7 @@ var T = {
   'gp.asideLink':"シニア向けデジタルサポート →",
   'app.title':"Play Now アプリ", 'app.text':"同じアイデアをスマホに。オフラインでも使え、お気に入りも保存できます。",
   'app.dlApple':"ダウンロード", 'app.dlGoogle':"ダウンロード",
-  'idea.text':"お子さんのお気に入りの遊びはありますか？", 'idea.link':"アイデアを送る（英語）",
+  'idea.text':"お子さんのお気に入りの遊びはありますか？", 'idea.link':"アイデアを送る",
   'm.another':"ほかのアイデア", 'm.close':"閉じる", 'm.materials':"用意するもの", 'm.none':"なし",
   'm.steps':"遊び方", 'm.tip':"ひとことアドバイス", 'm.safety':"注意", 'm.variations':"アレンジ",
   'foot.made':"山口 泉（Izumi Bérat・IzuTech、フランス・ポー）のプロジェクトです。",
@@ -385,6 +473,24 @@ var T = {
 var FILE_LANG = {fr:'fr', en:'en', ja:'jp'};
 var SITS = ['all','rainy-day','car-ride','waiting-room','restaurant','bedtime','sick-day','playdate','birthday-party','travel'];
 var PAGE = 12;
+// Same quick categories as the Play Now app (QuickActions.tsx), applied to the English (canonical) fields.
+var CAT_ICON = {bonding:'💖',sensory:'🌈',calm:'😌',quick:'🚀',energy:'🔥',pretend:'🎭',learning:'📚',family:'🎪',alone:'🧒',challenge:'🏆',friends:'👫',surprise:'🎲'};
+var AGE_CATS = {'0-2':['bonding','sensory','calm','quick'],'3-5':['energy','pretend','learning','family','quick'],'6-8':['energy','alone','learning','family','quick'],'9-12':['challenge','friends','alone','energy','quick']};
+function has(arr,v){ return (arr||[]).indexOf(v)>=0; }
+var CAT_TEST = {
+  bonding:function(f){ return (f.supervision==='active'||f.supervision==='constant') && (has(f.skills,'social')||has(f.skills,'emotional')); },
+  sensory:function(f){ return has(f.tags,'sensory'); },
+  calm:function(f){ return f.noiseLevel==='quiet' && f.kidEnergy==='low'; },
+  quick:function(f){ return Number(f.duration)<=15 && (f.messLevel==='none'||f.messLevel==='low') && (f.prep==='none'||f.prep==='quick'); },
+  energy:function(f){ return f.kidEnergy==='medium'||f.kidEnergy==='high'||has(f.tags,'movement'); },
+  pretend:function(f){ return has(f.tags,'pretend-play'); },
+  learning:function(f){ return has(f.skills,'cognitive')||has(f.skills,'academic'); },
+  family:function(f){ return f.kidCount!=='1' && (f.supervision==='minimal'||f.supervision==='active'); },
+  alone:function(f){ return f.supervision==='independent'||f.supervision==='minimal'; },
+  challenge:function(f){ return Number(f.difficulty)>=3; },
+  friends:function(f){ return f.kidCount!=='1' && (f.supervision==='independent'||f.supervision==='minimal'); },
+  surprise:function(){ return true; }
+};
 var LOC = {indoor:'f.indoor', outdoor:'f.outdoor'};
 
 function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
@@ -401,14 +507,14 @@ function pickLang(){
 var state = {
   lang: pickLang(),
   age: ['0-2','3-5','6-8','9-12'].indexOf(params.get('age'))>=0 ? params.get('age') : (store('play.age') || '3-5'),
-  where:'all', time:'all', situation:'all',
+  where:'all', time:'all', situation:'all', penergy:null,
   toggles:{gp:false, quiet:false, clean:false, nomat:false},
   shown: PAGE
 };
 if (['0-2','3-5','6-8','9-12'].indexOf(state.age)<0) state.age='3-5';
 if (params.get('pour')==='grands-parents' || params.get('for')==='grandparents') state.toggles.gp = true;
 
-var scrolled = false, cache = {}, list = [], filtered = [], current = null;
+var mode = null, seen = {}, cycleNote = false, scrolled = false, cache = {}, list = [], filtered = [], current = null;
 var $ = function(id){return document.getElementById(id);};
 
 function t(k){ return T[state.lang][k]; }
@@ -421,7 +527,7 @@ function applyLang(){
     var v = L[el.getAttribute('data-i18n')]; if (typeof v === 'string') el.textContent = v;
   });
   document.querySelectorAll('.langs button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.lang===state.lang); });
-  document.querySelectorAll('#age-chips .chip').forEach(function(b){ b.textContent = L.ages[b.dataset.age]; });
+  document.querySelectorAll('.age-chips .chip').forEach(function(b){ b.textContent = L.ages[b.dataset.age]; });
   var sel = $('situation'); sel.innerHTML='';
   SITS.forEach(function(s){ var o=document.createElement('option'); o.value=s; o.textContent=L.sit[s]; sel.appendChild(o); });
   sel.value = state.situation;
@@ -431,11 +537,136 @@ function applyLang(){
   document.querySelectorAll('a[href^="https://seniors.izutech.fr"]').forEach(function(a){ a.href = sl; });
 }
 
+function renderQuick(){
+  var g = $('qgrid'); g.innerHTML='';
+  (AGE_CATS[state.age]||[]).concat(['surprise']).forEach(function(k){
+    var b = el('button','qbtn'+(k==='surprise'?' surprise':'')); b.type='button';
+    var i = el('span','ico',CAT_ICON[k]); i.setAttribute('aria-hidden','true');
+    b.appendChild(i); b.appendChild(el('span',null,T[state.lang].cats[k]));
+    b.addEventListener('click', function(){ quickIdea(k); });
+    g.appendChild(b);
+  });
+}
+function quickIdea(k){
+  mode = k;
+  var pool = list.filter(function(a){ return CAT_TEST[k](a.f) && energyOk(a.f); });
+  if (!pool.length) pool = list.filter(function(a){ return energyOk(a.f); });
+  if (!pool.length) pool = list;
+  if (!pool.length) return;
+  var key = state.age+'|'+k; seen[key] = seen[key] || {};
+  var fresh = pool.filter(function(a){ return !seen[key][a.f.id]; });
+  cycleNote = false;
+  if (!fresh.length){ seen[key] = {}; fresh = pool; cycleNote = true; }
+  if (fresh.length>1 && current) fresh = fresh.filter(function(a){ return a.f.id!==current.f.id; }) ;
+  var pick = fresh[Math.floor(Math.random()*fresh.length)];
+  seen[key][pick.f.id] = true;
+  openModal(pick);
+}
+// Favourites, kept in this browser only
+function favs(){ try{ return JSON.parse(store('play.favs')||'[]'); }catch(e){ return []; } }
+function favKey(a){ return a.age+':'+a.f.id; }
+function isFav(a){ return favs().indexOf(favKey(a))>=0; }
+function toggleFav(a){
+  var f = favs(), k = favKey(a), i = f.indexOf(k);
+  if (i>=0) f.splice(i,1); else f.unshift(k);
+  store('play.favs', JSON.stringify(f)); syncFavBtn(); renderFavs();
+}
+function syncFavBtn(){
+  var on = current && isFav(current), b = $('m-fav');
+  b.setAttribute('aria-pressed', !!on); b.textContent = t(on?'fav.on':'fav.add');
+}
+function card(a, onOpen){
+  var c = el('button','card'); c.type='button';
+  c.appendChild(el('h3',null,a.x.title));
+  c.appendChild(el('p',null,a.x.description));
+  var tags = el('div','tags');
+  if (a.age!==state.age) tags.appendChild(el('span','tag',T[state.lang].ages[a.age]));
+  tags.appendChild(el('span','tag',(a.f.duration||'?')+t('min')));
+  if (LOC[a.f.location]) tags.appendChild(el('span','tag',t(LOC[a.f.location])));
+  if (!(a.f.materials||[]).length) tags.appendChild(el('span','tag',t('f.nomat')));
+  c.appendChild(tags);
+  c.addEventListener('click', function(){ mode=null; onOpen(a); });
+  return c;
+}
+function renderFavs(){
+  var f = favs(), pl = plans(), nav = $('nav-fav'), n = f.length + pl.length;
+  nav.hidden = !n; nav.textContent = t('fav.nav')+' ('+n+')';
+  if (!n){ $('favoris').hidden = true; return; }
+  var ages = {}; f.forEach(function(k){ ages[k.split(':')[0]] = true; }); pl.forEach(function(k){ ages[k.split('|')[1]] = true; });
+  Promise.all(Object.keys(ages).map(function(age){ return getAge(age); })).then(function(){
+    var ul = $('plan-list'); ul.innerHTML='';
+    pl.forEach(function(k){
+      var p = planFromKey(k); if (p.items.length<2) return;
+      var li = el('li'); li.appendChild(el('span',null,t('p.'+p.type)+' · '+T[state.lang].ages[p.age]+' · '+p.items.map(function(a){ return a.x.title; }).join(', ')));
+      var o = el('button','linkbtn',t('p.open')); o.type='button'; o.addEventListener('click', function(){ showPlan(p); });
+      var r = el('button','linkbtn',t('p.remove')); r.type='button'; r.addEventListener('click', function(){ var l=plans(); l.splice(l.indexOf(k),1); store('play.plans',JSON.stringify(l)); syncPlanBtn(); renderFavs(); });
+      li.appendChild(o); li.appendChild(r); ul.appendChild(li);
+    });
+    ul.hidden = !ul.children.length;
+    var g = $('fav-grid'); g.innerHTML='';
+    f.forEach(function(k){
+      var p = k.split(':'), a = (byAge[p[0]]||[]).filter(function(x){ return String(x.f.id)===p[1]; })[0];
+      if (a) g.appendChild(card(a, openModal));
+    });
+    $('favoris').hidden = !g.children.length && ul.hidden;
+  }).catch(function(){});
+}
+// Small activity plans (idea from the earlier PlayIdeas page)
+var PLAN = {
+  morning:{n:4, ok:function(f){ return true; }, order:'down'},
+  afternoon:{n:3, ok:function(f){ return f.kidEnergy!=='high'; }, order:'down'},
+  rainy:{n:4, ok:function(f){ return f.location!=='outdoor'; }, order:'mix', prefer:function(f){ return has(f.situations,'rainy-day'); }},
+  quiet:{n:3, ok:function(f){ return f.noiseLevel==='quiet' && f.kidEnergy!=='high'; }, order:'none'}
+};
+var ENERGY = {high:3, medium:2, moderate:2, low:1};
+var currentPlan = null;
+function shuffle(a){ for (var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)), t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+function makePlan(type){
+  var P = PLAN[type];
+  var pool = shuffle(list.filter(function(a){ return P.ok(a.f) && energyOk(a.f); }));
+  if (P.prefer){ pool.sort(function(a,b){ return (P.prefer(b.f)?1:0)-(P.prefer(a.f)?1:0); }); pool = shuffle(pool.slice(0, Math.max(P.n*3, 8))); }
+  var picks = [], tags = {};
+  // vary the kind of activity: avoid two with the same first tag when possible
+  pool.forEach(function(a){ if (picks.length<P.n){ var t=(a.f.tags||[])[0]||''; if (!tags[t] || pool.length < P.n*2){ tags[t]=1; picks.push(a); } } });
+  pool.forEach(function(a){ if (picks.length<P.n && picks.indexOf(a)<0) picks.push(a); });
+  if (P.order==='down') picks.sort(function(a,b){ return (ENERGY[b.f.kidEnergy]||1)-(ENERGY[a.f.kidEnergy]||1); });
+  return {type:type, age:state.age, items:picks};
+}
+function showPlan(plan){
+  currentPlan = plan;
+  var sec = $('plan'), ol = $('plan-steps'); ol.innerHTML='';
+  $('plan-title').textContent = t('p.'+plan.type) + ' · ' + T[state.lang].ages[plan.age];
+  if (plan.items.length < 2){ $('plan-meta').textContent = t('p.few'); }
+  else {
+    var m = plan.items.reduce(function(s,a){ return s+(Number(a.f.duration)||0); },0);
+    $('plan-meta').textContent = t('p.total').replace('{m}',m).replace('{a}',T[state.lang].ages[plan.age]);
+  }
+  plan.items.forEach(function(a){ var li=el('li'); li.appendChild(card(a, openModal)); ol.appendChild(li); });
+  syncPlanBtn();
+  sec.hidden = false; sec.scrollIntoView();
+}
+function plans(){ try{ return JSON.parse(store('play.plans')||'[]'); }catch(e){ return []; } }
+function planKey(p){ return p.type+'|'+p.age+'|'+p.items.map(function(a){ return a.f.id; }).join(','); }
+function syncPlanBtn(){
+  var on = currentPlan && plans().indexOf(planKey(currentPlan))>=0, b=$('plan-save');
+  b.hidden = !currentPlan || currentPlan.items.length<2;
+  b.setAttribute('aria-pressed', !!on); b.textContent = t(on?'p.saved':'p.save');
+}
+function togglePlan(){
+  var l = plans(), k = planKey(currentPlan), i = l.indexOf(k);
+  if (i>=0) l.splice(i,1); else l.unshift(k);
+  store('play.plans', JSON.stringify(l.slice(0,20))); syncPlanBtn(); renderFavs();
+}
+function planFromKey(k){
+  var p = k.split('|'), ids = p[2].split(','), src = byAge[p[1]]||[];
+  return {type:p[0], age:p[1], items: ids.map(function(id){ return src.filter(function(a){ return String(a.f.id)===id; })[0]; }).filter(Boolean)};
+}
 function syncChips(){
-  document.querySelectorAll('#age-chips .chip').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.age===state.age); });
+  document.querySelectorAll('.age-chips .chip').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.age===state.age); });
   document.querySelectorAll('[data-where]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.where===state.where); });
   document.querySelectorAll('[data-time]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.time===state.time); });
   document.querySelectorAll('[data-toggle]').forEach(function(b){ b.setAttribute('aria-pressed', !!state.toggles[b.dataset.toggle]); });
+  document.querySelectorAll('[data-penergy]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.penergy===state.penergy); });
 }
 
 function getJSON(url){
@@ -445,24 +676,40 @@ function getJSON(url){
 }
 
 // English file holds the canonical filter values; the language file holds the text.
-function load(){
-  var base = 'assets/json/activities-'+state.age;
-  $('grid').innerHTML = '<div class="loading"></div>';
-  $('grid').firstChild.textContent = t('loading');
-  return Promise.all([getJSON(base+'-en.json'), getJSON(base+'-'+FILE_LANG[state.lang]+'.json')])
+var byAge = {};
+function getAge(age){
+  var base = 'assets/json/activities-'+age, lang = state.lang;
+  return Promise.all([getJSON(base+'-en.json'), getJSON(base+'-'+FILE_LANG[lang]+'.json')])
     .then(function(res){
       var byId = {}; res[1].forEach(function(a){ byId[a.id]=a; });
-      list = res[0].map(function(a){ return {f:a, x:byId[a.id]||a}; });
-      render();
+      var l = res[0].map(function(a){ return {f:a, x:byId[a.id]||a, age:age}; });
+      if (lang===state.lang) byAge[age] = l;
+      return l;
+    });
+}
+function load(){
+  $('grid').innerHTML = '<div class="loading"></div>';
+  $('grid').firstChild.textContent = t('loading');
+  byAge = {};
+  return getAge(state.age)
+    .then(function(l){
+      list = l;
+      render(); renderQuick(); renderFavs();
       if (!scrolled && location.hash.length>1){ scrolled=true; var h=document.getElementById(location.hash.slice(1)); if(h) h.scrollIntoView(); }
     })
     .catch(function(){
       $('grid').innerHTML = '<div class="empty"></div>'; $('grid').firstChild.textContent = t('error');
-      $('count').textContent=''; $('more').hidden = true;
+      $('count').textContent=''; $('more').hidden = true; $('end').hidden = true;
     });
 }
 
+function energyOk(f){
+  if (state.penergy==='low') return f.parentEnergy==='low';
+  if (state.penergy==='medium') return f.parentEnergy!=='high';
+  return true;
+}
 function matches(f){
+  if (!energyOk(f)) return false;
   if (state.where!=='all' && f.location!==state.where && f.location!=='any') return false;
   var d = Number(f.duration)||0;
   if (state.time==='10' && d>10) return false;
@@ -483,20 +730,10 @@ function render(){
   filtered = list.filter(function(a){ return matches(a.f); });
   $('count').textContent = T[state.lang].count(filtered.length);
   var grid = $('grid'); grid.innerHTML='';
-  filtered.slice(0, state.shown).forEach(function(a){
-    var c = el('button','card'); c.type='button';
-    c.appendChild(el('h3',null,a.x.title));
-    c.appendChild(el('p',null,a.x.description));
-    var tags = el('div','tags');
-    tags.appendChild(el('span','tag',(a.f.duration||'?')+t('min')));
-    if (LOC[a.f.location]) tags.appendChild(el('span','tag',t(LOC[a.f.location])));
-    if (!(a.f.materials||[]).length) tags.appendChild(el('span','tag',t('f.nomat')));
-    c.appendChild(tags);
-    c.addEventListener('click', function(){ openModal(a); });
-    grid.appendChild(c);
-  });
+  filtered.slice(0, state.shown).forEach(function(a){ grid.appendChild(card(a, openModal)); });
   if (!filtered.length){ var e=el('div','empty',T[state.lang].count(0)); grid.appendChild(e); }
   $('more').hidden = filtered.length <= state.shown;
+  $('end').hidden = !filtered.length || filtered.length > state.shown;
 }
 
 function section(body, title, node){ body.appendChild(el('h3',null,title)); body.appendChild(node); }
@@ -508,10 +745,12 @@ function openModal(a){
   $('m-title').textContent = x.title;
   b.appendChild(el('p','m-desc',x.description));
   var tags = el('div','tags'); tags.style.marginTop='8px';
-  tags.appendChild(el('span','tag',T[state.lang].ages[state.age]));
+  tags.appendChild(el('span','tag',T[state.lang].ages[a.age||state.age]));
   tags.appendChild(el('span','tag',(a.f.duration||'?')+t('min')));
   if (LOC[a.f.location]) tags.appendChild(el('span','tag',t(LOC[a.f.location])));
   b.appendChild(tags);
+  if (cycleNote && mode){ b.insertBefore(el('p','cycle',t('q.cycle')), b.firstChild); cycleNote=false; }
+  syncFavBtn();
   var mats = x.materials||[];
   section(b, t('m.materials'), mats.length ? listNode('ul',mats) : el('p',null,t('m.none')));
   if ((x.instructions||[]).length) section(b, t('m.steps'), listNode('ol',x.instructions));
@@ -526,6 +765,7 @@ function openModal(a){
 function closeModal(){ var m=$('modal'); if (m.close) m.close(); else m.removeAttribute('open'); }
 
 function randomIdea(){
+  if (mode) return quickIdea(mode);
   var pool = filtered.length ? filtered : list;
   if (!pool.length) return;
   var pick, i=0;
@@ -534,7 +774,7 @@ function randomIdea(){
 }
 
 function reset(){
-  state.where='all'; state.time='all'; state.situation='all';
+  state.where='all'; state.time='all'; state.situation='all'; state.penergy=null;
   state.toggles={gp:false,quiet:false,clean:false,nomat:false}; state.shown=PAGE;
   $('situation').value='all'; syncChips(); render();
 }
@@ -547,7 +787,7 @@ document.querySelectorAll('.langs button').forEach(function(b){
     applyLang(); load();
   });
 });
-document.querySelectorAll('#age-chips .chip').forEach(function(b){
+document.querySelectorAll('.age-chips .chip').forEach(function(b){
   b.addEventListener('click', function(){ state.age=b.dataset.age; store('play.age',state.age); state.shown=PAGE; syncChips(); load(); });
 });
 document.querySelectorAll('[data-where]').forEach(function(b){ b.addEventListener('click', function(){ state.where=b.dataset.where; state.shown=PAGE; syncChips(); render(); }); });
@@ -556,8 +796,15 @@ document.querySelectorAll('[data-toggle]').forEach(function(b){ b.addEventListen
 $('situation').addEventListener('change', function(e){ state.situation=e.target.value; state.shown=PAGE; render(); });
 $('more').addEventListener('click', function(){ state.shown+=PAGE; render(); });
 $('reset').addEventListener('click', reset);
-$('random').addEventListener('click', randomIdea);
-$('random-top').addEventListener('click', randomIdea);
+$('random').addEventListener('click', function(){ mode=null; randomIdea(); });
+$('end-random').addEventListener('click', function(){ mode=null; randomIdea(); });
+$('m-fav').addEventListener('click', function(){ if (current) toggleFav(current); });
+document.querySelectorAll('[data-penergy]').forEach(function(b){ b.addEventListener('click', function(){ state.penergy = state.penergy===b.dataset.penergy ? null : b.dataset.penergy; state.shown=PAGE; syncChips(); render(); }); });
+document.querySelectorAll('[data-plan]').forEach(function(b){ b.addEventListener('click', function(){ showPlan(makePlan(b.dataset.plan)); }); });
+$('plan-again').addEventListener('click', function(){ if (currentPlan) showPlan(makePlan(currentPlan.type)); });
+$('plan-save').addEventListener('click', function(){ if (currentPlan) togglePlan(); });
+$('plan-close').addEventListener('click', function(){ $('plan').hidden = true; currentPlan = null; $('vite').scrollIntoView(); });
+$('end-age').addEventListener('click', function(){ $('vite').scrollIntoView(); var c=document.querySelector('.age-chips .chip:not([aria-pressed="true"])'); if(c) c.focus(); });
 $('m-another').addEventListener('click', randomIdea);
 $('m-close').addEventListener('click', closeModal);
 $('m-close2').addEventListener('click', closeModal);
