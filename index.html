@@ -23,6 +23,7 @@
   --soft:#eef3fa; --warm:#fff6ec; --radius:14px; --shadow:0 2px 10px rgba(43,45,66,.07);
 }
 *{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:17px}
 a{color:var(--primary)}
@@ -77,12 +78,15 @@ select{font:inherit;font-size:.95rem;padding:8px 12px;border-radius:10px;border:
 .tag{background:var(--soft);color:var(--primary-dark);font-size:.78rem;border-radius:999px;padding:2px 9px}
 .empty,.loading{grid-column:1/-1;text-align:center;padding:30px;color:var(--muted)}
 .more{display:flex;justify-content:center;margin-bottom:20px}
+.end{text-align:center;color:var(--muted);margin:0 0 24px}
+.end p{margin-bottom:10px}
+.end .cta{gap:8px}
 
 /* Sections */
 section.block,.finder{scroll-margin-top:70px}
 section.block{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 22px;margin:26px 0}
 section.block h2{font-size:1.45rem;margin-bottom:10px}
-.gp{background:linear-gradient(180deg,#fff9f2,#fff)!important;border:1px solid #f6dcc0}
+section.gp{background:linear-gradient(180deg,#fff9f2,#fff);border:1px solid #f6dcc0}
 .tips{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0}
 .tips li{background:#fff;border:1px solid #f1e2d0;border-radius:12px;padding:14px;font-size:.97rem}
 .tips li b{display:block;margin-bottom:4px}
@@ -205,6 +209,14 @@ footer li{margin-bottom:6px}
 
   <div class="grid" id="grid"><div class="loading" data-i18n="loading">Chargement des activités…</div></div>
   <div class="more"><button type="button" class="btn btn-ghost" id="more" hidden data-i18n="more">Afficher plus d'idées</button></div>
+  <div class="end" id="end" hidden>
+    <p data-i18n="end.text">C'est tout pour cette recherche.</p>
+    <div class="cta">
+      <a class="btn btn-ghost" href="#trouver" data-i18n="end.change">Changer les filtres</a>
+      <button type="button" class="btn btn-ghost" id="end-age" data-i18n="end.age">Essayer un autre âge</button>
+      <button type="button" class="btn btn-accent" id="end-random" data-i18n="f.random">Une idée au hasard</button>
+    </div>
+  </div>
 
 
   <section class="block" id="appli" aria-labelledby="app-title">
@@ -289,6 +301,7 @@ var T = {
   count:function(n){return n===0?"Aucune activité ne correspond. Essayez d'enlever un filtre.":(n===1?"1 activité":n+" activités");},
   loading:"Chargement des activités…", error:"Impossible de charger les activités. Vérifiez votre connexion et rechargez la page.",
   more:"Afficher plus d'idées", min:" min",
+  'end.text':"C'est tout pour cette recherche.", 'end.change':"Changer les filtres", 'end.age':"Essayer un autre âge",
   'gp.title':"Jouer avec ses petits-enfants",
   'gp.text':"Un moment ensemble, sans écran et sans rien acheter. Le filtre « Idéal grands-parents » garde les activités calmes, qui salissent peu et ne demandent pas de courir partout.",
   'gp.t1h':"Laissez-le choisir", 'gp.t1':"Proposez deux ou trois idées et laissez l'enfant choisir. Il s'y mettra plus volontiers.",
@@ -325,6 +338,7 @@ var T = {
   count:function(n){return n===0?"No activity matches. Try removing a filter.":(n===1?"1 activity":n+" activities");},
   loading:"Loading activities…", error:"Couldn't load the activities. Check your connection and reload the page.",
   more:"Show more ideas", min:" min",
+  'end.text':"That's all for this search.", 'end.change':"Change filters", 'end.age':"Try another age",
   'gp.title':"Playing with your grandchildren",
   'gp.text':"Time together, no screens, nothing to buy. The \"Great for grandparents\" filter keeps calm activities that make little mess and don't need any running around.",
   'gp.t1h':"Let them choose", 'gp.t1':"Suggest two or three ideas and let the child pick. They'll join in more happily.",
@@ -361,6 +375,7 @@ var T = {
   count:function(n){return n===0?"条件に合う遊びがありません。条件を1つ外してみてください。":n+"件の遊び";},
   loading:"読み込み中…", error:"読み込めませんでした。接続を確認して、ページを再読み込みしてください。",
   more:"もっと見る", min:"分",
+  'end.text':"この条件の遊びは以上です。", 'end.change':"条件を変える", 'end.age':"ほかの年齢で探す",
   'gp.title':"お孫さんと遊ぶ",
   'gp.text':"画面なし、買うものなし。一緒に過ごす時間です。「祖父母におすすめ」は、静かで汚れにくく、走り回らなくていい遊びだけを表示します。",
   'gp.t1h':"子どもに選ばせる", 'gp.t1':"2〜3個のアイデアから子どもに選んでもらうと、楽しく始められます。",
@@ -372,7 +387,7 @@ var T = {
   'gp.asideLink':"シニア向けデジタルサポート →",
   'app.title':"Play Now アプリ", 'app.text':"同じアイデアをスマホに。オフラインでも使え、お気に入りも保存できます。",
   'app.dlApple':"ダウンロード", 'app.dlGoogle':"ダウンロード",
-  'idea.text':"お子さんのお気に入りの遊びはありますか？", 'idea.link':"アイデアを送る（英語）",
+  'idea.text':"お子さんのお気に入りの遊びはありますか？", 'idea.link':"アイデアを送る",
   'm.another':"ほかのアイデア", 'm.close':"閉じる", 'm.materials':"用意するもの", 'm.none':"なし",
   'm.steps':"遊び方", 'm.tip':"ひとことアドバイス", 'm.safety':"注意", 'm.variations':"アレンジ",
   'foot.made':"山口 泉（Izumi Bérat・IzuTech、フランス・ポー）のプロジェクトです。",
@@ -458,7 +473,7 @@ function load(){
     })
     .catch(function(){
       $('grid').innerHTML = '<div class="empty"></div>'; $('grid').firstChild.textContent = t('error');
-      $('count').textContent=''; $('more').hidden = true;
+      $('count').textContent=''; $('more').hidden = true; $('end').hidden = true;
     });
 }
 
@@ -497,6 +512,7 @@ function render(){
   });
   if (!filtered.length){ var e=el('div','empty',T[state.lang].count(0)); grid.appendChild(e); }
   $('more').hidden = filtered.length <= state.shown;
+  $('end').hidden = !filtered.length || filtered.length > state.shown;
 }
 
 function section(body, title, node){ body.appendChild(el('h3',null,title)); body.appendChild(node); }
@@ -558,6 +574,8 @@ $('more').addEventListener('click', function(){ state.shown+=PAGE; render(); });
 $('reset').addEventListener('click', reset);
 $('random').addEventListener('click', randomIdea);
 $('random-top').addEventListener('click', randomIdea);
+$('end-random').addEventListener('click', randomIdea);
+$('end-age').addEventListener('click', function(){ $('trouver').scrollIntoView(); var c=document.querySelector('#age-chips .chip:not([aria-pressed="true"])'); if(c) c.focus(); });
 $('m-another').addEventListener('click', randomIdea);
 $('m-close').addEventListener('click', closeModal);
 $('m-close2').addEventListener('click', closeModal);
