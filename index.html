@@ -66,6 +66,22 @@ header{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.05);position:sticky;top:
 select{font:inherit;font-size:.95rem;padding:8px 12px;border-radius:10px;border:1.5px solid var(--border);background:#fff;min-height:40px;max-width:100%}
 .fbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:6px;padding-top:12px;border-top:1px solid var(--border)}
 .count{font-weight:600}
+.quick{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin:6px 0 18px;scroll-margin-top:70px}
+.quick h2{font-size:1.25rem;margin-bottom:4px}
+.quick .sub{color:var(--muted);margin-bottom:14px}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:14px}
+.qbtn{border:1.5px solid var(--border);background:var(--soft);border-radius:14px;padding:14px 10px;font:inherit;font-weight:600;cursor:pointer;color:var(--text);min-height:64px;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
+.qbtn .ico{font-size:1.5rem;line-height:1}
+.qbtn:hover{border-color:var(--primary)}
+.qbtn.surprise{background:var(--accent);border-color:var(--accent);color:#fff}
+.qbtn.surprise:hover{background:var(--accent-dark)}
+.qbtn:focus-visible,.fav:focus-visible{outline:3px solid #f4b860;outline-offset:2px}
+.cycle{background:var(--soft);border-radius:10px;padding:8px 12px;margin-bottom:10px;font-size:.93rem}
+.fav{background:#fff;border:2px solid var(--accent);color:var(--accent-dark);border-radius:999px;padding:10px 18px;font:inherit;font-weight:600;cursor:pointer;min-height:48px}
+.fav[aria-pressed="true"]{background:var(--warm)}
+.favs{scroll-margin-top:70px;margin:10px 0 26px}
+.favs h2{font-size:1.3rem;margin-bottom:10px}
+.card-wrap{position:relative}
 .linkbtn{background:none;border:0;color:var(--primary);font:inherit;cursor:pointer;text-decoration:underline;padding:4px}
 
 /* Grid */
@@ -112,7 +128,7 @@ dialog::backdrop{background:rgba(20,22,35,.55)}
 .m-desc{color:var(--muted)}
 .note{background:var(--warm);border-radius:10px;padding:10px 12px;margin-top:6px;font-size:.95rem}
 .note.safe{background:#fdeeee}
-.m-foot{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;padding:12px 20px 18px}
+.m-foot{display:flex;gap:10px;justify-content:flex-start;flex-wrap:wrap;padding:12px 20px 18px}
 
 footer{background:#2b2d42;color:#d9dbe4;margin-top:30px;padding:30px 0;font-size:.95rem}
 footer a{color:#fff}
@@ -133,6 +149,7 @@ footer li{margin-bottom:6px}
       Play Now
     </a>
     <div class="head-right">
+      <a class="head-link" href="#favoris" id="nav-fav" hidden></a>
       <a class="head-link" href="#appli" data-i18n="nav.app">L'appli</a>
       <div class="langs" role="group" aria-label="Langue / Language / 言語">
         <button type="button" data-lang="fr" lang="fr">FR</button>
@@ -147,24 +164,23 @@ footer li{margin-bottom:6px}
   <section class="hero">
     <h1 data-i18n="hero.title">Une idée de jeu, tout de suite</h1>
     <p data-i18n="hero.text">Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="#trouver" data-i18n="hero.find">Trouver une activité</a>
-      <button class="btn btn-accent" type="button" id="random-top" data-i18n="hero.random">Une idée au hasard</button>
+  </section>
+
+  <section class="quick" id="vite" aria-labelledby="quick-title">
+    <h2 id="quick-title" data-i18n="q.title">Une envie ? On vous trouve une idée</h2>
+    <p class="sub" data-i18n="q.sub">Choisissez l'âge de l'enfant, puis touchez une envie.</p>
+    <div class="chips age-chips" role="group" aria-labelledby="quick-title">
+      <button type="button" class="chip" data-age="0-2"></button>
+      <button type="button" class="chip" data-age="3-5"></button>
+      <button type="button" class="chip" data-age="6-8"></button>
+      <button type="button" class="chip" data-age="9-12"></button>
     </div>
+    <div class="qgrid" id="qgrid"></div>
   </section>
 
   <section class="finder" id="trouver" aria-labelledby="finder-title">
-    <h2 id="finder-title" data-i18n="f.title">Trouver une activité</h2>
+    <h2 id="finder-title" data-i18n="f.title">Ou cherchez vous-même</h2>
     <div class="frow">
-      <div class="fgroup">
-        <span id="lbl-age" data-i18n="f.age">Âge de l'enfant</span>
-        <div class="chips" role="group" aria-labelledby="lbl-age" id="age-chips">
-          <button type="button" class="chip" data-age="0-2"></button>
-          <button type="button" class="chip" data-age="3-5"></button>
-          <button type="button" class="chip" data-age="6-8"></button>
-          <button type="button" class="chip" data-age="9-12"></button>
-        </div>
-      </div>
       <div class="fgroup">
         <span id="lbl-where" data-i18n="f.where">Où ?</span>
         <div class="chips" role="group" aria-labelledby="lbl-where" id="where-chips">
@@ -218,6 +234,12 @@ footer li{margin-bottom:6px}
     </div>
   </div>
 
+  <section class="favs" id="favoris" aria-labelledby="fav-title" hidden>
+    <h2 id="fav-title" data-i18n="fav.title">Mes favoris</h2>
+    <p class="m-desc" data-i18n="fav.note" style="margin:-4px 0 10px">Gardés sur cet appareil uniquement.</p>
+    <div class="grid" id="fav-grid"></div>
+  </section>
+
 
   <section class="block" id="appli" aria-labelledby="app-title">
     <div class="app">
@@ -258,6 +280,7 @@ footer li{margin-bottom:6px}
   <div class="m-body" id="m-body"></div>
   <div class="m-foot">
     <button type="button" class="btn btn-accent" id="m-another" data-i18n="m.another">Une autre idée</button>
+    <button type="button" class="fav" id="m-fav" aria-pressed="false"></button>
     <button type="button" class="btn btn-ghost" id="m-close2" data-i18n="m.close">Fermer</button>
   </div>
 </dialog>
@@ -290,8 +313,9 @@ var T = {
   skip:"Aller aux activités", 'nav.app':"L'appli",
   'hero.title':"Une idée de jeu, tout de suite",
   'hero.text':"Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.",
-  'hero.find':"Trouver une activité", 'hero.random':"Une idée au hasard",
-  'f.title':"Trouver une activité", 'f.age':"Âge de l'enfant", 'f.where':"Où ?", 'f.any':"Peu importe",
+  'q.title':"Une envie ? On vous trouve une idée", 'q.sub':"Choisissez l'âge de l'enfant, puis touchez une envie.", 'f.title':"Ou cherchez vous-même", 'fav.title':"Mes favoris", 'fav.note':"Gardés sur cet appareil uniquement.", 'fav.nav':"Favoris", 'fav.add':"☆ Garder en favori", 'fav.on':"★ Dans mes favoris", 'q.cycle':"Vous avez vu toutes les idées de ce type pour cet âge. On recommence !",
+  cats:{"bonding": "Moment complice", "sensory": "Éveil des sens", "calm": "Pour se calmer", "quick": "Vite fait", "energy": "Se dépenser", "pretend": "Faire semblant", "learning": "Apprendre en jouant", "family": "En famille", "alone": "Jouer seul", "challenge": "Des défis", "friends": "Entre copains", "surprise": "Surprise !"},
+  'f.age':"Âge de l'enfant", 'f.where':"Où ?", 'f.any':"Peu importe",
   'f.indoor':"Dedans", 'f.outdoor':"Dehors", 'f.time':"Combien de temps ?", 'f.t10':"10 min ou moins",
   'f.t20':"20 min ou moins", 'f.tlong':"Plus long", 'f.situation':"Situation", 'f.more':"Envie de…",
   'f.gp':"Idéal grands-parents", 'f.quiet':"Calme", 'f.clean':"Sans rien salir", 'f.nomat':"Sans matériel",
@@ -327,8 +351,9 @@ var T = {
   skip:"Skip to activities", 'nav.app':"The app",
   'hero.title':"A play idea, right now",
   'hero.text':"Over 300 screen-free activities to play with your child aged 0 to 12. Pick their age, the place and the time you have: an idea in seconds. Free, no sign-up.",
-  'hero.find':"Find an activity", 'hero.random':"Surprise me",
-  'f.title':"Find an activity", 'f.age':"Child's age", 'f.where':"Where?", 'f.any':"Any",
+  'q.title':"In the mood for something? We'll find an idea", 'q.sub':"Pick the child's age, then tap what you feel like.", 'f.title':"Or search yourself", 'fav.title':"My favourites", 'fav.note':"Kept on this device only.", 'fav.nav':"Favourites", 'fav.add':"☆ Save as favourite", 'fav.on':"★ In my favourites", 'q.cycle':"You've seen every idea of this kind for this age. Starting again!",
+  cats:{"bonding": "Bonding time", "sensory": "Sensory play", "calm": "Calm & soothing", "quick": "Quick & easy", "energy": "Burn energy", "pretend": "Pretend play", "learning": "Learning", "family": "Family fun", "alone": "Playing alone", "challenge": "Challenges", "friends": "With friends", "surprise": "Surprise me!"},
+  'f.age':"Child's age", 'f.where':"Where?", 'f.any':"Any",
   'f.indoor':"Indoors", 'f.outdoor':"Outdoors", 'f.time':"How long?", 'f.t10':"10 min or less",
   'f.t20':"20 min or less", 'f.tlong':"Longer", 'f.situation':"Situation", 'f.more':"In the mood for…",
   'f.gp':"Great for grandparents", 'f.quiet':"Quiet", 'f.clean':"No mess", 'f.nomat':"Nothing needed",
@@ -364,8 +389,9 @@ var T = {
   skip:"遊びの一覧へ", 'nav.app':"アプリ",
   'hero.title':"今すぐ遊べるアイデア",
   'hero.text':"0〜12歳のお子さんと一緒に楽しめる、画面を使わない遊びを300以上。年齢・場所・時間を選ぶだけで、すぐにアイデアが見つかります。無料・登録不要です。",
-  'hero.find':"遊びをさがす", 'hero.random':"おまかせで1つ",
-  'f.title':"遊びをさがす", 'f.age':"子どもの年齢", 'f.where':"どこで？", 'f.any':"どこでも",
+  'q.title':"どんな遊びがいい？アイデアをお届けします", 'q.sub':"子どもの年齢を選んで、気分に合うボタンを押してください。", 'f.title':"自分で条件を選ぶ", 'fav.title':"お気に入り", 'fav.note':"この端末にだけ保存されます。", 'fav.nav':"お気に入り", 'fav.add':"☆ お気に入りに追加", 'fav.on':"★ お気に入り登録済み", 'q.cycle':"この年齢のこのタイプの遊びはすべて見ました。最初からもう一度！",
+  cats:{"bonding": "ふれあい遊び", "sensory": "感覚あそび", "calm": "落ち着く遊び", "quick": "すぐできる", "energy": "体を動かす", "pretend": "ごっこ遊び", "learning": "学びの遊び", "family": "家族で", "alone": "ひとりで遊ぶ", "challenge": "チャレンジ", "friends": "友だちと", "surprise": "おまかせ！"},
+  'f.age':"子どもの年齢", 'f.where':"どこで？", 'f.any':"どこでも",
   'f.indoor':"室内", 'f.outdoor':"屋外", 'f.time':"時間は？", 'f.t10':"10分以内",
   'f.t20':"20分以内", 'f.tlong':"もっと長く", 'f.situation':"シーン", 'f.more':"こんな遊び",
   'f.gp':"祖父母におすすめ", 'f.quiet':"静か", 'f.clean':"汚れない", 'f.nomat':"道具なし",
@@ -400,6 +426,24 @@ var T = {
 var FILE_LANG = {fr:'fr', en:'en', ja:'jp'};
 var SITS = ['all','rainy-day','car-ride','waiting-room','restaurant','bedtime','sick-day','playdate','birthday-party','travel'];
 var PAGE = 12;
+// Same quick categories as the Play Now app (QuickActions.tsx), applied to the English (canonical) fields.
+var CAT_ICON = {bonding:'💖',sensory:'🌈',calm:'😌',quick:'🚀',energy:'🔥',pretend:'🎭',learning:'📚',family:'🎪',alone:'🧒',challenge:'🏆',friends:'👫',surprise:'🎲'};
+var AGE_CATS = {'0-2':['bonding','sensory','calm','quick'],'3-5':['energy','pretend','learning','family','quick'],'6-8':['energy','alone','learning','family','quick'],'9-12':['challenge','friends','alone','energy','quick']};
+function has(arr,v){ return (arr||[]).indexOf(v)>=0; }
+var CAT_TEST = {
+  bonding:function(f){ return (f.supervision==='active'||f.supervision==='constant') && (has(f.skills,'social')||has(f.skills,'emotional')); },
+  sensory:function(f){ return has(f.tags,'sensory'); },
+  calm:function(f){ return f.noiseLevel==='quiet' && f.kidEnergy==='low'; },
+  quick:function(f){ return Number(f.duration)<=15 && (f.messLevel==='none'||f.messLevel==='low') && (f.prep==='none'||f.prep==='quick'); },
+  energy:function(f){ return f.kidEnergy==='medium'||f.kidEnergy==='high'||has(f.tags,'movement'); },
+  pretend:function(f){ return has(f.tags,'pretend-play'); },
+  learning:function(f){ return has(f.skills,'cognitive')||has(f.skills,'academic'); },
+  family:function(f){ return f.kidCount!=='1' && (f.supervision==='minimal'||f.supervision==='active'); },
+  alone:function(f){ return f.supervision==='independent'||f.supervision==='minimal'; },
+  challenge:function(f){ return Number(f.difficulty)>=3; },
+  friends:function(f){ return f.kidCount!=='1' && (f.supervision==='independent'||f.supervision==='minimal'); },
+  surprise:function(){ return true; }
+};
 var LOC = {indoor:'f.indoor', outdoor:'f.outdoor'};
 
 function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
@@ -423,7 +467,7 @@ var state = {
 if (['0-2','3-5','6-8','9-12'].indexOf(state.age)<0) state.age='3-5';
 if (params.get('pour')==='grands-parents' || params.get('for')==='grandparents') state.toggles.gp = true;
 
-var scrolled = false, cache = {}, list = [], filtered = [], current = null;
+var mode = null, seen = {}, cycleNote = false, scrolled = false, cache = {}, list = [], filtered = [], current = null;
 var $ = function(id){return document.getElementById(id);};
 
 function t(k){ return T[state.lang][k]; }
@@ -436,7 +480,7 @@ function applyLang(){
     var v = L[el.getAttribute('data-i18n')]; if (typeof v === 'string') el.textContent = v;
   });
   document.querySelectorAll('.langs button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.lang===state.lang); });
-  document.querySelectorAll('#age-chips .chip').forEach(function(b){ b.textContent = L.ages[b.dataset.age]; });
+  document.querySelectorAll('.age-chips .chip').forEach(function(b){ b.textContent = L.ages[b.dataset.age]; });
   var sel = $('situation'); sel.innerHTML='';
   SITS.forEach(function(s){ var o=document.createElement('option'); o.value=s; o.textContent=L.sit[s]; sel.appendChild(o); });
   sel.value = state.situation;
@@ -446,8 +490,72 @@ function applyLang(){
   document.querySelectorAll('a[href^="https://seniors.izutech.fr"]').forEach(function(a){ a.href = sl; });
 }
 
+function renderQuick(){
+  var g = $('qgrid'); g.innerHTML='';
+  (AGE_CATS[state.age]||[]).concat(['surprise']).forEach(function(k){
+    var b = el('button','qbtn'+(k==='surprise'?' surprise':'')); b.type='button';
+    var i = el('span','ico',CAT_ICON[k]); i.setAttribute('aria-hidden','true');
+    b.appendChild(i); b.appendChild(el('span',null,T[state.lang].cats[k]));
+    b.addEventListener('click', function(){ quickIdea(k); });
+    g.appendChild(b);
+  });
+}
+function quickIdea(k){
+  mode = k;
+  var pool = list.filter(function(a){ return CAT_TEST[k](a.f); });
+  if (!pool.length) pool = list;
+  if (!pool.length) return;
+  var key = state.age+'|'+k; seen[key] = seen[key] || {};
+  var fresh = pool.filter(function(a){ return !seen[key][a.f.id]; });
+  cycleNote = false;
+  if (!fresh.length){ seen[key] = {}; fresh = pool; cycleNote = true; }
+  if (fresh.length>1 && current) fresh = fresh.filter(function(a){ return a.f.id!==current.f.id; }) ;
+  var pick = fresh[Math.floor(Math.random()*fresh.length)];
+  seen[key][pick.f.id] = true;
+  openModal(pick);
+}
+// Favourites, kept in this browser only
+function favs(){ try{ return JSON.parse(store('play.favs')||'[]'); }catch(e){ return []; } }
+function favKey(a){ return a.age+':'+a.f.id; }
+function isFav(a){ return favs().indexOf(favKey(a))>=0; }
+function toggleFav(a){
+  var f = favs(), k = favKey(a), i = f.indexOf(k);
+  if (i>=0) f.splice(i,1); else f.unshift(k);
+  store('play.favs', JSON.stringify(f)); syncFavBtn(); renderFavs();
+}
+function syncFavBtn(){
+  var on = current && isFav(current), b = $('m-fav');
+  b.setAttribute('aria-pressed', !!on); b.textContent = t(on?'fav.on':'fav.add');
+}
+function card(a, onOpen){
+  var c = el('button','card'); c.type='button';
+  c.appendChild(el('h3',null,a.x.title));
+  c.appendChild(el('p',null,a.x.description));
+  var tags = el('div','tags');
+  if (a.age!==state.age) tags.appendChild(el('span','tag',T[state.lang].ages[a.age]));
+  tags.appendChild(el('span','tag',(a.f.duration||'?')+t('min')));
+  if (LOC[a.f.location]) tags.appendChild(el('span','tag',t(LOC[a.f.location])));
+  if (!(a.f.materials||[]).length) tags.appendChild(el('span','tag',t('f.nomat')));
+  c.appendChild(tags);
+  c.addEventListener('click', function(){ mode=null; onOpen(a); });
+  return c;
+}
+function renderFavs(){
+  var f = favs(), nav = $('nav-fav');
+  nav.hidden = !f.length; nav.textContent = t('fav.nav')+' ('+f.length+')';
+  if (!f.length){ $('favoris').hidden = true; return; }
+  var ages = {}; f.forEach(function(k){ ages[k.split(':')[0]] = true; });
+  Promise.all(Object.keys(ages).map(function(age){ return getAge(age); })).then(function(){
+    var g = $('fav-grid'); g.innerHTML='';
+    f.forEach(function(k){
+      var p = k.split(':'), a = (byAge[p[0]]||[]).filter(function(x){ return String(x.f.id)===p[1]; })[0];
+      if (a) g.appendChild(card(a, openModal));
+    });
+    $('favoris').hidden = !g.children.length;
+  }).catch(function(){});
+}
 function syncChips(){
-  document.querySelectorAll('#age-chips .chip').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.age===state.age); });
+  document.querySelectorAll('.age-chips .chip').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.age===state.age); });
   document.querySelectorAll('[data-where]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.where===state.where); });
   document.querySelectorAll('[data-time]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.time===state.time); });
   document.querySelectorAll('[data-toggle]').forEach(function(b){ b.setAttribute('aria-pressed', !!state.toggles[b.dataset.toggle]); });
@@ -460,15 +568,25 @@ function getJSON(url){
 }
 
 // English file holds the canonical filter values; the language file holds the text.
-function load(){
-  var base = 'assets/json/activities-'+state.age;
-  $('grid').innerHTML = '<div class="loading"></div>';
-  $('grid').firstChild.textContent = t('loading');
-  return Promise.all([getJSON(base+'-en.json'), getJSON(base+'-'+FILE_LANG[state.lang]+'.json')])
+var byAge = {};
+function getAge(age){
+  var base = 'assets/json/activities-'+age, lang = state.lang;
+  return Promise.all([getJSON(base+'-en.json'), getJSON(base+'-'+FILE_LANG[lang]+'.json')])
     .then(function(res){
       var byId = {}; res[1].forEach(function(a){ byId[a.id]=a; });
-      list = res[0].map(function(a){ return {f:a, x:byId[a.id]||a}; });
-      render();
+      var l = res[0].map(function(a){ return {f:a, x:byId[a.id]||a, age:age}; });
+      if (lang===state.lang) byAge[age] = l;
+      return l;
+    });
+}
+function load(){
+  $('grid').innerHTML = '<div class="loading"></div>';
+  $('grid').firstChild.textContent = t('loading');
+  byAge = {};
+  return getAge(state.age)
+    .then(function(l){
+      list = l;
+      render(); renderQuick(); renderFavs();
       if (!scrolled && location.hash.length>1){ scrolled=true; var h=document.getElementById(location.hash.slice(1)); if(h) h.scrollIntoView(); }
     })
     .catch(function(){
@@ -498,18 +616,7 @@ function render(){
   filtered = list.filter(function(a){ return matches(a.f); });
   $('count').textContent = T[state.lang].count(filtered.length);
   var grid = $('grid'); grid.innerHTML='';
-  filtered.slice(0, state.shown).forEach(function(a){
-    var c = el('button','card'); c.type='button';
-    c.appendChild(el('h3',null,a.x.title));
-    c.appendChild(el('p',null,a.x.description));
-    var tags = el('div','tags');
-    tags.appendChild(el('span','tag',(a.f.duration||'?')+t('min')));
-    if (LOC[a.f.location]) tags.appendChild(el('span','tag',t(LOC[a.f.location])));
-    if (!(a.f.materials||[]).length) tags.appendChild(el('span','tag',t('f.nomat')));
-    c.appendChild(tags);
-    c.addEventListener('click', function(){ openModal(a); });
-    grid.appendChild(c);
-  });
+  filtered.slice(0, state.shown).forEach(function(a){ grid.appendChild(card(a, openModal)); });
   if (!filtered.length){ var e=el('div','empty',T[state.lang].count(0)); grid.appendChild(e); }
   $('more').hidden = filtered.length <= state.shown;
   $('end').hidden = !filtered.length || filtered.length > state.shown;
@@ -524,10 +631,12 @@ function openModal(a){
   $('m-title').textContent = x.title;
   b.appendChild(el('p','m-desc',x.description));
   var tags = el('div','tags'); tags.style.marginTop='8px';
-  tags.appendChild(el('span','tag',T[state.lang].ages[state.age]));
+  tags.appendChild(el('span','tag',T[state.lang].ages[a.age||state.age]));
   tags.appendChild(el('span','tag',(a.f.duration||'?')+t('min')));
   if (LOC[a.f.location]) tags.appendChild(el('span','tag',t(LOC[a.f.location])));
   b.appendChild(tags);
+  if (cycleNote && mode){ b.insertBefore(el('p','cycle',t('q.cycle')), b.firstChild); cycleNote=false; }
+  syncFavBtn();
   var mats = x.materials||[];
   section(b, t('m.materials'), mats.length ? listNode('ul',mats) : el('p',null,t('m.none')));
   if ((x.instructions||[]).length) section(b, t('m.steps'), listNode('ol',x.instructions));
@@ -542,6 +651,7 @@ function openModal(a){
 function closeModal(){ var m=$('modal'); if (m.close) m.close(); else m.removeAttribute('open'); }
 
 function randomIdea(){
+  if (mode) return quickIdea(mode);
   var pool = filtered.length ? filtered : list;
   if (!pool.length) return;
   var pick, i=0;
@@ -563,7 +673,7 @@ document.querySelectorAll('.langs button').forEach(function(b){
     applyLang(); load();
   });
 });
-document.querySelectorAll('#age-chips .chip').forEach(function(b){
+document.querySelectorAll('.age-chips .chip').forEach(function(b){
   b.addEventListener('click', function(){ state.age=b.dataset.age; store('play.age',state.age); state.shown=PAGE; syncChips(); load(); });
 });
 document.querySelectorAll('[data-where]').forEach(function(b){ b.addEventListener('click', function(){ state.where=b.dataset.where; state.shown=PAGE; syncChips(); render(); }); });
@@ -572,10 +682,10 @@ document.querySelectorAll('[data-toggle]').forEach(function(b){ b.addEventListen
 $('situation').addEventListener('change', function(e){ state.situation=e.target.value; state.shown=PAGE; render(); });
 $('more').addEventListener('click', function(){ state.shown+=PAGE; render(); });
 $('reset').addEventListener('click', reset);
-$('random').addEventListener('click', randomIdea);
-$('random-top').addEventListener('click', randomIdea);
-$('end-random').addEventListener('click', randomIdea);
-$('end-age').addEventListener('click', function(){ $('trouver').scrollIntoView(); var c=document.querySelector('#age-chips .chip:not([aria-pressed="true"])'); if(c) c.focus(); });
+$('random').addEventListener('click', function(){ mode=null; randomIdea(); });
+$('end-random').addEventListener('click', function(){ mode=null; randomIdea(); });
+$('m-fav').addEventListener('click', function(){ if (current) toggleFav(current); });
+$('end-age').addEventListener('click', function(){ $('vite').scrollIntoView(); var c=document.querySelector('.age-chips .chip:not([aria-pressed="true"])'); if(c) c.focus(); });
 $('m-another').addEventListener('click', randomIdea);
 $('m-close').addEventListener('click', closeModal);
 $('m-close2').addEventListener('click', closeModal);
