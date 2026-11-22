@@ -40,7 +40,7 @@ header{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.05);position:sticky;top:
 .langs button{background:none;border:0;padding:6px 11px;font:inherit;font-size:.85rem;cursor:pointer;color:var(--muted)}
 .langs button[aria-pressed="true"]{background:var(--primary);color:#fff}
 .head-link{font-size:.9rem;text-decoration:none;color:var(--accent-dark);font-weight:600;white-space:nowrap}
-@media (max-width:560px){.head-link{display:none}}
+@media (max-width:560px){.head-link:not(#nav-fav){display:none}.nav-long{display:none}}
 
 /* Hero */
 .hero{text-align:center;padding:36px 0 18px}
@@ -221,6 +221,13 @@ footer li{margin-bottom:6px}
     </div>
   </section>
 
+  <section class="favs" id="favoris" aria-labelledby="fav-title" hidden>
+    <h2 id="fav-title" data-i18n="fav.title">Mes favoris et programmes</h2>
+    <p class="m-desc" data-i18n="fav.note" style="margin:-4px 0 10px">Gardés sur cet appareil uniquement.</p>
+    <ul class="saved" id="plan-list"></ul>
+    <div class="grid" id="fav-grid"></div>
+  </section>
+
   <section class="finder" id="trouver" aria-labelledby="finder-title">
     <h2 id="finder-title" data-i18n="f.title">Ou cherchez vous-même</h2>
     <div class="frow">
@@ -277,19 +284,13 @@ footer li{margin-bottom:6px}
     </div>
   </div>
 
-  <section class="favs" id="favoris" aria-labelledby="fav-title" hidden>
-    <h2 id="fav-title" data-i18n="fav.title">Mes favoris et programmes</h2>
-    <p class="m-desc" data-i18n="fav.note" style="margin:-4px 0 10px">Gardés sur cet appareil uniquement.</p>
-    <ul class="saved" id="plan-list"></ul>
-    <div class="grid" id="fav-grid"></div>
-  </section>
 
 
   <section class="block" id="appli" aria-labelledby="app-title">
     <div class="app">
       <div>
         <h2 id="app-title" data-i18n="app.title">L'appli Play Now</h2>
-        <p data-i18n="app.text">Les mêmes idées dans votre poche, même sans connexion, avec vos activités favorites à portée de main.</p>
+        <p data-i18n="app.text">Les mêmes idées dans votre poche, même sans connexion, avec vos activités favorites à portée de main. Pour l'instant, l'appli est en anglais seulement.</p>
       </div>
       <div class="stores">
         <a class="store" href="https://apps.apple.com/fr/app/play-now-app/id6748948929" rel="noopener" target="_blank">
@@ -380,7 +381,7 @@ var T = {
   'gp.go':"Voir les idées pour grands-parents",
   'gp.aside':"La tablette ou les appels vidéo vous compliquent la vie ? À Pau, je viens vous aider chez vous, à votre rythme.",
   'gp.asideLink':"Aide numérique à domicile →",
-  'app.title':"L'appli Play Now", 'app.text':"Les mêmes idées dans votre poche, même sans connexion, avec vos activités favorites à portée de main.",
+  'app.title':"L'appli Play Now", 'app.text':"Les mêmes idées dans votre poche, même sans connexion, avec vos activités favorites à portée de main. Pour l'instant, l'appli est en anglais seulement.",
   'app.dlApple':"Télécharger dans", 'app.dlGoogle':"Disponible sur",
   'idea.text':"Vous avez un jeu que vos enfants adorent ?", 'idea.link':"Proposez votre idée",
   'm.another':"Une autre idée", 'm.close':"Fermer", 'm.materials':"Matériel", 'm.none':"Aucun matériel",
@@ -419,7 +420,7 @@ var T = {
   'gp.go':"See ideas for grandparents",
   'gp.aside':"Tablets or video calls giving you trouble? In Pau, I come to your home and help, at your pace.",
   'gp.asideLink':"Home tech help →",
-  'app.title':"The Play Now app", 'app.text':"The same ideas in your pocket, even offline, with your favourite activities close at hand.",
+  'app.title':"The Play Now app", 'app.text':"The same ideas in your pocket, even offline, with your favourite activities close at hand. For now, the app is in English only.",
   'app.dlApple':"Download on the", 'app.dlGoogle':"Get it on",
   'idea.text':"Got a game your kids love?", 'idea.link':"Share your idea",
   'm.another':"Another idea", 'm.close':"Close", 'm.materials':"You'll need", 'm.none':"Nothing needed",
@@ -458,7 +459,7 @@ var T = {
   'gp.go':"祖父母におすすめの遊びを見る",
   'gp.aside':"タブレットやビデオ通話でお困りですか？ポー（フランス）でご自宅に伺ってサポートしています。",
   'gp.asideLink':"シニア向けデジタルサポート →",
-  'app.title':"Play Now アプリ", 'app.text':"同じアイデアをスマホに。オフラインでも使え、お気に入りも保存できます。",
+  'app.title':"Play Now アプリ", 'app.text':"同じアイデアをスマホに。オフラインでも使え、お気に入りも保存できます。アプリは現在、英語版のみです。",
   'app.dlApple':"ダウンロード", 'app.dlGoogle':"ダウンロード",
   'idea.text':"お子さんのお気に入りの遊びはありますか？", 'idea.link':"アイデアを送る",
   'm.another':"ほかのアイデア", 'm.close':"閉じる", 'm.materials':"用意するもの", 'm.none':"なし",
@@ -590,7 +591,7 @@ function card(a, onOpen){
 }
 function renderFavs(){
   var f = favs(), pl = plans(), nav = $('nav-fav'), n = f.length + pl.length;
-  nav.hidden = !n; nav.textContent = t('fav.nav')+' ('+n+')';
+  nav.hidden = !n; nav.textContent = '★ '; var sp = el('span','nav-long',t('fav.nav')+' '); nav.appendChild(sp); nav.appendChild(document.createTextNode('('+n+')')); nav.setAttribute('aria-label', t('fav.nav')+' ('+n+')');
   if (!n){ $('favoris').hidden = true; return; }
   var ages = {}; f.forEach(function(k){ ages[k.split(':')[0]] = true; }); pl.forEach(function(k){ ages[k.split('|')[1]] = true; });
   Promise.all(Object.keys(ages).map(function(age){ return getAge(age); })).then(function(){
