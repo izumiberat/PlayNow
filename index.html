@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Play Now · Idées de jeux sans écran pour les 0–12 ans</title>
-<meta name="description" content="Plus de 300 idées de jeux sans écran pour jouer avec un enfant de 0 à 12 ans : parents, grands-parents, baby-sitters. Gratuit, sans inscription.">
+<meta name="description" content="Plus de 300 idées de jeux sans écran pour jouer avec votre enfant de 0 à 12 ans. Une idée en quelques secondes, gratuit et sans inscription.">
 <link rel="canonical" href="https://play.izutech.fr/">
 <link rel="alternate" hreflang="fr" href="https://play.izutech.fr/?lang=fr">
 <link rel="alternate" hreflang="en" href="https://play.izutech.fr/?lang=en">
 <link rel="alternate" hreflang="ja" href="https://play.izutech.fr/?lang=ja">
 <link rel="alternate" hreflang="x-default" href="https://play.izutech.fr/">
 <meta property="og:title" content="Play Now · Une idée de jeu, tout de suite">
-<meta property="og:description" content="Plus de 300 idées de jeux sans écran pour les 0–12 ans. Pour les parents, les grands-parents et tous ceux qui gardent des enfants.">
+<meta property="og:description" content="Plus de 300 idées de jeux sans écran pour les 0–12 ans. Pour les parents qui cherchent quoi faire, tout de suite.">
 <meta property="og:url" content="https://play.izutech.fr/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#4a6fa5">
@@ -51,8 +51,6 @@ header{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.05);position:sticky;top:
 .btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{background:var(--accent-dark)}
 .btn-ghost{background:#fff;color:var(--primary);border:2px solid var(--primary)}
 .btn:focus-visible,.chip:focus-visible,select:focus-visible,.card:focus-visible{outline:3px solid #f4b860;outline-offset:2px}
-.gp-hint{display:inline-block;margin-top:18px;background:var(--warm);border:1px solid #f6d6b3;color:#7a4a12;border-radius:999px;padding:8px 16px;text-decoration:none;font-size:.95rem}
-.gp-hint:hover{background:#ffeedd}
 
 /* Finder */
 .finder{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin:18px 0}
@@ -131,7 +129,6 @@ footer li{margin-bottom:6px}
       Play Now
     </a>
     <div class="head-right">
-      <a class="head-link" href="#grands-parents" data-i18n="nav.gp">Grands-parents</a>
       <a class="head-link" href="#appli" data-i18n="nav.app">L'appli</a>
       <div class="langs" role="group" aria-label="Langue / Language / 言語">
         <button type="button" data-lang="fr" lang="fr">FR</button>
@@ -145,12 +142,11 @@ footer li{margin-bottom:6px}
 <main class="wrap">
   <section class="hero">
     <h1 data-i18n="hero.title">Une idée de jeu, tout de suite</h1>
-    <p data-i18n="hero.text">Plus de 300 activités sans écran pour jouer avec un enfant de 0 à 12 ans. Parents, grands-parents, baby-sitters : choisissez l'âge, l'endroit et le temps que vous avez. C'est gratuit et sans inscription.</p>
+    <p data-i18n="hero.text">Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.</p>
     <div class="cta">
       <a class="btn btn-primary" href="#trouver" data-i18n="hero.find">Trouver une activité</a>
       <button class="btn btn-accent" type="button" id="random-top" data-i18n="hero.random">Une idée au hasard</button>
     </div>
-    <a class="gp-hint" href="#grands-parents" data-i18n="hero.gp">Grand-parent ? Voici des idées calmes pour jouer avec vos petits-enfants →</a>
   </section>
 
   <section class="finder" id="trouver" aria-labelledby="finder-title">
@@ -191,10 +187,10 @@ footer li{margin-bottom:6px}
       <div class="fgroup">
         <span id="lbl-more" data-i18n="f.more">Envie de…</span>
         <div class="chips" role="group" aria-labelledby="lbl-more">
-          <button type="button" class="chip gp" data-toggle="gp" data-i18n="f.gp">Idéal grands-parents</button>
           <button type="button" class="chip" data-toggle="quiet" data-i18n="f.quiet">Calme</button>
           <button type="button" class="chip" data-toggle="clean" data-i18n="f.clean">Sans rien salir</button>
           <button type="button" class="chip" data-toggle="nomat" data-i18n="f.nomat">Sans matériel</button>
+          <button type="button" class="chip gp" data-toggle="gp" data-i18n="f.gp">Idéal grands-parents</button>
         </div>
       </div>
     </div>
@@ -210,18 +206,6 @@ footer li{margin-bottom:6px}
   <div class="grid" id="grid"><div class="loading" data-i18n="loading">Chargement des activités…</div></div>
   <div class="more"><button type="button" class="btn btn-ghost" id="more" hidden data-i18n="more">Afficher plus d'idées</button></div>
 
-  <section class="block gp" id="grands-parents" aria-labelledby="gp-title">
-    <h2 id="gp-title" data-i18n="gp.title">Jouer avec ses petits-enfants</h2>
-    <p data-i18n="gp.text">Un moment ensemble, sans écran et sans rien acheter. Le filtre « Idéal grands-parents » garde les activités calmes, qui salissent peu et ne demandent pas de courir partout.</p>
-    <ul class="tips">
-      <li><b data-i18n="gp.t1h">Laissez-le choisir</b><span data-i18n="gp.t1">Proposez deux ou trois idées et laissez l'enfant choisir. Il s'y mettra plus volontiers.</span></li>
-      <li><b data-i18n="gp.t2h">C'est lui le prof</b><span data-i18n="gp.t2">Demandez-lui de vous expliquer les règles. Les enfants adorent montrer qu'ils savent.</span></li>
-      <li><b data-i18n="gp.t3h">Racontez votre enfance</b><span data-i18n="gp.t3">« À ton âge, moi je jouais à… » : c'est souvent ce moment-là qu'il retiendra.</span></li>
-      <li><b data-i18n="gp.t4h">Loin les uns des autres ?</b><span data-i18n="gp.t4">Les devinettes ou une histoire inventée à deux marchent aussi en appel vidéo.</span></li>
-    </ul>
-    <button type="button" class="btn btn-accent" id="gp-go" data-i18n="gp.go">Voir les idées pour grands-parents</button>
-    <p class="aside"><span data-i18n="gp.aside">La tablette ou les appels vidéo vous compliquent la vie ? À Pau, je viens vous aider chez vous, à votre rythme.</span> <a href="https://seniors.izutech.fr/" data-i18n="gp.asideLink">Aide numérique à domicile →</a></p>
-  </section>
 
   <section class="block" id="appli" aria-labelledby="app-title">
     <div class="app">
@@ -241,6 +225,19 @@ footer li{margin-bottom:6px}
       </div>
     </div>
     <p class="aside"><span data-i18n="idea.text">Vous avez un jeu que vos enfants adorent ?</span> <a href="submit-activity.html" data-i18n="idea.link">Proposez votre idée</a></p>
+  </section>
+
+  <section class="block gp" id="grands-parents" aria-labelledby="gp-title">
+    <h2 id="gp-title" data-i18n="gp.title">Jouer avec ses petits-enfants</h2>
+    <p data-i18n="gp.text">Un moment ensemble, sans écran et sans rien acheter. Le filtre « Idéal grands-parents » garde les activités calmes, qui salissent peu et ne demandent pas de courir partout.</p>
+    <ul class="tips">
+      <li><b data-i18n="gp.t1h">Laissez-le choisir</b><span data-i18n="gp.t1">Proposez deux ou trois idées et laissez l'enfant choisir. Il s'y mettra plus volontiers.</span></li>
+      <li><b data-i18n="gp.t2h">C'est lui le prof</b><span data-i18n="gp.t2">Demandez-lui de vous expliquer les règles. Les enfants adorent montrer qu'ils savent.</span></li>
+      <li><b data-i18n="gp.t3h">Racontez votre enfance</b><span data-i18n="gp.t3">« À ton âge, moi je jouais à… » : c'est souvent ce moment-là qu'il retiendra.</span></li>
+      <li><b data-i18n="gp.t4h">Loin les uns des autres ?</b><span data-i18n="gp.t4">Les devinettes ou une histoire inventée à deux marchent aussi en appel vidéo.</span></li>
+    </ul>
+    <button type="button" class="btn btn-accent" id="gp-go" data-i18n="gp.go">Voir les idées pour grands-parents</button>
+    <p class="aside"><span data-i18n="gp.aside">La tablette ou les appels vidéo vous compliquent la vie ? À Pau, je viens vous aider chez vous, à votre rythme.</span> <a href="https://seniors.izutech.fr/" data-i18n="gp.asideLink">Aide numérique à domicile →</a></p>
   </section>
 </main>
 
@@ -278,11 +275,10 @@ footer li{margin-bottom:6px}
 var T = {
  fr:{
   'doc.title':"Play Now · Idées de jeux sans écran pour les 0–12 ans",
-  skip:"Aller aux activités", 'nav.gp':"Grands-parents", 'nav.app':"L'appli",
+  skip:"Aller aux activités", 'nav.app':"L'appli",
   'hero.title':"Une idée de jeu, tout de suite",
-  'hero.text':"Plus de 300 activités sans écran pour jouer avec un enfant de 0 à 12 ans. Parents, grands-parents, baby-sitters : choisissez l'âge, l'endroit et le temps que vous avez. C'est gratuit et sans inscription.",
+  'hero.text':"Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.",
   'hero.find':"Trouver une activité", 'hero.random':"Une idée au hasard",
-  'hero.gp':"Grand-parent ? Voici des idées calmes pour jouer avec vos petits-enfants →",
   'f.title':"Trouver une activité", 'f.age':"Âge de l'enfant", 'f.where':"Où ?", 'f.any':"Peu importe",
   'f.indoor':"Dedans", 'f.outdoor':"Dehors", 'f.time':"Combien de temps ?", 'f.t10':"10 min ou moins",
   'f.t20':"20 min ou moins", 'f.tlong':"Plus long", 'f.situation':"Situation", 'f.more':"Envie de…",
@@ -315,11 +311,10 @@ var T = {
  },
  en:{
   'doc.title':"Play Now · Screen-free play ideas for ages 0–12",
-  skip:"Skip to activities", 'nav.gp':"Grandparents", 'nav.app':"The app",
+  skip:"Skip to activities", 'nav.app':"The app",
   'hero.title':"A play idea, right now",
-  'hero.text':"Over 300 screen-free activities to play with a child aged 0 to 12. Parents, grandparents, babysitters: pick the age, the place and the time you have. Free, no sign-up.",
+  'hero.text':"Over 300 screen-free activities to play with your child aged 0 to 12. Pick their age, the place and the time you have: an idea in seconds. Free, no sign-up.",
   'hero.find':"Find an activity", 'hero.random':"Surprise me",
-  'hero.gp':"Grandparent? Here are calm ideas to play with your grandchildren →",
   'f.title':"Find an activity", 'f.age':"Child's age", 'f.where':"Where?", 'f.any':"Any",
   'f.indoor':"Indoors", 'f.outdoor':"Outdoors", 'f.time':"How long?", 'f.t10':"10 min or less",
   'f.t20':"20 min or less", 'f.tlong':"Longer", 'f.situation':"Situation", 'f.more':"In the mood for…",
@@ -352,11 +347,10 @@ var T = {
  },
  ja:{
   'doc.title':"Play Now · 0〜12歳 画面を使わない遊びのアイデア",
-  skip:"遊びの一覧へ", 'nav.gp':"祖父母の方へ", 'nav.app':"アプリ",
+  skip:"遊びの一覧へ", 'nav.app':"アプリ",
   'hero.title':"今すぐ遊べるアイデア",
-  'hero.text':"0〜12歳の子どもと一緒に楽しめる、画面を使わない遊びを300以上。パパ・ママ、おじいちゃん・おばあちゃん、シッターさんにも。年齢・場所・時間を選ぶだけ。無料・登録不要です。",
+  'hero.text':"0〜12歳のお子さんと一緒に楽しめる、画面を使わない遊びを300以上。年齢・場所・時間を選ぶだけで、すぐにアイデアが見つかります。無料・登録不要です。",
   'hero.find':"遊びをさがす", 'hero.random':"おまかせで1つ",
-  'hero.gp':"おじいちゃん・おばあちゃんへ：お孫さんと楽しめる、おだやかな遊び →",
   'f.title':"遊びをさがす", 'f.age':"子どもの年齢", 'f.where':"どこで？", 'f.any':"どこでも",
   'f.indoor':"室内", 'f.outdoor':"屋外", 'f.time':"時間は？", 'f.t10':"10分以内",
   'f.t20':"20分以内", 'f.tlong':"もっと長く", 'f.situation':"シーン", 'f.more':"こんな遊び",
