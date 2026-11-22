@@ -82,6 +82,24 @@ select{font:inherit;font-size:.95rem;padding:8px 12px;border-radius:10px;border:
 .favs{scroll-margin-top:70px;margin:10px 0 26px}
 .favs h2{font-size:1.3rem;margin-bottom:10px}
 .card-wrap{position:relative}
+.qlabel{display:block;font-size:.85rem;font-weight:600;color:var(--muted);margin:14px 0 6px;text-transform:uppercase;letter-spacing:.03em}
+.qlabel .opt{text-transform:none;font-weight:400;letter-spacing:0}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.pbtn{border:1.5px solid var(--border);background:#fff;border-radius:14px;padding:12px 10px;font:inherit;cursor:pointer;color:var(--text);text-align:center;min-height:64px}
+.pbtn b{display:block}.pbtn small{color:var(--muted)}
+.pbtn:hover{border-color:var(--primary)}
+.pbtn:focus-visible{outline:3px solid #f4b860;outline-offset:2px}
+.plan{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin:0 0 18px;scroll-margin-top:70px}
+.plan h2{font-size:1.25rem;margin-bottom:4px}
+.plan .meta{color:var(--muted);margin-bottom:12px}
+.steps{list-style:none;display:grid;gap:10px;counter-reset:step}
+.steps li{display:flex;gap:10px;align-items:stretch}
+.steps li::before{counter-increment:step;content:counter(step);flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;margin-top:12px}
+.steps .card{flex:1}
+.plan .cta{justify-content:flex-start;margin-top:14px}
+.saved{list-style:none;display:grid;gap:8px;margin-bottom:16px}
+.saved li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px 14px}
+.saved li span{flex:1;min-width:160px}
 .linkbtn{background:none;border:0;color:var(--primary);font:inherit;cursor:pointer;text-decoration:underline;padding:4px}
 
 /* Grid */
@@ -175,7 +193,32 @@ footer li{margin-bottom:6px}
       <button type="button" class="chip" data-age="6-8"></button>
       <button type="button" class="chip" data-age="9-12"></button>
     </div>
-    <div class="qgrid" id="qgrid"></div>
+    <span class="qlabel" id="lbl-energy"><span data-i18n="e.label">Et vous, quelle énergie aujourd'hui ?</span> <span class="opt" data-i18n="e.opt">(facultatif)</span></span>
+    <div class="chips" role="group" aria-labelledby="lbl-energy">
+      <button type="button" class="chip" data-penergy="low" data-i18n="e.low">🔋 Pas beaucoup</button>
+      <button type="button" class="chip" data-penergy="medium" data-i18n="e.medium">🙂 Moyenne</button>
+      <button type="button" class="chip" data-penergy="high" data-i18n="e.high">⚡ En forme</button>
+    </div>
+    <span class="qlabel" data-i18n="q.moods">Une envie</span>
+    <div class="qgrid" id="qgrid" style="margin-top:0"></div>
+    <span class="qlabel" data-i18n="p.label">Ou un petit programme de plusieurs activités</span>
+    <div class="pgrid">
+      <button type="button" class="pbtn" data-plan="morning"><b data-i18n="p.morning">🌅 Ma matinée</b><small data-i18n="p.morningS">4 activités</small></button>
+      <button type="button" class="pbtn" data-plan="afternoon"><b data-i18n="p.afternoon">🌞 Mon après-midi</b><small data-i18n="p.afternoonS">3 activités, après la sieste</small></button>
+      <button type="button" class="pbtn" data-plan="rainy"><b data-i18n="p.rainy">🌧️ Jour de pluie</b><small data-i18n="p.rainyS">4 activités dedans</small></button>
+      <button type="button" class="pbtn" data-plan="quiet"><b data-i18n="p.quiet">🤫 Moment calme</b><small data-i18n="p.quietS">3 activités tranquilles</small></button>
+    </div>
+  </section>
+
+  <section class="plan" id="plan" aria-labelledby="plan-title" hidden>
+    <h2 id="plan-title"></h2>
+    <p class="meta" id="plan-meta"></p>
+    <ol class="steps" id="plan-steps"></ol>
+    <div class="cta">
+      <button type="button" class="btn btn-accent" id="plan-again" data-i18n="p.again">Un autre programme</button>
+      <button type="button" class="fav" id="plan-save" aria-pressed="false"></button>
+      <button type="button" class="btn btn-ghost" id="plan-close" data-i18n="m.close">Fermer</button>
+    </div>
   </section>
 
   <section class="finder" id="trouver" aria-labelledby="finder-title">
@@ -235,8 +278,9 @@ footer li{margin-bottom:6px}
   </div>
 
   <section class="favs" id="favoris" aria-labelledby="fav-title" hidden>
-    <h2 id="fav-title" data-i18n="fav.title">Mes favoris</h2>
+    <h2 id="fav-title" data-i18n="fav.title">Mes favoris et programmes</h2>
     <p class="m-desc" data-i18n="fav.note" style="margin:-4px 0 10px">Gardés sur cet appareil uniquement.</p>
+    <ul class="saved" id="plan-list"></ul>
     <div class="grid" id="fav-grid"></div>
   </section>
 
@@ -313,7 +357,8 @@ var T = {
   skip:"Aller aux activités", 'nav.app':"L'appli",
   'hero.title':"Une idée de jeu, tout de suite",
   'hero.text':"Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.",
-  'q.title':"Une envie ? On vous trouve une idée", 'q.sub':"Choisissez l'âge de l'enfant, puis touchez une envie.", 'f.title':"Ou cherchez vous-même", 'fav.title':"Mes favoris", 'fav.note':"Gardés sur cet appareil uniquement.", 'fav.nav':"Favoris", 'fav.add':"☆ Garder en favori", 'fav.on':"★ Dans mes favoris", 'q.cycle':"Vous avez vu toutes les idées de ce type pour cet âge. On recommence !",
+  'e.label':"Et vous, quelle énergie aujourd'hui ?", 'e.opt':"(facultatif)", 'e.low':"🔋 Pas beaucoup", 'e.medium':"🙂 Moyenne", 'e.high':"⚡ En forme", 'q.moods':"Une envie", 'p.label':"Ou un petit programme de plusieurs activités", 'p.morning':"🌅 Ma matinée", 'p.morningS':"4 activités", 'p.afternoon':"🌞 Mon après-midi", 'p.afternoonS':"3 activités, après la sieste", 'p.rainy':"🌧️ Jour de pluie", 'p.rainyS':"4 activités dedans", 'p.quiet':"🤫 Moment calme", 'p.quietS':"3 activités tranquilles", 'p.again':"Un autre programme", 'p.save':"☆ Garder ce programme", 'p.saved':"★ Programme gardé", 'p.total':"Environ {m} minutes en tout", 'p.open':"Ouvrir", 'p.remove':"Retirer", 'p.few':"Pas assez d'idées avec ces choix pour un programme complet. Essayez sans le niveau d'énergie.",
+  'q.title':"Une envie ? On vous trouve une idée", 'q.sub':"Choisissez l'âge de l'enfant, puis touchez une envie.", 'f.title':"Ou cherchez vous-même", 'fav.title':"Mes favoris et programmes", 'fav.note':"Gardés sur cet appareil uniquement.", 'fav.nav':"Favoris", 'fav.add':"☆ Garder en favori", 'fav.on':"★ Dans mes favoris", 'q.cycle':"Vous avez vu toutes les idées de ce type pour cet âge. On recommence !",
   cats:{"bonding": "Moment complice", "sensory": "Éveil des sens", "calm": "Pour se calmer", "quick": "Vite fait", "energy": "Se dépenser", "pretend": "Faire semblant", "learning": "Apprendre en jouant", "family": "En famille", "alone": "Jouer seul", "challenge": "Des défis", "friends": "Entre copains", "surprise": "Surprise !"},
   'f.age':"Âge de l'enfant", 'f.where':"Où ?", 'f.any':"Peu importe",
   'f.indoor':"Dedans", 'f.outdoor':"Dehors", 'f.time':"Combien de temps ?", 'f.t10':"10 min ou moins",
@@ -351,7 +396,8 @@ var T = {
   skip:"Skip to activities", 'nav.app':"The app",
   'hero.title':"A play idea, right now",
   'hero.text':"Over 300 screen-free activities to play with your child aged 0 to 12. Pick their age, the place and the time you have: an idea in seconds. Free, no sign-up.",
-  'q.title':"In the mood for something? We'll find an idea", 'q.sub':"Pick the child's age, then tap what you feel like.", 'f.title':"Or search yourself", 'fav.title':"My favourites", 'fav.note':"Kept on this device only.", 'fav.nav':"Favourites", 'fav.add':"☆ Save as favourite", 'fav.on':"★ In my favourites", 'q.cycle':"You've seen every idea of this kind for this age. Starting again!",
+  'e.label':"And you, how's your energy today?", 'e.opt':"(optional)", 'e.low':"🔋 Running low", 'e.medium':"🙂 So-so", 'e.high':"⚡ Full of beans", 'q.moods':"What you feel like", 'p.label':"Or a little plan with several activities", 'p.morning':"🌅 My morning", 'p.morningS':"4 activities", 'p.afternoon':"🌞 My afternoon", 'p.afternoonS':"3 activities, after nap time", 'p.rainy':"🌧️ Rainy day", 'p.rainyS':"4 indoor activities", 'p.quiet':"🤫 Quiet time", 'p.quietS':"3 calm activities", 'p.again':"Another plan", 'p.save':"☆ Save this plan", 'p.saved':"★ Plan saved", 'p.total':"About {m} minutes in all", 'p.open':"Open", 'p.remove':"Remove", 'p.few':"Not enough ideas with these choices for a full plan. Try without the energy level.",
+  'q.title':"In the mood for something? We'll find an idea", 'q.sub':"Pick the child's age, then tap what you feel like.", 'f.title':"Or search yourself", 'fav.title':"My favourites and plans", 'fav.note':"Kept on this device only.", 'fav.nav':"Favourites", 'fav.add':"☆ Save as favourite", 'fav.on':"★ In my favourites", 'q.cycle':"You've seen every idea of this kind for this age. Starting again!",
   cats:{"bonding": "Bonding time", "sensory": "Sensory play", "calm": "Calm & soothing", "quick": "Quick & easy", "energy": "Burn energy", "pretend": "Pretend play", "learning": "Learning", "family": "Family fun", "alone": "Playing alone", "challenge": "Challenges", "friends": "With friends", "surprise": "Surprise me!"},
   'f.age':"Child's age", 'f.where':"Where?", 'f.any':"Any",
   'f.indoor':"Indoors", 'f.outdoor':"Outdoors", 'f.time':"How long?", 'f.t10':"10 min or less",
@@ -389,7 +435,8 @@ var T = {
   skip:"遊びの一覧へ", 'nav.app':"アプリ",
   'hero.title':"今すぐ遊べるアイデア",
   'hero.text':"0〜12歳のお子さんと一緒に楽しめる、画面を使わない遊びを300以上。年齢・場所・時間を選ぶだけで、すぐにアイデアが見つかります。無料・登録不要です。",
-  'q.title':"どんな遊びがいい？アイデアをお届けします", 'q.sub':"子どもの年齢を選んで、気分に合うボタンを押してください。", 'f.title':"自分で条件を選ぶ", 'fav.title':"お気に入り", 'fav.note':"この端末にだけ保存されます。", 'fav.nav':"お気に入り", 'fav.add':"☆ お気に入りに追加", 'fav.on':"★ お気に入り登録済み", 'q.cycle':"この年齢のこのタイプの遊びはすべて見ました。最初からもう一度！",
+  'e.label':"あなたの今日の元気度は？", 'e.opt':"（任意）", 'e.low':"🔋 ちょっと疲れ気味", 'e.medium':"🙂 ふつう", 'e.high':"⚡ 元気いっぱい", 'q.moods':"気分で選ぶ", 'p.label':"いくつかの遊びを組み合わせたプラン", 'p.morning':"🌅 午前のプラン", 'p.morningS':"4つの遊び", 'p.afternoon':"🌞 午後のプラン", 'p.afternoonS':"お昼寝のあとに3つ", 'p.rainy':"🌧️ 雨の日", 'p.rainyS':"室内で4つ", 'p.quiet':"🤫 静かな時間", 'p.quietS':"落ち着いた遊びを3つ", 'p.again':"ほかのプラン", 'p.save':"☆ このプランを保存", 'p.saved':"★ 保存済み", 'p.total':"全部で約{m}分", 'p.open':"開く", 'p.remove':"削除", 'p.few':"この条件ではプランを作れるだけの遊びがありません。元気度の選択を外してみてください。",
+  'q.title':"どんな遊びがいい？アイデアをお届けします", 'q.sub':"子どもの年齢を選んで、気分に合うボタンを押してください。", 'f.title':"自分で条件を選ぶ", 'fav.title':"お気に入りとプラン", 'fav.note':"この端末にだけ保存されます。", 'fav.nav':"お気に入り", 'fav.add':"☆ お気に入りに追加", 'fav.on':"★ お気に入り登録済み", 'q.cycle':"この年齢のこのタイプの遊びはすべて見ました。最初からもう一度！",
   cats:{"bonding": "ふれあい遊び", "sensory": "感覚あそび", "calm": "落ち着く遊び", "quick": "すぐできる", "energy": "体を動かす", "pretend": "ごっこ遊び", "learning": "学びの遊び", "family": "家族で", "alone": "ひとりで遊ぶ", "challenge": "チャレンジ", "friends": "友だちと", "surprise": "おまかせ！"},
   'f.age':"子どもの年齢", 'f.where':"どこで？", 'f.any':"どこでも",
   'f.indoor':"室内", 'f.outdoor':"屋外", 'f.time':"時間は？", 'f.t10':"10分以内",
@@ -460,7 +507,7 @@ function pickLang(){
 var state = {
   lang: pickLang(),
   age: ['0-2','3-5','6-8','9-12'].indexOf(params.get('age'))>=0 ? params.get('age') : (store('play.age') || '3-5'),
-  where:'all', time:'all', situation:'all',
+  where:'all', time:'all', situation:'all', penergy:null,
   toggles:{gp:false, quiet:false, clean:false, nomat:false},
   shown: PAGE
 };
@@ -502,7 +549,8 @@ function renderQuick(){
 }
 function quickIdea(k){
   mode = k;
-  var pool = list.filter(function(a){ return CAT_TEST[k](a.f); });
+  var pool = list.filter(function(a){ return CAT_TEST[k](a.f) && energyOk(a.f); });
+  if (!pool.length) pool = list.filter(function(a){ return energyOk(a.f); });
   if (!pool.length) pool = list;
   if (!pool.length) return;
   var key = state.age+'|'+k; seen[key] = seen[key] || {};
@@ -541,24 +589,84 @@ function card(a, onOpen){
   return c;
 }
 function renderFavs(){
-  var f = favs(), nav = $('nav-fav');
-  nav.hidden = !f.length; nav.textContent = t('fav.nav')+' ('+f.length+')';
-  if (!f.length){ $('favoris').hidden = true; return; }
-  var ages = {}; f.forEach(function(k){ ages[k.split(':')[0]] = true; });
+  var f = favs(), pl = plans(), nav = $('nav-fav'), n = f.length + pl.length;
+  nav.hidden = !n; nav.textContent = t('fav.nav')+' ('+n+')';
+  if (!n){ $('favoris').hidden = true; return; }
+  var ages = {}; f.forEach(function(k){ ages[k.split(':')[0]] = true; }); pl.forEach(function(k){ ages[k.split('|')[1]] = true; });
   Promise.all(Object.keys(ages).map(function(age){ return getAge(age); })).then(function(){
+    var ul = $('plan-list'); ul.innerHTML='';
+    pl.forEach(function(k){
+      var p = planFromKey(k); if (p.items.length<2) return;
+      var li = el('li'); li.appendChild(el('span',null,t('p.'+p.type)+' · '+T[state.lang].ages[p.age]+' · '+p.items.map(function(a){ return a.x.title; }).join(', ')));
+      var o = el('button','linkbtn',t('p.open')); o.type='button'; o.addEventListener('click', function(){ showPlan(p); });
+      var r = el('button','linkbtn',t('p.remove')); r.type='button'; r.addEventListener('click', function(){ var l=plans(); l.splice(l.indexOf(k),1); store('play.plans',JSON.stringify(l)); syncPlanBtn(); renderFavs(); });
+      li.appendChild(o); li.appendChild(r); ul.appendChild(li);
+    });
+    ul.hidden = !ul.children.length;
     var g = $('fav-grid'); g.innerHTML='';
     f.forEach(function(k){
       var p = k.split(':'), a = (byAge[p[0]]||[]).filter(function(x){ return String(x.f.id)===p[1]; })[0];
       if (a) g.appendChild(card(a, openModal));
     });
-    $('favoris').hidden = !g.children.length;
+    $('favoris').hidden = !g.children.length && ul.hidden;
   }).catch(function(){});
+}
+// Small activity plans (idea from the earlier PlayIdeas page)
+var PLAN = {
+  morning:{n:4, ok:function(f){ return true; }, order:'down'},
+  afternoon:{n:3, ok:function(f){ return f.kidEnergy!=='high'; }, order:'down'},
+  rainy:{n:4, ok:function(f){ return f.location!=='outdoor'; }, order:'mix', prefer:function(f){ return has(f.situations,'rainy-day'); }},
+  quiet:{n:3, ok:function(f){ return f.noiseLevel==='quiet' && f.kidEnergy!=='high'; }, order:'none'}
+};
+var ENERGY = {high:3, medium:2, moderate:2, low:1};
+var currentPlan = null;
+function shuffle(a){ for (var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)), t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+function makePlan(type){
+  var P = PLAN[type];
+  var pool = shuffle(list.filter(function(a){ return P.ok(a.f) && energyOk(a.f); }));
+  if (P.prefer){ pool.sort(function(a,b){ return (P.prefer(b.f)?1:0)-(P.prefer(a.f)?1:0); }); pool = shuffle(pool.slice(0, Math.max(P.n*3, 8))); }
+  var picks = [], tags = {};
+  // vary the kind of activity: avoid two with the same first tag when possible
+  pool.forEach(function(a){ if (picks.length<P.n){ var t=(a.f.tags||[])[0]||''; if (!tags[t] || pool.length < P.n*2){ tags[t]=1; picks.push(a); } } });
+  pool.forEach(function(a){ if (picks.length<P.n && picks.indexOf(a)<0) picks.push(a); });
+  if (P.order==='down') picks.sort(function(a,b){ return (ENERGY[b.f.kidEnergy]||1)-(ENERGY[a.f.kidEnergy]||1); });
+  return {type:type, age:state.age, items:picks};
+}
+function showPlan(plan){
+  currentPlan = plan;
+  var sec = $('plan'), ol = $('plan-steps'); ol.innerHTML='';
+  $('plan-title').textContent = t('p.'+plan.type) + ' · ' + T[state.lang].ages[plan.age];
+  if (plan.items.length < 2){ $('plan-meta').textContent = t('p.few'); }
+  else {
+    var m = plan.items.reduce(function(s,a){ return s+(Number(a.f.duration)||0); },0);
+    $('plan-meta').textContent = t('p.total').replace('{m}',m).replace('{a}',T[state.lang].ages[plan.age]);
+  }
+  plan.items.forEach(function(a){ var li=el('li'); li.appendChild(card(a, openModal)); ol.appendChild(li); });
+  syncPlanBtn();
+  sec.hidden = false; sec.scrollIntoView();
+}
+function plans(){ try{ return JSON.parse(store('play.plans')||'[]'); }catch(e){ return []; } }
+function planKey(p){ return p.type+'|'+p.age+'|'+p.items.map(function(a){ return a.f.id; }).join(','); }
+function syncPlanBtn(){
+  var on = currentPlan && plans().indexOf(planKey(currentPlan))>=0, b=$('plan-save');
+  b.hidden = !currentPlan || currentPlan.items.length<2;
+  b.setAttribute('aria-pressed', !!on); b.textContent = t(on?'p.saved':'p.save');
+}
+function togglePlan(){
+  var l = plans(), k = planKey(currentPlan), i = l.indexOf(k);
+  if (i>=0) l.splice(i,1); else l.unshift(k);
+  store('play.plans', JSON.stringify(l.slice(0,20))); syncPlanBtn(); renderFavs();
+}
+function planFromKey(k){
+  var p = k.split('|'), ids = p[2].split(','), src = byAge[p[1]]||[];
+  return {type:p[0], age:p[1], items: ids.map(function(id){ return src.filter(function(a){ return String(a.f.id)===id; })[0]; }).filter(Boolean)};
 }
 function syncChips(){
   document.querySelectorAll('.age-chips .chip').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.age===state.age); });
   document.querySelectorAll('[data-where]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.where===state.where); });
   document.querySelectorAll('[data-time]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.time===state.time); });
   document.querySelectorAll('[data-toggle]').forEach(function(b){ b.setAttribute('aria-pressed', !!state.toggles[b.dataset.toggle]); });
+  document.querySelectorAll('[data-penergy]').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.penergy===state.penergy); });
 }
 
 function getJSON(url){
@@ -595,7 +703,13 @@ function load(){
     });
 }
 
+function energyOk(f){
+  if (state.penergy==='low') return f.parentEnergy==='low';
+  if (state.penergy==='medium') return f.parentEnergy!=='high';
+  return true;
+}
 function matches(f){
+  if (!energyOk(f)) return false;
   if (state.where!=='all' && f.location!==state.where && f.location!=='any') return false;
   var d = Number(f.duration)||0;
   if (state.time==='10' && d>10) return false;
@@ -660,7 +774,7 @@ function randomIdea(){
 }
 
 function reset(){
-  state.where='all'; state.time='all'; state.situation='all';
+  state.where='all'; state.time='all'; state.situation='all'; state.penergy=null;
   state.toggles={gp:false,quiet:false,clean:false,nomat:false}; state.shown=PAGE;
   $('situation').value='all'; syncChips(); render();
 }
@@ -685,6 +799,11 @@ $('reset').addEventListener('click', reset);
 $('random').addEventListener('click', function(){ mode=null; randomIdea(); });
 $('end-random').addEventListener('click', function(){ mode=null; randomIdea(); });
 $('m-fav').addEventListener('click', function(){ if (current) toggleFav(current); });
+document.querySelectorAll('[data-penergy]').forEach(function(b){ b.addEventListener('click', function(){ state.penergy = state.penergy===b.dataset.penergy ? null : b.dataset.penergy; state.shown=PAGE; syncChips(); render(); }); });
+document.querySelectorAll('[data-plan]').forEach(function(b){ b.addEventListener('click', function(){ showPlan(makePlan(b.dataset.plan)); }); });
+$('plan-again').addEventListener('click', function(){ if (currentPlan) showPlan(makePlan(currentPlan.type)); });
+$('plan-save').addEventListener('click', function(){ if (currentPlan) togglePlan(); });
+$('plan-close').addEventListener('click', function(){ $('plan').hidden = true; currentPlan = null; $('vite').scrollIntoView(); });
 $('end-age').addEventListener('click', function(){ $('vite').scrollIntoView(); var c=document.querySelector('.age-chips .chip:not([aria-pressed="true"])'); if(c) c.focus(); });
 $('m-another').addEventListener('click', randomIdea);
 $('m-close').addEventListener('click', closeModal);
