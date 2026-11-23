@@ -136,6 +136,13 @@ h2{font-size:1.2rem;margin:6px 0 10px}
       <button type="button" class="chip" data-pe="medium"></button>
       <button type="button" class="chip" data-pe="high"></button>
     </div>
+    <p class="label" data-t="narrow">Précisez (facultatif)</p>
+    <div class="chips" id="narrow">
+      <button type="button" class="chip" data-where="indoor"></button>
+      <button type="button" class="chip" data-where="outdoor"></button>
+      <button type="button" class="chip" data-opt="short"></button>
+      <button type="button" class="chip" data-opt="nomat"></button>
+    </div>
     <div class="tiles" id="tiles"></div>
     <button type="button" class="big" id="surprise"></button>
   </section>
@@ -192,7 +199,7 @@ h2{font-size:1.2rem;margin:6px 0 10px}
 var N=' ';
 var T={
  fr:{doc:"Play Now · l'appli",ages:{'0-2':"0–2 ans",'3-5':"3–5 ans",'6-8':"6–8 ans",'9-12':"9–12 ans"},
-  energy:"Votre énergie aujourd'hui",pe:{low:"🔋 Pas beaucoup",medium:"🙂 Moyenne",high:"⚡ En forme"},
+  energy:"Votre énergie aujourd'hui",narrow:"Précisez (facultatif)",nw:{indoor:"🏠 Dedans",outdoor:"🌳 Dehors",short:"⏱️ 10 min max",nomat:"✋ Sans matériel"},pe:{low:"🔋 Pas beaucoup",medium:"🙂 Moyenne",high:"⚡ En forme"},
   surprise:"🎲 Surprise"+N+"!",tabIdeas:"Idées",tabPlans:"Programmes",tabFavs:"Favoris",
   cats:{bonding:"Moment complice",sensory:"Éveil des sens",calm:"Pour se calmer",quick:"Vite fait",energy:"Se dépenser",pretend:"Faire semblant",learning:"Apprendre en jouant",family:"En famille",alone:"Jouer seul",challenge:"Des défis",friends:"Entre copains"},
   plansTitle:"Un petit programme",plans:{morning:["🌅","Ma matinée","4 activités, des plus actives aux plus calmes"],afternoon:["🌞","Mon après-midi","3 activités, après la sieste"],rainy:["🌧️","Jour de pluie","4 activités dedans"],quiet:["🤫","Moment calme","3 activités tranquilles"]},
@@ -200,12 +207,12 @@ var T={
   favTitle:"Mes favoris",favNote:"Gardés sur ce téléphone uniquement.",favEmpty:"Touchez ☆ sur une activité pour la retrouver ici.",remove:"Retirer",
   add:"☆ Favori",on:"★ Favori",next:"Une autre idée",close:"Fermer",min:" min",indoor:"Dedans",outdoor:"Dehors",nomat:"Sans matériel",
   materials:"Matériel",none:"Aucun matériel",steps:"Comment faire",tip:"Petit conseil",safety:"Attention",variations:"Pour varier",
-  cycle:"Vous avez vu toutes les idées de ce type pour cet âge. On recommence"+N+"!",loading:"Chargement…",error:"Impossible de charger les activités. Vérifiez votre connexion.",
+  relaxed:"Pas d'idée avec tous ces choix pour cet âge, voici la plus proche.",cycle:"Vous avez vu toutes les idées de ce type pour cet âge. On recommence"+N+"!",loading:"Chargement…",error:"Impossible de charger les activités. Vérifiez votre connexion.",
   site:"Le site complet",idea:"Proposer une idée",
   installAndroid:"Ajoutez Play Now à votre écran d'accueil : elle s'ouvrira comme une appli, même sans connexion.",installBtn:"Ajouter",
   installIOS:"Pour l'avoir comme une appli : touchez Partager ⬆️ puis « Sur l'écran d'accueil ».",offline:"Hors connexion : les idées déjà chargées restent disponibles."},
  en:{doc:"Play Now · the app",ages:{'0-2':"0–2 yrs",'3-5':"3–5 yrs",'6-8':"6–8 yrs",'9-12':"9–12 yrs"},
-  energy:"Your energy today",pe:{low:"🔋 Running low",medium:"🙂 So-so",high:"⚡ Full of beans"},
+  energy:"Your energy today",narrow:"Narrow it down (optional)",nw:{indoor:"🏠 Indoors",outdoor:"🌳 Outdoors",short:"⏱️ 10 min max",nomat:"✋ Nothing needed"},pe:{low:"🔋 Running low",medium:"🙂 So-so",high:"⚡ Full of beans"},
   surprise:"🎲 Surprise me!",tabIdeas:"Ideas",tabPlans:"Plans",tabFavs:"Favourites",
   cats:{bonding:"Bonding time",sensory:"Sensory play",calm:"Calm & soothing",quick:"Quick & easy",energy:"Burn energy",pretend:"Pretend play",learning:"Learning",family:"Family fun",alone:"Playing alone",challenge:"Challenges",friends:"With friends"},
   plansTitle:"A little plan",plans:{morning:["🌅","My morning","4 activities, from lively to calm"],afternoon:["🌞","My afternoon","3 activities, after nap time"],rainy:["🌧️","Rainy day","4 indoor activities"],quiet:["🤫","Quiet time","3 calm activities"]},
@@ -213,12 +220,12 @@ var T={
   favTitle:"My favourites",favNote:"Kept on this phone only.",favEmpty:"Tap ☆ on an activity to find it here.",remove:"Remove",
   add:"☆ Favourite",on:"★ Favourite",next:"Another idea",close:"Close",min:" min",indoor:"Indoors",outdoor:"Outdoors",nomat:"Nothing needed",
   materials:"You'll need",none:"Nothing needed",steps:"How to play",tip:"Tip",safety:"Safety",variations:"Variations",
-  cycle:"You've seen every idea of this kind for this age. Starting again!",loading:"Loading…",error:"Couldn't load the activities. Check your connection.",
+  relaxed:"No idea matches all these choices for this age, so here is the closest one.",cycle:"You've seen every idea of this kind for this age. Starting again!",loading:"Loading…",error:"Couldn't load the activities. Check your connection.",
   site:"Full website",idea:"Share an idea",
   installAndroid:"Add Play Now to your home screen: it opens like an app, even offline.",installBtn:"Add",
   installIOS:"To use it like an app: tap Share ⬆️ then \"Add to Home Screen\".",offline:"Offline: ideas already loaded are still available."},
  ja:{doc:"Play Now · アプリ版",ages:{'0-2':"0〜2歳",'3-5':"3〜5歳",'6-8':"6〜8歳",'9-12':"9〜12歳"},
-  energy:"今日の元気度",pe:{low:"🔋 ちょっと疲れ気味",medium:"🙂 ふつう",high:"⚡ 元気いっぱい"},
+  energy:"今日の元気度",narrow:"条件をしぼる（任意）",nw:{indoor:"🏠 室内",outdoor:"🌳 屋外",short:"⏱️ 10分以内",nomat:"✋ 道具なし"},pe:{low:"🔋 ちょっと疲れ気味",medium:"🙂 ふつう",high:"⚡ 元気いっぱい"},
   surprise:"🎲 おまかせ！",tabIdeas:"アイデア",tabPlans:"プラン",tabFavs:"お気に入り",
   cats:{bonding:"ふれあい遊び",sensory:"感覚あそび",calm:"落ち着く遊び",quick:"すぐできる",energy:"体を動かす",pretend:"ごっこ遊び",learning:"学びの遊び",family:"家族で",alone:"ひとりで遊ぶ",challenge:"チャレンジ",friends:"友だちと"},
   plansTitle:"遊びのプラン",plans:{morning:["🌅","午前のプラン","活発な遊びから静かな遊びへ、4つ"],afternoon:["🌞","午後のプラン","お昼寝のあとに3つ"],rainy:["🌧️","雨の日","室内で4つ"],quiet:["🤫","静かな時間","落ち着いた遊びを3つ"]},
@@ -226,7 +233,7 @@ var T={
   favTitle:"お気に入り",favNote:"この端末にだけ保存されます。",favEmpty:"遊びの☆を押すと、ここに保存されます。",remove:"削除",
   add:"☆ お気に入り",on:"★ お気に入り",next:"ほかのアイデア",close:"閉じる",min:"分",indoor:"室内",outdoor:"屋外",nomat:"道具なし",
   materials:"用意するもの",none:"なし",steps:"遊び方",tip:"ひとことアドバイス",safety:"注意",variations:"アレンジ",
-  cycle:"この年齢のこのタイプの遊びはすべて見ました。最初からもう一度！",loading:"読み込み中…",error:"読み込めませんでした。接続を確認してください。",
+  relaxed:"すべての条件に合う遊びがないので、近いものを表示しています。",cycle:"この年齢のこのタイプの遊びはすべて見ました。最初からもう一度！",loading:"読み込み中…",error:"読み込めませんでした。接続を確認してください。",
   site:"サイト版",idea:"アイデアを送る",
   installAndroid:"ホーム画面に追加すると、アプリのように開けます（オフラインでも使えます）。",installBtn:"追加",
   installIOS:"アプリのように使うには：共有ボタン ⬆️ →「ホーム画面に追加」。",offline:"オフライン：読み込み済みのアイデアは使えます。"}
@@ -267,8 +274,8 @@ var params=new URLSearchParams(location.search);
 function pickLang(){var p=params.get('lang');if(T[p])return p;var s=store('play.lang');if(T[s])return s;
   var n=(navigator.languages&&navigator.languages[0]||navigator.language||'fr').toLowerCase();
   if(n.indexOf('fr')===0)return 'fr';if(n.indexOf('ja')===0)return 'ja';return 'en';}
-var S={lang:pickLang(),age:AGES.indexOf(store('play.age'))>=0?store('play.age'):'3-5',pe:null,tab:'ideas'};
-var cache={},byAge={},current=null,mode=null,seen={},cycle=false,plan=null;
+var S={lang:pickLang(),age:AGES.indexOf(store('play.age'))>=0?store('play.age'):'3-5',pe:null,where:null,short:false,nomat:false,tab:'ideas'};
+var cache={},byAge={},current=null,mode=null,seen={},cycle=false,relaxed=false,plan=null;
 function L(){return T[S.lang];}
 
 function getJSON(u){if(cache[u])return Promise.resolve(cache[u]);return fetch(u).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){cache[u]=d.activities||[];return cache[u];});}
@@ -282,13 +289,22 @@ function getAge(age){
   });
 }
 function list(){return byAge[S.age]||[];}
-function energyOk(f){if(S.pe==='low')return f.parentEnergy==='low';if(S.pe==='medium')return f.parentEnergy!=='high';return true;}
+function energyOk(f){
+  if(S.pe==='low'&&f.parentEnergy!=='low')return false;
+  if(S.pe==='medium'&&f.parentEnergy==='high')return false;
+  if(S.where&&f.location!==S.where&&f.location!=='any')return false;
+  if(S.short&&Number(f.duration)>10)return false;
+  if(S.nomat&&(f.materials||[]).length)return false;
+  return true;
+}
 
 function applyLang(){
   var l=L();document.documentElement.lang=S.lang;document.title=l.doc;$('lang').value=S.lang;
   document.querySelectorAll('[data-t]').forEach(function(e){var v=l[e.getAttribute('data-t')];if(typeof v==='string')e.textContent=v;});
   document.querySelectorAll('.age').forEach(function(b){b.lastElementChild.textContent=l.ages[b.dataset.age];});
   document.querySelectorAll('[data-pe]').forEach(function(b){b.textContent=l.pe[b.dataset.pe];});
+  document.querySelectorAll('[data-where]').forEach(function(b){b.textContent=l.nw[b.dataset.where];});
+  document.querySelectorAll('[data-opt]').forEach(function(b){b.textContent=l.nw[b.dataset.opt];});
   $('surprise').textContent=l.surprise;$('s-close').setAttribute('aria-label',l.close);
   $('plan-again').textContent=l.again;$('s-next').textContent=l.next;
   $('site-link').href='../?lang='+S.lang;
@@ -297,6 +313,8 @@ function applyLang(){
 function sync(){
   document.querySelectorAll('.age').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.age===S.age);});
   document.querySelectorAll('[data-pe]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.pe===S.pe);});
+  document.querySelectorAll('[data-where]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.where===S.where);});
+  document.querySelectorAll('[data-opt]').forEach(function(b){b.setAttribute('aria-pressed',!!S[b.dataset.opt]);});
   document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===S.tab);});
   ['ideas','plans','favs'].forEach(function(t){$('p-'+t).hidden=t!==S.tab;});
 }
@@ -311,7 +329,10 @@ function renderTiles(){
 function idea(k){
   mode=k;var all=list();if(!all.length)return;
   var pool=all.filter(function(a){return TEST[k](a.f)&&energyOk(a.f);});
-  if(!pool.length)pool=all.filter(function(a){return energyOk(a.f);});
+  relaxed=false;
+  if(!pool.length){pool=all.filter(function(a){return energyOk(a.f);});relaxed=k!=='surprise'&&pool.length>0;}
+  if(!pool.length){pool=all.filter(function(a){return TEST[k](a.f)&&(!S.where||a.f.location===S.where||a.f.location==='any');});relaxed=true;}
+  if(!pool.length)pool=all.filter(function(a){return !S.where||a.f.location===S.where||a.f.location==='any';});
   if(!pool.length)pool=all;
   var key=S.age+'|'+k;seen[key]=seen[key]||{};
   var fresh=pool.filter(function(a){return !seen[key][a.f.id];});
@@ -323,6 +344,7 @@ function listNode(tag,items){var u=el(tag);items.forEach(function(i){u.appendChi
 function sec(b,t,n){b.appendChild(el('h3',null,t));b.appendChild(n);}
 function open(a){
   current=a;var l=L(),x=a.x,b=$('s-body');b.innerHTML='';
+  if(relaxed&&mode){b.appendChild(el('p','cycle',l.relaxed));relaxed=false;}
   if(cycle&&mode){b.appendChild(el('p','cycle',l.cycle));cycle=false;}
   var h=el('h2',null,x.title);h.id='s-title';b.appendChild(h);
   b.appendChild(el('p','muted',x.description));
@@ -411,6 +433,8 @@ function loadAge(){
 $('lang').addEventListener('change',function(){S.lang=this.value;store('play.lang',S.lang);byAge={};plan=null;$('plan').hidden=true;applyLang();loadAge();});
 document.querySelectorAll('.age').forEach(function(b){b.addEventListener('click',function(){S.age=b.dataset.age;store('play.age',S.age);current=null;sync();loadAge();});});
 document.querySelectorAll('[data-pe]').forEach(function(b){b.addEventListener('click',function(){S.pe=S.pe===b.dataset.pe?null:b.dataset.pe;sync();});});
+document.querySelectorAll('[data-where]').forEach(function(b){b.addEventListener('click',function(){S.where=S.where===b.dataset.where?null:b.dataset.where;sync();});});
+document.querySelectorAll('[data-opt]').forEach(function(b){b.addEventListener('click',function(){S[b.dataset.opt]=!S[b.dataset.opt];sync();});});
 document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){S.tab=b.dataset.tab;sync();window.scrollTo(0,0);if(S.tab==='favs')renderFavs();});});
 $('surprise').addEventListener('click',function(){idea('surprise');});
 $('s-next').addEventListener('click',function(){if(mode)idea(mode);});
