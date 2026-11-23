@@ -299,6 +299,12 @@ footer li{margin-bottom:6px}
 
 
 
+  <section class="block" id="chansons" aria-labelledby="songs-title">
+    <h2 id="songs-title" data-i18n="songs.title">🎵 Des chansons à chanter ensemble</h2>
+    <p data-i18n="songs.text">Des comptines en français, en anglais et en japonais, avec les paroles, les gestes et, pour celles d'ailleurs, la prononciation et la traduction. Pas besoin de savoir chanter : les enfants adorent votre voix.</p>
+    <a class="btn btn-accent" id="songs-link" href="appli/?tab=songs" data-i18n="songs.go" style="margin-top:12px">Voir les chansons</a>
+  </section>
+
   <section class="block" id="appli" aria-labelledby="app-title">
     <div class="app">
       <div>
@@ -369,6 +375,7 @@ var T = {
  fr:{
   'doc.title':"Play Now · Idées de jeux sans écran pour les 0–12 ans",
   'al.title':"Sur téléphone ? Essayez la version appli", 'al.text':"Une idée en un geste, des petits programmes et vos favoris. Elle marche même sans connexion et s'ajoute à l'écran d'accueil comme une vraie appli.",
+  'songs.title':"🎵 Des chansons à chanter ensemble", 'songs.text':"Des comptines en français, en anglais et en japonais, avec les paroles, les gestes et, pour celles d'ailleurs, la prononciation et la traduction. Pas besoin de savoir chanter : les enfants adorent votre voix.", 'songs.go':"Voir les chansons",
   skip:"Aller aux activités", 'nav.app':"L'appli",
   'hero.title':"Une idée de jeu, tout de suite",
   'hero.text':"Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.",
@@ -409,6 +416,7 @@ var T = {
  en:{
   'doc.title':"Play Now · Screen-free play ideas for ages 0–12",
   'al.title':"On your phone? Try the app version", 'al.text':"An idea in one tap, small plans and your favourites. It even works offline and goes on your home screen like a real app.",
+  'songs.title':"🎵 Songs to sing together", 'songs.text':"Nursery rhymes in French, English and Japanese, with lyrics, actions and, for songs from other countries, pronunciation and translation. No need to sing well: children love your voice.", 'songs.go':"See the songs",
   skip:"Skip to activities", 'nav.app':"The app",
   'hero.title':"A play idea, right now",
   'hero.text':"Over 300 screen-free activities to play with your child aged 0 to 12. Pick their age, the place and the time you have: an idea in seconds. Free, no sign-up.",
@@ -449,6 +457,7 @@ var T = {
  ja:{
   'doc.title':"Play Now · 0〜12歳 画面を使わない遊びのアイデア",
   'al.title':"スマホならアプリ版がおすすめ", 'al.text':"ワンタップでアイデア、ミニプラン、お気に入り。オフラインでも使え、ホーム画面に追加すればアプリのように使えます。",
+  'songs.title':"🎵 いっしょに歌おう", 'songs.text':"フランス語・英語・日本語の童謡を、歌詞と手あそび、外国の歌は読み方と意味つきで紹介しています。上手に歌えなくても大丈夫。子どもはあなたの声が大好きです。", 'songs.go':"歌を見る",
   skip:"遊びの一覧へ", 'nav.app':"アプリ",
   'hero.title':"今すぐ遊べるアイデア",
   'hero.text':"0〜12歳のお子さんと一緒に楽しめる、画面を使わない遊びを300以上。年齢・場所・時間を選ぶだけで、すぐにアイデアが見つかります。無料・登録不要です。",
@@ -550,6 +559,7 @@ function applyLang(){
   sel.value = state.situation;
   $('m-close').setAttribute('aria-label', L['m.close']);
   $('applink').href = 'appli/?lang='+state.lang;
+  $('songs-link').href = 'appli/?tab=songs&lang='+state.lang;
   // Seniors link per language
   var sl = state.lang==='fr' ? 'https://seniors.izutech.fr/' : 'https://seniors.izutech.fr/'+state.lang+'/';
   document.querySelectorAll('a[href^="https://seniors.izutech.fr"]').forEach(function(a){ a.href = sl; });

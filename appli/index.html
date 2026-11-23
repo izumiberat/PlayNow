@@ -81,7 +81,7 @@ h2{font-size:1.2rem;margin:6px 0 10px}
 
 /* Bottom tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--border);padding-bottom:env(safe-area-inset-bottom);z-index:20}
-.tabs .in{max-width:520px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);height:var(--tabh)}
+.tabs .in{max-width:520px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);height:var(--tabh)}
 .tab{border:0;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.78rem;color:var(--muted);gap:2px}
 .tab .e{font-size:1.35rem;line-height:1;filter:grayscale(1);opacity:.7}
 .tab[aria-selected="true"]{color:var(--primary);font-weight:700}
@@ -103,6 +103,13 @@ h2{font-size:1.2rem;margin:6px 0 10px}
 .tag{background:var(--soft);color:var(--primary-dark);font-size:.8rem;border-radius:999px;padding:3px 10px}
 .box{border-radius:12px;padding:10px 12px;font-size:.95rem}
 .box.tip{background:var(--warm)}.box.safe{background:#fdeeee}
+.song{display:flex;gap:12px;align-items:center}
+.song .flag{font-size:1.6rem;flex-shrink:0}
+.lyrics{white-space:pre-line;background:var(--soft);border-radius:12px;padding:12px 14px;font-size:1.05rem;line-height:1.7}
+.lyrics.ja{font-size:1.15rem;letter-spacing:.02em}
+.romaji{white-space:pre-line;color:var(--muted);font-style:italic;line-height:1.6}
+.tr{white-space:pre-line;line-height:1.6}
+.listen{display:inline-flex;align-items:center;gap:8px;margin-top:16px;text-decoration:none;background:#c4302b;color:#fff;border-radius:999px;padding:11px 18px;font-weight:600}
 .cycle{background:var(--soft);border-radius:10px;padding:8px 12px;margin-bottom:8px;font-size:.92rem}
 </style>
 </head>
@@ -171,6 +178,19 @@ h2{font-size:1.2rem;margin:6px 0 10px}
     <div class="empty" id="fav-empty"><span class="e">💛</span><span data-t="favEmpty"></span></div>
   </section>
 
+  <!-- Songs -->
+  <section id="p-songs" role="tabpanel" hidden>
+    <h2 data-t="songsTitle"></h2>
+    <p class="note" data-t="songsNote"></p>
+    <div class="chips" id="songlang">
+      <button type="button" class="chip" data-sl="all"></button>
+      <button type="button" class="chip" data-sl="fr">🇫🇷 Français</button>
+      <button type="button" class="chip" data-sl="en">🇬🇧 English</button>
+      <button type="button" class="chip" data-sl="ja">🇯🇵 日本語</button>
+    </div>
+    <div id="song-list" class="list"></div>
+    <p class="muted" id="song-other" style="margin-top:12px" hidden></p>
+  </section>
   <p class="foot"><a href="../" id="site-link" data-t="site"></a> · <a href="../submit-activity.html" data-t="idea"></a></p>
 </div>
 
@@ -178,6 +198,7 @@ h2{font-size:1.2rem;margin:6px 0 10px}
   <div class="in">
     <button type="button" class="tab" role="tab" data-tab="ideas" aria-controls="p-ideas"><span class="e">💡</span><span data-t="tabIdeas"></span></button>
     <button type="button" class="tab" role="tab" data-tab="plans" aria-controls="p-plans"><span class="e">📋</span><span data-t="tabPlans"></span></button>
+    <button type="button" class="tab" role="tab" data-tab="songs" aria-controls="p-songs"><span class="e">🎵</span><span data-t="tabSongs"></span></button>
     <button type="button" class="tab" role="tab" data-tab="favs" aria-controls="p-favs"><span class="e">⭐</span><span data-t="tabFavs"></span></button>
   </div>
 </nav>
@@ -200,7 +221,7 @@ var N=' ';
 var T={
  fr:{doc:"Play Now · l'appli",ages:{'0-2':"0–2 ans",'3-5':"3–5 ans",'6-8':"6–8 ans",'9-12':"9–12 ans"},
   energy:"Votre énergie aujourd'hui",narrow:"Précisez (facultatif)",nw:{indoor:"🏠 Dedans",outdoor:"🌳 Dehors",short:"⏱️ 10 min max",nomat:"✋ Sans matériel"},pe:{low:"🔋 Pas beaucoup",medium:"🙂 Moyenne",high:"⚡ En forme"},
-  surprise:"🎲 Surprise"+N+"!",tabIdeas:"Idées",tabPlans:"Programmes",tabFavs:"Favoris",
+  surprise:"🎲 Surprise"+N+"!",tabIdeas:"Idées",tabPlans:"Programmes",tabFavs:"Favoris",tabSongs:"Chansons",songsTitle:"Chansons à chanter ensemble",songsNote:"Pas besoin de savoir chanter : les enfants adorent votre voix. Paroles, gestes et, pour les chansons d'ailleurs, la prononciation et la traduction.",slAll:"Toutes",lyrics:"Paroles",romaji:"Prononciation",meaning:"Ce que ça veut dire",gestures:"Les gestes",about:"Le saviez-vous ?",listen:"▶ Écouter sur YouTube",nextSong:"Une autre chanson",noSong:"Pas encore de chanson dans cette langue pour cet âge.",otherAges:"Les autres chansons sont rangées sous les autres âges.",
   cats:{bonding:"Moment complice",sensory:"Éveil des sens",calm:"Pour se calmer",quick:"Vite fait",energy:"Se dépenser",pretend:"Faire semblant",learning:"Apprendre en jouant",family:"En famille",alone:"Jouer seul",challenge:"Des défis",friends:"Entre copains"},
   plansTitle:"Un petit programme",plans:{morning:["🌅","Ma matinée","4 activités, des plus actives aux plus calmes"],afternoon:["🌞","Mon après-midi","3 activités, après la sieste"],rainy:["🌧️","Jour de pluie","4 activités dedans"],quiet:["🤫","Moment calme","3 activités tranquilles"]},
   total:"Environ {m} minutes en tout",again:"Un autre programme",psave:"☆ Garder",psaved:"★ Gardé",few:"Pas assez d'idées avec ces choix. Essayez sans le niveau d'énergie.",
@@ -213,7 +234,7 @@ var T={
   installIOS:"Pour l'avoir comme une appli : touchez Partager ⬆️ puis « Sur l'écran d'accueil ».",offline:"Hors connexion : les idées déjà chargées restent disponibles."},
  en:{doc:"Play Now · the app",ages:{'0-2':"0–2 yrs",'3-5':"3–5 yrs",'6-8':"6–8 yrs",'9-12':"9–12 yrs"},
   energy:"Your energy today",narrow:"Narrow it down (optional)",nw:{indoor:"🏠 Indoors",outdoor:"🌳 Outdoors",short:"⏱️ 10 min max",nomat:"✋ Nothing needed"},pe:{low:"🔋 Running low",medium:"🙂 So-so",high:"⚡ Full of beans"},
-  surprise:"🎲 Surprise me!",tabIdeas:"Ideas",tabPlans:"Plans",tabFavs:"Favourites",
+  surprise:"🎲 Surprise me!",tabIdeas:"Ideas",tabPlans:"Plans",tabFavs:"Favourites",tabSongs:"Songs",songsTitle:"Songs to sing together",songsNote:"No need to sing well: children love your voice. Lyrics, actions and, for songs from other countries, pronunciation and translation.",slAll:"All",lyrics:"Lyrics",romaji:"Pronunciation",meaning:"What it means",gestures:"Actions",about:"Did you know?",listen:"▶ Listen on YouTube",nextSong:"Another song",noSong:"No song in this language for this age yet.",otherAges:"More songs are listed under the other ages.",
   cats:{bonding:"Bonding time",sensory:"Sensory play",calm:"Calm & soothing",quick:"Quick & easy",energy:"Burn energy",pretend:"Pretend play",learning:"Learning",family:"Family fun",alone:"Playing alone",challenge:"Challenges",friends:"With friends"},
   plansTitle:"A little plan",plans:{morning:["🌅","My morning","4 activities, from lively to calm"],afternoon:["🌞","My afternoon","3 activities, after nap time"],rainy:["🌧️","Rainy day","4 indoor activities"],quiet:["🤫","Quiet time","3 calm activities"]},
   total:"About {m} minutes in all",again:"Another plan",psave:"☆ Save",psaved:"★ Saved",few:"Not enough ideas with these choices. Try without the energy level.",
@@ -226,7 +247,7 @@ var T={
   installIOS:"To use it like an app: tap Share ⬆️ then \"Add to Home Screen\".",offline:"Offline: ideas already loaded are still available."},
  ja:{doc:"Play Now · アプリ版",ages:{'0-2':"0〜2歳",'3-5':"3〜5歳",'6-8':"6〜8歳",'9-12':"9〜12歳"},
   energy:"今日の元気度",narrow:"条件をしぼる（任意）",nw:{indoor:"🏠 室内",outdoor:"🌳 屋外",short:"⏱️ 10分以内",nomat:"✋ 道具なし"},pe:{low:"🔋 ちょっと疲れ気味",medium:"🙂 ふつう",high:"⚡ 元気いっぱい"},
-  surprise:"🎲 おまかせ！",tabIdeas:"アイデア",tabPlans:"プラン",tabFavs:"お気に入り",
+  surprise:"🎲 おまかせ！",tabIdeas:"アイデア",tabPlans:"プラン",tabFavs:"お気に入り",tabSongs:"うた",songsTitle:"いっしょに歌おう",songsNote:"上手に歌えなくても大丈夫。子どもはあなたの声が大好きです。歌詞と手あそび、外国の歌には意味も紹介しています。",slAll:"すべて",lyrics:"歌詞",romaji:"読み方",meaning:"意味",gestures:"手あそび・動き",about:"豆知識",listen:"▶ YouTubeで聴く",nextSong:"ほかの歌",noSong:"この年齢・この言語の歌はまだありません。",otherAges:"ほかの歌は別の年齢に入っています。",
   cats:{bonding:"ふれあい遊び",sensory:"感覚あそび",calm:"落ち着く遊び",quick:"すぐできる",energy:"体を動かす",pretend:"ごっこ遊び",learning:"学びの遊び",family:"家族で",alone:"ひとりで遊ぶ",challenge:"チャレンジ",friends:"友だちと"},
   plansTitle:"遊びのプラン",plans:{morning:["🌅","午前のプラン","活発な遊びから静かな遊びへ、4つ"],afternoon:["🌞","午後のプラン","お昼寝のあとに3つ"],rainy:["🌧️","雨の日","室内で4つ"],quiet:["🤫","静かな時間","落ち着いた遊びを3つ"]},
   total:"全部で約{m}分",again:"ほかのプラン",psave:"☆ 保存",psaved:"★ 保存済み",few:"この条件ではプランを作れません。元気度の選択を外してみてください。",
@@ -274,8 +295,8 @@ var params=new URLSearchParams(location.search);
 function pickLang(){var p=params.get('lang');if(T[p])return p;var s=store('play.lang');if(T[s])return s;
   var n=(navigator.languages&&navigator.languages[0]||navigator.language||'fr').toLowerCase();
   if(n.indexOf('fr')===0)return 'fr';if(n.indexOf('ja')===0)return 'ja';return 'en';}
-var S={lang:pickLang(),age:AGES.indexOf(store('play.age'))>=0?store('play.age'):'3-5',pe:null,where:null,short:false,nomat:false,tab:'ideas'};
-var cache={},byAge={},current=null,mode=null,seen={},cycle=false,relaxed=false,plan=null;
+var S={lang:pickLang(),age:AGES.indexOf(store('play.age'))>=0?store('play.age'):'3-5',pe:null,where:null,short:false,nomat:false,tab:['ideas','plans','songs','favs'].indexOf(params.get('tab'))>=0?params.get('tab'):'ideas',sl:'all'};
+var songs=null,songList=[],cache={},byAge={},current=null,mode=null,seen={},cycle=false,relaxed=false,plan=null;
 function L(){return T[S.lang];}
 
 function getJSON(u){if(cache[u])return Promise.resolve(cache[u]);return fetch(u).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){cache[u]=d.activities||[];return cache[u];});}
@@ -308,6 +329,7 @@ function applyLang(){
   $('surprise').textContent=l.surprise;$('s-close').setAttribute('aria-label',l.close);
   $('plan-again').textContent=l.again;$('s-next').textContent=l.next;
   $('site-link').href='../?lang='+S.lang;
+  document.querySelector('[data-sl="all"]').textContent=l.slAll;
   renderPlanBtns();showInstall();
 }
 function sync(){
@@ -315,8 +337,11 @@ function sync(){
   document.querySelectorAll('[data-pe]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.pe===S.pe);});
   document.querySelectorAll('[data-where]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.where===S.where);});
   document.querySelectorAll('[data-opt]').forEach(function(b){b.setAttribute('aria-pressed',!!S[b.dataset.opt]);});
-  document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===S.tab);});
-  ['ideas','plans','favs'].forEach(function(t){$('p-'+t).hidden=t!==S.tab;});
+  document.querySelectorAll('[data-sl]').forEach(function(b){b.addEventListener('click',function(){S.sl=b.dataset.sl;sync();});});
+document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===S.tab);});
+  ['ideas','plans','songs','favs'].forEach(function(t){$('p-'+t).hidden=t!==S.tab;});
+  document.querySelectorAll('[data-sl]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.sl===S.sl);});
+  if(S.tab==='songs')renderSongs();
 }
 function renderTiles(){
   var g=$('tiles');g.innerHTML='';
@@ -356,7 +381,7 @@ function open(a){
   if(x.parentTips)sec(b,l.tip,el('p','box tip',x.parentTips));
   if(x.safetyNotes)sec(b,l.safety,el('p','box safe',x.safetyNotes));
   if((x.variations||[]).length)sec(b,l.variations,listNode('ul',x.variations));
-  $('s-next').hidden=!mode;syncFav();
+  $('s-fav').hidden=false;$('s-next').textContent=L().next;$('s-next').hidden=!mode;syncFav();
   $('sheet').hidden=false;$('s-in').scrollTop=0;document.body.style.overflow='hidden';$('s-close').focus();
 }
 function closeSheet(){$('sheet').hidden=true;document.body.style.overflow='';}
@@ -407,6 +432,42 @@ function renderFavs(){
   }).catch(function(){});
 }
 
+// Songs (traditional, public domain)
+var FLAG={fr:'🇫🇷',en:'🇬🇧',ja:'🇯🇵'};
+function getSongs(){if(songs)return Promise.resolve(songs);return fetch('../assets/json/songs.json').then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(d){songs=d.songs||[];return songs;});}
+function renderSongs(){
+  var box=$('song-list');
+  getSongs().then(function(all){
+    var l=L();box.innerHTML='';
+    var inLang=all.filter(function(x){return S.sl==='all'||x.lang===S.sl;});
+    songList=inLang.filter(function(x){return x.ages.indexOf(S.age)>=0;});
+    if(!songList.length)songList=inLang;
+    songList.forEach(function(x){
+      var c=el('button','card song');c.type='button';
+      var f=el('span','flag',FLAG[x.lang]);f.setAttribute('aria-hidden','true');c.appendChild(f);
+      var d=el('span');d.appendChild(el('h3',null,x.title));d.appendChild(el('p',null,x.about[S.lang]));c.appendChild(d);
+      c.addEventListener('click',function(){openSong(x);});box.appendChild(c);
+    });
+    if(!box.children.length)box.appendChild(el('p','empty',l.noSong));
+    $('song-other').textContent=l.otherAges;$('song-other').hidden=songList.length===inLang.length;
+  }).catch(function(){box.innerHTML='';box.appendChild(el('p','muted',L().error));});
+}
+function openSong(x){
+  current=null;mode='song';var l=L(),b=$('s-body');b.innerHTML='';
+  var h=el('h2',null,FLAG[x.lang]+' '+x.title);h.id='s-title';h.lang=x.lang;b.appendChild(h);
+  var tg=el('div','tags');x.ages.forEach(function(a){tg.appendChild(el('span','tag',l.ages[a]));});b.appendChild(tg);
+  var ly=el('p','lyrics'+(x.lang==='ja'?' ja':''),x.lyrics);ly.lang=x.lang;sec(b,l.lyrics,ly);
+  if(x.romaji&&S.lang!=='ja')sec(b,l.romaji,el('p','romaji',x.romaji));
+  if(x.lang!==S.lang&&x.tr&&x.tr[S.lang])sec(b,l.meaning,el('p','tr',x.tr[S.lang]));
+  sec(b,l.gestures,el('p','box tip',x.gestures[S.lang]));
+  sec(b,l.about,el('p',null,x.about[S.lang]));
+  var a=el('a','listen',l.listen);a.href='https://www.youtube.com/results?search_query='+encodeURIComponent(x.listen);a.target='_blank';a.rel='noopener';b.appendChild(a);
+  $('s-fav').hidden=true;$('s-next').hidden=songList.length<2;$('s-next').textContent=l.nextSong;
+  $('sheet').hidden=false;$('s-in').scrollTop=0;document.body.style.overflow='hidden';$('s-close').focus();
+  openSong.last=x;
+}
+function nextSong(){var o=songList.filter(function(x){return x!==openSong.last;});if(o.length)openSong(o[Math.floor(Math.random()*o.length)]);}
+
 // Install to home screen
 var deferred=null;
 function standalone(){return (window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;}
@@ -426,6 +487,7 @@ function loadAge(){
   return getAge(S.age).then(function(){renderTiles();renderFavs();
     // warm the offline cache with the other ages for this language
     AGES.forEach(function(a){if(a!==S.age)getAge(a).catch(function(){});});
+    getSongs().catch(function(){});
   }).catch(function(){$('tiles').innerHTML='';$('tiles').appendChild(el('p','muted',L().error));});
 }
 
@@ -437,7 +499,7 @@ document.querySelectorAll('[data-where]').forEach(function(b){b.addEventListener
 document.querySelectorAll('[data-opt]').forEach(function(b){b.addEventListener('click',function(){S[b.dataset.opt]=!S[b.dataset.opt];sync();});});
 document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){S.tab=b.dataset.tab;sync();window.scrollTo(0,0);if(S.tab==='favs')renderFavs();});});
 $('surprise').addEventListener('click',function(){idea('surprise');});
-$('s-next').addEventListener('click',function(){if(mode)idea(mode);});
+$('s-next').addEventListener('click',function(){if(mode==='song')nextSong();else if(mode)idea(mode);});
 $('s-close').addEventListener('click',closeSheet);
 $('s-fav').addEventListener('click',function(){if(current)toggleFav();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!$('sheet').hidden)closeSheet();});
