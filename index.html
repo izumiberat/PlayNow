@@ -40,6 +40,13 @@ header{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.05);position:sticky;top:
 .langs button{background:none;border:0;padding:6px 11px;font:inherit;font-size:.85rem;cursor:pointer;color:var(--muted)}
 .langs button[aria-pressed="true"]{background:var(--primary);color:#fff}
 .head-link{font-size:.9rem;text-decoration:none;color:var(--accent-dark);font-weight:600;white-space:nowrap}
+.applink{display:flex;align-items:center;gap:14px;margin:0 0 22px;padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,#4a6fa5,#6b8cc4);color:#fff;text-decoration:none;box-shadow:0 6px 18px rgba(74,111,165,.25)}
+.applink:hover{filter:brightness(1.05)}
+.applink img{display:block;width:48px;height:48px;border-radius:12px;background:#fff}
+.al-txt{flex:1;display:flex;flex-direction:column;gap:3px}
+.al-txt b{font-size:1.05rem}
+.al-txt small{font-size:.9rem;opacity:.92;line-height:1.4}
+.al-go{font-size:2rem;line-height:1;opacity:.85}
 @media (max-width:560px){.head-link:not(#nav-fav){display:none}.nav-long{display:none}}
 
 /* Hero */
@@ -183,6 +190,12 @@ footer li{margin-bottom:6px}
     <h1 data-i18n="hero.title">Une idée de jeu, tout de suite</h1>
     <p data-i18n="hero.text">Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.</p>
   </section>
+
+  <a class="applink" href="appli/" id="applink">
+    <span class="al-ico" aria-hidden="true"><img src="appli/icon-192.png" alt="" width="48" height="48"></span>
+    <span class="al-txt"><b data-i18n="al.title">Sur téléphone ? Essayez la version appli</b><small data-i18n="al.text">Une idée en un geste, des petits programmes et vos favoris. Elle marche même sans connexion et s'ajoute à l'écran d'accueil comme une vraie appli.</small></span>
+    <span class="al-go" aria-hidden="true">›</span>
+  </a>
 
   <section class="quick" id="vite" aria-labelledby="quick-title">
     <h2 id="quick-title" data-i18n="q.title">Une envie ? On vous trouve une idée</h2>
@@ -355,6 +368,7 @@ footer li{margin-bottom:6px}
 var T = {
  fr:{
   'doc.title':"Play Now · Idées de jeux sans écran pour les 0–12 ans",
+  'al.title':"Sur téléphone ? Essayez la version appli", 'al.text':"Une idée en un geste, des petits programmes et vos favoris. Elle marche même sans connexion et s'ajoute à l'écran d'accueil comme une vraie appli.",
   skip:"Aller aux activités", 'nav.app':"L'appli",
   'hero.title':"Une idée de jeu, tout de suite",
   'hero.text':"Plus de 300 activités sans écran pour jouer avec votre enfant de 0 à 12 ans. Choisissez son âge, l'endroit et le temps que vous avez : une idée en quelques secondes. C'est gratuit et sans inscription.",
@@ -394,6 +408,7 @@ var T = {
  },
  en:{
   'doc.title':"Play Now · Screen-free play ideas for ages 0–12",
+  'al.title':"On your phone? Try the app version", 'al.text':"An idea in one tap, small plans and your favourites. It even works offline and goes on your home screen like a real app.",
   skip:"Skip to activities", 'nav.app':"The app",
   'hero.title':"A play idea, right now",
   'hero.text':"Over 300 screen-free activities to play with your child aged 0 to 12. Pick their age, the place and the time you have: an idea in seconds. Free, no sign-up.",
@@ -433,6 +448,7 @@ var T = {
  },
  ja:{
   'doc.title':"Play Now · 0〜12歳 画面を使わない遊びのアイデア",
+  'al.title':"スマホならアプリ版がおすすめ", 'al.text':"ワンタップでアイデア、ミニプラン、お気に入り。オフラインでも使え、ホーム画面に追加すればアプリのように使えます。",
   skip:"遊びの一覧へ", 'nav.app':"アプリ",
   'hero.title':"今すぐ遊べるアイデア",
   'hero.text':"0〜12歳のお子さんと一緒に楽しめる、画面を使わない遊びを300以上。年齢・場所・時間を選ぶだけで、すぐにアイデアが見つかります。無料・登録不要です。",
@@ -533,6 +549,7 @@ function applyLang(){
   SITS.forEach(function(s){ var o=document.createElement('option'); o.value=s; o.textContent=L.sit[s]; sel.appendChild(o); });
   sel.value = state.situation;
   $('m-close').setAttribute('aria-label', L['m.close']);
+  $('applink').href = 'appli/?lang='+state.lang;
   // Seniors link per language
   var sl = state.lang==='fr' ? 'https://seniors.izutech.fr/' : 'https://seniors.izutech.fr/'+state.lang+'/';
   document.querySelectorAll('a[href^="https://seniors.izutech.fr"]').forEach(function(a){ a.href = sl; });
