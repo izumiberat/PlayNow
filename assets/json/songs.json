@@ -1,0 +1,454 @@
+{
+ "note": "Traditional / public-domain children's songs only. Keep lyrics in the original language; tr = meaning for other languages.",
+ "songs": [
+  {
+   "id": "frere-jacques",
+   "lang": "fr",
+   "title": "Frère Jacques",
+   "ages": [
+    "0-2",
+    "3-5",
+    "6-8",
+    "9-12"
+   ],
+   "lyrics": "Frère Jacques, frère Jacques,\nDormez-vous ? Dormez-vous ?\nSonnez les matines, sonnez les matines,\nDing, dang, dong. Ding, dang, dong.",
+   "tr": {
+    "en": "Brother Jacques, Brother Jacques,\nAre you sleeping? Are you sleeping?\nRing the morning bells, ring the morning bells,\nDing, dang, dong. Ding, dang, dong."
+   },
+   "gestures": {
+    "fr": "Faites semblant de dormir, puis réveillez-vous en tirant une cloche imaginaire sur « ding, dang, dong ». Dès 6 ans, chantez-la en canon : le deuxième commence quand le premier arrive à « Dormez-vous ».",
+    "en": "Pretend to sleep, then wake up and pull an imaginary bell rope on \"ding, dang, dong\". From age 6, sing it as a round: the second singer starts when the first reaches \"Dormez-vous\".",
+    "ja": "寝たふりをして、「ディン・ダン・ドン」で鐘を鳴らすまねをします。6歳くらいからは輪唱にも挑戦できます。"
+   },
+   "about": {
+    "fr": "Une des chansons les plus connues au monde, chantée dans des dizaines de langues.",
+    "en": "One of the best-known songs in the world, sung in dozens of languages. In English it's \"Are You Sleeping, Brother John?\".",
+    "ja": "日本では「グーチョキパーでなにつくろう」と同じメロディーです。"
+   },
+   "listen": "Frère Jacques comptine"
+  },
+  {
+   "id": "clair-de-la-lune",
+   "lang": "fr",
+   "title": "Au clair de la lune",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "Au clair de la lune,\nMon ami Pierrot,\nPrête-moi ta plume\nPour écrire un mot.\nMa chandelle est morte,\nJe n'ai plus de feu.\nOuvre-moi ta porte\nPour l'amour de Dieu.",
+   "tr": {
+    "en": "By the light of the moon,\nMy friend Pierrot,\nLend me your pen\nSo I can write a word.\nMy candle has gone out,\nI have no more light.\nOpen your door to me,\nFor the love of God."
+   },
+   "gestures": {
+    "fr": "Une berceuse à chanter doucement. Montrez la lune avec le doigt, faites semblant d'écrire, puis soufflez la bougie.",
+    "en": "A lullaby to sing softly. Point at the moon, pretend to write, then blow out the candle.",
+    "ja": "やさしく歌う子守唄です。月を指さし、字を書くまね、ろうそくを吹き消すまねをします。"
+   },
+   "about": {
+    "fr": "Chantée depuis le XVIIIe siècle, c'est un des premiers airs qu'on apprend à jouer au piano ou à la flûte.",
+    "en": "Sung since the 18th century, it's one of the first tunes French children learn on the recorder.",
+    "ja": "18世紀から歌われているフランスの代表的な童謡です。"
+   },
+   "listen": "Au clair de la lune comptine"
+  },
+  {
+   "id": "ainsi-font",
+   "lang": "fr",
+   "title": "Ainsi font, font, font",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "Ainsi font, font, font\nLes petites marionnettes,\nAinsi font, font, font,\nTrois p'tits tours et puis s'en vont.\n\nLes mains aux côtés,\nSautez, sautez, marionnettes,\nLes mains aux côtés,\nMarionnettes, recommencez !",
+   "tr": {
+    "en": "This is how they go, go, go,\nThe little puppets,\nThis is how they go, go, go,\nThree little turns and off they go.\n\nHands on hips,\nJump, jump, little puppets,\nHands on hips,\nPuppets, start again!"
+   },
+   "gestures": {
+    "fr": "Tournez les mains en l'air comme des marionnettes, faites trois petits tours, puis cachez les mains dans le dos. Les plus grands sautent sur place.",
+    "en": "Twist your raised hands like puppets, do three little turns, then hide your hands behind your back. Older ones jump on the spot.",
+    "ja": "手を上げて人形のようにくるくる回し、3回まわったら手を背中にかくします。大きい子はその場でジャンプ。"
+   },
+   "about": {
+    "fr": "Parfaite pour les tout-petits : les gestes suffisent, même avant de parler.",
+    "en": "Perfect for toddlers: the hand movements work even before they can talk.",
+    "ja": "言葉が出る前の赤ちゃんでも、手の動きで楽しめます。"
+   },
+   "listen": "Ainsi font font font comptine"
+  },
+  {
+   "id": "souris-verte",
+   "lang": "fr",
+   "title": "Une souris verte",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "Une souris verte\nQui courait dans l'herbe,\nJe l'attrape par la queue,\nJe la montre à ces messieurs.\nCes messieurs me disent :\nTrempez-la dans l'huile,\nTrempez-la dans l'eau,\nÇa fera un escargot\nTout chaud.",
+   "tr": {
+    "en": "A little green mouse\nRunning in the grass,\nI catch it by the tail\nAnd show it to these gentlemen.\nThe gentlemen tell me:\nDip it in oil,\nDip it in water,\nIt'll turn into a snail,\nNice and warm."
+   },
+   "gestures": {
+    "fr": "Faites courir vos doigts sur le bras de l'enfant comme une petite souris, attrapez une queue imaginaire, et finissez par un câlin « tout chaud ».",
+    "en": "Run your fingers up the child's arm like a little mouse, catch an imaginary tail, and finish with a warm hug.",
+    "ja": "指をねずみのように子どもの腕の上で走らせ、しっぽをつかむまね。最後は「あったかい」ハグで終わります。"
+   },
+   "about": {
+    "fr": "Une comptine absurde que les enfants adorent justement parce qu'elle ne veut rien dire.",
+    "en": "A nonsense rhyme that children love precisely because it makes no sense.",
+    "ja": "意味のないところが子どもに大人気の、フランスのわらべうたです。"
+   },
+   "listen": "Une souris verte comptine"
+  },
+  {
+   "id": "promenons-nous",
+   "lang": "fr",
+   "title": "Promenons-nous dans les bois",
+   "ages": [
+    "3-5",
+    "6-8"
+   ],
+   "lyrics": "Promenons-nous dans les bois\nPendant que le loup n'y est pas.\nSi le loup y était,\nIl nous mangerait,\nMais comme il n'y est pas,\nIl nous mangera pas.\nLoup, y es-tu ? Que fais-tu ?\nM'entends-tu ?\n— Je mets ma chemise !",
+   "tr": {
+    "en": "Let's walk in the woods\nWhile the wolf isn't here.\nIf the wolf were here,\nHe would eat us,\nBut since he isn't here,\nHe won't eat us.\nWolf, are you there? What are you doing?\nCan you hear me?\n— I'm putting on my shirt!"
+   },
+   "gestures": {
+    "fr": "Un jeu chanté : un enfant fait le loup et répond en s'habillant (chemise, chaussettes, chapeau…). Quand il crie « Je suis prêt ! J'arrive ! », tout le monde court.",
+    "en": "A singing game: one child is the wolf and answers while getting dressed (shirt, socks, hat…). When the wolf shouts \"I'm ready! Here I come!\", everyone runs.",
+    "ja": "歌いながら遊ぶ鬼ごっこ。オオカミ役の子が服を着るまねをしながら答え、「準備できた！」で追いかけます。"
+   },
+   "about": {
+    "fr": "Elle se joue dehors comme dans le salon. Les petits adorent avoir un peu peur… pour de faux.",
+    "en": "Play it outdoors or in the living room. Little ones love being a tiny bit scared, just for pretend.",
+    "ja": "フランスの子どもなら誰でも知っている遊び歌です。"
+   },
+   "listen": "Promenons-nous dans les bois comptine"
+  },
+  {
+   "id": "fais-dodo",
+   "lang": "fr",
+   "title": "Fais dodo, Colas mon p’tit frère",
+   "ages": [
+    "0-2"
+   ],
+   "lyrics": "Fais dodo, Colas mon p'tit frère,\nFais dodo, t'auras du lolo.\nMaman est en haut\nQui fait du gâteau,\nPapa est en bas\nQui fait du chocolat.\nFais dodo, Colas mon p'tit frère,\nFais dodo, t'auras du lolo.",
+   "tr": {
+    "en": "Go to sleep, Colas, my little brother,\nGo to sleep, you'll have some milk.\nMummy's upstairs\nBaking a cake,\nDaddy's downstairs\nMaking chocolate.\nGo to sleep, Colas, my little brother,\nGo to sleep, you'll have some milk."
+   },
+   "gestures": {
+    "fr": "À chanter tout bas en berçant l'enfant. Remplacez « Colas » par son prénom.",
+    "en": "Sing it very softly while rocking the child. Replace \"Colas\" with their name.",
+    "ja": "ゆっくり揺らしながら小さな声で。「コラ」をお子さんの名前に変えて歌ってもOK。"
+   },
+   "about": {
+    "fr": "La berceuse française par excellence, transmise de génération en génération.",
+    "en": "The classic French lullaby, passed down from generation to generation.",
+    "ja": "フランスで代々歌われてきた子守唄です。"
+   },
+   "listen": "Fais dodo Colas mon petit frère berceuse"
+  },
+  {
+   "id": "twinkle",
+   "lang": "en",
+   "title": "Twinkle, Twinkle, Little Star",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "Twinkle, twinkle, little star,\nHow I wonder what you are!\nUp above the world so high,\nLike a diamond in the sky.\nTwinkle, twinkle, little star,\nHow I wonder what you are!",
+   "tr": {
+    "fr": "Brille, brille, petite étoile,\nJe me demande bien ce que tu es !\nLà-haut, si haut au-dessus du monde,\nComme un diamant dans le ciel.\nBrille, brille, petite étoile,\nJe me demande bien ce que tu es !"
+   },
+   "gestures": {
+    "fr": "Ouvrez et fermez les mains en l'air pour faire briller l'étoile, puis dessinez un diamant avec les doigts.",
+    "en": "Open and close your hands up high to make the star twinkle, then make a diamond shape with your fingers.",
+    "ja": "手を上でパッパッと開いたり閉じたりして星をきらきらさせ、指でダイヤの形を作ります。"
+   },
+   "about": {
+    "fr": "C'est l'air de « Ah ! vous dirai-je, maman », une chanson française du XVIIIe siècle que Mozart a aussi reprise.",
+    "en": "The tune comes from the 18th-century French song \"Ah ! vous dirai-je, maman\", which Mozart also used.",
+    "ja": "日本の「きらきらぼし」と同じ曲。もとは18世紀のフランスの歌で、モーツァルトも変奏曲にしています。"
+   },
+   "listen": "Twinkle Twinkle Little Star nursery rhyme"
+  },
+  {
+   "id": "row-your-boat",
+   "lang": "en",
+   "title": "Row, Row, Row Your Boat",
+   "ages": [
+    "3-5",
+    "6-8",
+    "9-12"
+   ],
+   "lyrics": "Row, row, row your boat\nGently down the stream.\nMerrily, merrily, merrily, merrily,\nLife is but a dream.",
+   "tr": {
+    "fr": "Rame, rame, rame ton bateau\nDoucement au fil de l'eau.\nGaiement, gaiement, gaiement, gaiement,\nLa vie n'est qu'un rêve."
+   },
+   "gestures": {
+    "fr": "Asseyez-vous face à face, tenez-vous les mains et ramez en vous balançant d'avant en arrière. Les plus grands la chantent en canon.",
+    "en": "Sit facing each other, hold hands and row by rocking back and forth. Older children can sing it as a round.",
+    "ja": "向かい合って座り、手をつないで前後にゆれながらボートをこぎます。大きい子は輪唱で。"
+   },
+   "about": {
+    "fr": "Idéale pour découvrir l'anglais : seulement quatre lignes, très faciles à retenir.",
+    "en": "Only four lines long, which makes it perfect for singing in a round.",
+    "ja": "4行だけなので、英語の歌の入門にぴったりです。"
+   },
+   "listen": "Row Row Row Your Boat nursery rhyme"
+  },
+  {
+   "id": "itsy-bitsy",
+   "lang": "en",
+   "title": "The Itsy Bitsy Spider",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "The itsy bitsy spider\nClimbed up the water spout.\nDown came the rain\nAnd washed the spider out.\nOut came the sun\nAnd dried up all the rain,\nAnd the itsy bitsy spider\nClimbed up the spout again.",
+   "tr": {
+    "fr": "La toute petite araignée\nGrimpe dans la gouttière.\nLa pluie tombe\nEt emporte l'araignée.\nLe soleil sort\nEt sèche toute la pluie,\nEt la toute petite araignée\nRemonte dans la gouttière."
+   },
+   "gestures": {
+    "fr": "Faites grimper l'araignée en touchant pouce contre index, faites tomber la pluie avec les doigts, puis dessinez un grand soleil avec les bras.",
+    "en": "Climb the spider by touching thumbs to index fingers, wiggle your fingers down for the rain, then make a big sun with your arms.",
+    "ja": "親指と人差し指を交互につけてクモを登らせ、指で雨をふらせ、腕で大きな太陽を作ります。"
+   },
+   "about": {
+    "fr": "En France, on la connaît aussi en version française : « L'araignée Gipsy ».",
+    "en": "One of the most popular finger-play songs in the English-speaking world.",
+    "ja": "英語圏でとても人気のある手遊び歌です。"
+   },
+   "listen": "Itsy Bitsy Spider nursery rhyme"
+  },
+  {
+   "id": "head-shoulders",
+   "lang": "en",
+   "title": "Head, Shoulders, Knees and Toes",
+   "ages": [
+    "3-5",
+    "6-8",
+    "9-12"
+   ],
+   "lyrics": "Head, shoulders, knees and toes, knees and toes,\nHead, shoulders, knees and toes, knees and toes,\nAnd eyes and ears and mouth and nose,\nHead, shoulders, knees and toes, knees and toes.",
+   "tr": {
+    "fr": "Tête, épaules, genoux et orteils, genoux et orteils,\nTête, épaules, genoux et orteils, genoux et orteils,\nEt les yeux, les oreilles, la bouche et le nez,\nTête, épaules, genoux et orteils, genoux et orteils."
+   },
+   "gestures": {
+    "fr": "Touchez chaque partie du corps en la chantant. Puis recommencez de plus en plus vite, ou en remplaçant un mot par un silence.",
+    "en": "Touch each body part as you sing it. Then go faster and faster, or skip a word and just do the gesture.",
+    "ja": "歌いながら体の部分をさわります。だんだん速くしたり、言葉を1つ抜かして動きだけにしたりすると盛り上がります。"
+   },
+   "about": {
+    "fr": "Une façon amusante d'apprendre les parties du corps en anglais.",
+    "en": "A fun way to learn body parts, and a great wiggle break.",
+    "ja": "体の部分の英単語を楽しく覚えられます。"
+   },
+   "listen": "Head Shoulders Knees and Toes nursery rhyme"
+  },
+  {
+   "id": "old-macdonald",
+   "lang": "en",
+   "title": "Old MacDonald Had a Farm",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "Old MacDonald had a farm, E-I-E-I-O,\nAnd on that farm he had a cow, E-I-E-I-O,\nWith a moo-moo here and a moo-moo there,\nHere a moo, there a moo, everywhere a moo-moo,\nOld MacDonald had a farm, E-I-E-I-O.",
+   "tr": {
+    "fr": "Le vieux MacDonald avait une ferme, i-aï-i-aï-o,\nEt dans sa ferme il avait une vache, i-aï-i-aï-o,\nAvec un meuh-meuh par ici et un meuh-meuh par là,\nIci un meuh, là un meuh, partout des meuh-meuh,\nLe vieux MacDonald avait une ferme, i-aï-i-aï-o."
+   },
+   "gestures": {
+    "fr": "À chaque couplet, l'enfant choisit un animal et fait son cri : cochon (oink), canard (quack), chien (woof)…",
+    "en": "For each verse, the child picks an animal and makes its sound: pig (oink), duck (quack), dog (woof)…",
+    "ja": "毎回子どもが動物を選んで鳴き声をまねします。ぶた（oink）、あひる（quack）、いぬ（woof）など。"
+   },
+   "about": {
+    "fr": "Les animaux ne font pas le même bruit en anglais : un chien dit « woof » et un canard « quack ». Les enfants adorent comparer.",
+    "en": "Animals sound different in other languages: in French a duck says \"coin-coin\", in Japanese \"ga-ga\".",
+    "ja": "日本語では「ゆかいな牧場」として知られています。動物の鳴き声が英語と日本語で違うのも楽しいポイント。"
+   },
+   "listen": "Old MacDonald Had a Farm nursery rhyme"
+  },
+  {
+   "id": "hickory-dickory",
+   "lang": "en",
+   "title": "Hickory Dickory Dock",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "Hickory, dickory, dock,\nThe mouse ran up the clock.\nThe clock struck one,\nThe mouse ran down,\nHickory, dickory, dock.",
+   "tr": {
+    "fr": "Hickory, dickory, dock,\nLa souris grimpe dans l'horloge.\nL'horloge sonne une heure,\nLa souris redescend,\nHickory, dickory, dock."
+   },
+   "gestures": {
+    "fr": "Balancez le bras comme un balancier d'horloge, faites grimper vos doigts sur l'enfant, tapez dans les mains pour « one », puis redescendez vite.",
+    "en": "Swing your arm like a clock pendulum, run your fingers up the child, clap once for \"one\", then scurry back down.",
+    "ja": "腕を時計の振り子のようにふり、指で子どもの体をのぼり、「one」で手をたたいて、さっと下ります。"
+   },
+   "about": {
+    "fr": "« Hickory, dickory, dock » ne veut rien dire : c'est juste le tic-tac de l'horloge.",
+    "en": "A classic nursery rhyme from the 18th century.",
+    "ja": "「ヒッコリー・ディッコリー・ドック」は時計のチクタク音。意味はありません。"
+   },
+   "listen": "Hickory Dickory Dock nursery rhyme"
+  },
+  {
+   "id": "katatsumuri",
+   "lang": "ja",
+   "title": "かたつむり",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "でんでん むしむし かたつむり\nおまえの あたまは どこにある\nつの だせ やり だせ あたま だせ",
+   "romaji": "Denden mushi mushi katatsumuri\nOmae no atama wa doko ni aru\nTsuno dase yari dase atama dase",
+   "tr": {
+    "fr": "Escargot, escargot, petit escargot,\nOù est donc ta tête ?\nSors tes cornes, sors tes antennes, sors ta tête !",
+    "en": "Snail, snail, little snail,\nWhere is your head?\nShow your horns, show your feelers, show your head!"
+   },
+   "gestures": {
+    "fr": "Faites une coquille avec une main et sortez deux doigts comme des antennes sur « tsuno dase ».",
+    "en": "Make a shell with one hand and pop out two fingers as feelers on \"tsuno dase\".",
+    "ja": "片手でからを作り、「つのだせ」で指を2本出してつのにします。"
+   },
+   "about": {
+    "fr": "Une chanson apprise à l'école au Japon depuis 1911, à chanter les jours de pluie, quand les escargots sortent.",
+    "en": "Taught in Japanese schools since 1911, often sung in the rainy season when snails come out.",
+    "ja": "1911年から歌われている文部省唱歌。梅雨の季節にぴったりです。"
+   },
+   "listen": "かたつむり 童謡"
+  },
+  {
+   "id": "musunde-hiraite",
+   "lang": "ja",
+   "title": "むすんで ひらいて",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "むすんで ひらいて\nてを うって むすんで\nまた ひらいて てを うって\nその てを うえに\nむすんで ひらいて\nてを うって むすんで",
+   "romaji": "Musunde hiraite\nTe o utte musunde\nMata hiraite te o utte\nSono te o ue ni\nMusunde hiraite\nTe o utte musunde",
+   "tr": {
+    "fr": "Fermez les mains, ouvrez les mains,\nTapez des mains, fermez,\nOuvrez encore, tapez des mains,\nEt levez les mains en l'air,\nFermez, ouvrez,\nTapez des mains, fermez.",
+    "en": "Close your hands, open your hands,\nClap your hands, close them,\nOpen again, clap your hands,\nAnd put your hands up high,\nClose, open,\nClap your hands, close them."
+   },
+   "gestures": {
+    "fr": "Les paroles disent tout : poings fermés, mains ouvertes, on tape, on lève les mains. On peut finir les mains sur la tête, les joues ou les genoux.",
+    "en": "The words tell you what to do: fists, open hands, clap, hands up. You can end with hands on your head, cheeks or knees.",
+    "ja": "歌詞のとおりに手を動かします。最後は「そのてを あたまに」「ほっぺに」などに変えても楽しいです。"
+   },
+   "about": {
+    "fr": "La mélodie viendrait de Jean-Jacques Rousseau, le philosophe français !",
+    "en": "The melody is said to come from the French philosopher Jean-Jacques Rousseau.",
+    "ja": "メロディーはフランスの思想家ルソーの作品がもとだと言われています。"
+   },
+   "listen": "むすんでひらいて 童謡"
+  },
+  {
+   "id": "chocho",
+   "lang": "ja",
+   "title": "ちょうちょう",
+   "ages": [
+    "0-2",
+    "3-5"
+   ],
+   "lyrics": "ちょうちょう ちょうちょう\nなのはに とまれ\nなのはに あいたら\nさくらに とまれ\nさくらの はなの\nはなから はなへ\nとまれよ あそべ\nあそべよ とまれ",
+   "romaji": "Chōchō chōchō\nNa no ha ni tomare\nNa no ha ni aitara\nSakura ni tomare\nSakura no hana no\nHana kara hana e\nTomare yo asobe\nAsobe yo tomare",
+   "tr": {
+    "fr": "Papillon, papillon,\nPose-toi sur une feuille de colza.\nQuand tu t'en lasses,\nPose-toi sur le cerisier,\nDe fleur de cerisier\nEn fleur de cerisier,\nPose-toi et joue,\nJoue et pose-toi.",
+    "en": "Butterfly, butterfly,\nLand on the rape leaf.\nWhen you're tired of it,\nLand on the cherry tree,\nFrom cherry blossom\nTo cherry blossom,\nLand and play,\nPlay and land."
+   },
+   "gestures": {
+    "fr": "Croisez les pouces pour faire un papillon avec les mains et faites-le voler pour se poser sur le nez, la tête ou la main de l'enfant.",
+    "en": "Hook your thumbs together to make a butterfly with your hands and fly it to land on the child's nose, head or hand.",
+    "ja": "親指をからめて手でちょうちょを作り、子どもの鼻や頭、手にとまらせます。"
+   },
+   "about": {
+    "fr": "Une chanson de printemps. La mélodie vient d'une chanson populaire allemande.",
+    "en": "A spring song. The melody comes from a German folk song.",
+    "ja": "春の歌。メロディーはドイツの民謡がもとになっています。"
+   },
+   "listen": "ちょうちょう 童謡"
+  },
+  {
+   "id": "donguri",
+   "lang": "ja",
+   "title": "どんぐりころころ",
+   "ages": [
+    "3-5",
+    "6-8"
+   ],
+   "lyrics": "どんぐり ころころ どんぶりこ\nおいけに はまって さあ たいへん\nどじょうが でてきて こんにちは\nぼっちゃん いっしょに あそびましょう",
+   "romaji": "Donguri korokoro donburiko\nO-ike ni hamatte saa taihen\nDojō ga dete kite konnichiwa\nBotchan issho ni asobimashō",
+   "tr": {
+    "fr": "Le petit gland roule, roule, et plouf !\nIl tombe dans l'étang, oh là là !\nUn petit poisson sort et dit bonjour :\n« Petit, viens jouer avec moi ! »",
+    "en": "The little acorn rolls and rolls, and splash!\nIt falls into the pond, oh dear!\nA little fish pops out and says hello:\n\"Little one, come and play with me!\""
+   },
+   "gestures": {
+    "fr": "Faites rouler vos mains l'une sur l'autre, plongez dans l'étang, puis faites nager un petit poisson qui salue.",
+    "en": "Roll your hands over each other, dive into the pond, then make a little fish swim up and wave.",
+    "ja": "手をぐるぐる回してどんぐりを転がし、池にぽちゃん。どじょうが泳いで「こんにちは」。"
+   },
+   "about": {
+    "fr": "Le « dojō » est une loche, un petit poisson des rizières. Une chanson d'automne, la saison des glands.",
+    "en": "A \"dojō\" is a loach, a small fish of rice paddies. An autumn song, for acorn season.",
+    "ja": "どんぐりの季節、秋にぴったりの童謡です。"
+   },
+   "listen": "どんぐりころころ 童謡"
+  },
+  {
+   "id": "usagi-to-kame",
+   "lang": "ja",
+   "title": "うさぎと かめ",
+   "ages": [
+    "3-5",
+    "6-8",
+    "9-12"
+   ],
+   "lyrics": "もしもし かめよ かめさんよ\nせかいの うちに おまえほど\nあゆみの のろい ものは ない\nどうして そんなに のろいのか",
+   "romaji": "Moshi moshi kame yo kame-san yo\nSekai no uchi ni omae hodo\nAyumi no noroi mono wa nai\nDōshite sonna ni noroi no ka",
+   "tr": {
+    "fr": "Hé, la tortue, madame la tortue !\nDans le monde entier, personne\nNe marche aussi lentement que toi.\nPourquoi es-tu si lente ?",
+    "en": "Hey there, tortoise, Mrs Tortoise!\nIn the whole wide world, nobody\nWalks as slowly as you do.\nWhy are you so slow?"
+   },
+   "gestures": {
+    "fr": "Un parent fait le lièvre qui sautille, l'enfant fait la tortue qui avance tout doucement… et gagne la course à la fin !",
+    "en": "One person is the hopping hare, the child is the slow tortoise… who wins the race in the end!",
+    "ja": "大人がぴょんぴょんうさぎ、子どもがゆっくりかめになって競争。最後はかめの勝ち！"
+   },
+   "about": {
+    "fr": "C'est la fable « Le Lièvre et la Tortue » d'Ésope, que La Fontaine a aussi racontée. Les enfants français la connaissent déjà !",
+    "en": "It's Aesop's fable \"The Tortoise and the Hare\", told as a song.",
+    "ja": "イソップ物語「うさぎとかめ」の歌。フランスではラ・フォンテーヌの寓話としても有名です。"
+   },
+   "listen": "うさぎとかめ 童謡"
+  },
+  {
+   "id": "momotaro",
+   "lang": "ja",
+   "title": "ももたろう",
+   "ages": [
+    "3-5",
+    "6-8",
+    "9-12"
+   ],
+   "lyrics": "ももたろうさん ももたろうさん\nおこしに つけた きびだんご\nひとつ わたしに くださいな\n\nやりましょう やりましょう\nこれから おにの せいばつに\nついて いくなら やりましょう",
+   "romaji": "Momotarō-san Momotarō-san\nO-koshi ni tsuketa kibidango\nHitotsu watashi ni kudasai na\n\nYarimashō yarimashō\nKore kara oni no seibatsu ni\nTsuite iku nara yarimashō",
+   "tr": {
+    "fr": "Momotarō, Momotarō,\nLes boulettes de riz à ta ceinture,\nDonne-m'en une, s'il te plaît !\n\nJe t'en donne, je t'en donne,\nSi tu viens avec moi\nVaincre les ogres.",
+    "en": "Momotarō, Momotarō,\nThose rice dumplings on your belt,\nPlease give me one!\n\nI'll give you one, I'll give you one,\nIf you come with me\nTo defeat the ogres."
+   },
+   "gestures": {
+    "fr": "Chantez-la en dialogue : l'enfant joue le chien, le singe ou le faisan qui demande une boulette, vous jouez Momotarō qui répond.",
+    "en": "Sing it as a dialogue: the child is the dog, monkey or pheasant asking for a dumpling, and you are Momotarō answering.",
+    "ja": "かけあいで歌います。子どもが犬・さる・きじ役、大人がももたろう役。"
+   },
+   "about": {
+    "fr": "Momotarō, le « garçon né d'une pêche », est le héros de conte le plus connu au Japon.",
+    "en": "Momotarō, the \"peach boy\", is Japan's best-known folk-tale hero.",
+    "ja": "日本でいちばん有名な昔話のひとつ、桃太郎の歌です。"
+   },
+   "listen": "ももたろう 童謡"
+  }
+ ]
+}

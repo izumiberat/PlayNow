@@ -1,6 +1,6 @@
 // Play Now (web app) — keeps the app and the activities available offline.
 // Bump VERSION whenever appli/ files or activity files change.
-var VERSION = 'playnow-appli-v2';
+var VERSION = 'playnow-appli-v3';
 var SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon-180.png'];
 
 self.addEventListener('install', function (e) {
